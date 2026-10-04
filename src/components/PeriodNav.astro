@@ -8,6 +8,13 @@ interface Props {
 
 const { showNextWeekend } = Astro.props;
 
+// 折り返すときは | の位置で改行する（「間に合/う」のような途中での改行を防ぐ）
+const BREAK_HINTS: Record<string, string> = {
+  今から7日以内: '今から|7日以内',
+  次の週末に間に合う: '次の週末に|間に合う',
+  加工から探す: '加工から|探す',
+};
+
 const links = [
   { ...PERIOD_PAGES.within7Days, note: '突発本に' },
   ...(showNextWeekend ? [{ ...PERIOD_PAGES.nextWeekend, note: 'イベント合わせ' }] : []),
@@ -25,7 +32,14 @@ const links = [
       links.map((link) => (
         <li>
           <a href={link.href}>
-            <span class="period-nav__label">{link.label}</span>
+            <span class="period-nav__label">
+              {(BREAK_HINTS[link.label] ?? link.label).split('|').map((part, i) => (
+                <>
+                  {i > 0 && <wbr />}
+                  {part}
+                </>
+              ))}
+            </span>
             <span class="period-nav__note">{link.note}</span>
           </a>
         </li>
@@ -50,14 +64,6 @@ const links = [
     }
   }
 
-  @media (min-width: 1024px) {
-    .period-nav ul {
-      grid-template-columns: none;
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(0, 1fr);
-    }
-  }
-
   .period-nav a {
     display: flex;
     flex-direction: column;
@@ -79,6 +85,7 @@ const links = [
   .period-nav__label {
     font-weight: 700;
     line-height: 1.5;
+    word-break: keep-all;
   }
 
   .period-nav__note {
