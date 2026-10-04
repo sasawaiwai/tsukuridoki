@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tags.schema.json",
+  "title": "自由タグ",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["tag_id", "name"],
+    "properties": {
+      "tag_id": { "type": "string", "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*$" },
+      "name": { "type": "string", "minLength": 1 }
+    }
+  }
+}

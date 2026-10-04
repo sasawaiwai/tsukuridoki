@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "printer.schema.json",
+  "title": "印刷所",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["printer_id", "name", "official_url", "domains", "link_policy", "crawl_policy"],
+  "properties": {
+    "printer_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "official_url": { "type": "string", "format": "uri" },
+    "fair_index_url": { "type": ["string", "null"], "format": "uri" },
+    "watch_urls": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "format": "hostname" }
+    },
+    "link_policy": { "enum": ["deep_link_ok", "top_page_only", "unknown"] },
+    "crawl_policy": { "enum": ["allowed", "manual_only", "forbidden", "unknown"] },
+    "terms_url": { "type": ["string", "null"], "format": "uri" },
+    "policy_note": { "type": ["string", "null"] },
+    "crawl_interval_days": { "type": "integer", "minimum": 1 },
+    "last_crawled_at": { "type": ["string", "null"], "format": "date-time" },
+    "last_policy_checked_at": { "type": ["string", "null"], "format": "date" }
+  }
+}

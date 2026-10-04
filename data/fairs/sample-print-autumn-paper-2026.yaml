@@ -1,0 +1,47 @@
+# 架空のサンプルデータ（Phase 1 動作確認用）
+# 確認したい判定：開催中／7日以内○／1か月先○／2か月先×（usable_until が end_date より優先される）
+fair_id: sample-print-autumn-paper-2026
+slug: sample-print-autumn-paper-2026
+fair_name: 秋の特殊紙フェア
+printer_id: sample-print
+category: dojinshi
+
+official_url: https://example.com/fair/autumn-paper/
+source_type: official_fair
+verification_status: verified
+
+summary: 対象セットで、表紙用紙をラメ入りの特殊紙へ無料で変更できるフェア。
+
+start_date: 2026-10-01
+start_date_text: "10月1日"
+start_date_precision: day
+end_date: 2026-11-30
+end_date_text: "11月末まで"
+end_date_precision: month
+
+usable_until: 2026-11-25
+usable_until_text: "特殊紙変更は11月25日入稿分まで"
+usable_until_precision: day
+
+published_at: 2026-10-01
+verified_at: 2026-10-01
+
+sizes: [A6, A5, B5]
+binding: [perfect]
+book_types: [novel, manga]
+printing_methods: [ondemand]
+color_modes: [RGB, CMYK]
+rgb_supported: true
+processes: [special_paper]
+papers:
+  mode: selected
+  items: [miranda-white]
+tags: [seasonal, good_deal]
+
+benefit_types: [free_paper_upgrade]
+specific_sets_only: true
+conditions_text: "表紙フルカラーセットのみ対象"
+
+history:
+  - date: 2026-10-01
+    type: published

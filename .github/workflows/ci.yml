@@ -1,0 +1,25 @@
+# PR時のチェック：データ検証・テスト・ビルド（公開はしない）
+name: CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+
+env:
+  ASTRO_TELEMETRY_DISABLED: 1
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build

@@ -1,0 +1,28 @@
+# 架空のサンプルデータ（Phase 1 動作確認用）
+# 確認したい判定：なくなり次第終了（終了日 null）→ 7日以内○／nか月先はすべて×
+fair_id: mihondo-novelty-2026
+slug: mihondo-novelty-2026
+fair_name: 箔押しカードプレゼント
+printer_id: mihondo
+category: dojinshi
+
+official_url: https://example.org/news/novelty/
+source_type: official_news
+verification_status: verified
+
+summary: 注文者に箔押しのポストカードをプレゼント。予定数に達し次第終了。
+
+start_date: 2026-09-20
+start_date_text: "9月20日"
+start_date_precision: day
+usable_until_text: "なくなり次第終了"
+usable_until_precision: unknown
+
+published_at: 2026-09-20
+verified_at: 2026-09-28
+
+benefit_types: [novelty]
+
+history:
+  - date: 2026-09-20
+    type: published

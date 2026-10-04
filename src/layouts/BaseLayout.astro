@@ -1,0 +1,120 @@
+---
+import { SITE } from '../lib/site.ts';
+import pkg from '../../package.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = `${SITE.tagline}。各印刷所のフェア・キャンペーン情報を、時期・加工・サイズから探せます。` } = Astro.props;
+const fullTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {SITE.noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="site-name">{SITE.name}</a>
+      <span class="site-subtitle">{SITE.subtitle}</span>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>© {SITE.name}</p>
+      <p class="version">v{pkg.version}</p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --color-bg: #fffaf5;
+    --color-text: #2b2420;
+    --color-muted: #7a6d64;
+    --color-accent: #e8613c;
+    --color-border: #eadfd5;
+    --color-surface: #ffffff;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: system-ui, -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+    line-height: 1.7;
+  }
+
+  main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .site-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  .site-subtitle {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+  }
+
+  .site-footer {
+    padding: 24px 16px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+</style>

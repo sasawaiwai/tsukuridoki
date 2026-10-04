@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "fair.schema.json",
+  "title": "フェア",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fair_id",
+    "slug",
+    "fair_name",
+    "printer_id",
+    "category",
+    "official_url",
+    "summary",
+    "source_type",
+    "verification_status",
+    "published_at"
+  ],
+  "definitions": {
+    "slugId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "masterId": { "type": "string", "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*$" },
+    "date": { "type": "string", "format": "date" },
+    "dateOrNull": { "type": ["string", "null"], "format": "date" },
+    "textOrNull": { "type": ["string", "null"] },
+    "boolOrNull": { "type": ["boolean", "null"] },
+    "countOrNull": { "type": ["integer", "null"], "minimum": 1 },
+    "precision": { "enum": ["day", "month", "unknown", null] },
+    "masterIdList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/definitions/masterId" }
+    }
+  },
+  "properties": {
+    "fair_id": { "$ref": "#/definitions/slugId" },
+    "slug": { "$ref": "#/definitions/slugId" },
+    "fair_name": { "type": "string", "minLength": 1 },
+    "printer_id": { "$ref": "#/definitions/slugId" },
+    "category": { "enum": ["dojinshi"] },
+
+    "official_url": { "type": "string", "format": "uri" },
+    "source_url": { "type": ["string", "null"], "format": "uri" },
+
+    "summary": { "type": "string", "minLength": 1 },
+
+    "start_date": { "$ref": "#/definitions/dateOrNull" },
+    "end_date": { "$ref": "#/definitions/dateOrNull" },
+    "start_date_text": { "$ref": "#/definitions/textOrNull" },
+    "end_date_text": { "$ref": "#/definitions/textOrNull" },
+    "start_date_precision": { "$ref": "#/definitions/precision" },
+    "end_date_precision": { "$ref": "#/definitions/precision" },
+
+    "usable_from": { "$ref": "#/definitions/dateOrNull" },
+    "usable_until": { "$ref": "#/definitions/dateOrNull" },
+    "usable_from_text": { "$ref": "#/definitions/textOrNull" },
+    "usable_until_text": { "$ref": "#/definitions/textOrNull" },
+    "usable_from_precision": { "$ref": "#/definitions/precision" },
+    "usable_until_precision": { "$ref": "#/definitions/precision" },
+
+    "published_at": { "$ref": "#/definitions/date" },
+    "discovered_at": { "$ref": "#/definitions/dateOrNull" },
+    "last_checked_at": { "$ref": "#/definitions/dateOrNull" },
+    "verified_at": { "$ref": "#/definitions/dateOrNull" },
+    "updated_at": { "$ref": "#/definitions/dateOrNull" },
+
+    "source_type": {
+      "enum": ["official_fair", "official_campaign", "official_news", "official_other"]
+    },
+    "verification_status": {
+      "enum": ["verified", "auto_checked", "needs_review", "unknown"]
+    },
+
+    "notes": { "$ref": "#/definitions/textOrNull" },
+
+    "deadline_type": { "enum": ["normal", "early", "special", "event", "unknown", null] },
+    "deadline_offset": { "type": ["integer", "null"] },
+    "extra_days": { "type": ["integer", "null"], "minimum": 0 },
+    "event_name": { "$ref": "#/definitions/textOrNull" },
+    "event_date": { "$ref": "#/definitions/dateOrNull" },
+    "event_deadline": { "$ref": "#/definitions/dateOrNull" },
+    "deadline_note": { "$ref": "#/definitions/textOrNull" },
+
+    "sizes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["A6", "B6", "A5", "B5", "A4", "shinsho", "bunko", "square", "custom", "other"]
+      }
+    },
+    "custom_size_supported": { "$ref": "#/definitions/boolOrNull" },
+
+    "min_pages": { "$ref": "#/definitions/countOrNull" },
+    "max_pages": { "$ref": "#/definitions/countOrNull" },
+    "min_quantity": { "$ref": "#/definitions/countOrNull" },
+    "max_quantity": { "$ref": "#/definitions/countOrNull" },
+
+    "binding": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["perfect", "saddle", "other"] }
+    },
+    "book_types": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["novel", "manga", "illustration", "photo", "full_color", "other"] }
+    },
+    "printing_methods": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["ondemand", "offset", "digital_offset", "inkjet", "other"] }
+    },
+    "color_modes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["RGB", "CMYK", "grayscale", "monochrome", "spot_color"] }
+    },
+    "rgb_supported": { "$ref": "#/definitions/boolOrNull" },
+    "rgb_conversion": { "$ref": "#/definitions/textOrNull" },
+    "spot_color_supported": { "$ref": "#/definitions/boolOrNull" },
+
+    "processes": { "$ref": "#/definitions/masterIdList" },
+    "papers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": { "enum": ["selected", "all_special_papers"] },
+        "items": { "$ref": "#/definitions/masterIdList" }
+      },
+      "if": { "properties": { "mode": { "const": "selected" } } },
+      "then": { "required": ["items"], "properties": { "items": { "type": "array", "minItems": 1 } } }
+    },
+    "foils": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": { "enum": ["selected", "all_foils"] },
+        "items": { "$ref": "#/definitions/masterIdList" }
+      },
+      "if": { "properties": { "mode": { "const": "selected" } } },
+      "then": { "required": ["items"], "properties": { "items": { "type": "array", "minItems": 1 } } }
+    },
+    "tags": { "$ref": "#/definitions/masterIdList" },
+
+    "benefit_types": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "discount",
+          "free_process",
+          "free_paper_upgrade",
+          "free_option",
+          "limited_set",
+          "novelty",
+          "points",
+          "limited_product"
+        ]
+      }
+    },
+    "discount_rate": { "type": ["number", "null"], "exclusiveMinimum": 0, "maximum": 100 },
+    "discount_amount": { "type": ["integer", "null"], "minimum": 1 },
+    "free_options": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "campaign_code": { "$ref": "#/definitions/textOrNull" },
+
+    "new_customer_only": { "$ref": "#/definitions/boolOrNull" },
+    "member_only": { "$ref": "#/definitions/boolOrNull" },
+    "event_delivery_only": { "$ref": "#/definitions/boolOrNull" },
+    "specific_sets_only": { "$ref": "#/definitions/boolOrNull" },
+    "combinable": { "$ref": "#/definitions/boolOrNull" },
+    "application_required": { "$ref": "#/definitions/boolOrNull" },
+    "minimum_order": { "$ref": "#/definitions/textOrNull" },
+    "conditions_text": { "$ref": "#/definitions/textOrNull" },
+
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "type"],
+        "properties": {
+          "date": { "$ref": "#/definitions/date" },
+          "type": { "enum": ["discovered", "published", "updated", "expired"] },
+          "field": { "$ref": "#/definitions/textOrNull" },
+          "old_value": {},
+          "new_value": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# 架空の印刷所（Phase 1 動作確認用サンプル）
+printer_id: mihondo
+name: みほん堂（架空）
+official_url: https://example.org/
+domains: [example.org]
+link_policy: unknown
+crawl_policy: unknown
+crawl_interval_days: 7

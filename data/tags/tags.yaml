@@ -1,0 +1,14 @@
+# 自由タグ（複数の属性軸をまたぐ編集上の分類。仕様書26章）
+
+- tag_id: beginner
+  name: 初心者向け
+- tag_id: seasonal
+  name: 季節フェア
+- tag_id: limited_time
+  name: 期間限定
+- tag_id: for_novels
+  name: 小説本向け
+- tag_id: luxury
+  name: 豪華装丁
+- tag_id: good_deal
+  name: お得
