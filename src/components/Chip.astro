@@ -1,0 +1,58 @@
+---
+// タグ／チップ。category を渡すと加工の色で薄く色分けする（必要最小限）
+import type { CardCategory } from '../lib/fair-display.ts';
+
+interface Props {
+  label: string;
+  category?: CardCategory;
+  href?: string;
+  size?: 'sm' | 'md';
+}
+
+const { label, category, href, size = 'sm' } = Astro.props;
+const Tag = href ? 'a' : 'span';
+---
+
+<Tag href={href} class:list={['chip', `chip--${size}`, { 'chip--tinted': category, 'chip--link': href }]} data-category={category}>
+  {label}
+</Tag>
+
+<style>
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-sunken);
+    color: var(--color-text);
+    font-size: var(--fs-xs);
+    line-height: 1.8;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .chip--md {
+    padding: 4px 12px;
+    font-size: var(--fs-sm);
+  }
+
+  .chip--tinted {
+    border-color: color-mix(in srgb, var(--category-color) 40%, white);
+    background: color-mix(in srgb, var(--category-color) 12%, white);
+  }
+
+  .chip--tinted::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: var(--category-color);
+  }
+
+  .chip--link:hover {
+    border-color: var(--category-color, var(--color-border-strong));
+    color: var(--color-text);
+  }
+</style>

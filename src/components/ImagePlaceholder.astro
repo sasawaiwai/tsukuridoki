@@ -1,0 +1,44 @@
+---
+// 画像の枠（phase1.5-design.md 5章）。画像は運営者が用意する。
+// src を渡せば画像を表示し、なければ単色のプレースホルダーを表示する
+interface Props {
+  src?: string;
+  alt: string;
+  ratio?: string; // 例：'4 / 3'
+  label?: string; // プレースホルダーに出す説明（推奨サイズなど）
+  loading?: 'lazy' | 'eager';
+}
+
+const { src, alt, ratio = '4 / 3', label, loading = 'lazy' } = Astro.props;
+---
+
+{
+  src ? (
+    <img class="image-frame" src={src} alt={alt} loading={loading} style={`aspect-ratio: ${ratio}`} />
+  ) : (
+    <div class="image-frame image-frame--placeholder" style={`aspect-ratio: ${ratio}`} role="img" aria-label={alt}>
+      {label && <span>{label}</span>}
+    </div>
+  )
+}
+
+<style>
+  .image-frame {
+    display: block;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+  }
+
+  .image-frame--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    border: 1px dashed var(--color-border-strong);
+    background: var(--color-surface-sunken);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+    text-align: center;
+  }
+</style>

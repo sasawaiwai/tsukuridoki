@@ -1,103 +1,108 @@
 ---
+// トップページ（仕様書40-1）
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import PeriodNav from '../components/PeriodNav.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import FairGrid from '../components/FairGrid.astro';
+import ProcessNav from '../components/ProcessNav.astro';
 import { SITE } from '../lib/site.ts';
+import { PERIOD_PAGES, PRINTERS_HREF } from '../lib/nav.ts';
+import { byPublishedDesc, cardBuilder } from '../lib/cards.ts';
+import { effectiveUntil, getStatus, isEndingSoon, isNextWeekend, isWithin7Days, todayJST } from '../lib/period.ts';
+import type { Fair } from '../lib/types.ts';
 
-// 主導線（仕様書40章）。リンク先は Phase 2 で作成する
-const navigation = [
-  '今から7日以内',
-  '次の週末に間に合う',
-  '1か月先でも使える',
-  '2か月先でも使える',
-  '3か月先でも使える',
-  '半年先でも使える',
-  '新着',
-  'もうすぐ終了',
-  '加工から探す',
-  '印刷所から探す',
-];
+const SECTION_LIMIT = 6;
+const today = todayJST();
+const { data, toCard } = cardBuilder(today);
+
+// 終了日が近い順（終了日不明は最後）
+const byUntilAsc = (a: Fair, b: Fair) => (effectiveUntil(a) ?? '9999-12-31').localeCompare(effectiveUntil(b) ?? '9999-12-31');
+
+const openFairs = data.fairs.filter((f) => getStatus(f, today) !== 'expired');
+const newCards = [...openFairs].sort(byPublishedDesc).slice(0, SECTION_LIMIT).map(toCard);
+const within7Cards = data.fairs.filter((f) => isWithin7Days(f, today)).sort(byUntilAsc).slice(0, SECTION_LIMIT).map(toCard);
+const endingSoonCards = data.fairs.filter((f) => isEndingSoon(f, today)).sort(byUntilAsc).slice(0, SECTION_LIMIT).map(toCard);
+const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
 ---
 
 <BaseLayout>
-  <section class="intro">
-    <p class="voices">
-      「次に作る本、どんな加工にしよう？」<br />
-      「初めての同人誌だから、お得に作りたい！」<br />
-      「突発本だけど、何かひと工夫したい！」
-    </p>
-    <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
-    <p>今から7日以内に使えるフェアから、数か月先まで使えるフェア、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
-    <p>眺めているだけで、次の本を作りたくなる。</p>
-    <h1>{SITE.name}<span>{SITE.tagline}</span></h1>
-  </section>
+  <Hero imageSrc={SITE.heroImage ?? undefined} />
 
-  <section>
-    <h2>フェアを探す</h2>
-    <ul class="nav-list">
-      {navigation.map((label) => (
-        <li>
-          {label}
-          <span class="soon">準備中</span>
-        </li>
-      ))}
-    </ul>
-  </section>
+  <div class="container top">
+    <section aria-label="時期・目的から探す">
+      <PeriodNav showNextWeekend={showNextWeekend} />
+    </section>
 
-  <p class="dev-note">
-    現在、サイトを準備中です。（開発用：<a href="/dojin/">判定確認用の仮一覧</a>）
-  </p>
+    <section>
+      <SectionHeader title="新着フェア" lead="最近はじまった、新しく掲載されたフェア" moreHref={PERIOD_PAGES.new.href} />
+      <FairGrid cards={newCards} />
+    </section>
+
+    <section>
+      <SectionHeader title="今から7日以内に使えるフェア" lead="突発本・近日入稿に" moreHref={PERIOD_PAGES.within7Days.href} />
+      <FairGrid cards={within7Cards} />
+    </section>
+
+    {
+      endingSoonCards.length > 0 && (
+        <section>
+          <SectionHeader title="もうすぐ終了" lead="使うなら今のうちに" moreHref={PERIOD_PAGES.endingSoon.href} />
+          <FairGrid cards={endingSoonCards} />
+        </section>
+      )
+    }
+
+    <section>
+      <SectionHeader id="process" title="加工から探す" lead="気になる加工から、次の本のアイデアを" />
+      <ProcessNav />
+    </section>
+
+    <section class="about">
+      <SectionHeader title="このサイトについて" />
+      <p class="about__voices">
+        「次に作る本、どんな加工にしよう？」<br />
+        「初めての同人誌だから、お得に作りたい！」<br />
+        「突発本だけど、何かひと工夫したい！」
+      </p>
+      <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
+      <p>今から7日以内に使えるフェアから、数か月先まで使えるフェア、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
+      <p>眺めているだけで、次の本を作りたくなる。</p>
+      <p class="about__name"><strong>{SITE.name}</strong>｜{SITE.tagline}</p>
+    </section>
+
+    <p class="printers-link"><a href={PRINTERS_HREF}>掲載中の印刷所を見る →</a></p>
+  </div>
 </BaseLayout>
 
 <style>
-  .intro {
-    padding: 8px 0 24px;
-  }
-
-  .voices {
-    font-size: 1.1rem;
-    font-weight: 700;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    margin: 24px 0 0;
-  }
-
-  h1 span {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--color-text);
-  }
-
-  .nav-list {
+  .top {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 8px;
-    padding: 0;
-    list-style: none;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-7);
+    padding-top: var(--space-5);
   }
 
-  .nav-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    background: var(--color-surface);
-    color: var(--color-muted);
+  .about {
+    display: grid;
+    gap: var(--space-3);
+    max-width: 760px;
   }
 
-  .soon {
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background: var(--color-border);
+  .about__voices {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: 1.9;
   }
 
-  .dev-note {
-    margin-top: 32px;
-    font-size: 0.85rem;
-    color: var(--color-muted);
+  .about__name {
+    margin-top: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .printers-link {
+    margin-top: calc(var(--space-5) * -1);
+    font-size: var(--fs-sm);
   }
 </style>

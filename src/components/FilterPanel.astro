@@ -1,0 +1,162 @@
+---
+// 検索ページの絞り込み（phase1.5-design.md 19章）。Phase 1.5 では見た目のみ。動作は Phase 2 で付ける
+// PC：左サイドバーとして常に表示／スマホ・タブレット：「絞り込み」ボタンで開閉
+import type { SiteData } from '../lib/types.ts';
+import { BENEFIT_LABELS, COLOR_MODE_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from '../lib/labels.ts';
+
+interface Props {
+  data: SiteData;
+}
+
+const { data } = Astro.props;
+
+const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; options: { value: string; label: string }[] }[] = [
+  {
+    legend: '時期',
+    name: 'period',
+    type: 'radio',
+    options: [
+      { value: '', label: '指定なし' },
+      { value: 'within-7-days', label: '今から7日以内' },
+      { value: '1month', label: '1か月先でも' },
+      { value: '2months', label: '2か月先でも' },
+      { value: '3months', label: '3か月先でも' },
+      { value: '6months', label: '半年先でも' },
+    ],
+  },
+  { legend: 'サイズ', name: 'size', type: 'checkbox', options: Object.entries(SIZE_LABELS).map(([value, label]) => ({ value, label })) },
+  { legend: '加工', name: 'process', type: 'checkbox', options: data.processes.map((p) => ({ value: p.process_id, label: p.name })) },
+  { legend: '印刷方式', name: 'printing', type: 'checkbox', options: Object.entries(PRINTING_METHOD_LABELS).map(([value, label]) => ({ value, label })) },
+  { legend: '色方式', name: 'color', type: 'checkbox', options: Object.entries(COLOR_MODE_LABELS).map(([value, label]) => ({ value, label })) },
+  { legend: '印刷所', name: 'printer', type: 'checkbox', options: data.printers.map((p) => ({ value: p.printer_id, label: p.name })) },
+  { legend: '特典', name: 'benefit', type: 'checkbox', options: Object.entries(BENEFIT_LABELS).map(([value, label]) => ({ value, label })) },
+];
+---
+
+<div class="filter" data-filter>
+  <button type="button" class="filter__toggle" aria-expanded="false" aria-controls="filter-panel" data-filter-toggle>
+    絞り込み
+  </button>
+
+  <form id="filter-panel" class="filter__panel" aria-label="絞り込み">
+    <p class="filter__notice">絞り込み機能は準備中です。</p>
+    {
+      groups.map((group) => (
+        <fieldset class="filter__group">
+          <legend>{group.legend}</legend>
+          <div class="filter__options">
+            {group.options.map((option) => (
+              <label>
+                <input type={group.type} name={group.name} value={option.value} checked={group.type === 'radio' && option.value === ''} />
+                {option.label}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      ))
+    }
+    <label class="filter__expired">
+      <input type="checkbox" name="include_expired" value="1" />
+      終了済みも表示
+    </label>
+  </form>
+</div>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-filter]')) {
+    const toggle = root.querySelector<HTMLButtonElement>('[data-filter-toggle]');
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      toggle.setAttribute('aria-expanded', String(open));
+      root.toggleAttribute('data-open', open);
+    });
+  }
+</script>
+
+<style>
+  .filter__toggle {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .filter__toggle::after {
+    content: ' ＋';
+  }
+
+  .filter__toggle[aria-expanded='true']::after {
+    content: ' －';
+  }
+
+  .filter__panel {
+    display: none;
+    margin-top: var(--space-3);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+  }
+
+  .filter[data-open] .filter__panel {
+    display: block;
+  }
+
+  .filter__notice {
+    margin-bottom: var(--space-3);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .filter__group {
+    margin: 0 0 var(--space-4);
+    padding: 0 0 var(--space-4);
+    border: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .filter__group legend {
+    margin-bottom: var(--space-2);
+    padding: 0;
+    font-size: var(--fs-sm);
+    font-weight: 700;
+  }
+
+  .filter__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+  }
+
+  .filter label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+  }
+
+  .filter input {
+    accent-color: var(--color-primary-strong);
+  }
+
+  @media (min-width: 1024px) {
+    .filter__toggle {
+      display: none;
+    }
+
+    .filter__panel {
+      display: block;
+      margin-top: 0;
+    }
+
+    .filter__options {
+      flex-direction: column;
+    }
+  }
+</style>

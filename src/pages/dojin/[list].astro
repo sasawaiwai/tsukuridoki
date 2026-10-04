@@ -1,0 +1,16 @@
+---
+// 時期別一覧の仮表示（Phase 2 で正式なページに置き換える）
+import ComingSoon from '../../components/ComingSoon.astro';
+import { PERIOD_PAGES } from '../../lib/nav.ts';
+
+export function getStaticPaths() {
+  return Object.values(PERIOD_PAGES).map((page) => ({
+    params: { list: page.href.split('/')[2] },
+    props: { title: page.label },
+  }));
+}
+
+const { title } = Astro.props;
+---
+
+<ComingSoon title={title} note="時期別のフェア一覧" />

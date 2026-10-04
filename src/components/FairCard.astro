@@ -1,0 +1,147 @@
+---
+// フェアカード（phase1.5-design.md 10〜14章）。画像は使わず、テキストと固定カラーだけで成立させる
+import type { CardModel } from '../lib/fair-display.ts';
+import StatusLabel from './StatusLabel.astro';
+import Chip from './Chip.astro';
+
+interface Props {
+  card: CardModel;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { card, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+---
+
+<article class="fair-card" data-category={card.category}>
+  <div class="fair-card__body">
+    {card.label && <div class="fair-card__label"><StatusLabel {...card.label} /></div>}
+    <Heading class="fair-card__name">
+      <a href={card.href}>{card.name}</a>
+    </Heading>
+    <p class="fair-card__printer">{card.printer}</p>
+    {card.benefit && <p class="fair-card__benefit">{card.benefit}</p>}
+    {
+      card.chips.length > 0 && (
+        <ul class="fair-card__chips" aria-label="加工・サイズ・印刷方式">
+          {card.chips.map((chip) => (
+            <li>
+              <Chip label={chip.label} category={chip.category} />
+            </li>
+          ))}
+          {card.hiddenChipCount > 0 && <li class="fair-card__more">+{card.hiddenChipCount}</li>}
+        </ul>
+      )
+    }
+    <p class="fair-card__deadline">
+      <span>{card.deadline}</span>
+      <span class="fair-card__arrow" aria-hidden="true">→</span>
+    </p>
+  </div>
+</article>
+
+<style>
+  .fair-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--category-color);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    transition: border-color 0.15s;
+  }
+
+  .fair-card:hover {
+    border-color: var(--color-border-strong);
+    border-top-color: var(--category-color);
+  }
+
+  .fair-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    flex: 1;
+    padding: var(--space-4) var(--space-4) var(--space-3);
+  }
+
+  .fair-card__label {
+    line-height: 1;
+  }
+
+  .fair-card__name {
+    font-size: var(--fs-lg);
+  }
+
+  .fair-card__name a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  /* カード全体をクリックできるようにする */
+  .fair-card__name a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+  }
+
+  .fair-card__name a:focus-visible {
+    outline: none;
+  }
+
+  .fair-card__name a:focus-visible::after {
+    outline: 2px solid var(--color-primary-strong);
+    outline-offset: 2px;
+  }
+
+  .fair-card__printer {
+    margin-top: calc(var(--space-1) * -1);
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  /* 何がお得か：最大2行、それ以上は省略 */
+  .fair-card__benefit {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .fair-card__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .fair-card__more {
+    align-self: center;
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .fair-card__deadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: auto;
+    padding-top: var(--space-3);
+    border-top: 1px dashed var(--color-border);
+    font-size: var(--fs-sm);
+  }
+
+  .fair-card__arrow {
+    color: var(--color-primary-strong);
+    font-weight: 700;
+  }
+</style>

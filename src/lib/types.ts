@@ -33,6 +33,7 @@ export interface Fair {
   source_url?: string | null;
 
   summary: string;
+  benefit_summary?: string | null;
 
   start_date?: DateString | null;
   end_date?: DateString | null;

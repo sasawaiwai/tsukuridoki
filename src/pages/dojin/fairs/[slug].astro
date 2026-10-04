@@ -1,0 +1,13 @@
+---
+// 個別フェアページの仮表示（Phase 2 で正式なページに置き換える）
+import ComingSoon from '../../../components/ComingSoon.astro';
+import { loadSiteData } from '../../../lib/data.ts';
+
+export function getStaticPaths() {
+  return loadSiteData().fairs.map((fair) => ({ params: { slug: fair.slug }, props: { name: fair.fair_name } }));
+}
+
+const { name } = Astro.props;
+---
+
+<ComingSoon title={name} note="フェアの詳細ページ" />

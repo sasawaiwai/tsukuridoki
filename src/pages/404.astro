@@ -1,9 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
 ---
 
 <BaseLayout title="ページが見つかりません">
-  <h1>ページが見つかりません</h1>
-  <p>お探しのページは移動または削除された可能性があります。</p>
-  <p><a href="/">トップページへ戻る</a></p>
+  <div class="container not-found">
+    <h1>ページが見つかりません</h1>
+    <p>お探しのページは移動または削除された可能性があります。</p>
+    <Button href="/" variant="secondary">トップページへ戻る</Button>
+  </div>
 </BaseLayout>
+
+<style>
+  .not-found {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-4);
+    padding-block: var(--space-7);
+  }
+</style>

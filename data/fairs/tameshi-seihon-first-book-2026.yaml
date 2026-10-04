@@ -11,6 +11,7 @@ source_type: official_campaign
 verification_status: verified
 
 summary: 初めて注文する人を対象に、全セットが20%割引になるキャンペーン。
+benefit_summary: 初めての注文なら全セット20%OFF
 
 start_date: 2026-10-01
 start_date_text: "2026年10月1日"

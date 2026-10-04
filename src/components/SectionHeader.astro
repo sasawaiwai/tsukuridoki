@@ -1,0 +1,49 @@
+---
+// セクション見出し＋「もっと見る →」
+interface Props {
+  title: string;
+  lead?: string;
+  moreHref?: string;
+  moreLabel?: string;
+  id?: string;
+}
+
+const { title, lead, moreHref, moreLabel = 'もっと見る', id } = Astro.props;
+---
+
+<div class="section-header">
+  <div>
+    <h2 id={id}>{title}</h2>
+    {lead && <p class="section-header__lead">{lead}</p>}
+  </div>
+  {moreHref && <a class="section-header__more" href={moreHref}>{moreLabel} →</a>}
+</div>
+
+<style>
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-3);
+    border-bottom: 2px solid var(--color-text);
+  }
+
+  .section-header__lead {
+    margin-top: var(--space-1);
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .section-header__more {
+    flex-shrink: 0;
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .section-header__more:hover {
+    text-decoration: underline;
+  }
+</style>
