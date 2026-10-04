@@ -6,7 +6,7 @@ import FairGrid from '../../../components/FairGrid.astro';
 import StatusLabel from '../../../components/StatusLabel.astro';
 import Chip from '../../../components/Chip.astro';
 import Button from '../../../components/Button.astro';
-import ProcessNav from '../../../components/ProcessNav.astro';
+import PopularProcesses from '../../../components/PopularProcesses.astro';
 import PeriodNav from '../../../components/PeriodNav.astro';
 import ImagePlaceholder from '../../../components/ImagePlaceholder.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
@@ -147,9 +147,9 @@ const categories = [
         <Chip label="オンデマンド" />
         <Chip label="RGB対応" />
       </div>
-      <h3 class="guide__sub">加工から探す（リンク・大きめ）</h3>
-      <ProcessNav />
     </section>
+
+    <PopularProcesses id="popular-sample" />
 
     <section>
       <SectionHeader title="ボタン" />
@@ -178,8 +178,8 @@ const categories = [
 
     <section>
       <SectionHeader title="画像プレースホルダー" />
+      <p class="muted">ヒーロー画像は四角い枠ではなく、トップページ右上に背景へ溶け込む形で表示します（2:1・推奨2400×1200px）。</p>
       <div class="images">
-        <ImagePlaceholder alt="ヒーロー画像" ratio="4 / 3" label="ヒーロー画像（4:3・推奨1600×1200px）" />
         <ImagePlaceholder alt="OGP画像" ratio="1200 / 630" label="OGP画像（1200×630px）" />
       </div>
     </section>

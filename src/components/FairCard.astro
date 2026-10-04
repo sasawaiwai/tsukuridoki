@@ -1,8 +1,10 @@
 ---
-// フェアカード（phase1.5-design.md 10〜14章）。画像は使わず、テキストと固定カラーだけで成立させる
+// フェアカード（phase1.5-design.md 10〜14章・参考画像）
+// 画像は使わず、上部のカテゴリ色の帯・テキスト・チップだけで成立させる
 import type { CardModel } from '../lib/fair-display.ts';
 import StatusLabel from './StatusLabel.astro';
 import Chip from './Chip.astro';
+import Icon from './Icon.astro';
 
 interface Props {
   card: CardModel;
@@ -14,8 +16,10 @@ const Heading = headingLevel;
 ---
 
 <article class="fair-card" data-category={card.category}>
+  <div class="fair-card__band">
+    {card.label && <StatusLabel {...card.label} />}
+  </div>
   <div class="fair-card__body">
-    {card.label && <div class="fair-card__label"><StatusLabel {...card.label} /></div>}
     <Heading class="fair-card__name">
       <a href={card.href}>{card.name}</a>
     </Heading>
@@ -34,8 +38,9 @@ const Heading = headingLevel;
       )
     }
     <p class="fair-card__deadline">
-      <span>{card.deadline}</span>
-      <span class="fair-card__arrow" aria-hidden="true">→</span>
+      <Icon name="calendar" size={16} />
+      <span class="fair-card__deadline-text">{card.deadline}</span>
+      <span class="fair-card__arrow" aria-hidden="true"><Icon name="arrow-right" size={14} /></span>
     </p>
   </div>
 </article>
@@ -46,17 +51,26 @@ const Heading = headingLevel;
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     border: 1px solid var(--color-border);
-    border-top: 4px solid var(--category-color);
     border-radius: var(--radius);
     background: var(--color-surface);
     box-shadow: var(--shadow-card);
-    transition: border-color 0.15s;
+    transition: border-color 0.15s, box-shadow 0.15s;
   }
 
   .fair-card:hover {
-    border-color: var(--color-border-strong);
-    border-top-color: var(--category-color);
+    border-color: color-mix(in srgb, var(--category-color) 50%, var(--color-border));
+    box-shadow: 0 4px 12px rgba(41, 37, 34, 0.08);
+  }
+
+  /* カテゴリ色の帯（画像の代わり）。状態ラベルはここに置く */
+  .fair-card__band {
+    display: flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 4px var(--space-3);
+    background: color-mix(in srgb, var(--category-color) 32%, white);
   }
 
   .fair-card__body {
@@ -64,15 +78,12 @@ const Heading = headingLevel;
     flex-direction: column;
     gap: var(--space-2);
     flex: 1;
-    padding: var(--space-4) var(--space-4) var(--space-3);
-  }
-
-  .fair-card__label {
-    line-height: 1;
+    padding: var(--space-3) var(--space-4) var(--space-3);
   }
 
   .fair-card__name {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-base);
+    line-height: 1.5;
   }
 
   .fair-card__name a {
@@ -85,7 +96,6 @@ const Heading = headingLevel;
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: var(--radius);
   }
 
   .fair-card__name a:focus-visible {
@@ -94,24 +104,26 @@ const Heading = headingLevel;
 
   .fair-card__name a:focus-visible::after {
     outline: 2px solid var(--color-primary-strong);
-    outline-offset: 2px;
+    outline-offset: -2px;
+    border-radius: var(--radius);
   }
 
   .fair-card__printer {
     margin-top: calc(var(--space-1) * -1);
     color: var(--color-text-muted);
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
   }
 
-  /* 何がお得か：最大2行、それ以上は省略 */
+  /* 何がお得か：カテゴリ色の文字で、最大2行。それ以上は省略 */
   .fair-card__benefit {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     overflow: hidden;
+    color: var(--category-text);
     font-weight: 700;
-    line-height: 1.6;
+    line-height: 1.55;
   }
 
   .fair-card__chips {
@@ -131,17 +143,32 @@ const Heading = headingLevel;
 
   .fair-card__deadline {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: var(--space-2);
     margin-top: auto;
     padding-top: var(--space-3);
-    border-top: 1px dashed var(--color-border);
-    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .fair-card__deadline-text {
+    flex: 1;
+    color: var(--color-text);
   }
 
   .fair-card__arrow {
-    color: var(--color-primary-strong);
-    font-weight: 700;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 50%;
+    color: var(--color-text);
+  }
+
+  .fair-card:hover .fair-card__arrow {
+    border-color: var(--color-primary-strong);
+    background: var(--color-primary-strong);
+    color: #fff;
   }
 </style>

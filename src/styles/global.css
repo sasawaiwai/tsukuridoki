@@ -24,6 +24,15 @@
   --cat-deal: #e2502c;
   --cat-other: #a39a92;
 
+  /* カテゴリ色の文字用（白地でコントラスト比4.5以上） */
+  --cat-foil-text: #8a6116;
+  --cat-paper-text: #6a4a98;
+  --cat-rgb-text: #2a63a3;
+  --cat-surface-text: #16706f;
+  --cat-craft-text: #4a7531;
+  --cat-deal-text: #c2401e;
+  --cat-other-text: #6b635c;
+
   /* 状態ラベル */
   --label-update: #2b62a3;
   --label-ended: #6b635c;
@@ -86,7 +95,12 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg);
+  /* 生成りの紙に、ほんのり暖かい光がさす程度の背景 */
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(240, 90, 50, 0.07), transparent 70%),
+    radial-gradient(900px 500px at 100% 0%, rgba(184, 134, 43, 0.06), transparent 70%),
+    var(--color-bg);
+  background-repeat: no-repeat;
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--fs-base);
@@ -160,10 +174,10 @@ img {
 }
 
 /* カード上部の色の割り当て */
-[data-category='foil'] { --category-color: var(--cat-foil); }
-[data-category='paper'] { --category-color: var(--cat-paper); }
-[data-category='rgb'] { --category-color: var(--cat-rgb); }
-[data-category='surface'] { --category-color: var(--cat-surface); }
-[data-category='craft'] { --category-color: var(--cat-craft); }
-[data-category='deal'] { --category-color: var(--cat-deal); }
-[data-category='other'] { --category-color: var(--cat-other); }
+[data-category='foil'] { --category-color: var(--cat-foil); --category-text: var(--cat-foil-text); }
+[data-category='paper'] { --category-color: var(--cat-paper); --category-text: var(--cat-paper-text); }
+[data-category='rgb'] { --category-color: var(--cat-rgb); --category-text: var(--cat-rgb-text); }
+[data-category='surface'] { --category-color: var(--cat-surface); --category-text: var(--cat-surface-text); }
+[data-category='craft'] { --category-color: var(--cat-craft); --category-text: var(--cat-craft-text); }
+[data-category='deal'] { --category-color: var(--cat-deal); --category-text: var(--cat-deal-text); }
+[data-category='other'] { --category-color: var(--cat-other); --category-text: var(--cat-other-text); }

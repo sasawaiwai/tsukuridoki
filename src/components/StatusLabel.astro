@@ -15,7 +15,7 @@ const { kind, text } = Astro.props;
 <style>
   .status-label {
     display: inline-block;
-    padding: 1px 8px;
+    padding: 0 8px;
     border: 1px solid transparent;
     border-radius: var(--radius-sm);
     font-size: var(--fs-xs);
@@ -36,9 +36,8 @@ const { kind, text } = Astro.props;
   }
 
   .status-label--new {
-    border-color: var(--color-primary-strong);
-    color: var(--color-primary-strong);
-    background: var(--color-surface);
+    background: var(--color-primary-strong);
+    color: #fff;
   }
 
   .status-label--soon {

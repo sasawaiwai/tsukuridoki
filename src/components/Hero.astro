@@ -1,42 +1,82 @@
 ---
-// ヒーロー（phase1.5-design.md 6章）。PC：左コピー・右画像／スマホ：縦並び
-import ImagePlaceholder from './ImagePlaceholder.astro';
-
+// ヒーロー（phase1.5-design.md 6章・参考画像）
+// 画像は独立した四角い枠にせず、右側に置いて周囲を生成りの背景へ溶け込ませる装飾ビジュアルにする。
+// 画像は運営者が用意する（推奨：2400×1200px・2:1、透過PNG/WebP。モチーフは右側2/3に寄せる）
 interface Props {
   imageSrc?: string;
+  imageAlt?: string;
 }
 
-const { imageSrc } = Astro.props;
+const { imageSrc, imageAlt = '' } = Astro.props;
 ---
 
 <section class="hero">
-  <div class="container hero__inner">
-    <div class="hero__copy">
-      <h1 class="hero__title"><span>本が作りたくなる、</span><span>フェアが見つかる。</span></h1>
-      <p class="hero__sub">同人誌印刷所のフェアを、もっと自由に、もっと楽しく。</p>
-    </div>
-    <div class="hero__image">
-      <ImagePlaceholder
-        src={imageSrc}
-        alt="ツクリドキ！のイメージ画像"
-        ratio="4 / 3"
-        label="ヒーロー画像（4:3・推奨1600×1200px）"
-        loading="eager"
-      />
-    </div>
+  <div class="hero__visual" aria-hidden={imageAlt ? undefined : 'true'}>
+    {
+      imageSrc ? (
+        <img src={imageSrc} alt={imageAlt} loading="eager" decoding="async" />
+      ) : (
+        <div class="hero__placeholder">
+          <span>ヒーロー画像（2:1・推奨2400×1200px）</span>
+        </div>
+      )
+    }
+  </div>
+
+  <div class="container hero__copy">
+    <h1 class="hero__title">
+      <span>本が作りたくなる、</span>
+      <span><em>フェア</em>が見つかる。</span>
+    </h1>
+    <p class="hero__sub">同人誌印刷所のフェアを、<wbr />もっと自由に、<wbr />もっと楽しく。</p>
   </div>
 </section>
 
 <style>
   .hero {
-    padding-block: var(--space-6) var(--space-7);
-    border-bottom: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+    margin-top: -64px; /* ヘッダーの背後まで背景をつなげる */
+    padding-top: 64px;
   }
 
-  .hero__inner {
-    display: grid;
-    gap: var(--space-5);
-    align-items: center;
+  /* 装飾ビジュアル：左と下へ向かって背景に溶け込ませる */
+  .hero__visual {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 78%;
+    /* 中心から外側へ、四方とも生成りの背景に溶け込ませる */
+    -webkit-mask-image: radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .hero__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  /* 画像が届くまでの仮表示：枠線を付けず、背景になじむ淡い色面だけを置く */
+  .hero__placeholder {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    padding: var(--space-4) var(--gutter);
+    background:
+      radial-gradient(60% 70% at 70% 45%, rgba(240, 90, 50, 0.16), transparent 70%),
+      radial-gradient(40% 50% at 90% 70%, rgba(123, 94, 167, 0.12), transparent 70%),
+      radial-gradient(35% 45% at 55% 75%, rgba(31, 138, 138, 0.1), transparent 70%);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .hero__copy {
+    position: relative;
+    padding-block: var(--space-6) var(--space-6);
   }
 
   .hero__title {
@@ -45,25 +85,51 @@ const { imageSrc } = Astro.props;
     letter-spacing: 0.01em;
   }
 
-  /* フレーズの途中で改行しない（1行ずつ表示） */
+  /* フレーズごとに1行（途中で改行しない） */
   .hero__title span {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+  }
+
+  .hero__title em {
+    color: var(--color-primary);
+    font-style: normal;
   }
 
   .hero__sub {
-    margin-top: var(--space-4);
-    color: var(--color-text-muted);
-    font-size: var(--fs-lg);
+    margin-top: var(--space-3);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    word-break: keep-all;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      margin-top: -76px;
+      padding-top: 76px;
+    }
+
+    .hero__visual {
+      width: 62%;
+      opacity: 1;
+    }
+
+    .hero__copy {
+      padding-block: var(--space-7) var(--space-7);
+    }
+
+    .hero__sub {
+      font-size: var(--fs-lg);
+    }
   }
 
   @media (min-width: 1024px) {
-    .hero {
-      padding-block: var(--space-8);
-    }
-
-    .hero__inner {
-      grid-template-columns: 1.1fr 1fr;
-      gap: var(--space-7);
+    .hero__copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 340px;
+      padding-block: var(--space-6) var(--space-8);
     }
   }
 </style>

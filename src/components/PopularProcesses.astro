@@ -1,0 +1,111 @@
+---
+// 人気の加工から探す（参考画像）。印章のような丸い見本に、一文字だけを置く
+// アイコン画像を描き起こさず、文字と色だけで「加工見本」の雰囲気を出す
+import { POPULAR_PROCESS_LINKS, SEARCH_HREF } from '../lib/nav.ts';
+import SectionHeader from './SectionHeader.astro';
+
+interface Props {
+  id?: string;
+}
+
+const { id } = Astro.props;
+---
+
+<section class="popular" aria-labelledby={id}>
+  <SectionHeader id={id} title="人気の加工から探す" moreHref={SEARCH_HREF} />
+  <ul class="popular__list">
+    {
+      POPULAR_PROCESS_LINKS.map((link) => (
+        <li>
+          <a href={link.href} data-category={link.category}>
+            <span class="popular__mark" aria-hidden="true">
+              {link.glyph}
+            </span>
+            <span class="popular__label">{link.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  /* スマホ：横スクロール（4つ半ほど見せて、続きがあることを伝える）／タブレット以上：1行に並べる */
+  .popular__list {
+    display: flex;
+    gap: var(--space-1);
+    margin: 0 calc(var(--gutter) * -1);
+    padding: 0 var(--gutter) var(--space-2);
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    list-style: none;
+  }
+
+  .popular__list li {
+    flex: 0 0 84px;
+    scroll-snap-align: start;
+  }
+
+  @media (min-width: 768px) {
+    .popular__list {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+      gap: var(--space-2);
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+    }
+  }
+
+  .popular__list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-1);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .popular__list a:hover {
+    border-color: var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .popular__mark {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid color-mix(in srgb, var(--category-color) 55%, white);
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--category-color) 16%, white);
+    color: var(--category-text);
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .popular__label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1024px) {
+    .popular__mark {
+      width: 56px;
+      height: 56px;
+      font-size: 1.2rem;
+    }
+
+    .popular__label {
+      font-size: var(--fs-sm);
+    }
+  }
+</style>
