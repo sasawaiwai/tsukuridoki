@@ -1,0 +1,90 @@
+---
+// 検索・一覧ページの基本レイアウト（phase1.5-design.md 19章）。絞り込み・並び替えの動作は Phase 2 で付ける
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FilterPanel from '../../../components/FilterPanel.astro';
+import FairGrid from '../../../components/FairGrid.astro';
+import { byPublishedDesc, cardBuilder } from '../../../lib/cards.ts';
+import { getStatus, todayJST } from '../../../lib/period.ts';
+
+const today = todayJST();
+const { data, toCard } = cardBuilder(today);
+const cards = data.fairs
+  .filter((f) => getStatus(f, today) !== 'expired')
+  .sort(byPublishedDesc)
+  .map(toCard);
+---
+
+<BaseLayout title="フェアを検索">
+  <div class="container search">
+    <h1 class="search__title">フェアを検索</h1>
+
+    <div class="search__layout">
+      <aside class="search__filter">
+        <FilterPanel data={data} />
+      </aside>
+
+      <section class="search__results" aria-label="検索結果">
+        <div class="search__bar">
+          <p><strong>{cards.length}</strong>件のフェア</p>
+          <label>
+            <span class="visually-hidden">並び順</span>
+            <select name="sort">
+              <option value="new">新着順</option>
+              <option value="ending">終了が近い順</option>
+            </select>
+          </label>
+        </div>
+        <FairGrid cards={cards} layout="search" />
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .search {
+    padding-top: var(--space-5);
+  }
+
+  .search__title {
+    margin-bottom: var(--space-4);
+  }
+
+  .search__layout {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .search__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    font-size: var(--fs-sm);
+  }
+
+  .search__bar select {
+    min-height: 36px;
+    padding: 4px 8px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+  }
+
+  @media (min-width: 1024px) {
+    .search__layout {
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: var(--space-6);
+      align-items: start;
+    }
+
+    .search__filter {
+      position: sticky;
+      top: var(--space-4);
+      max-height: calc(100vh - var(--space-6));
+      overflow-y: auto;
+    }
+  }
+</style>

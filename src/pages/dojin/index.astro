@@ -55,6 +55,7 @@ const mark = (value: boolean) => (value ? '○' : '');
 ---
 
 <BaseLayout title="判定確認用の仮一覧">
+  <div class="container dev-table">
   <h1>判定確認用の仮一覧</h1>
   <p class="note">
     開発中の動作確認ページです。掲載しているのは<strong>すべて架空のサンプルデータ</strong>です。<br />
@@ -101,16 +102,21 @@ const mark = (value: boolean) => (value ? '○' : '');
       </tbody>
     </table>
   </div>
+  </div>
 </BaseLayout>
 
 <style>
+  .dev-table {
+    padding-top: var(--space-5);
+  }
+
   h1 {
     font-size: 1.3rem;
   }
 
   .note {
     font-size: 0.85rem;
-    color: var(--color-muted);
+    color: var(--color-text-muted);
   }
 
   .table-wrap {
@@ -146,7 +152,7 @@ const mark = (value: boolean) => (value ? '○' : '');
 
   .printer {
     display: block;
-    color: var(--color-muted);
+    color: var(--color-text-muted);
   }
 
   .chips {
@@ -167,7 +173,7 @@ const mark = (value: boolean) => (value ? '○' : '');
     margin-left: 6px;
     padding: 0 6px;
     border-radius: 4px;
-    background: var(--color-accent);
+    background: var(--color-primary-strong);
     color: #fff;
     font-size: 0.65rem;
   }
@@ -179,7 +185,7 @@ const mark = (value: boolean) => (value ? '○' : '');
 
   .mark {
     text-align: center;
-    color: var(--color-accent);
+    color: var(--color-primary-strong);
     font-weight: 700;
   }
 </style>

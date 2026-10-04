@@ -1,0 +1,34 @@
+---
+// まだ作っていないページの仮表示（仕様書52-6）
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from './Button.astro';
+
+interface Props {
+  title: string;
+  note?: string;
+}
+
+const { title, note } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <div class="container coming-soon">
+    <h1>{title}</h1>
+    {note && <p class="coming-soon__note">{note}</p>}
+    <p>このページは準備中です。</p>
+    <Button href="/" variant="secondary">トップページへ戻る</Button>
+  </div>
+</BaseLayout>
+
+<style>
+  .coming-soon {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-4);
+    padding-block: var(--space-7);
+  }
+
+  .coming-soon__note {
+    color: var(--color-text-muted);
+  }
+</style>

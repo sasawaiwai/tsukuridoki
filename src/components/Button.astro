@@ -1,0 +1,74 @@
+---
+// ボタン。href があればリンクとして描画する
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  type?: 'button' | 'submit';
+  [key: string]: unknown;
+}
+
+const { href, variant = 'primary', type = 'button', ...rest } = Astro.props;
+---
+
+{
+  href ? (
+    <a href={href} class={`button button--${variant}`} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button type={type} class={`button button--${variant}`} {...rest}>
+      <slot />
+    </button>
+  )
+}
+
+<style>
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    min-height: 40px;
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    font: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button--primary {
+    background: var(--color-primary-strong);
+    color: #fff;
+  }
+
+  .button--primary:hover {
+    background: #a8361a;
+    color: #fff;
+  }
+
+  .button--secondary {
+    border-color: var(--color-border-strong);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+
+  .button--secondary:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+  }
+
+  .button--ghost {
+    background: transparent;
+    color: var(--color-primary-strong);
+    padding-inline: 4px;
+  }
+
+  .button--ghost:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+  }
+</style>

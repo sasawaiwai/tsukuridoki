@@ -1,0 +1,169 @@
+/* ツクリドキ！ デザイントークンと基本スタイル（phase1.5-design.md・仕様書52章） */
+
+:root {
+  /* 基本色：印刷見本帳タイプ */
+  --color-bg: #fbf7f1;
+  --color-surface: #ffffff;
+  --color-surface-sunken: #f4eee6;
+  --color-text: #292522;
+  --color-text-muted: #756d66;
+  --color-border: #e7ddd3;
+  --color-border-strong: #d6c9bc;
+
+  /* ブランド色：#f05a32 は色帯・大見出し・装飾用。文字・ボタンは --color-primary-strong（コントラスト比5.2） */
+  --color-primary: #f05a32;
+  --color-primary-dark: #d94824;
+  --color-primary-strong: #c2401e;
+
+  /* カード上部の色（52-3） */
+  --cat-foil: #b8862b;
+  --cat-paper: #7b5ea7;
+  --cat-rgb: #2f6fb5;
+  --cat-surface: #1f8a8a;
+  --cat-craft: #8db36f;
+  --cat-deal: #e2502c;
+  --cat-other: #a39a92;
+
+  /* 状態ラベル */
+  --label-update: #2b62a3;
+  --label-ended: #6b635c;
+
+  /* 文字 */
+  --font-sans: system-ui, -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI',
+    Meiryo, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-hero: clamp(2rem, 4.5vw + 0.5rem, 3.5rem);
+  --lh-tight: 1.35;
+  --lh-base: 1.8;
+
+  /* 余白 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* レイアウト */
+  --content-max: 1320px;
+  --gutter: 16px;
+
+  /* 角丸・影：控えめに */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --shadow-card: 0 1px 2px rgba(41, 37, 34, 0.06);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: var(--lh-tight);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-primary-strong);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-strong);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 横幅いっぱいのセクションの内側 */
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+/* カード上部の色の割り当て */
+[data-category='foil'] { --category-color: var(--cat-foil); }
+[data-category='paper'] { --category-color: var(--cat-paper); }
+[data-category='rgb'] { --category-color: var(--cat-rgb); }
+[data-category='surface'] { --category-color: var(--cat-surface); }
+[data-category='craft'] { --category-color: var(--cat-craft); }
+[data-category='deal'] { --category-color: var(--cat-deal); }
+[data-category='other'] { --category-color: var(--cat-other); }

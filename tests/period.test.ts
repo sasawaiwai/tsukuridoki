@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import type { Fair } from '../src/lib/types.ts';
 import {
   addMonths,
+  cardLabel,
   effectiveFrom,
   effectiveUntil,
   endingLabel,
@@ -122,12 +123,26 @@ test('次の週末に間に合う：締切が明記されている場合のみ',
   assert.equal(isNextWeekend(fair({ start_date: '2026-09-01', end_date: '2026-10-31' }), TODAY), false); // 簡易判定しない
 });
 
-test('NEW・UPDATE：1日目から14日目まで', () => {
+test('NEW・UPDATE：1日目から7日目まで', () => {
   const f = fair({ published_at: '2026-10-01', updated_at: '2026-10-01' });
   assert.equal(isNew(f, '2026-10-01'), true); // 1日目
-  assert.equal(isNew(f, '2026-10-14'), true); // 14日目
-  assert.equal(isNew(f, '2026-10-15'), false); // 15日目
-  assert.equal(isUpdated(f, '2026-10-14'), true);
-  assert.equal(isUpdated(f, '2026-10-15'), false);
+  assert.equal(isNew(f, '2026-10-07'), true); // 7日目
+  assert.equal(isNew(f, '2026-10-08'), false); // 8日目
+  assert.equal(isUpdated(f, '2026-10-07'), true);
+  assert.equal(isUpdated(f, '2026-10-08'), false);
   assert.equal(isUpdated(fair({}), TODAY), false); // 更新なし
+});
+
+test('カードの状態ラベル：1個だけ・優先順位どおり', () => {
+  const label = (overrides: Partial<Fair>) => cardLabel(fair({ start_date: '2026-09-01', ...overrides }), TODAY)?.text ?? null;
+  const fresh = { published_at: '2026-10-03', updated_at: '2026-10-03' }; // NEWかつUPDATE
+  assert.equal(label({ ...fresh, end_date: '2026-10-04' }), '本日終了');
+  assert.equal(label({ ...fresh, end_date: '2026-10-05' }), '明日終了');
+  assert.equal(label({ ...fresh, end_date: '2026-10-07' }), 'あと3日');
+  assert.equal(label({ ...fresh, end_date: '2026-10-08' }), 'UPDATE'); // あと4日よりUPDATE
+  assert.equal(label({ published_at: '2026-10-03', end_date: '2026-10-08' }), 'NEW'); // あと4日よりNEW
+  assert.equal(label({ published_at: '2026-09-01', end_date: '2026-10-11' }), 'あと7日');
+  assert.equal(label({ published_at: '2026-09-01', end_date: '2026-10-12' }), null);
+  assert.equal(label({ published_at: '2026-09-01' }), null); // なくなり次第終了
+  assert.equal(label({ end_date: '2026-10-03' }), '終了');
 });

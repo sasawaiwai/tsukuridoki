@@ -1,0 +1,67 @@
+---
+// フェアカードの並び（仕様書52-5）
+// layout="top"：スマホ1列／タブレット2列／PC3列
+// layout="search"：スマホ1列／タブレット2列／PC2列／1280px以上3列
+import type { CardModel } from '../lib/fair-display.ts';
+import FairCard from './FairCard.astro';
+
+interface Props {
+  cards: CardModel[];
+  layout?: 'top' | 'search';
+  emptyText?: string;
+}
+
+const { cards, layout = 'top', emptyText = '現在、該当するフェアはありません。' } = Astro.props;
+---
+
+{
+  cards.length > 0 ? (
+    <ul class={`fair-grid fair-grid--${layout}`}>
+      {cards.map((card) => (
+        <li>
+          <FairCard card={card} />
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="fair-grid__empty">{emptyText}</p>
+  )
+}
+
+<style>
+  .fair-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+    .fair-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fair-grid--top {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-5);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .fair-grid--search {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .fair-grid__empty {
+    padding: var(--space-5);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius);
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+</style>

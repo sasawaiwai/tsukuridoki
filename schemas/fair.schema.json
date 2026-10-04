@@ -42,6 +42,7 @@
     "source_url": { "type": ["string", "null"], "format": "uri" },
 
     "summary": { "type": "string", "minLength": 1 },
+    "benefit_summary": { "type": ["string", "null"], "minLength": 1 },
 
     "start_date": { "$ref": "#/definitions/dateOrNull" },
     "end_date": { "$ref": "#/definitions/dateOrNull" },

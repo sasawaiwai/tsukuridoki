@@ -1,0 +1,92 @@
+---
+// フッター（phase1.5-design.md 18章）
+import { SITE } from '../lib/site.ts';
+import { FOOTER_LINKS } from '../lib/nav.ts';
+import pkg from '../../package.json';
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <a href="/" class="site-footer__logo">{SITE.name}</a>
+      <p class="site-footer__tagline">{SITE.tagline}</p>
+    </div>
+    <nav aria-label="サイト情報">
+      <ul>
+        {
+          FOOTER_LINKS.map((link) => (
+            <li>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+  <div class="container site-footer__bottom">
+    <small>© {SITE.name}</small>
+    <small>v{pkg.version}</small>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-8);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+    font-size: var(--fs-sm);
+  }
+
+  .site-footer__inner {
+    display: grid;
+    gap: var(--space-5);
+    padding-block: var(--space-6) var(--space-5);
+  }
+
+  .site-footer__logo {
+    color: var(--color-primary);
+    font-size: var(--fs-lg);
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .site-footer__tagline {
+    margin-top: var(--space-1);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .site-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-footer ul a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .site-footer ul a:hover {
+    color: var(--color-primary-strong);
+    text-decoration: underline;
+  }
+
+  .site-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--space-3);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 1024px) {
+    .site-footer__inner {
+      grid-template-columns: 1fr auto;
+      align-items: start;
+    }
+  }
+</style>

@@ -7,7 +7,7 @@ import type { DateString, Fair } from './types.ts';
 export type FairStatus = 'upcoming' | 'active' | 'expired' | 'unknown';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
-const NEW_BADGE_DAYS = 14;
+const BADGE_DAYS = 7;
 const WITHIN_DAYS = 7;
 const ENDING_SOON_DAYS = 7;
 
@@ -132,15 +132,32 @@ export function isNextWeekend(fair: Fair, today: DateString): boolean {
 function withinBadgeDays(date: DateString | null | undefined, today: DateString): boolean {
   if (!date) return false;
   const days = diffDays(date, today);
-  return days >= 0 && days < NEW_BADGE_DAYS;
+  return days >= 0 && days < BADGE_DAYS;
 }
 
-/** NEW表示（36章）：掲載日を1日目として14日目まで */
+/** NEW表示（36章）：掲載日を1日目として7日目まで */
 export function isNew(fair: Fair, today: DateString): boolean {
   return withinBadgeDays(fair.published_at, today);
 }
 
-/** UPDATE表示（37章）：更新日を1日目として14日目まで */
+/** UPDATE表示（37章）：更新日を1日目として7日目まで */
 export function isUpdated(fair: Fair, today: DateString): boolean {
   return withinBadgeDays(fair.updated_at, today);
+}
+
+export type CardLabelKind = 'urgent' | 'update' | 'new' | 'soon' | 'ended';
+
+/**
+ * カードの状態ラベル（52-2）。1個だけ返す。
+ * 本日終了 → 明日終了 → あと2〜3日 → UPDATE → NEW → あと4〜7日 → なし
+ */
+export function cardLabel(fair: Fair, today: DateString): { kind: CardLabelKind; text: string } | null {
+  if (getStatus(fair, today) === 'expired') return { kind: 'ended', text: '終了' };
+  const until = effectiveUntil(fair);
+  const daysLeft = until === null ? null : diffDays(today, until);
+  if (daysLeft !== null && daysLeft <= 3) return { kind: 'urgent', text: endingLabel(fair, today)! };
+  if (isUpdated(fair, today)) return { kind: 'update', text: 'UPDATE' };
+  if (isNew(fair, today)) return { kind: 'new', text: 'NEW' };
+  if (daysLeft !== null && daysLeft <= ENDING_SOON_DAYS) return { kind: 'soon', text: endingLabel(fair, today)! };
+  return null;
 }

@@ -1,0 +1,174 @@
+---
+// ヘッダー（phase1.5-design.md 17章）。常にコンパクトに
+// PC：ロゴ＋ナビ＋検索／スマホ：ロゴ＋検索＋メニュー
+import { SITE } from '../lib/site.ts';
+import { HEADER_LINKS, SEARCH_HREF } from '../lib/nav.ts';
+
+const current = Astro.url.pathname;
+const isCurrent = (href: string) => (href === '/' ? current === '/' : current.startsWith(href));
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__logo">{SITE.name}</a>
+
+    <nav class="site-header__nav" aria-label="メインメニュー">
+      <ul>
+        {
+          HEADER_LINKS.map((link) => (
+            <li>
+              <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <a href={SEARCH_HREF} class="site-header__search" aria-label="フェアを検索">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+      <span class="site-header__search-text">検索</span>
+    </a>
+
+    <details class="site-header__menu">
+      <summary>メニュー</summary>
+      <nav aria-label="メニュー">
+        <ul>
+          {
+            HEADER_LINKS.map((link) => (
+              <li>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: 56px;
+  }
+
+  .site-header__logo {
+    margin-right: auto;
+    color: var(--color-primary);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  .site-header__logo:hover {
+    color: var(--color-primary-dark);
+  }
+
+  .site-header__nav {
+    display: none;
+  }
+
+  .site-header__nav ul,
+  .site-header__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-header__nav ul {
+    display: flex;
+    gap: var(--space-5);
+  }
+
+  .site-header__nav a,
+  .site-header__menu a {
+    color: var(--color-text);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .site-header__nav a:hover,
+  .site-header__nav a[aria-current='page'] {
+    color: var(--color-primary-strong);
+  }
+
+  .site-header__search {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .site-header__search-text {
+    display: none;
+  }
+
+  .site-header__menu summary {
+    padding: 6px 12px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .site-header__menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .site-header__menu[open] nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: var(--space-2) var(--gutter) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .site-header__menu li a {
+    display: block;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @media (min-width: 1024px) {
+    .site-header__nav {
+      display: block;
+    }
+
+    .site-header__menu {
+      display: none;
+    }
+
+    .site-header__search {
+      padding: 6px 14px;
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius);
+    }
+
+    .site-header__search-text {
+      display: inline;
+    }
+  }
+</style>

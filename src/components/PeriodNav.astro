@@ -1,0 +1,88 @@
+---
+// 時期・目的別の導線（phase1.5-design.md 8章）。「次の週末に間に合う」は該当があるときだけ出す
+import { PERIOD_PAGES } from '../lib/nav.ts';
+
+interface Props {
+  showNextWeekend: boolean;
+}
+
+const { showNextWeekend } = Astro.props;
+
+const links = [
+  { ...PERIOD_PAGES.within7Days, note: '突発本に' },
+  ...(showNextWeekend ? [{ ...PERIOD_PAGES.nextWeekend, note: 'イベント合わせ' }] : []),
+  { ...PERIOD_PAGES.month1, note: '使える' },
+  { ...PERIOD_PAGES.month2, note: '使える' },
+  { ...PERIOD_PAGES.month3, note: '使える' },
+  { ...PERIOD_PAGES.month6, note: '使える' },
+  { label: '加工から探す', href: '#process', note: '箔押し・特殊紙など' },
+];
+---
+
+<nav class="period-nav" aria-label="時期・目的から探す">
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href}>
+            <span class="period-nav__label">{link.label}</span>
+            <span class="period-nav__note">{link.note}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .period-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+    .period-nav ul {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .period-nav ul {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+    }
+  }
+
+  .period-nav a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .period-nav a:hover {
+    border-color: var(--color-border-strong);
+    border-left-color: var(--color-primary-strong);
+  }
+
+  .period-nav__label {
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .period-nav__note {
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+</style>

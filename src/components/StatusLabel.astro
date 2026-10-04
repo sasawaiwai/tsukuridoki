@@ -1,0 +1,54 @@
+---
+// カードの状態ラベル（仕様書52-2）。1枚のカードに1個だけ置く
+import type { CardLabelKind } from '../lib/period.ts';
+
+interface Props {
+  kind: CardLabelKind;
+  text: string;
+}
+
+const { kind, text } = Astro.props;
+---
+
+<span class={`status-label status-label--${kind}`}>{text}</span>
+
+<style>
+  .status-label {
+    display: inline-block;
+    padding: 1px 8px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .status-label--urgent {
+    background: var(--color-primary-strong);
+    color: #fff;
+  }
+
+  .status-label--update {
+    background: var(--label-update);
+    color: #fff;
+  }
+
+  .status-label--new {
+    border-color: var(--color-primary-strong);
+    color: var(--color-primary-strong);
+    background: var(--color-surface);
+  }
+
+  .status-label--soon {
+    border-color: var(--color-border-strong);
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+
+  .status-label--ended {
+    background: var(--label-ended);
+    color: #fff;
+  }
+</style>
