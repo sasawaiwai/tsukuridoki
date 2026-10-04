@@ -38,14 +38,22 @@ export const PERIOD_PAGES = {
 
 export const PRINTERS_HREF = '/dojin/printer/';
 
-/** 加工から探す（phase1.5-design.md 9章）。複数の加工をまとめた項目は検索ページのクエリで受ける */
-export const PROCESS_LINKS: (NavLink & { category: CardCategory })[] = [
-  { label: '箔押し', href: `${SEARCH_HREF}?process=foil`, category: 'foil' },
-  { label: '特殊紙', href: `${SEARCH_HREF}?process=special_paper`, category: 'paper' },
-  { label: 'RGB印刷', href: `${SEARCH_HREF}?color=RGB`, category: 'rgb' },
-  { label: 'PP加工', href: `${SEARCH_HREF}?process=pp,matte_pp,hologram_pp,special_pp`, category: 'surface' },
-  { label: '小口加工', href: `${SEARCH_HREF}?process=edge_dyeing,edge_printing`, category: 'craft' },
-  { label: '遊び紙', href: `${SEARCH_HREF}?process=endpaper`, category: 'craft' },
-  { label: 'オンデマンド', href: `${SEARCH_HREF}?printing=ondemand`, category: 'other' },
-  { label: 'オフセット', href: `${SEARCH_HREF}?printing=offset`, category: 'other' },
+/** トップの「人気の加工から探す」へのリンク（時期別導線の「加工から探す」から飛ぶ） */
+export const POPULAR_PROCESS_ANCHOR = '#popular-processes';
+
+/**
+ * 人気の加工から探す（参考画像）。glyph は丸い見本に置く一文字。
+ * 加工以外（印刷方式・特典）も含むため、リンク先は検索ページのクエリで受ける
+ */
+export const POPULAR_PROCESS_LINKS: (NavLink & { category: CardCategory; glyph: string })[] = [
+  { label: '箔押し', glyph: '箔', href: `${SEARCH_HREF}?process=foil`, category: 'foil' },
+  { label: '特殊紙', glyph: '紙', href: `${SEARCH_HREF}?process=special_paper`, category: 'paper' },
+  { label: 'RGB印刷', glyph: 'RGB', href: `${SEARCH_HREF}?color=RGB`, category: 'rgb' },
+  { label: 'オンデマンド', glyph: 'OD', href: `${SEARCH_HREF}?printing=ondemand`, category: 'other' },
+  { label: '割引', glyph: '割', href: `${SEARCH_HREF}?benefit=discount`, category: 'deal' },
+  { label: '無料加工', glyph: '無', href: `${SEARCH_HREF}?benefit=free_process`, category: 'deal' },
+  { label: '用紙変更', glyph: '替', href: `${SEARCH_HREF}?benefit=free_paper_upgrade`, category: 'paper' },
+  { label: 'PP加工', glyph: 'PP', href: `${SEARCH_HREF}?process=pp,matte_pp,hologram_pp,special_pp`, category: 'surface' },
+  { label: '遊び紙', glyph: '遊', href: `${SEARCH_HREF}?process=endpaper`, category: 'craft' },
+  { label: 'その他', glyph: '…', href: SEARCH_HREF, category: 'other' },
 ];

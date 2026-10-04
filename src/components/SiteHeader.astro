@@ -1,16 +1,20 @@
 ---
-// ヘッダー（phase1.5-design.md 17章）。常にコンパクトに
+// ヘッダー（phase1.5-design.md 17章・参考画像）。生成りの背景になじませ、常にコンパクトに
 // PC：ロゴ＋ナビ＋検索／スマホ：ロゴ＋検索＋メニュー
 import { SITE } from '../lib/site.ts';
 import { HEADER_LINKS, SEARCH_HREF } from '../lib/nav.ts';
+import Icon from './Icon.astro';
 
 const current = Astro.url.pathname;
-const isCurrent = (href: string) => (href === '/' ? current === '/' : current.startsWith(href));
+const isCurrent = (href: string) => current.startsWith(href);
 ---
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <a href="/" class="site-header__logo">{SITE.name}</a>
+    <a href="/" class="site-header__logo">
+      <span class="site-header__name">{SITE.name}</span>
+      <span class="site-header__subtitle">{SITE.subtitle}</span>
+    </a>
 
     <nav class="site-header__nav" aria-label="メインメニュー">
       <ul>
@@ -26,16 +30,14 @@ const isCurrent = (href: string) => (href === '/' ? current === '/' : current.st
       </ul>
     </nav>
 
-    <a href={SEARCH_HREF} class="site-header__search" aria-label="フェアを検索">
-      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-        <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
-        <path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-      </svg>
-      <span class="site-header__search-text">検索</span>
+    <a href={SEARCH_HREF} class="site-header__icon-button" aria-label="フェアを検索">
+      <Icon name="search" size={24} />
     </a>
 
     <details class="site-header__menu">
-      <summary>メニュー</summary>
+      <summary class="site-header__icon-button" aria-label="メニュー">
+        <Icon name="menu" size={26} />
+      </summary>
       <nav aria-label="メニュー">
         <ul>
           {
@@ -54,28 +56,36 @@ const isCurrent = (href: string) => (href === '/' ? current === '/' : current.st
 <style>
   .site-header {
     position: relative;
-    border-bottom: 1px solid var(--color-border);
-    background: var(--color-surface);
+    z-index: 5;
   }
 
   .site-header__inner {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
-    min-height: 56px;
+    gap: var(--space-3);
+    min-height: 64px;
+    padding-block: var(--space-2);
   }
 
   .site-header__logo {
+    display: flex;
+    flex-direction: column;
     margin-right: auto;
-    color: var(--color-primary);
-    font-size: 1.35rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
     text-decoration: none;
   }
 
-  .site-header__logo:hover {
-    color: var(--color-primary-dark);
+  .site-header__name {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+  }
+
+  .site-header__subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
   }
 
   .site-header__nav {
@@ -91,7 +101,7 @@ const isCurrent = (href: string) => (href === '/' ? current === '/' : current.st
 
   .site-header__nav ul {
     display: flex;
-    gap: var(--space-5);
+    gap: var(--space-6);
   }
 
   .site-header__nav a,
@@ -107,28 +117,24 @@ const isCurrent = (href: string) => (href === '/' ? current === '/' : current.st
     color: var(--color-primary-strong);
   }
 
-  .site-header__search {
+  .site-header__icon-button {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius);
     color: var(--color-text);
-    font-size: var(--fs-sm);
-    font-weight: 700;
-    text-decoration: none;
+    cursor: pointer;
   }
 
-  .site-header__search-text {
-    display: none;
+  .site-header__icon-button:hover {
+    background: rgba(41, 37, 34, 0.05);
+    color: var(--color-text);
   }
 
   .site-header__menu summary {
-    padding: 6px 12px;
-    border: 1px solid var(--color-border-strong);
-    border-radius: var(--radius);
-    font-size: var(--fs-sm);
-    font-weight: 700;
     list-style: none;
-    cursor: pointer;
   }
 
   .site-header__menu summary::-webkit-details-marker {
@@ -138,37 +144,40 @@ const isCurrent = (href: string) => (href === '/' ? current === '/' : current.st
   .site-header__menu[open] nav {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    padding: var(--space-2) var(--gutter) var(--space-4);
-    border-bottom: 1px solid var(--color-border);
+    left: var(--gutter);
+    right: var(--gutter);
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
     background: var(--color-surface);
+    box-shadow: 0 6px 16px rgba(41, 37, 34, 0.08);
+  }
+
+  .site-header__menu li + li a {
+    border-top: 1px solid var(--color-border);
   }
 
   .site-header__menu li a {
     display: block;
     padding: var(--space-3) 0;
-    border-bottom: 1px solid var(--color-border);
   }
 
   @media (min-width: 1024px) {
+    .site-header__inner {
+      gap: var(--space-6);
+      min-height: 76px;
+    }
+
+    .site-header__name {
+      font-size: 1.85rem;
+    }
+
     .site-header__nav {
       display: block;
     }
 
     .site-header__menu {
       display: none;
-    }
-
-    .site-header__search {
-      padding: 6px 14px;
-      border: 1px solid var(--color-border-strong);
-      border-radius: var(--radius);
-    }
-
-    .site-header__search-text {
-      display: inline;
     }
   }
 </style>

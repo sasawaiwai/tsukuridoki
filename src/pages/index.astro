@@ -5,7 +5,7 @@ import Hero from '../components/Hero.astro';
 import PeriodNav from '../components/PeriodNav.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import FairGrid from '../components/FairGrid.astro';
-import ProcessNav from '../components/ProcessNav.astro';
+import PopularProcesses from '../components/PopularProcesses.astro';
 import { SITE } from '../lib/site.ts';
 import { PERIOD_PAGES, PRINTERS_HREF } from '../lib/nav.ts';
 import { byPublishedDesc, cardBuilder } from '../lib/cards.ts';
@@ -27,20 +27,22 @@ const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
 ---
 
 <BaseLayout>
-  <Hero imageSrc={SITE.heroImage ?? undefined} />
+  <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">
-    <section aria-label="時期・目的から探す">
+    <section aria-label="時期・目的から探す" class="period">
       <PeriodNav showNextWeekend={showNextWeekend} />
     </section>
 
+    <PopularProcesses id="popular-processes" />
+
     <section>
-      <SectionHeader title="新着フェア" lead="新しく掲載されたフェア" moreHref={PERIOD_PAGES.new.href} />
+      <SectionHeader title="新着フェア" lead="最近はじまった、新しく掲載されたフェア" moreHref={PERIOD_PAGES.new.href} />
       <FairGrid cards={newCards} />
     </section>
 
     <section>
-      <SectionHeader title="今から7日以内に使えるフェア" lead="突発本・近日入稿に" moreHref={PERIOD_PAGES.within7Days.href} />
+      <SectionHeader title="今から7日以内に使えるフェア" lead="近いうちに入稿したい方に" moreHref={PERIOD_PAGES.within7Days.href} />
       <FairGrid cards={within7Cards} />
     </section>
 
@@ -52,11 +54,6 @@ const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
         </section>
       )
     }
-
-    <section>
-      <SectionHeader id="process" title="加工から探す" lead="気になる加工から、次の本のアイデアを" />
-      <ProcessNav />
-    </section>
 
     <section class="about">
       <SectionHeader title="このサイトについて" />
@@ -80,7 +77,12 @@ const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
-    padding-top: var(--space-5);
+  }
+
+  /* 時期別導線はヒーローに少し重ねて、ひと続きに見せる */
+  .period {
+    position: relative;
+    margin-top: calc(var(--space-5) * -1);
   }
 
   .about {

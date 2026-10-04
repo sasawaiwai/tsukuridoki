@@ -1,0 +1,52 @@
+---
+// 線画アイコン（必要最小限）。色は currentColor を使う
+interface Props {
+  name: 'calendar' | 'pencil' | 'search' | 'menu' | 'arrow-right';
+  size?: number;
+  label?: string; // 指定すると読み上げ対象にする
+}
+
+const { name, size = 20, label } = Astro.props;
+---
+
+<svg
+  class="icon"
+  viewBox="0 0 24 24"
+  width={size}
+  height={size}
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}
+>
+  {
+    name === 'calendar' && (
+      <>
+        <rect x="3.5" y="5" width="17" height="15" rx="2" />
+        <path d="M3.5 10h17M8 3v4M16 3v4" />
+      </>
+    )
+  }
+  {name === 'pencil' && <path d="M4 20l1-4L16 5l3 3L8 19l-4 1zM14 7l3 3" />}
+  {
+    name === 'search' && (
+      <>
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="M15.5 15.5L21 21" />
+      </>
+    )
+  }
+  {name === 'menu' && <path d="M4 7h16M4 12h16M4 17h16" />}
+  {name === 'arrow-right' && <path d="M5 12h14M13 6l6 6-6 6" />}
+</svg>
+
+<style>
+  .icon {
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+</style>

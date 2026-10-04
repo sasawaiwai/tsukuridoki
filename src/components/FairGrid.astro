@@ -1,6 +1,6 @@
 ---
 // フェアカードの並び（仕様書52-5）
-// layout="top"：スマホ1列／タブレット2列／PC3列
+// layout="top"：スマホ1列／タブレット2列／PC3列／1280px以上4列
 // layout="search"：スマホ1列／タブレット2列／PC2列／1280px以上3列
 import type { CardModel } from '../lib/fair-display.ts';
 import FairCard from './FairCard.astro';
@@ -52,6 +52,10 @@ const { cards, layout = 'top', emptyText = '現在、該当するフェアはあ
   }
 
   @media (min-width: 1280px) {
+    .fair-grid--top {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .fair-grid--search {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
