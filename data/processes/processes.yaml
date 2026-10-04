@@ -1,0 +1,62 @@
+# 加工マスター（仕様書23章の初期候補）
+# group: foil_cover=箔・表紙 / surface=PP・表面 / edge=小口 / cutting=切削 / body=本文 / other=その他
+
+- process_id: foil
+  name: 箔押し
+  group: foil_cover
+- process_id: blind_emboss
+  name: 空押し
+  group: foil_cover
+- process_id: emboss
+  name: エンボス
+  group: foil_cover
+- process_id: deboss
+  name: デボス
+  group: foil_cover
+
+- process_id: pp
+  name: PP
+  group: surface
+- process_id: matte_pp
+  name: マットPP
+  group: surface
+- process_id: hologram_pp
+  name: ホログラムPP
+  group: surface
+- process_id: special_pp
+  name: 特殊PP
+  group: surface
+
+- process_id: edge_dyeing
+  name: 小口染め
+  group: edge
+- process_id: edge_printing
+  name: 小口印刷
+  group: edge
+
+- process_id: die_cut
+  name: 型抜き
+  group: cutting
+- process_id: round_corner
+  name: 角丸
+  group: cutting
+
+- process_id: color_body
+  name: 本文色刷り
+  group: body
+- process_id: spot_color_printing
+  name: 特色印刷
+  group: body
+
+- process_id: special_paper
+  name: 特殊紙
+  group: other
+- process_id: endpaper
+  name: 遊び紙
+  group: other
+- process_id: perforation
+  name: ミシン目
+  group: other
+- process_id: hole_punch
+  name: 穴あけ
+  group: other

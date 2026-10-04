@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "foil.schema.json",
+  "title": "箔",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["foil_id", "name"],
+  "properties": {
+    "foil_id": { "type": "string", "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "category": { "type": ["string", "null"] },
+    "color_family": { "type": ["string", "null"] },
+    "manufacturer": { "type": ["string", "null"] },
+    "printer_specific_name": { "type": ["string", "null"] }
+  }
+}

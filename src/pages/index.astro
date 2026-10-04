@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site.ts';
+
+// 主導線（仕様書40章）。リンク先は Phase 2 で作成する
+const navigation = [
+  '今から7日以内',
+  '次の週末に間に合う',
+  '1か月先でも使える',
+  '2か月先でも使える',
+  '3か月先でも使える',
+  '半年先でも使える',
+  '新着',
+  'もうすぐ終了',
+  '加工から探す',
+  '印刷所から探す',
+];
+---
+
+<BaseLayout>
+  <section class="intro">
+    <p class="voices">
+      「次に作る本、どんな加工にしよう？」<br />
+      「初めての同人誌だから、お得に作りたい！」<br />
+      「突発本だけど、何かひと工夫したい！」
+    </p>
+    <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
+    <p>今から7日以内に使えるフェアから、数か月先まで使えるフェア、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
+    <p>眺めているだけで、次の本を作りたくなる。</p>
+    <h1>{SITE.name}<span>{SITE.tagline}</span></h1>
+  </section>
+
+  <section>
+    <h2>フェアを探す</h2>
+    <ul class="nav-list">
+      {navigation.map((label) => (
+        <li>
+          {label}
+          <span class="soon">準備中</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <p class="dev-note">
+    現在、サイトを準備中です。（開発用：<a href="/dojin/">判定確認用の仮一覧</a>）
+  </p>
+</BaseLayout>
+
+<style>
+  .intro {
+    padding: 8px 0 24px;
+  }
+
+  .voices {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin: 24px 0 0;
+  }
+
+  h1 span {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    color: var(--color-muted);
+  }
+
+  .soon {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--color-border);
+  }
+
+  .dev-note {
+    margin-top: 32px;
+    font-size: 0.85rem;
+    color: var(--color-muted);
+  }
+</style>

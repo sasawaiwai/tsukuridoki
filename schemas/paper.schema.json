@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "paper.schema.json",
+  "title": "用紙",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["paper_id", "name"],
+  "properties": {
+    "paper_id": { "type": "string", "pattern": "^[a-z0-9]+([_-][a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "color": { "type": ["string", "null"] },
+    "category": { "type": ["string", "null"] },
+    "features": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "use": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "manufacturer": { "type": ["string", "null"] },
+    "weight": { "type": ["string", "null"] }
+  }
+}

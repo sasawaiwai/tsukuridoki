@@ -1,0 +1,185 @@
+---
+// 動作確認用の仮一覧（Phase 1）。データ → 時期判定 → ページ のつながりを目で確認する。
+// Phase 2 で正式な一覧ページに置き換える。
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadSiteData } from '../../lib/data.ts';
+import {
+  effectiveFrom,
+  effectiveUntil,
+  endingLabel,
+  getStatus,
+  isNew,
+  isNextWeekend,
+  isUpdated,
+  isUsableAfterMonths,
+  isWithin7Days,
+  nextWeekend,
+  todayJST,
+} from '../../lib/period.ts';
+import {
+  BENEFIT_LABELS,
+  COLOR_MODE_LABELS,
+  PRINTING_METHOD_LABELS,
+  SIZE_LABELS,
+  STATUS_LABELS,
+} from '../../lib/labels.ts';
+
+const today = todayJST();
+const weekend = nextWeekend(today);
+const { fairs, printers, processes } = loadSiteData();
+const printerName = new Map(printers.map((p) => [p.printer_id, p.name]));
+const processName = new Map(processes.map((p) => [p.process_id, p.name]));
+
+const rows = fairs.map((fair) => ({
+  fair,
+  printer: printerName.get(fair.printer_id) ?? fair.printer_id,
+  period: [fair.start_date_text, fair.end_date_text, fair.usable_until_text].filter(Boolean).join(' / '),
+  from: effectiveFrom(fair) ?? '—',
+  until: effectiveUntil(fair) ?? '—',
+  status: STATUS_LABELS[getStatus(fair, today)],
+  within7: isWithin7Days(fair, today),
+  nextWeekend: isNextWeekend(fair, today),
+  months: [1, 2, 3, 6].map((n) => isUsableAfterMonths(fair, today, n)),
+  ending: endingLabel(fair, today),
+  badges: [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean),
+  chips: [
+    ...(fair.sizes ?? []).map((s) => SIZE_LABELS[s]),
+    ...(fair.printing_methods ?? []).map((m) => PRINTING_METHOD_LABELS[m]),
+    ...(fair.color_modes ?? []).map((c) => COLOR_MODE_LABELS[c]),
+    ...(fair.processes ?? []).map((p) => processName.get(p) ?? p),
+    ...(fair.benefit_types ?? []).map((b) => BENEFIT_LABELS[b]),
+  ],
+}));
+
+const mark = (value: boolean) => (value ? '○' : '');
+---
+
+<BaseLayout title="判定確認用の仮一覧">
+  <h1>判定確認用の仮一覧</h1>
+  <p class="note">
+    開発中の動作確認ページです。掲載しているのは<strong>すべて架空のサンプルデータ</strong>です。<br />
+    判定基準日：<strong>{today}</strong>（日本時間）／次の週末：{weekend.saturday}〜{weekend.sunday}
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>フェア</th>
+          <th>期間（原文）</th>
+          <th>F</th>
+          <th>U</th>
+          <th>状態</th>
+          <th>7日以内</th>
+          <th>次の週末</th>
+          <th>1か月</th>
+          <th>2か月</th>
+          <th>3か月</th>
+          <th>半年</th>
+          <th>終了間近</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            <td class="fair">
+              <span class="name">{row.fair.fair_name}</span>
+              {row.badges.map((b) => <span class="badge">{b}</span>)}
+              <span class="printer">{row.printer}</span>
+              <span class="chips">{row.chips.map((c) => <span class="chip">{c}</span>)}</span>
+            </td>
+            <td>{row.period}</td>
+            <td class="date">{row.from}</td>
+            <td class="date">{row.until}</td>
+            <td class="nowrap">{row.status}</td>
+            <td class="mark">{mark(row.within7)}</td>
+            <td class="mark">{mark(row.nextWeekend)}</td>
+            {row.months.map((m) => <td class="mark">{mark(m)}</td>)}
+            <td class="nowrap">{row.ending}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .note {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    vertical-align: top;
+    text-align: left;
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  .fair {
+    min-width: 240px;
+  }
+
+  .name {
+    font-weight: 700;
+  }
+
+  .printer {
+    display: block;
+    color: var(--color-muted);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .chip {
+    padding: 0 6px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    font-size: 0.7rem;
+  }
+
+  .badge {
+    margin-left: 6px;
+    padding: 0 6px;
+    border-radius: 4px;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 0.65rem;
+  }
+
+  .date,
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .mark {
+    text-align: center;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+</style>
