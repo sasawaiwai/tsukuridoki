@@ -1,5 +1,5 @@
 # 架空のサンプルデータ（Phase 1 動作確認用）
-# 確認したい判定：終了間近（10/4時点で「あと2日」）／更新バッジ
+# 確認したい判定：終了間近（10/4時点で「あと2日」）／更新バッジ／公式サイト＋X告知の併記
 fair_id: sample-print-hologram-foil-2026
 slug: sample-print-hologram-foil-2026
 fair_name: ホログラム箔押し割引フェア
@@ -8,6 +8,7 @@ category: dojinshi
 
 sources:
   - https://example.com/fair/hologram-foil/
+  - https://x.com/kotonomin/status/2098692246279516172
 source_type: official_campaign
 verification_status: verified
 
