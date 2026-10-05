@@ -6,7 +6,8 @@ fair_name: 箔押しカードプレゼント
 printer_id: mihondo
 category: dojinshi
 
-official_url: https://example.org/news/novelty/
+sources:
+  - https://example.org/news/novelty/
 source_type: official_news
 verification_status: verified
 

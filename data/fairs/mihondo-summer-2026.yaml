@@ -6,7 +6,8 @@ fair_name: 夏の本文色刷りフェア
 printer_id: mihondo
 category: dojinshi
 
-official_url: https://example.org/news/summer/
+sources:
+  - https://example.org/news/summer/
 source_type: official_news
 verification_status: verified
 

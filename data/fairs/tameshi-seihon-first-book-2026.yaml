@@ -6,7 +6,8 @@ fair_name: はじめての同人誌応援割
 printer_id: tameshi-seihon
 category: dojinshi
 
-official_url: https://example.net/campaign/first-book/
+sources:
+  - https://example.net/campaign/first-book/
 source_type: official_campaign
 verification_status: verified
 

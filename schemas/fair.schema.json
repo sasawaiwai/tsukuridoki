@@ -10,7 +10,7 @@
     "fair_name",
     "printer_id",
     "category",
-    "official_url",
+    "sources",
     "summary",
     "source_type",
     "verification_status",
@@ -38,8 +38,13 @@
     "printer_id": { "$ref": "#/definitions/slugId" },
     "category": { "enum": ["dojinshi"] },
 
-    "official_url": { "type": "string", "format": "uri" },
-    "source_url": { "type": ["string", "null"], "format": "uri" },
+    "sources": {
+      "description": "公式情報源のURL（公式サイト・Xの告知投稿・Instagram・Blueskyなど）。最低1件。種類はURLから判定する",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "format": "uri" }
+    },
 
     "summary": { "type": "string", "minLength": 1 },
     "benefit_summary": { "type": ["string", "null"], "minLength": 1 },
@@ -65,7 +70,7 @@
     "updated_at": { "$ref": "#/definitions/dateOrNull" },
 
     "source_type": {
-      "enum": ["official_fair", "official_campaign", "official_news", "official_other"]
+      "enum": ["official_fair", "official_campaign", "official_news", "official_sns", "official_other"]
     },
     "verification_status": {
       "enum": ["verified", "auto_checked", "needs_review", "unknown"]

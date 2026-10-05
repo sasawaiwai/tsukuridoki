@@ -6,7 +6,8 @@ fair_name: 秋の特殊紙フェア
 printer_id: sample-print
 category: dojinshi
 
-official_url: https://example.com/fair/autumn-paper/
+sources:
+  - https://example.com/fair/autumn-paper/
 source_type: official_fair
 verification_status: verified
 

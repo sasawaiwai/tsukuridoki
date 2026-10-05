@@ -6,7 +6,8 @@ fair_name: 秋イベント直前ノベルティフェア
 printer_id: tameshi-seihon
 category: dojinshi
 
-official_url: https://example.net/campaign/autumn-event/
+sources:
+  - https://example.net/campaign/autumn-event/
 source_type: official_fair
 verification_status: verified
 

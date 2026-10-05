@@ -52,6 +52,13 @@ https://tsukuridoki.sasadokoro.online/
 - ファイル名は `{ID}.yaml`
 - 日付は `YYYY-MM-DD`
 - 書いていない項目は「不明」として扱う
+- 公式情報源は `sources` にURLを並べるだけ（最低1件）。公式サイト・X・Instagram・Blueskyなどの種類はURLから自動で判定する
+
+```yaml
+sources:
+  - https://example.com/fair/autumn/       # 公式サイト
+  - https://x.com/example/status/123456   # 公式Xの告知投稿（何件でも）
+```
 
 ## ブランチ
 

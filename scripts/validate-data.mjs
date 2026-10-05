@@ -6,6 +6,7 @@ import { join, basename } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { readYamlDir, readYamlFile } from '../src/lib/data.ts';
+import { hostMatches, isSnsUrl } from '../src/lib/sources.ts';
 
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
 addFormats(ajv);
@@ -157,11 +158,6 @@ for (const { file, data } of validFairs) {
 
 const printerById = new Map(validPrinters.map(({ data }) => [data.printer_id, data]));
 
-function hostMatches(url, domains) {
-  const host = new URL(url).hostname;
-  return domains.some((d) => host === d || host.endsWith(`.${d}`));
-}
-
 for (const { file, data: fair } of validFairs) {
   const printer = printerById.get(fair.printer_id);
   if (!printerIds.has(fair.printer_id)) {
@@ -182,9 +178,13 @@ for (const { file, data: fair } of validFairs) {
   }
 
   if (printer) {
-    for (const field of ['official_url', 'source_url']) {
-      if (fair[field] && !hostMatches(fair[field], printer.domains)) {
-        report(file, `${field} のドメインが印刷所「${printer.name}」の domains（${printer.domains.join(', ')}）と一致しません`);
+    // SNS（X・Instagram・Bluesky）は運営者が公式投稿か確認して登録する。それ以外は印刷所のドメインに限る
+    for (const url of fair.sources ?? []) {
+      if (!isSnsUrl(url) && !hostMatches(url, printer.domains)) {
+        report(
+          file,
+          `sources の ${url} のドメインが印刷所「${printer.name}」の domains（${printer.domains.join(', ')}）と一致しません。公式の告知ページなら data/printers/ の domains に追加してください`,
+        );
       }
     }
   }

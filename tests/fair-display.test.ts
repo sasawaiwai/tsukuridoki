@@ -19,7 +19,7 @@ function fair(overrides: Partial<Fair>): Fair {
     fair_name: 'テストフェア',
     printer_id: 'test-printer',
     category: 'dojinshi',
-    official_url: 'https://example.com/',
+    sources: ['https://example.com/'],
     summary: 'テスト',
     source_type: 'official_fair',
     verification_status: 'verified',

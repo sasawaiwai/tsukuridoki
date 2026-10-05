@@ -17,7 +17,7 @@ export type BenefitType =
   | 'novelty'
   | 'points'
   | 'limited_product';
-export type SourceType = 'official_fair' | 'official_campaign' | 'official_news' | 'official_other';
+export type SourceType = 'official_fair' | 'official_campaign' | 'official_news' | 'official_sns' | 'official_other';
 export type VerificationStatus = 'verified' | 'auto_checked' | 'needs_review' | 'unknown';
 export type DeadlineType = 'normal' | 'early' | 'special' | 'event' | 'unknown';
 export type HistoryType = 'discovered' | 'published' | 'updated' | 'expired';
@@ -29,8 +29,8 @@ export interface Fair {
   printer_id: string;
   category: 'dojinshi';
 
-  official_url: string;
-  source_url?: string | null;
+  /** 公式情報源のURL（公式サイト・Xの告知投稿など）。最低1件。種類は sources.ts でURLから判定する */
+  sources: string[];
 
   summary: string;
   benefit_summary?: string | null;
