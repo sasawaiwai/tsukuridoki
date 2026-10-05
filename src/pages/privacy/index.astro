@@ -1,34 +1,60 @@
 ---
-// プライバシーポリシー（仕様書45-2）。Cookie・広告・アクセス解析を導入したら追記する（決定事項F）
+// プライバシーポリシー（仕様書45-2）。アクセス解析（Google Analytics）・広告（Google AdSense）の利用を前提にした内容
 import StaticPage from '../../components/StaticPage.astro';
 import { SITE } from '../../lib/site.ts';
+
+const GOOGLE_PRIVACY = 'https://policies.google.com/privacy?hl=ja';
 ---
 
-<StaticPage title="プライバシーポリシー" description={`${SITE.name}における個人情報の取り扱いについてのご案内です。`} updated="2026-10-05">
-  <p>{SITE.name}（以下「本サイト」）を運営する{SITE.operator}（以下「運営者」）は、利用者の個人情報を次のとおり取り扱います。</p>
+<StaticPage title="プライバシーポリシー" description={`${SITE.name}における利用者の情報の取り扱いについてのご案内です。`} updated="2026-10-05">
+  <p>{SITE.name}（以下「本サイト」）を運営する{SITE.operator}（以下「運営者」）は、本サイトにおける利用者の情報を次のとおり取り扱います。</p>
 
   <h2>お問い合わせで受け取る情報</h2>
   <p>お問い合わせはGoogleフォームで受け付けています。フォームに入力されたお名前（ハンドルネーム可）・メールアドレス・お問い合わせ内容などは、Google LLCのサービス上に保存されます。</p>
-  <p>Googleによる情報の取り扱いは、<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。</p>
+  <p>Googleによる情報の取り扱いは、<a href={GOOGLE_PRIVACY} target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。</p>
 
   <h2>利用目的</h2>
+  <p>お問い合わせを通じて取得した情報は、次の目的で利用します。</p>
   <ul>
     <li>お問い合わせへの返信</li>
     <li>掲載内容の訂正・削除などのご依頼への対応</li>
     <li>いただいたフェア情報の確認と掲載</li>
+    <li>その他、お問い合わせ内容への対応</li>
   </ul>
 
+  <h2>アクセス解析</h2>
+  <p>本サイトでは、サイトの利用状況を把握し、内容や利便性を改善するためにGoogle Analyticsを利用しています。</p>
+  <p>Google Analyticsでは、Cookieなどを利用して、閲覧したページ、利用環境、アクセス日時などの情報を収集します。これらの情報は<a href={GOOGLE_PRIVACY} target="_blank" rel="noopener">Googleのプライバシーポリシー</a>にもとづいて管理されます。</p>
+  <p>利用者は、ブラウザの設定でCookieを無効にすることや、Googleが提供する<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google Analyticsオプトアウトアドオン</a>を利用することで、Google Analyticsによる情報収集を制限できます。</p>
+
+  <h2>広告について</h2>
+  <p>本サイトでは、第三者配信の広告サービス「Google AdSense」を利用しています。</p>
+  <p>Googleなどの第三者配信事業者は、利用者の興味や関心に応じた広告を表示するため、本サイトや他のウェブサイトへの過去のアクセス情報にもとづき、Cookieなどを使用することがあります。</p>
+  <p>Googleによる広告Cookieの使用により、Googleおよびそのパートナーは、本サイトや他のサイトへのアクセス情報にもとづいて広告を表示することがあります。</p>
+  <p>利用者は、<a href="https://adssettings.google.com/" target="_blank" rel="noopener">Googleの広告設定</a>からパーソナライズ広告を無効にすることができます。</p>
+
+  <h2>Cookieについて</h2>
+  <p>本サイトでは、アクセス解析や広告配信などのためにCookieを使用することがあります。</p>
+  <p>Cookieは利用者のブラウザに保存される情報であり、通常、それ自体に氏名やメールアドレスなど利用者を直接特定する情報は含まれません。</p>
+  <p>利用者はブラウザの設定により、Cookieの利用を制限または無効にすることができます。ただし、設定によっては一部のサービスが正常に利用できなくなる場合があります。</p>
+
+  <h2>外部サービスへの情報送信</h2>
+  <p>本サイトでは、アクセス解析や広告配信のため、Google Analytics、Google AdSenseなどの外部サービスを利用しています。</p>
+  <p>これらのサービスの利用に伴い、Cookieなどの識別子、閲覧したページの情報、端末・ブラウザに関する情報、IPアドレスなどが各サービス提供者へ送信される場合があります。</p>
+  <p>
+    Googleによる情報の利用については、<a href={GOOGLE_PRIVACY} target="_blank" rel="noopener">Googleのプライバシーポリシー</a>および「<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>」をご確認ください。
+  </p>
+
   <h2>第三者への提供</h2>
-  <p>法令にもとづく場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。</p>
+  <p>お問い合わせなどを通じて運営者が取得した個人情報については、法令にもとづく場合を除き、ご本人の同意なく第三者に提供することはありません。</p>
+  <p>なお、アクセス解析や広告配信などの外部サービスの利用に伴う情報の送信については、前項までに記載したとおりです。</p>
 
   <h2>アクセスログ</h2>
-  <p>本サイトはGitHub Pagesで配信しています。配信元のGitHubは、セキュリティのために閲覧者のIPアドレスなどを記録することがあります。詳しくは<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
-
-  <h2>Cookie・アクセス解析・広告</h2>
-  <p>本サイトは現在、Cookieを使ったアクセス解析や広告を利用していません。今後導入する場合は、このページを更新してお知らせします。</p>
+  <p>本サイトはGitHub Pagesで配信しています。配信元のGitHubは、サービスの運営やセキュリティなどのために、閲覧者のIPアドレスなどの情報を記録することがあります。</p>
+  <p>詳しくは<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
 
   <h2>改定</h2>
-  <p>このポリシーは、必要に応じて内容を変更することがあります。変更後の内容は、このページに掲載した時点から有効となります。</p>
+  <p>このプライバシーポリシーは、利用するサービスの変更などに応じて内容を変更することがあります。変更後の内容は、このページに掲載した時点から有効となります。</p>
 
   <h2>お問い合わせ</h2>
   <p>個人情報の取り扱いについてのお問い合わせは、<a href="/contact/">お問い合わせ</a>からお送りください。</p>
