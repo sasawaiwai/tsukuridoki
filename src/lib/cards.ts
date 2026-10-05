@@ -14,8 +14,3 @@ export function cardBuilder(today: DateString): { data: SiteData; toCard: (fair:
       toCardModel(fair, { printerName: printerName.get(fair.printer_id) ?? fair.printer_id, processes, today }),
   };
 }
-
-/** 新しく掲載された順 */
-export function byPublishedDesc(a: Fair, b: Fair): number {
-  return b.published_at.localeCompare(a.published_at);
-}

@@ -1,20 +1,30 @@
 ---
-// 検索・一覧ページの基本レイアウト（phase1.5-design.md 19章）。絞り込み・並び替えの動作は Phase 2 で付ける
+// 組み合わせ検索（仕様書41章、phase2-design.md 5章）
+// 全フェアのカードをHTMLに出しておき、JavaScriptは表示・非表示と並び替えだけを行う。
+// JavaScriptが動かない環境では、開催中・開催前の全件がそのまま見える（終了済みは hidden）。
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import FilterPanel from '../../../components/FilterPanel.astro';
 import FairGrid from '../../../components/FairGrid.astro';
-import { byPublishedDesc, cardBuilder } from '../../../lib/cards.ts';
-import { getStatus, todayJST } from '../../../lib/period.ts';
+import { cardBuilder } from '../../../lib/cards.ts';
+import { byPublishedDesc } from '../../../lib/lists.ts';
+import { effectiveUntil, todayJST } from '../../../lib/period.ts';
+import { isExpired, searchAttributes } from '../../../lib/search.ts';
 
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
-const cards = data.fairs
-  .filter((f) => getStatus(f, today) !== 'expired')
-  .sort(byPublishedDesc)
-  .map(toCard);
+const fairs = [...data.fairs].sort(byPublishedDesc);
+const cards = fairs.map(toCard);
+const itemAttrs = fairs.map((fair) => ({
+  'data-search': JSON.stringify(searchAttributes(fair, today)),
+  'data-expired': isExpired(fair, today) ? '1' : undefined,
+  'data-published': fair.published_at,
+  'data-until': effectiveUntil(fair) ?? '9999-12-31',
+  hidden: isExpired(fair, today),
+}));
+const openCount = fairs.filter((f) => !isExpired(f, today)).length;
 ---
 
-<BaseLayout title="フェアを検索">
+<BaseLayout title="フェアを検索" description="同人誌印刷所のフェアを、入稿時期・加工・サイズ・印刷方式・色・特典・印刷所の組み合わせで探せます。">
   <div class="container search">
     <h1 class="search__title">フェアを検索</h1>
 
@@ -25,20 +35,96 @@ const cards = data.fairs
 
       <section class="search__results" aria-label="検索結果">
         <div class="search__bar">
-          <p><strong>{cards.length}</strong>件のフェア</p>
+          <p aria-live="polite"><strong data-result-count>{openCount}</strong>件のフェア</p>
           <label>
             <span class="visually-hidden">並び順</span>
-            <select name="sort">
+            <select name="sort" data-sort>
               <option value="new">新着順</option>
               <option value="ending">終了が近い順</option>
             </select>
           </label>
         </div>
-        <FairGrid cards={cards} layout="search" />
+        <div data-results>
+          <FairGrid cards={cards} layout="search" itemAttrs={itemAttrs} />
+        </div>
+        <p class="search__empty" data-result-empty hidden>条件に合うフェアはありません。条件を減らしてお試しください。</p>
       </section>
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  import { SEARCH_KEYS, matches, parseQuery, toQueryString, type SearchAttributes, type SearchQuery } from '../../../lib/search.ts';
+
+  const form = document.querySelector<HTMLFormElement>('[data-filter-form]')!;
+  const sortSelect = document.querySelector<HTMLSelectElement>('[data-sort]')!;
+  const list = document.querySelector<HTMLUListElement>('[data-results] ul');
+  const countEl = document.querySelector<HTMLElement>('[data-result-count]')!;
+  const emptyEl = document.querySelector<HTMLElement>('[data-result-empty]')!;
+  const items = [...(list?.querySelectorAll<HTMLLIElement>(':scope > li') ?? [])].map((li) => ({
+    li,
+    attributes: JSON.parse(li.dataset.search!) as SearchAttributes,
+    expired: li.dataset.expired === '1',
+    published: li.dataset.published!,
+    until: li.dataset.until!,
+  }));
+
+  /** URLの条件をフォームに反映 */
+  function setForm(query: SearchQuery) {
+    for (const input of form.querySelectorAll<HTMLInputElement>('input')) {
+      if (input.name === 'include_expired') input.checked = query.includeExpired;
+      else if (input.name === 'period') input.checked = (query.filters.period?.[0] ?? '') === input.value;
+      else input.checked = query.filters[input.name as keyof SearchQuery['filters']]?.includes(input.value) ?? false;
+    }
+  }
+
+  /** フォームの状態 → 条件 */
+  function readForm(): SearchQuery {
+    const filters: SearchQuery['filters'] = {};
+    for (const key of SEARCH_KEYS) {
+      const values = [...form.querySelectorAll<HTMLInputElement>(`input[name="${key}"]:checked`)].map((i) => i.value).filter(Boolean);
+      if (values.length > 0) filters[key] = values;
+    }
+    const expired = form.querySelector<HTMLInputElement>('input[name="include_expired"]');
+    return { filters, includeExpired: expired?.checked ?? false };
+  }
+
+  function render(query: SearchQuery) {
+    const sorted = [...items].sort((a, b) =>
+      sortSelect.value === 'ending' ? a.until.localeCompare(b.until) : b.published.localeCompare(a.published),
+    );
+    let count = 0;
+    for (const item of sorted) {
+      const visible = matches(item.attributes, item.expired, query);
+      item.li.hidden = !visible;
+      if (visible) count++;
+      list?.append(item.li);
+    }
+    countEl.textContent = String(count);
+    emptyEl.hidden = count > 0;
+  }
+
+  /** 条件が変わったら、結果とURLを更新する（URLを共有すると同じ結果になる） */
+  function update() {
+    const query = readForm();
+    const qs = toQueryString(query);
+    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    render(query);
+  }
+
+  // 最初はURLの条件で表示する（フォームにない値も条件として生かすため、URLから直接読む）
+  const initial = parseQuery(new URLSearchParams(location.search));
+  setForm(initial);
+  render(initial);
+
+  form.addEventListener('change', update);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  sortSelect.addEventListener('change', () => render(readForm()));
+  form.querySelector('[data-filter-reset]')?.addEventListener('click', () => {
+    setForm({ filters: {}, includeExpired: false });
+    update();
+  });
+</script>
 
 <style>
   .search {
@@ -71,6 +157,14 @@ const cards = data.fairs
     background: var(--color-surface);
     color: var(--color-text);
     font: inherit;
+  }
+
+  .search__empty {
+    padding: var(--space-5);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius);
+    color: var(--color-text-muted);
+    text-align: center;
   }
 
   @media (min-width: 1024px) {

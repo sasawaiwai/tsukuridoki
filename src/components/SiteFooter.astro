@@ -10,6 +10,10 @@ import pkg from '../../package.json';
     <div>
       <a href="/" class="site-footer__logo">{SITE.name}</a>
       <p class="site-footer__tagline">{SITE.tagline}</p>
+      <p class="site-footer__operator">
+        {SITE.name}は、{SITE.operator}が運営する同人誌印刷所フェア情報サイトです。<br />
+        企画・情報発信協力：{SITE.cooperation}
+      </p>
     </div>
     <nav aria-label="サイト情報">
       <ul>
@@ -52,6 +56,12 @@ import pkg from '../../package.json';
 
   .site-footer__tagline {
     margin-top: var(--space-1);
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  .site-footer__operator {
+    margin-top: var(--space-3);
     color: var(--color-text-muted);
     font-size: var(--fs-xs);
   }

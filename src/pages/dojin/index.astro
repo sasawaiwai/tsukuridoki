@@ -1,191 +1,121 @@
 ---
-// 動作確認用の仮一覧（Phase 1）。データ → 時期判定 → ページ のつながりを目で確認する。
-// Phase 2 で正式な一覧ページに置き換える。
+// フェアを探す：探し方の入口（phase2-design.md 9章）
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PeriodNav from '../../components/PeriodNav.astro';
+import PopularProcesses from '../../components/PopularProcesses.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import Chip from '../../components/Chip.astro';
+import Button from '../../components/Button.astro';
 import { loadSiteData } from '../../lib/data.ts';
-import {
-  effectiveFrom,
-  effectiveUntil,
-  endingLabel,
-  getStatus,
-  isNew,
-  isNextWeekend,
-  isUpdated,
-  isUsableAfterMonths,
-  isWithin7Days,
-  nextWeekend,
-  todayJST,
-} from '../../lib/period.ts';
-import {
-  BENEFIT_LABELS,
-  COLOR_MODE_LABELS,
-  PRINTING_METHOD_LABELS,
-  SIZE_LABELS,
-  STATUS_LABELS,
-} from '../../lib/labels.ts';
+import { ATTRIBUTE_AXES, archiveYears, attributeValues } from '../../lib/lists.ts';
+import { PERIOD_PAGES, PRINTERS_HREF, SEARCH_HREF } from '../../lib/nav.ts';
+import { isNextWeekend, todayJST } from '../../lib/period.ts';
+import { processCategory, processMap } from '../../lib/fair-display.ts';
 
 const today = todayJST();
-const weekend = nextWeekend(today);
-const { fairs, printers, processes } = loadSiteData();
-const printerName = new Map(printers.map((p) => [p.printer_id, p.name]));
-const processName = new Map(processes.map((p) => [p.process_id, p.name]));
-
-const rows = fairs.map((fair) => ({
-  fair,
-  printer: printerName.get(fair.printer_id) ?? fair.printer_id,
-  period: [fair.start_date_text, fair.end_date_text, fair.usable_until_text].filter(Boolean).join(' / '),
-  from: effectiveFrom(fair) ?? '—',
-  until: effectiveUntil(fair) ?? '—',
-  status: STATUS_LABELS[getStatus(fair, today)],
-  within7: isWithin7Days(fair, today),
-  nextWeekend: isNextWeekend(fair, today),
-  months: [1, 2, 3, 6].map((n) => isUsableAfterMonths(fair, today, n)),
-  ending: endingLabel(fair, today),
-  badges: [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean),
-  chips: [
-    ...(fair.sizes ?? []).map((s) => SIZE_LABELS[s]),
-    ...(fair.printing_methods ?? []).map((m) => PRINTING_METHOD_LABELS[m]),
-    ...(fair.color_modes ?? []).map((c) => COLOR_MODE_LABELS[c]),
-    ...(fair.processes ?? []).map((p) => processName.get(p) ?? p),
-    ...(fair.benefit_types ?? []).map((b) => BENEFIT_LABELS[b]),
-  ],
-}));
-
-const mark = (value: boolean) => (value ? '○' : '');
+const data = loadSiteData();
+const processes = processMap(data.processes);
+const values = attributeValues(data);
+const usedPrinters = new Set(data.fairs.map((f) => f.printer_id));
+const printers = data.printers.filter((p) => p.crawl_policy !== 'forbidden' && usedPrinters.has(p.printer_id));
+const years = archiveYears(data.fairs, today);
+const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
+const moreLists = [PERIOD_PAGES.new, PERIOD_PAGES.updated, PERIOD_PAGES.endingSoon];
 ---
 
-<BaseLayout title="判定確認用の仮一覧">
-  <div class="container dev-table">
-  <h1>判定確認用の仮一覧</h1>
-  <p class="note">
-    開発中の動作確認ページです。掲載しているのは<strong>すべて架空のサンプルデータ</strong>です。<br />
-    判定基準日：<strong>{today}</strong>（日本時間）／次の週末：{weekend.saturday}〜{weekend.sunday}
-  </p>
+<BaseLayout title="フェアを探す" description="同人誌印刷所のフェアを、入稿時期・加工・サイズ・印刷方式・色・特典・印刷所から探せます。">
+  <div class="container find">
+    <header class="find__header">
+      <h1>フェアを探す</h1>
+      <p class="find__lead">いつ入稿するか、どんな本を作りたいかから、使えるフェアを探せます。</p>
+      <p><Button href={SEARCH_HREF}>条件を組み合わせて探す</Button></p>
+    </header>
 
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>フェア</th>
-          <th>期間（原文）</th>
-          <th>F</th>
-          <th>U</th>
-          <th>状態</th>
-          <th>7日以内</th>
-          <th>次の週末</th>
-          <th>1か月</th>
-          <th>2か月</th>
-          <th>3か月</th>
-          <th>半年</th>
-          <th>終了間近</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row) => (
-          <tr>
-            <td class="fair">
-              <span class="name">{row.fair.fair_name}</span>
-              {row.badges.map((b) => <span class="badge">{b}</span>)}
-              <span class="printer">{row.printer}</span>
-              <span class="chips">{row.chips.map((c) => <span class="chip">{c}</span>)}</span>
-            </td>
-            <td>{row.period}</td>
-            <td class="date">{row.from}</td>
-            <td class="date">{row.until}</td>
-            <td class="nowrap">{row.status}</td>
-            <td class="mark">{mark(row.within7)}</td>
-            <td class="mark">{mark(row.nextWeekend)}</td>
-            {row.months.map((m) => <td class="mark">{mark(m)}</td>)}
-            <td class="nowrap">{row.ending}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+    <section class="find__section">
+      <SectionHeader title="時期から探す" />
+      <PeriodNav showNextWeekend={showNextWeekend} />
+      <ul class="find__chips">
+        {moreLists.map((link) => <li><Chip label={link.label} href={link.href} size="md" /></li>)}
+      </ul>
+    </section>
+
+    <PopularProcesses id="popular-processes" />
+
+    {
+      ATTRIBUTE_AXES.map((def) => {
+        const items = values.filter((v) => v.axis === def.axis);
+        return (
+          items.length > 0 && (
+            <section class="find__section">
+              <SectionHeader title={`${def.label}から探す`} />
+              <ul class="find__chips">
+                {items.map((v) => (
+                  <li>
+                    <Chip
+                      label={v.label}
+                      href={v.href}
+                      size="md"
+                      category={v.axis === 'process' ? processCategory(v.value, processes) : undefined}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        );
+      })
+    }
+
+    <section class="find__section">
+      <SectionHeader title="印刷所から探す" moreHref={PRINTERS_HREF} moreLabel="印刷所一覧" />
+      <ul class="find__chips">
+        {printers.map((p) => <li><Chip label={p.name} href={`/dojin/printer/${p.printer_id}/`} size="md" /></li>)}
+      </ul>
+    </section>
+
+    {
+      years.length > 0 && (
+        <section class="find__section">
+          <SectionHeader title="終了したフェア" lead="過去に開催されたフェアの記録です。" />
+          <ul class="find__chips">
+            {years.map((year) => <li><Chip label={`${year}年`} href={`/dojin/archive/${year}/`} size="md" /></li>)}
+          </ul>
+        </section>
+      )
+    }
   </div>
 </BaseLayout>
 
 <style>
-  .dev-table {
+  .find {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-7);
     padding-top: var(--space-5);
   }
 
-  h1 {
-    font-size: 1.3rem;
+  .find__header {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-3);
   }
 
-  .note {
-    font-size: 0.85rem;
+  .find__lead {
     color: var(--color-text-muted);
+    font-size: var(--fs-sm);
   }
 
-  .table-wrap {
-    overflow-x: auto;
+  .find__section {
+    display: grid;
+    gap: var(--space-3);
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--color-surface);
-    font-size: 0.8rem;
-  }
-
-  th,
-  td {
-    padding: 8px;
-    border: 1px solid var(--color-border);
-    vertical-align: top;
-    text-align: left;
-  }
-
-  th {
-    white-space: nowrap;
-  }
-
-  .fair {
-    min-width: 240px;
-  }
-
-  .name {
-    font-weight: 700;
-  }
-
-  .printer {
-    display: block;
-    color: var(--color-text-muted);
-  }
-
-  .chips {
+  .find__chips {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 4px;
-  }
-
-  .chip {
-    padding: 0 6px;
-    border-radius: 999px;
-    border: 1px solid var(--color-border);
-    font-size: 0.7rem;
-  }
-
-  .badge {
-    margin-left: 6px;
-    padding: 0 6px;
-    border-radius: 4px;
-    background: var(--color-primary-strong);
-    color: #fff;
-    font-size: 0.65rem;
-  }
-
-  .date,
-  .nowrap {
-    white-space: nowrap;
-  }
-
-  .mark {
-    text-align: center;
-    color: var(--color-primary-strong);
-    font-weight: 700;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 </style>

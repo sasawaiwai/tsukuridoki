@@ -9,7 +9,7 @@ https://tsukuridoki.sasadokoro.online/
 |---|---|
 | `npm run dev` | 開発用サーバーを起動 |
 | `npm run validate` | データ検証（`data/` を `schemas/` のルールで確認） |
-| `npm test` | 時期判定ロジックのテスト |
+| `npm test` | 時期判定・カード表示・絞り込みのテスト |
 | `npm run build` | データ検証 → サイト生成（`dist/`） |
 | `npm run preview` | 生成したサイトを確認 |
 
@@ -23,7 +23,10 @@ https://tsukuridoki.sasadokoro.online/
 | `data/processes/`・`data/tags/` | 加工マスター・自由タグ |
 | `schemas/` | データのルール（JSON Schema） |
 | `src/lib/period.ts` | 時期判定ロジック（状態ラベルの優先順位を含む） |
-| `src/lib/fair-display.ts` | フェアカードの表示データ（色・特典文・チップ・期限） |
+| `src/lib/fair-display.ts` | フェアカードの表示データ（色・特典文・チップ・期限・確認日） |
+| `src/lib/lists.ts` | 一覧ページの定義（時期別・属性別・アーカイブ） |
+| `src/lib/search.ts` | 絞り込みの条件（属性別ページと検索ページで共用。カードの見た目とは分離） |
+| `src/lib/site.ts` | サイト設定（運営者表記・お問い合わせフォームのURL・noindex） |
 | `src/lib/nav.ts` | ナビゲーションのリンク先 |
 | `src/styles/global.css` | デザイントークン（色・文字・余白・角丸） |
 | `src/components/` | 共通部品（ヘッダー・フッター・フェアカード・ラベル・チップ・ボタンなど） |
@@ -31,6 +34,18 @@ https://tsukuridoki.sasadokoro.online/
 ## デザインシステム
 
 画面はすべて `src/components/` の共通部品と `src/styles/global.css` のトークンで作る。新しい見た目を個別に作らない。部品の一覧は `/dev/styleguide/` で確認できる。
+
+## 確認用ページ（/dev/）
+
+- `/dev/styleguide/`：共通部品の一覧
+- `/dev/check/`：時期判定の確認表
+
+`/dev/` 以下は正式公開後も検索エンジンに載せない（noindex・sitemap.xml から除外）。
+
+## 正式公開（noindex解除）の前にやること
+
+- `data/` の架空サンプル（印刷所名に「（架空）」）をすべて削除する
+- `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く
 
 ## データのルール
 

@@ -1,14 +1,24 @@
 ---
-// 検索ページの絞り込み（phase1.5-design.md 19章）。Phase 1.5 では見た目のみ。動作は Phase 2 で付ける
+// 検索ページの絞り込み（phase1.5-design.md 19章）。絞り込みの動作は /dojin/fairs/ のスクリプトで行う
 // PC：左サイドバーとして常に表示／スマホ・タブレット：「絞り込み」ボタンで開閉
+// 選択肢は、フェアが1件以上（終了済み含む）ある値だけ出す
 import type { SiteData } from '../lib/types.ts';
-import { BENEFIT_LABELS, COLOR_MODE_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from '../lib/labels.ts';
+import { ATTRIBUTE_AXES } from '../lib/lists.ts';
+import Button from './Button.astro';
 
 interface Props {
   data: SiteData;
 }
 
 const { data } = Astro.props;
+
+const axis = (name: string) => {
+  const def = ATTRIBUTE_AXES.find((d) => d.axis === name)!;
+  const used = new Set(data.fairs.flatMap(def.of));
+  return { legend: def.label, name, type: 'checkbox' as const, options: def.options(data).filter((o) => used.has(o.value)) };
+};
+
+const usedPrinters = new Set(data.fairs.map((f) => f.printer_id));
 
 const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; options: { value: string; label: string }[] }[] = [
   {
@@ -18,19 +28,27 @@ const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; option
     options: [
       { value: '', label: '指定なし' },
       { value: 'within-7-days', label: '今から7日以内' },
+      { value: 'next-weekend', label: '次の週末に間に合う' },
       { value: '1month', label: '1か月先でも' },
       { value: '2months', label: '2か月先でも' },
       { value: '3months', label: '3か月先でも' },
       { value: '6months', label: '半年先でも' },
     ],
   },
-  { legend: 'サイズ', name: 'size', type: 'checkbox', options: Object.entries(SIZE_LABELS).map(([value, label]) => ({ value, label })) },
-  { legend: '加工', name: 'process', type: 'checkbox', options: data.processes.map((p) => ({ value: p.process_id, label: p.name })) },
-  { legend: '印刷方式', name: 'printing', type: 'checkbox', options: Object.entries(PRINTING_METHOD_LABELS).map(([value, label]) => ({ value, label })) },
-  { legend: '色方式', name: 'color', type: 'checkbox', options: Object.entries(COLOR_MODE_LABELS).map(([value, label]) => ({ value, label })) },
-  { legend: '印刷所', name: 'printer', type: 'checkbox', options: data.printers.map((p) => ({ value: p.printer_id, label: p.name })) },
-  { legend: '特典', name: 'benefit', type: 'checkbox', options: Object.entries(BENEFIT_LABELS).map(([value, label]) => ({ value, label })) },
-];
+  axis('size'),
+  axis('process'),
+  axis('printing'),
+  axis('color'),
+  {
+    legend: '印刷所',
+    name: 'printer',
+    type: 'checkbox',
+    options: data.printers
+      .filter((p) => p.crawl_policy !== 'forbidden' && usedPrinters.has(p.printer_id))
+      .map((p) => ({ value: p.printer_id, label: p.name })),
+  },
+  axis('benefit'),
+].filter((g) => g.options.length > 0);
 ---
 
 <div class="filter" data-filter>
@@ -38,8 +56,7 @@ const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; option
     絞り込み
   </button>
 
-  <form id="filter-panel" class="filter__panel" aria-label="絞り込み">
-    <p class="filter__notice">絞り込み機能は準備中です。</p>
+  <form id="filter-panel" class="filter__panel" aria-label="絞り込み" data-filter-form>
     {
       groups.map((group) => (
         <fieldset class="filter__group">
@@ -59,6 +76,9 @@ const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; option
       <input type="checkbox" name="include_expired" value="1" />
       終了済みも表示
     </label>
+    <p class="filter__reset">
+      <Button variant="ghost" data-filter-reset>条件をクリア</Button>
+    </p>
   </form>
 </div>
 
@@ -107,10 +127,8 @@ const groups: { legend: string; name: string; type: 'radio' | 'checkbox'; option
     display: block;
   }
 
-  .filter__notice {
-    margin-bottom: var(--space-3);
-    color: var(--color-text-muted);
-    font-size: var(--fs-xs);
+  .filter__reset {
+    margin-top: var(--space-3);
   }
 
   .filter__group {

@@ -1,13 +1,390 @@
 ---
-// 個別フェアページの仮表示（Phase 2 で正式なページに置き換える）
-import ComingSoon from '../../../components/ComingSoon.astro';
+// 個別フェアページ（仕様書31・32章、phase2-design.md 4章）
+// 終了後もページは削除せず、「このフェアは終了しました」と開催期間を出す
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import StatusLabel from '../../../components/StatusLabel.astro';
+import Chip from '../../../components/Chip.astro';
+import Button from '../../../components/Button.astro';
 import { loadSiteData } from '../../../lib/data.ts';
+import { cardLabel, effectiveFrom, getStatus, isNew, isUpdated, todayJST } from '../../../lib/period.ts';
+import { benefitText, confirmedAt, deadlineText, formatJpDate, formatJpDateFull, needsRecheck, processCategory, processMap } from '../../../lib/fair-display.ts';
+import { BINDING_LABELS, BOOK_TYPE_LABELS, COLOR_MODE_LABELS, BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS, STATUS_LABELS } from '../../../lib/labels.ts';
+import { colorValues } from '../../../lib/search.ts';
+import { SEARCH_HREF } from '../../../lib/nav.ts';
+import type { Fair } from '../../../lib/types.ts';
 
 export function getStaticPaths() {
-  return loadSiteData().fairs.map((fair) => ({ params: { slug: fair.slug }, props: { name: fair.fair_name } }));
+  return loadSiteData().fairs.map((fair) => ({ params: { slug: fair.slug }, props: { fair } }));
 }
 
-const { name } = Astro.props;
+const { fair } = Astro.props as { fair: Fair };
+const today = todayJST();
+const data = loadSiteData();
+const processes = processMap(data.processes);
+const printer = data.printers.find((p) => p.printer_id === fair.printer_id);
+const printerName = printer?.name ?? fair.printer_id;
+
+const status = getStatus(fair, today);
+const expired = status === 'expired';
+const label = expired ? null : cardLabel(fair, today);
+const badges = [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean) as string[];
+const benefit = benefitText(fair, processes);
+const period = [fair.start_date_text, fair.end_date_text].filter(Boolean).join(' 〜 ');
+const from = effectiveFrom(fair);
+
+const processChips = (fair.processes ?? []).map((id) => ({
+  label: processes.get(id)?.name ?? id,
+  category: processCategory(id, processes),
+  href: `/dojin/process/${id}/`,
+}));
+const sizeChips = (fair.sizes ?? []).map((s) => ({ label: SIZE_LABELS[s], href: `/dojin/size/${s}/` }));
+const printingChips = (fair.printing_methods ?? []).map((m) => ({ label: PRINTING_METHOD_LABELS[m], href: `/dojin/printing/${m}/` }));
+const colorChips = colorValues(fair).map((c) => ({ label: COLOR_MODE_LABELS[c as keyof typeof COLOR_MODE_LABELS] ?? c, href: `/dojin/color/${c}/` }));
+const benefitChips = (fair.benefit_types ?? []).map((b) => ({ label: BENEFIT_LABELS[b], href: `/dojin/benefit/${b}/` }));
+
+const paperNames =
+  fair.papers?.mode === 'all_special_papers'
+    ? ['対象の特殊紙すべて']
+    : (fair.papers?.items ?? []).map((id) => data.papers.find((p) => p.paper_id === id)?.name ?? id);
+const foilNames =
+  fair.foils?.mode === 'all_foils'
+    ? ['対象の箔すべて']
+    : (fair.foils?.items ?? []).map((id) => data.foils.find((f) => f.foil_id === id)?.name ?? id);
+
+const range = (min?: number | null, max?: number | null, unit = '') =>
+  min || max ? `${min ? `${min}${unit}` : ''}〜${max ? `${max}${unit}` : ''}` : null;
+
+const conditions = [
+  fair.new_customer_only && '初めて注文する方限定',
+  fair.member_only && '会員限定',
+  fair.event_delivery_only && 'イベントへの直接搬入のみ対象',
+  fair.specific_sets_only && '対象のセット・商品のみ',
+  fair.application_required && '申し込み・クーポンコードの入力が必要',
+  fair.campaign_code && `クーポンコード：${fair.campaign_code}`,
+  fair.combinable === true && '他の割引と併用できる',
+  fair.combinable === false && '他の割引とは併用できない',
+  fair.binding?.length && `製本：${fair.binding.map((b) => BINDING_LABELS[b]).join('・')}`,
+  fair.book_types?.length && `本の種類：${fair.book_types.map((b) => BOOK_TYPE_LABELS[b]).join('・')}`,
+  range(fair.min_pages, fair.max_pages, 'ページ') && `ページ数：${range(fair.min_pages, fair.max_pages, 'ページ')}`,
+  range(fair.min_quantity, fair.max_quantity, '部') && `部数：${range(fair.min_quantity, fair.max_quantity, '部')}`,
+  fair.minimum_order && `最低注文：${fair.minimum_order}`,
+  fair.conditions_text,
+].filter((c): c is string => typeof c === 'string' && c !== '');
+
+const untilText = fair.usable_until_text ?? fair.end_date_text;
+const eventText =
+  fair.event_name && fair.event_deadline
+    ? `${fair.event_name}${fair.event_date ? `（${formatJpDate(fair.event_date)}）` : ''}向けの入稿締切：${formatJpDate(fair.event_deadline)}`
+    : null;
+const notes = [fair.deadline_note, fair.notes].filter((n): n is string => !!n);
+
+const confirmed = confirmedAt(fair);
+const recheck = needsRecheck(fair, today);
+const lastChange = fair.updated_at ? { label: '最終更新', date: fair.updated_at } : { label: '掲載日', date: fair.published_at };
+
+// 32章：deep_link_ok のときだけフェアのページへ直接リンクする（unknown は安全側でトップへ）
+const deepLink = printer?.link_policy === 'deep_link_ok';
+const officialHref = deepLink ? fair.official_url : (printer?.official_url ?? fair.official_url);
+
+const description = [`${printerName}の「${fair.fair_name}」`, benefit, expired ? 'このフェアは終了しました' : deadlineText(fair, today)]
+  .filter(Boolean)
+  .join('。') + '。';
 ---
 
-<ComingSoon title={name} note="フェアの詳細ページ" />
+<BaseLayout title={`${fair.fair_name}（${printerName}）`} description={description}>
+  <article class="container fair">
+    {
+      expired && (
+        <div class="fair__ended" role="note">
+          <p class="fair__ended-title">このフェアは終了しました</p>
+          {period && <p>開催期間：{period}</p>}
+        </div>
+      )
+    }
+
+    <header class="fair__header">
+      <p class="fair__labels">
+        <StatusLabel kind={expired ? 'ended' : 'soon'} text={STATUS_LABELS[status]} />
+        {label && label.kind !== 'new' && label.kind !== 'update' && <StatusLabel {...label} />}
+        {!expired && badges.map((b) => <StatusLabel kind={b === 'NEW' ? 'new' : 'update'} text={b} />)}
+      </p>
+      <h1 class="fair__name">{fair.fair_name}</h1>
+      <p class="fair__printer">
+        {printer ? <a href={`/dojin/printer/${printer.printer_id}/`}>{printerName}</a> : printerName}
+      </p>
+      {
+        !expired && (
+          <p class="fair__when">
+            {status === 'upcoming' && from ? `${formatJpDateFull(from)}から利用可能` : deadlineText(fair, today)}
+          </p>
+        )
+      }
+    </header>
+
+    <div class="fair__body">
+      <section class="fair__section">
+        <h2>概要</h2>
+        <p>{fair.summary}</p>
+      </section>
+
+      {
+        benefit && (
+          <section class="fair__section">
+            <h2>お得な内容</h2>
+            <p class="fair__benefit">{benefit}</p>
+            {benefitChips.length > 0 && <ul class="fair__chips">{benefitChips.map((c) => <li><Chip {...c} size="md" /></li>)}</ul>}
+          </section>
+        )
+      }
+
+      <dl class="fair__specs">
+        {
+          processChips.length > 0 && (
+            <div>
+              <dt>対応加工</dt>
+              <dd><ul class="fair__chips">{processChips.map((c) => <li><Chip {...c} size="md" /></li>)}</ul></dd>
+            </div>
+          )
+        }
+        {
+          sizeChips.length > 0 && (
+            <div>
+              <dt>対応サイズ</dt>
+              <dd><ul class="fair__chips">{sizeChips.map((c) => <li><Chip {...c} size="md" /></li>)}</ul></dd>
+            </div>
+          )
+        }
+        {
+          printingChips.length > 0 && (
+            <div>
+              <dt>印刷方式</dt>
+              <dd><ul class="fair__chips">{printingChips.map((c) => <li><Chip {...c} size="md" /></li>)}</ul></dd>
+            </div>
+          )
+        }
+        {
+          (colorChips.length > 0 || fair.rgb_conversion) && (
+            <div>
+              <dt>色・入稿方式</dt>
+              <dd>
+                {colorChips.length > 0 && <ul class="fair__chips">{colorChips.map((c) => <li><Chip {...c} size="md" /></li>)}</ul>}
+                {fair.rgb_conversion && <p class="fair__note">{fair.rgb_conversion}</p>}
+              </dd>
+            </div>
+          )
+        }
+        {
+          paperNames.length > 0 && (
+            <div>
+              <dt>対象用紙</dt>
+              <dd>{paperNames.join('、')}</dd>
+            </div>
+          )
+        }
+        {
+          foilNames.length > 0 && (
+            <div>
+              <dt>対象箔</dt>
+              <dd>{foilNames.join('、')}</dd>
+            </div>
+          )
+        }
+        {
+          conditions.length > 0 && (
+            <div>
+              <dt>対象セット・条件</dt>
+              <dd><ul class="fair__list">{conditions.map((c) => <li>{c}</li>)}</ul></dd>
+            </div>
+          )
+        }
+        {
+          (untilText || eventText) && (
+            <div>
+              <dt>利用期限</dt>
+              <dd>
+                {untilText && <p>{untilText}</p>}
+                {eventText && <p>{eventText}</p>}
+              </dd>
+            </div>
+          )
+        }
+        {
+          notes.length > 0 && (
+            <div>
+              <dt>注意事項</dt>
+              <dd><ul class="fair__list">{notes.map((n) => <li>{n}</li>)}</ul></dd>
+            </div>
+          )
+        }
+      </dl>
+
+      <section class:list={['fair__source', { 'fair__source--warn': recheck }]}>
+        <p class="fair__dates">
+          {confirmed ? <span>公式情報確認済：{formatJpDateFull(confirmed)}</span> : <span>公式情報は未確認です</span>}
+          <span>{lastChange.label}：{formatJpDateFull(lastChange.date)}</span>
+        </p>
+        <p class="fair__caution">
+          {recheck && <strong>{confirmed ? '最後の確認から30日以上たっています。' : 'まだ公式情報との照合が済んでいません。'}</strong>}
+          掲載情報の正確性・最新性を保証するものではありません。入稿・注文前には必ず印刷所の公式サイトで最新情報をご確認ください。
+        </p>
+        <p class="fair__official">
+          <Button href={officialHref} target="_blank" rel="noopener">
+            {deepLink ? '公式サイトでフェアの詳細を見る' : `${printerName}の公式サイトへ`}
+          </Button>
+        </p>
+        {!deepLink && <p class="fair__note">このフェアの案内ページへは直接リンクしていません。公式サイト内でご確認ください。</p>}
+      </section>
+    </div>
+
+    <p class="fair__back"><a href={SEARCH_HREF}>← ほかのフェアを探す</a></p>
+  </article>
+</BaseLayout>
+
+<style>
+  .fair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+    max-width: 880px;
+    padding-top: var(--space-5);
+  }
+
+  .fair__ended {
+    padding: var(--space-4) var(--space-5);
+    border-left: 4px solid var(--label-ended);
+    border-radius: var(--radius);
+    background: var(--color-surface-sunken);
+    font-size: var(--fs-sm);
+  }
+
+  .fair__ended-title {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+  }
+
+  .fair__header {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .fair__labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .fair__name {
+    font-size: var(--fs-2xl);
+  }
+
+  .fair__printer {
+    color: var(--color-text-muted);
+  }
+
+  .fair__printer a {
+    color: inherit;
+  }
+
+  .fair__when {
+    font-weight: 700;
+  }
+
+  .fair__body {
+    display: grid;
+    gap: var(--space-5);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+  }
+
+  .fair__section {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .fair__section h2,
+  .fair__specs dt {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  .fair__benefit {
+    color: var(--color-primary-strong);
+    font-size: var(--fs-lg);
+    font-weight: 700;
+  }
+
+  .fair__specs {
+    display: grid;
+    margin: 0;
+  }
+
+  .fair__specs > div {
+    display: grid;
+    gap: var(--space-1);
+    padding-block: var(--space-3);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .fair__specs dd {
+    display: grid;
+    gap: var(--space-1);
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    .fair__specs > div {
+      grid-template-columns: 9em minmax(0, 1fr);
+      gap: var(--space-4);
+    }
+  }
+
+  .fair__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .fair__list {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  .fair__note {
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .fair__source {
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius);
+    background: var(--color-surface-sunken);
+    font-size: var(--fs-sm);
+  }
+
+  .fair__source--warn {
+    border: 1px solid var(--color-primary-strong);
+  }
+
+  .fair__source--warn strong {
+    color: var(--color-primary-strong);
+  }
+
+  .fair__dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-4);
+    font-weight: 700;
+  }
+
+  .fair__back {
+    font-size: var(--fs-sm);
+  }
+</style>

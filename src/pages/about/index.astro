@@ -1,5 +1,37 @@
 ---
-import ComingSoon from '../../components/ComingSoon.astro';
+// このサイトについて・運営者情報（仕様書45-2）
+import StaticPage from '../../components/StaticPage.astro';
+import { SITE } from '../../lib/site.ts';
 ---
 
-<ComingSoon title="このサイトについて・運営者情報" />
+<StaticPage
+  title="このサイトについて・運営者情報"
+  description={`${SITE.name}は、${SITE.operator}が運営する同人誌印刷所フェア情報サイトです。`}
+  updated="2026-10-05"
+>
+  <h2>{SITE.name}について</h2>
+  <p>
+    「次に作る本、どんな加工にしよう？」<br />
+    「初めての同人誌だから、お得に作りたい！」<br />
+    「突発本だけど、何かひと工夫したい！」
+  </p>
+  <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
+  <p>今から7日以内に使えるフェアから、数か月先まで使えるフェア、箔押し・特殊紙・RGB印刷などの加工別フェアまで。眺めているだけで、次の本を作りたくなる。そんなサイトを目指しています。</p>
+  <p>{SITE.name}は、各印刷所とは関係のない非公式のまとめサイトです。</p>
+
+  <h2>運営者</h2>
+  <p>
+    {SITE.name}は、{SITE.operator}が運営する同人誌印刷所フェア情報サイトです。<br />
+    企画・情報発信協力：{SITE.cooperation}
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <p>掲載のご依頼、掲載内容の訂正・削除のご依頼、フェア情報のご提供などは、<a href="/contact/">お問い合わせ</a>からお送りください。</p>
+
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="/policy/">掲載方針</a></li>
+    <li><a href="/disclaimer/">免責事項</a></li>
+    <li><a href="/privacy/">プライバシーポリシー</a></li>
+  </ul>
+</StaticPage>

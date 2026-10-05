@@ -1,5 +1,35 @@
 ---
-import ComingSoon from '../../components/ComingSoon.astro';
+// プライバシーポリシー（仕様書45-2）。Cookie・広告・アクセス解析を導入したら追記する（決定事項F）
+import StaticPage from '../../components/StaticPage.astro';
+import { SITE } from '../../lib/site.ts';
 ---
 
-<ComingSoon title="プライバシーポリシー" />
+<StaticPage title="プライバシーポリシー" description={`${SITE.name}における個人情報の取り扱いについてのご案内です。`} updated="2026-10-05">
+  <p>{SITE.name}（以下「本サイト」）を運営する{SITE.operator}（以下「運営者」）は、利用者の個人情報を次のとおり取り扱います。</p>
+
+  <h2>お問い合わせで受け取る情報</h2>
+  <p>お問い合わせはGoogleフォームで受け付けています。フォームに入力されたお名前（ハンドルネーム可）・メールアドレス・お問い合わせ内容などは、Google LLCのサービス上に保存されます。</p>
+  <p>Googleによる情報の取り扱いは、<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。</p>
+
+  <h2>利用目的</h2>
+  <ul>
+    <li>お問い合わせへの返信</li>
+    <li>掲載内容の訂正・削除などのご依頼への対応</li>
+    <li>いただいたフェア情報の確認と掲載</li>
+  </ul>
+
+  <h2>第三者への提供</h2>
+  <p>法令にもとづく場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。</p>
+
+  <h2>アクセスログ</h2>
+  <p>本サイトはGitHub Pagesで配信しています。配信元のGitHubは、セキュリティのために閲覧者のIPアドレスなどを記録することがあります。詳しくは<a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHubのプライバシーに関する声明</a>をご確認ください。</p>
+
+  <h2>Cookie・アクセス解析・広告</h2>
+  <p>本サイトは現在、Cookieを使ったアクセス解析や広告を利用していません。今後導入する場合は、このページを更新してお知らせします。</p>
+
+  <h2>改定</h2>
+  <p>このポリシーは、必要に応じて内容を変更することがあります。変更後の内容は、このページに掲載した時点から有効となります。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>個人情報の取り扱いについてのお問い合わせは、<a href="/contact/">お問い合わせ</a>からお送りください。</p>
+</StaticPage>

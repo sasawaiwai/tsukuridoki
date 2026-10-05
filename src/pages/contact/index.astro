@@ -1,5 +1,30 @@
 ---
-import ComingSoon from '../../components/ComingSoon.astro';
+// お問い合わせ（仕様書35章）。Googleフォーム1本で受け付ける。URLは site.ts の contactFormUrl
+import StaticPage from '../../components/StaticPage.astro';
+import Button from '../../components/Button.astro';
+import { SITE } from '../../lib/site.ts';
 ---
 
-<ComingSoon title="お問い合わせ" />
+<StaticPage title="お問い合わせ" description={`${SITE.name}へのお問い合わせ・掲載依頼・訂正依頼の窓口です。`}>
+  <p>{SITE.name}へのお問い合わせは、Googleフォームで受け付けています。フォームの中で、次のいずれかの種類をお選びください。</p>
+  <ul>
+    <li>印刷所からの掲載のご依頼</li>
+    <li>掲載内容の訂正・削除のご依頼</li>
+    <li>フェア情報のご提供</li>
+    <li>その他</li>
+  </ul>
+  <p>訂正・削除のご依頼の際は、対象のフェア名かページのURLを添えていただけると、確認がスムーズです。</p>
+
+  {
+    SITE.contactFormUrl ? (
+      <p>
+        <Button href={SITE.contactFormUrl} target="_blank" rel="noopener">お問い合わせフォームを開く</Button>
+      </p>
+    ) : (
+      <p class="static-page__box">お問い合わせフォームは準備中です。公開まで今しばらくお待ちください。</p>
+    )
+  }
+
+  <p>各フェアの内容・条件についてのお問い合わせは、それぞれの印刷所へお願いします。</p>
+  <p>いただいた情報の取り扱いは、<a href="/privacy/">プライバシーポリシー</a>をご確認ください。</p>
+</StaticPage>

@@ -9,16 +9,18 @@ interface Props {
   cards: CardModel[];
   layout?: 'top' | 'search';
   emptyText?: string;
+  /** 各カードの li に付ける属性（検索ページの絞り込み用）。cards と同じ順番で渡す */
+  itemAttrs?: Record<string, string | boolean | undefined>[];
 }
 
-const { cards, layout = 'top', emptyText = '現在、該当するフェアはありません。' } = Astro.props;
+const { cards, layout = 'top', emptyText = '現在、該当するフェアはありません。', itemAttrs } = Astro.props;
 ---
 
 {
   cards.length > 0 ? (
     <ul class={`fair-grid fair-grid--${layout}`}>
-      {cards.map((card) => (
-        <li>
+      {cards.map((card, i) => (
+        <li {...itemAttrs?.[i]}>
           <FairCard card={card} />
         </li>
       ))}

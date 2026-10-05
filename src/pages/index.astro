@@ -8,16 +8,13 @@ import FairGrid from '../components/FairGrid.astro';
 import PopularProcesses from '../components/PopularProcesses.astro';
 import { SITE } from '../lib/site.ts';
 import { PERIOD_PAGES, PRINTERS_HREF } from '../lib/nav.ts';
-import { byPublishedDesc, cardBuilder } from '../lib/cards.ts';
-import { effectiveUntil, getStatus, isEndingSoon, isNextWeekend, isWithin7Days, todayJST } from '../lib/period.ts';
-import type { Fair } from '../lib/types.ts';
+import { cardBuilder } from '../lib/cards.ts';
+import { byPublishedDesc, byUntilAsc } from '../lib/lists.ts';
+import { getStatus, isEndingSoon, isNextWeekend, isWithin7Days, todayJST } from '../lib/period.ts';
 
 const SECTION_LIMIT = 6;
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
-
-// 終了日が近い順（終了日不明は最後）
-const byUntilAsc = (a: Fair, b: Fair) => (effectiveUntil(a) ?? '9999-12-31').localeCompare(effectiveUntil(b) ?? '9999-12-31');
 
 const openFairs = data.fairs.filter((f) => getStatus(f, today) !== 'expired');
 const newCards = [...openFairs].sort(byPublishedDesc).slice(0, SECTION_LIMIT).map(toCard);

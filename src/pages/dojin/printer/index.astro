@@ -1,5 +1,143 @@
 ---
-import ComingSoon from '../../../components/ComingSoon.astro';
+// 印刷所一覧（仕様書34章）
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { loadSiteData } from '../../../lib/data.ts';
+import { getStatus, todayJST } from '../../../lib/period.ts';
+
+const today = todayJST();
+const data = loadSiteData();
+const printers = data.printers
+  .filter((p) => p.crawl_policy !== 'forbidden')
+  .map((printer) => {
+    const fairs = data.fairs.filter((f) => f.printer_id === printer.printer_id);
+    return {
+      printer,
+      active: fairs.filter((f) => getStatus(f, today) === 'active').length,
+      upcoming: fairs.filter((f) => getStatus(f, today) === 'upcoming').length,
+    };
+  })
+  .sort((a, b) => a.printer.name.localeCompare(b.printer.name, 'ja'));
 ---
 
-<ComingSoon title="印刷所一覧" />
+<BaseLayout title="印刷所一覧" description="ツクリドキ！に掲載している同人誌印刷所の一覧です。印刷所ごとに、開催中のフェアを見られます。">
+  <div class="container printers">
+    <header class="printers__header">
+      <h1>印刷所一覧</h1>
+      <p class="printers__lead">ツクリドキ！に掲載している印刷所です。印刷所名から、その印刷所のフェアを見られます。</p>
+    </header>
+
+    <ul class="printers__list">
+      {
+        printers.map(({ printer, active, upcoming }) => (
+          <li class="printers__item">
+            <h2 class="printers__name">
+              <a href={`/dojin/printer/${printer.printer_id}/`}>{printer.name}</a>
+            </h2>
+            <p class="printers__count">
+              開催中のフェア <strong>{active}</strong>件{upcoming > 0 && `（開催前 ${upcoming}件）`}
+            </p>
+            <p class="printers__links">
+              <a href={`/dojin/printer/${printer.printer_id}/`}>ツクリドキ！のフェア一覧</a>
+              <a href={printer.official_url} target="_blank" rel="noopener">公式サイト</a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <section class="printers__notice">
+      <h2>掲載されていない印刷所様へ</h2>
+      <p>
+        ツクリドキ！では、各印刷所が公式に案内しているフェア・キャンペーン情報を掲載しています。
+        掲載のご依頼や、掲載内容の訂正・削除のご依頼は、<a href="/contact/">お問い合わせ</a>からお送りください。
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .printers {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    padding-top: var(--space-5);
+  }
+
+  .printers__header {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .printers__lead {
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .printers__list {
+    display: grid;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+    .printers__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .printers__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .printers__item {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .printers__name {
+    font-size: var(--fs-lg);
+  }
+
+  .printers__name a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .printers__name a:hover {
+    color: var(--color-primary-strong);
+  }
+
+  .printers__count {
+    font-size: var(--fs-sm);
+  }
+
+  .printers__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    font-size: var(--fs-sm);
+  }
+
+  .printers__notice {
+    display: grid;
+    gap: var(--space-2);
+    max-width: 760px;
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--color-surface-sunken);
+    font-size: var(--fs-sm);
+  }
+
+  .printers__notice h2 {
+    font-size: var(--fs-base);
+  }
+</style>
