@@ -48,12 +48,10 @@ export const POPULAR_PROCESS_ANCHOR = '#popular-processes';
 export const POPULAR_PROCESS_LINKS: (NavLink & { category: CardCategory; glyph: string })[] = [
   { label: '箔押し', glyph: '箔', href: `${SEARCH_HREF}?process=foil`, category: 'foil' },
   { label: '特殊紙', glyph: '紙', href: `${SEARCH_HREF}?process=special_paper`, category: 'paper' },
-  { label: 'RGB印刷', glyph: 'RGB', href: `${SEARCH_HREF}?color=RGB`, category: 'rgb' },
-  { label: 'オンデマンド', glyph: 'OD', href: `${SEARCH_HREF}?printing=ondemand`, category: 'other' },
   { label: '割引', glyph: '割', href: `${SEARCH_HREF}?benefit=discount`, category: 'deal' },
-  { label: '無料加工', glyph: '無', href: `${SEARCH_HREF}?benefit=free_process`, category: 'deal' },
-  { label: '用紙変更', glyph: '替', href: `${SEARCH_HREF}?benefit=free_paper_upgrade`, category: 'paper' },
   { label: 'PP加工', glyph: 'PP', href: `${SEARCH_HREF}?process=pp,matte_pp,hologram_pp,special_pp`, category: 'surface' },
   { label: '遊び紙', glyph: '遊', href: `${SEARCH_HREF}?process=endpaper`, category: 'craft' },
+  { label: '用紙変更', glyph: '替', href: `${SEARCH_HREF}?benefit=free_paper_upgrade`, category: 'paper' },
+  { label: '小口染め', glyph: '染', href: `${SEARCH_HREF}?process=edge_dyeing`, category: 'craft' },
   { label: 'その他', glyph: '…', href: SEARCH_HREF, category: 'other' },
 ];

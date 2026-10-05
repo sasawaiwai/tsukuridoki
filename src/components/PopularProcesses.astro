@@ -30,31 +30,18 @@ const { id } = Astro.props;
 </section>
 
 <style>
-  /* スマホ：横スクロール（4つ半ほど見せて、続きがあることを伝える）／タブレット以上：1行に並べる */
+  /* スマホ：4つずつ2段／タブレット以上：1行に並べる */
   .popular__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-1);
-    margin: 0 calc(var(--gutter) * -1);
-    padding: 0 var(--gutter) var(--space-2);
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    scrollbar-width: thin;
     list-style: none;
-  }
-
-  .popular__list li {
-    flex: 0 0 84px;
-    scroll-snap-align: start;
   }
 
   @media (min-width: 768px) {
     .popular__list {
-      display: grid;
-      grid-template-columns: repeat(10, minmax(0, 1fr));
+      grid-template-columns: repeat(8, minmax(0, 1fr));
       gap: var(--space-2);
-      margin: 0;
-      padding: 0;
-      overflow: visible;
     }
   }
 
