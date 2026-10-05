@@ -1,0 +1,127 @@
+---
+// 一覧ページの共通の枠（phase2-design.md 3章）。時期別・属性別・印刷所別・アーカイブで使う
+// 開催中・開催前が0件で pastCards があるときは「過去のフェア」として終了済みを出す（決定事項B）
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FairGrid from './FairGrid.astro';
+import Chip from './Chip.astro';
+import type { CardModel } from '../lib/fair-display.ts';
+import { SEARCH_HREF } from '../lib/nav.ts';
+
+interface Props {
+  title: string;
+  description: string;
+  cards: CardModel[];
+  pastCards?: CardModel[];
+  /** 「条件を組み合わせて探す」のリンク先（検索ページ＋クエリ） */
+  searchHref?: string;
+  /** 下部に出す年別アーカイブ。アーカイブ自身では渡さない */
+  archiveYears?: string[];
+}
+
+const { title, description, cards, pastCards = [], searchHref = SEARCH_HREF, archiveYears = [] } = Astro.props;
+const showPast = cards.length === 0 && pastCards.length > 0;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="container list-page">
+    <header class="list-page__header">
+      <h1>{title}</h1>
+      <p class="list-page__lead">{description}</p>
+      <slot name="header" />
+    </header>
+
+    {cards.length > 0 && <p class="list-page__count"><strong>{cards.length}</strong>件のフェア</p>}
+
+    {
+      showPast ? (
+        <>
+          <p class="list-page__empty">現在開催中のフェアはありません。</p>
+          <section class="list-page__past">
+            <h2>過去のフェア</h2>
+            <FairGrid cards={pastCards} />
+          </section>
+        </>
+      ) : (
+        <FairGrid cards={cards} />
+      )
+    }
+
+    <footer class="list-page__footer">
+      <p><a href={searchHref}>条件を組み合わせて探す →</a></p>
+      {
+        archiveYears.length > 0 && (
+          <div class="list-page__archive">
+            <p>終了したフェアは、年別のアーカイブで見られます。</p>
+            <ul>
+              {archiveYears.map((year) => (
+                <li>
+                  <Chip label={`${year}年に終了したフェア`} href={`/dojin/archive/${year}/`} size="md" />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </footer>
+  </div>
+</BaseLayout>
+
+<style>
+  .list-page {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+    padding-top: var(--space-5);
+  }
+
+  .list-page__header {
+    display: grid;
+    gap: var(--space-2);
+    max-width: 760px;
+  }
+
+  .list-page__lead {
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .list-page__count {
+    font-size: var(--fs-sm);
+  }
+
+  .list-page__empty {
+    padding: var(--space-5);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius);
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+
+  .list-page__past {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .list-page__footer {
+    display: grid;
+    gap: var(--space-4);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--fs-sm);
+  }
+
+  .list-page__archive {
+    display: grid;
+    gap: var(--space-2);
+    color: var(--color-text-muted);
+  }
+
+  .list-page__archive ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+</style>

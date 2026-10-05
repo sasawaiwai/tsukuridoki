@@ -7,9 +7,15 @@ import SiteFooter from '../components/SiteFooter.astro';
 interface Props {
   title?: string;
   description?: string;
+  /** サイト全体の設定にかかわらず検索エンジンに載せない（/dev/ 以下など） */
+  noindex?: boolean;
 }
 
-const { title, description = `${SITE.tagline}。各印刷所のフェア・キャンペーン情報を、時期・加工・サイズから探せます。` } = Astro.props;
+const {
+  title,
+  description = `${SITE.tagline}。各印刷所のフェア・キャンペーン情報を、時期・加工・サイズから探せます。`,
+  noindex = false,
+} = Astro.props;
 const fullTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -21,7 +27,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {SITE.noindex && <meta name="robots" content="noindex, nofollow" />}
+    {(SITE.noindex || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

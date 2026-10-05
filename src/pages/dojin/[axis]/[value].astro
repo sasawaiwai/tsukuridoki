@@ -1,0 +1,32 @@
+---
+// 属性別の一覧：加工・サイズ・印刷方式・色・特典（仕様書14章・41-2）
+// 開催中・開催前が0件になってもページは残し、過去のフェアを出す（決定事項B）
+import ListPage from '../../../components/ListPage.astro';
+import { cardBuilder } from '../../../lib/cards.ts';
+import { loadSiteData } from '../../../lib/data.ts';
+import { ATTRIBUTE_AXES, archiveYears, attributeValues, byPublishedDesc, byUntilDesc, fairsWithAttribute, type AttributeValue } from '../../../lib/lists.ts';
+import { SEARCH_HREF } from '../../../lib/nav.ts';
+import { isExpired } from '../../../lib/search.ts';
+import { todayJST } from '../../../lib/period.ts';
+
+export function getStaticPaths() {
+  return attributeValues(loadSiteData()).map((attr) => ({ params: { axis: attr.axis, value: attr.value }, props: { attr } }));
+}
+
+const { attr } = Astro.props as { attr: AttributeValue };
+const today = todayJST();
+const { data, toCard } = cardBuilder(today);
+const axisLabel = ATTRIBUTE_AXES.find((d) => d.axis === attr.axis)!.label;
+const fairs = fairsWithAttribute(data.fairs, attr.axis, attr.value);
+const open = fairs.filter((f) => !isExpired(f, today)).sort(byPublishedDesc);
+const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
+---
+
+<ListPage
+  title={attr.title}
+  description={`${axisLabel}「${attr.label}」に当てはまる、開催中・開催前のフェアの一覧です。`}
+  cards={open.map(toCard)}
+  pastCards={past.map(toCard)}
+  searchHref={`${SEARCH_HREF}?${attr.axis}=${attr.value}`}
+  archiveYears={archiveYears(data.fairs, today)}
+/>

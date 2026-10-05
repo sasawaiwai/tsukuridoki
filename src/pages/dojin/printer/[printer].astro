@@ -1,0 +1,38 @@
+---
+// 印刷所別の一覧（仕様書14章）
+import ListPage from '../../../components/ListPage.astro';
+import Button from '../../../components/Button.astro';
+import { cardBuilder } from '../../../lib/cards.ts';
+import { loadSiteData } from '../../../lib/data.ts';
+import { archiveYears, byPublishedDesc, byUntilDesc } from '../../../lib/lists.ts';
+import { SEARCH_HREF } from '../../../lib/nav.ts';
+import { isExpired } from '../../../lib/search.ts';
+import { todayJST } from '../../../lib/period.ts';
+import type { Printer } from '../../../lib/types.ts';
+
+export function getStaticPaths() {
+  return loadSiteData()
+    .printers.filter((p) => p.crawl_policy !== 'forbidden')
+    .map((printer) => ({ params: { printer: printer.printer_id }, props: { printer } }));
+}
+
+const { printer } = Astro.props as { printer: Printer };
+const today = todayJST();
+const { data, toCard } = cardBuilder(today);
+const fairs = data.fairs.filter((f) => f.printer_id === printer.printer_id);
+const open = fairs.filter((f) => !isExpired(f, today)).sort(byPublishedDesc);
+const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
+---
+
+<ListPage
+  title={`${printer.name}のフェア`}
+  description={`${printer.name}の、開催中・開催前のフェアの一覧です。最新の情報は印刷所の公式サイトでご確認ください。`}
+  cards={open.map(toCard)}
+  pastCards={past.map(toCard)}
+  searchHref={`${SEARCH_HREF}?printer=${printer.printer_id}`}
+  archiveYears={archiveYears(data.fairs, today)}
+>
+  <p slot="header">
+    <Button href={printer.official_url} variant="secondary" target="_blank" rel="noopener">{printer.name}の公式サイト</Button>
+  </p>
+</ListPage>

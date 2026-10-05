@@ -1,7 +1,7 @@
 // フェアカード用の表示データを作る（仕様書 27章・52章）
 
 import type { DateString, Fair, Process } from './types.ts';
-import { cardLabel, effectiveFrom, effectiveUntil, getStatus, type CardLabelKind } from './period.ts';
+import { cardLabel, diffDays, effectiveFrom, effectiveUntil, getStatus, type CardLabelKind } from './period.ts';
 import { BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
 /** カード上部の色の分類（52-3） */
@@ -9,6 +9,7 @@ export type CardCategory = 'foil' | 'paper' | 'rgb' | 'surface' | 'craft' | 'dea
 
 const CRAFT_PROCESSES = new Set(['endpaper', 'perforation', 'hole_punch']);
 const CARD_CHIP_LIMIT = 5;
+const RECHECK_DAYS = 30;
 
 export interface Chip {
   label: string;
@@ -103,6 +104,24 @@ export function cardChips(fair: Fair, processes: ProcessGroups): Chip[] {
 export function formatJpDate(date: DateString): string {
   const [, m, d] = date.split('-').map(Number);
   return `${m}月${d}日`;
+}
+
+/** 2026-11-30 → 2026年11月30日 */
+export function formatJpDateFull(date: DateString): string {
+  const [y, m, d] = date.split('-').map(Number);
+  return `${y}年${m}月${d}日`;
+}
+
+/** 公式情報の確認日（29-2）：verified_at と last_checked_at の新しい方 */
+export function confirmedAt(fair: Fair): DateString | null {
+  const dates = [fair.verified_at, fair.last_checked_at].filter((d): d is DateString => !!d);
+  return dates.length > 0 ? dates.sort().at(-1)! : null;
+}
+
+/** 確認日が30日以上前、または確認日がない（29-3） */
+export function needsRecheck(fair: Fair, today: DateString): boolean {
+  const date = confirmedAt(fair);
+  return date === null || diffDays(date, today) >= RECHECK_DAYS;
 }
 
 /** カード下部の期限表示 */

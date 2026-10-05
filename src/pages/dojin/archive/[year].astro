@@ -1,0 +1,29 @@
+---
+// 年別アーカイブ：その年に終了したフェア（仕様書39章）。個別ページのURLは変えない
+import ListPage from '../../../components/ListPage.astro';
+import { cardBuilder } from '../../../lib/cards.ts';
+import { loadSiteData } from '../../../lib/data.ts';
+import { archiveYears, byUntilDesc, endYear } from '../../../lib/lists.ts';
+import { SEARCH_HREF } from '../../../lib/nav.ts';
+import { isExpired } from '../../../lib/search.ts';
+import { todayJST } from '../../../lib/period.ts';
+
+export function getStaticPaths() {
+  return archiveYears(loadSiteData().fairs, todayJST()).map((year) => ({ params: { year } }));
+}
+
+const { year } = Astro.params;
+const today = todayJST();
+const { data, toCard } = cardBuilder(today);
+const cards = data.fairs
+  .filter((f) => isExpired(f, today) && endYear(f) === year)
+  .sort(byUntilDesc)
+  .map(toCard);
+---
+
+<ListPage
+  title={`${year}年に終了したフェア`}
+  description={`${year}年に終了した、同人誌印刷所のフェアの記録です。内容は終了時点のもので、現在は利用できません。`}
+  cards={cards}
+  searchHref={`${SEARCH_HREF}?include_expired=1`}
+/>
