@@ -42,4 +42,4 @@ https://tsukuridoki.sasadokoro.online/
 
 - `main`：公開用。直接pushしない。マージ＝公開
 - `develop`：開発用
-- 自動公開：main 更新時と毎日4:30（日本時間）
+- 自動公開：main 更新時と毎日2:17（日本時間）

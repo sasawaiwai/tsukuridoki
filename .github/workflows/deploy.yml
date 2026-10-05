@@ -1,4 +1,4 @@
-# 公開：main が更新されたとき＋毎日4:30（日本時間）＋手動
+# 公開：main が更新されたとき＋毎日2:17（日本時間）＋手動
 # 毎日の再ビルドで「本日終了」「あと3日」などの日付依存の表示を更新する（仕様書4・6章）
 name: Deploy
 
@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '30 4 * * *'
+    - cron: '17 2 * * *'
       timezone: 'Asia/Tokyo'
   workflow_dispatch:
 
