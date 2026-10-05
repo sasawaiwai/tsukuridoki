@@ -18,6 +18,8 @@ const {
 } = Astro.props;
 const fullTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// アクセス解析は本番ビルドだけ。確認用ページ（noindex 指定）では読み込まない
+const gaId = import.meta.env.PROD && !noindex ? SITE.gaMeasurementId : null;
 ---
 
 <!doctype html>
@@ -43,6 +45,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="twitter:card" content={SITE.ogImage ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
+
+    {
+      gaId && (
+        <>
+          <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+          <script is:inline define:vars={{ gaId }}>
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () {
+              window.dataLayer.push(arguments);
+            };
+            window.gtag('js', new Date());
+            window.gtag('config', gaId);
+          </script>
+        </>
+      )
+    }
   </head>
   <body>
     <SiteHeader />

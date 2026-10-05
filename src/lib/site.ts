@@ -9,6 +9,8 @@ export const SITE = {
   cooperation: 'コトノミン',
   // お問い合わせ用のGoogleフォーム（仕様書35章）。作成したらURLを設定する。null の間は「準備中」と表示する
   contactFormUrl: null as string | null,
+  // Google Analytics（GA4）の測定ID。本番ビルドだけで読み込む（/dev/ 以下は除く）
+  gaMeasurementId: 'G-QN4G6TXQK9' as string | null,
   // 正式公開（v1）まで true。false にするときは public/robots.txt も書き換える
   noindex: true,
   // OGP画像（1200×630px）。運営者が public/ に置いたらパスを設定する（例：'/og-default.png'）
