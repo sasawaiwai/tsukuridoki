@@ -6,7 +6,8 @@ fair_name: 小口印刷デビューフェア
 printer_id: mihondo
 category: dojinshi
 
-official_url: https://example.org/news/edge-printing/
+sources:
+  - https://example.org/news/edge-printing/
 source_type: official_news
 verification_status: verified
 

@@ -6,7 +6,8 @@ fair_name: ホログラム箔押し割引フェア
 printer_id: sample-print
 category: dojinshi
 
-official_url: https://example.com/fair/hologram-foil/
+sources:
+  - https://example.com/fair/hologram-foil/
 source_type: official_campaign
 verification_status: verified
 

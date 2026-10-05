@@ -10,6 +10,7 @@ import { cardLabel, effectiveFrom, getStatus, isNew, isUpdated, todayJST } from 
 import { benefitText, confirmedAt, deadlineText, formatJpDate, formatJpDateFull, needsRecheck, processCategory, processMap } from '../../../lib/fair-display.ts';
 import { BINDING_LABELS, BOOK_TYPE_LABELS, COLOR_MODE_LABELS, BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS, STATUS_LABELS } from '../../../lib/labels.ts';
 import { colorValues } from '../../../lib/search.ts';
+import { sourceLinks } from '../../../lib/sources.ts';
 import { SEARCH_HREF } from '../../../lib/nav.ts';
 import type { Fair } from '../../../lib/types.ts';
 
@@ -82,9 +83,9 @@ const confirmed = confirmedAt(fair);
 const recheck = needsRecheck(fair, today);
 const lastChange = fair.updated_at ? { label: '最終更新', date: fair.updated_at } : { label: '掲載日', date: fair.published_at };
 
-// 32章：deep_link_ok のときだけフェアのページへ直接リンクする（unknown は安全側でトップへ）
-const deepLink = printer?.link_policy === 'deep_link_ok';
-const officialHref = deepLink ? fair.official_url : (printer?.official_url ?? fair.official_url);
+// 公式情報源のリンク。1件目がメイン（公式サイトがなくXだけなら「公式Xでの告知を見る」）。埋め込みはせずリンクだけ
+const { links: sourceLinkList, topPageOnly } = sourceLinks(fair, printer);
+const [mainLink, ...otherLinks] = sourceLinkList;
 
 const description = [`${printerName}の「${fair.fair_name}」`, benefit, expired ? 'このフェアは終了しました' : deadlineText(fair, today)]
   .filter(Boolean)
@@ -228,11 +229,20 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
           掲載情報の正確性・最新性を保証するものではありません。入稿・注文前には必ず印刷所の公式サイトで最新情報をご確認ください。
         </p>
         <p class="fair__official">
-          <Button href={officialHref} target="_blank" rel="noopener">
-            {deepLink ? '公式サイトでフェアの詳細を見る' : `${printerName}の公式サイトへ`}
-          </Button>
+          <Button href={mainLink.href} target="_blank" rel="noopener">{mainLink.label}</Button>
         </p>
-        {!deepLink && <p class="fair__note">このフェアの案内ページへは直接リンクしていません。公式サイト内でご確認ください。</p>}
+        {
+          otherLinks.length > 0 && (
+            <ul class="fair__sources">
+              {otherLinks.map((link) => (
+                <li>
+                  <a href={link.href} target="_blank" rel="noopener">{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+        {topPageOnly && <p class="fair__note">このフェアの案内ページへは直接リンクしていません。公式サイト内でご確認ください。</p>}
       </section>
     </div>
 
@@ -382,6 +392,13 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
     flex-wrap: wrap;
     gap: var(--space-1) var(--space-4);
     font-weight: 700;
+  }
+
+  .fair__sources {
+    display: grid;
+    gap: var(--space-1);
+    margin: 0;
+    padding-left: 1.2em;
   }
 
   .fair__back {
