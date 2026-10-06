@@ -12,7 +12,7 @@ const { id } = Astro.props;
 ---
 
 <section class="popular" aria-labelledby={id}>
-  <SectionHeader id={id} title="人気の加工から探す" moreHref={SEARCH_HREF} />
+  <SectionHeader id={id} title="人気の加工から探す" />
   <ul class="popular__list">
     {
       POPULAR_PROCESS_LINKS.map((link) => (
@@ -27,14 +27,22 @@ const { id } = Astro.props;
       ))
     }
   </ul>
+  <p class="popular__more"><a href={SEARCH_HREF}>すべて見る ›</a></p>
 </section>
 
 <style>
+  .popular__more {
+    margin: var(--space-2) 0 0;
+    text-align: right;
+  }
+
   /* スマホ：4つずつ2段／タブレット以上：1行に並べる */
   .popular__list {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-1);
+    margin: 0;
+    padding: 0; /* リストの初期の字下げで右に寄らないように */
     list-style: none;
   }
 
