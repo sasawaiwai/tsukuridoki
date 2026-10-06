@@ -10,6 +10,10 @@ on:
         description: '印刷所ID（空なら crawl_policy が allowed の全社）'
         required: false
         type: string
+      max_urls:
+        description: '1社あたりの取得数（空なら20。印刷所の指定とあわせて、少数で試すとき用）'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -28,9 +32,9 @@ jobs:
       - name: 巡回
         env:
           PRINTER: ${{ inputs.printer }}
+          MAX_URLS: ${{ inputs.max_urls }}
         run: |
-          if [ -n "$PRINTER" ]; then
-            npm run crawl -- --printer="$PRINTER"
-          else
-            npm run crawl
-          fi
+          args=()
+          if [ -n "$PRINTER" ]; then args+=(--printer="$PRINTER"); fi
+          if [ -n "$MAX_URLS" ]; then args+=(--max-urls="$MAX_URLS"); fi
+          npm run crawl -- "${args[@]}"

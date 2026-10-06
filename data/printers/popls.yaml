@@ -1,0 +1,15 @@
+printer_id: popls
+name: ポプルス
+# トップ（www）は www2.popls.co.jp/pop/ へ自動で移動する
+official_url: https://www.popls.co.jp/
+fair_index_url: https://www2.popls.co.jp/pop/fair/index.html
+crawl_selector: '#main'
+fair_link_selector: '#main a'
+domains: [popls.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず。robots.txtなし（2026-10-06確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-06

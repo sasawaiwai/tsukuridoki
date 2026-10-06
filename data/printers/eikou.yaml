@@ -1,0 +1,16 @@
+printer_id: eikou
+name: 栄光
+official_url: https://www.eikou.com/
+# 1ページに複数のフェアが並ぶ（各フェアの個別ページ /campaign/番号/ もある）
+fair_index_url: https://www.eikou.com/campaign/
+# 一覧は col-9、個別ページは col-md-9
+crawl_selector: div.col-9.order-2, div.col-md-9.order-2
+fair_link_selector: 'a[href*="/campaign/"]'
+domains: [eikou.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/ のみ禁止（2026-10-06確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-06

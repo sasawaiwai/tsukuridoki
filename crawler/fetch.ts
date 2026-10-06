@@ -1,6 +1,12 @@
 // 印刷所サイトの取得とアクセスマナー（仕様書7-4、phase3-design 4章）
 // 取得したHTMLはメモリにだけ置き、ファイル・ログには出さない（7-2）
 
+import net from 'node:net';
+
+// Node は IPv4 の接続に0.25秒以上かかると打ち切って IPv6 を試す。IPv6 が使えない環境では、
+// 相手の応答が少し遅いだけで「通信エラー」になるため、1つの経路を5秒まで待つ
+net.setDefaultAutoSelectFamilyAttemptTimeout(5000);
+
 export const ROBOTS_TOKEN = 'TsukuridokiBot';
 export const USER_AGENT = `${ROBOTS_TOKEN}/1.0 (+https://tsukuridoki.sasadokoro.online/contact/)`;
 /** 同じサイトへの最低の間隔。robots.txt の Crawl-delay が長ければそちらに合わせる */
