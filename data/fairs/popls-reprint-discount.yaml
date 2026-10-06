@@ -1,0 +1,23 @@
+fair_id: popls-reprint-discount
+slug: popls-reprint-discount
+fair_name: 再版値引
+printer_id: popls
+category: dojinshi
+sources:
+  - https://www2.popls.co.jp/pop/fair/saihan.html
+summary: 半年以内にポプルスで作った本・カードセット・CD/DVDを同じ原稿・仕様で再版すると、本とカードセットは基本料金の10%、CD・DVDは5,000円値引きされる。
+benefit_summary: 再版で基本料金10%OFF
+source_type: official_other
+timing_type: ongoing
+benefit_types:
+  - discount
+discount_rate: 10
+application_required: false
+conditions_text: ポプルスで半年以内に製作した本・カードセット・CD・DVDの再版が対象。前回と同じ原稿・仕様（本は奥付の差し替えのみ無料で可）。マイページの「再版」ボタンから注文すると自動で適用。カードセット以外のグッズは対象外。
+published_at: 2026-10-06
+discovered_at: 2026-10-06
+verified_at: 2026-10-06
+verification_status: verified
+history:
+  - date: 2026-10-06
+    type: published

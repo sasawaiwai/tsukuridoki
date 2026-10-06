@@ -283,7 +283,7 @@
 - url: https://www2.popls.co.jp/pop/fair/2026option50_3.html
   printer_id: popls
   content_hash: sha256:aeb9856fb703ada76a2d5d01bddaa75ee3f6e5b6e3cbb9f36218b23691a3c046
-  reviewed_hash: null
+  reviewed_hash: sha256:aeb9856fb703ada76a2d5d01bddaa75ee3f6e5b6e3cbb9f36218b23691a3c046
   content_chars: null
   etag: '"213bf7af-6017-65b2df86a466c"'
   last_modified: Fri, 11 Sep 2026 05:00:59 GMT
@@ -333,7 +333,7 @@
 - url: https://www2.popls.co.jp/pop/fair/saihan.html
   printer_id: popls
   content_hash: sha256:6fa8d50d5b23447fcc98ffbc7b91231583081158c599a4a910d83626a221866c
-  reviewed_hash: null
+  reviewed_hash: sha256:6fa8d50d5b23447fcc98ffbc7b91231583081158c599a4a910d83626a221866c
   content_chars: null
   etag: '"20041e84-46b0-6511cacddb215"'
   last_modified: Wed, 06 May 2026 02:11:01 GMT

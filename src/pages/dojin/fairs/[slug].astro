@@ -31,6 +31,8 @@ const label = expired ? null : cardLabel(fair, today);
 const badges = [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean) as string[];
 const benefit = benefitText(fair, processes);
 const timing = timingType(fair);
+// 入稿日限定で次の入稿日を待っている間は「開催前」ではなく「入稿日待ち」（入稿日と入稿日の間も含むため）
+const statusText = timing === 'specific_dates' && status === 'upcoming' ? '入稿日待ち' : STATUS_LABELS[status];
 const period = timing === 'specific_dates' ? (fair.submission_dates_text ?? '') : [fair.start_date_text, fair.end_date_text].filter(Boolean).join(' 〜 ');
 const from = effectiveFrom(fair);
 // 入稿日限定：入稿日と納品日の一覧（過ぎた入稿日は「受付終了」）
@@ -66,8 +68,8 @@ const conditions = [
   fair.member_only && '会員限定',
   fair.event_delivery_only && 'イベントへの直接搬入のみ対象',
   fair.specific_sets_only && '対象のセット・商品のみ',
-  fair.application_required && '申し込み・クーポンコードの入力が必要',
-  fair.campaign_code && `クーポンコード：${fair.campaign_code}`,
+  fair.application_required && '申し込み（コードや文言の記入など）が必要',
+  fair.campaign_code && `申し込み時に記入するコード・文言：${fair.campaign_code}`,
   fair.combinable === true && '他の割引と併用できる',
   fair.combinable === false && '他の割引とは併用できない',
   fair.binding?.length && `製本：${fair.binding.map((b) => BINDING_LABELS[b]).join('・')}`,
@@ -111,7 +113,7 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
 
     <header class="fair__header">
       <p class="fair__labels">
-        <StatusLabel kind={expired ? 'ended' : 'soon'} text={STATUS_LABELS[status]} />
+        <StatusLabel kind={expired ? 'ended' : 'soon'} text={statusText} />
         {label && label.kind !== 'new' && label.kind !== 'update' && <StatusLabel {...label} />}
         {!expired && badges.map((b) => <StatusLabel kind={b === 'NEW' ? 'new' : 'update'} text={b} />)}
       </p>

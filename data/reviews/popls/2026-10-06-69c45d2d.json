@@ -1,0 +1,55 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026option50_3.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:aeb9856fb703ada76a2d5d01bddaa75ee3f6e5b6e3cbb9f36218b23691a3c046",
+  "content_chars": 992,
+  "extractor": "manual",
+  "extracted_at": "2026-10-06T22:25:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-option-half-price-2026",
+      "fair_name": "本のオプション50%値引きフェア",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026option50_3.html"
+      ],
+      "summary": "ポプルス創立50周年を記念して、カバー・箔押し・遊び紙などの本のオプションが半額になる。オプションを使うと送料も1か所分無料。",
+      "benefit_summary": "本のオプションが50%OFF",
+      "source_type": "official_fair",
+      "timing_type": "specific_dates",
+      "submission_dates": [
+        {
+          "date": "2026-10-15",
+          "delivery_date": "2026-11-08"
+        },
+        {
+          "date": "2026-11-19",
+          "delivery_date": "2026-12-13"
+        }
+      ],
+      "submission_dates_text": "2026年10月15日・11月19日（0時〜23時59分入稿分）",
+      "deadline_note": "10月15日入稿は11月8日納品、11月19日入稿は12月13日納品。この納品日より前の日付は指定できない。",
+      "processes": [
+        "foil",
+        "endpaper"
+      ],
+      "tags": [
+        "limited_time"
+      ],
+      "benefit_types": [
+        "discount",
+        "free_option"
+      ],
+      "discount_rate": 50,
+      "free_options": [
+        "送料1か所分"
+      ],
+      "application_required": true,
+      "campaign_code": "ポプルス50周年フェア 利用",
+      "conditions_text": "申請制：注文フォームのその他連絡事項欄に「ポプルス50周年フェア 利用」と記入。サンプル確認オプションを使うと対象外。シースルーフェアの遊び紙値引きとは重ねられない（50%値引きが優先）。送料無料はオプションを使った本だけで、分納は最も高い送料1か所分。期間内に注文と原稿が揃ったものに適用。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "フェア名は公式のフェア一覧ページの表記。入稿できるのは2日だけのため入稿日限定で登録。"
+}
