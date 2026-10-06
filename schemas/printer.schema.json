@@ -25,6 +25,13 @@
     "crawl_policy": { "enum": ["allowed", "manual_only", "forbidden", "unknown"] },
     "terms_url": { "type": ["string", "null"], "format": "uri" },
     "policy_note": { "type": ["string", "null"] },
+    "crawl_selector": { "type": ["string", "null"], "minLength": 1 },
+    "crawl_ignore": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "fair_link_selector": { "type": ["string", "null"], "minLength": 1 },
     "crawl_interval_days": { "type": "integer", "minimum": 1 },
     "last_crawled_at": { "type": ["string", "null"], "format": "date-time" },
     "last_policy_checked_at": { "type": ["string", "null"], "format": "date" }

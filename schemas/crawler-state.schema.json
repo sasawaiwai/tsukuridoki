@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "crawler-state.schema.json",
+  "title": "巡回の記録（data/crawler/state.yaml）",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["url", "printer_id", "content_hash", "etag", "last_modified", "last_fetched_at", "fetch_status", "http_status"],
+    "properties": {
+      "url": { "type": "string", "format": "uri" },
+      "printer_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "content_hash": { "type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$" },
+      "etag": { "type": ["string", "null"] },
+      "last_modified": { "type": ["string", "null"] },
+      "last_fetched_at": { "type": ["string", "null"], "format": "date-time" },
+      "fetch_status": { "enum": ["ok", "not_modified", "not_found", "blocked", "error"] },
+      "http_status": { "type": ["integer", "null"] }
+    }
+  }
+}

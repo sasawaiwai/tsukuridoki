@@ -1,11 +1,11 @@
 // データ検証：data/ 以下のYAMLを schemas/ のルールとファイル同士のつながりで確認する。
 // エラーがあれば日本語で表示し、終了コード1で止める（ビルドも止まる）。
 
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { readYamlDir, readYamlFile } from '../src/lib/data.ts';
+import { DATA_DIR, readYamlDir, readYamlFile } from '../src/lib/data.ts';
 import { hostMatches, isSnsUrl } from '../src/lib/sources.ts';
 
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
@@ -23,6 +23,7 @@ const validators = {
   foil: loadSchema('foil.schema.json'),
   processes: loadSchema('processes.schema.json'),
   tags: loadSchema('tags.schema.json'),
+  crawlerState: loadSchema('crawler-state.schema.json'),
 };
 
 const errors = [];
@@ -106,6 +107,10 @@ const papers = safeRead(() => readYamlDir('papers'), 'papers/') ?? [];
 const foils = safeRead(() => readYamlDir('foils'), 'foils/') ?? [];
 const processesFile = safeRead(() => readYamlFile('processes/processes.yaml'), 'processes/processes.yaml');
 const tagsFile = safeRead(() => readYamlFile('tags/tags.yaml'), 'tags/tags.yaml');
+// 巡回の記録は、初めて巡回するまで存在しない
+const stateFile = existsSync(join(DATA_DIR, 'crawler/state.yaml'))
+  ? safeRead(() => readYamlFile('crawler/state.yaml'), 'crawler/state.yaml')
+  : null;
 
 // ---- Schema ----
 
@@ -115,6 +120,7 @@ const validPapers = papers.filter((f) => checkSchema('paper', f));
 const validFoils = foils.filter((f) => checkSchema('foil', f));
 if (processesFile) checkSchema('processes', processesFile);
 if (tagsFile) checkSchema('tags', tagsFile);
+const validState = stateFile ? checkSchema('crawlerState', stateFile) : false;
 
 // ---- ファイル名とIDの一致・ID重複 ----
 
@@ -199,6 +205,15 @@ for (const { file, data: fair } of validFairs) {
     if (fair[a] != null && fair[b] != null && fair[a] > fair[b]) {
       report(file, `${a}（${fair[a]}）が ${b}（${fair[b]}）より後・大きくなっています`);
     }
+  }
+}
+
+if (validState) {
+  const seenUrls = new Set();
+  for (const entry of stateFile.data) {
+    if (!printerIds.has(entry.printer_id)) report(stateFile.file, `printer_id「${entry.printer_id}」の印刷所が data/printers/ にありません（${entry.url}）`);
+    if (seenUrls.has(entry.url)) report(stateFile.file, `URL「${entry.url}」が重複しています`);
+    seenUrls.add(entry.url);
   }
 }
 
