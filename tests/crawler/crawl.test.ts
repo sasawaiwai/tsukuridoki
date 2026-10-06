@@ -251,3 +251,28 @@ test('crawlPrinter：JS依存の疑いは「要手動確認」', async () => {
   assert.equal(rows[0].outcome, '要手動確認');
   assert.match(rows[0].detail, /JS依存/);
 });
+
+test('crawlPrinter：maxUrls（--max-urls）で取得数を減らせる。20件は超えない', async () => {
+  fairSite();
+  const rows = await crawlPrinter(printer(), new Map(), context({ maxUrls: 1 }));
+  assert.deepEqual(rows.filter((r) => r.outcome !== '対象外').map((r) => r.url.replace(origin, '')), ['/fair/']);
+  assert.match(rows.at(-1)!.detail, /上限（1件）.*残り2件/);
+});
+
+test('crawlPrinter：一覧ページは304で返されないよう毎回中身を取り、次回に回したリンクを見つけ直す', async () => {
+  fairSite();
+  const index = routes['/fair/'];
+  routes['/fair/'] = (req, res) => {
+    if (req.headers['if-none-match']) res.writeHead(304).end();
+    else {
+      res.setHeader('ETag', '"index"');
+      index(req, res);
+    }
+  };
+  const state = new Map<string, StateEntry>();
+  await crawlPrinter(printer(), state, context({ maxUrls: 2 }));
+  assert.ok(!state.has(`${origin}/fair/2/`)); // 上限で次回に回った
+  const next = await crawlPrinter(printer(), state, context({ maxUrls: 2 }));
+  assert.equal(outcomes(next)['/fair/'], '変化なし');
+  assert.equal(outcomes(next)['/fair/2/'], '新規');
+});

@@ -1,0 +1,15 @@
+printer_id: kanazawa-insatsu
+name: 金沢印刷
+official_url: https://www.kanazawa-p.co.jp/
+# フェア総合案内
+fair_index_url: https://www.kanazawa-p.co.jp/fea/index.html
+# 早割フェアの個別ページ（セット商品のページは追わない）
+fair_link_selector: 'a[href*="early"]'
+domains: [kanazawa-p.co.jp]
+# リンクはトップページ固定（運営方針）。金沢印刷は「リンクフリー」と明記（terms_url のページ）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.kanazawa-p.co.jp/company/aboutsite.html
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。「サイトのご利用について」に自動アクセスの記載なし。robots.txtなし（2026-10-06確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-06

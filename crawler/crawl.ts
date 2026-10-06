@@ -2,7 +2,8 @@
 //   npm run crawl                          allowed の印刷所を巡回（間隔が来ているものだけ）
 //   npm run crawl -- --printer=xxx         1社だけ巡回（間隔を無視）
 //   npm run crawl -- --printer=xxx --dry   state.yaml を書き換えずに試す
-//   npm run crawl -- --show-text           取り出した本文を画面に出す（手元確認用。Actions では使えない）
+//   npm run crawl -- --printer=xxx --dry --max-urls=1  一覧ページだけで試す（初回の調整用）
+//   npm run crawl -- --show-text           取り出した本文と見つけたリンクを画面に出す（手元確認用。Actions では使えない）
 // 結果は画面とジョブの概要欄に出す。本文はどこにも残さない（7-2）
 
 import { appendFileSync } from 'node:fs';
@@ -37,8 +38,12 @@ export interface CrawlContext {
   now: Date;
   /** 巡回の間隔を無視する（印刷所を指定したとき） */
   force: boolean;
+  /** 1社あたりに取得するURLの上限（--max-urls。MAX_URLS_PER_PRINTER を超えない） */
+  maxUrls?: number;
   /** --show-text のときだけ渡す */
   onText?: (url: string, text: string) => void;
+  /** --show-text のときだけ渡す。一覧ページで見つけた新規リンク */
+  onLinks?: (url: string, links: string[]) => void;
 }
 
 const NOTE_LABELS: Record<ExtractNote, string> = {
@@ -131,7 +136,9 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
 
     const robots = (await robotsFor(url)) as Extract<Robots, { kind: 'rules' }>;
     await ctx.pacer.wait(url, robots.delayMs);
-    const result = await fetchPage(url, prev?.content_hash ? prev : {}, denyReason);
+    // 一覧ページは「変わっていない（304）」だと中身が来ずリンクを拾えない。上限で次回に回したリンクを見つけ直すため、毎回中身を取る
+    const conditional = prev?.content_hash && url !== indexUrl ? prev : {};
+    const result = await fetchPage(url, conditional, denyReason);
     ctx.pacer.done(url);
     fetched++;
 
@@ -176,6 +183,7 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
     const links = await visit(indexUrl, false);
     const watch = new Set(printer.watch_urls ?? []);
     newLinks = links.filter((u) => u !== indexUrl && !watch.has(u) && !state.has(u) && hostMatches(u, printer.domains));
+    ctx.onLinks?.(indexUrl, newLinks);
   }
 
   // ② 残りを優先順に：watch_urls → 新規リンク → 記録済みのURLを最後に取れた日が古い順（4-2）
@@ -184,11 +192,12 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
     .sort((a, b) => (a.last_fetched_at ?? '').localeCompare(b.last_fetched_at ?? ''))
     .map((e) => e.url);
   const newSet = new Set(newLinks);
+  const maxUrls = Math.min(ctx.maxUrls ?? MAX_URLS_PER_PRINTER, MAX_URLS_PER_PRINTER);
   let left = 0;
   for (const url of [...(printer.watch_urls ?? []), ...newLinks, ...stored]) {
     if (stopped) break;
     if (visited.has(url)) continue;
-    if (fetched >= MAX_URLS_PER_PRINTER) {
+    if (fetched >= maxUrls) {
       left++;
       continue;
     }
@@ -196,7 +205,7 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
   }
 
   if (stopped) row(printer.official_url, '対象外', stopped);
-  if (left > 0) row(printer.official_url, '対象外', `上限（${MAX_URLS_PER_PRINTER}件）に達したため、残り${left}件は次回に回します`);
+  if (left > 0) row(printer.official_url, '対象外', `上限（${maxUrls}件）に達したため、残り${left}件は次回に回します`);
   return rows;
 }
 
@@ -239,8 +248,14 @@ async function main(): Promise<void> {
       printer: { type: 'string' },
       dry: { type: 'boolean', default: false },
       'show-text': { type: 'boolean', default: false },
+      'max-urls': { type: 'string' },
     },
   });
+  const maxUrls = values['max-urls'] === undefined ? undefined : Number(values['max-urls']);
+  if (maxUrls !== undefined && !(Number.isInteger(maxUrls) && maxUrls >= 1)) {
+    console.error('--max-urls には1以上の整数を指定してください');
+    process.exit(1);
+  }
   const inActions = process.env.GITHUB_ACTIONS === 'true';
   if (inActions && values['show-text']) {
     console.error('--show-text は Actions では使えません（公開リポジトリのログに本文が残るため）');
@@ -261,7 +276,9 @@ async function main(): Promise<void> {
     robots: new Map(),
     now: new Date(),
     force: Boolean(values.printer),
+    maxUrls,
     onText: values['show-text'] ? (url, text) => console.log(`\n----- ${url} -----\n${text}\n-----\n`) : undefined,
+    onLinks: values['show-text'] ? (url, links) => console.log(`\n----- ${url} の新規リンク（${links.length}件） -----\n${links.join('\n')}\n-----\n`) : undefined,
   };
 
   const rows: Row[] = [];

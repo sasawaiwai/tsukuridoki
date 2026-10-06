@@ -42,12 +42,14 @@ https://tsukuridoki.sasadokoro.online/
 npm run crawl                               # 間隔（crawl_interval_days）が来ている印刷所を巡回
 npm run crawl -- --printer=xxx              # 1社だけ巡回（間隔を無視）
 npm run crawl -- --printer=xxx --dry        # state.yaml を書き換えずに試す
-npm run crawl -- --printer=xxx --show-text  # 取り出した本文を画面に出す（調整用。Actions では使えない）
+npm run crawl -- --printer=xxx --dry --max-urls=1  # 一覧ページだけで試す（セレクタの調整用）
+npm run crawl -- --printer=xxx --show-text  # 取り出した本文と見つけたリンクを画面に出す（調整用。Actions では使えない）
 ```
 
 - 同じサイトへは5秒以上（robots.txt の Crawl-delay が長ければそちら）あける。1社20URLまで
 - 本文の場所がうまく取れないときは、印刷所マスターの `crawl_selector`（本文の場所）・`crawl_ignore`（取り除く場所）・`fair_link_selector`（一覧ページでフェアへのリンクがある場所）で調整する
-- GitHub の Actions 画面から「Crawl」を手動で実行できる（結果は概要欄。state.yaml は書き換えない）
+- GitHub の Actions 画面から「Crawl」を手動で実行できる（印刷所・取得数を指定できる。結果は概要欄。state.yaml は書き換えない）
+- 新しい印刷所を追加したら、まず `--dry --max-urls=1 --show-text` で一覧ページの本文とリンクを見て、セレクタを決めてから本番の巡回をする
 - 取得したHTML・本文はファイル・ログに残さない
 
 ## デザインシステム

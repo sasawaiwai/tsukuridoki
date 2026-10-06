@@ -1,0 +1,14 @@
+printer_id: nikko-kikaku
+name: 日光企画
+official_url: https://www.nikko-pc.com/
+# フェアの一覧ページはなく、トップにフェアの個別ページ（/site/fair-○○/）へのリンクが並ぶ
+fair_index_url: https://www.nikko-pc.com/site/
+fair_link_selector: 'a[href*="fair"]'
+domains: [nikko-pc.com]
+# リンクはトップページ固定（運営方針）。会社概要に「イベント支援HPへの掲載の際は https://www.nikko-pc.com/ へ」とある
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページはなし（プライバシーポリシーへのリンクは404）。robots.txtなし（2026-10-06確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-06
