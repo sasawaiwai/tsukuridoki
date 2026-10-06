@@ -1,7 +1,7 @@
 // フェアカード用の表示データを作る（仕様書 27章・52章）
 
 import type { DateString, Fair, Process } from './types.ts';
-import { cardLabel, diffDays, effectiveFrom, effectiveUntil, getStatus, type CardLabelKind } from './period.ts';
+import { cardLabel, diffDays, effectiveFrom, effectiveUntil, getStatus, timingType, type CardLabelKind } from './period.ts';
 import { BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
 /** カード上部の色の分類（52-3） */
@@ -124,16 +124,30 @@ export function needsRecheck(fair: Fair, today: DateString): boolean {
   return date === null || diffDays(date, today) >= RECHECK_DAYS;
 }
 
-/** カード下部の期限表示 */
+/** 入稿日限定で、期限の表示に並べる入稿日の数（それより多いときは「ほか」） */
+const SUBMISSION_DATES_SHOWN = 3;
+
+/**
+ * カード下部の期限表示（timing-design 4-3）。
+ * 入稿日限定は「入稿日限定：10月15日・11月19日」（過ぎた日は出さない）、通年・常設は「通年・常設」。
+ * 期間限定で終了日が決まっていないときは、原文（なくなり次第終了など）か「終了日未定」
+ */
 export function deadlineText(fair: Fair, today: DateString): string {
   const status = getStatus(fair, today);
   if (status === 'expired') return '終了しました';
+  const type = timingType(fair);
+  if (type === 'ongoing') return '通年・常設';
+  if (type === 'specific_dates') {
+    const dates = (fair.submission_dates ?? []).map((d) => d.date).filter((d) => d >= today).sort();
+    const shown = dates.slice(0, SUBMISSION_DATES_SHOWN).map(formatJpDate).join('・');
+    return `入稿日限定：${shown}${dates.length > SUBMISSION_DATES_SHOWN ? 'ほか' : ''}`;
+  }
   if (status === 'upcoming') return `${formatJpDate(effectiveFrom(fair)!)}から利用可能`;
   const until = effectiveUntil(fair);
   const text = fair.usable_until_text ?? fair.end_date_text;
   if (text) return text;
   if (until) return `${formatJpDate(until)}まで`;
-  return '期間未定';
+  return effectiveFrom(fair) ? '終了日未定' : '期間未定';
 }
 
 export function toCardModel(

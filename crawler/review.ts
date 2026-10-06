@@ -238,11 +238,23 @@ function summaryLines(fair: FairData, printerName: string): string[] {
     const b = fair[`${until}_text`] ?? fair[until];
     return a || b ? `${show1(a ?? '')}〜${show1(b ?? '')}` : '（記載なし）';
   };
+  const timing = (fair.timing_type as string | undefined) ?? 'period';
+  const dates = ((fair.submission_dates as { date: string; delivery_date?: string | null }[] | undefined) ?? [])
+    .map((d) => `${d.date}${d.delivery_date ? `（納品${d.delivery_date}）` : ''}`)
+    .join('・');
+  const when =
+    timing === 'specific_dates'
+      ? [`開催タイプ：入稿日限定`, `入稿日：${dates}${fair.submission_dates_text ? `　原文：${show1(fair.submission_dates_text)}` : ''}`]
+      : timing === 'ongoing'
+        ? [`開催タイプ：通年・常設`]
+        : [
+            `開催期間：${period('start_date', 'end_date')}`,
+            `利用可能期間：${fair.usable_from || fair.usable_until || fair.usable_from_text || fair.usable_until_text ? period('usable_from', 'usable_until') : '（開催期間と同じ）'}`,
+          ];
   return [
     `フェア名：${show1(fair.fair_name)}（${show1(fair.fair_id)}）`,
     `印刷所：${printerName}`,
-    `開催期間：${period('start_date', 'end_date')}`,
-    `利用可能期間：${fair.usable_from || fair.usable_until || fair.usable_from_text || fair.usable_until_text ? period('usable_from', 'usable_until') : '（開催期間と同じ）'}`,
+    ...when,
     `特典：${show1(fair.benefit_summary)}`,
     `概要：${show1(fair.summary)}`,
     `サイズ：${label(fair.sizes, SIZE_LABELS) || '（指定なし）'}　加工：${label(fair.processes, processNames()) || '（なし）'}`,

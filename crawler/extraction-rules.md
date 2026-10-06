@@ -100,6 +100,26 @@
 - 年が書かれていないときは、文脈から補ってよいが、`issues` に `year_inferred` を付ける。
 - 時刻は書かない（日付だけ）。
 
+### 4-2-2. 開催タイプ（期間の書き方を選ぶ）
+
+| 公式の書き方 | `timing_type` | 書く項目 |
+|---|---|---|
+| 「10月1日〜11月30日」のような期間 | 書かない（期間限定） | 4-2 の `start_date`〜`usable_until` |
+| 「10月15日・11月19日の入稿分のみ」のように、決まった日だけ | `"specific_dates"` | `submission_dates`（入稿日の配列）と `submission_dates_text`（原文の短い表現）。期間の項目（`start_date` など）は書かない |
+| 「通年」「常時」「いつでも」など期間の定めがない | `"ongoing"` | 日付の項目は何も書かない |
+
+```json
+"timing_type": "specific_dates",
+"submission_dates": [
+  { "date": "2026-10-15", "delivery_date": "2026-11-08" },
+  { "date": "2026-11-19", "delivery_date": "2026-12-13" }
+],
+"submission_dates_text": "10月15日・11月19日（0時〜23時59分入稿分）"
+```
+
+- `submission_dates` は日付順。入稿日ごとの納品日が書いてあれば `delivery_date` に入れる。
+- 入稿日が複数あっても、同じフェアなら1件のまま（入稿日ごとに分けない）。
+
 ### 4-3. 締切の種類（書いてあれば）
 
 `deadline_type`：`normal`（通常締切）／`early`（早割締切）／`special`（特別締切）／`event`（イベント合わせ）／`unknown`。
