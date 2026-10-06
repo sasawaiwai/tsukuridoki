@@ -1,0 +1,39 @@
+fair_id: popls-see-through-endpaper-2026
+slug: popls-see-through-endpaper-2026
+fair_name: シースルーフェア：トレペデザイン遊び紙・トレペカラー遊び紙値引き
+printer_id: popls
+category: dojinshi
+sources:
+  - https://www2.popls.co.jp/pop/fair/2026summer.html
+summary: トレペのデザイン遊び紙とカラー遊び紙が、550円＋1冊66円から550円＋1冊44円に値引きされる。
+benefit_summary: トレペ遊び紙が1冊66円→44円
+source_type: official_fair
+start_date: 2026-05-16
+start_date_text: 5月16日
+start_date_precision: day
+end_date: 2026-10-16
+end_date_text: 10月16日24時入稿分まで
+end_date_precision: day
+sizes:
+  - A6
+  - bunko
+  - shinsho
+  - B6
+  - A5
+  - B5
+processes:
+  - endpaper
+tags:
+  - limited_time
+benefit_types:
+  - discount
+specific_sets_only: true
+application_required: false
+conditions_text: スタンダードセットが対象（快速本・モノクロ特快は対象外）。挿入は前のみ、平とじのみ、片面印刷。通常550円＋1冊66円→フェア550円＋1冊44円（税込）。期間内に注文と原稿が揃ったものに自動適用。
+published_at: 2026-10-06
+discovered_at: 2026-10-06
+verified_at: 2026-10-06
+verification_status: verified
+history:
+  - date: 2026-10-06
+    type: published

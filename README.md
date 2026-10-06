@@ -84,7 +84,6 @@ npm run review -- stats                                  # 実測値（確認ペ
 
 ## 正式公開（noindex解除）の前にやること
 
-- `data/` の架空サンプル（印刷所名に「（架空）」）をすべて削除する
 - `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く
 
 ## データのルール

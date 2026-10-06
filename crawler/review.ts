@@ -13,9 +13,10 @@ import { dirname, join, relative } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { parse, stringify } from 'yaml';
-import { DATA_DIR, readYamlDir } from '../src/lib/data.ts';
+import { DATA_DIR, readYamlDir, readYamlFile } from '../src/lib/data.ts';
+import { SIZE_LABELS } from '../src/lib/labels.ts';
 import { hostMatches, isSafeUrl, isSnsUrl } from '../src/lib/sources.ts';
-import type { Printer } from '../src/lib/types.ts';
+import type { Printer, Process } from '../src/lib/types.ts';
 import { printerAccess } from './access.ts';
 import { extract } from './extract.ts';
 import { Pacer } from './fetch.ts';
@@ -220,6 +221,17 @@ export function diffFields(extracted: FairData, existing: FairData | null): Plan
 
 const show1 = (v: unknown) => (v === null || v === undefined ? '（なし）' : typeof v === 'string' ? v : JSON.stringify(v));
 
+/** 確認しやすいよう、IDではなくサイトに出る名前で表示する */
+function label(values: unknown, names: Record<string, string>): string {
+  return ((values as string[] | undefined) ?? []).map((v) => names[v] ?? v).join('・');
+}
+
+let processCache: Record<string, string> | null = null;
+function processNames(): Record<string, string> {
+  processCache ??= Object.fromEntries(readYamlFile<Process[]>('processes/processes.yaml').data.map((p) => [p.process_id, p.name]));
+  return processCache;
+}
+
 function summaryLines(fair: FairData, printerName: string): string[] {
   const period = (from: string, until: string) => {
     const a = fair[`${from}_text`] ?? fair[from];
@@ -230,9 +242,10 @@ function summaryLines(fair: FairData, printerName: string): string[] {
     `フェア名：${show1(fair.fair_name)}（${show1(fair.fair_id)}）`,
     `印刷所：${printerName}`,
     `開催期間：${period('start_date', 'end_date')}`,
-    `利用可能期間：${period('usable_from', 'usable_until')}`,
+    `利用可能期間：${fair.usable_from || fair.usable_until || fair.usable_from_text || fair.usable_until_text ? period('usable_from', 'usable_until') : '（開催期間と同じ）'}`,
     `特典：${show1(fair.benefit_summary)}`,
     `概要：${show1(fair.summary)}`,
+    `サイズ：${label(fair.sizes, SIZE_LABELS) || '（指定なし）'}　加工：${label(fair.processes, processNames()) || '（なし）'}`,
     `条件：${show1(fair.conditions_text)}`,
     `公式情報源：${(fair.sources as string[]).join(' ')}`,
   ];

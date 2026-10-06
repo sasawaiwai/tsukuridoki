@@ -39,6 +39,6 @@
     "note": { "type": ["string", "null"], "maxLength": 200 }
   },
   "if": { "properties": { "result": { "const": "fairs" } } },
-  "then": { "properties": { "fairs": { "minItems": 1 } } },
-  "else": { "properties": { "fairs": { "maxItems": 0 } } }
+  "then": { "properties": { "fairs": { "type": "array", "minItems": 1 } } },
+  "else": { "properties": { "fairs": { "type": "array", "maxItems": 0 } } }
 }
