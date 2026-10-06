@@ -6,7 +6,7 @@ import StatusLabel from '../../../components/StatusLabel.astro';
 import Chip from '../../../components/Chip.astro';
 import Button from '../../../components/Button.astro';
 import { loadSiteData } from '../../../lib/data.ts';
-import { cardLabel, effectiveFrom, getStatus, isNew, isUpdated, todayJST } from '../../../lib/period.ts';
+import { cardLabel, effectiveFrom, getStatus, isNew, isUpdated, timingType, todayJST } from '../../../lib/period.ts';
 import { benefitText, confirmedAt, deadlineText, formatJpDate, formatJpDateFull, needsRecheck, processCategory, processMap } from '../../../lib/fair-display.ts';
 import { BINDING_LABELS, BOOK_TYPE_LABELS, COLOR_MODE_LABELS, BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS, STATUS_LABELS } from '../../../lib/labels.ts';
 import { colorValues } from '../../../lib/search.ts';
@@ -30,8 +30,14 @@ const expired = status === 'expired';
 const label = expired ? null : cardLabel(fair, today);
 const badges = [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean) as string[];
 const benefit = benefitText(fair, processes);
-const period = [fair.start_date_text, fair.end_date_text].filter(Boolean).join(' 〜 ');
+const timing = timingType(fair);
+const period = timing === 'specific_dates' ? (fair.submission_dates_text ?? '') : [fair.start_date_text, fair.end_date_text].filter(Boolean).join(' 〜 ');
 const from = effectiveFrom(fair);
+// 入稿日限定：入稿日と納品日の一覧（過ぎた入稿日は「受付終了」）
+const submissionRows = (fair.submission_dates ?? []).map((d) => ({
+  text: `${formatJpDateFull(d.date)}入稿${d.delivery_date ? ` → ${formatJpDateFull(d.delivery_date)}納品` : ''}${d.note ? `（${d.note}）` : ''}`,
+  past: d.date < today,
+}));
 
 const processChips = (fair.processes ?? []).map((id) => ({
   label: processes.get(id)?.name ?? id,
@@ -116,7 +122,7 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
       {
         !expired && (
           <p class="fair__when">
-            {status === 'upcoming' && from ? `${formatJpDateFull(from)}から利用可能` : deadlineText(fair, today)}
+            {timing === 'period' && status === 'upcoming' && from ? `${formatJpDateFull(from)}から利用可能` : deadlineText(fair, today)}
           </p>
         )
       }
@@ -199,7 +205,32 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
           )
         }
         {
-          (untilText || eventText) && (
+          timing === 'specific_dates' && (
+            <div>
+              <dt>入稿日</dt>
+              <dd>
+                {fair.submission_dates_text && <p>{fair.submission_dates_text}</p>}
+                <ul class="fair__list">
+                  {submissionRows.map((row) => <li class:list={{ 'fair__past': row.past }}>{row.text}{row.past && '（受付終了）'}</li>)}
+                </ul>
+                <p class="fair__note">この日に入稿したものだけが対象です。</p>
+              </dd>
+            </div>
+          )
+        }
+        {
+          timing === 'ongoing' && (
+            <div>
+              <dt>期間</dt>
+              <dd>
+                <p>通年・常設（期間の定めのない常設の割引です）</p>
+                <p class="fair__note">内容が予告なく変わることがあります。利用前に公式サイトで最新の条件をご確認ください。</p>
+              </dd>
+            </div>
+          )
+        }
+        {
+          timing === 'period' && (untilText || eventText) && (
             <div>
               <dt>利用期限</dt>
               <dd>
@@ -358,6 +389,11 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  /* 入稿日限定の、過ぎた入稿日 */
+  .fair__past {
+    color: var(--color-text-muted);
   }
 
   .fair__list {

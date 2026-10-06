@@ -53,8 +53,19 @@ test('期限表示：開催前・原文・日付のみ・不明・終了', () =>
   assert.equal(deadlineText(fair({ start_date: '2026-10-09', end_date: '2026-12-31' }), today), '10月9日から利用可能');
   assert.equal(deadlineText(fair({ end_date: '2026-11-30', end_date_text: '11月末まで', usable_until_text: '11月25日入稿分まで' }), today), '11月25日入稿分まで');
   assert.equal(deadlineText(fair({ end_date: '2026-11-30' }), today), '11月30日まで');
-  assert.equal(deadlineText(fair({ start_date: '2026-09-01' }), today), '期間未定');
+  assert.equal(deadlineText(fair({ start_date: '2026-09-01' }), today), '終了日未定'); // 終了日が決まっていない
+  assert.equal(deadlineText(fair({ start_date: '2026-09-01', end_date_text: 'なくなり次第終了' }), today), 'なくなり次第終了');
+  assert.equal(deadlineText(fair({}), today), '期間未定');
   assert.equal(deadlineText(fair({ end_date: '2026-10-01' }), today), '終了しました');
+});
+
+test('期限表示：入稿日限定は過ぎた日を出さない、多ければ「ほか」。通年・常設', () => {
+  const dates = (...d: string[]) => fair({ timing_type: 'specific_dates', submission_dates: d.map((date) => ({ date })) });
+  assert.equal(deadlineText(dates('2026-10-15', '2026-11-19'), '2026-10-06'), '入稿日限定：10月15日・11月19日');
+  assert.equal(deadlineText(dates('2026-10-15', '2026-11-19'), '2026-10-16'), '入稿日限定：11月19日');
+  assert.equal(deadlineText(dates('2026-10-15', '2026-11-19'), '2026-11-20'), '終了しました');
+  assert.equal(deadlineText(dates('2026-10-01', '2026-10-08', '2026-10-15', '2026-10-22'), '2026-09-30'), '入稿日限定：10月1日・10月8日・10月15日ほか');
+  assert.equal(deadlineText(fair({ timing_type: 'ongoing' }), '2026-10-06'), '通年・常設');
 });
 
 test('チップ：最大5個、残りは件数で返す', () => {
