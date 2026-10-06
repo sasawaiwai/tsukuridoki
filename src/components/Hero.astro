@@ -45,9 +45,15 @@ const { imageSrc, imageAlt = '' } = Astro.props;
     position: absolute;
     inset: 0 0 0 auto;
     width: 78%;
-    /* 中心から外側へ、四方とも生成りの背景に溶け込ませる */
-    -webkit-mask-image: radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%);
-    mask-image: radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%);
+    /* 中心から外側へ、四方とも生成りの背景に溶け込ませる。下の端はまっすぐ切れて見えないよう、さらに下へ向けて消す */
+    -webkit-mask-image:
+      radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%),
+      linear-gradient(to bottom, #000 65%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      radial-gradient(ellipse 72% 85% at 62% 45%, #000 40%, transparent 100%),
+      linear-gradient(to bottom, #000 65%, transparent 100%);
+    mask-composite: intersect;
     opacity: 0.5;
     pointer-events: none;
   }
