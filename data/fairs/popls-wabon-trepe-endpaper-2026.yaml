@@ -1,0 +1,40 @@
+fair_id: popls-wabon-trepe-endpaper-2026
+slug: popls-wabon-trepe-endpaper-2026
+fair_name: 和本フェア：和柄トレペデザイン遊び紙
+printer_id: popls
+category: dojinshi
+sources:
+  - https://www2.popls.co.jp/pop/fair/2026wabon.html
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日
+start_date_precision: day
+end_date: 2027-02-26
+end_date_text: 2027年2月26日24時入稿分まで
+end_date_precision: day
+tags:
+  - limited_time
+specific_sets_only: true
+application_required: false
+summary: 5種の和柄を10色から選んで単色印刷するトレペ遊び紙が期間限定で登場し、1冊66円から44円に値引きされる。
+benefit_summary: 和柄トレペ遊び紙が1冊66円→44円
+sizes:
+  - B5
+  - A5
+  - B6
+  - A6
+  - bunko
+  - shinsho
+processes:
+  - endpaper
+benefit_types:
+  - limited_product
+  - discount
+conditions_text: スタンダードセットが対象（快速本・モノクロ特快は対象外）。挿入は前のみ、平とじのみ、片面印刷。通常550円＋1冊66円→フェア550円＋1冊44円（税込）。期間内に注文と原稿が揃ったものに自動適用。
+published_at: 2026-10-06
+discovered_at: 2026-10-06
+verified_at: 2026-10-06
+verification_status: verified
+history:
+  - date: 2026-10-06
+    type: published

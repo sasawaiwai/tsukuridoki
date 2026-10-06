@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026tamanuno2.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:7174f7d29423e1a0046c7d51d7e9dd39d6221b1a7c979cd4515f7a405b79e803",
+  "content_chars": 512,
+  "extractor": "manual",
+  "extracted_at": "2026-10-06T19:10:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended",
+    "year_inferred"
+  ],
+  "note": "9月24日で受付終了。イベント直接搬入限定のサークル布（グッズ）のフェアで、同人誌の印刷フェアではない。"
+}

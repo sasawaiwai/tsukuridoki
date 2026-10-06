@@ -1,0 +1,128 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026wabon.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:4b336e5dda2238f079e821b66139ef08a93d43f07a818e217bec4f239958dc3d",
+  "content_chars": 1350,
+  "extractor": "manual",
+  "extracted_at": "2026-10-06T19:10:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-wabon-cover-2026",
+      "fair_name": "和本フェア：限定和風表紙用紙",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026wabon.html"
+      ],
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日",
+      "start_date_precision": "day",
+      "end_date": "2027-02-26",
+      "end_date_text": "2027年2月26日24時入稿分まで",
+      "end_date_precision": "day",
+      "tags": [
+        "limited_time"
+      ],
+      "specific_sets_only": true,
+      "application_required": false,
+      "summary": "銀に反射する繊維が入った和風の表紙用紙（両面新大礼紙ホワイト135k）を期間限定で選べる。",
+      "benefit_summary": "限定の和風表紙用紙",
+      "sizes": [
+        "A5",
+        "B6",
+        "A6",
+        "bunko",
+        "shinsho"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "conditions_text": "スタンダードセットが対象（快速本・モノクロ特快は対象外）。A5・B6・A6（文庫）・新書のみ。PP加工・箔押し加工は不可。フェア料金：880円＋1冊120円（税込）。期間内に注文と原稿が揃ったものに自動適用。"
+    },
+    {
+      "fair_id": "popls-wabon-endpaper-2026",
+      "fair_name": "和本フェア：限定和風遊び紙",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026wabon.html"
+      ],
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日",
+      "start_date_precision": "day",
+      "end_date": "2027-02-26",
+      "end_date_text": "2027年2月26日24時入稿分まで",
+      "end_date_precision": "day",
+      "tags": [
+        "limited_time"
+      ],
+      "specific_sets_only": true,
+      "application_required": false,
+      "summary": "金銀大礼紙・大礼紙朱・新星物語クロウの3種の和風遊び紙を期間限定で選べる。",
+      "benefit_summary": "限定の和風遊び紙3種",
+      "sizes": [
+        "A5",
+        "B6",
+        "A6",
+        "bunko",
+        "shinsho"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "conditions_text": "スタンダードセットが対象（快速本・モノクロ特快は対象外）。A5・B6・A6（文庫）・新書のみ。中とじは前後に入る。金銀大礼紙・大礼紙朱の加工は片面のみ。フェア料金：金銀大礼紙・新星物語クロウは前のみ330円＋1冊22円／前後660円＋1冊44円、大礼紙朱は前のみ330円＋1冊33円／前後660円＋1冊66円（税込）。期間内に注文と原稿が揃ったものに自動適用。"
+    },
+    {
+      "fair_id": "popls-wabon-trepe-endpaper-2026",
+      "fair_name": "和本フェア：和柄トレペデザイン遊び紙",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026wabon.html"
+      ],
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日",
+      "start_date_precision": "day",
+      "end_date": "2027-02-26",
+      "end_date_text": "2027年2月26日24時入稿分まで",
+      "end_date_precision": "day",
+      "tags": [
+        "limited_time"
+      ],
+      "specific_sets_only": true,
+      "application_required": false,
+      "summary": "5種の和柄を10色から選んで単色印刷するトレペ遊び紙が期間限定で登場し、1冊66円から44円に値引きされる。",
+      "benefit_summary": "和柄トレペ遊び紙が1冊66円→44円",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "A6",
+        "bunko",
+        "shinsho"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "limited_product",
+        "discount"
+      ],
+      "conditions_text": "スタンダードセットが対象（快速本・モノクロ特快は対象外）。挿入は前のみ、平とじのみ、片面印刷。通常550円＋1冊66円→フェア550円＋1冊44円（税込）。期間内に注文と原稿が揃ったものに自動適用。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [
+    "両面新大礼紙ホワイト135k",
+    "金銀大礼紙75k",
+    "大礼紙朱75k",
+    "新・星物語クロウ110k"
+  ],
+  "note": "フェア名は公式のフェア一覧ページの表記。用紙・対象サイズの違う3つの特典を分けて登録。"
+}
