@@ -107,39 +107,70 @@ const moreText = (label: string, n: number) => `${label}をもっと見る（全
     gap: var(--space-5);
   }
 
-  /* スマホでは横にスクロールして全部のタブを選べる */
+  /* スマホ：3列×2段のボタン。6つ全部が見え、横スクロールしない */
   .view-tabs__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-2);
     margin: 0;
-    padding: 0 0 var(--space-1);
+    padding: 0;
     list-style: none;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    border-bottom: 1px solid var(--color-border);
   }
 
   .view-tabs__tab {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 44px;
-    padding: 0 var(--space-4);
-    border-radius: var(--radius) var(--radius) 0 0;
-    color: var(--color-text-muted);
+    padding: 0 var(--space-2);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 999px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--fs-sm);
     font-weight: 700;
     white-space: nowrap;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
   }
 
   .view-tabs__tab:hover {
-    color: var(--color-text);
-    background: var(--color-surface-sunken);
+    border-color: var(--color-primary);
   }
 
   .view-tabs__tab[aria-current='true'] {
-    color: var(--color-primary-strong);
-    border-bottom-color: var(--color-primary);
+    border-color: var(--color-primary-strong);
+    background: var(--color-primary-strong);
+    color: #fff;
+  }
+
+  /* タブレット・PC：下線のタブ */
+  @media (min-width: 768px) {
+    .view-tabs__list {
+      display: flex;
+      gap: var(--space-2);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .view-tabs__tab {
+      padding: 0 var(--space-4);
+      border: 0;
+      border-bottom: 3px solid transparent;
+      border-radius: var(--radius) var(--radius) 0 0;
+      background: none;
+      color: var(--color-text-muted);
+      font-size: var(--fs-base);
+    }
+
+    .view-tabs__tab:hover {
+      color: var(--color-text);
+      background: var(--color-surface-sunken);
+    }
+
+    .view-tabs__tab[aria-current='true'] {
+      border-bottom-color: var(--color-primary);
+      background: none;
+      color: var(--color-primary-strong);
+    }
   }
 
   .view-tabs__more {
