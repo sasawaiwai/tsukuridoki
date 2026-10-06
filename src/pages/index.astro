@@ -26,7 +26,7 @@ const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select
     <PopularProcesses id="popular-processes" />
 
     <section>
-      <SectionHeader title="フェアを見る" lead="いつ使えるかで切り替えられます" />
+      <SectionHeader title="フェアを見る" />
       <ViewTabs tabs={tabs} cards={firstFairs.slice(0, TAB_SIZE).map(toCard)} total={firstFairs.length} />
     </section>
 
