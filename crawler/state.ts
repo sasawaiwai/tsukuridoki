@@ -1,7 +1,7 @@
 // data/crawler/state.yaml の読み書き（仕様書7-2、phase3-design 8章）
 // 保存するのは巡回の管理に必要な情報だけで、公式ページの本文は保存しない
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { parse, stringify } from 'yaml';
 import { DATA_DIR } from '../src/lib/data.ts';
@@ -53,7 +53,10 @@ export function loadState(file = STATE_FILE): StateEntry[] {
 export function saveState(entries: StateEntry[], file = STATE_FILE): void {
   const sorted = entries.map(ordered).sort((a, b) => a.printer_id.localeCompare(b.printer_id) || a.url.localeCompare(b.url));
   mkdirSync(dirname(file), { recursive: true });
-  writeFileSync(file, HEADER + (sorted.length > 0 ? stringify(sorted, { lineWidth: 0 }) : '[]\n'));
+  // 一時ファイルに書いてから置き換える（途中で止まっても、書きかけの state.yaml を残さない）
+  const tmp = `${file}.tmp-${process.pid}`;
+  writeFileSync(tmp, HEADER + (sorted.length > 0 ? stringify(sorted, { lineWidth: 0 }) : '[]\n'));
+  renameSync(tmp, file);
 }
 
 /**

@@ -175,3 +175,17 @@ test('apply：no_fair は確認済みにするだけ。needs_manual は確認待
   assert.equal(reviewedHash(dir), hash);
   assert.ok(!existsSync(fairFile(dir)));
 });
+
+test('apply：state.yaml を書く前に止まっても、やり直せば「変更なし」で確認済みになる', () => {
+  const { dir, hash } = workspace();
+  const statePath = join(dir, 'data/crawler/state.yaml');
+  const before = readFileSync(statePath, 'utf8');
+  assert.equal(run(dir, extraction(hash), '--yes').status, 0);
+  writeFileSync(statePath, before); // フェアは書けたが、state.yaml を書く前に止まった状態
+  assert.equal(reviewedHash(dir), null);
+  const again = run(dir, extraction(hash), '--yes');
+  assert.equal(again.status, 0, again.stderr);
+  assert.match(again.stdout, /変更なし/);
+  assert.equal(reviewedHash(dir), hash);
+  assert.ok(!readdirSync(join(dir, 'data/fairs')).some((n) => n.includes('.tmp-'))); // 一時ファイルを残さない
+});

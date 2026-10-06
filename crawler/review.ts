@@ -8,7 +8,7 @@
 
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
@@ -81,6 +81,14 @@ export function loadReviews(dir = REVIEWS_DIR): { file: string; data: Extraction
 const short = (hash: string) => hash.replace(/^sha256:/, '').slice(0, 8);
 const urlKey = (url: string) => createHash('sha256').update(url).digest('hex').slice(0, 8);
 const today = () => nowJst().slice(0, 10);
+
+/** 一時ファイルに書いてから置き換える（置き換えは一瞬で終わるので、書きかけの状態が残らない） */
+function writeAtomic(path: string, text: string): void {
+  mkdirSync(dirname(path), { recursive: true });
+  const tmp = `${path}.tmp-${process.pid}`;
+  writeFileSync(tmp, text);
+  renameSync(tmp, path);
+}
 
 function fail(message: string): never {
   console.error(`\n❌ ${message}\n`);
@@ -302,19 +310,16 @@ function apply(file: string | undefined, yes: boolean): void {
     return;
   }
 
-  // 5. 反映する。既存のデータ検証が通らなければ元に戻す
+  // 5. 反映する（phase4-design 6-2）
+  //   - 各ファイルは一時ファイルに書いてから置き換える（途中で止まっても、書きかけのファイルを残さない）
+  //   - フェアと抽出結果の記録を書く → データ検証 → 通らなければ元に戻す → 通ったら最後に state.yaml を確認済みにする
+  //   - state.yaml が最後なので、途中で止まってもページは確認待ちに残り、apply をやり直せる（同じ内容なら「変更なし」になる）
   const backups = new Map<string, string | null>();
   const write = (path: string, text: string) => {
     if (!backups.has(path)) backups.set(path, existsSync(path) ? readFileSync(path, 'utf8') : null);
-    mkdirSync(dirname(path), { recursive: true });
-    writeFileSync(path, text);
+    writeAtomic(path, text);
   };
   for (const plan of plans) write(plan.path, stringify(plan.fair, { lineWidth: 0 }));
-  if (data.result !== 'needs_manual') {
-    entry.reviewed_hash = data.content_hash;
-    if (!backups.has(STATE_FILE)) backups.set(STATE_FILE, readFileSync(STATE_FILE, 'utf8'));
-    saveState(state);
-  }
   const record = join(REVIEWS_DIR, data.printer_id, `${date}-${urlKey(data.source_url)}.json`);
   write(record, `${JSON.stringify(data, null, 2)}\n`);
 
@@ -322,9 +327,15 @@ function apply(file: string | undefined, yes: boolean): void {
   if (check.status !== 0) {
     for (const [path, text] of backups) {
       if (text === null) unlinkSync(path);
-      else writeFileSync(path, text);
+      else writeAtomic(path, text);
     }
     fail(`データ検証が通らなかったため、元に戻しました：\n${check.stderr || check.stdout}`);
+  }
+
+  if (data.result !== 'needs_manual') {
+    entry.reviewed_hash = data.content_hash;
+    saveState(state);
+    backups.set(STATE_FILE, null);
   }
   console.log(`\n✅ 反映しました（${[...backups.keys()].map((p) => relative(process.cwd(), p)).join('、')}）\n`);
 }
