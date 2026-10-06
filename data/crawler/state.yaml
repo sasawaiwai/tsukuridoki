@@ -303,7 +303,7 @@
 - url: https://www2.popls.co.jp/pop/fair/2026tamanuno2.html
   printer_id: popls
   content_hash: sha256:7174f7d29423e1a0046c7d51d7e9dd39d6221b1a7c979cd4515f7a405b79e803
-  reviewed_hash: null
+  reviewed_hash: sha256:7174f7d29423e1a0046c7d51d7e9dd39d6221b1a7c979cd4515f7a405b79e803
   content_chars: null
   etag: '"213bf721-4511-65b03e374fdfb"'
   last_modified: Wed, 09 Sep 2026 02:48:39 GMT
@@ -313,7 +313,7 @@
 - url: https://www2.popls.co.jp/pop/fair/2026wabon.html
   printer_id: popls
   content_hash: sha256:4b336e5dda2238f079e821b66139ef08a93d43f07a818e217bec4f239958dc3d
-  reviewed_hash: null
+  reviewed_hash: sha256:4b336e5dda2238f079e821b66139ef08a93d43f07a818e217bec4f239958dc3d
   content_chars: null
   etag: '"213bf723-86e6-65bcf2864dfd8"'
   last_modified: Sat, 19 Sep 2026 05:19:14 GMT
@@ -323,7 +323,7 @@
 - url: https://www2.popls.co.jp/pop/fair/index.html
   printer_id: popls
   content_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
-  reviewed_hash: null
+  reviewed_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
   content_chars: null
   etag: '"21475ce2-1184-65cbcc18b0ef9"'
   last_modified: Thu, 01 Oct 2026 00:47:10 GMT

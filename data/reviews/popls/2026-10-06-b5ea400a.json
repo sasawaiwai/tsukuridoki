@@ -1,0 +1,14 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/index.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd",
+  "content_chars": 109,
+  "extractor": "manual",
+  "extracted_at": "2026-10-06T19:10:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "note": "フェアの一覧ページ。各フェアは個別のページで確認。"
+}
