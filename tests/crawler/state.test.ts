@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import type { FetchResult } from '../../crawler/fetch.ts';
@@ -14,6 +14,8 @@ const HASH_B = `sha256:${'b'.repeat(64)}`;
 const prev: StateEntry = {
   ...base,
   content_hash: HASH_A,
+  reviewed_hash: HASH_A,
+  content_chars: 1000,
   etag: '"v1"',
   last_modified: 'Mon, 05 Oct 2026 00:00:00 GMT',
   last_fetched_at: '2026-09-29T05:00:00+09:00',
@@ -31,6 +33,24 @@ test('applyResult：取れたらハッシュ・ETag・取得日時を更新す�
   assert.equal(e.etag, '"v2"');
   assert.equal(e.last_fetched_at, NOW);
   assert.equal(e.fetch_status, 'ok');
+});
+
+test('applyResult：巡回では reviewed_hash を書き換えない。文字数は取れたときだけ更新', () => {
+  const changed = applyResult(prev, base, result({}), HASH_B, NOW, 1500);
+  assert.equal(changed.content_hash, HASH_B);
+  assert.equal(changed.reviewed_hash, HASH_A); // ハッシュが違う＝確認待ち
+  assert.equal(changed.content_chars, 1500);
+  const failed = applyResult(prev, base, result({ fetch_status: 'error', http_status: null }), null, NOW, null);
+  assert.equal(failed.content_chars, 1000);
+});
+
+test('loadState：後から足した項目が無い古い記録は null で補う', () => {
+  const file = join(mkdtempSync(join(tmpdir(), 'tsukuridoki-')), 'state.yaml');
+  writeFileSync(file, `- url: https://example.com/\n  printer_id: example\n  content_hash: ${HASH_A}\n  etag: null\n  last_modified: null\n  last_fetched_at: null\n  fetch_status: ok\n  http_status: 200\n`);
+  const [e] = loadState(file);
+  assert.equal(e.reviewed_hash, null);
+  assert.equal(e.content_chars, null);
+  assert.deepEqual(Object.keys(e).slice(0, 5), ['url', 'printer_id', 'content_hash', 'reviewed_hash', 'content_chars']);
 });
 
 test('applyResult：304 なら取得日時だけ更新し、ハッシュ・ETag は残す', () => {
@@ -52,9 +72,11 @@ test('applyResult：失敗しても前回のハッシュと取得日時を消さ
 });
 
 test('applyResult：初めてのURL', () => {
-  assert.deepEqual(applyResult(undefined, base, result({ etag: '"v1"' }), HASH_A, NOW), {
+  assert.deepEqual(applyResult(undefined, base, result({ etag: '"v1"' }), HASH_A, NOW, 1200), {
     ...base,
     content_hash: HASH_A,
+    reviewed_hash: null, // 未確認＝確認待ち
+    content_chars: 1200,
     etag: '"v1"',
     last_modified: null,
     last_fetched_at: NOW,

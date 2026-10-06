@@ -8,12 +8,12 @@
   "properties": {
     "printer_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
     "name": { "type": "string", "minLength": 1 },
-    "official_url": { "type": "string", "format": "uri" },
-    "fair_index_url": { "type": ["string", "null"], "format": "uri" },
+    "official_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "fair_index_url": { "type": ["string", "null"], "format": "uri", "pattern": "^https?://" },
     "watch_urls": {
       "type": "array",
       "uniqueItems": true,
-      "items": { "type": "string", "format": "uri" }
+      "items": { "type": "string", "format": "uri", "pattern": "^https?://" }
     },
     "domains": {
       "type": "array",
@@ -23,7 +23,7 @@
     },
     "link_policy": { "enum": ["deep_link_ok", "top_page_only", "unknown"] },
     "crawl_policy": { "enum": ["allowed", "manual_only", "forbidden", "unknown"] },
-    "terms_url": { "type": ["string", "null"], "format": "uri" },
+    "terms_url": { "type": ["string", "null"], "format": "uri", "pattern": "^https?://" },
     "policy_note": { "type": ["string", "null"] },
     "crawl_selector": { "type": ["string", "null"], "minLength": 1 },
     "crawl_ignore": {

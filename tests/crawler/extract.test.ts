@@ -101,3 +101,15 @@ test('normalizeUrl：# 以降と追跡用パラメータを取り、それ以外
   assert.equal(normalizeUrl('javascript:void(0)', PAGE), null);
   assert.equal(normalizeUrl('tel:0000', PAGE), null);
 });
+
+test('normalizeText：端末の制御文字・文字の向きを入れ替える文字を取り除き、改行・タブは整えて残す（セキュリティ）', () => {
+  assert.equal(normalizeText('赤\u001b[31m字\u0007です'), '赤[31m字です'); // ESC・BEL を除く
+  assert.equal(normalizeText('期限‮13/01‬'), '期限13/01'); // RLO・PDF を除く
+  assert.equal(normalizeText('a⁦b⁩c‏d'), 'abcd');
+  assert.equal(normalizeText('割引\t20%\r\nOFF'), '割引 20%\nOFF'); // タブは空白に、改行は残る
+});
+
+test('normalizeUrl：ユーザー名・パスワード付きのリンクは拾わない（セキュリティ）', () => {
+  assert.equal(normalizeUrl('https://user:pass@example.com/fair/', PAGE), null);
+  assert.equal(normalizeUrl('https://example.com@evil.example/', PAGE), null);
+});

@@ -75,9 +75,19 @@ export function extract(html: string, pageUrl: string, options: ExtractOptions =
   return { text, hash: hashText(text), links, notes };
 }
 
-/** 5-2：Unicode正規化（全角英数・半角カナのゆれ）と、空白・改行の統一。日付・数字は消さない */
+/**
+ * 表示をだます文字：改行・タブ以外の制御文字（端末を操作するエスケープシーケンスなど）と、
+ * 文字の向きを入れ替える双方向制御文字（U+200E・U+200F・U+202A〜U+202E・U+2066〜U+2069）
+ */
+const DECEPTIVE_CHARS = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F\u200E\u200F\u202A-\u202E\u2066-\u2069]/g;
+
+/**
+ * 5-2：Unicode正規化（全角英数・半角カナのゆれ）と、空白・改行の統一。日付・数字は消さない。
+ * 表示をだます文字は取り除く（改行・タブは残して、空白・改行の統一で整える）
+ */
 export function normalizeText(text: string): string {
   return text
+    .replace(DECEPTIVE_CHARS, '')
     .normalize('NFKC')
     .split(/\r\n?|\n/)
     .map((line) => line.replace(/\s+/g, ' ').trim())
@@ -120,6 +130,7 @@ export function normalizeUrl(href: string, base: string): string | null {
     return null;
   }
   if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+  if (url.username !== '' || url.password !== '') return null;
   url.hash = '';
   const tracking = [...url.searchParams.keys()].filter((key) => TRACKING_PARAM.test(key));
   // 何も取らないときは search に触らない（書き直すと %20 → + などに変わってしまうため）

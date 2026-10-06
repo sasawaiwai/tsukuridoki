@@ -8,9 +8,11 @@
     "additionalProperties": false,
     "required": ["url", "printer_id", "content_hash", "etag", "last_modified", "last_fetched_at", "fetch_status", "http_status"],
     "properties": {
-      "url": { "type": "string", "format": "uri" },
+      "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
       "printer_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
       "content_hash": { "type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$" },
+      "reviewed_hash": { "type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$" },
+      "content_chars": { "type": ["integer", "null"], "minimum": 0 },
       "etag": { "type": ["string", "null"] },
       "last_modified": { "type": ["string", "null"] },
       "last_fetched_at": { "type": ["string", "null"], "format": "date-time" },

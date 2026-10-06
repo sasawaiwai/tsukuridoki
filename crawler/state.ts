@@ -13,6 +13,10 @@ export interface StateEntry {
   url: string;
   printer_id: string;
   content_hash: string | null;
+  /** 最後に確認（抽出結果を反映）したときの本文のハッシュ。content_hash と違えば確認待ち（phase4-design 3章） */
+  reviewed_hash: string | null;
+  /** 取り出した本文の文字数（実測値） */
+  content_chars: number | null;
   etag: string | null;
   last_modified: string | null;
   /** 最後に正常に取れた日時（ok・not_modified） */
@@ -25,29 +29,52 @@ const HEADER = `# 巡回の記録（npm run crawl が書き換える。手で編
 # URL・ハッシュ・取得日時などの管理情報だけを保存し、公式ページの本文は保存しない（仕様書7-2）
 `;
 
+/** 保存するときの項目の順番（後から足した項目が無い古い記録は null で補う） */
+function ordered(e: Partial<StateEntry> & Pick<StateEntry, 'url' | 'printer_id'>): StateEntry {
+  return {
+    url: e.url,
+    printer_id: e.printer_id,
+    content_hash: e.content_hash ?? null,
+    reviewed_hash: e.reviewed_hash ?? null,
+    content_chars: e.content_chars ?? null,
+    etag: e.etag ?? null,
+    last_modified: e.last_modified ?? null,
+    last_fetched_at: e.last_fetched_at ?? null,
+    fetch_status: e.fetch_status ?? 'error',
+    http_status: e.http_status ?? null,
+  };
+}
+
 export function loadState(file = STATE_FILE): StateEntry[] {
   if (!existsSync(file)) return [];
-  return (parse(readFileSync(file, 'utf8')) as StateEntry[] | null) ?? [];
+  return ((parse(readFileSync(file, 'utf8')) as StateEntry[] | null) ?? []).map(ordered);
 }
 
 export function saveState(entries: StateEntry[], file = STATE_FILE): void {
-  const sorted = [...entries].sort((a, b) => a.printer_id.localeCompare(b.printer_id) || a.url.localeCompare(b.url));
+  const sorted = entries.map(ordered).sort((a, b) => a.printer_id.localeCompare(b.printer_id) || a.url.localeCompare(b.url));
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, HEADER + (sorted.length > 0 ? stringify(sorted, { lineWidth: 0 }) : '[]\n'));
 }
 
 /**
  * 8-2：取得結果で記録を更新する。
- * - content_hash・etag・last_modified：ok のときだけ（失敗しても前回のハッシュは消さない）
+ * - content_hash・content_chars・etag・last_modified：ok のときだけ（失敗しても前回のハッシュは消さない）
+ * - reviewed_hash：巡回では書き換えない（確認して反映したときだけ。review apply）
  * - last_fetched_at：ok・not_modified のときだけ
  * - fetch_status・http_status：毎回
  */
-export function applyResult(prev: StateEntry | undefined, base: Pick<StateEntry, 'url' | 'printer_id'>, result: FetchResult, hash: string | null, now: string): StateEntry {
-  const entry: StateEntry = prev
-    ? { ...prev }
-    : { ...base, content_hash: null, etag: null, last_modified: null, last_fetched_at: null, fetch_status: result.fetch_status, http_status: null };
+export function applyResult(
+  prev: StateEntry | undefined,
+  base: Pick<StateEntry, 'url' | 'printer_id'>,
+  result: FetchResult,
+  hash: string | null,
+  now: string,
+  chars: number | null = null,
+): StateEntry {
+  const entry: StateEntry = ordered(prev ?? base);
   if (result.fetch_status === 'ok') {
     entry.content_hash = hash;
+    entry.content_chars = chars;
     entry.etag = result.etag;
     entry.last_modified = result.last_modified;
   }

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "extraction.schema.json",
+  "title": "抽出結果（1ページ1ファイル。手動でも自動でも同じ形式）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_url", "printer_id", "content_hash", "content_chars", "extractor", "extracted_at", "result", "fairs", "issues"],
+  "properties": {
+    "source_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "printer_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "content_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "content_chars": { "type": "integer", "minimum": 0 },
+    "extractor": { "enum": ["manual", "api"] },
+    "extracted_at": { "type": "string", "format": "date-time" },
+    "result": { "enum": ["fairs", "no_fair", "needs_manual"] },
+    "fairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fair_id", "fair_name", "sources", "summary", "source_type"],
+        "properties": {
+          "fair_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["multiple_fairs", "image_only", "sns_only", "no_end_date", "year_inferred", "conditions_unclear", "ended", "not_fair", "other"]
+      }
+    },
+    "master_candidates": {
+      "description": "マスター（用紙・箔・加工）にない名前。マスターには自動で追加しない（仕様書25章）",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 50 }
+    },
+    "note": { "type": ["string", "null"], "maxLength": 200 }
+  },
+  "if": { "properties": { "result": { "const": "fairs" } } },
+  "then": { "properties": { "fairs": { "minItems": 1 } } },
+  "else": { "properties": { "fairs": { "maxItems": 0 } } }
+}

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import type { Fair, Printer } from '../src/lib/types.ts';
-import { hostMatches, isSnsUrl, sourceKind, sourceLinks } from '../src/lib/sources.ts';
+import { hostMatches, isSafeUrl, isSnsUrl, parseSafeUrl, sourceKind, sourceLinks } from '../src/lib/sources.ts';
 
 function printer(overrides: Partial<Printer> = {}): Printer {
   return {
@@ -81,4 +81,47 @@ test('sourceLinks：link_policy が deep_link_ok 以外なら公式サイトは�
     ],
   );
   assert.equal(topPageOnly, true);
+});
+
+test('parseSafeUrl：http・https だけを通し、ユーザー名・パスワード付きは弾く（セキュリティ）', () => {
+  assert.equal(isSafeUrl('https://x.com/printer/status/1'), true);
+  assert.equal(isSafeUrl('http://example.com/fair/'), true);
+  for (const bad of [
+    'javascript://x.com/%0aalert(1)',
+    'javascript:alert(1)',
+    'JAVASCRIPT://x.com/%0aalert(1)',
+    'data:text/html,<script>alert(1)</script>',
+    'vbscript:msgbox(1)',
+    'file:///etc/passwd',
+    'https://user:pass@example.com/fair/',
+    'https://user@example.com/fair/',
+    '//example.com/fair/',
+    'not a url',
+  ]) {
+    assert.equal(isSafeUrl(bad), false, bad);
+    assert.equal(parseSafeUrl(bad), null, bad);
+  }
+});
+
+test('isSnsUrl・hostMatches：解析したURLのホスト名だけを見る（セキュリティ）', () => {
+  const p = printer();
+  // ホスト名だけ見ると公式に見えるURL
+  assert.equal(isSnsUrl('javascript://x.com/%0aalert(1)'), false);
+  assert.equal(hostMatches('javascript://www.example.com/%0aalert(1)', p.domains), false);
+  // クエリやパスに含まれるだけのドメインは、そのドメイン扱いしない
+  assert.equal(isSnsUrl('https://evil.example/?x=x.com'), false);
+  assert.equal(isSnsUrl('https://evil.example/x.com/status/1'), false);
+  assert.equal(hostMatches('https://evil.example/?u=example.com', p.domains), false);
+  assert.equal(hostMatches('https://example.com.evil.example/', p.domains), false);
+  // ユーザー名にドメインを入れてだますURL
+  assert.equal(hostMatches('https://example.com@evil.example/', p.domains), false);
+  assert.equal(isSnsUrl('https://x.com@evil.example/'), false);
+  // 正しいもの
+  assert.equal(isSnsUrl('https://x.com/printer/status/1'), true);
+  assert.equal(hostMatches('https://www.example.com/fair/', p.domains), true);
+});
+
+test('sourceLinks：表示の直前にも http(s) 以外を除く（二重チェック）', () => {
+  const { links } = sourceLinks(fair(['javascript://x.com/%0aalert(1)', 'https://example.com/fair/']), printer());
+  assert.deepEqual(links.map((l) => l.href), ['https://example.com/fair/']);
 });

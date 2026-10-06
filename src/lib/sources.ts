@@ -21,17 +21,39 @@ export const SOURCE_LABELS: Record<SourceKind, string> = {
   other: '公式の告知ページ',
 };
 
-function hostOf(url: string): string {
-  return new URL(url).hostname.replace(/^(www|mobile)\./, '');
+/**
+ * URLとして解析し、http・https で、ユーザー名・パスワードを含まないものだけを返す。
+ * リンクに使うURLは、SNS・印刷所の公式サイトを問わずすべてここを通してからホスト名を見る
+ * （javascript://x.com/%0a… のように、ホスト名だけ見ると公式に見えるURLを防ぐ）
+ */
+export function parseSafeUrl(value: string): URL | null {
+  let url: URL;
+  try {
+    url = new URL(value);
+  } catch {
+    return null;
+  }
+  if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+  if (url.username !== '' || url.password !== '') return null;
+  return url;
+}
+
+export function isSafeUrl(value: string): boolean {
+  return parseSafeUrl(value) !== null;
+}
+
+function hostOf(url: string): string | null {
+  return parseSafeUrl(url)?.hostname.replace(/^(www|mobile)\./, '') ?? null;
 }
 
 export function hostMatches(url: string, domains: string[]): boolean {
   const host = hostOf(url);
-  return domains.some((d) => host === d || host.endsWith(`.${d}`));
+  return host !== null && domains.some((d) => host === d || host.endsWith(`.${d}`));
 }
 
 export function isSnsUrl(url: string): boolean {
-  return hostOf(url) in SNS_HOSTS;
+  const host = hostOf(url);
+  return host !== null && host in SNS_HOSTS;
 }
 
 /**
@@ -39,9 +61,13 @@ export function isSnsUrl(url: string): boolean {
  * それ以外（印刷所の domains に追加した別サイトの告知ページなど）→ other
  */
 export function sourceKind(url: string, printer?: Printer): SourceKind {
-  const sns = SNS_HOSTS[hostOf(url)];
+  const host = hostOf(url);
+  if (host === null) return 'other';
+  const sns = SNS_HOSTS[host];
   if (sns) return sns;
-  if (!printer || hostMatches(url, [hostOf(printer.official_url)])) return 'website';
+  if (!printer) return 'website';
+  const official = hostOf(printer.official_url);
+  if (official !== null && hostMatches(url, [official])) return 'website';
   return 'other';
 }
 
@@ -58,7 +84,8 @@ export interface SourceLink {
 export function sourceLinks(fair: Fair, printer: Printer | undefined): { links: SourceLink[]; topPageOnly: boolean } {
   const printerName = printer?.name ?? fair.printer_id;
   const deepLink = printer?.link_policy === 'deep_link_ok';
-  const items = fair.sources.map((url) => ({ url, kind: sourceKind(url, printer) }));
+  // 検証済みのデータでも、表示の直前にもう一度 http(s) 以外を除く（念のための二重チェック）
+  const items = fair.sources.filter(isSafeUrl).map((url) => ({ url, kind: sourceKind(url, printer) }));
   const ordered = [...items.filter((s) => s.kind === 'website'), ...items.filter((s) => s.kind !== 'website')];
 
   const seen = new Set<string>();
