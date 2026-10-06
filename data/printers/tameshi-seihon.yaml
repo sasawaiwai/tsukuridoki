@@ -1,9 +1,0 @@
-# 架空の印刷所（Phase 1 動作確認用サンプル）
-printer_id: tameshi-seihon
-name: ためし製本（架空）
-official_url: https://example.net/
-fair_index_url: https://example.net/campaign/
-domains: [example.net]
-link_policy: top_page_only
-crawl_policy: unknown
-crawl_interval_days: 7

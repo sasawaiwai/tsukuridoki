@@ -1,9 +1,0 @@
-# 架空の印刷所（Phase 1 動作確認用サンプル）
-printer_id: sample-print
-name: さんぷる印刷（架空）
-official_url: https://example.com/
-fair_index_url: https://example.com/fair/
-domains: [example.com]
-link_policy: deep_link_ok
-crawl_policy: unknown
-crawl_interval_days: 7

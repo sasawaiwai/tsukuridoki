@@ -293,7 +293,7 @@
 - url: https://www2.popls.co.jp/pop/fair/2026summer.html
   printer_id: popls
   content_hash: sha256:aabd665db8620b5ae8618a52259343a064782c23dcfbd2f9497a1d26ba6143be
-  reviewed_hash: null
+  reviewed_hash: sha256:aabd665db8620b5ae8618a52259343a064782c23dcfbd2f9497a1d26ba6143be
   content_chars: null
   etag: '"214bc294-89b3-65b2bee0f3596"'
   last_modified: Fri, 11 Sep 2026 02:34:55 GMT

@@ -1,0 +1,90 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026summer.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:aabd665db8620b5ae8618a52259343a064782c23dcfbd2f9497a1d26ba6143be",
+  "content_chars": 1891,
+  "extractor": "manual",
+  "extracted_at": "2026-10-06T18:55:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-see-through-cover-2026",
+      "fair_name": "シースルーフェア：期間限定トレペカバー",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026summer.html"
+      ],
+      "summary": "トレーシングペーパーの期間限定カバーを選べる。フルカラー印刷か白印刷で、表紙と重ねて透ける表現ができる。",
+      "benefit_summary": "期間限定のトレペカバー",
+      "source_type": "official_fair",
+      "start_date": "2026-05-16",
+      "start_date_text": "5月16日",
+      "start_date_precision": "day",
+      "end_date": "2026-10-16",
+      "end_date_text": "10月16日24時入稿分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "A6",
+        "bunko",
+        "shinsho",
+        "B6",
+        "A5"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "tags": [
+        "limited_time"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": false,
+      "conditions_text": "スタンダードセットのカバーが対象（快速本・モノクロ特快は対象外）。60ページ以上（本文用紙が白上質110K・コミック紙なら40ページ以上）、+2営業日、PP・箔押し不可。フェア料金：5,500円＋1冊177円（税込）。期間内に注文と原稿が揃ったものに自動適用。"
+    },
+    {
+      "fair_id": "popls-see-through-endpaper-2026",
+      "fair_name": "シースルーフェア：トレペデザイン遊び紙・トレペカラー遊び紙値引き",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026summer.html"
+      ],
+      "summary": "トレペのデザイン遊び紙とカラー遊び紙が、550円＋1冊66円から550円＋1冊44円に値引きされる。",
+      "benefit_summary": "トレペ遊び紙が1冊66円→44円",
+      "source_type": "official_fair",
+      "start_date": "2026-05-16",
+      "start_date_text": "5月16日",
+      "start_date_precision": "day",
+      "end_date": "2026-10-16",
+      "end_date_text": "10月16日24時入稿分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "A6",
+        "bunko",
+        "shinsho",
+        "B6",
+        "A5",
+        "B5"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "tags": [
+        "limited_time"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "application_required": false,
+      "conditions_text": "スタンダードセットが対象（快速本・モノクロ特快は対象外）。挿入は前のみ、平とじのみ、片面印刷。通常550円＋1冊66円→フェア550円＋1冊44円（税込）。期間内に注文と原稿が揃ったものに自動適用。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "year_inferred"
+  ],
+  "master_candidates": [
+    "クラシコトレス90K（トレーシングペーパー）"
+  ],
+  "note": "年の記載なし。URL（2026summer）と時期から2026年と判断。フェア名は公式のフェア一覧ページの表記。対象サイズが違う2つの特典を分けて登録。"
+}
