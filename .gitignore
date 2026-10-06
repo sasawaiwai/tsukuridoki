@@ -6,3 +6,5 @@ dist/
 .env.*
 # 確認作業中の抽出結果（反映すると data/reviews/ に保存される）
 review-inbox/
+# 書き込み途中で止まったときの一時ファイル
+*.tmp-*
