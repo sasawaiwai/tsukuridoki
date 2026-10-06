@@ -9,7 +9,8 @@ https://tsukuridoki.sasadokoro.online/
 |---|---|
 | `npm run dev` | 開発用サーバーを起動 |
 | `npm run validate` | データ検証（`data/` を `schemas/` のルールで確認） |
-| `npm test` | 時期判定・カード表示・絞り込みのテスト |
+| `npm test` | 時期判定・カード表示・絞り込み・巡回のテスト |
+| `npm run crawl` | 巡回（下の「巡回」を参照） |
 | `npm run build` | データ検証 → サイト生成（`dist/`） |
 | `npm run preview` | 生成したサイトを確認 |
 
@@ -21,7 +22,9 @@ https://tsukuridoki.sasadokoro.online/
 | `data/printers/` | 印刷所マスター |
 | `data/papers/`・`data/foils/` | 用紙・箔マスター |
 | `data/processes/`・`data/tags/` | 加工マスター・自由タグ |
+| `data/crawler/state.yaml` | 巡回の記録（URL・ハッシュ・取得日時など。本文は保存しない。`npm run crawl` が書き換える） |
 | `schemas/` | データのルール（JSON Schema） |
+| `crawler/` | 巡回（取得・robots.txt・本文の取り出し・記録） |
 | `src/lib/period.ts` | 時期判定ロジック（状態ラベルの優先順位を含む） |
 | `src/lib/fair-display.ts` | フェアカードの表示データ（色・特典文・チップ・期限・確認日） |
 | `src/lib/lists.ts` | 一覧ページの定義（時期別・属性別・アーカイブ） |
@@ -30,6 +33,22 @@ https://tsukuridoki.sasadokoro.online/
 | `src/lib/nav.ts` | ナビゲーションのリンク先 |
 | `src/styles/global.css` | デザイントークン（色・文字・余白・角丸） |
 | `src/components/` | 共通部品（ヘッダー・フッター・フェアカード・ラベル・チップ・ボタンなど） |
+
+## 巡回
+
+印刷所マスターの `crawl_policy` が `allowed` の印刷所だけを巡回し、前回から変わったページと新しく見つけたページを見分ける（仕様書7章）。利用規約・robots.txt を確認してから `allowed` にする。
+
+```bash
+npm run crawl                               # 間隔（crawl_interval_days）が来ている印刷所を巡回
+npm run crawl -- --printer=xxx              # 1社だけ巡回（間隔を無視）
+npm run crawl -- --printer=xxx --dry        # state.yaml を書き換えずに試す
+npm run crawl -- --printer=xxx --show-text  # 取り出した本文を画面に出す（調整用。Actions では使えない）
+```
+
+- 同じサイトへは5秒以上（robots.txt の Crawl-delay が長ければそちら）あける。1社20URLまで
+- 本文の場所がうまく取れないときは、印刷所マスターの `crawl_selector`（本文の場所）・`crawl_ignore`（取り除く場所）・`fair_link_selector`（一覧ページでフェアへのリンクがある場所）で調整する
+- GitHub の Actions 画面から「Crawl」を手動で実行できる（結果は概要欄。state.yaml は書き換えない）
+- 取得したHTML・本文はファイル・ログに残さない
 
 ## デザインシステム
 

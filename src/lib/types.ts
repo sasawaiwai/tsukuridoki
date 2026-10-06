@@ -124,6 +124,12 @@ export interface Printer {
   crawl_policy: 'allowed' | 'manual_only' | 'forbidden' | 'unknown';
   terms_url?: string | null;
   policy_note?: string | null;
+  /** 巡回で本文として扱う場所（CSSセレクタ）。無ければ main → article → body */
+  crawl_selector?: string | null;
+  /** 巡回で取り除く場所（アクセスカウンターなど毎回変わる部分） */
+  crawl_ignore?: string[];
+  /** 一覧ページで、フェアへのリンクがある場所 */
+  fair_link_selector?: string | null;
   crawl_interval_days?: number;
   last_crawled_at?: string | null;
   last_policy_checked_at?: DateString | null;

@@ -1,0 +1,36 @@
+# 巡回（手動実行のみ）：GitHub のサーバーから印刷所サイトを取得できるかの確認用（phase3-design 11章）
+# 結果はジョブの概要欄に出す。state.yaml は書き換えず、本文はログにも出さない（7-2）
+# 週1回の定期実行は Phase 5 でレポートPRと一緒に入れる
+name: Crawl
+
+on:
+  workflow_dispatch:
+    inputs:
+      printer:
+        description: '印刷所ID（空なら crawl_policy が allowed の全社）'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: 巡回
+        env:
+          PRINTER: ${{ inputs.printer }}
+        run: |
+          if [ -n "$PRINTER" ]; then
+            npm run crawl -- --printer="$PRINTER"
+          else
+            npm run crawl
+          fi
