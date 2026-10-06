@@ -209,6 +209,24 @@ for (const { file, data: fair } of validFairs) {
     }
   }
 
+  // 開催タイプと日付の項目の組み合わせ（仕様書57章）
+  const timing = fair.timing_type ?? 'period';
+  if (timing !== 'period') {
+    for (const key of ['start_date', 'end_date', 'usable_from', 'usable_until']) {
+      if (fair[key] != null) report(file, `開催タイプが ${timing} のときは ${key} を書きません（期間限定＝period のときだけ）`);
+    }
+  }
+  if (timing !== 'specific_dates' && fair.submission_dates) {
+    report(file, 'submission_dates は開催タイプが specific_dates（入稿日限定）のときだけ書きます');
+  }
+  if (timing === 'specific_dates') {
+    const dates = (fair.submission_dates ?? []).map((d) => d.date);
+    if (dates.some((d, i) => i > 0 && d <= dates[i - 1])) report(file, 'submission_dates の入稿日は、重ならないよう日付順に並べてください');
+    for (const d of fair.submission_dates ?? []) {
+      if (d.delivery_date != null && d.delivery_date < d.date) report(file, `入稿日 ${d.date} の納品日（${d.delivery_date}）が入稿日より前です`);
+    }
+  }
+
   const order = [
     ['start_date', 'end_date'],
     ['usable_from', 'usable_until'],

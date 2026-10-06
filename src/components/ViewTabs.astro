@@ -1,0 +1,149 @@
+---
+// トップの6つの見方のタブ（timing-design 4-1）。
+// タブはそれぞれの一覧ページへの普通のリンク。JavaScript が動くときだけ、押したタブの部品ページ（/dojin/tab/{見方}/）を
+// 読み込んで、この場で表示を切り替える。読み込みに失敗したら普通にリンク先へ移動する。
+// HTML に入れるカードは、最初に開いているタブの分だけ
+import FairGrid from './FairGrid.astro';
+import type { CardModel } from '../lib/fair-display.ts';
+
+export interface ViewTab {
+  key: string;
+  label: string;
+  /** 一覧ページ */
+  href: string;
+  /** タブ用の部品ページ */
+  fragment: string;
+  /** 「もっと見る」に出す名前（例：来月使えるフェア） */
+  moreLabel: string;
+}
+
+interface Props {
+  tabs: ViewTab[];
+  /** 最初に開いているタブ（tabs の先頭） */
+  cards: CardModel[];
+  total: number;
+}
+
+const { tabs, cards, total } = Astro.props;
+const first = tabs[0];
+const moreText = (label: string, n: number) => `${label}をもっと見る（全${n}件）→`;
+---
+
+<section class="view-tabs" data-view-tabs aria-label="フェアを見る">
+  <ul class="view-tabs__list">
+    {
+      tabs.map((tab, i) => (
+        <li>
+          <a class="view-tabs__tab" href={tab.href} data-tab={tab.key} data-fragment={tab.fragment} data-more-label={tab.moreLabel} aria-current={i === 0 ? 'true' : undefined}>
+            {tab.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <div class="view-tabs__panel" data-tab-panel aria-live="polite">
+    <FairGrid cards={cards} emptyText="今は該当するフェアがありません。" />
+  </div>
+
+  <p class="view-tabs__more" data-tab-more-wrap hidden={total === 0}>
+    <a href={first.href} data-tab-more>{moreText(first.moreLabel, total)}</a>
+  </p>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-view-tabs]');
+  if (root) {
+    const panel = root.querySelector<HTMLElement>('[data-tab-panel]')!;
+    const more = root.querySelector<HTMLAnchorElement>('[data-tab-more]')!;
+    const moreWrap = root.querySelector<HTMLElement>('[data-tab-more-wrap]')!;
+    const tabs = [...root.querySelectorAll<HTMLAnchorElement>('a[data-tab]')];
+    const moreText = (label: string, total: string) => `${label}をもっと見る（全${total}件）→`;
+
+    // 読み込んだタブは覚えておき、2回目からはすぐ切り替える
+    const cache = new Map<string, { html: string; total: string }>();
+    const firstTotal = more.textContent?.match(/全(\d+)件/)?.[1] ?? '0';
+    cache.set(tabs[0].dataset.tab!, { html: panel.innerHTML, total: firstTotal });
+
+    async function load(tab: HTMLAnchorElement) {
+      const cached = cache.get(tab.dataset.tab!);
+      if (cached) return cached;
+      const res = await fetch(tab.dataset.fragment!);
+      if (!res.ok) throw new Error(String(res.status));
+      const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+      const content = doc.querySelector<HTMLElement>('[data-tab-content]');
+      if (!content) throw new Error('no content');
+      const entry = { html: content.innerHTML, total: content.dataset.total ?? '0' };
+      cache.set(tab.dataset.tab!, entry);
+      return entry;
+    }
+
+    for (const tab of tabs) {
+      tab.addEventListener('click', async (event) => {
+        // 新しいタブで開くなどの操作は、普通のリンクとして扱う
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+        event.preventDefault();
+        let entry;
+        try {
+          entry = await load(tab);
+        } catch {
+          location.href = tab.href; // 読み込めなければ一覧ページへ
+          return;
+        }
+        panel.innerHTML = entry.html;
+        for (const t of tabs) t.toggleAttribute('aria-current', t === tab);
+        tab.setAttribute('aria-current', 'true');
+        more.href = tab.href;
+        more.textContent = moreText(tab.dataset.moreLabel!, entry.total);
+        moreWrap.hidden = entry.total === '0'; // 0件なら「もっと見る」は出さない
+      });
+    }
+  }
+</script>
+
+<style>
+  .view-tabs {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  /* スマホでは横にスクロールして全部のタブを選べる */
+  .view-tabs__list {
+    display: flex;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0 0 var(--space-1);
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .view-tabs__tab {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    border-radius: var(--radius) var(--radius) 0 0;
+    color: var(--color-text-muted);
+    font-weight: 700;
+    white-space: nowrap;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .view-tabs__tab:hover {
+    color: var(--color-text);
+    background: var(--color-surface-sunken);
+  }
+
+  .view-tabs__tab[aria-current='true'] {
+    color: var(--color-primary-strong);
+    border-bottom-color: var(--color-primary);
+  }
+
+  .view-tabs__more {
+    margin: 0;
+    text-align: right;
+  }
+</style>

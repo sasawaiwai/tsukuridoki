@@ -7,7 +7,7 @@ import FilterPanel from '../../../components/FilterPanel.astro';
 import FairGrid from '../../../components/FairGrid.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { byPublishedDesc } from '../../../lib/lists.ts';
-import { effectiveUntil, todayJST } from '../../../lib/period.ts';
+import { deadlineDate, todayJST } from '../../../lib/period.ts';
 import { isExpired, searchAttributes } from '../../../lib/search.ts';
 
 const today = todayJST();
@@ -18,7 +18,8 @@ const itemAttrs = fairs.map((fair) => ({
   'data-search': JSON.stringify(searchAttributes(fair, today)),
   'data-expired': isExpired(fair, today) ? '1' : undefined,
   'data-published': fair.published_at,
-  'data-until': effectiveUntil(fair) ?? '9999-12-31',
+  // 終了が近い順の基準：期間限定は終了日、入稿日限定は次の入稿日、通年・常設は最後
+  'data-until': deadlineDate(fair, today) ?? '9999-12-31',
   hidden: isExpired(fair, today),
 }));
 const openCount = fairs.filter((f) => !isExpired(f, today)).length;

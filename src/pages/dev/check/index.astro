@@ -8,14 +8,14 @@ import {
   effectiveUntil,
   endingLabel,
   getStatus,
+  inView,
   isNew,
-  isNextWeekend,
   isUpdated,
-  isUsableAfterMonths,
-  isWithin7Days,
-  nextWeekend,
+  timingType,
   todayJST,
+  type ViewKey,
 } from '../../../lib/period.ts';
+import { LIST_PAGES } from '../../../lib/nav.ts';
 import {
   BENEFIT_LABELS,
   COLOR_MODE_LABELS,
@@ -25,7 +25,8 @@ import {
 } from '../../../lib/labels.ts';
 
 const today = todayJST();
-const weekend = nextWeekend(today);
+const VIEWS: ViewKey[] = ['new', 'now', 'this-month', 'next-month', 'this-year', 'ongoing'];
+const TIMING_LABELS = { period: '期間限定', specific_dates: '入稿日限定', ongoing: '通年・常設' };
 const { fairs, printers, processes } = loadSiteData();
 const printerName = new Map(printers.map((p) => [p.printer_id, p.name]));
 const processName = new Map(processes.map((p) => [p.process_id, p.name]));
@@ -33,13 +34,13 @@ const processName = new Map(processes.map((p) => [p.process_id, p.name]));
 const rows = fairs.map((fair) => ({
   fair,
   printer: printerName.get(fair.printer_id) ?? fair.printer_id,
-  period: [fair.start_date_text, fair.end_date_text, fair.usable_until_text].filter(Boolean).join(' / '),
+  period: [TIMING_LABELS[timingType(fair)], fair.start_date_text, fair.end_date_text, fair.usable_until_text, fair.submission_dates_text]
+    .filter(Boolean)
+    .join(' / '),
   from: effectiveFrom(fair) ?? '—',
   until: effectiveUntil(fair) ?? '—',
   status: STATUS_LABELS[getStatus(fair, today)],
-  within7: isWithin7Days(fair, today),
-  nextWeekend: isNextWeekend(fair, today),
-  months: [1, 2, 3, 6].map((n) => isUsableAfterMonths(fair, today, n)),
+  views: VIEWS.map((v) => inView(fair, v, today)),
   ending: endingLabel(fair, today),
   badges: [isNew(fair, today) && 'NEW', isUpdated(fair, today) && 'UPDATE'].filter(Boolean),
   chips: [
@@ -58,8 +59,8 @@ const mark = (value: boolean) => (value ? '○' : '');
   <div class="container dev-table">
   <h1>判定確認用の一覧</h1>
   <p class="note">
-    開発中の動作確認ページです。掲載しているのは<strong>すべて架空のサンプルデータ</strong>です。<br />
-    判定基準日：<strong>{today}</strong>（日本時間）／次の週末：{weekend.saturday}〜{weekend.sunday}
+    開発中の動作確認ページです（データ → 時期判定 → 6つの見方 のつながりを確認する）。<br />
+    判定基準日：<strong>{today}</strong>（日本時間）
   </p>
 
   <div class="table-wrap">
@@ -71,12 +72,7 @@ const mark = (value: boolean) => (value ? '○' : '');
           <th>F</th>
           <th>U</th>
           <th>状態</th>
-          <th>7日以内</th>
-          <th>次の週末</th>
-          <th>1か月</th>
-          <th>2か月</th>
-          <th>3か月</th>
-          <th>半年</th>
+          {VIEWS.map((v) => <th>{LIST_PAGES[v].label}</th>)}
           <th>終了間近</th>
         </tr>
       </thead>
@@ -93,9 +89,7 @@ const mark = (value: boolean) => (value ? '○' : '');
             <td class="date">{row.from}</td>
             <td class="date">{row.until}</td>
             <td class="nowrap">{row.status}</td>
-            <td class="mark">{mark(row.within7)}</td>
-            <td class="mark">{mark(row.nextWeekend)}</td>
-            {row.months.map((m) => <td class="mark">{mark(m)}</td>)}
+            {row.views.map((v) => <td class="mark">{mark(v)}</td>)}
             <td class="nowrap">{row.ending}</td>
           </tr>
         ))}

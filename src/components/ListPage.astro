@@ -12,13 +12,15 @@ interface Props {
   description: string;
   cards: CardModel[];
   pastCards?: CardModel[];
+  /** 全体の件数（ページ分けしているとき。なければ cards の件数） */
+  total?: number;
   /** 「条件を組み合わせて探す」のリンク先（検索ページ＋クエリ） */
   searchHref?: string;
   /** 下部に出す年別アーカイブ。アーカイブ自身では渡さない */
   archiveYears?: string[];
 }
 
-const { title, description, cards, pastCards = [], searchHref = SEARCH_HREF, archiveYears = [] } = Astro.props;
+const { title, description, cards, pastCards = [], total = cards.length, searchHref = SEARCH_HREF, archiveYears = [] } = Astro.props;
 const showPast = cards.length === 0 && pastCards.length > 0;
 ---
 
@@ -30,7 +32,7 @@ const showPast = cards.length === 0 && pastCards.length > 0;
       <slot name="header" />
     </header>
 
-    {cards.length > 0 && <p class="list-page__count"><strong>{cards.length}</strong>件のフェア</p>}
+    {total > 0 && <p class="list-page__count"><strong>{total}</strong>件のフェア</p>}
 
     {
       showPast ? (
@@ -45,6 +47,8 @@ const showPast = cards.length === 0 && pastCards.length > 0;
         <FairGrid cards={cards} />
       )
     }
+
+    <slot name="pager" />
 
     <footer class="list-page__footer">
       <p><a href={searchHref}>条件を組み合わせて探す →</a></p>

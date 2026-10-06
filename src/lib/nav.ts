@@ -23,18 +23,32 @@ export const FOOTER_LINKS: NavLink[] = [
   { label: 'お問い合わせ', href: '/contact/' },
 ];
 
-/** 時期別一覧（仕様書14章） */
-export const PERIOD_PAGES = {
-  within7Days: { label: '今から7日以内', href: '/dojin/within-7-days/' },
-  nextWeekend: { label: '次の週末に間に合う', href: '/dojin/next-weekend/' },
-  month1: { label: '1か月先でも', href: '/dojin/1month/' },
-  month2: { label: '2か月先でも', href: '/dojin/2months/' },
-  month3: { label: '3か月先でも', href: '/dojin/3months/' },
-  month6: { label: '半年先でも', href: '/dojin/6months/' },
+/** 一覧ページ（6つの見方と更新。timing-design 3章）。トップのタブもこの順に並べる */
+export const LIST_PAGES = {
   new: { label: '新着', href: '/dojin/new/' },
-  endingSoon: { label: 'もうすぐ終了', href: '/dojin/ending-soon/' },
+  now: { label: '今開催中', href: '/dojin/now/' },
+  'this-month': { label: '今月使える', href: '/dojin/this-month/' },
+  'next-month': { label: '来月使える', href: '/dojin/next-month/' },
+  'this-year': { label: '年内使える', href: '/dojin/this-year/' },
+  ongoing: { label: '通年・常設', href: '/dojin/ongoing/' },
   updated: { label: '更新されたフェア', href: '/dojin/updated/' },
 } satisfies Record<string, NavLink>;
+
+/** タブの下の「もっと見る」に出す名前 */
+export const MORE_LABELS: Record<string, string> = {
+  new: '新着フェア',
+  now: '今開催中のフェア',
+  'this-month': '今月使えるフェア',
+  'next-month': '来月使えるフェア',
+  'this-year': '年内に使えるフェア',
+  ongoing: '通年・常設の割引',
+};
+
+/** トップのタブ（この順に並べる。最初が初期表示） */
+export const TAB_VIEWS = ['new', 'now', 'this-month', 'next-month', 'this-year', 'ongoing'] as const;
+
+/** トップのタブ用の部品ページ（一覧と同じデータ・同じカードから作る。sitemap・検索エンジンの対象外） */
+export const tabFragmentHref = (view: string) => `/dojin/tab/${view}/`;
 
 export const PRINTERS_HREF = '/dojin/printer/';
 

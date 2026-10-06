@@ -21,6 +21,15 @@ export type SourceType = 'official_fair' | 'official_campaign' | 'official_news'
 export type VerificationStatus = 'verified' | 'auto_checked' | 'needs_review' | 'unknown';
 export type DeadlineType = 'normal' | 'early' | 'special' | 'event' | 'unknown';
 export type HistoryType = 'discovered' | 'published' | 'updated' | 'expired';
+/** 開催タイプ（仕様書57章）。省略時は period */
+export type TimingType = 'period' | 'specific_dates' | 'ongoing';
+
+/** 入稿日限定の入稿日 */
+export interface SubmissionDate {
+  date: DateString;
+  delivery_date?: DateString | null;
+  note?: string | null;
+}
 
 export interface Fair {
   fair_id: string;
@@ -48,6 +57,12 @@ export interface Fair {
   usable_until_text?: string | null;
   usable_from_precision?: Precision | null;
   usable_until_precision?: Precision | null;
+
+  /** 開催タイプ。省略時は期間限定（period） */
+  timing_type?: TimingType;
+  /** 入稿日限定（specific_dates）の入稿日。日付順 */
+  submission_dates?: SubmissionDate[];
+  submission_dates_text?: string | null;
 
   published_at: DateString;
   discovered_at?: DateString | null;

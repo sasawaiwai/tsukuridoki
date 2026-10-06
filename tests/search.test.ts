@@ -27,7 +27,10 @@ test('searchAttributes：時期・加工・色などの値を持つ', () => {
     fair({ start_date: '2026-10-01', end_date: '2026-12-31', processes: ['foil'], sizes: ['A5'], rgb_supported: true }),
     TODAY,
   );
-  assert.deepEqual(attrs.period, ['within-7-days', '1month', '2months']);
+  assert.deepEqual(attrs.period, ['now', 'this-month', 'next-month', 'this-year']);
+  // 7日以内に終わるなら「終了間近」、通年・常設は通年・常設だけ
+  assert.deepEqual(searchAttributes(fair({ start_date: '2026-09-01', end_date: '2026-10-08' }), TODAY).period, ['now', 'this-month', 'this-year', 'ending-soon']);
+  assert.deepEqual(searchAttributes(fair({ timing_type: 'ongoing' }), TODAY).period, ['ongoing']);
   assert.deepEqual(attrs.process, ['foil']);
   assert.deepEqual(attrs.color, ['RGB']);
   assert.deepEqual(attrs.printer, ['test-printer']);

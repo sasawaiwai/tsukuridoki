@@ -2,7 +2,7 @@
 // カードの見た目とは切り離してあるので、件数が増えたらこの処理のまま検索用JSON方式へ置き換えられる。
 
 import type { DateString, Fair } from './types.ts';
-import { getStatus, isNextWeekend, isUsableAfterMonths, isWithin7Days } from './period.ts';
+import { getStatus, inView, isEndingSoon } from './period.ts';
 
 /** クエリ名（41-2）。include_expired は別扱い */
 export const SEARCH_KEYS = ['period', 'printer', 'process', 'size', 'printing', 'color', 'benefit'] as const;
@@ -15,14 +15,14 @@ export interface SearchQuery {
   includeExpired: boolean;
 }
 
-/** 時期の条件（値は時期別一覧のURLと同じ） */
+/** 時期の条件（値は一覧ページのURLと同じ。終了間近は検索だけの条件。timing-design 4-4） */
 export const PERIOD_FILTERS: Record<string, (fair: Fair, today: DateString) => boolean> = {
-  'within-7-days': isWithin7Days,
-  'next-weekend': isNextWeekend,
-  '1month': (fair, today) => isUsableAfterMonths(fair, today, 1),
-  '2months': (fair, today) => isUsableAfterMonths(fair, today, 2),
-  '3months': (fair, today) => isUsableAfterMonths(fair, today, 3),
-  '6months': (fair, today) => isUsableAfterMonths(fair, today, 6),
+  now: (fair, today) => inView(fair, 'now', today),
+  'this-month': (fair, today) => inView(fair, 'this-month', today),
+  'next-month': (fair, today) => inView(fair, 'next-month', today),
+  'this-year': (fair, today) => inView(fair, 'this-year', today),
+  ongoing: (fair, today) => inView(fair, 'ongoing', today),
+  'ending-soon': isEndingSoon,
 };
 
 /** 色方式。RGB・特色は「対応」フラグも含める */

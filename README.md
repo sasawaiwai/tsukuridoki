@@ -84,7 +84,7 @@ npm run review -- stats                                  # 実測値（確認ペ
 
 ## 正式公開（noindex解除）の前にやること
 
-- `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く
+- `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く（`Disallow: /dojin/tab/` は残す）
 
 ## データのルール
 
