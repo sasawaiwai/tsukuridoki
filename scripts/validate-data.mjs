@@ -1,12 +1,12 @@
 // データ検証：data/ 以下のYAMLを schemas/ のルールとファイル同士のつながりで確認する。
 // エラーがあれば日本語で表示し、終了コード1で止める（ビルドも止まる）。
 
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { DATA_DIR, readYamlDir, readYamlFile } from '../src/lib/data.ts';
-import { hostMatches, isSnsUrl } from '../src/lib/sources.ts';
+import { hostMatches, isSafeUrl, isSnsUrl } from '../src/lib/sources.ts';
 
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
 addFormats(ajv);
@@ -24,6 +24,7 @@ const validators = {
   processes: loadSchema('processes.schema.json'),
   tags: loadSchema('tags.schema.json'),
   crawlerState: loadSchema('crawler-state.schema.json'),
+  extraction: loadSchema('extraction.schema.json'),
 };
 
 const errors = [];
@@ -60,6 +61,7 @@ function describe(error) {
       return `「${field}」の形式が違います（期待：${hint ?? p.format}）`;
     }
     case 'pattern':
+      if (p.pattern === '^https?://') return `「${field}」は http:// か https:// で始まるURLにしてください`;
       return `「${field}」に使えない文字があります（半角英小文字・数字・ハイフン等のみ）`;
     case 'minLength':
       return `「${field}」が空です`;
@@ -164,6 +166,16 @@ for (const { file, data } of validFairs) {
 
 const printerById = new Map(validPrinters.map(({ data }) => [data.printer_id, data]));
 
+// リンクに使うURLは、URLとして解析して http・https で、ユーザー名・パスワードを含まないものに限る
+function checkUrls(file, label, urls) {
+  for (const url of urls) {
+    if (url != null && !isSafeUrl(url)) report(file, `${label} の ${url} は使えないURLです（http:// か https:// のみ。ユーザー名・パスワード付きは不可）`);
+  }
+}
+for (const { file, data: p } of validPrinters) {
+  checkUrls(file, 'official_url・fair_index_url・watch_urls・terms_url', [p.official_url, p.fair_index_url, ...(p.watch_urls ?? []), p.terms_url]);
+}
+
 for (const { file, data: fair } of validFairs) {
   const printer = printerById.get(fair.printer_id);
   if (!printerIds.has(fair.printer_id)) {
@@ -182,6 +194,8 @@ for (const { file, data: fair } of validFairs) {
   for (const id of fair.foils?.items ?? []) {
     if (!foilIds.has(id)) report(file, `foils.items の「${id}」が data/foils/ にありません`);
   }
+
+  checkUrls(file, 'sources', fair.sources ?? []);
 
   if (printer) {
     // SNS（X・Instagram・Bluesky）は運営者が公式投稿か確認して登録する。それ以外は印刷所のドメインに限る
@@ -214,6 +228,18 @@ if (validState) {
     if (!printerIds.has(entry.printer_id)) report(stateFile.file, `printer_id「${entry.printer_id}」の印刷所が data/printers/ にありません（${entry.url}）`);
     if (seenUrls.has(entry.url)) report(stateFile.file, `URL「${entry.url}」が重複しています`);
     seenUrls.add(entry.url);
+  }
+}
+
+// 確認作業の記録（抽出結果）
+const reviewsDir = join(DATA_DIR, 'reviews');
+if (existsSync(reviewsDir)) {
+  for (const name of readdirSync(reviewsDir, { recursive: true, encoding: 'utf8' }).filter((n) => n.endsWith('.json'))) {
+    const file = join('reviews', name);
+    const data = safeRead(() => JSON.parse(readFileSync(join(reviewsDir, name), 'utf8')), file);
+    if (data && checkSchema('extraction', { file, data }) && !printerIds.has(data.printer_id)) {
+      report(file, `printer_id「${data.printer_id}」の印刷所が data/printers/ にありません`);
+    }
   }
 }
 

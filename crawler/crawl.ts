@@ -12,8 +12,8 @@ import { readYamlDir } from '../src/lib/data.ts';
 import { hostMatches } from '../src/lib/sources.ts';
 import type { Printer } from '../src/lib/types.ts';
 import { extract, type ExtractNote } from './extract.ts';
-import { fetchPage, fetchRobotsTxt, MIN_DELAY_MS, Pacer, type FetchStatus } from './fetch.ts';
-import { interpretRobots, type Robots } from './robots.ts';
+import { printerAccess, ROBOTS_DENIED, type AccessContext } from './access.ts';
+import { Pacer, type FetchStatus } from './fetch.ts';
 import { applyResult, loadState, nowJst, saveState, type StateEntry } from './state.ts';
 
 /** 1回の巡回で1印刷所あたりに取得するURLの上限（4-2） */
@@ -31,10 +31,7 @@ export interface Row {
   detail: string;
 }
 
-export interface CrawlContext {
-  pacer: Pick<Pacer, 'wait' | 'done'>;
-  /** robots.txt はサイト（オリジン）ごとに1回だけ取得する */
-  robots: Map<string, Robots>;
+export interface CrawlContext extends AccessContext {
   now: Date;
   /** 巡回の間隔を無視する（印刷所を指定したとき） */
   force: boolean;
@@ -61,7 +58,6 @@ const STATUS_LABELS: Record<FetchStatus, string> = {
   error: 'エラー',
 };
 
-const ROBOTS_DENIED = 'robots.txt で禁止されています';
 const DAY = 86_400_000;
 
 /** 1社分を巡回する。state は取得結果で書き換える */
@@ -93,26 +89,7 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
     }
   }
 
-  async function robotsFor(url: string): Promise<Robots> {
-    const origin = new URL(url).origin;
-    let robots = ctx.robots.get(origin);
-    if (!robots) {
-      await ctx.pacer.wait(origin, MIN_DELAY_MS);
-      const res = await fetchRobotsTxt(origin);
-      ctx.pacer.done(origin);
-      robots = interpretRobots(`${origin}/robots.txt`, res.http_status, res.body, res.reason);
-      ctx.robots.set(origin, robots);
-    }
-    return robots;
-  }
-
-  /** 取得してよいか。だめなら理由を返す（リダイレクト先の確認にも使う） */
-  async function denyReason(url: string): Promise<string | null> {
-    if (!hostMatches(url, printer.domains)) return `印刷所の domains の外です（${new URL(url).hostname}）`;
-    const robots = await robotsFor(url);
-    if (robots.kind === 'unavailable') return robots.reason;
-    return robots.isAllowed(url) ? null : ROBOTS_DENIED;
-  }
+  const { denyReason, fetchAllowed } = printerAccess(printer, ctx);
 
   let fetched = 0;
   let stopped: string | null = null;
@@ -134,15 +111,13 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
       return [];
     }
 
-    const robots = (await robotsFor(url)) as Extract<Robots, { kind: 'rules' }>;
-    await ctx.pacer.wait(url, robots.delayMs);
     // 一覧ページは「変わっていない（304）」だと中身が来ずリンクを拾えない。上限で次回に回したリンクを見つけ直すため、毎回中身を取る
     const conditional = prev?.content_hash && url !== indexUrl ? prev : {};
-    const result = await fetchPage(url, conditional, denyReason);
-    ctx.pacer.done(url);
+    const result = await fetchAllowed(url, conditional);
     fetched++;
 
     let hash: string | null = null;
+    let chars: number | null = null;
     let links: string[] = [];
     if (result.fetch_status === 'ok') {
       const page = extract(result.html!, result.url, {
@@ -152,6 +127,7 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
       });
       ctx.onText?.(url, page.text);
       hash = page.hash;
+      chars = page.text.length;
       links = page.links;
       const outcome: Outcome = page.notes.includes('js_suspect')
         ? '要手動確認'
@@ -169,7 +145,7 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
 
     // 新規リンクは取れたときだけ記録する（取れなかったものは、次回また一覧ページから見つかる）
     if (!isNewLink || result.fetch_status === 'ok') {
-      state.set(url, applyResult(prev, { url, printer_id }, result, hash, nowJst(ctx.now)));
+      state.set(url, applyResult(prev, { url, printer_id }, result, hash, nowJst(ctx.now), chars));
     }
     if (result.http_status === 429 || result.http_status === 503) {
       stopped = `HTTP ${result.http_status}（混雑・拒否）のため、この印刷所の巡回を中止しました`;

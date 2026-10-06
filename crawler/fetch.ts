@@ -3,8 +3,8 @@
 
 import net from 'node:net';
 
-// Node は IPv4 の接続に0.25秒以上かかると打ち切って IPv6 を試す。IPv6 が使えない環境では、
-// 相手の応答が少し遅いだけで「通信エラー」になるため、1つの経路を5秒まで待つ
+// Node は接続先に IPv4・IPv6 の両方があると、アドレスを順に試し、1つあたり0.25秒で次へ移る（autoSelectFamily）。
+// この待ち時間が接続先との相性で「通信エラー」の原因になっていた可能性が高いため、5秒まで待つ（2026-10-06、これで解消）
 net.setDefaultAutoSelectFamilyAttemptTimeout(5000);
 
 export const ROBOTS_TOKEN = 'TsukuridokiBot';

@@ -4,3 +4,5 @@ dist/
 .DS_Store
 .env
 .env.*
+# 確認作業中の抽出結果（反映すると data/reviews/ に保存される）
+review-inbox/
