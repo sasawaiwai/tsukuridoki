@@ -1,9 +1,8 @@
 // 一覧ページの定義（仕様書10〜12章・14章・36〜39章）
 
 import type { DateString, Fair, SiteData } from './types.ts';
-import { addMonths, effectiveUntil, isEndingSoon, nextWeekend } from './period.ts';
-import { PERIOD_FILTERS, colorValues, isExpired } from './search.ts';
-import { formatJpDate, formatJpDateFull } from './fair-display.ts';
+import { addMonths, deadlineDate, effectiveUntil, inView, viewDate, type ViewKey } from './period.ts';
+import { colorValues, isExpired } from './search.ts';
 import { BENEFIT_LABELS, COLOR_MODE_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
 /** 新しく掲載された順 */
@@ -28,55 +27,55 @@ export interface ListPage {
   select: (fairs: Fair[]) => Fair[];
 }
 
-/** 時期別・新着・更新・終了間近の一覧 */
+/** 一覧ページの1ページあたりの件数（PCの3列・4列で割り切れる。timing-design 4-2） */
+export const LIST_PAGE_SIZE = 24;
+/** トップのタブに出す件数 */
+export const TAB_SIZE = 10;
+
+/** その見方で最初に使える日が近い順、同じなら終わりが近い順 */
+function byViewDate(view: ViewKey, today: DateString) {
+  const deadline = (f: Fair) => deadlineDate(f, today) ?? '9999-12-31';
+  return (a: Fair, b: Fair) =>
+    (viewDate(a, view, today) ?? '').localeCompare(viewDate(b, view, today) ?? '') || deadline(a).localeCompare(deadline(b));
+}
+
+/** 6つの見方（新着・今開催中・今月・来月・年内・通年常設）と、更新されたフェアの一覧（timing-design 3章） */
 export function listPages(today: DateString): ListPage[] {
-  const open = (fairs: Fair[]) => fairs.filter((f) => !isExpired(f, today));
-  const period = (key: string) => (fairs: Fair[]) => fairs.filter((f) => PERIOD_FILTERS[key](f, today)).sort(byUntilAsc);
-  const weekend = nextWeekend(today);
-  const months = (n: number, label: string): ListPage => ({
-    slug: `${n}month${n > 1 ? 's' : ''}`,
-    title: `${label}先でも使えるフェア`,
-    description: `${label}後（${formatJpDateFull(addMonths(today, n))}）に入稿しても使えるフェアです。終了日が決まっていないフェア（なくなり次第終了など）は含みません。`,
-    select: period(`${n}month${n > 1 ? 's' : ''}`),
+  const month = Number(today.slice(5, 7));
+  const nextMonth = Number(addMonths(`${today.slice(0, 7)}-01`, 1).slice(5, 7));
+  const year = today.slice(0, 4);
+  const view = (slug: ViewKey, title: string, description: string): ListPage => ({
+    slug,
+    title,
+    description,
+    select: (fairs) => fairs.filter((f) => inView(f, slug, today)).sort(byViewDate(slug, today)),
   });
 
   return [
     {
-      slug: 'within-7-days',
-      title: '今から7日以内に入稿できるフェア',
-      description: '今日から7日以内に入稿すれば使えるフェアです。開始前のフェアは、利用できるようになる日を表示しています。',
-      select: period('within-7-days'),
-    },
-    {
-      slug: 'next-weekend',
-      title: '次の週末のイベントに間に合うフェア',
-      description: `次の週末（${formatJpDate(weekend.saturday)}・${formatJpDate(weekend.sunday)}）のイベント向けの入稿締切が公式に案内されていて、その締切までに使えるフェアだけを載せています。`,
-      select: period('next-weekend'),
-    },
-    months(1, '1か月'),
-    months(2, '2か月'),
-    months(3, '3か月'),
-    months(6, '半年'),
-    {
       slug: 'new',
       title: '新着フェア',
-      description: '新しく掲載されたフェアです。掲載日の新しい順に並べています。',
-      select: (fairs) => open(fairs).sort(byPublishedDesc),
+      description: 'ツクリドキ！に新しく掲載されたフェアです。これから始まるフェアも含みます。掲載日の新しい順に並べています。',
+      select: (fairs) => fairs.filter((f) => inView(f, 'new', today)).sort(byPublishedDesc),
+    },
+    view('now', '今開催中のフェア', '今日使えるフェアです。終わりが近い順に並べています。'),
+    view('this-month', `今月（${month}月）使えるフェア`, `今日から${month}月末までの間に、使える日があるフェアです。`),
+    view('next-month', `来月（${nextMonth}月）使えるフェア`, `${nextMonth}月中に使える日があるフェアです。終了日が決まっていないフェア（なくなり次第終了など）は含みません。`),
+    view('this-year', '年内に使えるフェア', `今日から${year}年12月31日までの間に、少なくとも1日使えるフェアです。`),
+    {
+      slug: 'ongoing',
+      title: '通年・常設の割引',
+      description: '期間の定めがなく、いつでも使える割引・サービスです。条件が変わることがあるので、利用前に公式サイトでご確認ください。',
+      select: (fairs) => fairs.filter((f) => inView(f, 'ongoing', today)).sort(byPublishedDesc),
     },
     {
       slug: 'updated',
       title: '更新されたフェア',
       description: '期間の延長など、内容が更新されたフェアです。更新日の新しい順に並べています。',
       select: (fairs) =>
-        open(fairs)
-          .filter((f) => f.updated_at)
+        fairs
+          .filter((f) => !isExpired(f, today) && f.updated_at)
           .sort((a, b) => b.updated_at!.localeCompare(a.updated_at!)),
-    },
-    {
-      slug: 'ending-soon',
-      title: 'もうすぐ終了するフェア',
-      description: '7日以内に終了するフェアです。終了が近い順に並べています。',
-      select: (fairs) => fairs.filter((f) => isEndingSoon(f, today)).sort(byUntilAsc),
     },
   ];
 }

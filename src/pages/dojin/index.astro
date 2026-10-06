@@ -1,15 +1,14 @@
 ---
 // フェアを探す：探し方の入口（phase2-design.md 9章）
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import PeriodNav from '../../components/PeriodNav.astro';
 import PopularProcesses from '../../components/PopularProcesses.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import Chip from '../../components/Chip.astro';
 import Button from '../../components/Button.astro';
 import { loadSiteData } from '../../lib/data.ts';
 import { ATTRIBUTE_AXES, archiveYears, attributeValues } from '../../lib/lists.ts';
-import { PERIOD_PAGES, PRINTERS_HREF, SEARCH_HREF } from '../../lib/nav.ts';
-import { isNextWeekend, todayJST } from '../../lib/period.ts';
+import { LIST_PAGES, PRINTERS_HREF, SEARCH_HREF } from '../../lib/nav.ts';
+import { todayJST } from '../../lib/period.ts';
 import { processCategory, processMap } from '../../lib/fair-display.ts';
 
 const today = todayJST();
@@ -19,8 +18,7 @@ const values = attributeValues(data);
 const usedPrinters = new Set(data.fairs.map((f) => f.printer_id));
 const printers = data.printers.filter((p) => p.crawl_policy !== 'forbidden' && usedPrinters.has(p.printer_id));
 const years = archiveYears(data.fairs, today);
-const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
-const moreLists = [PERIOD_PAGES.new, PERIOD_PAGES.updated, PERIOD_PAGES.endingSoon];
+const viewLinks = Object.values(LIST_PAGES);
 ---
 
 <BaseLayout title="フェアを探す" description="同人誌印刷所のフェアを、入稿時期・加工・サイズ・印刷方式・色・特典・印刷所から探せます。">
@@ -33,9 +31,8 @@ const moreLists = [PERIOD_PAGES.new, PERIOD_PAGES.updated, PERIOD_PAGES.endingSo
 
     <section class="find__section">
       <SectionHeader title="時期から探す" />
-      <PeriodNav showNextWeekend={showNextWeekend} />
       <ul class="find__chips">
-        {moreLists.map((link) => <li><Chip label={link.label} href={link.href} size="md" /></li>)}
+        {viewLinks.map((link) => <li><Chip label={link.label} href={link.href} size="md" /></li>)}
       </ul>
     </section>
 

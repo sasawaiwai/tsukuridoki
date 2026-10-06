@@ -1,56 +1,34 @@
 ---
-// トップページ（仕様書40-1）
+// トップページ（仕様書40-1、timing-design 4-1）
+// トップ＝フェアを発見する場所。6つの見方のタブ（各一覧ページへのリンク）と、人気の加工から入る
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import PeriodNav from '../components/PeriodNav.astro';
 import SectionHeader from '../components/SectionHeader.astro';
-import FairGrid from '../components/FairGrid.astro';
+import ViewTabs, { type ViewTab } from '../components/ViewTabs.astro';
 import PopularProcesses from '../components/PopularProcesses.astro';
 import { SITE } from '../lib/site.ts';
-import { PERIOD_PAGES, PRINTERS_HREF } from '../lib/nav.ts';
+import { LIST_PAGES, MORE_LABELS, PRINTERS_HREF, TAB_VIEWS, tabFragmentHref } from '../lib/nav.ts';
 import { cardBuilder } from '../lib/cards.ts';
-import { byPublishedDesc, byUntilAsc } from '../lib/lists.ts';
-import { getStatus, isEndingSoon, isNextWeekend, isWithin7Days, todayJST } from '../lib/period.ts';
+import { listPages, TAB_SIZE } from '../lib/lists.ts';
+import { todayJST } from '../lib/period.ts';
 
-const SECTION_LIMIT = 6;
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
 
-const openFairs = data.fairs.filter((f) => getStatus(f, today) !== 'expired');
-const newCards = [...openFairs].sort(byPublishedDesc).slice(0, SECTION_LIMIT).map(toCard);
-const within7Cards = data.fairs.filter((f) => isWithin7Days(f, today)).sort(byUntilAsc).slice(0, SECTION_LIMIT).map(toCard);
-const endingSoonCards = data.fairs.filter((f) => isEndingSoon(f, today)).sort(byUntilAsc).slice(0, SECTION_LIMIT).map(toCard);
-const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
+const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), moreLabel: MORE_LABELS[key] }));
+const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs);
 ---
 
 <BaseLayout>
   <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">
-    <section aria-label="時期・目的から探す" class="period">
-      <PeriodNav showNextWeekend={showNextWeekend} />
-    </section>
-
     <PopularProcesses id="popular-processes" />
 
     <section>
-      <SectionHeader title="新着フェア" lead="最近はじまった、新しく掲載されたフェア" moreHref={PERIOD_PAGES.new.href} />
-      <FairGrid cards={newCards} />
+      <SectionHeader title="フェアを見る" lead="いつ使えるかで切り替えられます" />
+      <ViewTabs tabs={tabs} cards={firstFairs.slice(0, TAB_SIZE).map(toCard)} total={firstFairs.length} />
     </section>
-
-    <section>
-      <SectionHeader title="今から7日以内に使えるフェア" lead="近いうちに入稿したい方に" moreHref={PERIOD_PAGES.within7Days.href} />
-      <FairGrid cards={within7Cards} />
-    </section>
-
-    {
-      endingSoonCards.length > 0 && (
-        <section>
-          <SectionHeader title="もうすぐ終了" lead="使うなら今のうちに" moreHref={PERIOD_PAGES.endingSoon.href} />
-          <FairGrid cards={endingSoonCards} />
-        </section>
-      )
-    }
 
     <section class="about">
       <SectionHeader title="このサイトについて" />
@@ -60,7 +38,7 @@ const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
         「突発本だけど、何かひと工夫したい！」
       </p>
       <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
-      <p>今から7日以内に使えるフェアから、数か月先まで使えるフェア、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
+      <p>今開催中のフェアから、来月・年内に使えるフェア、いつでも使える常設の割引、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
       <p>眺めているだけで、次の本を作りたくなる。</p>
       <p class="about__name"><strong>{SITE.name}</strong>｜{SITE.tagline}</p>
     </section>
@@ -74,12 +52,6 @@ const showNextWeekend = data.fairs.some((f) => isNextWeekend(f, today));
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
-  }
-
-  /* 時期別導線はヒーローに少し重ねて、ひと続きに見せる */
-  .period {
-    position: relative;
-    margin-top: calc(var(--space-5) * -1);
   }
 
   .about {

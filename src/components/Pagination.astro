@@ -1,0 +1,82 @@
+---
+// ページ送り（一覧ページ。timing-design 4-2）。1ページしかないときは何も出さない
+import type { Page } from 'astro';
+
+interface Props {
+  page: Page<unknown>;
+}
+
+const { page } = Astro.props;
+const base = page.url.first ?? page.url.current;
+const pageHref = (n: number) => (n === 1 ? base : `${base}${n}/`);
+const numbers = Array.from({ length: page.lastPage }, (_, i) => i + 1);
+---
+
+{
+  page.lastPage > 1 && (
+    <nav class="pagination" aria-label="ページ送り">
+      {page.url.prev ? <a class="pagination__step" href={page.url.prev} rel="prev">‹ 前へ</a> : <span class="pagination__step" aria-hidden="true" />}
+      <ol class="pagination__numbers">
+        {numbers.map((n) => (
+          <li>
+            {n === page.currentPage ? (
+              <span class="pagination__current" aria-current="page">{n}</span>
+            ) : (
+              <a href={pageHref(n)}>{n}</a>
+            )}
+          </li>
+        ))}
+      </ol>
+      {page.url.next ? <a class="pagination__step" href={page.url.next} rel="next">次へ ›</a> : <span class="pagination__step" aria-hidden="true" />}
+    </nav>
+  )
+}
+
+<style>
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .pagination__numbers {
+    display: flex;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagination a,
+  .pagination__current {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border-radius: var(--radius);
+  }
+
+  .pagination a {
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .pagination a:hover {
+    border-color: var(--color-primary);
+  }
+
+  .pagination__current {
+    background: var(--color-primary-strong);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .pagination__step {
+    min-width: 5em;
+  }
+</style>

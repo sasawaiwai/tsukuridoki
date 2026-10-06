@@ -7,7 +7,9 @@ import StatusLabel from '../../../components/StatusLabel.astro';
 import Chip from '../../../components/Chip.astro';
 import Button from '../../../components/Button.astro';
 import PopularProcesses from '../../../components/PopularProcesses.astro';
-import PeriodNav from '../../../components/PeriodNav.astro';
+import ViewTabs, { type ViewTab } from '../../../components/ViewTabs.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { LIST_PAGES, MORE_LABELS, TAB_VIEWS, tabFragmentHref } from '../../../lib/nav.ts';
 import ImagePlaceholder from '../../../components/ImagePlaceholder.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { todayJST } from '../../../lib/period.ts';
@@ -16,6 +18,18 @@ import type { CardModel } from '../../../lib/fair-display.ts';
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
 const sampleCards = data.fairs.map(toCard);
+const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), moreLabel: MORE_LABELS[key] }));
+// ページ送りの見本（3ページ中の2ページ目）
+const samplePage = {
+  data: [],
+  start: 24,
+  end: 47,
+  size: 24,
+  total: 60,
+  currentPage: 2,
+  lastPage: 3,
+  url: { current: '/dojin/this-month/2/', prev: '/dojin/this-month/', next: '/dojin/this-month/3/', first: '/dojin/this-month/', last: '/dojin/this-month/3/' },
+} as const;
 
 // 表示の限界を確認するための架空のカード
 const edgeCases: CardModel[] = [
@@ -162,8 +176,13 @@ const categories = [
     </section>
 
     <section>
-      <SectionHeader title="時期別導線" />
-      <PeriodNav showNextWeekend={true} />
+      <SectionHeader title="見方のタブ（トップ）" lead="タブは一覧ページへのリンク。JavaScript があればその場で切り替える" />
+      <ViewTabs tabs={tabs} cards={sampleCards.slice(0, 3)} total={sampleCards.length} />
+    </section>
+
+    <section>
+      <SectionHeader title="ページ送り（一覧ページ）" />
+      <Pagination page={samplePage as any} />
     </section>
 
     <section>

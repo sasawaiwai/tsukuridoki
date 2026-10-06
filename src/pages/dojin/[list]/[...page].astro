@@ -1,0 +1,44 @@
+---
+// 6つの見方と更新の一覧（timing-design 3章・4-2）。24件ずつページに分ける
+//   /dojin/this-month/ …… 1ページ目、/dojin/this-month/2/ …… 2ページ目
+import type { GetStaticPaths, Page } from 'astro';
+import ListPage from '../../../components/ListPage.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { cardBuilder } from '../../../lib/cards.ts';
+import type { CardModel } from '../../../lib/fair-display.ts';
+import { archiveYears, LIST_PAGE_SIZE, listPages } from '../../../lib/lists.ts';
+import { SEARCH_HREF } from '../../../lib/nav.ts';
+import { PERIOD_FILTERS } from '../../../lib/search.ts';
+import { todayJST } from '../../../lib/period.ts';
+
+export const getStaticPaths = (({ paginate }) => {
+  const today = todayJST();
+  const { data, toCard } = cardBuilder(today);
+  return listPages(today).flatMap((list) =>
+    paginate(list.select(data.fairs).map(toCard), { params: { list: list.slug }, props: { slug: list.slug }, pageSize: LIST_PAGE_SIZE }),
+  );
+}) satisfies GetStaticPaths;
+
+interface Props {
+  slug: string;
+  page: Page<CardModel>;
+}
+
+const { slug, page } = Astro.props;
+const today = todayJST();
+const list = listPages(today).find((p) => p.slug === slug)!;
+const { data } = cardBuilder(today);
+const searchHref = slug in PERIOD_FILTERS ? `${SEARCH_HREF}?period=${slug}` : SEARCH_HREF;
+const title = page.currentPage > 1 ? `${list.title}（${page.currentPage}ページ目）` : list.title;
+---
+
+<ListPage
+  title={title}
+  description={list.description}
+  cards={page.data}
+  total={page.total}
+  searchHref={searchHref}
+  archiveYears={archiveYears(data.fairs, today)}
+>
+  <Pagination slot="pager" page={page} />
+</ListPage>

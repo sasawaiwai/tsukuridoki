@@ -1,3 +1,5 @@
 # 正式公開（v1）までは検索エンジンに載せない
 User-agent: *
 Disallow: /
+# トップのタブ用の部品（単体で見るページではない）。正式公開で上の Disallow: / を外しても、この行は残す
+Disallow: /dojin/tab/
