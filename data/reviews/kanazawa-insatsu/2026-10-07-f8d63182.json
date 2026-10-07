@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.kanazawa-p.co.jp/fea/index.html",
+  "printer_id": "kanazawa-insatsu",
+  "content_hash": "sha256:c7ee03c088526c87e9776a72edaeb3241cf98f5a2c4df21d306b74f4e776b1ea",
+  "content_chars": 16483,
+  "extractor": "manual",
+  "extracted_at": "2026-10-07T09:35:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kanazawa-insatsu-early-discount",
+      "fair_name": "早割（イベント合わせ）",
+      "sources": [
+        "https://www.kanazawa-p.co.jp/fea/index.html"
+      ],
+      "summary": "イベントへの搬入に合わせて早めに入稿すると、前金セット商品が最大30%OFFになる。入稿日が早いほど割引率が高く、イベントごとに日程が組まれている。",
+      "benefit_summary": "早く入稿するほど最大30%OFF",
+      "source_type": "official_fair",
+      "timing_type": "recurring",
+      "submission_dates_text": "イベントごとに、早く入稿するほど割引率が上がる（30%・25%・20%・15%・10%）",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "前金セット商品が対象（早割30・25・20はスタンダードオフセットなど7〜8種、早割15は6種、早割10は表オフ本オンデセット・オンデセットの2種）。他のフェアと併用不可。納品日の指定・早期納品は不可。早割15・10はアナログ原稿の対象外。オンライン入稿は見積りで早割を「利用する」にチェック、郵送は注文書の備考欄に記入。前金制。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "総合案内に載る、イベントごとの早割（30・25・20・15・10%）の仕組みを定期開催で1件に登録。個別の早割ページは巡回しない。"
+}
