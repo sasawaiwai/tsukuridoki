@@ -3,8 +3,9 @@ name: 金沢印刷
 official_url: https://www.kanazawa-p.co.jp/
 # フェア総合案内
 fair_index_url: https://www.kanazawa-p.co.jp/fea/index.html
-# 早割フェアの個別ページ（セット商品のページは追わない）
-fair_link_selector: 'a[href*="early"]'
+# 総合案内は早割の予定表（イベントごとに早割30〜10が毎週入れ替わる）。早割は「定期開催」で1件にまとめるため、
+# 個別の早割ページは追わず、総合案内の変化だけを見る（仕様書57章）
+follow_links: false
 domains: [kanazawa-p.co.jp]
 # リンクはトップページ固定（運営方針）。金沢印刷は「リンクフリー」と明記（terms_url のページ）
 link_policy: top_page_only

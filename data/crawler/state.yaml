@@ -90,64 +90,14 @@
   last_fetched_at: 2026-10-06T14:32:14+09:00
   fetch_status: ok
   http_status: 200
-- url: https://www.kanazawa-p.co.jp/early10/index.html
-  printer_id: kanazawa-insatsu
-  content_hash: sha256:c032d197b1381ccb2e779e03ce583b609bbaa08dfbd283a1662fbde553bb9649
-  reviewed_hash: null
-  content_chars: null
-  etag: '"2eb3-65cad1817860b"'
-  last_modified: Wed, 30 Sep 2026 06:06:03 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
-- url: https://www.kanazawa-p.co.jp/early15/index.html
-  printer_id: kanazawa-insatsu
-  content_hash: sha256:26e2bd2b27fcf9ec29c561283b12cfdae0a5f746b7067a701616357627263ac0
-  reviewed_hash: null
-  content_chars: null
-  etag: '"3766-65c98ead9a1cb"'
-  last_modified: Tue, 29 Sep 2026 06:01:45 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
-- url: https://www.kanazawa-p.co.jp/early20/index.html
-  printer_id: kanazawa-insatsu
-  content_hash: sha256:ab6f9e534e9152ad7394858c0cb9dde6282a3c56db55b33653db8f65eccff637
-  reviewed_hash: null
-  content_chars: null
-  etag: '"3543-65d11bb710ca6"'
-  last_modified: Mon, 05 Oct 2026 06:10:00 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
-- url: https://www.kanazawa-p.co.jp/early25/index.html
-  printer_id: kanazawa-insatsu
-  content_hash: sha256:bdccfa069db5600f6f3dde40ff0fd7fad7bfe97cf90bdfacac8e7f5f9e1b3d6a
-  reviewed_hash: null
-  content_chars: null
-  etag: '"3522-65cd559ff29f0"'
-  last_modified: Fri, 02 Oct 2026 06:07:47 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
-- url: https://www.kanazawa-p.co.jp/early30/index.html
-  printer_id: kanazawa-insatsu
-  content_hash: sha256:211a3c7d15abb40f55e4dae7b4576f89c670a43eaf8d0adcdbbfd4e212449b7f
-  reviewed_hash: null
-  content_chars: null
-  etag: '"3503-65cc12db3088a"'
-  last_modified: Thu, 01 Oct 2026 06:03:45 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
-  content_hash: sha256:570089d3311fd827e02a3330674b09f0a77c849d8bbd4b061e7724216b572cbf
-  reviewed_hash: null
-  content_chars: null
-  etag: '"131c0-65d11bba1d8a9"'
-  last_modified: Mon, 05 Oct 2026 06:10:04 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
+  content_hash: sha256:c7ee03c088526c87e9776a72edaeb3241cf98f5a2c4df21d306b74f4e776b1ea
+  reviewed_hash: sha256:c7ee03c088526c87e9776a72edaeb3241cf98f5a2c4df21d306b74f4e776b1ea
+  content_chars: 16483
+  etag: '"12c3d-65d25c1b62f0e"'
+  last_modified: Tue, 06 Oct 2026 06:03:25 GMT
+  last_fetched_at: 2026-10-07T09:12:40+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/fair/ondekuchie
