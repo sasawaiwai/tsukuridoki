@@ -20,9 +20,17 @@ const { cards, layout = 'top', emptyText = '現在、該当するフェアはあ
   cards.length > 0 ? (
     <ul class={`fair-grid fair-grid--${layout}`}>
       {cards.map((card, i) => (
-        <li {...itemAttrs?.[i]}>
-          <FairCard card={card} />
-        </li>
+        <>
+          {/* 期間のあるフェアの後ろに、いつでも使えるフェアをまとめる（仕様書57章）。検索ページは並び替えるので区切りを出さない */}
+          {card.always && i > 0 && !cards[i - 1].always && !itemAttrs && (
+            <li class="fair-grid__divider" role="presentation">
+              <span>いつでも使えるフェア</span>
+            </li>
+          )}
+          <li {...itemAttrs?.[i]}>
+            <FairCard card={card} />
+          </li>
+        </>
       ))}
     </ul>
   ) : (
@@ -31,6 +39,24 @@ const { cards, layout = 'top', emptyText = '現在、該当するフェアはあ
 }
 
 <style>
+  /* 「いつでも使えるフェア」の区切り：横いっぱいの細い線と見出し */
+  .fair-grid__divider {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+  }
+
+  .fair-grid__divider::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid var(--color-border-strong);
+  }
+
   .fair-grid {
     display: grid;
     grid-template-columns: 1fr;

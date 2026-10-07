@@ -81,7 +81,10 @@ test('6つの見方：timing-design 3-2 の例（今日＝10月6日）', () => {
   assert.deepEqual(shownIn(seeThrough, today), ['new', 'now', 'this-month', 'this-year']);
   assert.deepEqual(shownIn(wabon, today), ['new', 'now', 'this-month', 'next-month', 'this-year']);
   assert.deepEqual(shownIn(anniversary, today), ['new', 'this-month', 'next-month', 'this-year']);
-  assert.deepEqual(shownIn(reprint, today), ['new', 'ongoing']);
+  // 通年・常設：新着以外のすべて（仕様書57章。並び順は lists で後ろに回す）
+  assert.deepEqual(shownIn(reprint, today), ['now', 'this-month', 'next-month', 'this-year', 'ongoing']);
+  // 定期開催も同じ
+  assert.deepEqual(shownIn(fair({ timing_type: 'recurring' }), today), ['now', 'this-month', 'next-month', 'this-year', 'ongoing']);
   // 入稿日当日は「今開催中」にも出る。入稿日と入稿日の間は「今開催中」から消える
   assert.ok(inView(anniversary, 'now', '2026-10-15'));
   assert.ok(!inView(anniversary, 'now', '2026-10-16'));
@@ -143,7 +146,13 @@ test('入稿日限定：状態・F・U・期限の日', () => {
   assert.equal(cardLabel(f, '2026-11-20')?.text, '終了');
 });
 
-test('通年・常設：常に開催中。期限・終了間近はない', () => {
+test('通年・常設・定期開催：常に開催中。期限・終了間近はない', () => {
+  for (const timing_type of ['ongoing', 'recurring'] as const) {
+    const f = fair({ timing_type });
+    assert.equal(getStatus(f, '2026-10-06'), 'active');
+    assert.equal(deadlineDate(f, '2026-10-06'), null);
+    assert.equal(cardLabel(f, '2026-10-06'), null);
+  }
   const f = fair({ timing_type: 'ongoing' });
   assert.equal(getStatus(f, '2026-10-06'), 'active');
   assert.equal(effectiveUntil(f), null);

@@ -276,3 +276,11 @@ test('crawlPrinter：一覧ページは304で返されないよう毎回中身�
   assert.equal(outcomes(next)['/fair/'], '変化なし');
   assert.equal(outcomes(next)['/fair/2/'], '新規');
 });
+
+test('crawlPrinter：follow_links が false なら、一覧ページのリンクをたどらない', async () => {
+  fairSite();
+  const state = new Map<string, StateEntry>();
+  const rows = await crawlPrinter(printer({ follow_links: false }), state, context());
+  assert.deepEqual(Object.keys(outcomes(rows)), ['/fair/']);
+  assert.deepEqual([...state.keys()].map((u) => u.replace(origin, '')), ['/fair/']);
+});

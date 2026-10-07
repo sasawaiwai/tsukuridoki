@@ -52,6 +52,23 @@ export function timingType(fair: Fair): TimingType {
   return fair.timing_type ?? 'period';
 }
 
+/** いつでも使える開催タイプ（通年・常設、定期開催）。日付の項目を持たない */
+export function isAlwaysAvailable(fair: Fair): boolean {
+  const type = timingType(fair);
+  return type === 'ongoing' || type === 'recurring';
+}
+
+/**
+ * 一覧の並び順のグループ（仕様書57章）。どの見方でも
+ * ①日付のある期間限定・入稿日限定 → ②定期開催 → ③通年・常設 の順に並べる
+ */
+export function timingRank(fair: Fair): number {
+  const type = timingType(fair);
+  if (type === 'recurring') return 1;
+  if (type === 'ongoing') return 2;
+  return 0;
+}
+
 /** 入稿日限定の入稿日（日付順） */
 function submissionDates(fair: Fair): DateString[] {
   return (fair.submission_dates ?? []).map((d) => d.date).sort();
@@ -59,23 +76,23 @@ function submissionDates(fair: Fair): DateString[] {
 
 /**
  * F：判定に使う開始日。期間限定は usable_from、なければ start_date。
- * 入稿日限定は最初の入稿日。通年・常設は null
+ * 入稿日限定は最初の入稿日。通年・常設・定期開催は null
  */
 export function effectiveFrom(fair: Fair): DateString | null {
   const type = timingType(fair);
   if (type === 'specific_dates') return submissionDates(fair)[0] ?? null;
-  if (type === 'ongoing') return null;
+  if (isAlwaysAvailable(fair)) return null;
   return fair.usable_from ?? fair.start_date ?? null;
 }
 
 /**
  * U：判定に使う終了日。期間限定は usable_until、なければ end_date。
- * 入稿日限定は最後の入稿日。通年・常設は null
+ * 入稿日限定は最後の入稿日。通年・常設・定期開催は null
  */
 export function effectiveUntil(fair: Fair): DateString | null {
   const type = timingType(fair);
   if (type === 'specific_dates') return submissionDates(fair).at(-1) ?? null;
-  if (type === 'ongoing') return null;
+  if (isAlwaysAvailable(fair)) return null;
   return fair.usable_until ?? fair.end_date ?? null;
 }
 
@@ -83,11 +100,11 @@ export function effectiveUntil(fair: Fair): DateString | null {
  * 状態（10-3）。
  * - 期間限定：F が null なら開始済み、U が null なら終了日不明として扱う
  * - 入稿日限定：最後の入稿日を過ぎたら終了。今日が入稿日なら開催中、それ以外は次の入稿日を待つ開始前
- * - 通年・常設：常に開催中
+ * - 通年・常設・定期開催：常に開催中
  */
 export function getStatus(fair: Fair, today: DateString): FairStatus {
   const type = timingType(fair);
-  if (type === 'ongoing') return 'active';
+  if (isAlwaysAvailable(fair)) return 'active';
   if (type === 'specific_dates') {
     const dates = submissionDates(fair);
     if (dates.length === 0) return 'unknown';
@@ -115,11 +132,11 @@ interface Span {
  * - 期間限定：F〜U。U が不明（なくなり次第終了など）なら「今日（開始前なら開始日）までは使える」とする。
  *   F・U がどちらも不明なら空（時期の見方には出さない）
  * - 入稿日限定：入稿日それぞれ
- * - 通年・常設：いつでも
+ * - 通年・常設・定期開催：いつでも
  */
 export function usableSpans(fair: Fair, today: DateString): Span[] {
   const type = timingType(fair);
-  if (type === 'ongoing') return [{ from: null, until: null }];
+  if (isAlwaysAvailable(fair)) return [{ from: null, until: null }];
   if (type === 'specific_dates') return submissionDates(fair).map((d) => ({ from: d, until: d }));
   const from = effectiveFrom(fair);
   const until = effectiveUntil(fair);
@@ -144,7 +161,7 @@ function endOfMonth(date: DateString): DateString {
 /** 6つの見方（トップのタブ・一覧ページ・検索の「時期」。timing-design 3章） */
 export type ViewKey = 'new' | 'now' | 'this-month' | 'next-month' | 'this-year' | 'ongoing';
 
-/** 時期の見方の範囲（「これから」使える日だけを見る）。通年・常設は時期の見方には入れない */
+/** 時期の見方の範囲（「これから」使える日だけを見る） */
 function viewRange(view: 'now' | 'this-month' | 'next-month' | 'this-year', today: DateString): [DateString, DateString] {
   if (view === 'now') return [today, today];
   if (view === 'this-month') return [today, endOfMonth(today)];
@@ -157,13 +174,13 @@ function viewRange(view: 'now' | 'this-month' | 'next-month' | 'this-year', toda
 
 /**
  * その見方で、最初に使える日（並び順に使う）。対象外なら null。
- * 新着・通年・常設は日付で選ばないので、対象なら今日を返す
+ * 新着・通年・常設タブは日付で選ばないので、対象なら今日を返す。
+ * 通年・常設・定期開催は、時期の見方（今開催中・今月・来月・年内）すべてに入る（いつでも使えるため。仕様書57章）。新着には入れない
  */
 export function viewDate(fair: Fair, view: ViewKey, today: DateString): DateString | null {
-  const ongoing = timingType(fair) === 'ongoing';
-  if (view === 'new') return getStatus(fair, today) === 'expired' ? null : today;
-  if (view === 'ongoing') return ongoing ? today : null;
-  if (ongoing) return null;
+  // 新着には、いつでも使えるもの（通年・常設、定期開催）は出さない（仕様書57章）
+  if (view === 'new') return isAlwaysAvailable(fair) || getStatus(fair, today) === 'expired' ? null : today;
+  if (view === 'ongoing') return isAlwaysAvailable(fair) ? today : null;
   const [a, b] = viewRange(view, today);
   return firstUsableBetween(fair, today, a, b);
 }
@@ -175,12 +192,12 @@ export function inView(fair: Fair, view: ViewKey, today: DateString): boolean {
 // ---- 終了間近・カードのラベル ----
 
 /**
- * 期限の日：期間限定は U、入稿日限定は次の入稿日（今日以降で最初）、通年・常設は null。
+ * 期限の日：期間限定は U、入稿日限定は次の入稿日（今日以降で最初）、通年・常設・定期開催は null。
  * 「あとN日」「終了間近」の基準
  */
 export function deadlineDate(fair: Fair, today: DateString): DateString | null {
   const type = timingType(fair);
-  if (type === 'ongoing') return null;
+  if (isAlwaysAvailable(fair)) return null;
   if (type === 'specific_dates') return submissionDates(fair).find((d) => d >= today) ?? null;
   return effectiveUntil(fair);
 }
