@@ -247,6 +247,8 @@ function summaryLines(fair: FairData, printerName: string): string[] {
       ? [`開催タイプ：入稿日限定`, `入稿日：${dates}${fair.submission_dates_text ? `　原文：${show1(fair.submission_dates_text)}` : ''}`]
       : timing === 'ongoing'
         ? [`開催タイプ：通年・常設`]
+        : timing === 'recurring'
+          ? [`開催タイプ：定期開催${fair.submission_dates_text ? `　日程の説明：${show1(fair.submission_dates_text)}` : ''}`]
         : [
             `開催期間：${period('start_date', 'end_date')}`,
             `利用可能期間：${fair.usable_from || fair.usable_until || fair.usable_from_text || fair.usable_until_text ? period('usable_from', 'usable_until') : '（開催期間と同じ）'}`,

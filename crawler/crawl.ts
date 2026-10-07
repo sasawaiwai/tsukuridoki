@@ -158,7 +158,8 @@ export async function crawlPrinter(printer: Printer, state: Map<string, StateEnt
   if (indexUrl) {
     const links = await visit(indexUrl, false);
     const watch = new Set(printer.watch_urls ?? []);
-    newLinks = links.filter((u) => u !== indexUrl && !watch.has(u) && !state.has(u) && hostMatches(u, printer.domains));
+    // follow_links: false の印刷所は、一覧ページ（総合案内）の変化だけを見て、リンクはたどらない
+    newLinks = printer.follow_links === false ? [] : links.filter((u) => u !== indexUrl && !watch.has(u) && !state.has(u) && hostMatches(u, printer.domains));
     ctx.onLinks?.(indexUrl, newLinks);
   }
 

@@ -66,8 +66,8 @@
     "usable_until_precision": { "$ref": "#/definitions/precision" },
 
     "timing_type": {
-      "description": "開催タイプ。省略時は period（期間限定）。specific_dates＝入稿日限定、ongoing＝通年・常設（仕様書57章）",
-      "enum": ["period", "specific_dates", "ongoing"]
+      "description": "開催タイプ。省略時は period（期間限定）。specific_dates＝入稿日限定、ongoing＝通年・常設、recurring＝定期開催（仕様書57章）",
+      "enum": ["period", "specific_dates", "ongoing", "recurring"]
     },
     "submission_dates": {
       "description": "入稿日限定（specific_dates）の入稿日。日付順",

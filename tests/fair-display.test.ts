@@ -66,6 +66,7 @@ test('期限表示：入稿日限定は過ぎた日を出さない、多けれ�
   assert.equal(deadlineText(dates('2026-10-15', '2026-11-19'), '2026-11-20'), '終了しました');
   assert.equal(deadlineText(dates('2026-10-01', '2026-10-08', '2026-10-15', '2026-10-22'), '2026-09-30'), '入稿日限定：10月1日・10月8日・10月15日ほか');
   assert.equal(deadlineText(fair({ timing_type: 'ongoing' }), '2026-10-06'), '通年・常設');
+  assert.equal(deadlineText(fair({ timing_type: 'recurring' }), '2026-10-06'), '定期開催（日程は回ごとに変わります）');
 });
 
 test('チップ：最大5個、残りは件数で返す', () => {

@@ -1,7 +1,7 @@
 // 一覧ページの定義（仕様書10〜12章・14章・36〜39章）
 
 import type { DateString, Fair, SiteData } from './types.ts';
-import { addMonths, deadlineDate, effectiveUntil, inView, viewDate, type ViewKey } from './period.ts';
+import { addMonths, deadlineDate, effectiveUntil, inView, timingRank, viewDate, type ViewKey } from './period.ts';
 import { colorValues, isExpired } from './search.ts';
 import { BENEFIT_LABELS, COLOR_MODE_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
@@ -32,12 +32,20 @@ export const LIST_PAGE_SIZE = 24;
 /** トップのタブに出す件数 */
 export const TAB_SIZE = 10;
 
-/** その見方で最初に使える日が近い順、同じなら終わりが近い順 */
+/** 並び順のグループ（①日付あり → ②定期開催 → ③通年・常設。仕様書57章） */
+const byRank = (a: Fair, b: Fair) => timingRank(a) - timingRank(b);
+
+/** グループごとに、その見方で最初に使える日が近い順、同じなら終わりが近い順 */
 function byViewDate(view: ViewKey, today: DateString) {
   const deadline = (f: Fair) => deadlineDate(f, today) ?? '9999-12-31';
   return (a: Fair, b: Fair) =>
-    (viewDate(a, view, today) ?? '').localeCompare(viewDate(b, view, today) ?? '') || deadline(a).localeCompare(deadline(b));
+    byRank(a, b) ||
+    (viewDate(a, view, today) ?? '').localeCompare(viewDate(b, view, today) ?? '') ||
+    deadline(a).localeCompare(deadline(b));
 }
+
+/** グループごとに、掲載日の新しい順 */
+const byRankThenPublished = (a: Fair, b: Fair) => byRank(a, b) || byPublishedDesc(a, b);
 
 /** 6つの見方（新着・今開催中・今月・来月・年内・通年常設）と、更新されたフェアの一覧（timing-design 3章） */
 export function listPages(today: DateString): ListPage[] {
@@ -47,7 +55,7 @@ export function listPages(today: DateString): ListPage[] {
   const view = (slug: ViewKey, title: string, description: string): ListPage => ({
     slug,
     title,
-    description,
+    description: `${description}いつでも使える割引（定期開催・通年・常設）は、期間のあるフェアの後ろに載せています。`,
     select: (fairs) => fairs.filter((f) => inView(f, slug, today)).sort(byViewDate(slug, today)),
   });
 
@@ -55,7 +63,7 @@ export function listPages(today: DateString): ListPage[] {
     {
       slug: 'new',
       title: '新着フェア',
-      description: 'ツクリドキ！に新しく掲載されたフェアです。これから始まるフェアも含みます。掲載日の新しい順に並べています。',
+      description: 'ツクリドキ！に新しく掲載されたフェアです。これから始まるフェアも含みます。掲載日の新しい順に並べています（通年・常設の割引は「通年・常設」でご覧ください）。',
       select: (fairs) => fairs.filter((f) => inView(f, 'new', today)).sort(byPublishedDesc),
     },
     view('now', '今開催中のフェア', '今日使えるフェアです。終わりが近い順に並べています。'),
@@ -65,8 +73,8 @@ export function listPages(today: DateString): ListPage[] {
     {
       slug: 'ongoing',
       title: '通年・常設の割引',
-      description: '期間の定めがなく、いつでも使える割引・サービスです。条件が変わることがあるので、利用前に公式サイトでご確認ください。',
-      select: (fairs) => fairs.filter((f) => inView(f, 'ongoing', today)).sort(byPublishedDesc),
+      description: '期間の定めがなく、いつでも使える割引・サービスです（イベントごとの早割のような定期開催も含みます）。条件が変わることがあるので、利用前に公式サイトでご確認ください。',
+      select: (fairs) => fairs.filter((f) => inView(f, 'ongoing', today)).sort(byRankThenPublished),
     },
     {
       slug: 'updated',

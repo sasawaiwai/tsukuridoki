@@ -26,7 +26,7 @@ import {
 
 const today = todayJST();
 const VIEWS: ViewKey[] = ['new', 'now', 'this-month', 'next-month', 'this-year', 'ongoing'];
-const TIMING_LABELS = { period: '期間限定', specific_dates: '入稿日限定', ongoing: '通年・常設' };
+const TIMING_LABELS = { period: '期間限定', specific_dates: '入稿日限定', ongoing: '通年・常設', recurring: '定期開催' };
 const { fairs, printers, processes } = loadSiteData();
 const printerName = new Map(printers.map((p) => [p.printer_id, p.name]));
 const processName = new Map(processes.map((p) => [p.process_id, p.name]));

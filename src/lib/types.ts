@@ -21,8 +21,8 @@ export type SourceType = 'official_fair' | 'official_campaign' | 'official_news'
 export type VerificationStatus = 'verified' | 'auto_checked' | 'needs_review' | 'unknown';
 export type DeadlineType = 'normal' | 'early' | 'special' | 'event' | 'unknown';
 export type HistoryType = 'discovered' | 'published' | 'updated' | 'expired';
-/** 開催タイプ（仕様書57章）。省略時は period */
-export type TimingType = 'period' | 'specific_dates' | 'ongoing';
+/** 開催タイプ（仕様書57章）。省略時は period。recurring＝定期開催（イベントごとの早割など、日程が回ごとに変わる常設の割引） */
+export type TimingType = 'period' | 'specific_dates' | 'ongoing' | 'recurring';
 
 /** 入稿日限定の入稿日 */
 export interface SubmissionDate {
@@ -145,6 +145,8 @@ export interface Printer {
   crawl_ignore?: string[];
   /** 一覧ページで、フェアへのリンクがある場所 */
   fair_link_selector?: string | null;
+  /** false なら、一覧ページ（総合案内）からリンクをたどらない（巡回するのは一覧ページと watch_urls だけ） */
+  follow_links?: boolean;
   crawl_interval_days?: number;
   last_crawled_at?: string | null;
   last_policy_checked_at?: DateString | null;

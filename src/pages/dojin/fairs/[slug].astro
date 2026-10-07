@@ -232,6 +232,17 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
           )
         }
         {
+          timing === 'recurring' && (
+            <div>
+              <dt>期間</dt>
+              <dd>
+                <p>定期開催{fair.submission_dates_text ? `（${fair.submission_dates_text}）` : ''}</p>
+                <p class="fair__note">イベントごとに締切・割引率などが変わります。最新の日程は公式サイトでご確認ください。</p>
+              </dd>
+            </div>
+          )
+        }
+        {
           timing === 'period' && (untilText || eventText) && (
             <div>
               <dt>利用期限</dt>

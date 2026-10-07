@@ -1,7 +1,7 @@
 // フェアカード用の表示データを作る（仕様書 27章・52章）
 
 import type { DateString, Fair, Process } from './types.ts';
-import { cardLabel, diffDays, effectiveFrom, effectiveUntil, getStatus, timingType, type CardLabelKind } from './period.ts';
+import { cardLabel, diffDays, effectiveFrom, effectiveUntil, getStatus, isAlwaysAvailable, timingType, type CardLabelKind } from './period.ts';
 import { BENEFIT_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
 /** カード上部の色の分類（52-3） */
@@ -26,6 +26,8 @@ export interface CardModel {
   chips: Chip[];
   hiddenChipCount: number;
   deadline: string;
+  /** いつでも使えるフェア（通年・常設、定期開催）。一覧で区切りの後ろに並ぶ */
+  always?: boolean;
 }
 
 export type ProcessGroups = Map<string, Process>;
@@ -137,6 +139,7 @@ export function deadlineText(fair: Fair, today: DateString): string {
   if (status === 'expired') return '終了しました';
   const type = timingType(fair);
   if (type === 'ongoing') return '通年・常設';
+  if (type === 'recurring') return '定期開催（日程は回ごとに変わります）';
   if (type === 'specific_dates') {
     const dates = (fair.submission_dates ?? []).map((d) => d.date).filter((d) => d >= today).sort();
     const shown = dates.slice(0, SUBMISSION_DATES_SHOWN).map(formatJpDate).join('・');
@@ -165,5 +168,6 @@ export function toCardModel(
     chips: chips.slice(0, CARD_CHIP_LIMIT),
     hiddenChipCount: Math.max(0, chips.length - CARD_CHIP_LIMIT),
     deadline: deadlineText(fair, context.today),
+    always: isAlwaysAvailable(fair),
   };
 }
