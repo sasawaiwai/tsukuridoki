@@ -1,0 +1,38 @@
+fair_id: eikou-offset-cover-2color-2026
+slug: eikou-offset-cover-2color-2026
+fair_name: “オフセット印刷に栄光あれ!!” 表紙2色刷りオプション無料キャンペーン
+printer_id: eikou
+category: dojinshi
+sources:
+  - https://www.eikou.com/campaign/
+summary: オフセットコースのモノトーンセットなどで、表紙2色刷りオプションの料金が無料になる。
+benefit_summary: 表紙2色刷りオプション無料
+source_type: official_campaign
+usable_from: 2026-11-01
+usable_from_text: 11月1日
+usable_from_precision: day
+usable_until: 2026-11-30
+usable_until_text: 11月30日17:00締切
+usable_until_precision: day
+end_date: 2026-11-30
+end_date_text: 11月30日17:00締切
+end_date_precision: day
+specific_sets_only: true
+application_required: true
+combinable: false
+conditions_text: オフセットコースのモノトーンセット・特殊紙モノトーンセット・ノベルセットが対象。締切の1週間前から選択可能。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+printing_methods:
+  - offset
+benefit_types:
+  - free_option
+free_options:
+  - 表紙2色刷りオプション
+tags:
+  - limited_time
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

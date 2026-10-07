@@ -1,11 +1,12 @@
 printer_id: eikou
 name: 栄光
 official_url: https://www.eikou.com/
-# 1ページに複数のフェアが並ぶ（各フェアの個別ページ /campaign/番号/ もある）
+# 1ページに全キャンペーンの詳細が並ぶ
 fair_index_url: https://www.eikou.com/campaign/
 # 一覧は col-9、個別ページは col-md-9
 crawl_selector: div.col-9.order-2, div.col-md-9.order-2
-fair_link_selector: 'a[href*="/campaign/"]'
+# キャンペーン一覧に全キャンペーンの詳細が載っているため、個別ページ（/campaign/番号/）は追わない（仕様書57章）
+follow_links: false
 domains: [eikou.com]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only

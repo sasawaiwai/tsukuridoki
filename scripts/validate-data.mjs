@@ -227,6 +227,10 @@ for (const { file, data: fair } of validFairs) {
     }
   }
 
+  if (fair.image_checked_items?.length && !fair.image_checked_at) {
+    report(file, 'image_checked_items（画像で確認した項目）があるときは、image_checked_at（画像を確認した日）も書いてください');
+  }
+
   const order = [
     ['start_date', 'end_date'],
     ['usable_from', 'usable_until'],

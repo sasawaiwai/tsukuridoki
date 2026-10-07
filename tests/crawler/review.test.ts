@@ -5,7 +5,7 @@ import { spawnSync } from 'node:child_process';
 import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { parse } from 'yaml';
+import { parse, stringify } from 'yaml';
 import { buildFair, diffFields, isPending } from '../../crawler/review.ts';
 import type { StateEntry } from '../../crawler/state.ts';
 
@@ -64,8 +64,12 @@ function workspace() {
   const dir = mkdtempSync(join(tmpdir(), 'tsukuridoki-review-'));
   cpSync(join(REPO, 'data'), join(dir, 'data'), { recursive: true });
   for (const name of ['schemas', 'scripts', 'src', 'crawler', 'node_modules']) symlinkSync(join(REPO, name), join(dir, name));
-  const state = parse(readFileSync(join(dir, 'data/crawler/state.yaml'), 'utf8')) as StateEntry[];
+  // 実データの確認の進み具合に左右されないよう、対象のページを「未確認」に戻してから使う
+  const statePath = join(dir, 'data/crawler/state.yaml');
+  const state = parse(readFileSync(statePath, 'utf8')) as StateEntry[];
   const target = state.find((e) => e.url === 'https://www.eikou.com/campaign/')!;
+  target.reviewed_hash = null;
+  writeFileSync(statePath, stringify(state));
   return { dir, hash: target.content_hash! };
 }
 
@@ -124,7 +128,10 @@ test('apply --yes：フェアを作り、確認済みにし、抽出結果を記
   assert.equal(fair.printer_id, 'eikou');
   assert.equal(fair.verification_status, 'verified');
   assert.equal(reviewedHash(dir), hash);
-  assert.equal(readdirSync(join(dir, 'data/reviews/eikou')).length, 1);
+  // 抽出結果の記録が残っている（実データの記録とは別に、このテストのフェアを含む記録がある）
+  const recordDir = join(dir, 'data/reviews/eikou');
+  const recorded = readdirSync(recordDir).some((name) => readFileSync(join(recordDir, name), 'utf8').includes('eikou-review-test-2026'));
+  assert.ok(recorded);
 });
 
 test('apply：確認した本文のハッシュが今の記録と違えば反映しない', () => {
@@ -156,13 +163,15 @@ test('apply：危ないURL・ドメイン違い・運用の項目は反映しな
 test('apply：既存のデータ検証が通らなければ、書いたものを元に戻す', () => {
   const { dir, hash } = workspace();
   const before = readFileSync(join(dir, 'data/crawler/state.yaml'), 'utf8');
+  const records = () => (existsSync(join(dir, 'data/reviews/eikou')) ? readdirSync(join(dir, 'data/reviews/eikou')).length : 0);
+  const recordsBefore = records();
   const bad = { ...extraction(hash).fairs[0], processes: ['no_such_process'] }; // 加工マスターにないID
   const r = run(dir, extraction(hash, { fairs: [bad] }), '--yes');
   assert.notEqual(r.status, 0);
   assert.match(r.stderr, /元に戻しました/);
   assert.ok(!existsSync(fairFile(dir)));
   assert.equal(readFileSync(join(dir, 'data/crawler/state.yaml'), 'utf8'), before);
-  assert.ok(!existsSync(join(dir, 'data/reviews')) || readdirSync(join(dir, 'data/reviews/eikou')).length === 0);
+  assert.equal(records(), recordsBefore); // 抽出結果の記録も増えていない
 });
 
 test('apply：no_fair は確認済みにするだけ。needs_manual は確認待ちに残す', () => {

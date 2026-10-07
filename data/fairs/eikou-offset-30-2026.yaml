@@ -1,0 +1,38 @@
+fair_id: eikou-offset-30-2026
+slug: eikou-offset-30-2026
+fair_name: “オフセット印刷に栄光あれ!!” オフセット限定30%割引キャンペーン
+printer_id: eikou
+category: dojinshi
+sources:
+  - https://www.eikou.com/campaign/
+summary: オフセットコースの商品が30%割引になる。10月30日締切までの入稿が対象。
+benefit_summary: オフセットコース30%OFF
+source_type: official_campaign
+usable_from: 2026-10-16
+usable_from_text: 10月16日（締切の2週間前から選択可能）
+usable_from_precision: day
+usable_until: 2026-10-30
+usable_until_text: 10月30日(金)締切
+usable_until_precision: day
+end_date: 2026-10-30
+end_date_text: 10月30日(金)締切
+end_date_precision: day
+deadline_note: 11月20日出荷、11/22のイベント合わせから。
+specific_sets_only: true
+application_required: true
+combinable: false
+conditions_text: オフセットコースの商品が対象。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+discount_rate: 30
+tags:
+  - limited_time
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

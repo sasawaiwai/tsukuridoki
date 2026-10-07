@@ -64,6 +64,12 @@ export interface Fair {
   submission_dates?: SubmissionDate[];
   submission_dates_text?: string | null;
 
+  /** 画像を見て確認した項目（仕様書58章） */
+  image_checked_items?: string[];
+  image_checked_at?: DateString | null;
+  /** 画像が頻繁に変わるので定期的に見直す */
+  image_recheck?: boolean | null;
+
   published_at: DateString;
   discovered_at?: DateString | null;
   last_checked_at?: DateString | null;

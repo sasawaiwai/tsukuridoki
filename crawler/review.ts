@@ -25,6 +25,8 @@ import { loadState, nowJst, saveState, STATE_FILE, type StateEntry } from './sta
 const REVIEWS_DIR = join(DATA_DIR, 'reviews');
 /** 抽出結果を書いておく場所（.gitignore 済み。反映すると data/reviews/ に保存される） */
 export const INBOX_DIR = join(process.cwd(), 'review-inbox');
+/** image_recheck のフェアは、この日数ごとに画像を見直す */
+const IMAGE_RECHECK_DAYS = 30;
 /** これより長い本文は、確認の前に警告する */
 const LONG_TEXT = 30_000;
 
@@ -114,6 +116,18 @@ function list(): void {
       const mark = manual.has(`${e.url} ${e.content_hash}`) ? '  ※要手動確認' : '';
       console.log(`  ${kind} ${e.url}${chars}${mark}`);
     }
+  }
+
+  // 画像の中身だけ差し替えられても巡回では気づけないため、画像の見直しが要るフェアを出す（仕様書58章）
+  const fairs = readYamlDir<Record<string, unknown>>('fairs').map((f) => f.data);
+  const imageDue = fairs.filter((f) => {
+    if (f.image_recheck !== true) return false;
+    const checked = f.image_checked_at as string | null | undefined;
+    return !checked || Date.parse(today()) - Date.parse(checked) >= IMAGE_RECHECK_DAYS * 86_400_000;
+  });
+  if (imageDue.length > 0) {
+    console.log(`\n画像の見直しが必要（最後の確認から${IMAGE_RECHECK_DAYS}日以上）：${imageDue.length}件`);
+    for (const f of imageDue) console.log(`  ${f.fair_name}（${(f.image_checked_items as string[] | undefined)?.join('・') ?? ''}）  ${(f.sources as string[])[0]}`);
   }
 
   const gone = state.filter((e) => e.fetch_status === 'not_found');
@@ -261,6 +275,9 @@ function summaryLines(fair: FairData, printerName: string): string[] {
     `概要：${show1(fair.summary)}`,
     `サイズ：${label(fair.sizes, SIZE_LABELS) || '（指定なし）'}　加工：${label(fair.processes, processNames()) || '（なし）'}`,
     `条件：${show1(fair.conditions_text)}`,
+    ...((fair.image_checked_items as string[] | undefined)?.length
+      ? [`画像で確認した項目：${(fair.image_checked_items as string[]).join('・')}（確認日 ${show1(fair.image_checked_at)}${fair.image_recheck ? '・定期的に見直す' : ''}）`]
+      : []),
     `公式情報源：${(fair.sources as string[]).join(' ')}`,
   ];
 }
