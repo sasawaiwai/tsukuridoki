@@ -4,7 +4,7 @@
 import ListPage from '../../../components/ListPage.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { loadSiteData } from '../../../lib/data.ts';
-import { ATTRIBUTE_AXES, archiveYears, attributeValues, byPublishedDesc, byUntilDesc, fairsWithAttribute, type AttributeValue } from '../../../lib/lists.ts';
+import { ATTRIBUTE_AXES, archiveYears, attributeValues, byRankThenPublished, byUntilDesc, fairsWithAttribute, type AttributeValue } from '../../../lib/lists.ts';
 import { SEARCH_HREF } from '../../../lib/nav.ts';
 import { isExpired } from '../../../lib/search.ts';
 import { todayJST } from '../../../lib/period.ts';
@@ -18,7 +18,8 @@ const today = todayJST();
 const { data, toCard } = cardBuilder(today);
 const axisLabel = ATTRIBUTE_AXES.find((d) => d.axis === attr.axis)!.label;
 const fairs = fairsWithAttribute(data.fairs, attr.axis, attr.value);
-const open = fairs.filter((f) => !isExpired(f, today)).sort(byPublishedDesc);
+// 日付のあるフェア → 定期開催 → 通年・常設 の順（「いつでも使えるフェア」の区切りがその間に入る。仕様書57-4）
+const open = fairs.filter((f) => !isExpired(f, today)).sort(byRankThenPublished);
 const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
 ---
 

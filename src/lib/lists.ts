@@ -44,8 +44,8 @@ function byViewDate(view: ViewKey, today: DateString) {
     deadline(a).localeCompare(deadline(b));
 }
 
-/** グループごとに、掲載日の新しい順 */
-const byRankThenPublished = (a: Fair, b: Fair) => byRank(a, b) || byPublishedDesc(a, b);
+/** グループごとに、掲載日の新しい順（印刷所別・属性別の一覧でも使う） */
+export const byRankThenPublished = (a: Fair, b: Fair) => byRank(a, b) || byPublishedDesc(a, b);
 
 /** 6つの見方（新着・今開催中・今月・来月・年内・通年常設）と、更新されたフェアの一覧（timing-design 3章） */
 export function listPages(today: DateString): ListPage[] {
