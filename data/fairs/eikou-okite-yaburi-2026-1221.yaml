@@ -1,0 +1,37 @@
+fair_id: eikou-okite-yaburi-2026-1221
+slug: eikou-okite-yaburi-2026-1221
+fair_name: 同人誌セット“掟破りの25%割引”（12/21締切）
+printer_id: eikou
+category: dojinshi
+sources:
+  - https://www.eikou.com/campaign/
+summary: 冬恒例の割引。12月21日締切までに入稿すると、同人誌セットの価格が25%割引になる（12/7締切の回もある）。
+benefit_summary: 同人誌セット25%OFF
+source_type: official_campaign
+usable_from: 2026-12-14
+usable_from_text: 12月14日（締切の1週間前から選択可能）
+usable_from_precision: day
+usable_until: 2026-12-21
+usable_until_text: 12月21日(月)締切
+usable_until_precision: day
+end_date: 2026-12-21
+end_date_text: 12月21日(月)締切
+end_date_precision: day
+deadline_note: 2027年1月8日出荷、1/10のイベント合わせから。
+specific_sets_only: true
+application_required: true
+combinable: false
+conditions_text: VALUE・モノトーンブックレット・ぷちっとセットは対象外。ノベルセット・オールカラー・6色セットは10%割引。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+benefit_types:
+  - discount
+discount_rate: 25
+tags:
+  - limited_time
+  - seasonal
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

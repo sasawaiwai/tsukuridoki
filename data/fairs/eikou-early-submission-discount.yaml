@@ -1,0 +1,33 @@
+fair_id: eikou-early-submission-discount
+slug: eikou-early-submission-discount
+fair_name: 早期入稿割引キャンペーン
+printer_id: eikou
+category: dojinshi
+sources:
+  - https://www.eikou.com/campaign/
+summary: イベントごとの「早期入稿割引締切日」までに入稿すると、ベーシックセットなどが20%、特殊紙セットなどが10%割引になる。イベントに参加しなくても使える。
+benefit_summary: 早期入稿でセットが20%・10%OFF
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 通年。イベントごとに「早期入稿割引締切日」がある（締切情報ページで確認）
+processes:
+  - foil
+  - special_paper
+benefit_types:
+  - discount
+specific_sets_only: true
+application_required: true
+combinable: false
+conditions_text: 20%OFF：ベーシックセット・巻頭カラーセット・箔押しセット・モノトーンセット。10%OFF：特殊紙モノトーンセット・特殊紙カラーセット・ホワイトセット。注文フォームの「キャンペーン/Glory特典」欄で「早期入稿割引」を選択。発送日は選んだ割引の左に書かれた日に統一（早く入稿しても早まらない）。作業日が加算されるオプションと併用するときは締切が前倒し。他のキャンペーン・割引・特典と併用不可。オプション料金は対象外。
+image_checked_items:
+  - 対象セット
+  - 割引率
+image_checked_at: 2026-10-07
+image_recheck: false
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

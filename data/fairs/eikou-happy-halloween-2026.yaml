@@ -1,0 +1,37 @@
+fair_id: eikou-happy-halloween-2026
+slug: eikou-happy-halloween-2026
+fair_name: 同人誌セット“ハッピーハロウィン25%OFF”
+printer_id: eikou
+category: dojinshi
+sources:
+  - https://www.eikou.com/campaign/
+summary: ハロウィンの大型割引。10月12日締切までに入稿すると、同人誌セットの価格が25%割引になる。
+benefit_summary: 同人誌セット25%OFF
+source_type: official_campaign
+usable_from: 2026-10-05
+usable_from_text: 10月5日（締切の1週間前から選択可能）
+usable_from_precision: day
+usable_until: 2026-10-12
+usable_until_text: 10月12日(月)締切
+usable_until_precision: day
+end_date: 2026-10-12
+end_date_text: 10月12日(月)締切
+end_date_precision: day
+deadline_note: 10月23日出荷、10/25のイベント合わせから。
+specific_sets_only: true
+application_required: true
+combinable: false
+conditions_text: VALUE・モノトーンブックレット・ぷちっとセットは対象外。ノベルセット・オールカラー・6色サンバは10%割引。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+benefit_types:
+  - discount
+discount_rate: 25
+tags:
+  - limited_time
+  - seasonal
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published
