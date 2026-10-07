@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import type { Fair } from '../src/lib/types.ts';
-import { listPages } from '../src/lib/lists.ts';
+import { byRankThenPublished, listPages } from '../src/lib/lists.ts';
 
 function fair(fair_id: string, overrides: Partial<Fair>): Fair {
   return {
@@ -45,4 +45,8 @@ test('新着：通年・常設・定期開催は出さない', () => {
 
 test('通年・常設タブ：定期開催 → 通年・常設', () => {
   assert.deepEqual(select('ongoing'), ['always-recurring', 'always-ongoing']);
+});
+
+test('印刷所別・属性別の並び：いつでも使えるフェアは掲載日が新しくても後ろ', () => {
+  assert.deepEqual([...fairs].sort(byRankThenPublished).map((f) => f.fair_id), ['period-late', 'period-soon', 'dates', 'always-recurring', 'always-ongoing']);
 });

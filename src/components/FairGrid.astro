@@ -22,7 +22,8 @@ const { cards, layout = 'top', emptyText = '現在、該当するフェアはあ
       {cards.map((card, i) => (
         <>
           {/* 期間のあるフェアの後ろに、いつでも使えるフェアをまとめる（仕様書57章）。検索ページは並び替えるので区切りを出さない */}
-          {card.always && i > 0 && !cards[i - 1].always && !itemAttrs && (
+          {/* 区切りは、それより後ろがすべて「いつでも使える」とき（並びがまとまっているとき）だけ出す */}
+          {card.always && i > 0 && !cards[i - 1].always && cards.slice(i).every((c) => c.always) && !itemAttrs && (
             <li class="fair-grid__divider" role="presentation">
               <span>いつでも使えるフェア</span>
             </li>

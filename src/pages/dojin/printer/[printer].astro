@@ -4,7 +4,7 @@ import ListPage from '../../../components/ListPage.astro';
 import Button from '../../../components/Button.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { loadSiteData } from '../../../lib/data.ts';
-import { archiveYears, byPublishedDesc, byUntilDesc } from '../../../lib/lists.ts';
+import { archiveYears, byRankThenPublished, byUntilDesc } from '../../../lib/lists.ts';
 import { SEARCH_HREF } from '../../../lib/nav.ts';
 import { isExpired } from '../../../lib/search.ts';
 import { todayJST } from '../../../lib/period.ts';
@@ -20,7 +20,8 @@ const { printer } = Astro.props as { printer: Printer };
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
 const fairs = data.fairs.filter((f) => f.printer_id === printer.printer_id);
-const open = fairs.filter((f) => !isExpired(f, today)).sort(byPublishedDesc);
+// 日付のあるフェア → 定期開催 → 通年・常設 の順（「いつでも使えるフェア」の区切りがその間に入る。仕様書57-4）
+const open = fairs.filter((f) => !isExpired(f, today)).sort(byRankThenPublished);
 const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
 ---
 
