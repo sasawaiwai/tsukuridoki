@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-viva/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:ebc5fab27a5a5aae878da3e7297dd5d8b5004016f0e987ed7937ff1710dcd51c",
+  "content_chars": 1646,
+  "extractor": "manual",
+  "extracted_at": "2026-10-07T10:50:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-flash-viva",
+      "fair_name": "FLASH VIVAフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-viva/"
+      ],
+      "summary": "スタンダードフルカラーセットなどのフルカラー表紙に、追加料金で蛍光・メタルインクの5色目を足せる。",
+      "benefit_summary": "フルカラー表紙に蛍光・メタルの5色目",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "conditions_text": "スタンダードフルカラーセット・オフセット基本料金のフルカラー表紙に追加できる。表紙用紙はNPホワイト200kgのみ。料金内でクリアPP、マットPP（1枚5円）・ベルベットPP（1枚10円）はオプション（ベルベットPPはメタルインク不可）。フェアの追加料金（3,000円／5,000円）は早期入稿などの割引の対象外。",
+      "printing_methods": [
+        "offset"
+      ],
+      "color_modes": [
+        "CMYK",
+        "spot_color"
+      ],
+      "spot_color_supported": true,
+      "processes": [
+        "spot_color_printing"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "期間の記載がない常設の特別仕様セット（印刷所がフェアとして案内）。フェア名はページのタイトルの表記。"
+}

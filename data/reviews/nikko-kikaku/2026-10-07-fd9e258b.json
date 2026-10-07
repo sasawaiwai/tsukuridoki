@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-syari/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:e9450d3111490db96234e64cafe3b163160d2f6939d7adbcf72a80c6e6559c20",
+  "content_chars": 118406,
+  "extractor": "manual",
+  "extracted_at": "2026-10-07T10:50:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-shari-pp",
+      "fair_name": "しゃりしゃりPPフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-syari/"
+      ],
+      "summary": "オフセットフルカラーの表紙に、しゃりしゃりした手触りのマット系PP加工ができる本のセット。蛍光ピンクを混ぜた刷り方も選べる。早期入稿で10%オフ。",
+      "benefit_summary": "しゃりしゃり手触りの特殊PP・早期入稿で10%OFF",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "conditions_text": "表紙用紙はNPホワイト200kg。刷り方は通常（St-4）・蛍光ピンク50%（Comic-4）・蛍光ピンク差し替えから選択。本文はオフセットスミ刷りで、上質紙・ハイバルギー・美弾紙・淡クリームキンマリなどから選択。印刷サンプルはオンラインショップで販売。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "special_pp"
+      ],
+      "benefit_types": [
+        "discount"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "期間の記載がない常設の特別仕様セット（印刷所がフェアとして案内）。フェア名はページのタイトルの表記。"
+}

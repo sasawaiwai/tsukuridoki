@@ -1,0 +1,27 @@
+fair_id: nikko-kikaku-flash-viva
+slug: nikko-kikaku-flash-viva
+fair_name: FLASH VIVAフェア
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/fair-viva/
+summary: スタンダードフルカラーセットなどのフルカラー表紙に、追加料金で蛍光・メタルインクの5色目を足せる。
+benefit_summary: フルカラー表紙に蛍光・メタルの5色目
+source_type: official_fair
+timing_type: ongoing
+conditions_text: スタンダードフルカラーセット・オフセット基本料金のフルカラー表紙に追加できる。表紙用紙はNPホワイト200kgのみ。料金内でクリアPP、マットPP（1枚5円）・ベルベットPP（1枚10円）はオプション（ベルベットPPはメタルインク不可）。フェアの追加料金（3,000円／5,000円）は早期入稿などの割引の対象外。
+printing_methods:
+  - offset
+color_modes:
+  - CMYK
+  - spot_color
+spot_color_supported: true
+processes:
+  - spot_color_printing
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

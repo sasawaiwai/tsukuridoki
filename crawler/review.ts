@@ -176,6 +176,7 @@ async function show(url: string | undefined): Promise<void> {
   };
   console.log(`\n印刷所：${printer.name}（${printer.printer_id}）`);
   console.log(`URL：${url}`);
+  if (page.title) console.log(`ページのタイトル：${page.title}（外部のデータ）`);
   console.log(`状態：${entry.reviewed_hash === null ? '新規' : '前回の確認から変化あり'}　文字数：${page.text.length}${page.notes.length ? `　注意：${page.notes.join('、')}` : ''}`);
   console.log(`抽出ルール：crawler/extraction-rules.md`);
   console.log(`抽出結果の書き出し先：${relative(process.cwd(), join(INBOX_DIR, `${printer.printer_id}-${short(page.hash)}.json`))}`);
