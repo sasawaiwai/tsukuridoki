@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-ougon/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:3fd5293b906e711ebf2e1cd670dfe7bc51981ec75dec7b08f4e31b4b5cc384ac",
+  "content_chars": 2413,
+  "extractor": "manual",
+  "extracted_at": "2026-10-07T10:50:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-golden-foil",
+      "fair_name": "黄金箔覧会フェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-ougon/"
+      ],
+      "summary": "早割セットやスタンダードフルカラーセットに、箔押し（50平方cmまで）を付けられる。早割セット・フルカラー10%オフとも組み合わせられる。",
+      "benefit_summary": "表紙に箔押しを付けられる",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "conditions_text": "箔は50平方cmまで。ホログラム箔（オーロラ金・つぶつぶ金・クラッシュ金）はパターンのつなぎ目が入ることがある。早期割引はセット料金のみで、黄金箔の料金は対象外。にこぷり見積もり・クレジット決済は非対応。300ページ以上は締切が3営業日早まる。",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "foil"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "期間の記載がない常設の特別仕様セット（印刷所がフェアとして案内）。フェア名はページのタイトルの表記。"
+}

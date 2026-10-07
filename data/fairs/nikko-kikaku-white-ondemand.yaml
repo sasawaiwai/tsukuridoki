@@ -1,0 +1,34 @@
+fair_id: nikko-kikaku-white-ondemand
+slug: nikko-kikaku-white-ondemand
+fair_name: ホワイトオンデマンド
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/fair-white/
+summary: 色のついた特殊紙の表紙に、オンデマンドの白トナーで印刷する本のセット。早く入稿するほど最大30%オフになる。
+benefit_summary: 白トナー表紙・早期入稿で最大30%OFF
+source_type: official_fair
+timing_type: ongoing
+conditions_text: 表紙はオンデマンド白トナーのみ（他の色刷り不可）、PP加工・箔押しなど表面加工は不可。本文はオンデマンドスミ刷りで用紙は1色選択（紙替え不可）。早期入稿で30%・20%・15%・10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。300ページ以上は締切が3営業日早まる。
+sizes:
+  - A5
+  - B6
+  - B5
+  - bunko
+  - shinsho
+binding:
+  - perfect
+  - saddle
+printing_methods:
+  - ondemand
+processes:
+  - special_paper
+benefit_types:
+  - discount
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

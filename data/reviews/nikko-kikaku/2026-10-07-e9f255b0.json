@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-8p",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:9c260c6decbac0722d2e509f70942e423cf926da325016b791c195c1c8a51b6b",
+  "content_chars": 1769,
+  "extractor": "manual",
+  "extracted_at": "2026-10-07T10:50:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-custom-8p",
+      "fair_name": "ハチペフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-8p"
+      ],
+      "summary": "8ページの小冊子を決まった料金で作れるオンデマンドのセット。表紙と本文に同じ用紙を使い（変更も可）、表2・3を含む8ページすべてに印刷できる。",
+      "benefit_summary": "8ページの本が10冊1,930円から",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "conditions_text": "インクはオンデマンドスミ刷りのみ。一部の用紙はA5限定・在庫限り（第二希望を書く）。変形サイズは不可。料金はA5・B5共通で10冊1,930円〜（税込）。コミケを除くピックアップイベントは送料無料。完全前金制（銀行振込のみ）。",
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "min_pages": 8,
+      "max_pages": 8
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "期間の記載がない常設の特別仕様セット（印刷所がフェアとして案内）。フェア名はページのタイトルの表記。"
+}

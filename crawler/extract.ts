@@ -30,6 +30,8 @@ export interface ExtractOptions {
 
 export interface Extracted {
   text: string;
+  /** ページのタイトル（<title>）。確認作業でフェア名を知るため。ハッシュには含めない */
+  title: string;
   hash: string;
   /** 正規化済みの絶対URL（重複なし） */
   links: string[];
@@ -40,6 +42,7 @@ export function extract(html: string, pageUrl: string, options: ExtractOptions =
   const $ = cheerio.load(html);
   const notes: ExtractNote[] = [];
   const base = resolveBase($('base[href]').attr('href'), pageUrl);
+  const title = normalizeText($('title').first().text());
 
   // JS依存の手がかりは、要素を取り除く前に見ておく
   const emptyMount = $(JS_MOUNTS).toArray().some((el) => $(el).text().trim() === '');
@@ -72,7 +75,7 @@ export function extract(html: string, pageUrl: string, options: ExtractOptions =
     else notes.push(imageCount > 0 ? 'short_with_images' : 'short');
   }
 
-  return { text, hash: hashText(text), links, notes };
+  return { text, title, hash: hashText(text), links, notes };
 }
 
 /**

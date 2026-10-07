@@ -1,0 +1,26 @@
+fair_id: nikko-kikaku-custom-8p
+slug: nikko-kikaku-custom-8p
+fair_name: ハチペフェア
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/fair-8p
+summary: 8ページの小冊子を決まった料金で作れるオンデマンドのセット。表紙と本文に同じ用紙を使い（変更も可）、表2・3を含む8ページすべてに印刷できる。
+benefit_summary: 8ページの本が10冊1,930円から
+source_type: official_fair
+timing_type: ongoing
+conditions_text: インクはオンデマンドスミ刷りのみ。一部の用紙はA5限定・在庫限り（第二希望を書く）。変形サイズは不可。料金はA5・B5共通で10冊1,930円〜（税込）。コミケを除くピックアップイベントは送料無料。完全前金制（銀行振込のみ）。
+sizes:
+  - A5
+  - B5
+printing_methods:
+  - ondemand
+min_pages: 8
+max_pages: 8
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

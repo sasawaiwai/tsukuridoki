@@ -1,0 +1,35 @@
+fair_id: nikko-kikaku-illumi-color
+slug: nikko-kikaku-illumi-color
+fair_name: イルミカラーフェア
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/fair-irumi/
+summary: 表紙をオンデマンド5色フルカラー（イルミカラーの特色を1色追加）で印刷する本のセット。早期入稿で10%オフ。
+benefit_summary: 特色イルミカラーの5色表紙・早期入稿で10%OFF
+source_type: official_fair
+timing_type: ongoing
+conditions_text: マットPPは1冊5円。RGBオンデマンド・箔押し・表2・3印刷は不可。イルミカラー部分は黒1色でレイヤー分けし、レイヤー名を色名にして作成。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。300ページ以上は締切が3営業日早まる。
+sizes:
+  - A5
+  - B6
+  - B5
+  - bunko
+  - shinsho
+printing_methods:
+  - ondemand
+color_modes:
+  - CMYK
+  - spot_color
+spot_color_supported: true
+processes:
+  - spot_color_printing
+benefit_types:
+  - discount
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published

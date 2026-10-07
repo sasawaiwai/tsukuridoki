@@ -1,0 +1,25 @@
+fair_id: nikko-kikaku-shari-pp
+slug: nikko-kikaku-shari-pp
+fair_name: しゃりしゃりPPフェア
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/fair-syari/
+summary: オフセットフルカラーの表紙に、しゃりしゃりした手触りのマット系PP加工ができる本のセット。蛍光ピンクを混ぜた刷り方も選べる。早期入稿で10%オフ。
+benefit_summary: しゃりしゃり手触りの特殊PP・早期入稿で10%OFF
+source_type: official_fair
+timing_type: ongoing
+conditions_text: 表紙用紙はNPホワイト200kg。刷り方は通常（St-4）・蛍光ピンク50%（Comic-4）・蛍光ピンク差し替えから選択。本文はオフセットスミ刷りで、上質紙・ハイバルギー・美弾紙・淡クリームキンマリなどから選択。印刷サンプルはオンラインショップで販売。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。
+printing_methods:
+  - offset
+processes:
+  - special_pp
+benefit_types:
+  - discount
+published_at: 2026-10-07
+discovered_at: 2026-10-07
+verified_at: 2026-10-07
+verification_status: verified
+history:
+  - date: 2026-10-07
+    type: published
