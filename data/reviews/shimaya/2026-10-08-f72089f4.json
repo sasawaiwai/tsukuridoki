@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:8fe01cc010750d47834a985b7b6203e7b42870f9262ba6f6134d2533ce3c29f6",
+  "content_chars": 1302,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（フェアのバナーが並ぶ一覧）。各フェアは個別ページで確認する。"
+}

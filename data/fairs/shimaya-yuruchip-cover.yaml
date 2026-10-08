@@ -1,0 +1,40 @@
+fair_id: shimaya-yuruchip-cover
+slug: shimaya-yuruchip-cover
+fair_name: ゆるチップ表紙フェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: 表紙の紙を、チリの入ったボール紙風の特殊紙「ゆるチップ」（7色）に変更できる。フルカラー・単色・ゴールド・ホワイトなど好きな印刷を選べる。
+benefit_summary: ボール紙風の特殊紙「ゆるチップ」の表紙
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+binding:
+  - perfect
+printing_methods:
+  - ondemand
+processes:
+  - special_paper
+  - spot_color_printing
+conditions_text: オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（文芸カラーカバーセット・ラノベセットは表紙のみ）。無線綴じのみ。紙の風合いを生かすため表紙にPP加工は付かない。白おさえはオプション（セミオーダーは白おさえなし）。ボール紙素材のため背割れ・トナーの割れが出る場合あり。料金は印刷方法・部数により異なる（公式の料金表で確認）。締切は表紙・本文とも通常の締切の2営業日前。備考欄に紙の色と印刷色を記入。表紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。公式の特殊紙表紙一覧では「常設フェア」に分類されているが、フェアページには「在庫終了次第」と終了条件がある。
+sources:
+  - https://shimaya.net/fair/yuruchip/index.html
+  - https://www.shimaya.net/tokusyushi_hyoushi_link/
+start_date: 2024-01-01
+start_date_text: 2024年1月
+start_date_precision: month
+end_date: null
+end_date_text: 在庫終了次第
+end_date_precision: unknown
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

@@ -1,0 +1,32 @@
+fair_id: shimaya-koiiro-endpaper
+slug: shimaya-koiiro-endpaper
+fair_name: 推せ推せ!恋色遊び紙フェア2024
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: ピンク色の特殊紙の遊び紙6種に、ネオンピンク・ピュアホワイト・シャインゴールドのいずれかで印刷できる（印刷なしも可）。セミオーダーならタイトルとカップリング名を入れてもらえる。
+benefit_summary: ピンクの特殊紙の遊び紙に特色印刷
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+printing_methods:
+  - ondemand
+processes:
+  - endpaper
+  - special_paper
+  - spot_color_printing
+conditions_text: スタンダードセット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。遊び紙はモフル・レザック16・ミランダなど6種から選び、前のみ。印刷はネオンピンク・ピュアホワイト・シャインゴールドから1色（印刷なしも可）。セミオーダーデザインの利用は無料（備考欄で申し込み）。料金は用紙・印刷色・部数により異なる（公式の料金表で確認）。締切は各セットの本文の締切。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://shimaya.net/fair/koiiro_2024/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

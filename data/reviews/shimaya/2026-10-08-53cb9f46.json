@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/fair/high_pink/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:fbe4514db2f28a61557aee883f603f008b5339ba7d1e87490af51462d0c5cfc2",
+  "content_chars": 725,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "通常の「ハイピンク オプション」の案内ページで、フェア・キャンペーンとしての案内がないため掲載対象外。"
+}

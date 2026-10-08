@@ -16,6 +16,10 @@ watch_urls:
   - https://www.shimaya.net/fair/summer/asobigami/index.html
   - https://www.shimaya.net/fair/summer/separeasobi/index.html
   - https://www.shimaya.net/fair/summer/iroduri/index.html
+# フェアのメニュー（fair/menu.html）にだけ載っていて、トップからはリンクされていないフェア
+  - https://shimaya.net/fair/5colorhakuoshi/index.html
+  - https://www.shimaya.net/fair/bunfuri/index.html
+  - https://www.shimaya.net/fair/2021summer/kura_zarae.html
 domains: [shimaya.net]
 # リンクはトップページ固定（運営方針）。しまや出版は「リンク先はトップページに」と明記（https://www.shimaya.net/information/link.html）
 link_policy: top_page_only

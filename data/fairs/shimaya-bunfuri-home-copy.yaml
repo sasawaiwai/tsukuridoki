@@ -1,0 +1,20 @@
+fair_id: shimaya-bunfuri-home-copy
+slug: shimaya-bunfuri-home-copy
+fair_name: 文学フリマフェア：1冊発送サービス
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+sources:
+  - https://www.shimaya.net/fair/bunfuri/index.html
+summary: 文学フリマに搬入する人が、早割の締切までに入稿すると、イベント前に1冊を自宅へ発送してもらえる。
+benefit_summary: 文学フリマ前に1冊を自宅へ発送
+conditions_text: 文学フリマに搬入がある人のみ（ほかのイベントは不可）。対象は文芸ベーシックセット・文芸カラー表紙セット・文芸カラーカバーセット・文芸オンデセット・文芸オンデカラーカバーセット（文芸ステープル・ラノベセットは対象外）。文学フリマ合わせの早割10%OFFの締切までに入稿（オプションの締切が早い場合はそちらに従う）。納品日の指定は不可。発注書・備考欄に「文学フリマフェア 1冊発送サービス希望」と記入（記入がないと利用不可）。申し込み後の変更は不可。
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

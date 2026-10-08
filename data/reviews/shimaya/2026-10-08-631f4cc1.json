@@ -1,0 +1,40 @@
+{
+  "source_url": "https://shimaya.net/fair/koguchi_dp/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:47a03ee9e78ef26a20c344c90f5aa149bbc4b7248318e682aaf4cb7d5ce3f668",
+  "content_chars": 5023,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-edge-design-print",
+      "fair_name": "小口デザイン印刷フェア",
+      "summary": "本の小口（1面、または天・地・小口の3面）に、しまやのオリジナルデザイン（ハート・和風・ねこなど約85種）をフルカラー印刷できる。",
+      "benefit_summary": "本の小口にデザインを印刷できる",
+      "sizes": [
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko",
+        "other"
+      ],
+      "processes": [
+        "edge_printing"
+      ],
+      "conditions_text": "対象セットのみ（ビデオテープ・DVDケース入りブックも対象）。背幅6mm以上の本（本文用紙ごとのページ数の目安あり）。3面印刷は文庫・新書・B6・DVDブックのみ（A5は1面のみ）。絵柄はランダムに印刷され、1冊ずつ位置が違う。PP加工を推奨。箔押し・角丸・スピン紐・中綴じなどとは併用不可。自分のデザインでの印刷は別に見積り。料金はページ数・面数・部数により異なる（公式の料金表で確認）。備考欄に希望のデザイン名を記入。前入金制、特急入稿は不可。",
+      "sources": [
+        "https://shimaya.net/fair/koguchi_dp/",
+        "https://www.shimaya.net/fair/menu.html"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "ページ上は「小口デザイン印刷オプション」だが、公式のフェアメニューで「小口デザイン印刷フェア」として案内されているため掲載（公式の扱いを優先）。期間の記載がないため、期間限定・開始日と終了日なし（開催中・終了日の記載なし）とした（公式が常設と言っていないため常設にしない）。"
+}

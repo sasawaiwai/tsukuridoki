@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/fair/fuchicolor/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:6ed44f07a035d57c7ed9d5ce2d5141629ccbb76e6721f004e9dd98990199d7cd",
+  "content_chars": 4555,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "本文オプション欄から選ぶ通常のオプション（特別オプション価格）で、フェア・キャンペーンとしての案内がないため掲載対象外。"
+}

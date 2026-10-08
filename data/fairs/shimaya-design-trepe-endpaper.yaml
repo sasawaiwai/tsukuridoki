@@ -1,0 +1,31 @@
+fair_id: shimaya-design-trepe-endpaper
+slug: shimaya-design-trepe-endpaper
+fair_name: デザイン遊び紙トレーシングペーパー
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+timing_type: ongoing
+summary: デザインをカラー印刷したトレーシングペーパーの遊び紙を、87種類の柄から選べる。期間限定フェアで好評だったものが、いつでも使えるようになった。
+benefit_summary: 87柄から選べるトレペの遊び紙
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+printing_methods:
+  - ondemand
+processes:
+  - endpaper
+conditions_text: トレーシングペーパー52kgホワイトに片面オンデマンドカラー印刷、前のみ。料金：1枚35円（A5・B5・B6・新書・文庫共通、税・送料込み）。各セットの本文の通常の締切日に申し込み。備考欄に希望の柄を記入。オンデマンドセット ライト・極匠・文芸オンデなどでは、本の波打ちが大きくなる。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制。
+sources:
+  - https://www.shimaya.net/fair/design_torepe/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

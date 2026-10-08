@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www.shimaya.net/fair/bunfuri/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:f997d8e1a3a19a3d092524b3a289260043a88ceb8b13096edb08b0431a770f35",
+  "content_chars": 2347,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "sources": [
+        "https://www.shimaya.net/fair/bunfuri/index.html"
+      ],
+      "fair_id": "shimaya-bunfuri-home-copy",
+      "fair_name": "文学フリマフェア：1冊発送サービス",
+      "summary": "文学フリマに搬入する人が、早割の締切までに入稿すると、イベント前に1冊を自宅へ発送してもらえる。",
+      "benefit_summary": "文学フリマ前に1冊を自宅へ発送",
+      "conditions_text": "文学フリマに搬入がある人のみ（ほかのイベントは不可）。対象は文芸ベーシックセット・文芸カラー表紙セット・文芸カラーカバーセット・文芸オンデセット・文芸オンデカラーカバーセット（文芸ステープル・ラノベセットは対象外）。文学フリマ合わせの早割10%OFFの締切までに入稿（オプションの締切が早い場合はそちらに従う）。納品日の指定は不可。発注書・備考欄に「文学フリマフェア 1冊発送サービス希望」と記入（記入がないと利用不可）。申し込み後の変更は不可。"
+    },
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "sources": [
+        "https://www.shimaya.net/fair/bunfuri/index.html"
+      ],
+      "fair_id": "shimaya-bunfuri-bookmark",
+      "fair_name": "文学フリマフェア：オリジナルしおり",
+      "summary": "文学フリマに搬入する人に、表紙と同じ紙・印刷のオリジナルしおりを本と同じ枚数プレゼント。データは自作でも、しまやおまかせでもよい。",
+      "benefit_summary": "文学フリマ搬入でオリジナルしおりを本と同数",
+      "benefit_types": [
+        "novelty"
+      ],
+      "conditions_text": "文学フリマに搬入がある人のみ（ほかのイベントは不可）。対象は文芸オンデセット・文芸オンデカラーカバーセット・文芸ベーシックセット・文芸カラー表紙セット・文芸カラーカバーセット・ラノベセット（文芸ステープルは対象外）。しおりは表紙（カバーセットは中の表紙）と同じ紙・印刷で片面のみ、本と同梱で納品。締切は各セットの表紙の締切まで。発注書・備考欄に「文学フリマフェア オリジナルしおり希望」と記入（記入がないと利用不可）。申し込み後の変更は不可。前入金制。"
+    },
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "sources": [
+        "https://www.shimaya.net/fair/bunfuri/index.html"
+      ],
+      "fair_id": "shimaya-bunfuri-a3-poster",
+      "fair_name": "文学フリマフェア：A3ポスタープレゼント",
+      "summary": "文学フリマに直接搬入する人に、ブース名や新刊告知に使えるA3ポスター（ポスタースタンド付き）をプレゼント。",
+      "benefit_summary": "文学フリマ搬入でA3ポスター（スタンド付き）",
+      "benefit_types": [
+        "novelty"
+      ],
+      "event_delivery_only": true,
+      "conditions_text": "文学フリマに参加し、しまや出版から会場へ直接搬入する本がある人のみ（ほかのイベントは不可）。ステープル・文芸ステープル以外の全セットが対象。データ入稿のみ、フルカラープリント（用紙はしまやおまかせ）。ポスター用のデータか表紙の絵柄を使用。本文の入稿時にポスターの原稿も一緒に入稿、特急印刷は不可。文学フリマ東京以外は別途送料あり。発注書・備考欄に「文学フリマフェア A3ポスター希望」と記入（記入がないと利用不可）。受付完了後の申し込みは不可。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "文学フリマに搬入する人向けの特典3つ。対象セット・締切・条件が違うため特典ごとに3件に分けた。直接搬入のみと明記されたA3ポスターだけにイベント直接搬入のみの印を付けた。期間の記載なし（開催中・終了日の記載なし）。"
+}

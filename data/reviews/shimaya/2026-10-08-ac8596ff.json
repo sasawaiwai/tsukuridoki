@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/fair/dourevo_collab/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:f0c3a46b837cbc30501d58cd0157b61622b86385414a002b76c37da09202f00d",
+  "content_chars": 8174,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ノベルティ制作を主体とするフェアで、同人誌本体の印刷・装丁フェアを主目的としていないため掲載対象外。"
+}

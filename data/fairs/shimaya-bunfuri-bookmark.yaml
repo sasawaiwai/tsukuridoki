@@ -1,0 +1,22 @@
+fair_id: shimaya-bunfuri-bookmark
+slug: shimaya-bunfuri-bookmark
+fair_name: 文学フリマフェア：オリジナルしおり
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+sources:
+  - https://www.shimaya.net/fair/bunfuri/index.html
+summary: 文学フリマに搬入する人に、表紙と同じ紙・印刷のオリジナルしおりを本と同じ枚数プレゼント。データは自作でも、しまやおまかせでもよい。
+benefit_summary: 文学フリマ搬入でオリジナルしおりを本と同数
+benefit_types:
+  - novelty
+conditions_text: 文学フリマに搬入がある人のみ（ほかのイベントは不可）。対象は文芸オンデセット・文芸オンデカラーカバーセット・文芸ベーシックセット・文芸カラー表紙セット・文芸カラーカバーセット・ラノベセット（文芸ステープルは対象外）。しおりは表紙（カバーセットは中の表紙）と同じ紙・印刷で片面のみ、本と同梱で納品。締切は各セットの表紙の締切まで。発注書・備考欄に「文学フリマフェア オリジナルしおり希望」と記入（記入がないと利用不可）。申し込み後の変更は不可。前入金制。
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

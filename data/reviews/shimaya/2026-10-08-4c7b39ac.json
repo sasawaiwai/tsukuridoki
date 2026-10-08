@@ -1,0 +1,44 @@
+{
+  "source_url": "https://shimaya.net/fair/kirairo_2024/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:875844768bc98fc788f91cca86f9e25d6ea8bec7c33eb13acaf1d6821fe34b16",
+  "content_chars": 7147,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-kirairo-endpaper",
+      "fair_name": "推せ推せ!綺羅色遊び紙フェア2024",
+      "summary": "キラキラ系の特殊紙の遊び紙6種に、ピュアホワイト・シャインゴールド・ルミナスシルバーのいずれかで印刷できる（印刷なしも可）。セミオーダーならタイトルとカップリング名を入れてもらえる。",
+      "benefit_summary": "キラキラ特殊紙の遊び紙に特色印刷",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "endpaper",
+        "special_paper",
+        "spot_color_printing"
+      ],
+      "conditions_text": "スタンダードセット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。遊び紙はミランダ・スタードリームなど6種から選び、前のみ。印刷はピュアホワイト・シャインゴールド・ルミナスシルバーから1色（印刷なしも可）。セミオーダーデザインの利用は無料（備考欄で申し込み）。料金は用紙・印刷色・部数により異なる（公式の料金表で確認）。締切は各セットの本文の締切。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://shimaya.net/fair/kirairo_2024/index.html"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "フェア名に2024とあるが、ページに期間の記載はない（名前から終了を推測しない）。期間の記載がないため、期間限定・開始日と終了日なし（開催中・終了日の記載なし）とした（公式が常設と言っていないため常設にしない）。"
+}

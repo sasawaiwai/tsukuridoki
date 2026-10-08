@@ -1,0 +1,22 @@
+fair_id: shimaya-onepoint-design-foil
+slug: shimaya-onepoint-design-foil
+fair_name: ワンポイントデザイン箔フェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: 用意された箔デザインから選んで、表紙やカバーに手軽に箔押しできる。箔は金・銀・色箔・ホログラム箔など。セミオーダー表紙とも組み合わせられる。
+benefit_summary: 用意されたデザインで手軽に箔押し
+processes:
+  - foil
+conditions_text: スタンダードセット・文芸オンデセットなど対象セットの表紙・カバーのみ。文芸カラーカバー・文芸オンデカラーカバー・文芸ベーシックでは、セミオーダーデザインの利用が無料（箔押しの料金は別）。白・赤・青の箔は特殊紙など粗い紙用、ホログラム箔はPPか平らな紙用。料金は箔・サイズ・部数により異なる（公式の料金表で確認）。締切は各セットの表紙（またはカバー）の箔押しの締切。表紙のみ・カバーのみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/onepoint_haku/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

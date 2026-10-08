@@ -1,0 +1,25 @@
+fair_id: shimaya-washi-pp
+slug: shimaya-washi-pp
+fair_name: 和紙PPフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+start_date: 2021-07-01
+start_date_text: 2021年7月
+start_date_precision: month
+summary: 表紙が和紙のような手触り・見た目になるPP加工（雲海・薄霧の2柄）を、オンデマンド印刷の表紙にも使える。
+benefit_summary: 和紙のような手触りのPP加工
+processes:
+  - special_pp
+conditions_text: ホワイトポストの表紙のみ。PPは薄い白色のため、濃い色の絵柄は色の差が見えにくくなる。トムソン加工・セパレーション加工とは併用不可、箔押しは繊維の凹凸の影響を受ける場合あり。料金は申し込み後にスタッフが案内。締切は各セットの表紙の締切日。備考欄に「和紙PPフェア希望」とPPの種類を記入。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/2021summer/washipp.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

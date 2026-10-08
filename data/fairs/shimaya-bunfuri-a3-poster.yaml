@@ -1,0 +1,23 @@
+fair_id: shimaya-bunfuri-a3-poster
+slug: shimaya-bunfuri-a3-poster
+fair_name: 文学フリマフェア：A3ポスタープレゼント
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+sources:
+  - https://www.shimaya.net/fair/bunfuri/index.html
+summary: 文学フリマに直接搬入する人に、ブース名や新刊告知に使えるA3ポスター（ポスタースタンド付き）をプレゼント。
+benefit_summary: 文学フリマ搬入でA3ポスター（スタンド付き）
+benefit_types:
+  - novelty
+event_delivery_only: true
+conditions_text: 文学フリマに参加し、しまや出版から会場へ直接搬入する本がある人のみ（ほかのイベントは不可）。ステープル・文芸ステープル以外の全セットが対象。データ入稿のみ、フルカラープリント（用紙はしまやおまかせ）。ポスター用のデータか表紙の絵柄を使用。本文の入稿時にポスターの原稿も一緒に入稿、特急印刷は不可。文学フリマ東京以外は別途送料あり。発注書・備考欄に「文学フリマフェア A3ポスター希望」と記入（記入がないと利用不可）。受付完了後の申し込みは不可。
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published
