@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.shimaya.net/fair/giftbag/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:187a1d3f3ad845fbd370b97d4cc830625c430afea94e03ac58bcd2ad6f48aedc",
+  "content_chars": 4299,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "shimaya-premium-giftbag",
+      "fair_name": "プレミアムギフトバッグ",
+      "summary": "箔押しをした手提げの紙袋（白・黒）を、同人誌のオプションとして付けられる。箔は金・銀・色箔・ホログラム箔の19種類から選べる。",
+      "benefit_summary": "本に箔押しのギフトバッグを付けられる",
+      "source_type": "official_fair",
+      "sizes": [
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko",
+        "other"
+      ],
+      "processes": [
+        "foil",
+        "blind_emboss"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "スタンダードセット・文芸オンデセットなど対象セットと同時の注文のみ（バッグだけの注文、本の冊数を超える注文、分納は不可）。バッグは幅170×マチ85×高さ230mm（A5より大きい本は入らない。ビデオテープ・DVDケース入りのセットも対象）。印刷なしの箔押しのみ（横70×縦90mm以内）。料金（10部）：金・銀箔・空押し25,160円、色箔26,360円、ホログラム箔34,040円。締切は表紙・本文それぞれ通常の締切の7営業日前（繁忙期は変更あり）。注文時にその他のオプションから選択。前入金制。",
+      "sources": [
+        "https://www.shimaya.net/fair/giftbag/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "トップの「開催中のフェア」に掲載（常設の特別企画とは別の見出し）。ページに期間の記載がないため、期間限定・開始日と終了日なし（開催中）とした。"
+}

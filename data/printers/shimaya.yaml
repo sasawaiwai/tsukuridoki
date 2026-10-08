@@ -4,6 +4,18 @@ official_url: https://www.shimaya.net/
 # フェアのバナーはトップに並ぶ（/fair/ は個別のフェアのページ）
 fair_index_url: https://www.shimaya.net/
 fair_link_selector: 'a[href*="fair/"]'
+# 4シーズンフェアの季節ごとの詳細ページ（トップからは直接リンクされていないため、4seasonページから拾って登録）。季節が変わったら入れ替える
+watch_urls:
+  - https://www.shimaya.net/fair/autumn/tokusyushi/index.html
+  - https://www.shimaya.net/fair/autumn/tomuson/index.html
+  - https://www.shimaya.net/fair/autumn/haku/index.html
+  - https://www.shimaya.net/fair/autumn/asobigami/index.html
+  - https://www.shimaya.net/fair/autumn/iroduri/index.html
+  - https://www.shimaya.net/fair/summer/tokusyushi/index.html
+  - https://www.shimaya.net/fair/summer/haku/index.html
+  - https://www.shimaya.net/fair/summer/asobigami/index.html
+  - https://www.shimaya.net/fair/summer/separeasobi/index.html
+  - https://www.shimaya.net/fair/summer/iroduri/index.html
 domains: [shimaya.net]
 # リンクはトップページ固定（運営方針）。しまや出版は「リンク先はトップページに」と明記（https://www.shimaya.net/information/link.html）
 link_policy: top_page_only

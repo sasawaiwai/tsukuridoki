@@ -98,7 +98,8 @@ export function effectiveUntil(fair: Fair): DateString | null {
 
 /**
  * 状態（10-3）。
- * - 期間限定：F が null なら開始済み、U が null なら終了日不明として扱う
+ * - 期間限定：F が null なら開始済み、U が null なら終了日不明として扱う。
+ *   F・U がどちらも null（公式で開催中と確認したが日付の記載がない）も開催中（2026-10-08 変更）
  * - 入稿日限定：最後の入稿日を過ぎたら終了。今日が入稿日なら開催中、それ以外は次の入稿日を待つ開始前
  * - 通年・常設・定期開催：常に開催中
  */
@@ -113,7 +114,6 @@ export function getStatus(fair: Fair, today: DateString): FairStatus {
   }
   const from = effectiveFrom(fair);
   const until = effectiveUntil(fair);
-  if (from === null && until === null) return 'unknown';
   if (from !== null && from > today) return 'upcoming';
   if (until !== null && until < today) return 'expired';
   return 'active';
@@ -130,7 +130,7 @@ interface Span {
 /**
  * フェアを「使える日の集まり」に直す。時期の見方の判定はすべてここから行う。
  * - 期間限定：F〜U。U が不明（なくなり次第終了など）なら「今日（開始前なら開始日）までは使える」とする。
- *   F・U がどちらも不明なら空（時期の見方には出さない）
+ *   F・U がどちらも不明（公式で開催中と確認したもの）も同じく「今日までは使える」（2026-10-08 変更）
  * - 入稿日限定：入稿日それぞれ
  * - 通年・常設・定期開催：いつでも
  */
@@ -140,7 +140,6 @@ export function usableSpans(fair: Fair, today: DateString): Span[] {
   if (type === 'specific_dates') return submissionDates(fair).map((d) => ({ from: d, until: d }));
   const from = effectiveFrom(fair);
   const until = effectiveUntil(fair);
-  if (from === null && until === null) return [];
   if (until !== null) return [{ from, until }];
   return [{ from, until: from !== null && from > today ? from : today }];
 }

@@ -1,0 +1,41 @@
+{
+  "source_url": "https://shimaya.net/fair/decospin/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:3a62f747a5adffe48bd1d52394b2f39d7a59356232a1ec0b8f2fead03a35fa91",
+  "content_chars": 5513,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "shimaya-decospin",
+      "fair_name": "スピン紐しおり［＋デコチャーム］",
+      "summary": "本に付けるスピン紐（しおり紐）に、特殊紙をレーザーカットしたチャームを付けられるオプション。紐の色は14色、チャームのデザインは30種類から選べる。",
+      "benefit_summary": "しおり紐に特殊紙のチャームを付けられる",
+      "source_type": "official_fair",
+      "sizes": [
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "無線綴じの本のみで、文芸オンデセット・スタンダードセット・ベーシックセットなど対象セットのみ。チャームの用紙・印刷色は一覧から選ぶか、しまやおまかせ（希望は不可）。チャームは紐に付けずに納品（自分で取り付け）。料金（セット料金に追加）：10部3,350円〜。締切は対象セットの締切の10営業日前、特急入稿は不可。注文時に表紙オプションで選び、備考欄に注文内容を記入（申し込みがないと利用不可）。前入金制。小口染め・トムソン加工・セパレーション加工などとは併用不可。",
+      "sources": [
+        "https://shimaya.net/fair/decospin/"
+      ]
+    }
+  ],
+  "issues": [
+    "other",
+    "no_end_date"
+  ],
+  "master_candidates": [
+    "スピン（しおり紐）"
+  ],
+  "note": "トップの「開催中のフェア」に掲載（常設の特別企画とは別の見出し）。ページに期間の記載がないため、期間限定・開始日と終了日なし（開催中）とした。ページの文字コード（Shift_JIS）を巡回で読めず本文が文字化けするため、公式ページをブラウザで表示して確認した。"
+}

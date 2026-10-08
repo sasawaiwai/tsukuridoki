@@ -1,0 +1,26 @@
+fair_id: shimaya-minibook-slidecase
+slug: shimaya-minibook-slidecase
+fair_name: ミニ本用スライドケース
+printer_id: shimaya
+category: dojinshi
+summary: ミニ本セット専用のスライドケースを付けられるオプション。自分のデザインか、12種類のデザインから選べる。
+benefit_summary: ミニ本にスライドケースを付けられる
+source_type: official_fair
+sizes:
+  - other
+printing_methods:
+  - ondemand
+processes:
+  - pp
+specific_sets_only: true
+application_required: true
+conditions_text: ミニ本セット（A8・B8、最大260ページ・背幅約13mmまで）専用。ケースはホワイトポストにオンデマンドフルカラー印刷、クリアPPかマットPP（PPなしは不可）。料金（セット料金に追加）：自分で組み立て10部2,700円〜、しまやで組み立てて本を入れて納品10部3,350円〜。締切は表紙・本文・ケースとも通常の締切の7営業日前、特急入稿は不可。注文時にその他のオプションから選択。前入金制、ケースのみの納品は不可。
+sources:
+  - https://www.shimaya.net/fair/slidecase/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.shimaya.net/fair/star/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:04a5648ab7b1345cb265c772bb2781e1ff181fe16415522901bd96b7c9f4e3c7",
+  "content_chars": 1469,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "shimaya-star-light",
+      "fair_name": "明星スターライトフェア",
+      "summary": "キラキラ輝く特殊紙の表紙（3ラインナップ）と、キラキラの遊び紙（6色）を自由に組み合わせられるフェア。フェア限定のメタリックな特色印刷も追加できる。",
+      "benefit_summary": "キラキラ特殊紙の表紙と遊び紙を組み合わせ",
+      "source_type": "official_fair",
+      "conditions_text": "特殊紙表紙（純白・星影・極彩の3ラインナップ）と遊び紙（6色）を合わせての注文が必須（片方だけの場合は問い合わせか、ほかのフェアを利用）。遊び紙への印刷はオプションで追加。フェア限定の印刷色（ルミナスアクア・ピンク・グリーン・オレンジ）を追加オプションで選べる。",
+      "processes": [
+        "special_paper",
+        "endpaper",
+        "spot_color_printing"
+      ],
+      "sources": [
+        "https://www.shimaya.net/fair/star/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "トップの「開催中のフェア」に掲載（常設の特別企画とは別の見出し）。ページに期間の記載がないため、期間限定・開始日と終了日なし（開催中）とした。用紙・料金・対象セットは各ラインナップの詳細ページにあり、このページは概要のみ。"
+}

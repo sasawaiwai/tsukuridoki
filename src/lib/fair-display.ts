@@ -132,7 +132,8 @@ const SUBMISSION_DATES_SHOWN = 3;
 /**
  * カード下部の期限表示（timing-design 4-3）。
  * 入稿日限定は「入稿日限定：10月15日・11月19日」（過ぎた日は出さない）、通年・常設は「通年・常設」。
- * 期間限定で終了日が決まっていないときは、原文（なくなり次第終了など）か「終了日未定」
+ * 期間限定で終了日が決まっていないときは、原文（なくなり次第終了など）か「終了日未定」。
+ * 開始日も終了日も書かれていない（公式で開催中と確認したもの）は「開催中（終了日の記載なし）」
  */
 export function deadlineText(fair: Fair, today: DateString): string {
   const status = getStatus(fair, today);
@@ -150,7 +151,7 @@ export function deadlineText(fair: Fair, today: DateString): string {
   const text = fair.usable_until_text ?? fair.end_date_text;
   if (text) return text;
   if (until) return `${formatJpDate(until)}まで`;
-  return effectiveFrom(fair) ? '終了日未定' : '期間未定';
+  return effectiveFrom(fair) ? '終了日未定' : '開催中（終了日の記載なし）';
 }
 
 export function toCardModel(
