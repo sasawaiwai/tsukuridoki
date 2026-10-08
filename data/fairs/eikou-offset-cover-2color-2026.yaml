@@ -20,7 +20,7 @@ end_date_precision: day
 specific_sets_only: true
 application_required: true
 combinable: false
-conditions_text: オフセットコースのモノトーンセット・特殊紙モノトーンセット・ノベルセットが対象。締切の1週間前から選択可能。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+conditions_text: オフセットコースのモノトーンセット・特殊紙モノトーンセット・ノベルセットが対象。締切の1週間前から選択可能。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。バリュープライス・特急商品は対象外。締切は17:00。
 printing_methods:
   - offset
 benefit_types:
@@ -31,8 +31,11 @@ tags:
   - limited_time
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-08
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-08
+    type: updated
+    field: conditions_text
