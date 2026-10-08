@@ -21,7 +21,7 @@ deadline_note: 10月23日出荷、10/25のイベント合わせから。
 specific_sets_only: true
 application_required: true
 combinable: false
-conditions_text: VALUE・モノトーンブックレット・ぷちっとセットは対象外。ノベルセット・オールカラー・6色サンバは10%割引。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+conditions_text: VALUE・モノトーンブックレット・ぷちっとセットは対象外。ノベルセット・オールカラー・6色サンバは例外的に10%割引（注文時は「ハッピーハロウィン!バリュープライス10%割引」を選択）。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。特急商品は対象外。締切は17:00。
 benefit_types:
   - discount
 discount_rate: 25
@@ -30,8 +30,11 @@ tags:
   - seasonal
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-08
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-08
+    type: updated
+    field: conditions_text
