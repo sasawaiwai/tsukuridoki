@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.shimaya.net/fair/slidecase/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:2bc1623390d4c3b920df6ad05e90a10e81e556ac781eb694440fbba143e53ce0",
+  "content_chars": 2167,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "shimaya-minibook-slidecase",
+      "fair_name": "ミニ本用スライドケース",
+      "summary": "ミニ本セット専用のスライドケースを付けられるオプション。自分のデザインか、12種類のデザインから選べる。",
+      "benefit_summary": "ミニ本にスライドケースを付けられる",
+      "source_type": "official_fair",
+      "sizes": [
+        "other"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "pp"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "ミニ本セット（A8・B8、最大260ページ・背幅約13mmまで）専用。ケースはホワイトポストにオンデマンドフルカラー印刷、クリアPPかマットPP（PPなしは不可）。料金（セット料金に追加）：自分で組み立て10部2,700円〜、しまやで組み立てて本を入れて納品10部3,350円〜。締切は表紙・本文・ケースとも通常の締切の7営業日前、特急入稿は不可。注文時にその他のオプションから選択。前入金制、ケースのみの納品は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/slidecase/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "トップの「開催中のフェア」に掲載（常設の特別企画とは別の見出し）。ページに期間の記載がないため、期間限定・開始日と終了日なし（開催中）とした。対象サイズのA8・B8はサイズの区分にないため other とした。"
+}

@@ -63,7 +63,7 @@ test('状態：開始前・開始当日・終了当日・終了翌日・不明',
   assert.equal(getStatus(f, '2026-10-04'), 'active');
   assert.equal(getStatus(f, '2026-10-10'), 'active');
   assert.equal(getStatus(f, '2026-10-11'), 'expired');
-  assert.equal(getStatus(fair({}), TODAY), 'unknown');
+  assert.equal(getStatus(fair({}), TODAY), 'active'); // F・U とも null → 開催中（終了日の記載なし）
   assert.equal(getStatus(fair({ end_date: '2026-10-10' }), TODAY), 'active'); // F が null → 開始済み
   assert.equal(getStatus(fair({ start_date: '2026-09-01' }), TODAY), 'active'); // U が null → 終了日不明
 });
@@ -113,8 +113,8 @@ test('終了日不明（なくなり次第終了）：今開催中・今月・�
   assert.deepEqual(shownIn(fair({ start_date: '2026-09-01', end_date_text: 'なくなり次第終了' }), today), ['new', 'now', 'this-month', 'this-year']);
   // 来月に始まる終了日不明のフェアは、開始日の来月には出る
   assert.deepEqual(shownIn(fair({ start_date: '2026-11-10' }), today), ['new', 'next-month', 'this-year']);
-  // 期間がまったく不明なら時期の見方には出さない（新着には出る）
-  assert.deepEqual(shownIn(fair({}), today), ['new']);
+  // 開始日も終了日も書かれていない（公式で開催中と確認したもの）も、終了日不明と同じ扱い（仕様書10章）
+  assert.deepEqual(shownIn(fair({}), today), ['new', 'now', 'this-month', 'this-year']);
 });
 
 test('年内：今日から12月31日までの間に少なくとも1日使えるか', () => {

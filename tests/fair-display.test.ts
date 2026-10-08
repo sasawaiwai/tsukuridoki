@@ -55,7 +55,7 @@ test('期限表示：開催前・原文・日付のみ・不明・終了', () =>
   assert.equal(deadlineText(fair({ end_date: '2026-11-30' }), today), '11月30日まで');
   assert.equal(deadlineText(fair({ start_date: '2026-09-01' }), today), '終了日未定'); // 終了日が決まっていない
   assert.equal(deadlineText(fair({ start_date: '2026-09-01', end_date_text: 'なくなり次第終了' }), today), 'なくなり次第終了');
-  assert.equal(deadlineText(fair({}), today), '期間未定');
+  assert.equal(deadlineText(fair({}), today), '開催中（終了日の記載なし）');
   assert.equal(deadlineText(fair({ end_date: '2026-10-01' }), today), '終了しました');
 });
 

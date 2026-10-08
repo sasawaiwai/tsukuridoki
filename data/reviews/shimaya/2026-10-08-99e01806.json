@@ -1,0 +1,36 @@
+{
+  "source_url": "https://www.shimaya.net/fair/cassette-tape_semiorder/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:e481fb848d54b66b94a78de7821b2b442a71ce2d7f532149c63e42e924979a51",
+  "content_chars": 3504,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "shimaya-cassette-semiorder",
+      "fair_name": "カセットテープセミオーダー",
+      "summary": "カセットテープケース入りの本で、表紙とインデックスのセミオーダーデザインとタイトル入れが無料で使える。",
+      "benefit_summary": "セミオーダーデザインとタイトル入れが無料",
+      "source_type": "official_fair",
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "表紙・インデックスのセミオーダーデザイン",
+        "タイトル入れ"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "カセットテープケース入りブック&メモのみ。表紙19種・インデックス23種のデザインから選ぶ。インデックス裏面の文字入れは有料（A面のみ500円、A・B面1,000円）。注文時に備考欄でデザイン・書体などを申し込み（記載がないと利用不可）。締切は通常の締切まで、特急入稿は不可。表紙のみ・インデックスのみの納品は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/cassette-tape_semiorder/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "トップの「開催中のフェア」に掲載（常設の特別企画とは別の見出し）。ページに期間の記載がないため、期間限定・開始日と終了日なし（開催中）とした。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/fair/designcut_postcard/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:4488e760fcbcbf5c389c17b2c6a428d7a9e0bb8020cd0226907f994d1f5a04ab",
+  "content_chars": 4045,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T15:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ポストカード単体のグッズのため掲載対象外（グッズだけのキャンペーンは載せない）。"
+}
