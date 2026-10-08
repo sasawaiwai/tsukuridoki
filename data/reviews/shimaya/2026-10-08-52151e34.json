@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.shimaya.net/fair/autumn/iroduri/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:9f118bd9c7494bc4462aecfc49432c884a833041cd6e7d286895f1554dec36b9",
+  "content_chars": 1785,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T20:54:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "start_date": "2026-09-05",
+      "start_date_text": "2026年9月5日",
+      "start_date_precision": "day",
+      "end_date": "2027-01-31",
+      "end_date_text": "2027年1月末入稿分まで",
+      "end_date_precision": "month",
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "tags": [
+        "limited_time",
+        "seasonal"
+      ],
+      "fair_id": "shimaya-autumn-body-color-2026",
+      "fair_name": "Autumn Book Fair：本文色刷り",
+      "summary": "本文を秋の色「レピドライト」「真紅」で印刷できる本文色刷りを、秋フェア限定の特別価格で使える。",
+      "benefit_summary": "本文色刷り（レピドライト・真紅）がフェア特別価格2,000円",
+      "processes": [
+        "color_body"
+      ],
+      "conditions_text": "オンデマンドセット ライト・スケルトンカラー表紙セット・フルフォイルセット・バンピーブラックセット・バンピーカラーセット・文芸オンデセット・文芸オンデカラーカバーセットが対象（十人十色セット・本文いろ色セットは対象外）。フェア特別価格2,000円。本文オプションのフチデコレーション・飾り枠とは併用不可。原稿はスミ（黒）で作成。締切は各セットの通常の締切の2営業日前。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/autumn/iroduri/index.html"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "4シーズンフェアの秋フェア（Autumn Book Fair）の1企画。"
+}

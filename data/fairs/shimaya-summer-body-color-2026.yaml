@@ -1,0 +1,31 @@
+fair_id: shimaya-summer-body-color-2026
+slug: shimaya-summer-body-color-2026
+fair_name: SummerBookFair：本文色刷り 蜜柑 瑠璃
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-07-18
+start_date_text: 2026年7月18日
+start_date_precision: day
+end_date: 2026-11-30
+end_date_text: 2026年11月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 本文を夏の色「瑠璃」「蜜柑」で印刷できる本文色刷りを、夏フェア限定の特別価格で使える。
+benefit_summary: 本文色刷り（瑠璃・蜜柑）がフェア特別価格2,000円
+processes:
+  - color_body
+conditions_text: オンデマンドセット ライト・スケルトンカラー表紙セット・フルフォイルセット・バンピーブラックセット・バンピーカラーセット・文芸オンデセット・文芸オンデカラーカバーセットが対象（十人十色セット・本文色刷りセットは対象外）。フェア特別価格2,000円。本文オプションのフチデコレーション・飾り枠とは併用不可。原稿はスミ（黒）で作成。締切は各セットの通常の締切の2営業日前。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/summer/iroduri/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

@@ -1,0 +1,54 @@
+{
+  "source_url": "https://www.shimaya.net/fair/autumn/tokusyushi/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:f64a5739fed0ebda386ac02c383f8948fd4029ee89aeb9e4ecfddb3b2e58be99",
+  "content_chars": 2749,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T20:54:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "start_date": "2026-09-05",
+      "start_date_text": "2026年9月5日",
+      "start_date_precision": "day",
+      "end_date": "2027-01-31",
+      "end_date_text": "2027年1月末入稿分まで",
+      "end_date_precision": "month",
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "tags": [
+        "limited_time",
+        "seasonal"
+      ],
+      "fair_id": "shimaya-autumn-special-paper-2026",
+      "fair_name": "Autumn Book Fair：特殊紙表紙",
+      "summary": "エンボスのかかった紙や秋らしいクラフト紙など、秋フェア限定の特殊紙6種（かぐや・ICHIMATSU・ブンペル・クラフト）を表紙に使える。",
+      "benefit_summary": "秋限定の特殊紙6種を表紙に使える",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "binding": [
+        "perfect",
+        "saddle"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "conditions_text": "オンデ表紙セット・オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（各プレミアムも対象。文芸カラーカバーセットなどは表紙のみ）。かぐや 新月・ICHIMATSU クリアブラックは金・銀・ピュアホワイトの単色印刷を推奨、ほかの4種はオンデマンドフルカラー・スミ・単色。紙の風合いを生かすため表紙にPP加工は付かない。かぐやは凹凸が深く色抜けしやすい。料金は用紙ごとに異なる（公式の料金表で確認）。締切は各セットの表紙の締切まで（白おさえなどを追加すると早まる場合あり）。紙の在庫により受付終了の可能性あり。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/autumn/tokusyushi/index.html"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "4シーズンフェアの秋フェア（Autumn Book Fair）の1企画。料金表は用紙を選ぶと切り替わる形式で、用紙ごとに金額が違うため具体額は書いていない。"
+}

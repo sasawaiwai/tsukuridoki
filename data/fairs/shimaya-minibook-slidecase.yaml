@@ -14,7 +14,7 @@ processes:
   - pp
 specific_sets_only: true
 application_required: true
-conditions_text: ミニ本セット（A8・B8、最大260ページ・背幅約13mmまで）専用。ケースはホワイトポストにオンデマンドフルカラー印刷、クリアPPかマットPP（PPなしは不可）。料金（セット料金に追加）：自分で組み立て10部2,700円〜、しまやで組み立てて本を入れて納品10部3,350円〜。締切は表紙・本文・ケースとも通常の締切の7営業日前、特急入稿は不可。注文時にその他のオプションから選択。前入金制、ケースのみの納品は不可。
+conditions_text: ミニ本セット（A8・B8、最大260ページ・背幅約13mmまで）専用。ケースはホワイトポストにオンデマンドフルカラー印刷、クリアPPかマットPP（PPなしは不可）。料金は部数・仕様により異なる（公式の料金表で確認）。締切は表紙・本文・ケースとも通常の締切の7営業日前、特急入稿は不可。注文時にその他のオプションから選択。前入金制、ケースのみの納品は不可。
 sources:
   - https://www.shimaya.net/fair/slidecase/
 published_at: 2026-10-08
@@ -24,3 +24,6 @@ verification_status: verified
 history:
   - date: 2026-10-08
     type: published
+  - date: 2026-10-08
+    type: updated
+    field: conditions_text

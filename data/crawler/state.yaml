@@ -333,7 +333,7 @@
 - url: https://www.shimaya.net/fair/autumn/asobigami/index.html
   printer_id: shimaya
   content_hash: sha256:624d1a035c2a695d422c6b93a64984439f36a7509fc5bb7c8a4184201af2322c
-  reviewed_hash: null
+  reviewed_hash: sha256:624d1a035c2a695d422c6b93a64984439f36a7509fc5bb7c8a4184201af2322c
   content_chars: 1538
   etag: '"604f-65a90b3b5e9ea"'
   last_modified: Thu, 03 Sep 2026 09:23:17 GMT
@@ -343,7 +343,7 @@
 - url: https://www.shimaya.net/fair/autumn/haku/index.html
   printer_id: shimaya
   content_hash: sha256:bcc374d60c14c1b2cbba4a2a4f1feeb18cea4085c946faf90069beb7b0964e87
-  reviewed_hash: null
+  reviewed_hash: sha256:bcc374d60c14c1b2cbba4a2a4f1feeb18cea4085c946faf90069beb7b0964e87
   content_chars: 1881
   etag: '"5c58-65a68994f0f83"'
   last_modified: Tue, 01 Sep 2026 09:32:35 GMT
@@ -353,7 +353,7 @@
 - url: https://www.shimaya.net/fair/autumn/iroduri/index.html
   printer_id: shimaya
   content_hash: sha256:9f118bd9c7494bc4462aecfc49432c884a833041cd6e7d286895f1554dec36b9
-  reviewed_hash: null
+  reviewed_hash: sha256:9f118bd9c7494bc4462aecfc49432c884a833041cd6e7d286895f1554dec36b9
   content_chars: 1785
   etag: '"5d54-65ce699a2d1c1"'
   last_modified: Sat, 03 Oct 2026 02:42:30 GMT
@@ -363,7 +363,7 @@
 - url: https://www.shimaya.net/fair/autumn/tokusyushi/index.html
   printer_id: shimaya
   content_hash: sha256:f64a5739fed0ebda386ac02c383f8948fd4029ee89aeb9e4ecfddb3b2e58be99
-  reviewed_hash: null
+  reviewed_hash: sha256:f64a5739fed0ebda386ac02c383f8948fd4029ee89aeb9e4ecfddb3b2e58be99
   content_chars: 2749
   etag: '"923c-65b2dc48a1b57"'
   last_modified: Fri, 11 Sep 2026 04:46:29 GMT
@@ -373,7 +373,7 @@
 - url: https://www.shimaya.net/fair/autumn/tomuson/index.html
   printer_id: shimaya
   content_hash: sha256:e52650fcd0016dbc008914c3186305dc0212039d27fb388d0cd3f628a807311a
-  reviewed_hash: null
+  reviewed_hash: sha256:e52650fcd0016dbc008914c3186305dc0212039d27fb388d0cd3f628a807311a
   content_chars: 7153
   etag: '"15c86-65a7a8840da29"'
   last_modified: Wed, 02 Sep 2026 06:56:18 GMT
@@ -533,7 +533,7 @@
 - url: https://www.shimaya.net/fair/summer/asobigami/index.html
   printer_id: shimaya
   content_hash: sha256:87b0101930287dbc8836dabebf74b7de744884d3699a63dcd2bbf50374204c84
-  reviewed_hash: null
+  reviewed_hash: sha256:87b0101930287dbc8836dabebf74b7de744884d3699a63dcd2bbf50374204c84
   content_chars: 2647
   etag: '"77e4-658bfed03b6aa"'
   last_modified: Tue, 11 Aug 2026 06:53:18 GMT
@@ -543,7 +543,7 @@
 - url: https://www.shimaya.net/fair/summer/haku/index.html
   printer_id: shimaya
   content_hash: sha256:a611bc04f63a23b1b4c8de0e7d1eb0727fa990e256dec5ca93b60057a026f816
-  reviewed_hash: null
+  reviewed_hash: sha256:a611bc04f63a23b1b4c8de0e7d1eb0727fa990e256dec5ca93b60057a026f816
   content_chars: 2212
   etag: '"5bd8-658bfeb2aa8c5"'
   last_modified: Tue, 11 Aug 2026 06:52:47 GMT
@@ -553,7 +553,7 @@
 - url: https://www.shimaya.net/fair/summer/iroduri/index.html
   printer_id: shimaya
   content_hash: sha256:f7dc21374d601ed410b8b95d29b6726d86d259ad2cc61a67e5a5ff86b8daf857
-  reviewed_hash: null
+  reviewed_hash: sha256:f7dc21374d601ed410b8b95d29b6726d86d259ad2cc61a67e5a5ff86b8daf857
   content_chars: 1855
   etag: '"7f0c-65cae7ee19764"'
   last_modified: Wed, 30 Sep 2026 07:46:23 GMT
@@ -563,7 +563,7 @@
 - url: https://www.shimaya.net/fair/summer/separeasobi/index.html
   printer_id: shimaya
   content_hash: sha256:8a83af2a8d1c9513cc34c0339ddabe22057e57cc001389834698608cdff6dd3a
-  reviewed_hash: null
+  reviewed_hash: sha256:8a83af2a8d1c9513cc34c0339ddabe22057e57cc001389834698608cdff6dd3a
   content_chars: 1710
   etag: '"5f80-658bfe529b43a"'
   last_modified: Tue, 11 Aug 2026 06:51:06 GMT
@@ -573,7 +573,7 @@
 - url: https://www.shimaya.net/fair/summer/tokusyushi/index.html
   printer_id: shimaya
   content_hash: sha256:e90e157c693f271b3533405e944b3deec5d7b277b03956d56fb294fdefe4296c
-  reviewed_hash: null
+  reviewed_hash: sha256:e90e157c693f271b3533405e944b3deec5d7b277b03956d56fb294fdefe4296c
   content_chars: 2131
   etag: '"7026-65985b323b026"'
   last_modified: Fri, 21 Aug 2026 02:50:31 GMT

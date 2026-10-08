@@ -1,0 +1,31 @@
+fair_id: shimaya-summer-hologram-foil-2026
+slug: shimaya-summer-hologram-foil-2026
+fair_name: SummerBookFair：ホログラム箔押し
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-07-18
+start_date_text: 2026年7月18日
+start_date_precision: day
+end_date: 2026-11-30
+end_date_text: 2026年11月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 夏の海や日差しのように煌めくホログラム箔3種（アバロンセレクト・ステンドグラス・ゴールド・オーロラブルー）で、表紙に箔押しできる夏フェア限定の企画。
+benefit_summary: 夏限定のホログラム箔3種で箔押し
+processes:
+  - foil
+conditions_text: スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象。文芸カラーカバーセットなどはカバーのみ）。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの表紙（またはカバー）の締切の7営業日前。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/summer/haku/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

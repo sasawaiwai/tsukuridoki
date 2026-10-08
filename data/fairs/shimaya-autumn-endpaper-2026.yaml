@@ -1,0 +1,39 @@
+fair_id: shimaya-autumn-endpaper-2026
+slug: shimaya-autumn-endpaper-2026
+fair_name: Autumn Book Fair：遊び紙
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-09-05
+start_date_text: 2026年9月5日
+start_date_precision: day
+end_date: 2027-01-31
+end_date_text: 2027年1月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 模様や色、風合いが秋らしい遊び紙6種（かぐや・ICHIMATSU・新バフン紙・ヴィンテージゴールド）を、秋フェア限定で使える。
+benefit_summary: 秋限定の遊び紙6種
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+binding:
+  - perfect
+processes:
+  - endpaper
+conditions_text: スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。無線綴じのみ。遊び紙は前のみ・後のみ・前後から選べる。印刷なし（印刷の希望は問い合わせ）。料金は用紙と入れる位置ごとに異なる（公式の料金表で確認）。締切は各セットの本文の締切まで。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/autumn/asobigami/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

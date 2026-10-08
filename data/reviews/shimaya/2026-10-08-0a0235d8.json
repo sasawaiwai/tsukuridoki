@@ -1,0 +1,54 @@
+{
+  "source_url": "https://www.shimaya.net/fair/summer/tokusyushi/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:e90e157c693f271b3533405e944b3deec5d7b277b03956d56fb294fdefe4296c",
+  "content_chars": 2131,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T20:54:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "start_date": "2026-07-18",
+      "start_date_text": "2026年7月18日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-30",
+      "end_date_text": "2026年11月末入稿分まで",
+      "end_date_precision": "month",
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "tags": [
+        "limited_time",
+        "seasonal"
+      ],
+      "fair_id": "shimaya-summer-special-paper-2026",
+      "fair_name": "SummerBookFair：夏限定!特殊紙表紙",
+      "summary": "夏のビビッドカラーや海をモチーフにした特殊紙6種（マーメイド・ファンタスなど）を、夏フェア限定で表紙に使える。",
+      "benefit_summary": "夏限定の特殊紙6種を表紙に使える",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "binding": [
+        "perfect",
+        "saddle"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "conditions_text": "オンデ表紙セット・オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（各プレミアムも対象。文芸カラーカバーセットなどは表紙のみ）。表紙印刷は対象セットに準じる（オンデマンドフルカラー・スミ・単色）。紙の風合いを生かすため表紙にPP加工は付かない。ファンタスは印刷面（色の面か白い面か）を備考欄に記入。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの表紙の締切まで。紙の在庫により受付終了の可能性あり。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/summer/tokusyushi/index.html"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "4シーズンフェアの夏フェア（SummerBookFair）の1企画。季節名に関わらず、ページの期間（11月末入稿分まで）に従う。"
+}
