@@ -1,0 +1,31 @@
+fair_id: shimaya-autumn-trust-color-foil-2026
+slug: shimaya-autumn-trust-color-foil-2026
+fair_name: Autumn Book Fair：箔押し
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-09-05
+start_date_text: 2026年9月5日
+start_date_precision: day
+end_date: 2027-01-31
+end_date_text: 2027年1月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 色が移り変わる「トラストカラー」箔3種（青-紫・ピンク-黄緑・青-緑）が、秋フェア限定で復刻。表紙に箔押しできる。
+benefit_summary: 色が移り変わるトラストカラー箔が期間限定で復刻
+processes:
+  - foil
+conditions_text: スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象。文芸カラーカバーセットなどはカバーのみ）。秋フェアの特殊紙への箔押しは紙によってヌケが出やすい（かぐやは特に出やすい）。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの表紙（またはカバー）の締切の7営業日前。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/autumn/haku/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

@@ -1,0 +1,39 @@
+fair_id: shimaya-summer-separation-endpaper-2026
+slug: shimaya-summer-separation-endpaper-2026
+fair_name: SummerBookFair：セパレーション遊び紙
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-07-18
+start_date_text: 2026年7月18日
+start_date_precision: day
+end_date: 2026-11-30
+end_date_text: 2026年11月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 波型にカットされた遊び紙4色（さざなみイチゴ・マリン・スカイ・オレンジ）を、夏フェア限定で使える。波の間から本文がちらりと見える。
+benefit_summary: 夏限定の波型カットの遊び紙
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+binding:
+  - perfect
+processes:
+  - endpaper
+conditions_text: スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。無線綴じのみ。遊び紙は最前のみ、印刷なし。波の断裁位置は仕上がりサイズで変わる。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの本文の締切まで。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/summer/separeasobi/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

@@ -1,0 +1,37 @@
+fair_id: shimaya-autumn-hole-punch-2026
+slug: shimaya-autumn-hole-punch-2026
+fair_name: Autumn Book Fair：穴あけ加工
+printer_id: shimaya
+category: dojinshi
+start_date: 2026-09-05
+start_date_text: 2026年9月5日
+start_date_precision: day
+end_date: 2027-01-31
+end_date_text: 2027年1月末入稿分まで
+end_date_precision: month
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+  - seasonal
+summary: 秋フェア限定で、表紙に丸・三日月・ダイヤの形の穴をあけられる（ダイヤは位置を動かせる）。
+benefit_summary: 秋限定で表紙に丸・三日月・ダイヤの穴あけ
+sizes:
+  - B5
+  - A5
+  - bunko
+binding:
+  - perfect
+processes:
+  - hole_punch
+conditions_text: スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。B5・A5・文庫、無線綴じのみ。丸・三日月は穴の位置が固定（移動は相談・見積り）。レーザー加工のため焦げ・変色が出る場合あり、位置が数mmずれる場合あり。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの表紙の締切の4営業日前。カバーや対象外のサイズへの加工は事前に見積り。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/autumn/tomuson/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

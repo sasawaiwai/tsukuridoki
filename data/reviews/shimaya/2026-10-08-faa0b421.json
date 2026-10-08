@@ -1,0 +1,51 @@
+{
+  "source_url": "https://www.shimaya.net/fair/summer/asobigami/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:87b0101930287dbc8836dabebf74b7de744884d3699a63dcd2bbf50374204c84",
+  "content_chars": 2647,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T20:54:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "start_date": "2026-07-18",
+      "start_date_text": "2026年7月18日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-30",
+      "end_date_text": "2026年11月末入稿分まで",
+      "end_date_precision": "month",
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "tags": [
+        "limited_time",
+        "seasonal"
+      ],
+      "fair_id": "shimaya-summer-chromatico-endpaper-2026",
+      "fair_name": "SummerBookFair：遊び紙 クロマティコ",
+      "summary": "透けるビビッドカラーの遊び紙「クロマティコ」5色を、夏フェア限定で使える。ピュアホワイトで印刷もでき、セミオーダーデザインも選べる。",
+      "benefit_summary": "夏限定の透ける色の遊び紙（白印刷も可）",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "processes": [
+        "endpaper",
+        "spot_color_printing"
+      ],
+      "conditions_text": "スタンダードセット・オンデ表紙セット・文芸オンデセットなど対象セットのみ（各プレミアムも対象）。無線綴じのみ。遊び紙は前のみ（後ろ・前後は見積り）。印刷はピュアホワイトのみか印刷なし。セミオーダーデザイン4種は備考欄で申し込み。料金は部数・仕様により異なる（公式の料金表で確認）。締切は各セットの本文の締切まで。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/summer/asobigami/index.html"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "4シーズンフェアの夏フェア（SummerBookFair）の1企画。季節名に関わらず、ページの期間（11月末入稿分まで）に従う。"
+}
