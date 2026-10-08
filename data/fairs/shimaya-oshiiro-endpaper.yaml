@@ -1,0 +1,31 @@
+fair_id: shimaya-oshiiro-endpaper
+slug: shimaya-oshiiro-endpaper
+fair_name: 彩りの推し色遊び紙フェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: レイド（ライン模様）が美しいカラフルな特殊紙13色から、推し色の遊び紙を選べる。
+benefit_summary: 13色から選べる推し色の遊び紙
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+binding:
+  - perfect
+processes:
+  - endpaper
+  - special_paper
+conditions_text: スタンダードセット・文芸オンデセットなど対象セットのみ。無線綴じのみ（中綴じ不可）。遊び紙は前のみか前後、印刷・加工はなし。料金は前のみ・前後と部数により異なる（申し込み後にスタッフが案内）。締切は対象セットの通常の締切。遊び紙の備考欄に利用する位置と色名を記入。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/oshiiro_asobikami/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

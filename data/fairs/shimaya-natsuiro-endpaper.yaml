@@ -1,0 +1,32 @@
+fair_id: shimaya-natsuiro-endpaper
+slug: shimaya-natsuiro-endpaper
+fair_name: 推せ推せ!懐色遊び紙フェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: どこか懐かしい風合いの特殊紙の遊び紙4種に、スミ・ピュアホワイト・ネオンピンク・シャインゴールド・ルミナスシルバーのいずれかで印刷できる（印刷なしも可）。セミオーダーデザインも選べる。
+benefit_summary: 懐かしい風合いの遊び紙に特色印刷
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+printing_methods:
+  - ondemand
+processes:
+  - endpaper
+  - special_paper
+  - spot_color_printing
+conditions_text: パレットセット・アンティークセット・デラックスダークドリームセットのみ（各プレミアムも対象）。遊び紙はクラフト紙・ファーストヴィンテージ3色から選び、前のみ。セミオーダーデザインの利用は無料（備考欄で申し込み）。料金は用紙・部数により異なる（公式の料金表で確認）。締切は各セットの本文の締切。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://shimaya.net/fair/natuiro/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

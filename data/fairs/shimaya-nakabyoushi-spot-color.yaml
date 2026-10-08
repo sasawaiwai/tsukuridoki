@@ -1,0 +1,32 @@
+fair_id: shimaya-nakabyoushi-spot-color
+slug: shimaya-nakabyoushi-spot-color
+fair_name: 表紙を開けばそこは洒落た中表紙に彩られていたフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: 表紙と本文の間に色上質紙の中表紙を入れ、ホワイト・ピンク・ゴールド・シルバーのいずれかで特色印刷できる。自分のデザインか、表紙のデザインをそのまま印刷できる。
+benefit_summary: 中表紙を入れて特色印刷できる
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+  - other
+printing_methods:
+  - ondemand
+processes:
+  - endpaper
+  - spot_color_printing
+conditions_text: ステープル・文芸ステープル以外の対象セットで利用可（ミニ本・ケース入りブックも対象、各プレミアムも対象）。用紙は色上質紙で、紙の厚さと色はしまやおまかせ。片面デジタルオンデマンド印刷、本文の前のみ。料金は印刷色・部数により異なる（公式の料金表で確認）。本文の入稿時に申し込み（通常の締切以降は不可）。中表紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://shimaya.net/fair/hyousiwohirakeba/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

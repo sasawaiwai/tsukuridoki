@@ -1,0 +1,34 @@
+fair_id: shimaya-special-paper-cover-print
+slug: shimaya-special-paper-cover-print
+fair_name: 特殊紙表紙プリントフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: エンボス紙やパール紙など30種類以上の特殊紙を表紙に使い、オンデマンドで印刷できる。
+benefit_summary: 30種類以上の特殊紙を表紙に使える
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+binding:
+  - perfect
+  - saddle
+printing_methods:
+  - ondemand
+processes:
+  - special_paper
+conditions_text: オンデ表紙セット・オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（各プレミアムも対象。文芸カラーカバーセットなどは表紙のみ）。表紙印刷は対象セットに準じる（オンデマンドフルカラー・スミ・単色）。紙の風合いを生かすため表紙にPP加工は付かない（パルルックはPP加工が必須）。一部の用紙は在庫限り。料金は用紙の種類・部数により異なる（公式の料金表で確認）。締切は対象セットの通常の締切。備考欄に希望の紙名を記入。表紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/sppaper_print/
+  - https://www.shimaya.net/tokusyushi_hyoushi_link/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

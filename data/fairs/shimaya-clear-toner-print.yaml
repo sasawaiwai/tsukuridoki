@@ -1,0 +1,34 @@
+fair_id: shimaya-clear-toner-print
+slug: shimaya-clear-toner-print
+fair_name: 透明プリントフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+start_date: 2025-03-01
+start_date_text: 2025年3月
+start_date_precision: month
+summary: マットPP加工をした表紙の上に、クリアトナーで透明な印刷を重ねられる。自分のデザインか、用意されたデザイン（利用無料）を選べる。
+benefit_summary: マットPPの表紙に透明プリントを重ねる
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - bunko
+  - other
+printing_methods:
+  - ondemand
+processes:
+  - matte_pp
+conditions_text: オンデ表紙セット・オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（各プレミアム、ビデオテープ・DVDケース入りも対象）。表紙用紙はホワイトポスト200kg白のみ、マットPPが付く（ほかのPPとは併用不可）。デザイン透明プリントの利用は無料（備考欄で申し込み）。料金はマットPP込みで部数により異なる（公式の料金表で確認）。締切は表紙・本文とも通常の締切の2営業日前。表紙印刷のみの受付は不可。フェア期間は予告なく変わる場合あり。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/toumei/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

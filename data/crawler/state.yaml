@@ -210,6 +210,16 @@
   last_fetched_at: 2026-10-06T14:26:54+09:00
   fetch_status: ok
   http_status: 200
+- url: https://shimaya.net/fair/5colorhakuoshi/index.html
+  printer_id: shimaya
+  content_hash: sha256:3c37d49a8d88922623617810a8d73d197db907021754e0d2a25c43da19bf4258
+  reviewed_hash: sha256:3c37d49a8d88922623617810a8d73d197db907021754e0d2a25c43da19bf4258
+  content_chars: 1377
+  etag: '"30ae-6384872cb70c0"'
+  last_modified: Tue, 24 Jun 2025 02:54:35 GMT
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://shimaya.net/fair/decospin/
   printer_id: shimaya
   content_hash: sha256:3a62f747a5adffe48bd1d52394b2f39d7a59356232a1ec0b8f2fead03a35fa91
@@ -217,63 +227,63 @@
   content_chars: 5513
   etag: '"a2aa-657cb0b4039c0"'
   last_modified: Thu, 30 Jul 2026 02:43:59 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://shimaya.net/fair/hyousiwohirakeba/
   printer_id: shimaya
   content_hash: sha256:edc200b598a5aa2f5cad4d360f96813ee2dda3695e89ed9ca4d11b6191020c96
-  reviewed_hash: null
+  reviewed_hash: sha256:edc200b598a5aa2f5cad4d360f96813ee2dda3695e89ed9ca4d11b6191020c96
   content_chars: null
   etag: '"6ee6-658bf92e8ebc0"'
   last_modified: Tue, 11 Aug 2026 06:28:07 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/kirairo_2024/index.html
   printer_id: shimaya
   content_hash: sha256:875844768bc98fc788f91cca86f9e25d6ea8bec7c33eb13acaf1d6821fe34b16
-  reviewed_hash: null
+  reviewed_hash: sha256:875844768bc98fc788f91cca86f9e25d6ea8bec7c33eb13acaf1d6821fe34b16
   content_chars: null
   etag: '"18249-62bba92f97f80"'
   last_modified: Wed, 15 Jan 2025 08:36:30 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/koguchi_dp/
   printer_id: shimaya
   content_hash: sha256:47a03ee9e78ef26a20c344c90f5aa149bbc4b7248318e682aaf4cb7d5ce3f668
-  reviewed_hash: null
+  reviewed_hash: sha256:47a03ee9e78ef26a20c344c90f5aa149bbc4b7248318e682aaf4cb7d5ce3f668
   content_chars: 5023
   etag: '"12f19-65d39ecb3f680"'
   last_modified: Wed, 07 Oct 2026 06:07:06 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://shimaya.net/fair/koiiro_2024/index.html
   printer_id: shimaya
   content_hash: sha256:905a1cf00a06bac2ecb7761bfb6f7d2248266e8a1749115bc9a5d5e75fa99239
-  reviewed_hash: null
+  reviewed_hash: sha256:905a1cf00a06bac2ecb7761bfb6f7d2248266e8a1749115bc9a5d5e75fa99239
   content_chars: null
   etag: '"17f56-62bba8dab7740"'
   last_modified: Wed, 15 Jan 2025 08:35:01 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/natuiro/
   printer_id: shimaya
   content_hash: sha256:bf2fcb9eb68eea1d5a266f6e0dfb17b33d14d59e6f9ff274b73054269dddd85d
-  reviewed_hash: null
+  reviewed_hash: sha256:bf2fcb9eb68eea1d5a266f6e0dfb17b33d14d59e6f9ff274b73054269dddd85d
   content_chars: null
   etag: '"2c76b-633208e4328c0"'
   last_modified: Sat, 19 Apr 2025 12:12:59 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/yuruchip/index.html
   printer_id: shimaya
   content_hash: sha256:09f89f0cd1d4b2213558a1daff46cacccc8f29d1638250b2a3da8b3b2b400bc8
-  reviewed_hash: null
+  reviewed_hash: sha256:09f89f0cd1d4b2213558a1daff46cacccc8f29d1638250b2a3da8b3b2b400bc8
   content_chars: null
   etag: '"ec80-6564dc61df706"'
   last_modified: Sat, 11 Jul 2026 03:51:36 GMT
@@ -283,27 +293,37 @@
 - url: https://www.shimaya.net/
   printer_id: shimaya
   content_hash: sha256:8fe01cc010750d47834a985b7b6203e7b42870f9262ba6f6134d2533ce3c29f6
-  reviewed_hash: null
+  reviewed_hash: sha256:8fe01cc010750d47834a985b7b6203e7b42870f9262ba6f6134d2533ce3c29f6
   content_chars: 1302
   etag: '"bd5f-65d12cb5e18c0"'
   last_modified: Mon, 05 Oct 2026 07:26:03 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shimaya.net/fair/2021summer/kura_zarae_cutie.html
   printer_id: shimaya
   content_hash: sha256:3e8b8ebce46fd0c7b0fd8096e446060a57e992953160ab8f807ac323d4658cb6
-  reviewed_hash: null
+  reviewed_hash: sha256:3e8b8ebce46fd0c7b0fd8096e446060a57e992953160ab8f807ac323d4658cb6
   content_chars: 3936
   etag: '"b12a-65d278f723c00"'
   last_modified: Tue, 06 Oct 2026 08:12:32 GMT
   last_fetched_at: 2026-10-08T09:28:36+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.shimaya.net/fair/2021summer/kura_zarae.html
+  printer_id: shimaya
+  content_hash: sha256:8485948c9aa452ed695501ec238169b74b4549e99227846366b1c6b985fefa43
+  reviewed_hash: sha256:8485948c9aa452ed695501ec238169b74b4549e99227846366b1c6b985fefa43
+  content_chars: 3198
+  etag: '"9d33-65002b8ed9ac0"'
+  last_modified: Wed, 22 Apr 2026 01:48:03 GMT
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.shimaya.net/fair/2021summer/washipp.html
   printer_id: shimaya
   content_hash: sha256:aaf8de60c77dfa5fdbe95359ea797fce581d46bba7872a87162b02ffe57ab93e
-  reviewed_hash: null
+  reviewed_hash: sha256:aaf8de60c77dfa5fdbe95359ea797fce581d46bba7872a87162b02ffe57ab93e
   content_chars: null
   etag: '"3d38-63587b3a424c0"'
   last_modified: Tue, 20 May 2025 02:06:51 GMT
@@ -313,7 +333,7 @@
 - url: https://www.shimaya.net/fair/4season/
   printer_id: shimaya
   content_hash: sha256:6f7a5a275145218ce67b953b3725a0263ca60cdb1a4ae1fe1f654e3e5e5549a2
-  reviewed_hash: null
+  reviewed_hash: sha256:6f7a5a275145218ce67b953b3725a0263ca60cdb1a4ae1fe1f654e3e5e5549a2
   content_chars: null
   etag: '"bfe8-65a8c26de8407"'
   last_modified: Thu, 03 Sep 2026 03:57:34 GMT
@@ -323,7 +343,7 @@
 - url: https://www.shimaya.net/fair/asobikami_gacha/
   printer_id: shimaya
   content_hash: sha256:710ea8648093943dad5882359ed95e8ff4351a047e81de8779a80ccfbe25109b
-  reviewed_hash: null
+  reviewed_hash: sha256:710ea8648093943dad5882359ed95e8ff4351a047e81de8779a80ccfbe25109b
   content_chars: null
   etag: '"3f5f-6303383904740"'
   last_modified: Thu, 13 Mar 2025 06:34:29 GMT
@@ -337,9 +357,9 @@
   content_chars: 1538
   etag: '"604f-65a90b3b5e9ea"'
   last_modified: Thu, 03 Sep 2026 09:23:17 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/autumn/haku/index.html
   printer_id: shimaya
   content_hash: sha256:bcc374d60c14c1b2cbba4a2a4f1feeb18cea4085c946faf90069beb7b0964e87
@@ -347,9 +367,9 @@
   content_chars: 1881
   etag: '"5c58-65a68994f0f83"'
   last_modified: Tue, 01 Sep 2026 09:32:35 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/autumn/iroduri/index.html
   printer_id: shimaya
   content_hash: sha256:9f118bd9c7494bc4462aecfc49432c884a833041cd6e7d286895f1554dec36b9
@@ -357,9 +377,9 @@
   content_chars: 1785
   etag: '"5d54-65ce699a2d1c1"'
   last_modified: Sat, 03 Oct 2026 02:42:30 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tokusyushi/index.html
   printer_id: shimaya
   content_hash: sha256:f64a5739fed0ebda386ac02c383f8948fd4029ee89aeb9e4ecfddb3b2e58be99
@@ -367,9 +387,9 @@
   content_chars: 2749
   etag: '"923c-65b2dc48a1b57"'
   last_modified: Fri, 11 Sep 2026 04:46:29 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tomuson/index.html
   printer_id: shimaya
   content_hash: sha256:e52650fcd0016dbc008914c3186305dc0212039d27fb388d0cd3f628a807311a
@@ -377,7 +397,17 @@
   content_chars: 7153
   etag: '"15c86-65a7a8840da29"'
   last_modified: Wed, 02 Sep 2026 06:56:18 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
+- url: https://www.shimaya.net/fair/bunfuri/index.html
+  printer_id: shimaya
+  content_hash: sha256:f997d8e1a3a19a3d092524b3a289260043a88ceb8b13096edb08b0431a770f35
+  reviewed_hash: sha256:f997d8e1a3a19a3d092524b3a289260043a88ceb8b13096edb08b0431a770f35
+  content_chars: 2347
+  etag: '"5bdd-63cc704072700"'
+  last_modified: Wed, 20 Aug 2025 07:35:24 GMT
+  last_fetched_at: 2026-10-08T22:12:36+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shimaya.net/fair/cassette-tape_semiorder/
@@ -393,7 +423,7 @@
 - url: https://www.shimaya.net/fair/design_torepe/index.html
   printer_id: shimaya
   content_hash: sha256:f14e1ba3d9f608b6871d94c355207fafe6cd9d85c608eec108db06758d371883
-  reviewed_hash: null
+  reviewed_hash: sha256:f14e1ba3d9f608b6871d94c355207fafe6cd9d85c608eec108db06758d371883
   content_chars: null
   etag: '"931d-615ce3fbc1140"'
   last_modified: Thu, 11 Apr 2024 08:50:37 GMT
@@ -413,7 +443,7 @@
 - url: https://www.shimaya.net/fair/dourevo_collab/index.html
   printer_id: shimaya
   content_hash: sha256:f0c3a46b837cbc30501d58cd0157b61622b86385414a002b76c37da09202f00d
-  reviewed_hash: null
+  reviewed_hash: sha256:f0c3a46b837cbc30501d58cd0157b61622b86385414a002b76c37da09202f00d
   content_chars: null
   etag: '"13b27-65108d60c9140"'
   last_modified: Tue, 05 May 2026 02:30:53 GMT
@@ -423,7 +453,7 @@
 - url: https://www.shimaya.net/fair/fuchicolor/index.html
   printer_id: shimaya
   content_hash: sha256:6ed44f07a035d57c7ed9d5ce2d5141629ccbb76e6721f004e9dd98990199d7cd
-  reviewed_hash: null
+  reviewed_hash: sha256:6ed44f07a035d57c7ed9d5ce2d5141629ccbb76e6721f004e9dd98990199d7cd
   content_chars: null
   etag: '"11e21-64e740afdc24d"'
   last_modified: Thu, 02 Apr 2026 06:09:27 GMT
@@ -443,7 +473,7 @@
 - url: https://www.shimaya.net/fair/high_pink/index.html
   printer_id: shimaya
   content_hash: sha256:fbe4514db2f28a61557aee883f603f008b5339ba7d1e87490af51462d0c5cfc2
-  reviewed_hash: null
+  reviewed_hash: sha256:fbe4514db2f28a61557aee883f603f008b5339ba7d1e87490af51462d0c5cfc2
   content_chars: null
   etag: '"52bf-646c509ab8040"'
   last_modified: Thu, 25 Dec 2025 11:25:45 GMT
@@ -453,7 +483,7 @@
 - url: https://www.shimaya.net/fair/kazariwaku/index.html
   printer_id: shimaya
   content_hash: sha256:799cc102da154df2222df0f1db13b3a31914d58179322fc80c2521da709685d2
-  reviewed_hash: null
+  reviewed_hash: sha256:799cc102da154df2222df0f1db13b3a31914d58179322fc80c2521da709685d2
   content_chars: null
   etag: '"9003-64e9a59c050ff"'
   last_modified: Sat, 04 Apr 2026 03:51:37 GMT
@@ -463,7 +493,7 @@
 - url: https://www.shimaya.net/fair/koguchi_gd/
   printer_id: shimaya
   content_hash: sha256:ad534af34b2afbc8aaf460fd0017f0ff8eb88e5e49931f752b265d86bd15d04f
-  reviewed_hash: null
+  reviewed_hash: sha256:ad534af34b2afbc8aaf460fd0017f0ff8eb88e5e49931f752b265d86bd15d04f
   content_chars: 3265
   etag: '"7d50-65d39e1053d80"'
   last_modified: Wed, 07 Oct 2026 06:03:50 GMT
@@ -473,7 +503,7 @@
 - url: https://www.shimaya.net/fair/onepoint_haku/index.html
   printer_id: shimaya
   content_hash: sha256:ed29e17b097cb6b8fcb42f5a64cbd0c2ce206fef486fc171a20ef04e24bfb6b7
-  reviewed_hash: null
+  reviewed_hash: sha256:ed29e17b097cb6b8fcb42f5a64cbd0c2ce206fef486fc171a20ef04e24bfb6b7
   content_chars: null
   etag: '"27768-636b92c0a8300"'
   last_modified: Wed, 04 Jun 2025 06:33:16 GMT
@@ -483,7 +513,7 @@
 - url: https://www.shimaya.net/fair/oshiiro_asobikami/index.html
   printer_id: shimaya
   content_hash: sha256:6b148f6b3332c9b2e1f6b572af41fcea06d402ae575aa5418d267ba457f943e3
-  reviewed_hash: null
+  reviewed_hash: sha256:6b148f6b3332c9b2e1f6b572af41fcea06d402ae575aa5418d267ba457f943e3
   content_chars: null
   etag: '"59c5-6439ddd2e7600"'
   last_modified: Sat, 15 Nov 2025 08:26:00 GMT
@@ -493,7 +523,7 @@
 - url: https://www.shimaya.net/fair/see_through/index.html
   printer_id: shimaya
   content_hash: sha256:920a5ce98b814932add91ea7f9251e9a92bc32f492d6f485a388e74438cb6157
-  reviewed_hash: null
+  reviewed_hash: sha256:920a5ce98b814932add91ea7f9251e9a92bc32f492d6f485a388e74438cb6157
   content_chars: null
   etag: '"d6ce-636b938ea6900"'
   last_modified: Wed, 04 Jun 2025 06:36:52 GMT
@@ -513,7 +543,7 @@
 - url: https://www.shimaya.net/fair/sppaper_print/
   printer_id: shimaya
   content_hash: sha256:b6c1cf3a1c030bfe1c96b361de1bf6eb1abf6279783a94e746685cdf40184736
-  reviewed_hash: null
+  reviewed_hash: sha256:b6c1cf3a1c030bfe1c96b361de1bf6eb1abf6279783a94e746685cdf40184736
   content_chars: null
   etag: '"7c92-657a13f713980"'
   last_modified: Tue, 28 Jul 2026 00:52:06 GMT
@@ -537,9 +567,9 @@
   content_chars: 2647
   etag: '"77e4-658bfed03b6aa"'
   last_modified: Tue, 11 Aug 2026 06:53:18 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/summer/haku/index.html
   printer_id: shimaya
   content_hash: sha256:a611bc04f63a23b1b4c8de0e7d1eb0727fa990e256dec5ca93b60057a026f816
@@ -547,9 +577,9 @@
   content_chars: 2212
   etag: '"5bd8-658bfeb2aa8c5"'
   last_modified: Tue, 11 Aug 2026 06:52:47 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/summer/iroduri/index.html
   printer_id: shimaya
   content_hash: sha256:f7dc21374d601ed410b8b95d29b6726d86d259ad2cc61a67e5a5ff86b8daf857
@@ -557,9 +587,9 @@
   content_chars: 1855
   etag: '"7f0c-65cae7ee19764"'
   last_modified: Wed, 30 Sep 2026 07:46:23 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/summer/separeasobi/index.html
   printer_id: shimaya
   content_hash: sha256:8a83af2a8d1c9513cc34c0339ddabe22057e57cc001389834698608cdff6dd3a
@@ -567,9 +597,9 @@
   content_chars: 1710
   etag: '"5f80-658bfe529b43a"'
   last_modified: Tue, 11 Aug 2026 06:51:06 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/summer/tokusyushi/index.html
   printer_id: shimaya
   content_hash: sha256:e90e157c693f271b3533405e944b3deec5d7b277b03956d56fb294fdefe4296c
@@ -577,13 +607,13 @@
   content_chars: 2131
   etag: '"7026-65985b323b026"'
   last_modified: Fri, 21 Aug 2026 02:50:31 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-10-08T22:12:36+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/toumei/
   printer_id: shimaya
   content_hash: sha256:d5f459c8cdc8e3412edcc83f80196f6afa6004eae82c9052c0df1debd2f9918e
-  reviewed_hash: null
+  reviewed_hash: sha256:d5f459c8cdc8e3412edcc83f80196f6afa6004eae82c9052c0df1debd2f9918e
   content_chars: null
   etag: '"675e-651465a12b540"'
   last_modified: Fri, 08 May 2026 03:54:21 GMT

@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.shimaya.net/fair/2021summer/kura_zarae.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:8485948c9aa452ed695501ec238169b74b4549e99227846366b1c6b985fefa43",
+  "content_chars": 3198,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-kurazarae-endpaper",
+      "fair_name": "遊び紙「蔵ざらえ」フェア",
+      "start_date": "2021-07-01",
+      "start_date_text": "2021年7月",
+      "start_date_precision": "month",
+      "end_date": null,
+      "end_date_text": "在庫終了まで（紙がなくなり次第終了）",
+      "end_date_precision": "unknown",
+      "summary": "しまやに眠っている特殊紙の遊び紙を、フェア特別価格で使える。紙ごとの残り部数の目安がページに載っている。",
+      "benefit_summary": "在庫の特殊紙の遊び紙を特別価格で",
+      "binding": [
+        "perfect"
+      ],
+      "processes": [
+        "endpaper",
+        "special_paper"
+      ],
+      "sources": [
+        "https://www.shimaya.net/fair/2021summer/kura_zarae.html",
+        "https://www.shimaya.net/fair/2021summer/kura_zarae_cutie.html"
+      ],
+      "conditions_text": "スタンダードセット・文芸オンデセット・ミニ本セットなど対象セットのみ。無線綴じ・表紙込み16ページ以上のみ。料金：1枚あたり7円・15円・30円の3段階（紙により異なる、前後は倍）。先着順で予約不可、第一・第二希望を備考欄に記入。遊び紙が付いているセットでは差し替え。遊び紙への印刷・加工、申し込み後の変更は不可。締切は各セットの本文の締切日。紙がなくなり次第終了。申し込みがないと利用不可、前入金制、特急入稿は不可。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間は「2021年7月~在庫終了まで」。同じ企画で遊び紙の品ぞろえだけが違う2ページ（kura_zarae・kura_zarae_cutie）を1件にまとめた。"
+}

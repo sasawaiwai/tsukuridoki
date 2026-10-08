@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.shimaya.net/fair/toumei/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:d5f459c8cdc8e3412edcc83f80196f6afa6004eae82c9052c0df1debd2f9918e",
+  "content_chars": 2735,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-clear-toner-print",
+      "fair_name": "透明プリントフェア",
+      "start_date": "2025-03-01",
+      "start_date_text": "2025年3月",
+      "start_date_precision": "month",
+      "summary": "マットPP加工をした表紙の上に、クリアトナーで透明な印刷を重ねられる。自分のデザインか、用意されたデザイン（利用無料）を選べる。",
+      "benefit_summary": "マットPPの表紙に透明プリントを重ねる",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko",
+        "other"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "matte_pp"
+      ],
+      "conditions_text": "オンデ表紙セット・オンデマンドセット 極匠・文芸オンデセットなど対象セットのみ（各プレミアム、ビデオテープ・DVDケース入りも対象）。表紙用紙はホワイトポスト200kg白のみ、マットPPが付く（ほかのPPとは併用不可）。デザイン透明プリントの利用は無料（備考欄で申し込み）。料金はマットPP込みで部数により異なる（公式の料金表で確認）。締切は表紙・本文とも通常の締切の2営業日前。表紙印刷のみの受付は不可。フェア期間は予告なく変わる場合あり。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://www.shimaya.net/fair/toumei/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間は「2025年3月~」で終了日の記載なし（予告なく変更の場合あり）。期間限定・終了日なしとした。"
+}

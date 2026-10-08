@@ -1,0 +1,30 @@
+fair_id: shimaya-see-through-cover
+slug: shimaya-see-through-cover
+fair_name: シースルーカバーフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+summary: 透ける特殊紙（トレーシングペーパー・シープスキン）のカバーに印刷し、カバー巻きまでして届けてくれる。専用デザインも選べる。
+benefit_summary: 透ける特殊紙のカバーを付けられる
+sizes:
+  - A5
+  - B6
+  - shinsho
+  - bunko
+printing_methods:
+  - ondemand
+processes:
+  - special_paper
+  - spot_color_printing
+conditions_text: スタンダードセット・文芸オンデセットなど対象セットのみ（A5・B6・新書・文庫まで、一部併用できないオプションあり）。カバー用紙は9種類、印刷はフルカラー・ピュアホワイト・ネオンピンク・シャインゴールド・ルミナスシルバーから選択。シープスキンはトレーシングペーパーより透けにくい。料金は公式の料金表で確認。締切は表紙・本文・カバーとも通常の締切の2営業日前。カバーのみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/see_through/index.html
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

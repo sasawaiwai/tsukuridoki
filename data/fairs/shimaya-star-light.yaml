@@ -6,6 +6,9 @@ category: dojinshi
 summary: キラキラ輝く特殊紙の表紙（3ラインナップ）と、キラキラの遊び紙（6色）を自由に組み合わせられるフェア。フェア限定のメタリックな特色印刷も追加できる。
 benefit_summary: キラキラ特殊紙の表紙と遊び紙を組み合わせ
 source_type: official_fair
+end_date: 2026-12-31
+end_date_text: 2026年12月末受付分まで
+end_date_precision: month
 conditions_text: 特殊紙表紙（純白・星影・極彩の3ラインナップ）と遊び紙（6色）を合わせての注文が必須（片方だけの場合は問い合わせか、ほかのフェアを利用）。遊び紙への印刷はオプションで追加。フェア限定の印刷色（ルミナスアクア・ピンク・グリーン・オレンジ）を追加オプションで選べる。
 processes:
   - special_paper
@@ -13,6 +16,9 @@ processes:
   - spot_color_printing
 sources:
   - https://www.shimaya.net/fair/star/
+  - https://www.shimaya.net/tokusyushi_hyoushi_link/
+tags:
+  - limited_time
 published_at: 2026-10-08
 discovered_at: 2026-10-08
 verified_at: 2026-10-08
@@ -20,3 +26,6 @@ verification_status: verified
 history:
   - date: 2026-10-08
     type: published
+  - date: 2026-10-08
+    type: updated
+    field: end_date, sources, tags

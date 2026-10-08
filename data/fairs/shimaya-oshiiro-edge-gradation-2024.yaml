@@ -1,0 +1,31 @@
+fair_id: shimaya-oshiiro-edge-gradation-2024
+slug: shimaya-oshiiro-edge-gradation-2024
+fair_name: 彩の推し色 小口染めグラデーションフェア
+printer_id: shimaya
+category: dojinshi
+source_type: official_fair
+specific_sets_only: true
+application_required: true
+end_date: 2024-10-31
+end_date_text: 2024年10月末受付分まで
+end_date_precision: month
+summary: 推し色34色から1〜2色を選んで、本の小口（1面または3面）にグラデーションをフルカラー印刷できたフェア。
+benefit_summary: 本の小口に推し色のグラデーション
+sizes:
+  - A5
+  - B6
+  - shinsho
+  - bunko
+  - other
+processes:
+  - edge_printing
+conditions_text: 対象セットのみ（ビデオテープ・DVDケース入りブックも対象）。背幅2mm以上の本。A5は小口側1面のみ。締切は1面印刷が通常の締切の6営業日前、3面印刷が8営業日前。備考欄に推し色を指定。前入金制、特急入稿は不可。
+sources:
+  - https://www.shimaya.net/fair/koguchi_gd/
+published_at: 2026-10-08
+discovered_at: 2026-10-08
+verified_at: 2026-10-08
+verification_status: verified
+history:
+  - date: 2026-10-08
+    type: published

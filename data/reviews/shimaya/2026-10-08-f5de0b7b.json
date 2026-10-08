@@ -1,0 +1,35 @@
+{
+  "source_url": "https://shimaya.net/fair/5colorhakuoshi/index.html",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:3c37d49a8d88922623617810a8d73d197db907021754e0d2a25c43da19bf4258",
+  "content_chars": 1377,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-5color-foil",
+      "fair_name": "5color箔押しフェア",
+      "start_date": "2019-11-30",
+      "start_date_text": "2019年11月30日",
+      "start_date_precision": "day",
+      "summary": "セレクトされたスペシャルメタリック箔5色から選んで、表紙に箔押しできる。",
+      "benefit_summary": "スペシャルメタリック箔5色で箔押し",
+      "processes": [
+        "foil"
+      ],
+      "conditions_text": "対象セットのみ。クラウンセットは、無料オプションの箔押しを5color箔押しに変更できる。料金はサイズ・部数により異なる（申し込み後にスタッフが案内）。締切は各セットの表紙（またはカバー）の箔押しの締切日。備考欄に「5color箔押しフェア希望」と箔色を記入。表紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://shimaya.net/fair/5colorhakuoshi/index.html"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "開催期間は「2019年11月30日~」で終了日の記載なし。期間限定・終了日なしとした。"
+}

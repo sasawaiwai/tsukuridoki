@@ -1,0 +1,44 @@
+{
+  "source_url": "https://shimaya.net/fair/natuiro/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:bf2fcb9eb68eea1d5a266f6e0dfb17b33d14d59e6f9ff274b73054269dddd85d",
+  "content_chars": 5547,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-natsuiro-endpaper",
+      "fair_name": "推せ推せ!懐色遊び紙フェア",
+      "summary": "どこか懐かしい風合いの特殊紙の遊び紙4種に、スミ・ピュアホワイト・ネオンピンク・シャインゴールド・ルミナスシルバーのいずれかで印刷できる（印刷なしも可）。セミオーダーデザインも選べる。",
+      "benefit_summary": "懐かしい風合いの遊び紙に特色印刷",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "endpaper",
+        "special_paper",
+        "spot_color_printing"
+      ],
+      "conditions_text": "パレットセット・アンティークセット・デラックスダークドリームセットのみ（各プレミアムも対象）。遊び紙はクラフト紙・ファーストヴィンテージ3色から選び、前のみ。セミオーダーデザインの利用は無料（備考欄で申し込み）。料金は用紙・部数により異なる（公式の料金表で確認）。締切は各セットの本文の締切。遊び紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://shimaya.net/fair/natuiro/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間の記載がないため、期間限定・開始日と終了日なし（開催中・終了日の記載なし）とした（公式が常設と言っていないため常設にしない）。"
+}

@@ -1,0 +1,44 @@
+{
+  "source_url": "https://shimaya.net/fair/hyousiwohirakeba/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:edc200b598a5aa2f5cad4d360f96813ee2dda3695e89ed9ca4d11b6191020c96",
+  "content_chars": 3099,
+  "extractor": "manual",
+  "extracted_at": "2026-10-08T22:18:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "source_type": "official_fair",
+      "specific_sets_only": true,
+      "application_required": true,
+      "fair_id": "shimaya-nakabyoushi-spot-color",
+      "fair_name": "表紙を開けばそこは洒落た中表紙に彩られていたフェア",
+      "summary": "表紙と本文の間に色上質紙の中表紙を入れ、ホワイト・ピンク・ゴールド・シルバーのいずれかで特色印刷できる。自分のデザインか、表紙のデザインをそのまま印刷できる。",
+      "benefit_summary": "中表紙を入れて特色印刷できる",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko",
+        "other"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "endpaper",
+        "spot_color_printing"
+      ],
+      "conditions_text": "ステープル・文芸ステープル以外の対象セットで利用可（ミニ本・ケース入りブックも対象、各プレミアムも対象）。用紙は色上質紙で、紙の厚さと色はしまやおまかせ。片面デジタルオンデマンド印刷、本文の前のみ。料金は印刷色・部数により異なる（公式の料金表で確認）。本文の入稿時に申し込み（通常の締切以降は不可）。中表紙のみの納品は不可。申し込みがないと利用不可、前入金制、特急入稿は不可。",
+      "sources": [
+        "https://shimaya.net/fair/hyousiwohirakeba/"
+      ]
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間の記載がないため、期間限定・開始日と終了日なし（開催中・終了日の記載なし）とした（公式が常設と言っていないため常設にしない）。"
+}
