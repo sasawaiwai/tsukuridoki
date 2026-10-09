@@ -32,6 +32,7 @@ const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
   pastCards={past.map(toCard)}
   searchHref={`${SEARCH_HREF}?printer=${printer.printer_id}`}
   archiveYears={archiveYears(data.fairs, today)}
+  emptyText="現在、ツクリドキ！に掲載しているフェアはありません。"
 >
   <p slot="header">
     <Button href={printer.official_url} variant="secondary" target="_blank" rel="noopener">{printer.name}の公式サイト</Button>

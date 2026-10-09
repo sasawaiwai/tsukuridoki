@@ -18,9 +18,11 @@ interface Props {
   searchHref?: string;
   /** 下部に出す年別アーカイブ。アーカイブ自身では渡さない */
   archiveYears?: string[];
+  /** 開催中・開催前のフェアがないときの文（印刷所別では「掲載していない」と「開催していない」を混同しない言い方にする） */
+  emptyText?: string;
 }
 
-const { title, description, cards, pastCards = [], total = cards.length, searchHref = SEARCH_HREF, archiveYears = [] } = Astro.props;
+const { title, description, cards, pastCards = [], total = cards.length, searchHref = SEARCH_HREF, archiveYears = [], emptyText } = Astro.props;
 const showPast = cards.length === 0 && pastCards.length > 0;
 ---
 
@@ -37,14 +39,14 @@ const showPast = cards.length === 0 && pastCards.length > 0;
     {
       showPast ? (
         <>
-          <p class="list-page__empty">現在開催中のフェアはありません。</p>
+          <p class="list-page__empty">{emptyText ?? '現在開催中のフェアはありません。'}</p>
           <section class="list-page__past">
             <h2>過去のフェア</h2>
             <FairGrid cards={pastCards} />
           </section>
         </>
       ) : (
-        <FairGrid cards={cards} />
+        <FairGrid cards={cards} emptyText={emptyText} />
       )
     }
 
