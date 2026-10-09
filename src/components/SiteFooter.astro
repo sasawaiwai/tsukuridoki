@@ -14,6 +14,9 @@ import pkg from '../../package.json';
         {SITE.name}は、{SITE.operator}が運営する同人誌印刷所フェア情報サイトです。<br />
         企画・情報発信協力：{SITE.cooperation}
       </p>
+      <p class="site-footer__notice">
+        掲載情報は変更される場合があります。最新の開催状況・利用条件は各印刷所の公式サイトでご確認ください。
+      </p>
     </div>
     <nav aria-label="サイト情報">
       <ul>
@@ -60,7 +63,8 @@ import pkg from '../../package.json';
     font-size: var(--fs-xs);
   }
 
-  .site-footer__operator {
+  .site-footer__operator,
+  .site-footer__notice {
     margin-top: var(--space-3);
     color: var(--color-text-muted);
     font-size: var(--fs-xs);
