@@ -5,6 +5,7 @@ printer_id: popls
 category: dojinshi
 sources:
   - https://www2.popls.co.jp/pop/fair/2026summer.html
+  - https://www2.popls.co.jp/pop/shinchaku/s250612.html
 summary: トレペのデザイン遊び紙とカラー遊び紙が、550円＋1冊66円から550円＋1冊44円に値引きされる。
 benefit_summary: トレペ遊び紙が1冊66円→44円
 source_type: official_fair
@@ -32,8 +33,11 @@ application_required: false
 conditions_text: スタンダードセットが対象（快速本・モノクロ特快は対象外）。挿入は前のみ、平とじのみ、片面印刷。通常550円＋1冊66円→フェア550円＋1冊44円（税込）。期間内に注文と原稿が揃ったものに自動適用。
 published_at: 2026-10-06
 discovered_at: 2026-10-06
-verified_at: 2026-10-06
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-06
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: sources
