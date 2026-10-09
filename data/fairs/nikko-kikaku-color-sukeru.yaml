@@ -8,7 +8,6 @@ sources:
 summary: トレペの表紙にオンデマンドのフルカラーで印刷し、本文が透けて見える中綴じの本のセット。早期入稿で10%オフ。
 benefit_summary: トレペ表紙のカラー透ける本・早期入稿で10%OFF
 source_type: official_fair
-timing_type: ongoing
 conditions_text: 表紙は通常のオンデマンドフルカラー（RGBオンデマンド不可）、用紙はトレペホワイト74kgのみ。本文はスミ刷りで用紙1色選択（紙替え不可）、上質紙90kg・淡クリームキンマリ90kgも可。中綴じのみで、総ページは表紙込みで4ページ単位。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。
 sizes:
   - A5
@@ -23,8 +22,11 @@ benefit_types:
   - discount
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type

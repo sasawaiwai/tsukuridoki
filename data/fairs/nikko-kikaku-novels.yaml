@@ -8,8 +8,7 @@ sources:
 summary: 小説本向けの、オンデマンドの文庫・新書判のセット。カバーや遊び紙をオプションで付けられ、早く入稿するほど最大30%オフになる。
 benefit_summary: 文庫・新書の小説本が早期入稿で最大30%OFF
 source_type: official_fair
-timing_type: ongoing
-conditions_text: 表紙はNPホワイト200kg（PP加工なし）のスミ刷り、本文は上質紙・淡クリームキンマリ。無線綴じのみ（中綴じ不可）。カバー（クリアPP・マットPP・クラフト・トレペ）や遊び紙は有料オプション。早期入稿で30%・20%・10%オフ。ピックアップイベント・とらのあな・メロンブックスへの直接納品は送料無料。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。300ページ以上は締切が3営業日早まる。
+conditions_text: 表紙はNPホワイト200kg（PP加工なし）のスミ刷り、本文は上質紙・淡クリームキンマリ。無線綴じのみ（中綴じ不可）。カバー（クリアPP・マットPP・クラフト・トレペ）や遊び紙は有料オプション。早期入稿で30%・20%・10%オフ。ピックアップイベント・とらのあな・メロンブックスへの直接納品は送料無料。早期入稿の割引はページ内に料金の記載があるものが対象で、それ以外のオプションは対象外。300ページ以上は締切が3営業日早まる。
 sizes:
   - bunko
   - shinsho
@@ -25,8 +24,14 @@ tags:
   - for_novels
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type
+  - date: 2026-10-09
+    type: updated
+    field: conditions_text

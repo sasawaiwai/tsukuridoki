@@ -8,7 +8,6 @@ sources:
 summary: 早割セットやスタンダードフルカラーセットに、箔押し（50平方cmまで）を付けられる。早割セット・フルカラー10%オフとも組み合わせられる。
 benefit_summary: 表紙に箔押しを付けられる
 source_type: official_fair
-timing_type: ongoing
 conditions_text: 箔は50平方cmまで。ホログラム箔（オーロラ金・つぶつぶ金・クラッシュ金）はパターンのつなぎ目が入ることがある。早期割引はセット料金のみで、黄金箔の料金は対象外。にこぷり見積もり・クレジット決済は非対応。300ページ以上は締切が3営業日早まる。
 printing_methods:
   - offset
@@ -16,8 +15,11 @@ processes:
   - foil
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type

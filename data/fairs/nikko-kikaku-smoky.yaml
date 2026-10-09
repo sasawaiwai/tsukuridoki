@@ -8,8 +8,7 @@ sources:
 summary: 再生紙など個性的な表紙用紙に、好きな2色のインクでオフセット印刷する本のセット。早期入稿で10%オフ。
 benefit_summary: 個性派の表紙用紙に2色刷り・早期入稿で10%OFF
 source_type: official_fair
-timing_type: ongoing
-conditions_text: 表紙はオフセット2色刷り（1色・3色も可）、用紙は無料の2種と1冊30円の1種。本文はオフセットスミ刷りで用紙1色選択（紙替え不可）。遊び紙あり（後ろに入れる場合は1冊10円）。再生紙のため毛羽立ち・インクの色の出方に特徴があり、不良扱いにはならない。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。
+conditions_text: 表紙はオフセット2色刷り（1色・3色も可）、用紙は無料の2種と1冊30円の1種。本文はオフセットスミ刷りで用紙1色選択（紙替え不可）。遊び紙あり（後ろに入れる場合は1冊10円）。再生紙のため毛羽立ち・インクの色の出方に特徴があり、不良扱いにはならない。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。3色刷りと300ページ以上は、それぞれ締切が3営業日早まる。
 sizes:
   - A5
   - B6
@@ -28,8 +27,14 @@ benefit_types:
   - discount
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type
+  - date: 2026-10-09
+    type: updated
+    field: conditions_text
