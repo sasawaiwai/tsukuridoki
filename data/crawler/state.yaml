@@ -43,7 +43,7 @@
 - url: https://www.nikko-pc.com/site/12p/
   printer_id: nikko-kikaku
   content_hash: sha256:e08a2b40878ccca180792764f6cfbf39e2e14d03688adf456f0377aaf62a9c9f
-  reviewed_hash: null
+  reviewed_hash: sha256:e08a2b40878ccca180792764f6cfbf39e2e14d03688adf456f0377aaf62a9c9f
   content_chars: 1673
   etag: null
   last_modified: null
@@ -163,7 +163,7 @@
 - url: https://www.nikko-pc.com/site/fc8p/
   printer_id: nikko-kikaku
   content_hash: sha256:1e87ae3ba2449ab9cf07d96774d0accac6526347839c734c02487df7eec362e8
-  reviewed_hash: null
+  reviewed_hash: sha256:1e87ae3ba2449ab9cf07d96774d0accac6526347839c734c02487df7eec362e8
   content_chars: 2120
   etag: null
   last_modified: null

@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fc8p/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:1e87ae3ba2449ab9cf07d96774d0accac6526347839c734c02487df7eec362e8",
+  "content_chars": 2120,
+  "extractor": "manual",
+  "extracted_at": "2026-10-09T17:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-color-8p",
+      "fair_name": "カラーハチペフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fc8p/"
+      ],
+      "summary": "表2・3を含む8ページすべてをオンデマンドのフルカラー（RGBオンデマンドも可）で印刷する、コート紙の中綴じ小冊子のセット。",
+      "benefit_summary": "全ページフルカラーの8ページ小冊子セット",
+      "source_type": "official_fair",
+      "conditions_text": "用紙はコート紙135kgのみ。CMYKデータの場合は通常のオンデマンドで印刷。変形サイズは不可。表紙・本文とも表面保護がないため、こすれによる汚れ・トナー剥げが出ることがある。中綴じのため左右ページの製本位置がずれることがある。料金はA5・B5共通で、部数により異なる（公式の料金表で確認）。ピックアップイベントは送料無料。完全前金制（銀行振込のみ）。",
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "binding": [
+        "saddle"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "color_modes": [
+        "CMYK",
+        "RGB"
+      ],
+      "rgb_supported": true,
+      "min_pages": 8,
+      "max_pages": 8
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "トップのバナーにあるが URL に fair を含まないため watch_urls で巡回。期間の記載も常設の記載もないため期間限定・日付なし（開催中（終了日の記載なし））。料金表のみで金額は書かない。"
+}
