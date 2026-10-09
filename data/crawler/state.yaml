@@ -12,12 +12,12 @@
   http_status: 200
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
-  content_hash: sha256:14a5423ee8a45fde1bfec946ed5f2f4183b06dd98743ee1035bbb294c0fd1e51
-  reviewed_hash: sha256:14a5423ee8a45fde1bfec946ed5f2f4183b06dd98743ee1035bbb294c0fd1e51
-  content_chars: 15979
-  etag: '"1284f-65d39e027317c"'
-  last_modified: Wed, 07 Oct 2026 06:03:35 GMT
-  last_fetched_at: 2026-10-08T09:00:58+09:00
+  content_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
+  reviewed_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
+  content_chars: 15014
+  etag: '"119b9-65d6213f70aa0"'
+  last_modified: Fri, 09 Oct 2026 06:01:23 GMT
+  last_fetched_at: 2026-10-09T21:17:28+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/fair/ondekuchie
