@@ -8,8 +8,7 @@ sources:
 summary: オフセットフルカラーの表紙に、しゃりしゃりした手触りのマット系PP加工ができる本のセット。蛍光ピンクを混ぜた刷り方も選べる。早期入稿で10%オフ。
 benefit_summary: しゃりしゃり手触りの特殊PP・早期入稿で10%OFF
 source_type: official_fair
-timing_type: ongoing
-conditions_text: 表紙用紙はNPホワイト200kg。刷り方は通常（St-4）・蛍光ピンク50%（Comic-4）・蛍光ピンク差し替えから選択。本文はオフセットスミ刷りで、上質紙・ハイバルギー・美弾紙・淡クリームキンマリなどから選択。印刷サンプルはオンラインショップで販売。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。
+conditions_text: 表紙用紙はNPホワイト200kg。刷り方は通常（St-4）・蛍光ピンク50%（Comic-4）・蛍光ピンク差し替えから選択。本文はオフセットスミ刷りで、上質紙・ハイバルギー・美弾紙・淡クリームキンマリなどから選択。印刷サンプルはオンラインショップで販売。早期入稿で10%オフ。早期入稿の割引は料金表と有料オプションが対象で、追加オプションの料金は対象外。240ページ以上は締切が3営業日早まる。
 printing_methods:
   - offset
 processes:
@@ -18,8 +17,14 @@ benefit_types:
   - discount
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type
+  - date: 2026-10-09
+    type: updated
+    field: conditions_text

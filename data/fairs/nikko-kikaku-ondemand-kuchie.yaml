@@ -8,7 +8,6 @@ sources:
 summary: オンデマンドの無線綴じの本に、口絵（片面印刷）を巻頭へ1枚差し込める。トレペなど透ける用紙も選べる。
 benefit_summary: 巻頭にカラー口絵を差し込める
 source_type: official_fair
-timing_type: ongoing
 conditions_text: 片面印刷。コート紙110kgのみRGBオンデマンド、ほかは通常のオンデマンド（CMYK）。差し込みは巻頭1枚のみで遊び紙とは併用不可。オンデマンド無線綴じのみ（中綴じ・オフセット本文は不可）。口絵だけの印刷は不可。トレペは透けるため、本文と図柄を合わせるデザインはずれる。
 binding:
   - perfect
@@ -20,8 +19,11 @@ color_modes:
 rgb_supported: true
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-07
+verified_at: 2026-10-09
 verification_status: verified
 history:
   - date: 2026-10-07
     type: published
+  - date: 2026-10-09
+    type: updated
+    field: timing_type

@@ -4,6 +4,10 @@ official_url: https://www.nikko-pc.com/
 # フェアの一覧ページはなく、トップにフェアの個別ページ（/site/fair-○○/）へのリンクが並ぶ
 fair_index_url: https://www.nikko-pc.com/site/
 fair_link_selector: 'a[href*="fair"]'
+# トップのフェアのバナーのうち、URLに「fair」を含まず上のセレクタで拾えないもの（2026-10-09確認）
+watch_urls:
+  - https://www.nikko-pc.com/site/fc8p/
+  - https://www.nikko-pc.com/site/12p/
 domains: [nikko-pc.com]
 # リンクはトップページ固定（運営方針）。会社概要に「イベント支援HPへの掲載の際は https://www.nikko-pc.com/ へ」とある
 link_policy: top_page_only
