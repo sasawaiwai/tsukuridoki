@@ -1,0 +1,27 @@
+fair_id: nikko-kikaku-orihon-12p
+slug: nikko-kikaku-orihon-12p
+fair_name: 12pおりほんフェア
+printer_id: nikko-kikaku
+category: dojinshi
+sources:
+  - https://www.nikko-pc.com/site/12p/
+  - https://www.nikko-pc.com/site/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%94%af%e6%8f%b4%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/
+summary: 表2・3を含む12ページすべてにオンデマンドのスミ刷りで印刷できる、全ページ同じ用紙の小冊子のセット。8ページでも同じ料金。
+benefit_summary: 表2・3も印刷できる12ページの小冊子セット
+source_type: official_fair
+end_date: null
+end_date_text: 在庫が無くなり次第終了
+end_date_precision: unknown
+conditions_text: インクはオンデマンドスミ刷りのみ。全ページ同じ用紙で、部分的な紙替えは不可。変形サイズは不可。料金はA5・B5共通で、部数により異なる（公式の料金表で確認）。送料無料の対象は、フェアのページでは「バックアップイベント」と表記（日光企画は2026年6月に支援イベントの名称を「ピックアップイベント」に変更と案内）。対象イベントは公式のピックアップイベント一覧で確認。完全前金制（銀行振込のみ）。
+sizes:
+  - A5
+  - B5
+printing_methods:
+  - ondemand
+published_at: 2026-10-09
+discovered_at: 2026-10-09
+verified_at: 2026-10-09
+verification_status: verified
+history:
+  - date: 2026-10-09
+    type: published

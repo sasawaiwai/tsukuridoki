@@ -1,0 +1,36 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/12p/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:e08a2b40878ccca180792764f6cfbf39e2e14d03688adf456f0377aaf62a9c9f",
+  "content_chars": 1673,
+  "extractor": "manual",
+  "extracted_at": "2026-10-09T17:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-orihon-12p",
+      "fair_name": "12pおりほんフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/12p/",
+        "https://www.nikko-pc.com/site/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%94%af%e6%8f%b4%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/"
+      ],
+      "summary": "表2・3を含む12ページすべてにオンデマンドのスミ刷りで印刷できる、全ページ同じ用紙の小冊子のセット。8ページでも同じ料金。",
+      "benefit_summary": "表2・3も印刷できる12ページの小冊子セット",
+      "source_type": "official_fair",
+      "end_date": null,
+      "end_date_text": "在庫が無くなり次第終了",
+      "end_date_precision": "unknown",
+      "conditions_text": "インクはオンデマンドスミ刷りのみ。全ページ同じ用紙で、部分的な紙替えは不可。変形サイズは不可。料金はA5・B5共通で、部数により異なる（公式の料金表で確認）。送料無料の対象は、フェアのページでは「バックアップイベント」と表記（日光企画は2026年6月に支援イベントの名称を「ピックアップイベント」に変更と案内）。対象イベントは公式のピックアップイベント一覧で確認。完全前金制（銀行振込のみ）。",
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "トップのバナーにあるが URL に fair を含まないため watch_urls で巡回。開始日の記載なし・「在庫が無くなり次第終了」。送料無料の「バックアップイベント」は旧称と見られるが、名称変更のお知らせ（2026-06-03）には旧称が書かれていないため、同一とは断定せず両方の事実を併記。ページ数は12（8ページも同料金）のため min/max は書かず条件欄に記載。"
+}
