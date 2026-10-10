@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/glitterpp.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:4357f244de7026f01f89dd5c3ff8a2f1e56548294a6eac5d9305fcd9ee26fdaa",
+  "content_chars": 3968,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-glitter-pp-2026",
+      "fair_name": "グリッターPPフェア",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/glitterpp.html"
+      ],
+      "summary": "グリッターのようにきらめく表面のPP「グリッターPP」を表紙に加工できる。特殊紙ノスタルジー メランコリーとの組み合わせも可。",
+      "benefit_summary": "表紙にグリッターPPを加工できる",
+      "source_type": "official_fair",
+      "start_date": "2026-08-01",
+      "start_date_text": "2026年8月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-03-31",
+      "end_date_text": "2027年3月31日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "special_pp"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "加工対象は基本カラー表紙（ハイマッキンレーポスト）またはノスタルジー メランコリー230。対象はカラーセット・小説本セット（カラー表紙・A5のみ）・オールカラーセット。B5は背幅4mmまで（超える場合は別途見積）。本文16ページの場合は84kg未満の本文用紙は不可。カバーへの加工は不可。〆切は表紙+6営業日。料金は部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:ce19cc63cb2cf12b3cb2de0a41c0fbe729f6fff483f05f1c78901f2cf84f2a03",
+  "content_chars": 2587,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "フェア一覧のページ。各フェアの対象期間（納品日での表記）は個別ページと照合した。"
+}

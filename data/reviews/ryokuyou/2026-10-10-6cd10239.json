@@ -1,0 +1,147 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:abf1f510fe594afe216ba904d2550a5bb1a0453bd65394e4fd0067109ef621f7",
+  "content_chars": 25959,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-wedding-foil-2026",
+      "fair_name": "ウェディングキスフェア：愛あふれる箔押し 限定色",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html"
+      ],
+      "summary": "期間限定の箔4色（透明アバロン・シャンパンシルバー・アプリコット・シャボン）をフェア価格で使える。",
+      "benefit_summary": "限定の箔4色をフェア価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "foil"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "透明アバロン・シャボンは限定生産のため、なくなり次第終了。シャボンは高精細箔では使えない。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日、〆切の3営業日前までに予約。料金は箔・面積により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-wedding-endpaper-2026",
+      "fair_name": "ウェディングキスフェア：マリアージュ遊び紙",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html"
+      ],
+      "summary": "パール・メタリック・トレーシングペーパーなど4種の特殊紙の遊び紙を、フェア価格で使える。",
+      "benefit_summary": "限定の遊び紙4種をフェア価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "前倒しなし（早割〜通常〆切まで）。〆切日の3営業日前までに予約（在庫の都合で予約なし・即日発注は断られる場合あり）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット・デジタルオールカラーセット・デジタル小説本セット・デジタルミックスセット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット・デジタルブラックセット。前後に挟む場合は2倍の料金。料金はコース・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-wedding-thomson-heart-2026",
+      "fair_name": "ウェディングキスフェア：トムソン加工ハート5%OFF",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html"
+      ],
+      "summary": "トムソン加工（型抜き）でハート型を使うと、オプション価格から5%OFF。",
+      "benefit_summary": "トムソン加工のハート型が5%OFF",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "die_cut"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "サイズはA5以上。加工対象は基本表紙・基本口絵。形状はハート（80mm×70mm）で、オリジナル型は対象外。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-wedding-moon-color-2026",
+      "fair_name": "ウェディングキスフェア：OKムーンカラー5%OFF",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html"
+      ],
+      "summary": "特殊紙カラー表紙「OKムーンカラー ホワイトN」が、オプション価格から5%OFF。",
+      "benefit_summary": "OKムーンカラー表紙5%OFF",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "加工なし、4色フルカラー（5色はオプション）。背幅はB5 7mm・A5 30mmまで。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は4色で表紙+6営業日、5色で+10営業日（早割〜通常〆切まで）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。"
+}

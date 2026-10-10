@@ -1,0 +1,156 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/bushido.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:180311a1f4b77f77909d0afc4907a2b91afd077a5a9f84c84bf742f8837d0790",
+  "content_chars": 15495,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-bushido-shikoku-cover-2026",
+      "fair_name": "武士道フェア：しこくてんれい表紙",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bushido.html"
+      ],
+      "summary": "カラー表紙に特殊紙「しこくてんれい しろ 180kg」をフェア価格で使える。",
+      "benefit_summary": "特殊紙「しこくてんれい」の表紙をフェア価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "4色フルカラー・加工なし。背幅はB5 7mm・A5 30mmまで。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙+6営業日（早割〜通常〆切まで）、〆切日の3営業日前までに予約。料金は部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bushido-endpaper-2026",
+      "fair_name": "武士道フェア：特選・和の遊び紙",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bushido.html"
+      ],
+      "summary": "和の特殊紙5種（い織り・ことぶき・江戸小染・玉しき・新だん紙）の遊び紙をフェア価格で使える。",
+      "benefit_summary": "和の特殊紙の遊び紙をフェア価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "江戸小染・玉しき・新だん紙は数量限定（受注可能数あり、予約先着順）。前倒しなし（早割〜通常〆切まで）。〆切日の3営業日前までに予約（在庫の都合で予約なし・即日発注は断られる場合あり）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット・デジタルオールカラーセット・デジタル小説本セット・デジタルミックスセット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット・デジタルブラックセット。前後に挟む場合は2倍の料金。料金はコース・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bushido-metallic-cover-2026",
+      "fair_name": "武士道フェア：メタリック表紙5%OFF",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bushido.html"
+      ],
+      "summary": "金・銀・ヘアラインのメタリック表紙オプションが5%OFF。",
+      "benefit_summary": "メタリック表紙5%OFF",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "4色フルカラー＋白止め（AM限定、表2-3印刷不可）、クリアPPまたはマットPP。背幅はA5 30mm・B5 7mmまで。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙+6営業日。寸足らず表紙・表2-3印刷との併用、背幅上限を超える場合は別途見積。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bushido-ink-free-2026",
+      "fair_name": "武士道フェア：色刷表紙 伝統色インキ加算無料",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bushido.html"
+      ],
+      "summary": "色刷表紙セット・小説本セットの表紙に、限定インキ3色（深緋・桑の実・千歳緑）が加算無料で使える。",
+      "benefit_summary": "限定インキ3色が加算無料",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "spot_color_printing"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "限定インキ（深緋・桑の実・千歳緑）"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "対象は色刷表紙セット・小説本セット（カラー表紙を除く）。数量限定・なくなり次第終了。前倒しなし（通常〆切の場合は〆切日の2営業日前までに予約）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。"
+}

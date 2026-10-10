@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/fair_select202610.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:45d6cd987fb3c98b38251476623d45e214b7699a10878298e66d8e84be7e84ab",
+  "content_chars": 1970,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-poster-stand-free-2026-10",
+      "fair_name": "大判ポスターorポスタースタンド 無料フェア（10/4・10/11・10/25納品）",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/fair_select202610.html"
+      ],
+      "summary": "10/4・10/11・10/25に東京ビッグサイト・インテックス大阪へ直接搬入するオフセット印刷の新刊に、大判ポスターかポスタースタンドのどちらか1つを無料で付ける。",
+      "benefit_summary": "大判ポスターまたはポスタースタンドが無料",
+      "source_type": "official_fair",
+      "end_date": "2026-10-25",
+      "end_date_text": "2026年10月4日・11日・25日納品限定",
+      "end_date_precision": "day",
+      "usable_until": "2026-10-16",
+      "usable_until_text": "ポスタースタンドの予約〆切 10/16(金)正午（10/25合わせ）",
+      "usable_until_precision": "day",
+      "deadline_type": "event",
+      "printing_methods": [
+        "offset"
+      ],
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "大判ポスター",
+        "ポスタースタンド"
+      ],
+      "event_delivery_only": true,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "冊子1種につきどちらか1つ。大判ポスターはB1以下（壁配置はA0まで）、10/25合わせの入稿〆切はB1以下10/10(土)正午・A0は10/6(火)正午（冊子の〆切とは別）。対象はスタンダードコースのセット（カラーセット・色刷表紙セット・小説本セット・オールカラーセット・A4オールカラーセット・コミックスパック・上製本セット・オールカラー上製本セット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット）とカスタムコース。他社表紙持込は不可。新刊と一括で会場に直接搬入する場合のみ。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。10/4・10/11合わせの〆切は過ぎているため、入稿期限は10/25合わせのスタンド予約〆切とした。"
+}

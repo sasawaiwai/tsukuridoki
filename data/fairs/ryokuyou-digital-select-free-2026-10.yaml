@@ -1,0 +1,32 @@
+fair_id: ryokuyou-digital-select-free-2026-10
+slug: ryokuyou-digital-select-free-2026-10
+fair_name: デジタルコース限定「ひとつ選べる無料フェア」（10/4・10/11・10/25納品）
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/digi_select202610.html
+  - https://www.ryokuyou.co.jp/doujin/info/limit_20261025.html
+summary: 10/4・10/11・10/25に東京ビッグサイト・インテックス大阪へ納品するデジタル印刷の冊子に、納品部数+2冊・スターリーカラー・プレシャスカラーのいずれか1つを無料で付ける。
+benefit_summary: 納品部数+2冊などから1つ選んで無料
+source_type: official_fair
+end_date: 2026-10-25
+end_date_text: 2026年10月4日・11日・25日納品限定
+end_date_precision: day
+deadline_type: event
+benefit_types:
+  - free_option
+free_options:
+  - 納品部数+2冊
+  - スターリーカラー
+  - プレシャスカラー
+event_delivery_only: true
+specific_sets_only: true
+application_required: true
+conditions_text: 冊子1種につき1つ。対象はデジタルオールカラーセット・デジタル小説本セット・デジタルミックスセット・デジタルブラックセット（デジタルブラックセットは+2冊のみ）。+2冊は冊子の〆切どおり。スターリーカラー（シルバー系10色）・プレシャスカラーはB5以下・ハイマッキンレーポスト（クリアPPまたはマットPP）表紙限定で、フェア〆切は10/8(木)正午。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

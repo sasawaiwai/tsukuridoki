@@ -1,0 +1,42 @@
+fair_id: ryokuyou-bungaku-trepe-endpaper-2026
+slug: ryokuyou-bungaku-trepe-endpaper-2026
+fair_name: 文学装丁フェア：常備トレペ遊び紙5種5%OFF
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bungakusoutei.html
+summary: 常備のトレペ遊び紙5柄（桜ふぶき・サイダー・霞・星座・ハート）が5%OFF。小説本向けのフェアだが、漫画・イラストの本にも使える。
+benefit_summary: トレペ遊び紙5柄が5%OFF
+source_type: official_fair
+start_date: 2026-05-01
+start_date_text: 2026年5月1日納品分から
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 2026年10月31日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+binding:
+  - perfect
+  - saddle
+printing_methods:
+  - offset
+processes:
+  - endpaper
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: 中とじは表紙込40頁まで・前後のみ（2倍の料金）。前倒しなし（早割〜通常〆切まで）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット・デジタルオールカラーセット・デジタル小説本セット・デジタルミックスセット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット・デジタルブラックセット。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

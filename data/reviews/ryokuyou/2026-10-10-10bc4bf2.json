@@ -1,0 +1,128 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:cbee4f12e778a93845f684b662247a90ef952353dc248a4d724c563abf703823",
+  "content_chars": 3189,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-bunfuri-endpaper-free-2026",
+      "fair_name": "「文学フリマ 東京43」入稿応援フェア：遊び紙 色上質7色 無料",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html"
+      ],
+      "summary": "文学フリマ東京43に納品する新刊に、色上質（厚口）7色の遊び紙を前のみ無料で挟み込める（900部まで）。",
+      "benefit_summary": "色上質の遊び紙（前のみ）が無料",
+      "source_type": "official_fair",
+      "end_date": "2026-11-08",
+      "end_date_text": "2026年11月8日納品限定",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "文学フリマ東京43",
+      "event_date": "2026-11-08",
+      "event_delivery_only": true,
+      "application_required": true,
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "遊び紙（色上質厚口・前のみ）"
+      ],
+      "max_quantity": 900,
+      "specific_sets_only": true,
+      "conditions_text": "900部まで・前のみ。中とじの本・折とじ本セットは対象外。通常〆切まで利用可（割増は対象外）。対象はスタンダード（カラー・色刷表紙・小説本・オールカラー）、デジタル（オールカラー・小説本・ミックス）、ふんわりモンテシオン・プレミアム箔押し×トポラスF・デジタルブラックの各セットとカスタムコース。このフェアの4つの特典は併用できる。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bunfuri-cover-discount-2026",
+      "fair_name": "「文学フリマ 東京43」入稿応援フェア：カラーカバー 一律割引",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html"
+      ],
+      "summary": "文学フリマ東京43に納品する新刊のカバーが一律割引。カラーカバー・特殊紙カラーカバーは3,000円引き、デジタルカラーカバーは1,000円引き。",
+      "benefit_summary": "カラーカバー3,000円引き（デジタルは1,000円引き）",
+      "source_type": "official_fair",
+      "end_date": "2026-11-08",
+      "end_date_text": "2026年11月8日納品限定",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "文学フリマ東京43",
+      "event_date": "2026-11-08",
+      "event_delivery_only": true,
+      "application_required": true,
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_amount": 3000,
+      "specific_sets_only": true,
+      "conditions_text": "仕様・〆切は各カバーオプションのとおり。対象はスタンダード（カラー・色刷表紙・小説本・オールカラー）、デジタル（オールカラー・小説本・ミックス）、ふんわりモンテシオン・プレミアム箔押し×トポラスF・デジタルブラックの各セットとカスタムコース。このフェアの4つの特典は併用できる。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bunfuri-bookmark-free-2026",
+      "fair_name": "「文学フリマ 東京43」入稿応援フェア：文字サイズがわかるしおり 無料",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html"
+      ],
+      "summary": "文学フリマ東京43に納品する新刊に、「読んでいる本の文字サイズがわかるしおり」を無料で付ける。",
+      "benefit_summary": "文字サイズがわかるしおりが無料",
+      "source_type": "official_fair",
+      "end_date": "2026-11-08",
+      "end_date_text": "2026年11月8日納品限定",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "文学フリマ東京43",
+      "event_date": "2026-11-08",
+      "event_delivery_only": true,
+      "application_required": true,
+      "usable_until": "2026-10-28",
+      "usable_until_text": "10/28(水)正午までに冊子としおりを予約",
+      "usable_until_precision": "day",
+      "benefit_types": [
+        "novelty"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "対象はスタンダード（カラー・色刷表紙・小説本・オールカラー）、デジタル（オールカラー・小説本・ミックス）、ふんわりモンテシオン・プレミアム箔押し×トポラスF・デジタルブラックの各セットとカスタムコース（A4オールカラーセット・コミックスパックも可）。新刊と一括で会場に直接搬入する場合のみ。本文の入稿がない場合は納品キャンセル。自己申告制（予約時に申請）。"
+    },
+    {
+      "fair_id": "ryokuyou-bunfuri-delivery-free-2026",
+      "fair_name": "「文学フリマ 東京43」入稿応援フェア：搬入代すべて無料",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html"
+      ],
+      "summary": "文学フリマ東京43はバックアップイベントのため、新刊・在庫の搬入代がすべて無料。セットに含まれる納品代1か所分と合わせて2か所分が無料になる。",
+      "benefit_summary": "新刊・在庫の搬入代が無料",
+      "source_type": "official_fair",
+      "end_date": "2026-11-08",
+      "end_date_text": "2026年11月8日納品限定",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "文学フリマ東京43",
+      "event_date": "2026-11-08",
+      "event_delivery_only": true,
+      "application_required": true,
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "搬入代"
+      ],
+      "conditions_text": "入稿の際に分納がある旨を伝える。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。"
+}

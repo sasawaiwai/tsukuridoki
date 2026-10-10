@@ -1,0 +1,32 @@
+fair_id: ryokuyou-wedding-foil-2026
+slug: ryokuyou-wedding-foil-2026
+fair_name: ウェディングキスフェア：愛あふれる箔押し 限定色
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html
+summary: 期間限定の箔4色（透明アバロン・シャンパンシルバー・アプリコット・シャボン）をフェア価格で使える。
+benefit_summary: 限定の箔4色をフェア価格で
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+printing_methods:
+  - offset
+processes:
+  - foil
+benefit_types:
+  - limited_product
+specific_sets_only: true
+application_required: true
+conditions_text: 透明アバロン・シャボンは限定生産のため、なくなり次第終了。シャボンは高精細箔では使えない。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日、〆切の3営業日前までに予約。料金は箔・面積により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

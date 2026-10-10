@@ -1,0 +1,16 @@
+printer_id: ryokuyou
+name: 緑陽社
+# 会社のトップ（www.ryokuyou.co.jp/）とは別に、同人誌印刷のトップ（/doujin/）がある。リンクは同人誌印刷のトップ
+official_url: https://www.ryokuyou.co.jp/doujin/
+# 「開催中のフェア」。#campaign-list に対象期間つきでフェアが並ぶ（2026-10-10確認：19件）
+fair_index_url: https://www.ryokuyou.co.jp/doujin/campaign
+crawl_selector: '#content'
+fair_link_selector: '#campaign-list a'
+domains: [ryokuyou.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約・リンクに関するページは見当たらず。robots.txtはグッズ等の一部ページのみ禁止（2026-10-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-10

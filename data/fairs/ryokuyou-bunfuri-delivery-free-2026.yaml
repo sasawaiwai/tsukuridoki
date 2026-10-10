@@ -1,0 +1,30 @@
+fair_id: ryokuyou-bunfuri-delivery-free-2026
+slug: ryokuyou-bunfuri-delivery-free-2026
+fair_name: 「文学フリマ 東京43」入稿応援フェア：搬入代すべて無料
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html
+summary: 文学フリマ東京43はバックアップイベントのため、新刊・在庫の搬入代がすべて無料。セットに含まれる納品代1か所分と合わせて2か所分が無料になる。
+benefit_summary: 新刊・在庫の搬入代が無料
+source_type: official_fair
+end_date: 2026-11-08
+end_date_text: 2026年11月8日納品限定
+end_date_precision: day
+deadline_type: event
+event_name: 文学フリマ東京43
+event_date: 2026-11-08
+event_delivery_only: true
+application_required: true
+benefit_types:
+  - free_option
+free_options:
+  - 搬入代
+conditions_text: 入稿の際に分納がある旨を伝える。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

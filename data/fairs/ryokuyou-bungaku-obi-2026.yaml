@@ -1,0 +1,36 @@
+fair_id: ryokuyou-bungaku-obi-2026
+slug: ryokuyou-bungaku-obi-2026
+fair_name: 文学装丁フェア：帯・カバー+帯5%OFF
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bungakusoutei.html
+summary: 「帯」「カバー＋帯」のオプション料金が5%OFF。
+benefit_summary: 帯・カバー＋帯が5%OFF
+source_type: official_fair
+start_date: 2026-05-01
+start_date_text: 2026年5月1日納品分から
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 2026年10月31日納品分まで
+end_date_precision: day
+sizes:
+  - A5
+  - B6
+  - bunko
+  - shinsho
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: A5以下（文庫・B6・新書も可）。ハイマッキンレーアート135kg・4色フルカラー（裏面印刷なし）・クリアPPまたはマットPP。冊子と同時発注のみ。〆切はカバー＋帯で表紙・本文+2営業日、帯のみで+1営業日（帯・カバーはその4営業日前）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

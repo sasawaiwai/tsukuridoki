@@ -1,0 +1,36 @@
+fair_id: ryokuyou-bungaku-sukashi-tobira-2026
+slug: ryokuyou-bungaku-sukashi-tobira-2026
+fair_name: 文学装丁フェア：片ツヤ透かし扉
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bungakusoutei.html
+summary: 片ツヤクラフト紙（生成り）に特色1色またはフルカラーで印刷した扉を、巻頭または巻末に挟み込める。
+benefit_summary: 片ツヤクラフト紙の透かし扉
+source_type: official_fair
+start_date: 2026-05-01
+start_date_text: 2026年5月1日納品分から
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 2026年10月31日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+binding:
+  - perfect
+benefit_types:
+  - limited_product
+specific_sets_only: true
+application_required: true
+conditions_text: 用紙は数量限定（B5以下2,800部まで、予約先着順）。特色1色（ゴールド・シルバー・ビビッドピンク・スミ）または4色フルカラー、高精細デジタル印刷。無線とじ限定、巻頭または巻末。部数はオフセット印刷商品30〜500部・デジタル印刷商品10〜500部。〆切はオフセットが本文〆切の3営業日前、デジタルが表紙・本文+1営業日。料金はコース・サイズ・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

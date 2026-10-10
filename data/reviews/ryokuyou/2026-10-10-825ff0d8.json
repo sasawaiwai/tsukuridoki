@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/twitterhashtag.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:4818d4bef66f72f9ecec55401676db15f32c75e6469bfa09e1fc460cb5f84001",
+  "content_chars": 1795,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-hashtag-points",
+      "fair_name": "「#緑陽社で作ってみた」でポイントプレゼント",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/twitterhashtag.html"
+      ],
+      "summary": "緑陽社で作った同人誌・グッズの感想を「#緑陽社で作ってみた」を付けてX・Bluesky・noteに投稿し、フォームで申請すると緑陽ポイントがもらえる。",
+      "benefit_summary": "感想の投稿で緑陽ポイント（X・Bluesky 300pt、note 1,000pt）",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "points"
+      ],
+      "application_required": true,
+      "conditions_text": "冊子・グッズ1種類・1投稿につき1回（同じものはSNSごとに最大3回）。申請フォームからの申請が必要で、非公開アカウントは不可。ポイントは冊子の印刷に使え、グッズの割引には使えない。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "公式のフェア一覧に【常時開催】として掲載。個別ページに「2022.1.6~常時開催決定」。"
+}

@@ -1,0 +1,40 @@
+fair_id: ryokuyou-bunfuri-endpaper-free-2026
+slug: ryokuyou-bunfuri-endpaper-free-2026
+fair_name: 「文学フリマ 東京43」入稿応援フェア：遊び紙 色上質7色 無料
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html
+summary: 文学フリマ東京43に納品する新刊に、色上質（厚口）7色の遊び紙を前のみ無料で挟み込める（900部まで）。
+benefit_summary: 色上質の遊び紙（前のみ）が無料
+source_type: official_fair
+end_date: 2026-11-08
+end_date_text: 2026年11月8日納品限定
+end_date_precision: day
+deadline_type: event
+event_name: 文学フリマ東京43
+event_date: 2026-11-08
+event_delivery_only: true
+application_required: true
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+processes:
+  - endpaper
+benefit_types:
+  - free_option
+free_options:
+  - 遊び紙（色上質厚口・前のみ）
+max_quantity: 900
+specific_sets_only: true
+conditions_text: 900部まで・前のみ。中とじの本・折とじ本セットは対象外。通常〆切まで利用可（割増は対象外）。対象はスタンダード（カラー・色刷表紙・小説本・オールカラー）、デジタル（オールカラー・小説本・ミックス）、ふんわりモンテシオン・プレミアム箔押し×トポラスF・デジタルブラックの各セットとカスタムコース。このフェアの4つの特典は併用できる。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/designselecthaku.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:3078d77dd48c6608f57bedac0e1b94f9f3158a1e7b3556b7c79170be77f1f6df",
+  "content_chars": 10437,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-design-select-foil",
+      "fair_name": "デザインセレクト箔",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/designselecthaku.html"
+      ],
+      "summary": "10種の箔デザインと23種の箔・空押しから組み合わせを選んで、表紙に押せる定型の箔押し。",
+      "benefit_summary": "定型デザインの箔押しを手軽な価格で",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "foil",
+        "blind_emboss"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "デザインはテンプレートのまま使う（拡大・縮小・変形・反転・一部の移動は不可）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日。料金は箔の種類により異なり、1か所分の価格（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "個別ページに「常時開催になりました」。ページ内のショコラティエフェア・きゅるふわフェアへの言及は、フェア一覧に掲載がなく年の記載もないため登録しない。"
+}
