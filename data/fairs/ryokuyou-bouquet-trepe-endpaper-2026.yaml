@@ -1,0 +1,38 @@
+fair_id: ryokuyou-bouquet-trepe-endpaper-2026
+slug: ryokuyou-bouquet-trepe-endpaper-2026
+fair_name: ブーケトレペ遊び紙
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bouquet_asobi.html
+summary: 花束の柄を印刷したトレーシングペーパーの遊び紙を、期間限定で挟み込める。
+benefit_summary: ブーケトレペ遊び紙が使える
+source_type: official_fair
+start_date: 2026-08-01
+start_date_text: 2026年8月1日納品分から
+start_date_precision: day
+end_date: 2027-05-31
+end_date_text: 2027年5月31日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+printing_methods:
+  - offset
+processes:
+  - endpaper
+benefit_types:
+  - limited_product
+specific_sets_only: true
+application_required: true
+conditions_text: 高精細デジタル印刷の遊び紙。前倒しなし（早割〜通常〆切まで）。〆切日の3営業日前までに予約（在庫の都合で予約なし・即日発注は断られる場合あり）。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット・デジタルオールカラーセット・デジタル小説本セット・デジタルミックスセット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット・デジタルブラックセット。前後に挟む場合は2倍の料金。料金はコース・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

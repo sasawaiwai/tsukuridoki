@@ -1,0 +1,22 @@
+fair_id: ryokuyou-hashtag-points
+slug: ryokuyou-hashtag-points
+fair_name: 「#緑陽社で作ってみた」でポイントプレゼント
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/twitterhashtag.html
+summary: 緑陽社で作った同人誌・グッズの感想を「#緑陽社で作ってみた」を付けてX・Bluesky・noteに投稿し、フォームで申請すると緑陽ポイントがもらえる。
+benefit_summary: 感想の投稿で緑陽ポイント（X・Bluesky 300pt、note 1,000pt）
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - points
+application_required: true
+conditions_text: 冊子・グッズ1種類・1投稿につき1回（同じものはSNSごとに最大3回）。申請フォームからの申請が必要で、非公開アカウントは不可。ポイントは冊子の印刷に使え、グッズの割引には使えない。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

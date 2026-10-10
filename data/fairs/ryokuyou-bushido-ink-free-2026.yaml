@@ -1,0 +1,34 @@
+fair_id: ryokuyou-bushido-ink-free-2026
+slug: ryokuyou-bushido-ink-free-2026
+fair_name: 武士道フェア：色刷表紙 伝統色インキ加算無料
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bushido.html
+summary: 色刷表紙セット・小説本セットの表紙に、限定インキ3色（深緋・桑の実・千歳緑）が加算無料で使える。
+benefit_summary: 限定インキ3色が加算無料
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+printing_methods:
+  - offset
+processes:
+  - spot_color_printing
+benefit_types:
+  - free_option
+free_options:
+  - 限定インキ（深緋・桑の実・千歳緑）
+specific_sets_only: true
+application_required: true
+conditions_text: 対象は色刷表紙セット・小説本セット（カラー表紙を除く）。数量限定・なくなり次第終了。前倒しなし（通常〆切の場合は〆切日の2営業日前までに予約）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

@@ -1,0 +1,38 @@
+fair_id: ryokuyou-hotstamp-big-2026
+slug: ryokuyou-hotstamp-big-2026
+fair_name: 全面箔押しフェア
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/hotstamp_big.html
+summary: B5全面（495cm²以内）に高精細箔押しができるオプションを、フェア限定価格で提供。
+benefit_summary: B5全面の高精細箔押しをフェア限定価格で
+source_type: official_fair
+start_date: 2026-01-01
+start_date_text: 2026年1月1日納品分から
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 2026年10月31日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+min_quantity: 30
+max_quantity: 3000
+printing_methods:
+  - offset
+processes:
+  - foil
+specific_sets_only: true
+application_required: true
+conditions_text: 箔押しサイズは495cm²以内。表紙用紙はハイマッキンレーポスト200kg＋クリアPPまたはマットPP限定（ジュエリーはマットPP限定）。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙〆切の10営業日前。料金は箔の種類・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

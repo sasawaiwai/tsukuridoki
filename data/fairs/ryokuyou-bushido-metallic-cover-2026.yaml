@@ -1,0 +1,38 @@
+fair_id: ryokuyou-bushido-metallic-cover-2026
+slug: ryokuyou-bushido-metallic-cover-2026
+fair_name: 武士道フェア：メタリック表紙5%OFF
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bushido.html
+summary: 金・銀・ヘアラインのメタリック表紙オプションが5%OFF。
+benefit_summary: メタリック表紙5%OFF
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+binding:
+  - perfect
+printing_methods:
+  - offset
+processes:
+  - special_paper
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: 4色フルカラー＋白止め（AM限定、表2-3印刷不可）、クリアPPまたはマットPP。背幅はA5 30mm・B5 7mmまで。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙+6営業日。寸足らず表紙・表2-3印刷との併用、背幅上限を超える場合は別途見積。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

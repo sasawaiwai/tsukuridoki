@@ -1,0 +1,40 @@
+fair_id: ryokuyou-bushido-shikoku-cover-2026
+slug: ryokuyou-bushido-shikoku-cover-2026
+fair_name: 武士道フェア：しこくてんれい表紙
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bushido.html
+summary: カラー表紙に特殊紙「しこくてんれい しろ 180kg」をフェア価格で使える。
+benefit_summary: 特殊紙「しこくてんれい」の表紙をフェア価格で
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+  - B6
+  - bunko
+  - shinsho
+binding:
+  - perfect
+printing_methods:
+  - offset
+processes:
+  - special_paper
+benefit_types:
+  - limited_product
+specific_sets_only: true
+application_required: true
+conditions_text: 4色フルカラー・加工なし。背幅はB5 7mm・A5 30mmまで。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙+6営業日（早割〜通常〆切まで）、〆切日の3営業日前までに予約。料金は部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

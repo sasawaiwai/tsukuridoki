@@ -1,0 +1,33 @@
+fair_id: ryokuyou-wedding-thomson-heart-2026
+slug: ryokuyou-wedding-thomson-heart-2026
+fair_name: ウェディングキスフェア：トムソン加工ハート5%OFF
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html
+summary: トムソン加工（型抜き）でハート型を使うと、オプション価格から5%OFF。
+benefit_summary: トムソン加工のハート型が5%OFF
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+printing_methods:
+  - offset
+processes:
+  - die_cut
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: サイズはA5以上。加工対象は基本表紙・基本口絵。形状はハート（80mm×70mm）で、オリジナル型は対象外。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

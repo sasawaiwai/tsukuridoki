@@ -1,0 +1,31 @@
+fair_id: ryokuyou-body-color-free
+slug: ryokuyou-body-color-free
+fair_name: 本文色刷無料フェア
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/fair_color_change.html
+summary: 毎月決まったフェア〆切までに入稿すると、本文の1色刷り（指定5色から1色）のオプションが無料になる。
+benefit_summary: 本文色刷りオプションが無料
+source_type: official_fair
+timing_type: recurring
+submission_dates_text: 毎月実施。納品日ごとにフェア〆切がある（公式の〆切表で確認）
+sizes:
+  - B5
+  - A5
+processes:
+  - color_body
+benefit_types:
+  - free_option
+free_options:
+  - 本文色刷
+specific_sets_only: true
+application_required: true
+conditions_text: 対象はカラーセット・色刷表紙セット・デジタルミックスセット。刷り色はえんじ・こげ茶・ビリジアン・むらさき・ブルーブラックから1色。表紙・本文同日〆切（昼12時）。本文中の紙替え・色替え、巻中の口絵・扉・遊び紙の挟み込み（巻頭・巻末は可）、各セットの基本用紙以外の本文用紙は対象外。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

@@ -1,0 +1,30 @@
+fair_id: ryokuyou-bunfuri-cover-discount-2026
+slug: ryokuyou-bunfuri-cover-discount-2026
+fair_name: 「文学フリマ 東京43」入稿応援フェア：カラーカバー 一律割引
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html
+summary: 文学フリマ東京43に納品する新刊のカバーが一律割引。カラーカバー・特殊紙カラーカバーは3,000円引き、デジタルカラーカバーは1,000円引き。
+benefit_summary: カラーカバー3,000円引き（デジタルは1,000円引き）
+source_type: official_fair
+end_date: 2026-11-08
+end_date_text: 2026年11月8日納品限定
+end_date_precision: day
+deadline_type: event
+event_name: 文学フリマ東京43
+event_date: 2026-11-08
+event_delivery_only: true
+application_required: true
+benefit_types:
+  - discount
+discount_amount: 3000
+specific_sets_only: true
+conditions_text: 仕様・〆切は各カバーオプションのとおり。対象はスタンダード（カラー・色刷表紙・小説本・オールカラー）、デジタル（オールカラー・小説本・ミックス）、ふんわりモンテシオン・プレミアム箔押し×トポラスF・デジタルブラックの各セットとカスタムコース。このフェアの4つの特典は併用できる。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

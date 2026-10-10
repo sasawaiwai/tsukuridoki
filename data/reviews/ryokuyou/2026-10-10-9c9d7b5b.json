@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/starhaku.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:1de2b69f1f36166b9ee07e031b832ed9c1a6511eb1d1abc54b8aacc8b1b14ae1",
+  "content_chars": 5367,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-star-foil-2026",
+      "fair_name": "星降る夜の箔押しフェア",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/starhaku.html",
+        "https://www.ryokuyou.co.jp/doujin/campaign"
+      ],
+      "summary": "星空のようにきらめく期間限定のホログラム箔（ステラゴールド・ティンクルゴールド・ステラシルバー）をフェア価格で使える。",
+      "benefit_summary": "限定のホログラム箔をフェア価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027年2月28日納品分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "foil"
+      ],
+      "benefit_types": [
+        "limited_product"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "ステラゴールド・ティンクルゴールドは限定生産のため、なくなり次第終了。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日、〆切の3営業日前までに予約。高精細箔は別途見積。料金は面積により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [
+    "conditions_unclear"
+  ],
+  "master_candidates": [],
+  "note": "期間はフェア一覧の「2026.10.01~2027.02.28納品分」による。個別ページは「2027.8.31納品分まで」で一致しない（要確認）。ページは「箔色4種」とあるが記載は3色。"
+}

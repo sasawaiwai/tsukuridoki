@@ -1,0 +1,38 @@
+fair_id: ryokuyou-sweetdiner-nostalgie-cover-2026
+slug: ryokuyou-sweetdiner-nostalgie-cover-2026
+fair_name: スイートダイナーフェア：ノスタルジー表紙5%OFF
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/sweetdiner.html
+summary: 偏光・ホログラム表紙「ノスタルジー メランコリー」が、オプション価格から5%OFF。
+benefit_summary: ノスタルジー表紙5%OFF
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-04-30
+end_date_text: 2027年4月30日納品分まで
+end_date_precision: day
+sizes:
+  - B5
+  - A5
+binding:
+  - perfect
+printing_methods:
+  - offset
+processes:
+  - special_paper
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: 4色フルカラー＋白止め（AMカラー限定、表2-3印刷不可）、クリアPPまたはマットPP。背幅はA5 30mm・B5 7mmまで（超える場合は別途見積）。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙+6営業日。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published

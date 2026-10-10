@@ -1,0 +1,48 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/hotstamp_big.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:77aed4e54ae3707779bdb95231a83269d90cc57d4d9fd4848fa8dc1730a002ed",
+  "content_chars": 4826,
+  "extractor": "manual",
+  "extracted_at": "2026-10-10T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-hotstamp-big-2026",
+      "fair_name": "全面箔押しフェア",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/hotstamp_big.html"
+      ],
+      "summary": "B5全面（495cm²以内）に高精細箔押しができるオプションを、フェア限定価格で提供。",
+      "benefit_summary": "B5全面の高精細箔押しをフェア限定価格で",
+      "source_type": "official_fair",
+      "start_date": "2026-01-01",
+      "start_date_text": "2026年1月1日納品分から",
+      "start_date_precision": "day",
+      "end_date": "2026-10-31",
+      "end_date_text": "2026年10月31日納品分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "bunko",
+        "shinsho"
+      ],
+      "min_quantity": 30,
+      "max_quantity": 3000,
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "foil"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "箔押しサイズは495cm²以内。表紙用紙はハイマッキンレーポスト200kg＋クリアPPまたはマットPP限定（ジュエリーはマットPP限定）。対象はカラーセット・小説本セット（カラー表紙のみ）・オールカラーセット。〆切は表紙〆切の10営業日前。料金は箔の種類・部数により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "本文の「当フェアは終了しました」はHTML上は非表示で、日時になると表示される仕組み（現時点では表示されていない）。"
+}

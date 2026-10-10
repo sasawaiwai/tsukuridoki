@@ -1,0 +1,33 @@
+fair_id: ryokuyou-star-foil-2026
+slug: ryokuyou-star-foil-2026
+fair_name: 星降る夜の箔押しフェア
+printer_id: ryokuyou
+category: dojinshi
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/starhaku.html
+  - https://www.ryokuyou.co.jp/doujin/campaign
+summary: 星空のようにきらめく期間限定のホログラム箔（ステラゴールド・ティンクルゴールド・ステラシルバー）をフェア価格で使える。
+benefit_summary: 限定のホログラム箔をフェア価格で
+source_type: official_fair
+start_date: 2026-10-01
+start_date_text: 2026年10月1日納品分から
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027年2月28日納品分まで
+end_date_precision: day
+printing_methods:
+  - offset
+processes:
+  - foil
+benefit_types:
+  - limited_product
+specific_sets_only: true
+application_required: true
+conditions_text: ステラゴールド・ティンクルゴールドは限定生産のため、なくなり次第終了。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日、〆切の3営業日前までに予約。高精細箔は別途見積。料金は面積により異なる（公式の価格表で確認）。自己申告制（予約時に申請）。
+published_at: 2026-10-10
+discovered_at: 2026-10-10
+verified_at: 2026-10-10
+verification_status: verified
+history:
+  - date: 2026-10-10
+    type: published
