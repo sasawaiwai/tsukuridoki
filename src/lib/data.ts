@@ -27,7 +27,19 @@ export function readYamlDir<T = unknown>(dir: string): YamlFile<T>[] {
     .map((name) => readYamlFile<T>(join(dir, name)));
 }
 
+/**
+ * ビルド中は1回だけ読み、全ページで使い回す（ページごとに全件を読み直すと、件数×ページ数で遅くなるため）。
+ * 開発用サーバー（npm run dev）では、YAMLの変更がすぐ反映されるよう毎回読み直す。
+ * import.meta.env がない Node の実行（データ検証・巡回）では使い回さない
+ */
+let buildCache: SiteData | null = null;
+
 export function loadSiteData(): SiteData {
+  if (import.meta.env?.PROD) return (buildCache ??= readSiteData());
+  return readSiteData();
+}
+
+function readSiteData(): SiteData {
   return {
     fairs: readYamlDir<Fair>('fairs').map((f) => f.data),
     printers: readYamlDir<Printer>('printers').map((f) => f.data),
