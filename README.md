@@ -82,6 +82,12 @@ npm run review -- stats                                  # 実測値（確認ペ
 
 `/dev/` 以下は正式公開後も検索エンジンに載せない（noindex・sitemap.xml から除外）。
 
+## 開発時の注意
+
+- 開発用サーバー（`npm run dev`）では、**フェアの詳細ページ（`/dojin/fairs/{slug}/`）だけ、YAMLの変更が反映されない**（一覧・印刷所別・検索などのページには反映される）。詳細ページはフェアを `getStaticPaths()` から受け取っており、Astro の開発用サーバーがその結果を覚えておくため。`npm run build` で作るサイト（本番）には影響しない
+- 対処：開発用サーバーを再起動する（今は修正しない）
+- 将来修正するときは、ビルドの速さが落ちないことも確認する（データの読み込みはビルド中1回にまとめている。`src/lib/data.ts`）
+
 ## 正式公開（noindex解除）の前にやること
 
 - `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く（`Disallow: /dojin/tab/` は残す）
