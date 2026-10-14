@@ -47,7 +47,12 @@ function ordered(e: Partial<StateEntry> & Pick<StateEntry, 'url' | 'printer_id'>
 
 export function loadState(file = STATE_FILE): StateEntry[] {
   if (!existsSync(file)) return [];
-  return ((parse(readFileSync(file, 'utf8')) as StateEntry[] | null) ?? []).map(ordered);
+  return parseState(readFileSync(file, 'utf8'));
+}
+
+/** state.yaml の中身（文字列）を読む。取り込み（import.ts）で、元のコミットや artifact の記録を読むときにも使う */
+export function parseState(text: string): StateEntry[] {
+  return ((parse(text) as StateEntry[] | null) ?? []).map(ordered);
 }
 
 export function saveState(entries: StateEntry[], file = STATE_FILE): void {

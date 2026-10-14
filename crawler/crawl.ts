@@ -1,12 +1,15 @@
 // 巡回の入口（仕様書7章、phase3-design）
-//   npm run crawl                          allowed の印刷所を巡回（間隔が来ているものだけ）
-//   npm run crawl -- --printer=xxx         1社だけ巡回（間隔を無視）
-//   npm run crawl -- --printer=xxx --dry   state.yaml を書き換えずに試す
-//   npm run crawl -- --printer=xxx --dry --max-urls=1  一覧ページだけで試す（初回の調整用）
-//   npm run crawl -- --show-text           取り出した本文と見つけたリンクを画面に出す（手元確認用。Actions では使えない）
+// 巡回は Actions で行い、結果を npm run crawl:import で取り込む（仕様書61章）
+//   Actions：npm run crawl -- --out=<フォルダ>  allowed の印刷所を巡回（間隔が来ているものだけ）。state.yaml と meta.json を書き出す
+// 手元での巡回は障害対応・新しい印刷所のセレクタ調整のときだけ（61-4。--local と --printer が必要）
+//   npm run crawl -- --local --printer=xxx         1社だけ巡回（間隔を無視）
+//   npm run crawl -- --local --printer=xxx --dry   state.yaml を書き換えずに試す
+//   npm run crawl -- --local --printer=xxx --dry --max-urls=1  一覧ページだけで試す（初回の調整用）
+//   npm run crawl -- --local --printer=xxx --show-text         取り出した本文と見つけたリンクを画面に出す（手元確認用。Actions では使えない）
 // 結果は画面とジョブの概要欄に出す。本文はどこにも残さない（7-2）
 
-import { appendFileSync } from 'node:fs';
+import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { readYamlDir } from '../src/lib/data.ts';
 import { hostMatches } from '../src/lib/sources.ts';
@@ -14,6 +17,7 @@ import type { Printer } from '../src/lib/types.ts';
 import { extract, type ExtractNote } from './extract.ts';
 import { printerAccess, ROBOTS_DENIED, type AccessContext } from './access.ts';
 import { Pacer, type FetchStatus } from './fetch.ts';
+import { META_FILE, RESULT_STATE_FILE, type CrawlMeta } from './import.ts';
 import { applyResult, loadState, nowJst, saveState, type StateEntry } from './state.ts';
 
 /** 1回の巡回で1印刷所あたりに取得するURLの上限（4-2） */
@@ -201,7 +205,18 @@ function printRows(rows: Row[]): void {
   }
 }
 
-function summaryMarkdown(rows: Row[], printers: Printer[], wrote: boolean): string {
+/** Actions の巡回結果を書き出す（61-2。artifact に入れる）。本文は入れない */
+export function writeResult(dir: string, entries: StateEntry[], meta: CrawlMeta): void {
+  mkdirSync(dir, { recursive: true });
+  saveState(entries, join(dir, RESULT_STATE_FILE));
+  writeFileSync(join(dir, META_FILE), `${JSON.stringify(meta, null, 2)}\n`);
+}
+
+export function countRows(rows: Row[]): Record<string, number> {
+  return Object.fromEntries(ORDER.map((o) => [o, rows.filter((r) => r.outcome === o).length]));
+}
+
+function summaryMarkdown(rows: Row[], printers: Printer[], wrote: string): string {
   const name = new Map(printers.map((p) => [p.printer_id, p.name]));
   const cell = (s: string) => s.replace(/\|/g, '\\|');
   const lines = [
@@ -213,7 +228,7 @@ function summaryMarkdown(rows: Row[], printers: Printer[], wrote: boolean): stri
     '|---|---|---|---|---|',
     ...rows.map((r) => `| ${cell(name.get(r.printer_id) ?? r.printer_id)} | ${r.outcome} | ${cell(r.url)} | ${r.chars ?? ''} | ${cell(r.detail)} |`),
     '',
-    wrote ? 'state.yaml を更新しました。' : 'state.yaml は書き換えていません。',
+    wrote,
     '',
   ];
   return lines.join('\n');
@@ -226,14 +241,35 @@ async function main(): Promise<void> {
       dry: { type: 'boolean', default: false },
       'show-text': { type: 'boolean', default: false },
       'max-urls': { type: 'string' },
+      local: { type: 'boolean', default: false },
+      out: { type: 'string' },
     },
   });
+  const inActions = process.env.GITHUB_ACTIONS === 'true';
+  // 61-4：手元からの巡回は例外のときだけ。対象の印刷所だけを取得する
+  if (!inActions && !values.local) {
+    console.error('巡回は GitHub Actions で行います（仕様書61章）。Actions 画面の「Crawl」で実行し、npm run crawl:import で取り込んでください。\n障害対応・新しい印刷所のセレクタ調整のときだけ、--local --printer=<印刷所ID> を付けて手元で実行できます');
+    process.exit(1);
+  }
+  if (!inActions && !values.printer) {
+    console.error('手元での巡回は1社ずつです。--printer=<印刷所ID> を指定してください（仕様書61-4）');
+    process.exit(1);
+  }
+  if (inActions && !values.dry && !values.out) {
+    console.error('Actions では --out=<フォルダ> を指定してください（巡回結果を artifact に置くため。仕様書61-2）');
+    process.exit(1);
+  }
+  const baseCommit = process.env.BASE_COMMIT ?? '';
+  if (inActions && values.out && !/^[0-9a-f]{40}$/.test(baseCommit)) {
+    console.error('BASE_COMMIT（巡回の元にした develop のコミット）が渡されていません');
+    process.exit(1);
+  }
+  const startedAt = nowJst();
   const maxUrls = values['max-urls'] === undefined ? undefined : Number(values['max-urls']);
   if (maxUrls !== undefined && !(Number.isInteger(maxUrls) && maxUrls >= 1)) {
     console.error('--max-urls には1以上の整数を指定してください');
     process.exit(1);
   }
-  const inActions = process.env.GITHUB_ACTIONS === 'true';
   if (inActions && values['show-text']) {
     console.error('--show-text は Actions では使えません（公開リポジトリのログに本文が残るため）');
     process.exit(1);
@@ -266,13 +302,31 @@ async function main(): Promise<void> {
     rows.push(...result);
   }
 
-  // Actions では state.yaml を書き換えない（main へは自動で書き込まない。Phase 5 でレポートPRに載せる）
-  // 何も取得しなかったとき（全社が対象外など）も書き換えない
-  const changed = JSON.stringify([...state.values()]) !== JSON.stringify(loaded);
-  const write = changed && !values.dry && !inActions;
-  if (write) saveState([...state.values()]);
-  console.log(`\n${countLine(rows)}\n${write ? 'data/crawler/state.yaml を更新しました' : 'state.yaml は書き換えていません'}`);
-  if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summaryMarkdown(rows, printers, write));
+  // Actions ではリポジトリの state.yaml を書き換えず、巡回結果を --out に書き出す（artifact にして手元で取り込む。61-2・61-3）
+  // 手元では、何も取得しなかったとき（全社が対象外など）は書き換えない
+  let message: string;
+  if (inActions && values.out && !values.dry) {
+    const meta: CrawlMeta = {
+      run_id: process.env.GITHUB_RUN_ID ?? '',
+      run_attempt: process.env.GITHUB_RUN_ATTEMPT ?? null,
+      base_commit: baseCommit,
+      event: process.env.GITHUB_EVENT_NAME ?? null,
+      target: { printer: values.printer ?? null, max_urls: maxUrls ?? null },
+      outcome: rows.some((r) => r.outcome === '失敗') ? '一部失敗' : '成功',
+      counts: countRows(rows),
+      started_at: startedAt,
+      finished_at: nowJst(),
+    };
+    writeResult(values.out, [...state.values()], meta);
+    message = '巡回結果を artifact に置きました（手元で npm run crawl:import で取り込む）';
+  } else {
+    const changed = JSON.stringify([...state.values()]) !== JSON.stringify(loaded);
+    const write = changed && !values.dry && !inActions;
+    if (write) saveState([...state.values()]);
+    message = write ? 'data/crawler/state.yaml を更新しました' : 'state.yaml は書き換えていません';
+  }
+  console.log(`\n${countLine(rows)}\n${message}`);
+  if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summaryMarkdown(rows, printers, message));
 }
 
 if (import.meta.main) await main();
