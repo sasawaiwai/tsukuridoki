@@ -10,6 +10,86 @@
   last_fetched_at: 2026-10-15T14:31:46+09:00
   fetch_status: ok
   http_status: 200
+- url: https://hope21.jp/pr/
+  printer_id: hope21
+  content_hash: sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db
+  reviewed_hash: null
+  content_chars: 466
+  etag: W/"699d5a2f4b8f692a76a16f8e55f3aaed"
+  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/2026oct-cp/
+  printer_id: hope21
+  content_hash: sha256:89381d672061e98cff7d55b5e1aa955115a05da5c735fd00a7f980f7a7937aee
+  reviewed_hash: null
+  content_chars: 975
+  etag: W/"864b91587f1d71fc36979997b28d55a9"
+  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/hayawari/
+  printer_id: hope21
+  content_hash: sha256:44d2dfc9e7a2bf6a8918469fe45f1927bd8e545f675c50ee48610546e6d20c8b
+  reviewed_hash: null
+  content_chars: 1189
+  etag: W/"151dc242610c112cc9eb01df7ce7b4a3"
+  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/ivent_shien/
+  printer_id: hope21
+  content_hash: sha256:9eae14bdc2a425abac8e213c51730a4d825c9f5230728896afd703088213c2f5
+  reviewed_hash: null
+  content_chars: 4815
+  etag: W/"10617478e212b73fabaafd030f9fb746"
+  last_modified: Fri, 09 Oct 2026 02:28:13 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/mihonshi-survice/
+  printer_id: hope21
+  content_hash: sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15
+  reviewed_hash: null
+  content_chars: 1460
+  etag: W/"c9f818d61aadb8948418c74f722e8fa4"
+  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/nosenose_cp/
+  printer_id: hope21
+  content_hash: sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3
+  reviewed_hash: null
+  content_chars: 5570
+  etag: W/"b264cf7009e083acc24162dcb68b0935"
+  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/otasuke_choutan/
+  printer_id: hope21
+  content_hash: sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27
+  reviewed_hash: null
+  content_chars: 5879
+  etag: W/"472959d7ee0baf50a4c2ee86d19d4123"
+  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/reprint/
+  printer_id: hope21
+  content_hash: sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c
+  reviewed_hash: null
+  content_chars: 857
+  etag: W/"e4a43f6325818c2a063b362e501d7530"
+  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
+  last_fetched_at: 2026-10-16T01:29:52+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.k-k9.jp/campaign/
   printer_id: k9
   content_hash: sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898
