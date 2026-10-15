@@ -1,0 +1,16 @@
+printer_id: k9
+name: ケーナイン
+official_url: https://www.k-k9.jp/
+# 「割引・キャンペーン」。期間限定・常設・クーポンが1ページにまとまっている（2026-10-15確認）
+fair_index_url: https://www.k-k9.jp/campaign/
+crawl_selector: main#campaign
+# 個別のキャンペーンページは無い（リンクは入稿ガイドだけ）ため、リンクはたどらない
+follow_links: false
+domains: [k-k9.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。特定商取引法の表示・プライバシーポリシーに自動アクセス・転載の記載なし。robots.txtは /wp-admin/ のみ禁止（2026-10-15確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-15

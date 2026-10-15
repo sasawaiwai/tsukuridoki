@@ -1,0 +1,17 @@
+printer_id: hope21
+name: ホープツーワン
+official_url: https://hope21.jp/
+# 「新商品・キャンペーン」。開催中のキャンペーンは「開催中キャンペーン一覧」の枠にまとまる。
+# 同じページの下には過去の回（2025年など）の記事も並ぶので、一覧の枠だけからリンクを拾う（2026-10-15確認）
+fair_index_url: https://hope21.jp/pr/
+# 一覧ページは開催中キャンペーン一覧の枠、各ページは .entry-content
+crawl_selector: div.wp-block-acf-page-post-content, .entry-content
+fair_link_selector: div.wp-block-acf-page-post-content a
+domains: [hope21.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。プライバシーポリシーに自動アクセス・転載の記載なし。robots.txtは全体を許可し、パラメータ付きURL・/sys/ 等のみ禁止（2026-10-15確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-15

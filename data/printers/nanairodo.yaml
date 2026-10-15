@@ -1,0 +1,18 @@
+printer_id: nanairodo
+name: なないろ堂
+official_url: https://nanairodo.jp/
+# 「開催中のキャンペーン」。表示中の項目のほかに、非表示の過去の項目も同じ場所に残っている（2026-10-15確認）
+fair_index_url: https://nanairodo.jp/campaign/
+crawl_selector: div.thecontent
+fair_link_selector: div.thecontent a
+# イベント支援特典（トップからリンク）
+watch_urls:
+  - https://nanairodo.jp/eventsupport/
+domains: [nanairodo.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://nanairodo.jp/terms/
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約・免責事項・プライバシーポリシーに自動アクセス・転載・リンクの記載なし。robots.txtは /wp-admin/ のみ禁止（2026-10-15確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-15
