@@ -3,7 +3,7 @@
 - url: https://www.eikou.com/campaign/
   printer_id: eikou
   content_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
-  reviewed_hash: sha256:a997c900298c05e348aa91e0630a7911b95ed4cff611963f6c703f1ae07b6550
+  reviewed_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
   content_chars: 5155
   etag: null
   last_modified: null
@@ -513,7 +513,7 @@
 - url: https://www.shimaya.net/
   printer_id: shimaya
   content_hash: sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9
-  reviewed_hash: sha256:8fe01cc010750d47834a985b7b6203e7b42870f9262ba6f6134d2533ce3c29f6
+  reviewed_hash: sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9
   content_chars: 1161
   etag: '"bb88-65dad2fec3ac0"'
   last_modified: Mon, 12 Oct 2026 23:37:55 GMT
@@ -623,7 +623,7 @@
 - url: https://www.shimaya.net/fair/bunfuri/index.html
   printer_id: shimaya
   content_hash: sha256:957fd7a9a2cec98988175c14f2e6708cc66b4c479ab12e838c57757bc28901b4
-  reviewed_hash: sha256:f997d8e1a3a19a3d092524b3a289260043a88ceb8b13096edb08b0431a770f35
+  reviewed_hash: sha256:957fd7a9a2cec98988175c14f2e6708cc66b4c479ab12e838c57757bc28901b4
   content_chars: 2350
   etag: '"5c15-65d5dea080600"'
   last_modified: Fri, 09 Oct 2026 01:03:20 GMT
