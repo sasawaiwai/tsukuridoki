@@ -460,6 +460,36 @@
   last_fetched_at: 2026-10-06T14:26:54+09:00
   fetch_status: ok
   http_status: 200
+- url: https://printking.co.jp/doujin/campaign/betsu_mitsu_fes.php
+  printer_id: printking
+  content_hash: sha256:9f500c15324961e9cf8f34a0cb614a7e2800e0c768b0772d5c26b253ceeb585e
+  reviewed_hash: null
+  content_chars: 979
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:31:29+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://printking.co.jp/doujin/campaign/early_bird_guide.php
+  printer_id: printking
+  content_hash: sha256:6d119b0e386a5cfe68491385c3ee4dac9f20bd12efd703b4a69543413677c05b
+  reviewed_hash: null
+  content_chars: 1640
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:31:29+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://printking.co.jp/doujin/campaign/index.php
+  printer_id: printking
+  content_hash: sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2
+  reviewed_hash: null
+  content_chars: 8919
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:31:29+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign
   printer_id: ryokuyou
   content_hash: sha256:ce19cc63cb2cf12b3cb2de0a41c0fbe729f6fff483f05f1c78901f2cf84f2a03
