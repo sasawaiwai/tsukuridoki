@@ -1,0 +1,20 @@
+printer_id: kurieisha
+name: くりえい社
+official_url: https://www.kurieisha.co.jp/
+# 期間限定のフェアはトップの「ul.event_op」に並ぶ（フェア・割引のページ /campaign/ には常時開催のものだけが載る。2026-10-15確認）
+fair_index_url: https://www.kurieisha.co.jp/
+# トップは div.topMain（フェアのバナー ul.event_op とお知らせを含む）、各ページは div.mainCont
+crawl_selector: div.mainCont, div.topMain
+fair_link_selector: ul.event_op a
+# 常時開催のフェア・割引（早期入稿割引など）と、そこからリンクされるジャンル割
+watch_urls:
+  - https://www.kurieisha.co.jp/campaign/
+  - https://www.kurieisha.co.jp/campaign/jyanwari/
+domains: [kurieisha.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。サイト全体の利用規約・リンクに関するページは見当たらず（会員規約・プライバシーポリシーに自動アクセス・転載の記載なし）。robots.txtは /wp-admin/ のみ禁止（2026-10-15確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-15
