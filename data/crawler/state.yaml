@@ -110,6 +110,56 @@
   last_fetched_at: 2026-10-16T01:24:55+09:00
   fetch_status: ok
   http_status: 200
+- url: https://nanairodo.jp/
+  printer_id: nanairodo
+  content_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
+  reviewed_hash: null
+  content_chars: 2475
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://nanairodo.jp/campaign/
+  printer_id: nanairodo
+  content_hash: sha256:ce68a52bf1970e72189f8c9290e1b27c027c58685d5ac88aec4935a232fbadba
+  reviewed_hash: null
+  content_chars: 191
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://nanairodo.jp/eventsupport/
+  printer_id: nanairodo
+  content_hash: sha256:586f85cad1eaf5022b7c71f0f394966039479a0c6f911f520d47b7927853b46a
+  reviewed_hash: null
+  content_chars: 1392
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://nanairodo.jp/hashtagcampaign/
+  printer_id: nanairodo
+  content_hash: sha256:ad967ecdefc82891aee25666288f168955a835e208a999f0be950e040393a95f
+  reviewed_hash: null
+  content_chars: 837
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://nanairodo.jp/products/request_information/sample/
+  printer_id: nanairodo
+  content_hash: sha256:c277d246c5bb083e64dd8922a9a0225d160649836a10c99be585aad3d82cf78d
+  reviewed_hash: null
+  content_chars: 1218
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.nikko-pc.com/fair/ondekuchie
   printer_id: nikko-kikaku
   content_hash: sha256:0211a5a27bec4be3b7f7a047a3a046cd82e08a1d34f6db7b95a3f5681c2df473
