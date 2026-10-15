@@ -19,7 +19,8 @@
         "type": "object",
         "required": ["fair_id", "fair_name", "sources", "summary", "source_type"],
         "properties": {
-          "fair_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+          "fair_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "series_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
         }
       }
     },

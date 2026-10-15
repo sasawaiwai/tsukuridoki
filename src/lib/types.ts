@@ -20,7 +20,7 @@ export type BenefitType =
 export type SourceType = 'official_fair' | 'official_campaign' | 'official_news' | 'official_sns' | 'official_other';
 export type VerificationStatus = 'verified' | 'auto_checked' | 'needs_review' | 'unknown';
 export type DeadlineType = 'normal' | 'early' | 'special' | 'event' | 'unknown';
-export type HistoryType = 'discovered' | 'published' | 'updated' | 'expired';
+export type HistoryType = 'discovered' | 'published' | 'updated' | 'corrected' | 'expired';
 /** 開催タイプ（仕様書57章）。省略時は period。recurring＝定期開催（イベントごとの早割など、日程が回ごとに変わる常設の割引） */
 export type TimingType = 'period' | 'specific_dates' | 'ongoing' | 'recurring';
 
@@ -33,6 +33,8 @@ export interface SubmissionDate {
 
 export interface Fair {
   fair_id: string;
+  /** 同じ企画の別の開催回をつなぐ目印（仕様書62章）。人間が付ける */
+  series_id?: string;
   slug: string;
   fair_name: string;
   printer_id: string;
