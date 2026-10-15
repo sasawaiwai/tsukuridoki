@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9",
+  "content_chars": 1161,
+  "extractor": "manual",
+  "extracted_at": "2026-10-15T15:18:07+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-10-15再確認（Actionsの巡回で変化あり）。トップページ（フェアの見出しとお知らせ・営業日など）で、フェア情報への影響は見当たらない。新しいフェアへのリンクは巡回で見つかっていない（新規0件）。何が変わったかは本文を保存しないため特定できない。"
+}
