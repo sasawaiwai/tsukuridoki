@@ -10,6 +10,16 @@
   last_fetched_at: 2026-10-15T14:31:46+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.k-k9.jp/campaign/
+  printer_id: k9
+  content_hash: sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898
+  reviewed_hash: null
+  content_chars: 3174
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-16T01:28:51+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
   content_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
