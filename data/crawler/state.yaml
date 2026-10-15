@@ -214,10 +214,10 @@
   printer_id: popls
   content_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
   reviewed_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
-  content_chars: null
+  content_chars: 109
   etag: '"21475ce2-1184-65cbcc18b0ef9"'
   last_modified: Thu, 01 Oct 2026 00:47:10 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
+  last_fetched_at: 2026-10-15T00:53:13+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/saihan.html
