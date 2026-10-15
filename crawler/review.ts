@@ -3,6 +3,9 @@
 //   npm run review -- show <URL>            本文を表示（巡回と同じ取得・取り出し。手元のみ）
 //   npm run review -- apply <ファイル>        抽出結果を検証して、反映内容を表示する（書き込まない）
 //   npm run review -- apply <ファイル> --yes  確認できたら反映する
+//     --correct=<fair_id>  そのフェアの変更を「登録ミスの訂正」として記録する（更新日を付けない。仕様書62-4）
+//     --ended=<fair_id>    終了済みのそのフェアの期間を書き換えることを許可する（仕様書62-3）
+//     どちらも対象の fair_id を指定し（カンマ区切りで複数可）、理由を抽出結果の note に書く
 //   npm run review -- stats                 実測値の集計
 // 抽出のやり方（手動・自動）とは切り離し、抽出結果（schemas/extraction.schema.json）だけを扱う
 
@@ -15,8 +18,9 @@ import addFormats from 'ajv-formats';
 import { parse, stringify } from 'yaml';
 import { DATA_DIR, readYamlDir, readYamlFile } from '../src/lib/data.ts';
 import { SIZE_LABELS } from '../src/lib/labels.ts';
+import { effectiveFrom, effectiveUntil, getStatus } from '../src/lib/period.ts';
 import { hostMatches, isSafeUrl, isSnsUrl } from '../src/lib/sources.ts';
-import type { Printer, Process } from '../src/lib/types.ts';
+import type { Fair, Printer, Process } from '../src/lib/types.ts';
 import { printerAccess } from './access.ts';
 import { extract } from './extract.ts';
 import { Pacer } from './fetch.ts';
@@ -57,6 +61,19 @@ export const MANAGED_FIELDS = [
   'verification_status',
   'history',
 ];
+
+/** 期間の項目。終了済みのフェアでは、--ended で許可しない限り書き換えない（仕様書62-3） */
+export const PERIOD_FIELDS = [
+  ...['start_date', 'end_date', 'usable_from', 'usable_until'].flatMap((k) => [k, `${k}_text`, `${k}_precision`]),
+  'timing_type',
+  'submission_dates',
+  'submission_dates_text',
+];
+
+/** 内容ではない関連づけの目印。変わっても履歴に残さず、更新日も付けない（仕様書62-2） */
+const UNTRACKED_FIELDS = ['series_id'];
+
+export type ChangeKind = 'updated' | 'corrected';
 
 // ---- 共通 ----
 
@@ -195,13 +212,33 @@ interface Planned {
   path: string;
   fair: FairData;
   isNew: boolean;
+  kind: ChangeKind;
   changes: { field: string; old: unknown; new: unknown }[];
+  /** 表示するだけの確認（仕様書62-3 の A・B・D） */
+  notes: string[];
+  /** 終了済みのフェアで書き換えようとしている期間の項目（確認C） */
+  ended: string[];
+}
+
+/** --correct=<fair_id>,… の形の指定を読む。fair_id のない指定は、ほかのフェアに広がらないよう止める */
+function idsFlag(args: string[], name: string): Set<string> {
+  const ids = new Set<string>();
+  for (const a of args.filter((x) => x === `--${name}` || x.startsWith(`--${name}=`))) {
+    const list = a.slice(name.length + 3).split(',').filter(Boolean);
+    if (list.length === 0) fail(`--${name} には対象の fair_id を指定してください：--${name}=<fair_id>`);
+    for (const id of list) ids.add(id);
+  }
+  return ids;
 }
 
 const same = (a: unknown, b: unknown) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
 
-/** 抽出したフェアに運用の項目を足して、data/fairs/ のデータにする */
-export function buildFair(extracted: FairData, printerId: string, existing: FairData | null, date: string): FairData {
+/**
+ * 抽出したフェアに運用の項目を足して、data/fairs/ のデータにする。
+ * 更新は変わった項目ごとに、変更前・変更後の値を履歴に残す（仕様書62-4）。
+ * 訂正（corrected）は更新日を付けない＝「更新されたフェア」に出さない
+ */
+export function buildFair(extracted: FairData, printerId: string, existing: FairData | null, date: string, kind: ChangeKind = 'updated'): FairData {
   const { fair_id, fair_name, ...rest } = extracted;
   if (!existing) {
     return {
@@ -218,11 +255,14 @@ export function buildFair(extracted: FairData, printerId: string, existing: Fair
       history: [{ date, type: 'published' }],
     };
   }
-  const changed = Object.keys(extracted).filter((k) => !same(existing[k], extracted[k]));
+  const changes = trackedChanges(diffFields(extracted, existing));
   const fair: FairData = { ...existing, ...extracted, verified_at: date, verification_status: 'verified' };
-  if (changed.length > 0) {
-    fair.updated_at = date;
-    fair.history = [...((existing.history as unknown[]) ?? []), { date, type: 'updated', field: changed.join(', ') }];
+  if (changes.length > 0) {
+    if (kind === 'updated') fair.updated_at = date;
+    fair.history = [
+      ...((existing.history as unknown[]) ?? []),
+      ...changes.map((c) => ({ date, type: kind, field: c.field, old_value: c.old, new_value: c.new })),
+    ];
   }
   return fair;
 }
@@ -232,6 +272,19 @@ export function diffFields(extracted: FairData, existing: FairData | null): Plan
   return Object.keys(extracted)
     .filter((k) => !same(existing[k], extracted[k]))
     .map((field) => ({ field, old: existing[field] ?? null, new: extracted[field] ?? null }));
+}
+
+/** 履歴に残す変更（series_id などの目印を除く） */
+export const trackedChanges = (changes: Planned['changes']) => changes.filter((c) => !UNTRACKED_FIELDS.includes(c.field));
+
+/**
+ * 終了済みのフェアの、期間の項目の変更（確認C）。
+ * 終了の判定はサイトの表示と同じ getStatus()：終了日の当日までは開催中、
+ * 翌日（日本時間0時）から終了済み。today は日本時間の日付を渡す
+ */
+export function endedPeriodChanges(extracted: FairData, existing: FairData | null, today: string): string[] {
+  if (!existing || getStatus(existing as unknown as Fair, today) !== 'expired') return [];
+  return PERIOD_FIELDS.filter((k) => k in extracted && !same(existing[k], extracted[k]));
 }
 
 const show1 = (v: unknown) => (v === null || v === undefined ? '（なし）' : typeof v === 'string' ? v : JSON.stringify(v));
@@ -283,7 +336,7 @@ function summaryLines(fair: FairData, printerName: string): string[] {
   ];
 }
 
-function apply(file: string | undefined, yes: boolean): void {
+function apply(file: string | undefined, yes: boolean, correct: Set<string>, allowEnded: Set<string>): void {
   if (!file) fail('抽出結果のファイルを指定してください：npm run review -- apply <ファイル>');
   if (!existsSync(file)) fail(`${file} がありません`);
 
@@ -314,6 +367,15 @@ function apply(file: string | undefined, yes: boolean): void {
   const validFair = loadSchema('fair.schema.json');
   const date = today();
   const plans: Planned[] = [];
+  const fileIds = new Set(data.fairs.map((f) => f.fair_id as string));
+  for (const [flag, set] of [['correct', correct], ['ended', allowEnded]] as const) {
+    const unknown = [...set].filter((id) => !fileIds.has(id));
+    if (unknown.length > 0) fail(`--${flag} の ${unknown.join('・')} はこの抽出結果にありません`);
+  }
+  if ((correct.size > 0 || allowEnded.size > 0) && !data.note?.trim()) {
+    fail('--correct・--ended を使うときは、理由を抽出結果の note に書いてください');
+  }
+  const allFairs = readYamlDir<FairData>('fairs').map((f) => f.data);
   const ids = new Set<string>();
   for (const extracted of data.fairs) {
     const id = extracted.fair_id as string;
@@ -329,11 +391,40 @@ function apply(file: string | undefined, yes: boolean): void {
     const path = join(DATA_DIR, 'fairs', `${id}.yaml`);
     const existing = existsSync(path) ? (parse(readFileSync(path, 'utf8')) as FairData) : null;
     if (existing && existing.printer_id !== printer.printer_id) fail(`fair_id「${id}」はすでに別の印刷所（${String(existing.printer_id)}）のフェアで使われています`);
-    const fair = buildFair(extracted, printer.printer_id, existing, date);
+    const kind: ChangeKind = correct.has(id) ? 'corrected' : 'updated';
+    const changes = diffFields(extracted, existing);
+    if (kind === 'corrected' && trackedChanges(changes).length === 0) fail(`--correct の ${id} には訂正する変更がありません`);
+    const fair = buildFair(extracted, printer.printer_id, existing, date, kind);
     if (!validFair(fair)) {
       fail(`${id} の内容がフェアのルールに合いません：\n${validFair.errors!.map((e) => `  ${e.instancePath || '（全体）'} ${e.message}`).join('\n')}`);
     }
-    plans.push({ path, fair, isNew: !existing, changes: diffFields(extracted, existing) });
+    const ended = endedPeriodChanges(extracted, existing, date);
+    if (allowEnded.has(id) && ended.length === 0) fail(`--ended の ${id} には、終了済みのフェアの期間の書き換えがありません`);
+
+    const notes: string[] = [];
+    if (!existing) {
+      // A：同じ公式URLを使う既存のフェア（同じページの別の特典か、前の回か。判断は人間）
+      const sources = fair.sources as string[];
+      const others = allFairs.filter((f) => (f.sources as string[]).some((u) => sources.includes(u)));
+      if (others.length > 0) {
+        notes.push('同じ公式URLを使う既存のフェア（前の回なら、書き換えずに新しい回として登録します）：');
+        for (const f of others) {
+          const status = getStatus(f as unknown as Fair, date) === 'expired' ? '終了済み' : '終了前';
+          notes.push(`  ${String(f.fair_id)}（${status}${f.series_id ? `・series_id ${String(f.series_id)}` : ''}）`);
+        }
+      }
+    } else {
+      // B：同じ fair_id なのに、前の期間と重ならない新しい期間
+      const oldUntil = effectiveUntil(existing as unknown as Fair);
+      const newFrom = effectiveFrom(fair as unknown as Fair);
+      if (oldUntil !== null && newFrom !== null && newFrom > oldUntil) {
+        notes.push(`⚠️ 新しい開始日（${newFrom}）が前の終了日（${oldUntil}）より後です。別の回の可能性があります（延長なら続行、新しい回なら新しい fair_id で）`);
+      }
+      // D：抽出結果に無く、前の値が残る項目
+      const kept = Object.keys(existing).filter((k) => !(k in extracted) && !MANAGED_FIELDS.includes(k));
+      if (kept.length > 0) notes.push(`抽出結果にない項目（前の値が残ります）：${kept.join('・')}`);
+    }
+    plans.push({ path, fair, isNew: !existing, kind, changes, notes, ended });
   }
 
   // 4. 反映する内容を表示する
@@ -342,13 +433,40 @@ function apply(file: string | undefined, yes: boolean): void {
   console.log(`結果：${resultLabel}${data.issues.length ? `　例外：${data.issues.join('、')}` : ''}`);
   if (data.master_candidates?.length) console.log(`新規マスター候補（自動では追加しません）：${data.master_candidates.join('、')}`);
   if (data.note) console.log(`メモ：${data.note}`);
+  const kindLabel = {
+    updated: '更新（updated：印刷所の公式情報の変更。「更新されたフェア」に出る）',
+    corrected: '訂正（corrected：登録ミスの訂正。「更新されたフェア」に出ない）',
+  };
   for (const plan of plans) {
-    console.log(`\n【${plan.isNew ? '新規フェア' : plan.changes.length ? '更新' : '変更なし（確認日だけ更新）'}】`);
+    const tracked = trackedChanges(plan.changes).length > 0;
+    console.log(`\n【${plan.isNew ? '新規フェア' : tracked ? (plan.kind === 'corrected' ? '訂正' : '更新') : '変更なし（確認日だけ更新）'}】`);
     for (const line of summaryLines(plan.fair, printer.name)) console.log(`  ${line}`);
-    for (const c of plan.changes) console.log(`  ・${c.field}：${show1(c.old)} → ${show1(c.new)}`);
+    if (tracked) console.log(`  記録の種類：${kindLabel[plan.kind]}`);
+    for (const c of plan.changes) {
+      const untracked = UNTRACKED_FIELDS.includes(c.field) ? '（関連づけの目印。履歴・更新日には残しません）' : '';
+      console.log(`  ・${c.field}：${show1(c.old)} → ${show1(c.new)}${untracked}`);
+    }
+    if (plan.ended.length > 0) {
+      console.log(
+        allowEnded.has(plan.fair.fair_id as string)
+          ? `  ⚠️ 終了済みのフェアの期間を書き換えます（--ended で許可）：${plan.ended.join('・')}`
+          : `  ⛔ 終了済みのフェアの期間を書き換えようとしています：${plan.ended.join('・')}`,
+      );
+    }
+    for (const note of plan.notes) console.log(`  ${note}`);
   }
   const afterState = data.result === 'needs_manual' ? '確認待ちのまま（要手動確認）' : '確認済みにする';
   console.log(`\n巡回の記録：${afterState}`);
+
+  // C：終了済みのフェアの期間は、fair_id を指定した --ended がなければ書き換えない（仕様書62-3）
+  const blocked = plans.filter((p) => p.ended.length > 0 && !allowEnded.has(p.fair.fair_id as string));
+  if (blocked.length > 0) {
+    fail(
+      `終了済みのフェアの期間は書き換えません：${blocked.map((p) => p.fair.fair_id).join('・')}\n` +
+        '  新しい回なら、新しい fair_id で登録してください。\n' +
+        '  登録ミスの訂正、または公式が延長と案内した同じ回なら、運営者の確認のうえ --ended=<fair_id> を付けてください（訂正なら --correct=<fair_id> も）',
+    );
+  }
 
   if (!yes) {
     console.log('\n（まだ書き込んでいません。内容を確認できたら --yes を付けて実行すると反映します）\n');
@@ -424,9 +542,9 @@ async function main(): Promise<void> {
   const arg = args.find((a) => !a.startsWith('--'));
   if (command === 'list') return list();
   if (command === 'show') return show(arg);
-  if (command === 'apply') return apply(arg, args.includes('--yes'));
+  if (command === 'apply') return apply(arg, args.includes('--yes'), idsFlag(args, 'correct'), idsFlag(args, 'ended'));
   if (command === 'stats') return stats();
-  fail('使い方：npm run review -- list | show <URL> | apply <ファイル> [--yes] | stats');
+  fail('使い方：npm run review -- list | show <URL> | apply <ファイル> [--correct=<fair_id>] [--ended=<fair_id>] [--yes] | stats');
 }
 
 if (import.meta.main) await main();

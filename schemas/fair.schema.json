@@ -35,6 +35,7 @@
   },
   "properties": {
     "fair_id": { "$ref": "#/definitions/slugId" },
+    "series_id": { "$ref": "#/definitions/slugId" },
     "slug": { "$ref": "#/definitions/slugId" },
     "fair_name": { "type": "string", "minLength": 1 },
     "printer_id": { "$ref": "#/definitions/slugId" },
@@ -222,7 +223,7 @@
         "required": ["date", "type"],
         "properties": {
           "date": { "$ref": "#/definitions/date" },
-          "type": { "enum": ["discovered", "published", "updated", "expired"] },
+          "type": { "enum": ["discovered", "published", "updated", "corrected", "expired"] },
           "field": { "$ref": "#/definitions/textOrNull" },
           "old_value": {},
           "new_value": {}

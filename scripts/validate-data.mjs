@@ -162,6 +162,17 @@ for (const { file, data } of validFairs) {
   slugs.set(data.slug, file);
 }
 
+// 同じシリーズ（同じ企画の別の回）は同じ印刷所のフェアに限る（仕様書62章）
+const seriesPrinter = new Map();
+for (const { file, data } of validFairs) {
+  if (!data.series_id) continue;
+  const first = seriesPrinter.get(data.series_id);
+  if (first && first.printer_id !== data.printer_id) {
+    report(file, `series_id「${data.series_id}」は ${first.file}（印刷所 ${first.printer_id}）と同じですが、印刷所が違います`);
+  }
+  if (!first) seriesPrinter.set(data.series_id, { file, printer_id: data.printer_id });
+}
+
 // ---- 参照・URL・日付の順序 ----
 
 const printerById = new Map(validPrinters.map(({ data }) => [data.printer_id, data]));
