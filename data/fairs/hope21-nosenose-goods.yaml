@@ -1,0 +1,26 @@
+fair_id: hope21-nosenose-goods
+slug: hope21-nosenose-goods
+fair_name: のせのせキャンペーン：グッズプレゼント
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を早めると、Re:Petta・ポストカード・ポスターのいずれかがもらえる。
+benefit_summary: 締切前倒しでグッズをプレゼント
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+benefit_types:
+  - novelty
+free_options:
+  - Re:Petta 4枚
+  - ポストカード（発注部数と同枚数）
+  - A2ポスター1枚
+conditions_text: Re:Petta 4枚（A5。200部以上か60ページ以上なら8枚、締切+3日）とポストカード（発注部数と同枚数・片面、100部から、締切+2日。スーパークイック・超短納期系は不可）は豆本・メガATOM以外が対象。A2ポスター1枚（締切+3日）はメガATOMのみ。どれも1か所納品で、データが必要。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

@@ -1,0 +1,22 @@
+fair_id: printking-kraft-paper
+slug: printking-kraft-paper
+fair_name: 本文用紙クラフト紙 追加料金なし
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/index.php
+summary: カスタマイズセットの本文用紙にクラフト紙を追加料金なしで使える。
+benefit_summary: 本文用紙のクラフト紙が追加料金なし
+source_type: official_campaign
+max_pages: 156
+benefit_types:
+  - free_paper_upgrade
+specific_sets_only: true
+conditions_text: カスタマイズセット限定、156ページ（本文152ページ）まで。発注時のオプションで本文用紙を選ぶ。公式に「今だけ」とあるが期間の記載なし。用紙の特性上、波打ちやトナーのテカリなどが出る場合あり。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

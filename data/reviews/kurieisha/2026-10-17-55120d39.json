@@ -1,0 +1,44 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/paradisefair/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:04a3008b3dc17cb55de85b6fd756c4658068713a89cc3f8fc32b898320b753c4",
+  "content_chars": 991,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kurieisha-paradise-fair-2026",
+      "fair_name": "パラダイスフェア",
+      "sources": [
+        "https://www.kurieisha.co.jp/paradisefair/"
+      ],
+      "summary": "オンリーイベントに参加して新刊を出す人向けに、一定額以上の発注で部数を10%増量（上限100冊）する企画。",
+      "benefit_summary": "発注部数を10%増量（上限100冊）",
+      "source_type": "official_fair",
+      "start_date": "2026-10-17",
+      "start_date_text": "2026年10月17日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-30",
+      "end_date_text": "11月30日入稿分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "発注部数の10%増量（上限100冊）"
+      ],
+      "combinable": false,
+      "application_required": true,
+      "minimum_order": "オフセット30,000円以上・オンデマンド15,000円以上の支払い",
+      "conditions_text": "募集20スペース以上のオンリーイベントに参加し、新刊を発行する人が対象。部数の下限はオフセット20冊・オンデマンド10冊。発注後に申込フォームで申請（入稿予定日の1営業日前まで）。早割は併用可、スーパープリント・ジャン割など要予約のサービス・色付け加工・他のフェアとは併用不可。納期の追加はない。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": null
+}

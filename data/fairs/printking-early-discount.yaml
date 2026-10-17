@@ -1,0 +1,22 @@
+fair_id: printking-early-discount
+slug: printking-early-discount
+fair_name: 早期入稿割引
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/early_bird_guide.php
+summary: 追加する納期が長いほど割引率が上がる早割。イベント合わせに限らず、いつでも誰でも使える。
+benefit_summary: 早く入稿するほど最大30%OFF
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - discount
+specific_sets_only: true
+conditions_text: 対象セットと割引率は公式の表で確認（最大30%）。納期が選べるセットは一番長い納期のみ対象。発注時にオプションで割引率を選ぶ（後からの申告は不可）。クーポンとは併用不可、イベント支援などのキャンペーン特典は併用可。書店・再版・新刊・既刊も対象。入稿の締切は毎営業日15時。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

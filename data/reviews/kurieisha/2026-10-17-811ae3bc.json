@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/itoshiori_fair/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:815ca45a00c3ffc25a97b3a1be9d59b88c5d6d133c23d12d21e8b47814fe0d61",
+  "content_chars": 2065,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kurieisha-shiori-free-2026",
+      "fair_name": "しおり紐無料フェア",
+      "sources": [
+        "https://www.kurieisha.co.jp/itoshiori_fair/"
+      ],
+      "summary": "本文のページ数に応じて、栞紐（糸しおり）を無料または1本分の料金で付けられる。全セット・全サイズで使える。",
+      "benefit_summary": "本文60ページ以上で栞紐が無料",
+      "source_type": "official_fair",
+      "start_date": "2026-09-21",
+      "start_date_text": "2026年9月21日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-21",
+      "end_date_text": "11月21日入稿分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "シングル栞紐",
+        "ダブル栞紐"
+      ],
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "本文60ページ以上でシングル栞紐が無料、80ページ以上でダブル栞紐が1本分の料金、140ページ以上でダブル栞紐が無料。全セット・全サイズが対象（オフセット・オンデマンドとも）。杢糸しおりのピンク・オレンジ・濃茶も対象。納期は+4日。発注後に申込フォームで申請。早割は併用可、要予約のサービス・色付け加工・他のフェアとは併用不可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [
+    "しおり紐"
+  ],
+  "note": "加工マスターに栞紐が無いため加工は空欄。"
+}

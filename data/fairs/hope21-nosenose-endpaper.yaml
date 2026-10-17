@@ -1,0 +1,25 @@
+fair_id: hope21-nosenose-endpaper
+slug: hope21-nosenose-endpaper
+fair_name: のせのせキャンペーン：遊び紙無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を2日早めると、カスタム印刷で遊び紙（前）が無料になる。
+benefit_summary: 締切2日前倒しで遊び紙無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+processes:
+  - endpaper
+benefit_types:
+  - free_process
+min_quantity: 100
+conditions_text: カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。指定の用紙から選ぶ。前のみ（200部以上か60ページ以上なら前後に同じ紙）。ほかの遊び紙・口絵の選択より優先される。公式の一覧では「口絵無料 or 遊び紙無料」と表記。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

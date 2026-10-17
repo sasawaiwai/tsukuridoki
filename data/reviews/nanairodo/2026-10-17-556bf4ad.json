@@ -1,0 +1,36 @@
+{
+  "source_url": "https://nanairodo.jp/eventsupport/",
+  "printer_id": "nanairodo",
+  "content_hash": "sha256:586f85cad1eaf5022b7c71f0f394966039479a0c6f911f520d47b7927853b46a",
+  "content_chars": 1392,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nanairodo-event-support",
+      "fair_name": "イベント支援特典",
+      "sources": [
+        "https://nanairodo.jp/eventsupport/"
+      ],
+      "summary": "協賛登録されたイベントで頒布する冊子を注文すると、冊子と同じ枚数のポストカードを無料で付けられる。",
+      "benefit_summary": "冊子と同じ枚数のポストカード無料",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "協賛登録イベントごと（PICREA・pictSQUAREのイベントは常時支援）",
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "ポストカード（冊子と同じ枚数）"
+      ],
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "協賛登録イベントに参加し、そこで頒布する新刊・既刊の再版が対象（イベントの一覧は公式で確認）。フルカラー・本文単色カラー・スタンダード・モノクロの各パックが対象。ポストカードはアートポスト180kg、裏はモノクロの郵便枠。自己申告制で、注文時に特典を選び備考にイベント名を書く。無料ポストカード12枚サービスと併用不可。1イベント1作品につき1回。原則イベント前の注文が対象。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "参加者向けのイベント支援として掲載（運営者決定）。イベントの一覧は転載しない。"
+}

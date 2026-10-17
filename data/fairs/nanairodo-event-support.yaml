@@ -1,0 +1,27 @@
+fair_id: nanairodo-event-support
+slug: nanairodo-event-support
+fair_name: イベント支援特典
+printer_id: nanairodo
+category: dojinshi
+sources:
+  - https://nanairodo.jp/eventsupport/
+summary: 協賛登録されたイベントで頒布する冊子を注文すると、冊子と同じ枚数のポストカードを無料で付けられる。
+benefit_summary: 冊子と同じ枚数のポストカード無料
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 協賛登録イベントごと（PICREA・pictSQUAREのイベントは常時支援）
+benefit_types:
+  - novelty
+free_options:
+  - ポストカード（冊子と同じ枚数）
+specific_sets_only: true
+combinable: false
+application_required: true
+conditions_text: 協賛登録イベントに参加し、そこで頒布する新刊・既刊の再版が対象（イベントの一覧は公式で確認）。フルカラー・本文単色カラー・スタンダード・モノクロの各パックが対象。ポストカードはアートポスト180kg、裏はモノクロの郵便枠。自己申告制で、注文時に特典を選び備考にイベント名を書く。無料ポストカード12枚サービスと併用不可。1イベント1作品につき1回。原則イベント前の注文が対象。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

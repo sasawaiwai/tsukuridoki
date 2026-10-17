@@ -1,0 +1,30 @@
+fair_id: k9-event-poster
+slug: k9-event-poster
+fair_name: 期間限定特典（指定イベント納品）
+printer_id: k9
+category: dojinshi
+sources:
+  - https://www.k-k9.jp/campaign/
+summary: 指定されたイベントへの会場納品で、A3・A2・A1のいずれかのポスター1枚を無料で印刷する特典。
+benefit_summary: 指定イベント納品でポスター1枚無料
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 指定イベントの開催時（コミックマーケットほか、イベントごとに指定）
+printing_methods:
+  - ondemand
+  - offset
+benefit_types:
+  - novelty
+free_options:
+  - ポスター1枚（A3・A2・A1から選択）
+event_delivery_only: true
+combinable: false
+application_required: true
+conditions_text: 対象セットはイベントごとに指定（指定がなければ全セット）。ポスターは片面カラー。会場納品のみ（分納不可）。見積フォームの「特典・キャンペーン」で選ぶ。ポスターのデータは表紙の締切まで（特別締切あり）。支援イベント特典とは併用不可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

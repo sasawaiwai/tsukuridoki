@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/sweet-halloween-fes/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:b7b4768ed029cd61d1be3f9356b70983b2bb2883bec307a8c1a2c3be5607b2ed",
+  "content_chars": 2504,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "イベント合わせの締切表。早割の日程で、フェアではない。"
+}

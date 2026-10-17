@@ -1,0 +1,37 @@
+fair_id: kurieisha-fullspec-sale-2026
+slug: kurieisha-fullspec-sale-2026
+fair_name: ふるすぺっくセットどんどんSale
+printer_id: kurieisha
+category: dojinshi
+sources:
+  - https://www.kurieisha.co.jp/fullspecsale/
+summary: ふるすぺっくオンデマンドセットで、早割の締切はそのままに割引率を10%上乗せする（30%→40%など）。
+benefit_summary: 早割の割引率を10%上乗せ
+source_type: official_fair
+start_date: 2026-09-14
+start_date_text: 2026年9月14日
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 10月31日入稿分まで
+end_date_precision: day
+sizes:
+  - bunko
+  - shinsho
+  - B6
+  - A5
+  - other
+printing_methods:
+  - ondemand
+benefit_types:
+  - discount
+specific_sets_only: true
+combinable: false
+application_required: true
+conditions_text: ふるすぺっくオンデマンドセットの全サイズ（文庫・新書・コミックス・B6・A5）が対象。早割の各締切のまま割引率が10%上がる（30→40%、20→30%、10→20%）。事前に申込フォームで申請が必要。他のフェア・キャンペーンと併用不可。ビッグイベント時は締切が変わる。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

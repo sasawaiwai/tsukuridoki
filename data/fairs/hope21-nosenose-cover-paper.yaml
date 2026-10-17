@@ -1,0 +1,24 @@
+fair_id: hope21-nosenose-cover-paper
+slug: hope21-nosenose-cover-paper
+fair_name: のせのせキャンペーン：オンデマンド表紙紙替無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を3日早めると、カスタム印刷で表紙の特殊紙代が無料になる。
+benefit_summary: 締切3日前倒しで表紙の特殊紙代無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+processes:
+  - special_paper
+benefit_types:
+  - free_paper_upgrade
+conditions_text: カスタム印刷が対象。部数・ページ数の制限なし。指定の特殊紙から選ぶ。ほかの表紙の選択より優先される。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

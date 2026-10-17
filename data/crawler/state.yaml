@@ -13,7 +13,7 @@
 - url: https://hope21.jp/pr/
   printer_id: hope21
   content_hash: sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db
-  reviewed_hash: null
+  reviewed_hash: sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db
   content_chars: 466
   etag: W/"699d5a2f4b8f692a76a16f8e55f3aaed"
   last_modified: Fri, 09 Oct 2026 02:28:12 GMT
@@ -33,7 +33,7 @@
 - url: https://hope21.jp/pr/hayawari/
   printer_id: hope21
   content_hash: sha256:44d2dfc9e7a2bf6a8918469fe45f1927bd8e545f675c50ee48610546e6d20c8b
-  reviewed_hash: null
+  reviewed_hash: sha256:44d2dfc9e7a2bf6a8918469fe45f1927bd8e545f675c50ee48610546e6d20c8b
   content_chars: 1189
   etag: W/"151dc242610c112cc9eb01df7ce7b4a3"
   last_modified: Fri, 09 Oct 2026 02:28:12 GMT
@@ -43,7 +43,7 @@
 - url: https://hope21.jp/pr/ivent_shien/
   printer_id: hope21
   content_hash: sha256:9eae14bdc2a425abac8e213c51730a4d825c9f5230728896afd703088213c2f5
-  reviewed_hash: null
+  reviewed_hash: sha256:9eae14bdc2a425abac8e213c51730a4d825c9f5230728896afd703088213c2f5
   content_chars: 4815
   etag: W/"10617478e212b73fabaafd030f9fb746"
   last_modified: Fri, 09 Oct 2026 02:28:13 GMT
@@ -53,7 +53,7 @@
 - url: https://hope21.jp/pr/mihonshi-survice/
   printer_id: hope21
   content_hash: sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15
-  reviewed_hash: null
+  reviewed_hash: sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15
   content_chars: 1460
   etag: W/"c9f818d61aadb8948418c74f722e8fa4"
   last_modified: Fri, 09 Oct 2026 02:28:15 GMT
@@ -63,7 +63,7 @@
 - url: https://hope21.jp/pr/nosenose_cp/
   printer_id: hope21
   content_hash: sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3
-  reviewed_hash: null
+  reviewed_hash: sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3
   content_chars: 5570
   etag: W/"b264cf7009e083acc24162dcb68b0935"
   last_modified: Fri, 09 Oct 2026 02:28:15 GMT
@@ -73,7 +73,7 @@
 - url: https://hope21.jp/pr/otasuke_choutan/
   printer_id: hope21
   content_hash: sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27
-  reviewed_hash: null
+  reviewed_hash: sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27
   content_chars: 5879
   etag: W/"472959d7ee0baf50a4c2ee86d19d4123"
   last_modified: Fri, 09 Oct 2026 02:28:15 GMT
@@ -83,7 +83,7 @@
 - url: https://hope21.jp/pr/reprint/
   printer_id: hope21
   content_hash: sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c
-  reviewed_hash: null
+  reviewed_hash: sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c
   content_chars: 857
   etag: W/"e4a43f6325818c2a063b362e501d7530"
   last_modified: Fri, 09 Oct 2026 02:28:15 GMT
@@ -93,7 +93,7 @@
 - url: https://www.k-k9.jp/campaign/
   printer_id: k9
   content_hash: sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898
-  reviewed_hash: null
+  reviewed_hash: sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898
   content_chars: 3174
   etag: null
   last_modified: null
@@ -113,7 +113,7 @@
 - url: https://www.kurieisha.co.jp/
   printer_id: kurieisha
   content_hash: sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c
-  reviewed_hash: null
+  reviewed_hash: sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c
   content_chars: 501
   etag: null
   last_modified: null
@@ -123,7 +123,7 @@
 - url: https://www.kurieisha.co.jp/campaign/
   printer_id: kurieisha
   content_hash: sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6
-  reviewed_hash: null
+  reviewed_hash: sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6
   content_chars: 2800
   etag: null
   last_modified: null
@@ -133,7 +133,7 @@
 - url: https://www.kurieisha.co.jp/campaign/jyanwari/
   printer_id: kurieisha
   content_hash: sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef
-  reviewed_hash: null
+  reviewed_hash: sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef
   content_chars: 4497
   etag: null
   last_modified: null
@@ -143,7 +143,7 @@
 - url: https://www.kurieisha.co.jp/eventsupport_paper/
   printer_id: kurieisha
   content_hash: sha256:411907a16c5a9a8b0546e3df8f56ce25df3dfe1cf17fe308cfc5513b70b355bb
-  reviewed_hash: null
+  reviewed_hash: sha256:411907a16c5a9a8b0546e3df8f56ce25df3dfe1cf17fe308cfc5513b70b355bb
   content_chars: 5203
   etag: null
   last_modified: null
@@ -153,7 +153,7 @@
 - url: https://www.kurieisha.co.jp/fullspecsale/
   printer_id: kurieisha
   content_hash: sha256:534707e5a4ecc6205e3f209ad99a90f49beb267a870c5c2150e621e707856caf
-  reviewed_hash: null
+  reviewed_hash: sha256:534707e5a4ecc6205e3f209ad99a90f49beb267a870c5c2150e621e707856caf
   content_chars: 1250
   etag: null
   last_modified: null
@@ -173,7 +173,7 @@
 - url: https://www.kurieisha.co.jp/itoshiori_fair/
   printer_id: kurieisha
   content_hash: sha256:815ca45a00c3ffc25a97b3a1be9d59b88c5d6d133c23d12d21e8b47814fe0d61
-  reviewed_hash: null
+  reviewed_hash: sha256:815ca45a00c3ffc25a97b3a1be9d59b88c5d6d133c23d12d21e8b47814fe0d61
   content_chars: 2065
   etag: null
   last_modified: null
@@ -183,7 +183,7 @@
 - url: https://www.kurieisha.co.jp/paradisefair/
   printer_id: kurieisha
   content_hash: sha256:04a3008b3dc17cb55de85b6fd756c4658068713a89cc3f8fc32b898320b753c4
-  reviewed_hash: null
+  reviewed_hash: sha256:04a3008b3dc17cb55de85b6fd756c4658068713a89cc3f8fc32b898320b753c4
   content_chars: 991
   etag: null
   last_modified: null
@@ -193,7 +193,7 @@
 - url: https://www.kurieisha.co.jp/sweet-halloween-fes/
   printer_id: kurieisha
   content_hash: sha256:b7b4768ed029cd61d1be3f9356b70983b2bb2883bec307a8c1a2c3be5607b2ed
-  reviewed_hash: null
+  reviewed_hash: sha256:b7b4768ed029cd61d1be3f9356b70983b2bb2883bec307a8c1a2c3be5607b2ed
   content_chars: 2504
   etag: null
   last_modified: null
@@ -203,7 +203,7 @@
 - url: https://nanairodo.jp/
   printer_id: nanairodo
   content_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
-  reviewed_hash: null
+  reviewed_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
   content_chars: 2475
   etag: null
   last_modified: null
@@ -213,7 +213,7 @@
 - url: https://nanairodo.jp/campaign/
   printer_id: nanairodo
   content_hash: sha256:ce68a52bf1970e72189f8c9290e1b27c027c58685d5ac88aec4935a232fbadba
-  reviewed_hash: null
+  reviewed_hash: sha256:ce68a52bf1970e72189f8c9290e1b27c027c58685d5ac88aec4935a232fbadba
   content_chars: 191
   etag: null
   last_modified: null
@@ -223,7 +223,7 @@
 - url: https://nanairodo.jp/eventsupport/
   printer_id: nanairodo
   content_hash: sha256:586f85cad1eaf5022b7c71f0f394966039479a0c6f911f520d47b7927853b46a
-  reviewed_hash: null
+  reviewed_hash: sha256:586f85cad1eaf5022b7c71f0f394966039479a0c6f911f520d47b7927853b46a
   content_chars: 1392
   etag: null
   last_modified: null
@@ -233,7 +233,7 @@
 - url: https://nanairodo.jp/hashtagcampaign/
   printer_id: nanairodo
   content_hash: sha256:ad967ecdefc82891aee25666288f168955a835e208a999f0be950e040393a95f
-  reviewed_hash: null
+  reviewed_hash: sha256:ad967ecdefc82891aee25666288f168955a835e208a999f0be950e040393a95f
   content_chars: 837
   etag: null
   last_modified: null
@@ -243,7 +243,7 @@
 - url: https://nanairodo.jp/products/request_information/sample/
   printer_id: nanairodo
   content_hash: sha256:c277d246c5bb083e64dd8922a9a0225d160649836a10c99be585aad3d82cf78d
-  reviewed_hash: null
+  reviewed_hash: sha256:c277d246c5bb083e64dd8922a9a0225d160649836a10c99be585aad3d82cf78d
   content_chars: 1218
   etag: null
   last_modified: null
@@ -463,7 +463,7 @@
 - url: https://printking.co.jp/doujin/campaign/betsu_mitsu_fes.php
   printer_id: printking
   content_hash: sha256:9f500c15324961e9cf8f34a0cb614a7e2800e0c768b0772d5c26b253ceeb585e
-  reviewed_hash: null
+  reviewed_hash: sha256:9f500c15324961e9cf8f34a0cb614a7e2800e0c768b0772d5c26b253ceeb585e
   content_chars: 979
   etag: null
   last_modified: null
@@ -473,7 +473,7 @@
 - url: https://printking.co.jp/doujin/campaign/early_bird_guide.php
   printer_id: printking
   content_hash: sha256:6d119b0e386a5cfe68491385c3ee4dac9f20bd12efd703b4a69543413677c05b
-  reviewed_hash: null
+  reviewed_hash: sha256:6d119b0e386a5cfe68491385c3ee4dac9f20bd12efd703b4a69543413677c05b
   content_chars: 1640
   etag: null
   last_modified: null
@@ -483,7 +483,7 @@
 - url: https://printking.co.jp/doujin/campaign/index.php
   printer_id: printking
   content_hash: sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2
-  reviewed_hash: null
+  reviewed_hash: sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2
   content_chars: 8919
   etag: null
   last_modified: null

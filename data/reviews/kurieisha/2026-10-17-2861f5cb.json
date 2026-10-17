@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/eventsupport_paper/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:411907a16c5a9a8b0546e3df8f56ce25df3dfe1cf17fe308cfc5513b70b355bb",
+  "content_chars": 5203,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "便せんフェア（便せんの印刷）。グッズ単体のフェアのため対象外（運営者決定）。"
+}

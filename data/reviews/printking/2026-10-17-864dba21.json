@@ -1,0 +1,30 @@
+{
+  "source_url": "https://printking.co.jp/doujin/campaign/early_bird_guide.php",
+  "printer_id": "printking",
+  "content_hash": "sha256:6d119b0e386a5cfe68491385c3ee4dac9f20bd12efd703b4a69543413677c05b",
+  "content_chars": 1640,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "printking-early-discount",
+      "fair_name": "早期入稿割引",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/early_bird_guide.php"
+      ],
+      "summary": "追加する納期が長いほど割引率が上がる早割。イベント合わせに限らず、いつでも誰でも使える。",
+      "benefit_summary": "早く入稿するほど最大30%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "対象セットと割引率は公式の表で確認（最大30%）。納期が選べるセットは一番長い納期のみ対象。発注時にオプションで割引率を選ぶ（後からの申告は不可）。クーポンとは併用不可、イベント支援などのキャンペーン特典は併用可。書店・再版・新刊・既刊も対象。入稿の締切は毎営業日15時。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "割引率の表は本文に無い（見出しの最大30%は本文にある）。"
+}

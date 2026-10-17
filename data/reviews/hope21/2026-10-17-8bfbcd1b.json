@@ -1,0 +1,15 @@
+{
+  "source_url": "https://hope21.jp/pr/2026oct-cp/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:89381d672061e98cff7d55b5e1aa955115a05da5c735fd00a7f980f7a7937aee",
+  "content_chars": 975,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "needs_manual",
+  "fairs": [],
+  "issues": [
+    "other"
+  ],
+  "master_candidates": [],
+  "note": "保留（運営者決定）：概要ページに期間・条件の記載なし。詳細ページ4件を watch_urls に追加し、次の巡回で確認する。"
+}

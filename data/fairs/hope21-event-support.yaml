@@ -1,0 +1,23 @@
+fair_id: hope21-event-support
+slug: hope21-event-support
+fair_name: イベント支援
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/ivent_shien/
+summary: 支援対象のオンリー・プチオンリーに参加するサークルの発注で、ポイント還元率が通常2%から10%になる。
+benefit_summary: 支援イベント参加でポイント10%還元
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援対象のオンリー・プチオンリーごと
+benefit_types:
+  - points
+application_required: true
+conditions_text: 支援対象イベントへの参加が条件（一覧は公式で確認。プチオンリーは親イベントの参加者全員が対象ではない）。見積もりNaviで「イベント支援」から参加イベントを選び、搬入先にオンリー名も書く。原則イベント当日納品（自宅送りは開催1週間前まで）。季節のセット・グッズ・超短納期お助け企画・締切後の入稿は対象外。のせのせ併用で最大20%。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

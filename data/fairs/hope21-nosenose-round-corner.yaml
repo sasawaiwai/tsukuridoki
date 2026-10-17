@@ -1,0 +1,25 @@
+fair_id: hope21-nosenose-round-corner
+slug: hope21-nosenose-round-corner
+fair_name: のせのせキャンペーン：角丸無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を2日早めると、角丸（小口側2か所）が無料になる。
+benefit_summary: 締切2日前倒しで角丸無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+processes:
+  - round_corner
+benefit_types:
+  - free_process
+min_quantity: 10
+conditions_text: 豆本・メガATOMは対象外。フライトセットのジャケット・ジャケットliteも対象外。10部から。角丸はR6（半径6mm）で小口側2か所。メモ帳断裁がある本（カスタム印刷・スロット）は本体のみ加工。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

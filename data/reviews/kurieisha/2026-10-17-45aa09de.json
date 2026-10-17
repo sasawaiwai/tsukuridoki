@@ -1,0 +1,59 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/campaign/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6",
+  "content_chars": 2800,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kurieisha-early-discount",
+      "fair_name": "早割（早期入稿割引）",
+      "sources": [
+        "https://www.kurieisha.co.jp/campaign/"
+      ],
+      "summary": "通常の締切より早く入稿すると、セットごとに決められた日数に応じて割引になる。楽らくセット・オンデマンドセットは最大40%OFF。",
+      "benefit_summary": "早く入稿するほど最大40%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "combinable": false,
+      "conditions_text": "割引率と日数はセットごと（楽らくセット・オンデマンドセット最大40%、チンドン・ベリィパック・ふるすぺっく・オールフルカラー本セット最大30%、オールフルカラーオンデマンド最大25%、プランナーズコース最大20%）。日数は営業日で数える。大型イベント前は締切・納品日が変わる。フェアと各割引は併用不可。"
+    },
+    {
+      "fair_id": "kurieisha-genre-discount",
+      "fair_name": "ジャン割（ジャンル限定割引）",
+      "sources": [
+        "https://www.kurieisha.co.jp/campaign/",
+        "https://www.kurieisha.co.jp/campaign/jyanwari/"
+      ],
+      "summary": "対象ジャンル・対象イベントの本を楽らくセットで作ると、イベント直前の入稿で30%OFFになる予約制の割引。",
+      "benefit_summary": "楽らくセットが30%OFF（要予約）",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 30,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "楽らくセット「輝」「華」「雅」が対象。対象ジャンル・対象イベントは公式の一覧で確認。要予約（WEB予約）。表紙はイベント4日前、本文は3日前に入稿（日曜イベントなら表紙水曜・本文木曜）。表紙入稿時に全額入金。本文締切に間に合わない場合のお助けプランは20%OFF（電話連絡・本文用紙の限定あり）。大型イベント時は締切が変わる場合あり。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "スーパープリント（割増料金の締切延長）は割引ではないため対象外。"
+}

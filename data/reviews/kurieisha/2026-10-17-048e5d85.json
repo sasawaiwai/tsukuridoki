@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c",
+  "content_chars": 501,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "お知らせの一覧のページ。各フェアは個別のページで確認した。"
+}
