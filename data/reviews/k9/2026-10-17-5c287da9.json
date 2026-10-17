@@ -1,0 +1,98 @@
+{
+  "source_url": "https://www.k-k9.jp/campaign/",
+  "printer_id": "k9",
+  "content_hash": "sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898",
+  "content_chars": 3174,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "k9-event-poster",
+      "fair_name": "期間限定特典（指定イベント納品）",
+      "sources": [
+        "https://www.k-k9.jp/campaign/"
+      ],
+      "summary": "指定されたイベントへの会場納品で、A3・A2・A1のいずれかのポスター1枚を無料で印刷する特典。",
+      "benefit_summary": "指定イベント納品でポスター1枚無料",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "指定イベントの開催時（コミックマーケットほか、イベントごとに指定）",
+      "printing_methods": [
+        "ondemand",
+        "offset"
+      ],
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "ポスター1枚（A3・A2・A1から選択）"
+      ],
+      "event_delivery_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "対象セットはイベントごとに指定（指定がなければ全セット）。ポスターは片面カラー。会場納品のみ（分納不可）。見積フォームの「特典・キャンペーン」で選ぶ。ポスターのデータは表紙の締切まで（特別締切あり）。支援イベント特典とは併用不可。"
+    },
+    {
+      "fair_id": "k9-novel-bookmark",
+      "fair_name": "小説本特典",
+      "sources": [
+        "https://www.k-k9.jp/campaign/"
+      ],
+      "summary": "文章が中心の本の注文で、本と同じ枚数のしおりを無料で印刷する常設の特典。",
+      "benefit_summary": "本と同じ枚数のしおりを無料印刷",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "book_types": [
+        "novel"
+      ],
+      "printing_methods": [
+        "ondemand",
+        "offset"
+      ],
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "しおり（本と同じ枚数）"
+      ],
+      "application_required": true,
+      "tags": [
+        "for_novels"
+      ],
+      "conditions_text": "本文の全面ベタのページが全体の2割以下の本が対象（小説以外の詩集・評論・レポートなども可）。しおりは片面カラー。見積フォームの「特典・キャンペーン」で選ぶ。しおりのデータは表紙の締切まで（特別締切あり）。"
+    },
+    {
+      "fair_id": "k9-event-support",
+      "fair_name": "支援イベント特典",
+      "sources": [
+        "https://www.k-k9.jp/campaign/"
+      ],
+      "summary": "支援登録されたイベントに合わせた注文で、本と同数のポストカード、または見本誌の自宅送料無料のどちらかを選べる。",
+      "benefit_summary": "ポストカード無料か見本誌の送料無料",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "支援登録のオンリーイベント・常設支援イベントごと",
+      "printing_methods": [
+        "ondemand",
+        "offset"
+      ],
+      "benefit_types": [
+        "novelty",
+        "free_option"
+      ],
+      "free_options": [
+        "ポストカード（本と同数）",
+        "見本誌（余部）の自宅送料無料"
+      ],
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "支援登録のオンリーイベント・常設支援イベントに参加し、その合わせの発注が対象（イベントの一覧は公式で確認）。見積フォームで選び、納品先か備考に参加イベントを書く。ポストカードは両面（イラスト面カラー・宛名面モノクロ）。期間限定特典（指定イベント納品）とは併用不可。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "マイページポイント（通常の会員ポイント制度）とクーポンコード（休止中）は対象外（運営者決定）。"
+}

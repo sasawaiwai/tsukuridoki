@@ -1,0 +1,25 @@
+fair_id: hope21-nosenose-foil
+slug: hope21-nosenose-foil
+fair_name: のせのせキャンペーン：箔押し無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を5日早めると、カスタム印刷で箔押し1か所が無料になる。
+benefit_summary: 締切5日前倒しで箔押し無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+processes:
+  - foil
+benefit_types:
+  - free_process
+min_quantity: 100
+conditions_text: カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。箔は1か所（10×10cmまたは15×5cm）、色は金か銀（200部以上か60ページ以上なら色が増える）。表紙・本文・箔を同時入稿。特殊紙への箔はのりが弱い場合あり。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

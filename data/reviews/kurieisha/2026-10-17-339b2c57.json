@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/ginpara/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:ef06ba13119073db547ac979887801e74de37dc16a1e2720a12ab418b9089c7f",
+  "content_chars": 1191,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "needs_manual",
+  "fairs": [],
+  "issues": [
+    "other"
+  ],
+  "master_candidates": [],
+  "note": "保留（運営者決定）：入稿受付期間に年の記載なし。お知らせ1〜4ページにも記載なし。年と実施状況を確認できたら登録する。"
+}

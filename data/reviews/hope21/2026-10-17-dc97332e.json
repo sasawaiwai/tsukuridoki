@@ -1,0 +1,32 @@
+{
+  "source_url": "https://hope21.jp/pr/mihonshi-survice/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15",
+  "content_chars": 1460,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "hope21-sample-copy-free",
+      "fair_name": "見本誌無料お届けサービス（全冊書店送り限定）",
+      "sources": [
+        "https://hope21.jp/pr/mihonshi-survice/"
+      ],
+      "summary": "全冊を書店に送る発注で、見本誌1冊を無料で自宅に送ってもらえるサービス。",
+      "benefit_summary": "全冊書店送りで見本誌1冊を自宅へ無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "見本誌1冊の自宅配送"
+      ],
+      "conditions_text": "全冊を書店に送る発注が対象（超短納期・お助けポケットを除く、見積もりNaviから発注できるもの）。見本誌は余部から送るため、送れない場合あり。発注時に「ご自宅への見本誌発送（1冊）」で「無料で利用」を選ぶ。原則ゆうパケットで日時指定不可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": null
+}

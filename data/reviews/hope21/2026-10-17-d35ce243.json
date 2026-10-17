@@ -1,0 +1,15 @@
+{
+  "source_url": "https://hope21.jp/pr/otasuke_choutan/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27",
+  "content_chars": 5879,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "割増料金で締切を延ばす企画で、割引・特典ではない。"
+}

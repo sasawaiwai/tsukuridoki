@@ -1,0 +1,128 @@
+{
+  "source_url": "https://printking.co.jp/doujin/campaign/index.php",
+  "printer_id": "printking",
+  "content_hash": "sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2",
+  "content_chars": 8919,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "printking-halloween-2026",
+      "fair_name": "HALLOWEEN割",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "作中にハロウィンにまつわるモチーフやシーンが登場する冊子の注文が10%OFFになる。",
+      "benefit_summary": "ハロウィン要素のある本が10%OFF",
+      "source_type": "official_campaign",
+      "start_date": "2026-10-01",
+      "start_date_text": "2026年10月1日受付分",
+      "start_date_precision": "day",
+      "end_date": "2026-10-31",
+      "end_date_text": "10月31日15時",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 10,
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "カスタマイズセット・カスタマイズカラーセット・カスタマイズセットPlus Vivid・フランス製本セット・カバー付小説本セット・和綴じ製本セット・ステプラセット・ステプラカラーセットが対象。オプションで選び、該当するページ番号などを備考に書く。各種クーポン・早期入稿割引と併用不可。注文と入稿の両方を期間内に。"
+    },
+    {
+      "fair_id": "printking-welcome",
+      "fair_name": "ウェルカムキャンペーン",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "初めてプリントキングで冊子を注文する人が、クーポンでセットごとに最大20%OFFになる。",
+      "benefit_summary": "初回の冊子注文が最大20%OFF",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "new_customer_only": true,
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "カスタマイズ系・フランス製本・カバー付小説本は20%、ステプラ系は15%、和綴じ製本は10%（クーポンコードは公式で確認）。冊子の注文歴がない人が対象（試し刷り・グッズのみの履歴は可。カスタマイズセットPlus Vividは初回注文に限り注文歴があっても可）。対象商品いずれか1回のみ。早期入稿割引・ほかのクーポンと併用不可。"
+    },
+    {
+      "fair_id": "printking-trial-cashback",
+      "fair_name": "【試し刷り】キャッシュバッククーポン",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "試し刷りを利用すると、その後の冊子注文で試し刷りの印刷代と同じ1,000円を値引きするクーポンが同封される。",
+      "benefit_summary": "試し刷り後の冊子注文が1,000円引き",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_amount": 1000,
+      "conditions_text": "試し刷りした内容の冊子の注文が対象（ペーパー類グッズは対象外）。クーポンは試し刷りに自動で同封され、冊子の注文時にコードを入力する。クーポンには有効期限がある。早期入稿割引と併用可（2026年5月改定）。"
+    },
+    {
+      "fair_id": "printking-cover-keyholder",
+      "fair_name": "【Xフォロワー様限定！】表紙アクキープレゼント",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "Xで公式アカウントをフォローして申請すると、表紙1のデザインをアクリルキーホルダー1個にしてもらえる。",
+      "benefit_summary": "表紙デザインのアクキーを1個プレゼント",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "表紙1のアクリルキーホルダー1個"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "早割を利用したカスタマイズ（カラー・Plus Vivid）・ステプラ（カラー）セットが対象。早割なし（通常納期）は不可。Xで公式アカウントをフォローし、発注時の備考に希望とアカウントIDを書く。表紙1以外のデータは不可。"
+    },
+    {
+      "fair_id": "printking-paper-campaign",
+      "fair_name": "【期間限定！】ペーパーキャンペーン",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "冊子の注文時に、注文部数×10枚までのペーパー（片面モノクロ）を無料で付けられる。",
+      "benefit_summary": "注文部数×10枚までペーパー無料",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "ペーパー（片面モノクロ）"
+      ],
+      "application_required": true,
+      "conditions_text": "ハチトクセットを除く冊子全てが対象。最大1,000枚・最大A4・片面モノクロ・用紙は選べない。発注時の備考に希望・サイズ・枚数を書き、ペーパーの原稿を冊子と一緒に入稿。公式に「期間限定」とあるが期間の記載なし。"
+    },
+    {
+      "fair_id": "printking-kraft-paper",
+      "fair_name": "本文用紙クラフト紙 追加料金なし",
+      "sources": [
+        "https://printking.co.jp/doujin/campaign/index.php"
+      ],
+      "summary": "カスタマイズセットの本文用紙にクラフト紙を追加料金なしで使える。",
+      "benefit_summary": "本文用紙のクラフト紙が追加料金なし",
+      "source_type": "official_campaign",
+      "max_pages": 156,
+      "benefit_types": [
+        "free_paper_upgrade"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "カスタマイズセット限定、156ページ（本文152ページ）まで。発注時のオプションで本文用紙を選ぶ。公式に「今だけ」とあるが期間の記載なし。用紙の特性上、波打ちやトナーのテカリなどが出る場合あり。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "ended",
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "感想キャンペーン（2026年9月30日まで）は終了済み。クーポンコードは掲載しない。"
+}

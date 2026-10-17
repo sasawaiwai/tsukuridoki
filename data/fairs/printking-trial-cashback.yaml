@@ -1,0 +1,21 @@
+fair_id: printking-trial-cashback
+slug: printking-trial-cashback
+fair_name: 【試し刷り】キャッシュバッククーポン
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/index.php
+summary: 試し刷りを利用すると、その後の冊子注文で試し刷りの印刷代と同じ1,000円を値引きするクーポンが同封される。
+benefit_summary: 試し刷り後の冊子注文が1,000円引き
+source_type: official_campaign
+benefit_types:
+  - discount
+discount_amount: 1000
+conditions_text: 試し刷りした内容の冊子の注文が対象（ペーパー類グッズは対象外）。クーポンは試し刷りに自動で同封され、冊子の注文時にコードを入力する。クーポンには有効期限がある。早期入稿割引と併用可（2026年5月改定）。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

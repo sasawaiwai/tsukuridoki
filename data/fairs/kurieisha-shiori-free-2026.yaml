@@ -1,0 +1,34 @@
+fair_id: kurieisha-shiori-free-2026
+slug: kurieisha-shiori-free-2026
+fair_name: しおり紐無料フェア
+printer_id: kurieisha
+category: dojinshi
+sources:
+  - https://www.kurieisha.co.jp/itoshiori_fair/
+summary: 本文のページ数に応じて、栞紐（糸しおり）を無料または1本分の料金で付けられる。全セット・全サイズで使える。
+benefit_summary: 本文60ページ以上で栞紐が無料
+source_type: official_fair
+start_date: 2026-09-21
+start_date_text: 2026年9月21日
+start_date_precision: day
+end_date: 2026-11-21
+end_date_text: 11月21日入稿分まで
+end_date_precision: day
+printing_methods:
+  - offset
+  - ondemand
+benefit_types:
+  - free_option
+free_options:
+  - シングル栞紐
+  - ダブル栞紐
+combinable: false
+application_required: true
+conditions_text: 本文60ページ以上でシングル栞紐が無料、80ページ以上でダブル栞紐が1本分の料金、140ページ以上でダブル栞紐が無料。全セット・全サイズが対象（オフセット・オンデマンドとも）。杢糸しおりのピンク・オレンジ・濃茶も対象。納期は+4日。発注後に申込フォームで申請。早割は併用可、要予約のサービス・色付け加工・他のフェアとは併用不可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

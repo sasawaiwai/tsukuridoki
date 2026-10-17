@@ -1,0 +1,27 @@
+fair_id: hope21-nosenose-frontispiece
+slug: hope21-nosenose-frontispiece
+fair_name: のせのせキャンペーン：オンデマンドフルカラー口絵無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を2日早めると、カスタム印刷でオンデマンドフルカラーの口絵が無料になる。
+benefit_summary: 締切2日前倒しで口絵無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+binding:
+  - perfect
+benefit_types:
+  - free_option
+free_options:
+  - オンデマンドフルカラー口絵
+min_quantity: 100
+conditions_text: カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。用紙はマットコート90kgかトレーシングペーパー52kg白（片面）。200部以上か60ページ以上なら両面可。無線綴じのみ。公式の一覧では「口絵無料 or 遊び紙無料」と表記。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

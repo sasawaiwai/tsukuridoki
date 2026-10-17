@@ -1,0 +1,15 @@
+{
+  "source_url": "https://nanairodo.jp/",
+  "printer_id": "nanairodo",
+  "content_hash": "sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761",
+  "content_chars": 2475,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。"
+}

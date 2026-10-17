@@ -1,0 +1,15 @@
+{
+  "source_url": "https://hope21.jp/pr/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db",
+  "content_chars": 466,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "キャンペーンの一覧ページ。各キャンペーンは個別のページで確認した。"
+}

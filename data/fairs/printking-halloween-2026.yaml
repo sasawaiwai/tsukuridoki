@@ -1,0 +1,30 @@
+fair_id: printking-halloween-2026
+slug: printking-halloween-2026
+fair_name: HALLOWEEN割
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/index.php
+summary: 作中にハロウィンにまつわるモチーフやシーンが登場する冊子の注文が10%OFFになる。
+benefit_summary: ハロウィン要素のある本が10%OFF
+source_type: official_campaign
+start_date: 2026-10-01
+start_date_text: 2026年10月1日受付分
+start_date_precision: day
+end_date: 2026-10-31
+end_date_text: 10月31日15時
+end_date_precision: day
+benefit_types:
+  - discount
+discount_rate: 10
+specific_sets_only: true
+combinable: false
+application_required: true
+conditions_text: カスタマイズセット・カスタマイズカラーセット・カスタマイズセットPlus Vivid・フランス製本セット・カバー付小説本セット・和綴じ製本セット・ステプラセット・ステプラカラーセットが対象。オプションで選び、該当するページ番号などを備考に書く。各種クーポン・早期入稿割引と併用不可。注文と入稿の両方を期間内に。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

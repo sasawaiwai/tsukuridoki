@@ -1,0 +1,31 @@
+fair_id: k9-event-support
+slug: k9-event-support
+fair_name: 支援イベント特典
+printer_id: k9
+category: dojinshi
+sources:
+  - https://www.k-k9.jp/campaign/
+summary: 支援登録されたイベントに合わせた注文で、本と同数のポストカード、または見本誌の自宅送料無料のどちらかを選べる。
+benefit_summary: ポストカード無料か見本誌の送料無料
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援登録のオンリーイベント・常設支援イベントごと
+printing_methods:
+  - ondemand
+  - offset
+benefit_types:
+  - novelty
+  - free_option
+free_options:
+  - ポストカード（本と同数）
+  - 見本誌（余部）の自宅送料無料
+combinable: false
+application_required: true
+conditions_text: 支援登録のオンリーイベント・常設支援イベントに参加し、その合わせの発注が対象（イベントの一覧は公式で確認）。見積フォームで選び、納品先か備考に参加イベントを書く。ポストカードは両面（イラスト面カラー・宛名面モノクロ）。期間限定特典（指定イベント納品）とは併用不可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

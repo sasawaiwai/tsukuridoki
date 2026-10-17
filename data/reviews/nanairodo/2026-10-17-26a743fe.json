@@ -1,0 +1,34 @@
+{
+  "source_url": "https://nanairodo.jp/campaign/",
+  "printer_id": "nanairodo",
+  "content_hash": "sha256:ce68a52bf1970e72189f8c9290e1b27c027c58685d5ac88aec4935a232fbadba",
+  "content_chars": 191,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nanairodo-hashtag-points",
+      "fair_name": "「#なないろ博」感想投稿キャンペーン",
+      "sources": [
+        "https://nanairodo.jp/hashtagcampaign/",
+        "https://nanairodo.jp/campaign/"
+      ],
+      "summary": "なないろ堂で作った冊子・グッズの写真と感想をハッシュタグ付きでXに投稿し、申請すると100ポイントがもらえる。",
+      "benefit_summary": "感想投稿で100ポイント",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "points"
+      ],
+      "application_required": true,
+      "conditions_text": "2025年3月21日以降の投稿が対象（一覧の表記は「常時開催」）。写真つきの投稿をフォームで申請（文字だけは対象外）。1商品1ポストにつき1回。アカウントは公開状態で申請。1ポイント=1円。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "ジューンブライドセレクション（2025）とタイムセール（2025）は終了済み。"
+}

@@ -1,0 +1,32 @@
+{
+  "source_url": "https://hope21.jp/pr/reprint/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c",
+  "content_chars": 857,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "hope21-reprint-points",
+      "fair_name": "再版キャンペーン",
+      "sources": [
+        "https://hope21.jp/pr/reprint/"
+      ],
+      "summary": "前回の発注から3か月以内に再版すると、データの変更ページ数に応じてポイント還元率が上がる。",
+      "benefit_summary": "再版でポイント還元最大10%",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "points"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "combinable": true,
+      "conditions_text": "前回発注の納品希望日から再入稿日まで3か月以内。前回データそのままで10%、1ページのみ変更で5%、4ページ以内の変更で3%（通常2%）。5ページ以上の変更は対象外。豆本・スーパークイックセット・グッズを除く全セット。見積もりNaviで「再版特典」を選び前回の商品IDを入力。のせのせ（カスタム印刷）・早割・早得・オンリーイベント支援と併用可（早得は30%まで）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": null
+}

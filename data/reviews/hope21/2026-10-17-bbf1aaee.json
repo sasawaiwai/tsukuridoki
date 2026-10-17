@@ -1,0 +1,177 @@
+{
+  "source_url": "https://hope21.jp/pr/nosenose_cp/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3",
+  "content_chars": 5570,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "hope21-nosenose-foil",
+      "fair_name": "のせのせキャンペーン：箔押し無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を5日早めると、カスタム印刷で箔押し1か所が無料になる。",
+      "benefit_summary": "締切5日前倒しで箔押し無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "processes": [
+        "foil"
+      ],
+      "benefit_types": [
+        "free_process"
+      ],
+      "min_quantity": 100,
+      "conditions_text": "カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。箔は1か所（10×10cmまたは15×5cm）、色は金か銀（200部以上か60ページ以上なら色が増える）。表紙・本文・箔を同時入稿。特殊紙への箔はのりが弱い場合あり。"
+    },
+    {
+      "fair_id": "hope21-nosenose-endpaper",
+      "fair_name": "のせのせキャンペーン：遊び紙無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を2日早めると、カスタム印刷で遊び紙（前）が無料になる。",
+      "benefit_summary": "締切2日前倒しで遊び紙無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "processes": [
+        "endpaper"
+      ],
+      "benefit_types": [
+        "free_process"
+      ],
+      "min_quantity": 100,
+      "conditions_text": "カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。指定の用紙から選ぶ。前のみ（200部以上か60ページ以上なら前後に同じ紙）。ほかの遊び紙・口絵の選択より優先される。公式の一覧では「口絵無料 or 遊び紙無料」と表記。"
+    },
+    {
+      "fair_id": "hope21-nosenose-frontispiece",
+      "fair_name": "のせのせキャンペーン：オンデマンドフルカラー口絵無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を2日早めると、カスタム印刷でオンデマンドフルカラーの口絵が無料になる。",
+      "benefit_summary": "締切2日前倒しで口絵無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "binding": [
+        "perfect"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "オンデマンドフルカラー口絵"
+      ],
+      "min_quantity": 100,
+      "conditions_text": "カスタム印刷が対象。100部から。表紙込28ページ以上（未満は28ページ料金で利用可）。用紙はマットコート90kgかトレーシングペーパー52kg白（片面）。200部以上か60ページ以上なら両面可。無線綴じのみ。公式の一覧では「口絵無料 or 遊び紙無料」と表記。"
+    },
+    {
+      "fair_id": "hope21-nosenose-cover-paper",
+      "fair_name": "のせのせキャンペーン：オンデマンド表紙紙替無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を3日早めると、カスタム印刷で表紙の特殊紙代が無料になる。",
+      "benefit_summary": "締切3日前倒しで表紙の特殊紙代無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "free_paper_upgrade"
+      ],
+      "conditions_text": "カスタム印刷が対象。部数・ページ数の制限なし。指定の特殊紙から選ぶ。ほかの表紙の選択より優先される。"
+    },
+    {
+      "fair_id": "hope21-nosenose-pp",
+      "fair_name": "のせのせキャンペーン：PP加工無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を2日早めると、ポケットセットの表紙のPP加工（クリアかマット）が無料になる。",
+      "benefit_summary": "締切2日前倒しでPP加工無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "processes": [
+        "pp",
+        "matte_pp"
+      ],
+      "benefit_types": [
+        "free_process"
+      ],
+      "min_quantity": 20,
+      "conditions_text": "ポケットセット限定。20部から。表紙込20ページ以上（未満は20ページ料金で利用可）。表紙用紙はアートポスト180kg限定。"
+    },
+    {
+      "fair_id": "hope21-nosenose-round-corner",
+      "fair_name": "のせのせキャンペーン：角丸無料",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を2日早めると、角丸（小口側2か所）が無料になる。",
+      "benefit_summary": "締切2日前倒しで角丸無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "processes": [
+        "round_corner"
+      ],
+      "benefit_types": [
+        "free_process"
+      ],
+      "min_quantity": 10,
+      "conditions_text": "豆本・メガATOMは対象外。フライトセットのジャケット・ジャケットliteも対象外。10部から。角丸はR6（半径6mm）で小口側2か所。メモ帳断裁がある本（カスタム印刷・スロット）は本体のみ加工。"
+    },
+    {
+      "fair_id": "hope21-nosenose-goods",
+      "fair_name": "のせのせキャンペーン：グッズプレゼント",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を早めると、Re:Petta・ポストカード・ポスターのいずれかがもらえる。",
+      "benefit_summary": "締切前倒しでグッズをプレゼント",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "Re:Petta 4枚",
+        "ポストカード（発注部数と同枚数）",
+        "A2ポスター1枚"
+      ],
+      "conditions_text": "Re:Petta 4枚（A5。200部以上か60ページ以上なら8枚、締切+3日）とポストカード（発注部数と同枚数・片面、100部から、締切+2日。スーパークイック・超短納期系は不可）は豆本・メガATOM以外が対象。A2ポスター1枚（締切+3日）はメガATOMのみ。どれも1か所納品で、データが必要。"
+    },
+    {
+      "fair_id": "hope21-nosenose-points",
+      "fair_name": "のせのせキャンペーン：10%ポイント還元",
+      "sources": [
+        "https://hope21.jp/pr/nosenose_cp/"
+      ],
+      "summary": "締切を3日早めると、カスタム印刷のポイント還元が通常2%から10%になる。",
+      "benefit_summary": "締切3日前倒しでポイント10%還元",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "specific_sets_only": true,
+      "benefit_types": [
+        "points"
+      ],
+      "max_quantity": 2000,
+      "conditions_text": "カスタム印刷が対象。2000部まで。対象は本のみ（チラシ・便箋・グッズ・大台印刷やシルク印刷などの特殊印刷・特殊製本は対象外）。自宅・書店発送でも利用可。ポイントは決済の翌日に付与。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "対象セット・部数・加工が特典ごとに違うため特典ごとに分けた（運営者決定）。黄金ブロックは秋キャンペーンの詳細ページにあり今回は登録しない。"
+}

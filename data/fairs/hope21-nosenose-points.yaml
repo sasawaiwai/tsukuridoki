@@ -1,0 +1,23 @@
+fair_id: hope21-nosenose-points
+slug: hope21-nosenose-points
+fair_name: のせのせキャンペーン：10%ポイント還元
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を3日早めると、カスタム印刷のポイント還元が通常2%から10%になる。
+benefit_summary: 締切3日前倒しでポイント10%還元
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+benefit_types:
+  - points
+max_quantity: 2000
+conditions_text: カスタム印刷が対象。2000部まで。対象は本のみ（チラシ・便箋・グッズ・大台印刷やシルク印刷などの特殊印刷・特殊製本は対象外）。自宅・書店発送でも利用可。ポイントは決済の翌日に付与。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

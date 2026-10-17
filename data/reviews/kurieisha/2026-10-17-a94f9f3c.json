@@ -1,0 +1,36 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/campaign/jyanwari/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef",
+  "content_chars": 4497,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kurieisha-genre-discount",
+      "fair_name": "ジャン割（ジャンル限定割引）",
+      "sources": [
+        "https://www.kurieisha.co.jp/campaign/",
+        "https://www.kurieisha.co.jp/campaign/jyanwari/"
+      ],
+      "summary": "対象ジャンル・対象イベントの本を楽らくセットで作ると、イベント直前の入稿で30%OFFになる予約制の割引。",
+      "benefit_summary": "楽らくセットが30%OFF（要予約）",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 30,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "楽らくセット「輝」「華」「雅」が対象。対象ジャンル・対象イベントは公式の一覧で確認。要予約（WEB予約）。表紙はイベント4日前、本文は3日前に入稿（日曜イベントなら表紙水曜・本文木曜）。表紙入稿時に全額入金。本文締切に間に合わない場合のお助けプランは20%OFF（電話連絡・本文用紙の限定あり）。大型イベント時は締切が変わる場合あり。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "ジャン割の詳細。/campaign/ の抽出結果と同じ内容。"
+}

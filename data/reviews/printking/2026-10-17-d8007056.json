@@ -1,0 +1,15 @@
+{
+  "source_url": "https://printking.co.jp/doujin/campaign/betsu_mitsu_fes.php",
+  "printer_id": "printking",
+  "content_hash": "sha256:9f500c15324961e9cf8f34a0cb614a7e2800e0c768b0772d5c26b253ceeb585e",
+  "content_chars": 979,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "特殊な装丁の相談受付で、割引・特典は書かれていない。"
+}

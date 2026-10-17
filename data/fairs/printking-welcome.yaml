@@ -1,0 +1,24 @@
+fair_id: printking-welcome
+slug: printking-welcome
+fair_name: ウェルカムキャンペーン
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/index.php
+summary: 初めてプリントキングで冊子を注文する人が、クーポンでセットごとに最大20%OFFになる。
+benefit_summary: 初回の冊子注文が最大20%OFF
+source_type: official_campaign
+benefit_types:
+  - discount
+new_customer_only: true
+specific_sets_only: true
+combinable: false
+application_required: true
+conditions_text: カスタマイズ系・フランス製本・カバー付小説本は20%、ステプラ系は15%、和綴じ製本は10%（クーポンコードは公式で確認）。冊子の注文歴がない人が対象（試し刷り・グッズのみの履歴は可。カスタマイズセットPlus Vividは初回注文に限り注文歴があっても可）。対象商品いずれか1回のみ。早期入稿割引・ほかのクーポンと併用不可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

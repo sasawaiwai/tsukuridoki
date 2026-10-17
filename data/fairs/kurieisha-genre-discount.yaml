@@ -1,0 +1,27 @@
+fair_id: kurieisha-genre-discount
+slug: kurieisha-genre-discount
+fair_name: ジャン割（ジャンル限定割引）
+printer_id: kurieisha
+category: dojinshi
+sources:
+  - https://www.kurieisha.co.jp/campaign/
+  - https://www.kurieisha.co.jp/campaign/jyanwari/
+summary: 対象ジャンル・対象イベントの本を楽らくセットで作ると、イベント直前の入稿で30%OFFになる予約制の割引。
+benefit_summary: 楽らくセットが30%OFF（要予約）
+source_type: official_campaign
+timing_type: ongoing
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+discount_rate: 30
+specific_sets_only: true
+application_required: true
+conditions_text: 楽らくセット「輝」「華」「雅」が対象。対象ジャンル・対象イベントは公式の一覧で確認。要予約（WEB予約）。表紙はイベント4日前、本文は3日前に入稿（日曜イベントなら表紙水曜・本文木曜）。表紙入稿時に全額入金。本文締切に間に合わない場合のお助けプランは20%OFF（電話連絡・本文用紙の限定あり）。大型イベント時は締切が変わる場合あり。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

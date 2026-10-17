@@ -1,0 +1,15 @@
+{
+  "source_url": "https://nanairodo.jp/products/request_information/sample/",
+  "printer_id": "nanairodo",
+  "content_hash": "sha256:c277d246c5bb083e64dd8922a9a0225d160649836a10c99be585aad3d82cf78d",
+  "content_chars": 1218,
+  "extractor": "manual",
+  "extracted_at": "2026-10-17T21:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "資料請求のページ。"
+}

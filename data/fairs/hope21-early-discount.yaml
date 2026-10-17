@@ -1,0 +1,27 @@
+fair_id: hope21-early-discount
+slug: hope21-early-discount
+fair_name: 早割or早得
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/hayawari/
+summary: 納品希望日より早く入稿すると、割引（早割）かポイント還元（早得）のどちらかを選べる年間のサービス。
+benefit_summary: 最大20%OFFか最大30%ポイント還元
+source_type: official_campaign
+timing_type: ongoing
+printing_methods:
+  - offset
+  - ondemand
+benefit_types:
+  - discount
+  - points
+specific_sets_only: true
+combinable: true
+conditions_text: セット早割は最大20%OFF・早得は最大30%還元、特色・ポケットビビッドは最大25%OFF・最大30%還元。対象セットは公式の一覧で確認（ポケット+・季節のセット・スイッチ・ATOM系・スロット・フライト系、特色3種、ポケット・ビビッド系など）。見積もりNaviで納品希望日を入れて選ぶ。のせのせキャンペーン・イベント支援と併用可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

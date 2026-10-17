@@ -1,0 +1,26 @@
+fair_id: hope21-nosenose-pp
+slug: hope21-nosenose-pp
+fair_name: のせのせキャンペーン：PP加工無料
+printer_id: hope21
+category: dojinshi
+sources:
+  - https://hope21.jp/pr/nosenose_cp/
+summary: 締切を2日早めると、ポケットセットの表紙のPP加工（クリアかマット）が無料になる。
+benefit_summary: 締切2日前倒しでPP加工無料
+source_type: official_campaign
+timing_type: ongoing
+specific_sets_only: true
+processes:
+  - pp
+  - matte_pp
+benefit_types:
+  - free_process
+min_quantity: 20
+conditions_text: ポケットセット限定。20部から。表紙込20ページ以上（未満は20ページ料金で利用可）。表紙用紙はアートポスト180kg限定。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

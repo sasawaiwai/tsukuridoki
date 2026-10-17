@@ -1,0 +1,23 @@
+fair_id: printking-paper-campaign
+slug: printking-paper-campaign
+fair_name: 【期間限定！】ペーパーキャンペーン
+printer_id: printking
+category: dojinshi
+sources:
+  - https://printking.co.jp/doujin/campaign/index.php
+summary: 冊子の注文時に、注文部数×10枚までのペーパー（片面モノクロ）を無料で付けられる。
+benefit_summary: 注文部数×10枚までペーパー無料
+source_type: official_campaign
+benefit_types:
+  - novelty
+free_options:
+  - ペーパー（片面モノクロ）
+application_required: true
+conditions_text: ハチトクセットを除く冊子全てが対象。最大1,000枚・最大A4・片面モノクロ・用紙は選べない。発注時の備考に希望・サイズ・枚数を書き、ペーパーの原稿を冊子と一緒に入稿。公式に「期間限定」とあるが期間の記載なし。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

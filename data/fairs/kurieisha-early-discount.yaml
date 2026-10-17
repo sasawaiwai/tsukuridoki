@@ -1,0 +1,26 @@
+fair_id: kurieisha-early-discount
+slug: kurieisha-early-discount
+fair_name: 早割（早期入稿割引）
+printer_id: kurieisha
+category: dojinshi
+sources:
+  - https://www.kurieisha.co.jp/campaign/
+summary: 通常の締切より早く入稿すると、セットごとに決められた日数に応じて割引になる。楽らくセット・オンデマンドセットは最大40%OFF。
+benefit_summary: 早く入稿するほど最大40%OFF
+source_type: official_campaign
+timing_type: ongoing
+printing_methods:
+  - offset
+  - ondemand
+benefit_types:
+  - discount
+specific_sets_only: true
+combinable: false
+conditions_text: 割引率と日数はセットごと（楽らくセット・オンデマンドセット最大40%、チンドン・ベリィパック・ふるすぺっく・オールフルカラー本セット最大30%、オールフルカラーオンデマンド最大25%、プランナーズコース最大20%）。日数は営業日で数える。大型イベント前は締切・納品日が変わる。フェアと各割引は併用不可。
+published_at: 2026-10-17
+discovered_at: 2026-10-17
+verified_at: 2026-10-17
+verification_status: verified
+history:
+  - date: 2026-10-17
+    type: published

@@ -7,6 +7,13 @@ fair_index_url: https://hope21.jp/pr/
 # 一覧ページは開催中キャンペーン一覧の枠、各ページは .entry-content
 crawl_selector: div.wp-block-acf-page-post-content, .entry-content
 fair_link_selector: div.wp-block-acf-page-post-content a
+# 季節のキャンペーン（/pr/2026oct-cp/）の概要ページは期間・条件が詳細ページにあるため、詳細ページも見る。
+# 季節ごとに入れ替わるので、次の季節のキャンペーンが出たら差し替える（2026-10-16追加。セット紹介 /lineup/ は .entry-content が無い可能性があり、次の巡回で確かめる）
+watch_urls:
+  - https://hope21.jp/lineup/set/autumnset_2026/
+  - https://hope21.jp/pr/2026oct-artasobi/
+  - https://hope21.jp/pr/hayawari-event/
+  - https://hope21.jp/pr/nosenose_gold_cp/
 domains: [hope21.jp]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
