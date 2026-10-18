@@ -1,0 +1,25 @@
+printer_id: luck
+name: ラック出版
+official_url: https://www.luck-pb.jp/
+# フェアの一覧ページは無い。トップのお知らせ（#main）にキャンペーン開始の案内が出るため、トップを一覧として変化を見る（2026-10-18確認）
+fair_index_url: https://www.luck-pb.jp/
+crawl_selector: '#main'
+# トップのリンクは商品案内・入稿案内が中心のため、たどらない。フェアの個別ページは watch_urls で見る
+follow_links: false
+# 左メニュー・お知らせからリンクされているフェア・割引の個別ページ
+watch_urls:
+  - https://www.luck-pb.jp/asobigamifair.html
+  - https://www.luck-pb.jp/tokusyushifair.html
+  - https://www.luck-pb.jp/review.html
+  - https://www.luck-pb.jp/hajimemashite.html
+  - https://www.luck-pb.jp/only.html
+  - https://www.luck-pb.jp/carpsale.html
+  - https://www.luck-pb.jp/zeroen.html
+domains: [luck-pb.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無いため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず。外部ショップ（BASE）のキャンペーンは対象外（2026-10-18確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-18

@@ -1,0 +1,19 @@
+printer_id: teis
+name: テイズプリント
+official_url: https://www.teis-p.com/
+# 「キャンペーン」。期間限定・通年・イベント支援が1ページに並ぶ（#page01〜#page03。2026-10-18確認）
+fair_index_url: https://www.teis-p.com/html/discount_list.html
+crawl_selector: div.page_contents
+# 一覧のリンクはページ内の見出しへの移動と注文ページが中心のため、たどらない
+follow_links: false
+# 一覧に載っていない個別ページ（トップのバナーから）
+watch_urls:
+  - https://www.teis-p.com/html/xreview.html
+domains: [teis-p.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.teis-p.com/html/terms.html
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtもすべて許可のため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約第2条5に「本サービスの掲載内容の全部または一部を無断で転載・複写・蓄積・転送・引用・改変するなど、著作権法違反として刑事責任を問われる可能性を有する行為」をしない旨の定めがある（プリントキングと同じ条項）。プリントキングで決めた運営者の判断（2026-10-15）を適用：著作権で保護される文章の転載と、客観的な事実情報の収集・整理を区別して扱い、本文を保存・転載・複製しない（仕様書7-2）、事実だけを独自の表現で掲載する、公式URLを出典として示す。情報収集・二次利用を明示的に禁止する定めが別に見つかったら、登録を保留して報告する（2026-10-18確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-18
