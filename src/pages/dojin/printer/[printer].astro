@@ -1,10 +1,10 @@
 ---
-// 印刷所別の一覧（仕様書14章）
+// 印刷所別の一覧（仕様書14章）。その印刷所に関係する情報だけを出す（サイト全体の年別アーカイブへのリンクは出さない。仕様書63-2）
 import ListPage from '../../../components/ListPage.astro';
 import Button from '../../../components/Button.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { loadSiteData } from '../../../lib/data.ts';
-import { archiveYears, byRankThenPublished, byUntilDesc } from '../../../lib/lists.ts';
+import { byRankThenPublished, byUntilDesc } from '../../../lib/lists.ts';
 import { SEARCH_HREF } from '../../../lib/nav.ts';
 import { isExpired } from '../../../lib/search.ts';
 import { todayJST } from '../../../lib/period.ts';
@@ -31,7 +31,6 @@ const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
   cards={open.map(toCard)}
   pastCards={past.map(toCard)}
   searchHref={`${SEARCH_HREF}?printer=${printer.printer_id}`}
-  archiveYears={archiveYears(data.fairs, today)}
   emptyText="現在、ツクリドキ！に掲載しているフェアはありません。"
 >
   <p slot="header">
