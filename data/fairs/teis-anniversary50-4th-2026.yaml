@@ -1,0 +1,31 @@
+fair_id: teis-anniversary50-4th-2026
+slug: teis-anniversary50-4th-2026
+fair_name: 創業50周年記念 第4弾 35%特別割引
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: 創業50周年記念キャンペーンの第4弾。期間中の注文・入稿で、対象の同人誌印刷セットが35%OFFになる。
+benefit_summary: 対象セットが35%OFF
+source_type: official_campaign
+start_date: 2026-11-29
+start_date_text: 2026年11月29日
+start_date_precision: day
+end_date: 2026-12-05
+end_date_text: 2026年12月5日まで（注文受付・入稿）
+end_date_precision: day
+benefit_types:
+  - discount
+discount_rate: 35
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+conditions_text: 対象はベーシック冊子印刷・オールフルカラー冊子印刷。注文時にクーポンコードを入力（注文後の申請は不可）。割引はセット本体価格のみで、オプションは対象外。冬コミなど大型イベント合わせの搬入も可。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

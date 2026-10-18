@@ -3,7 +3,7 @@
 - url: https://comflex-doujin.com/sale_infomation/
   printer_id: comflex
   content_hash: sha256:ba4f2e94f166d562bcc189c06b4add3a2bb4c55aba14bb46029d452f82c5926b
-  reviewed_hash: null
+  reviewed_hash: sha256:ba4f2e94f166d562bcc189c06b4add3a2bb4c55aba14bb46029d452f82c5926b
   content_chars: 1514
   etag: null
   last_modified: null
@@ -213,7 +213,7 @@
 - url: https://www.luck-pb.jp/
   printer_id: luck
   content_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
-  reviewed_hash: null
+  reviewed_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
   content_chars: 7425
   etag: '"9234-65dae25b0dde9"'
   last_modified: Tue, 13 Oct 2026 00:46:38 GMT
@@ -233,7 +233,7 @@
 - url: https://www.luck-pb.jp/carpsale.html
   printer_id: luck
   content_hash: sha256:c1fe69b738288fb794ab2941dcbdd9ed1b8d8db07dc4710ae76109076fe4b9f8
-  reviewed_hash: null
+  reviewed_hash: sha256:c1fe69b738288fb794ab2941dcbdd9ed1b8d8db07dc4710ae76109076fe4b9f8
   content_chars: 1139
   etag: '"272f-5ba3d6c854d00"'
   last_modified: Mon, 01 Feb 2021 02:51:00 GMT
@@ -253,7 +253,7 @@
 - url: https://www.luck-pb.jp/only.html
   printer_id: luck
   content_hash: sha256:73a95d14c9d5a6b3f7fadcdf13b6ab62df8b4e9314f77884ebd91d324dc889e9
-  reviewed_hash: null
+  reviewed_hash: sha256:73a95d14c9d5a6b3f7fadcdf13b6ab62df8b4e9314f77884ebd91d324dc889e9
   content_chars: 2550
   etag: '"384e-65b15764c0c28"'
   last_modified: Wed, 09 Sep 2026 23:46:37 GMT
@@ -283,7 +283,7 @@
 - url: https://www.luck-pb.jp/zeroen.html
   printer_id: luck
   content_hash: sha256:9f0de2131be79682b279d1b7359fefc6a1f8f6d9c7843cc68dbc6d763cafda3e
-  reviewed_hash: null
+  reviewed_hash: sha256:9f0de2131be79682b279d1b7359fefc6a1f8f6d9c7843cc68dbc6d763cafda3e
   content_chars: 362
   etag: '"1982-5ff8da193a9b0"'
   last_modified: Mon, 03 Jul 2023 04:30:49 GMT
@@ -1203,7 +1203,7 @@
 - url: https://sungroup.co.jp/campaign/
   printer_id: sungroup
   content_hash: sha256:003e2e1142a0adee1fab07a5ef58e39fd060a355e413bb5898cc227dd6b3699b
-  reviewed_hash: null
+  reviewed_hash: sha256:003e2e1142a0adee1fab07a5ef58e39fd060a355e413bb5898cc227dd6b3699b
   content_chars: 1083
   etag: null
   last_modified: null
@@ -1213,7 +1213,7 @@
 - url: https://www.teis-p.com/html/discount_list.html
   printer_id: teis
   content_hash: sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867
-  reviewed_hash: null
+  reviewed_hash: sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867
   content_chars: 5438
   etag: null
   last_modified: null
@@ -1223,7 +1223,7 @@
 - url: https://www.teis-p.com/html/xreview.html
   printer_id: teis
   content_hash: sha256:407ca77c7278c65010a01735267f8b7247e19953eb95285ece47480a7985c909
-  reviewed_hash: null
+  reviewed_hash: sha256:407ca77c7278c65010a01735267f8b7247e19953eb95285ece47480a7985c909
   content_chars: 1155
   etag: null
   last_modified: null

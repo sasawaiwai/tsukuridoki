@@ -1,0 +1,25 @@
+fair_id: luck-event-support
+slug: luck-event-support
+fair_name: イベント支援（サークル参加者様支援）
+printer_id: luck
+category: dojinshi
+sources:
+  - https://www.luck-pb.jp/only.html
+summary: 支援中のイベントに参加するサークルのイベント新刊で、遊び紙（色上質紙・全色）が無料になる。
+benefit_summary: 支援イベントの新刊で遊び紙が無料
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援中のイベントごと（常時支援：コミティア・J.GARDEN・pictSQUARE・Jケット）
+benefit_types:
+  - free_option
+free_options:
+  - 遊び紙（色上質紙 中厚口・全色から選択）
+application_required: true
+conditions_text: 支援中イベント（一覧は公式で確認）に参加するサークルのイベント新刊が対象。入稿時に備考欄か発注書へ「参加イベント名」と「イベント支援希望」を書く。遊び紙の位置は無線とじが前のみ・前後、中とじは前後のみ。締切を過ぎると利用できない場合あり。早期入稿割引と併用可。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

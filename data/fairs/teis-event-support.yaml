@@ -1,0 +1,25 @@
+fair_id: teis-event-support
+slug: teis-event-support
+fair_name: イベント支援：支援登録イベント割
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: 支援登録されたイベントに合わせた注文で、対象の冊子印刷が5%OFFになる。対象イベントは公式の一覧で確認。
+benefit_summary: 支援登録イベント合わせで5%OFF
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援登録イベントごと（イベントごとにクーポンコードあり）
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: 対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。支援登録されたイベント合わせの注文が対象（イベントの一覧は公式で確認。一部のイベントは直接搬入対象）。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/",
+  "printer_id": "luck",
+  "content_hash": "sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f",
+  "content_chars": 7425,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせの一覧）。キャンペーンの告知は2016〜2020年のもので、それだけでは現在開催中と判断しない（運営者決定 2026-10-18）。各フェアは個別ページで確認。"
+}

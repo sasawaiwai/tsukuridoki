@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.teis-p.com/html/xreview.html",
+  "printer_id": "teis",
+  "content_hash": "sha256:407ca77c7278c65010a01735267f8b7247e19953eb95285ece47480a7985c909",
+  "content_chars": 1155,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "teis-x-review",
+      "fair_name": "Xレビューキャンペーン",
+      "sources": [
+        "https://www.teis-p.com/html/xreview.html"
+      ],
+      "summary": "テイズプリントで作った本・グッズの写真をハッシュタグ付きでXに投稿し申請すると、1投稿につき500ポイントがもらえる。",
+      "benefit_summary": "X投稿で500ポイント",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "points"
+      ],
+      "application_required": true,
+      "conditions_text": "#テイズプリントで作ったよ を付けて写真を投稿し、申請フォームで申請。テイズプリントの会員登録が必要（するる経由の注文も可）。過去の作品も可だが、投稿はキャンペーン期間中のもの。1投稿500ポイント（作品数によらない）、1人月4回まで、同じ作品は1回まで。ポイント付与（2週間程度）まで投稿を公開しておく。予告なく変更・終了する場合あり。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": null
+}

@@ -1,0 +1,23 @@
+fair_id: teis-event-studioyou
+slug: teis-event-studioyou
+fair_name: イベント支援：スタジオYOU割
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: スタジオYOU主催イベントへの直接搬入を含む注文で、冊子印刷が3%OFFになる通年の割引。
+benefit_summary: スタジオYOU主催イベント直接搬入で3%OFF
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - discount
+application_required: true
+conditions_text: 特急冊子印刷を除く冊子印刷が対象。スタジオYOU主催イベントへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+discount_rate: 3
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published
