@@ -1,0 +1,34 @@
+{
+  "source_url": "https://comflex-doujin.com/sale_infomation/",
+  "printer_id": "comflex",
+  "content_hash": "sha256:ba4f2e94f166d562bcc189c06b4add3a2bb4c55aba14bb46029d452f82c5926b",
+  "content_chars": 1514,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comflex-set-discount",
+      "fair_name": "同人誌セット割引（15%の割引）",
+      "sources": [
+        "https://comflex-doujin.com/sale_infomation/",
+        "https://comflex-doujin.com/contact_us/faq/faq_discount/"
+      ],
+      "summary": "初割・早割・連割・学割・再版割・指定割・2冊割のいずれか1つの条件に当てはまると、同人誌セットの基本料金が15%OFFになる常時の割引。",
+      "benefit_summary": "条件に当てはまるとセット基本料金15%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 15,
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "conditions_text": "初割・早割・連割・学割・再版割・指定割・2冊割のうち1種類だけ使える（併用不可）。各割引の条件と対象セットは公式の「各種割引のご案内」で確認。割引はセットの基本料金のみ（オプションは対象外）、割引額の上限は2万円。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "割引ページに消費税8%の計算例など古い記述があるため、FAQで今も案内されていると確認できた内容だけを登録し、各割引の条件と対象セットは公式で確認とした。グッズ割は割引がグッズの料金だけのため対象外（どちらも運営者決定 2026-10-18）。"
+}

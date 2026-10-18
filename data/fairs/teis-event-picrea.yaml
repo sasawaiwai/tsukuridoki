@@ -1,0 +1,24 @@
+fair_id: teis-event-picrea
+slug: teis-event-picrea
+fair_name: イベント支援：ピクリエ割
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: ピクリエのイベントに参加する人の注文で、ポストカード30枚を無料でプレゼントする通年の特典。
+benefit_summary: ピクリエ参加でポストカード30枚無料
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - novelty
+application_required: true
+conditions_text: 注文時の備考欄に参加イベント名と「ピクリエ割ポストカード30枚特典適用希望」と書く。納期は発送に準じるので入稿締切に注意。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+free_options:
+  - ポストカード30枚
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

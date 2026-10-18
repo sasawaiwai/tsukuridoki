@@ -1,0 +1,240 @@
+{
+  "source_url": "https://www.teis-p.com/html/discount_list.html",
+  "printer_id": "teis",
+  "content_hash": "sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867",
+  "content_chars": 5438,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "teis-anniversary50-4th-2026",
+      "fair_name": "創業50周年記念 第4弾 35%特別割引",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "創業50周年記念キャンペーンの第4弾。期間中の注文・入稿で、対象の同人誌印刷セットが35%OFFになる。",
+      "benefit_summary": "対象セットが35%OFF",
+      "source_type": "official_campaign",
+      "start_date": "2026-11-29",
+      "start_date_text": "2026年11月29日",
+      "start_date_precision": "day",
+      "end_date": "2026-12-05",
+      "end_date_text": "2026年12月5日まで（注文受付・入稿）",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 35,
+      "specific_sets_only": true,
+      "application_required": true,
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷。注文時にクーポンコードを入力（注文後の申請は不可）。割引はセット本体価格のみで、オプションは対象外。冬コミなど大型イベント合わせの搬入も可。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。"
+    },
+    {
+      "fair_id": "teis-free-special-cover",
+      "fair_name": "数量限定！無料特殊紙表紙",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "数量限定で、表紙の特殊紙が無料になる。どの紙が届くかはお楽しみで、無料の対象の紙は入稿の時期によって変わる。",
+      "benefit_summary": "表紙の特殊紙が無料（数量限定）",
+      "source_type": "official_campaign",
+      "end_date": null,
+      "end_date_text": "対象特殊紙の在庫が無くなり次第終了",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_paper_upgrade"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷の表紙用紙のみ。無料の対象は時期により、きらきら・パール（現在の対象）、エンボス・特殊用紙、和風に変わる。用紙の銘柄・色は指定できない（原則白色ベース）。+1営業日（締切が1営業日早まる）。カートでコート180kgを選び、オプションで「特殊紙表紙」→「【数量限定】無料特殊紙」を選ぶ。予告なく早期終了・内容変更の可能性あり。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。"
+    },
+    {
+      "fair_id": "teis-club-discount",
+      "fair_name": "部誌割引",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "学校の部活動・サークル活動で使う冊子が5%OFFになる通年の割引。",
+      "benefit_summary": "部活動・サークルの冊子が5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "application_required": true,
+      "conditions_text": "特急冊子印刷を除く冊子印刷が対象。学校の部活動・サークル活動で使う冊子で、納品先が学校かイベント会場であること（すべての条件を満たす場合）。注文時の「商品備考」に学校名・団体名を書く。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。"
+    },
+    {
+      "fair_id": "teis-wheel-discount",
+      "fair_name": "車輪割引",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "自動車・バイク・電車など車輪のあるものが表紙に描かれた本や、それらの研究本が3%OFFになる通年の割引。",
+      "benefit_summary": "車輪のあるものが表紙の本・研究本が3%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 3,
+      "application_required": true,
+      "conditions_text": "特急冊子印刷を除く冊子印刷が対象。自動車・バイク・電車・汽車・車輪のある模型（玩具）などが表紙に描かれている本、またはそれらの研究本（いずれかに当てはまる場合）。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。"
+    },
+    {
+      "fair_id": "teis-event-comitia",
+      "fair_name": "イベント支援：COMITIA割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "COMITIAへの直接搬入を含む注文で、冊子印刷が3%OFFになる通年の割引。",
+      "benefit_summary": "COMITIA直接搬入で冊子印刷3%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "特急冊子印刷を除く冊子印刷が対象。COMITIAへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 3
+    },
+    {
+      "fair_id": "teis-event-studioyou",
+      "fair_name": "イベント支援：スタジオYOU割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "スタジオYOU主催イベントへの直接搬入を含む注文で、冊子印刷が3%OFFになる通年の割引。",
+      "benefit_summary": "スタジオYOU主催イベント直接搬入で3%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "特急冊子印刷を除く冊子印刷が対象。スタジオYOU主催イベントへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 3
+    },
+    {
+      "fair_id": "teis-event-bunfree",
+      "fair_name": "イベント支援：文学フリマ割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "文学フリマ主催イベントへの直接搬入を含む注文で、対象の冊子印刷が5%OFFになる通年の割引。",
+      "benefit_summary": "文学フリマ直接搬入で5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。文学フリマ主催イベントへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 5,
+      "specific_sets_only": true
+    },
+    {
+      "fair_id": "teis-event-jgarden",
+      "fair_name": "イベント支援：J.GARDEN割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "J.GARDEN主催イベントへの直接搬入を含む注文で、対象の冊子印刷が5%OFFになる通年の割引。",
+      "benefit_summary": "J.GARDEN直接搬入で5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。J.GARDEN主催イベントへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 5,
+      "specific_sets_only": true
+    },
+    {
+      "fair_id": "teis-event-airbu",
+      "fair_name": "イベント支援：エアブー割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "エアブーのイベントに参加する人の注文で、対象の冊子印刷が5%OFFになる通年の割引。",
+      "benefit_summary": "エアブー参加で5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。備考欄に参加イベント名を書く。納期は発送に準じるので入稿締切に注意。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 5,
+      "specific_sets_only": true
+    },
+    {
+      "fair_id": "teis-event-pictsquare",
+      "fair_name": "イベント支援：pictSQUARE割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "pictSQUAREのイベントに参加する人の注文で、対象の冊子印刷が5%OFFになる通年の割引。",
+      "benefit_summary": "pictSQUARE参加で5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。備考欄に参加イベント名を書く。納期は発送に準じるので入稿締切に注意。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "discount_rate": 5,
+      "specific_sets_only": true
+    },
+    {
+      "fair_id": "teis-event-picrea",
+      "fair_name": "イベント支援：ピクリエ割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "ピクリエのイベントに参加する人の注文で、ポストカード30枚を無料でプレゼントする通年の特典。",
+      "benefit_summary": "ピクリエ参加でポストカード30枚無料",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "novelty"
+      ],
+      "application_required": true,
+      "conditions_text": "注文時の備考欄に参加イベント名と「ピクリエ割ポストカード30枚特典適用希望」と書く。納期は発送に準じるので入稿締切に注意。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。",
+      "free_options": [
+        "ポストカード30枚"
+      ]
+    },
+    {
+      "fair_id": "teis-event-support",
+      "fair_name": "イベント支援：支援登録イベント割",
+      "sources": [
+        "https://www.teis-p.com/html/discount_list.html"
+      ],
+      "summary": "支援登録されたイベントに合わせた注文で、対象の冊子印刷が5%OFFになる。対象イベントは公式の一覧で確認。",
+      "benefit_summary": "支援登録イベント合わせで5%OFF",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "支援登録イベントごと（イベントごとにクーポンコードあり）",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。支援登録されたイベント合わせの注文が対象（イベントの一覧は公式で確認。一部のイベントは直接搬入対象）。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "イベント支援は公式が割引ごとに名前・率・対象・条件を分けているため名前ごとに分割（運営者決定 2026-10-18）。ふゆのきらきらは内容の記載がなく保留。もったいない用紙割引（実施していない）・終了済みの回・主催者向けの申請案内は対象外。"
+}

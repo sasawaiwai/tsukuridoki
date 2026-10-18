@@ -1,0 +1,23 @@
+fair_id: teis-wheel-discount
+slug: teis-wheel-discount
+fair_name: 車輪割引
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: 自動車・バイク・電車など車輪のあるものが表紙に描かれた本や、それらの研究本が3%OFFになる通年の割引。
+benefit_summary: 車輪のあるものが表紙の本・研究本が3%OFF
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - discount
+discount_rate: 3
+application_required: true
+conditions_text: 特急冊子印刷を除く冊子印刷が対象。自動車・バイク・電車・汽車・車輪のある模型（玩具）などが表紙に描かれている本、またはそれらの研究本（いずれかに当てはまる場合）。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

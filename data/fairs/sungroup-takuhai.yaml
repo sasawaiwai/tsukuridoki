@@ -1,0 +1,23 @@
+fair_id: sungroup-takuhai
+slug: sungroup-takuhai
+fair_name: 宅配便割引
+printer_id: sungroup
+category: dojinshi
+sources:
+  - https://sungroup.co.jp/campaign/
+summary: 納品先が自宅・宅配搬入のイベント会場・全国の書店の注文で、オフセット印刷が10%OFFになる。
+benefit_summary: 宅配便での納品でオフセット10%OFF
+source_type: official_campaign
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+discount_rate: 10
+conditions_text: 納品先が自宅・宅配搬入のイベント会場・全国の書店の場合（とらのあな・メロンブックス・フロマージュは書店直送割引の対象）。宅配搬入イベントは注文フォームの通信欄で搬入要項を知らせる。送料は1箱1,500円。オールスミの折り本・オンデマンド印刷は割引なし。新刊・再版、他社で初版の作品も可。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

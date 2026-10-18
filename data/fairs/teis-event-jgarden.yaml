@@ -1,0 +1,24 @@
+fair_id: teis-event-jgarden
+slug: teis-event-jgarden
+fair_name: イベント支援：J.GARDEN割
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: J.GARDEN主催イベントへの直接搬入を含む注文で、対象の冊子印刷が5%OFFになる通年の割引。
+benefit_summary: J.GARDEN直接搬入で5%OFF
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - discount
+application_required: true
+conditions_text: 対象はベーシック冊子印刷・オールフルカラー冊子印刷（特殊紙代などのオプションは除く）。J.GARDEN主催イベントへの直接搬入を含む注文が条件。イベントへの納品を含まない注文は不可。宅配納品のイベントは締切が早まるため、主催者の搬入要項を確認して余裕をもって入稿する。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+discount_rate: 5
+specific_sets_only: true
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

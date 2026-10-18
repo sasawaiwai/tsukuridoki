@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.luck-pb.jp/only.html",
+  "printer_id": "luck",
+  "content_hash": "sha256:73a95d14c9d5a6b3f7fadcdf13b6ab62df8b4e9314f77884ebd91d324dc889e9",
+  "content_chars": 2550,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "luck-event-support",
+      "fair_name": "イベント支援（サークル参加者様支援）",
+      "sources": [
+        "https://www.luck-pb.jp/only.html"
+      ],
+      "summary": "支援中のイベントに参加するサークルのイベント新刊で、遊び紙（色上質紙・全色）が無料になる。",
+      "benefit_summary": "支援イベントの新刊で遊び紙が無料",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "支援中のイベントごと（常時支援：コミティア・J.GARDEN・pictSQUARE・Jケット）",
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "遊び紙（色上質紙 中厚口・全色から選択）"
+      ],
+      "application_required": true,
+      "conditions_text": "支援中イベント（一覧は公式で確認）に参加するサークルのイベント新刊が対象。入稿時に備考欄か発注書へ「参加イベント名」と「イベント支援希望」を書く。遊び紙の位置は無線とじが前のみ・前後、中とじは前後のみ。締切を過ぎると利用できない場合あり。早期入稿割引と併用可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "支援中イベントの一覧に2026年開催のイベントがあり、今も案内されていると確認できたため登録。主催者様支援（パンフレット・アンソロジーの割引）は主催者向けのため対象外。"
+}

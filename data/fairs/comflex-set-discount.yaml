@@ -1,0 +1,26 @@
+fair_id: comflex-set-discount
+slug: comflex-set-discount
+fair_name: 同人誌セット割引（15%の割引）
+printer_id: comflex
+category: dojinshi
+sources:
+  - https://comflex-doujin.com/sale_infomation/
+  - https://comflex-doujin.com/contact_us/faq/faq_discount/
+summary: 初割・早割・連割・学割・再版割・指定割・2冊割のいずれか1つの条件に当てはまると、同人誌セットの基本料金が15%OFFになる常時の割引。
+benefit_summary: 条件に当てはまるとセット基本料金15%OFF
+source_type: official_campaign
+timing_type: ongoing
+benefit_types:
+  - discount
+discount_rate: 15
+specific_sets_only: true
+combinable: false
+application_required: true
+conditions_text: 初割・早割・連割・学割・再版割・指定割・2冊割のうち1種類だけ使える（併用不可）。各割引の条件と対象セットは公式の「各種割引のご案内」で確認。割引はセットの基本料金のみ（オプションは対象外）、割引額の上限は2万円。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/zeroen.html",
+  "printer_id": "luck",
+  "content_hash": "sha256:9f0de2131be79682b279d1b7359fefc6a1f8f6d9c7843cc68dbc6d763cafda3e",
+  "content_chars": 362,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ゼロエン印刷：とらのあなのサービスの利用方法の案内で、印刷所のフェアではない。"
+}

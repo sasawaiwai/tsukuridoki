@@ -1,0 +1,23 @@
+fair_id: sungroup-bookstore-direct
+slug: sungroup-bookstore-direct
+fair_name: 書店直送割引
+printer_id: sungroup
+category: dojinshi
+sources:
+  - https://sungroup.co.jp/campaign/
+summary: とらのあな・メロンブックス・フロマージュへ納品する注文で、オフセット印刷が30%OFF・送料無料になる。
+benefit_summary: 書店直送でオフセット30%OFF・送料無料
+source_type: official_campaign
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+discount_rate: 30
+conditions_text: とらのあな・メロンブックス・フロマージュへの納品が対象。納品先は書店と自宅のみで、イベント会場への納品（分納）は不可。オールスミの折り本・オンデマンド印刷は割引なし。新刊・再版、他社で初版の作品も可。予備は同封されない。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

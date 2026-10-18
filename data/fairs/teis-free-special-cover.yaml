@@ -1,0 +1,25 @@
+fair_id: teis-free-special-cover
+slug: teis-free-special-cover
+fair_name: 数量限定！無料特殊紙表紙
+printer_id: teis
+category: dojinshi
+sources:
+  - https://www.teis-p.com/html/discount_list.html
+summary: 数量限定で、表紙の特殊紙が無料になる。どの紙が届くかはお楽しみで、無料の対象の紙は入稿の時期によって変わる。
+benefit_summary: 表紙の特殊紙が無料（数量限定）
+source_type: official_campaign
+end_date: null
+end_date_text: 対象特殊紙の在庫が無くなり次第終了
+end_date_precision: unknown
+benefit_types:
+  - free_paper_upgrade
+specific_sets_only: true
+application_required: true
+conditions_text: 対象はベーシック冊子印刷・オールフルカラー冊子印刷の表紙用紙のみ。無料の対象は時期により、きらきら・パール（現在の対象）、エンボス・特殊用紙、和風に変わる。用紙の銘柄・色は指定できない（原則白色ベース）。+1営業日（締切が1営業日早まる）。カートでコート180kgを選び、オプションで「特殊紙表紙」→「【数量限定】無料特殊紙」を選ぶ。予告なく早期終了・内容変更の可能性あり。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
+published_at: 2026-10-18
+discovered_at: 2026-10-18
+verified_at: 2026-10-18
+verification_status: verified
+history:
+  - date: 2026-10-18
+    type: published

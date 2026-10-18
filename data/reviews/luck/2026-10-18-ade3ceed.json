@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/carpsale.html",
+  "printer_id": "luck",
+  "content_hash": "sha256:c1fe69b738288fb794ab2941dcbdd9ed1b8d8db07dc4710ae76109076fe4b9f8",
+  "content_chars": 1139,
+  "extractor": "manual",
+  "extracted_at": "2026-10-18T13:45:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "ありがとうセール：2016年11月14日・21日の2日間の入稿分で終了。"
+}
