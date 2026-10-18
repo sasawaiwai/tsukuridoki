@@ -1,0 +1,27 @@
+printer_id: doujinshi-p
+# 公式サイトのタイトルは「同人誌印刷ドットコム」、本文・お知らせでは「同人誌印刷.com」（2026-10-18確認）
+name: 同人誌印刷.com
+official_url: https://www.doujinshi-p.com/
+# フェアの一覧ページは無い。トップ（#two_maincolumn）のお知らせ・バナーから個別ページへ直接リンクがあるため、トップを一覧として変化を見る（2026-10-18確認）
+fair_index_url: https://www.doujinshi-p.com/
+crawl_selector: '#two_maincolumn'
+# トップのリンクは価格表・入稿案内が中心のため、たどらない。フェアの個別ページは watch_urls で見る
+follow_links: false
+# トップのお知らせ・バナーからリンクされている割引・キャンペーンの個別ページ
+# （お知らせ一覧 /user_data/news.php は2012〜2017年の告知のまま更新が無いため入れない）
+watch_urls:
+  - https://www.doujinshi-p.com/user_data/ajisai.php
+  - https://www.doujinshi-p.com/user_data/hayawari.php
+  - https://www.doujinshi-p.com/user_data/otameshi30.php
+  - https://www.doujinshi-p.com/user_data/waribiki.php
+  - https://www.doujinshi-p.com/user_data/douji.php
+  - https://www.doujinshi-p.com/user_data/tokkyu.php
+  - https://www.doujinshi-p.com/user_data/fuyukomi.php
+domains: [doujinshi-p.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.doujinshi-p.com/entry/kiyaku.php
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無いため、低頻度巡回の対象とする（許諾を得たものではない）。ご利用規約は会員向けで、第7条（禁止事項）に転載・情報収集の定めはなし（2026-10-18確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-18

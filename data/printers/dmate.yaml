@@ -1,0 +1,24 @@
+printer_id: dmate
+# 運営は西岡総合印刷株式会社（旧URL https://www.nishioka.co.jp/doujin/ から転送。2026-10-18確認）
+name: Dメイト
+official_url: https://d-mate.net/
+# フェアの一覧ページは無い。トップのバナー・お知らせに季節の遊び紙フェア・企画の案内が出るため、トップを一覧として変化を見る（2026-10-18確認）
+fair_index_url: https://d-mate.net/
+# 本文をまとめる共通の要素（main・articleなど）が無いため、crawl_selector は指定しない（ページ全体）
+# トップのリンクは商品・入稿案内が中心のため、たどらない。フェアの個別ページは watch_urls で見る
+follow_links: false
+# トップのバナー・お知らせからリンクされているフェア・企画のページ
+# 季節の遊び紙フェア（asobigami_spring／summer／autumn）は季節ごとに別ページ。季節が変わったら入れ替える（しまや出版と同じ型）
+watch_urls:
+  - https://d-mate.net/option_kakou/asobigami_autumn.html
+  - https://d-mate.net/option_kakou/asobigami_summer.html
+  - https://d-mate.net/guide/event_support.html
+  - https://d-mate.net/mailform_campaign/mailform_hashtag.html
+domains: [d-mate.net]
+# リンクはトップページ固定（運営方針）。Dメイトは全ページに「リンクはトップページへお願いします」と明記
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無いため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず。全ページに「イラスト・写真・商標の無断転載を禁じます」とあるため、画像・ロゴは使わず、事実だけを独自の表現で掲載する（2026-10-18確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-18
