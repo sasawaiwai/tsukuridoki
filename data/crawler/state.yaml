@@ -1,5 +1,15 @@
 # 巡回の記録（npm run crawl が書き換える。手で編集しない）
 # URL・ハッシュ・取得日時などの管理情報だけを保存し、公式ページの本文は保存しない（仕様書7-2）
+- url: https://comflex-doujin.com/sale_infomation/
+  printer_id: comflex
+  content_hash: sha256:ba4f2e94f166d562bcc189c06b4add3a2bb4c55aba14bb46029d452f82c5926b
+  reviewed_hash: null
+  content_chars: 1514
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-18T11:42:26+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.eikou.com/campaign/
   printer_id: eikou
   content_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
