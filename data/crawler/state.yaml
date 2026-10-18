@@ -210,6 +210,86 @@
   last_fetched_at: 2026-10-16T01:24:55+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.luck-pb.jp/
+  printer_id: luck
+  content_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
+  reviewed_hash: null
+  content_chars: 7425
+  etag: '"9234-65dae25b0dde9"'
+  last_modified: Tue, 13 Oct 2026 00:46:38 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/asobigamifair.html
+  printer_id: luck
+  content_hash: sha256:77d7781ce28d5655014ea3a9b84cd4d4c0ca58e267046d07df60e310f41f0515
+  reviewed_hash: null
+  content_chars: 1428
+  etag: '"3182-65dad9b73da58"'
+  last_modified: Tue, 13 Oct 2026 00:07:59 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/carpsale.html
+  printer_id: luck
+  content_hash: sha256:c1fe69b738288fb794ab2941dcbdd9ed1b8d8db07dc4710ae76109076fe4b9f8
+  reviewed_hash: null
+  content_chars: 1139
+  etag: '"272f-5ba3d6c854d00"'
+  last_modified: Mon, 01 Feb 2021 02:51:00 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/hajimemashite.html
+  printer_id: luck
+  content_hash: sha256:d2eb77f5273f1fdf06313d04e5d36fd775debbd4bac94024dd6cf5755e9b3d04
+  reviewed_hash: null
+  content_chars: 1873
+  etag: '"2fe8-64ec617e22326"'
+  last_modified: Mon, 06 Apr 2026 08:02:51 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/only.html
+  printer_id: luck
+  content_hash: sha256:73a95d14c9d5a6b3f7fadcdf13b6ab62df8b4e9314f77884ebd91d324dc889e9
+  reviewed_hash: null
+  content_chars: 2550
+  etag: '"384e-65b15764c0c28"'
+  last_modified: Wed, 09 Sep 2026 23:46:37 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/review.html
+  printer_id: luck
+  content_hash: sha256:c676a7d7684bcbd071db8a71a8281e16af02b5aaade6432c5baa1df170b6d7a1
+  reviewed_hash: null
+  content_chars: 647
+  etag: '"1b8b-59dce7973a880"'
+  last_modified: Wed, 05 Feb 2020 06:43:30 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/tokusyushifair.html
+  printer_id: luck
+  content_hash: sha256:0523dd0315f75baded1bbe788cabd3ee943c10c2a5a9618b3c2960b9de4ab562
+  reviewed_hash: null
+  content_chars: 1239
+  etag: '"292b-6595ae5d1a7d0"'
+  last_modified: Tue, 18 Aug 2026 23:46:37 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.luck-pb.jp/zeroen.html
+  printer_id: luck
+  content_hash: sha256:9f0de2131be79682b279d1b7359fefc6a1f8f6d9c7843cc68dbc6d763cafda3e
+  reviewed_hash: null
+  content_chars: 362
+  etag: '"1982-5ff8da193a9b0"'
+  last_modified: Mon, 03 Jul 2023 04:30:49 GMT
+  last_fetched_at: 2026-10-18T11:44:56+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://nanairodo.jp/
   printer_id: nanairodo
   content_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
