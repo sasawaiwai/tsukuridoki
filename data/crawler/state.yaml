@@ -1110,3 +1110,23 @@
   last_fetched_at: 2026-10-08T15:09:18+09:00
   fetch_status: not_modified
   http_status: 304
+- url: https://www.teis-p.com/html/discount_list.html
+  printer_id: teis
+  content_hash: sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867
+  reviewed_hash: null
+  content_chars: 5438
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-18T11:40:14+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.teis-p.com/html/xreview.html
+  printer_id: teis
+  content_hash: sha256:407ca77c7278c65010a01735267f8b7247e19953eb95285ece47480a7985c909
+  reviewed_hash: null
+  content_chars: 1155
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-18T11:40:14+09:00
+  fetch_status: ok
+  http_status: 200
