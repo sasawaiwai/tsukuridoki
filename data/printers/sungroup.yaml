@@ -1,0 +1,17 @@
+printer_id: sungroup
+# リンク集（shimeken.com）では「ハイビジョン印刷ドットコム」。公式サイトの表記は「同人誌印刷専門サングループ」「株式会社サングループ」（2026-10-18確認）
+name: サングループ
+official_url: https://sungroup.co.jp/
+# 「キャンペーン情報」。常設の割引3件が1ページに並ぶ（2026-10-18確認）
+fair_index_url: https://sungroup.co.jp/campaign/
+crawl_selector: section.campaign-main
+# 一覧のリンクはページ内の見出しへの移動だけのため、たどらない
+follow_links: false
+domains: [sungroup.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtもすべて許可のため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（会社案内・特定商取引法の表記のみ）（2026-10-18確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-18
