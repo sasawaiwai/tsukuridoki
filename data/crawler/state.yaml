@@ -242,12 +242,12 @@
   http_status: 200
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
-  content_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
+  content_hash: sha256:8d65821605f7e487a68c3e0686d4a6664d671408ec171977349b9a59bd664c2b
   reviewed_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
-  content_chars: 15014
-  etag: '"119b9-65d6213f70aa0"'
-  last_modified: Fri, 09 Oct 2026 06:01:23 GMT
-  last_fetched_at: 2026-10-09T21:17:28+09:00
+  content_chars: 12314
+  etag: '"dfc2-65e2b497afbbe"'
+  last_modified: Mon, 19 Oct 2026 06:04:29 GMT
+  last_fetched_at: 2026-10-20T00:53:37+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/
