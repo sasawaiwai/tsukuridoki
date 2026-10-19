@@ -1,0 +1,15 @@
+{
+  "source_url": "https://d-mate.net/option_kakou/asobigami_summer.html",
+  "printer_id": "dmate",
+  "content_hash": "sha256:f7582f287bf35da1caecb6b6ae0535606ea637a6e2d9b14ec758ca019b04e2e0",
+  "content_chars": 1885,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "遊び紙フェア・夏：2026/6/1〜8/31で終了。"
+}

@@ -1,0 +1,47 @@
+{
+  "source_url": "https://d-mate.net/option_kakou/asobigami_autumn.html",
+  "printer_id": "dmate",
+  "content_hash": "sha256:8f68dc0cf659a9c77676e93281ab64e8f607b78ba7a974ce9dc9cd41bb845d4a",
+  "content_chars": 1934,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "dmate-endpaper-autumn-2026",
+      "fair_name": "遊び紙フェア・秋",
+      "sources": [
+        "https://d-mate.net/option_kakou/asobigami_autumn.html"
+      ],
+      "summary": "期間中、秋をイメージしたDメイトオリジナルデザインの絵柄入り遊び紙が無料になる（無線綴じ限定）。",
+      "benefit_summary": "秋限定の絵柄入り遊び紙が無料",
+      "source_type": "official_fair",
+      "start_date": "2026-10-08",
+      "start_date_text": "2026/10/8",
+      "start_date_precision": "day",
+      "end_date": "2026-12-04",
+      "end_date_text": "2026/12/4",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "秋限定の絵柄入り遊び紙（上質紙70kg。「前のみ」「前後」）"
+      ],
+      "processes": [
+        "endpaper"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "tags": [
+        "seasonal",
+        "limited_time"
+      ],
+      "conditions_text": "通常冊子印刷の無線綴じが対象（中綴じは不可）。遊び紙への印刷はできず、ページ数に数えない（白紙データは不要）。前後で色（絵柄）を変えることはできない。一部のRGBビビッドカラー印刷セットでは絵柄もRGBビビッドカラー印刷になる。納期は通常と同じ。注文時に「遊び紙」の項目で前のみ／前後と色を選ぶ。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "季節ごとの別ページ（春・夏・秋）。夏（6/1〜8/31）は終了。"
+}

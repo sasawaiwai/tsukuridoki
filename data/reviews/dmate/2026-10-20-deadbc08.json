@@ -1,0 +1,71 @@
+{
+  "source_url": "https://d-mate.net/guide/event_support.html",
+  "printer_id": "dmate",
+  "content_hash": "sha256:85a63a824aed590ef21f2b8f334bce5fdc9411e228f403b40c9b4d68b54b10ea",
+  "content_chars": 2783,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "dmate-event-only",
+      "fair_name": "オンリーイベント応援企画",
+      "sources": [
+        "https://d-mate.net/guide/event_support.html"
+      ],
+      "summary": "オンリーイベント・プチオンリーに参加する会員が会員専用フォームから注文し、備考欄に申告すると、会員ポイント500ポイント（500円分）がもらえる。",
+      "benefit_summary": "オンリーイベント・プチオンリー参加で500ポイント",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "オンリーイベント・プチオンリーへの参加ごと",
+      "benefit_types": [
+        "points"
+      ],
+      "member_only": true,
+      "application_required": true,
+      "combinable": true,
+      "conditions_text": "会員登録のうえ「会員様専用ご注文フォーム」から注文し、備考欄（特記事項欄）に「オンリーイベント応援」と書く（完全申告制。記載がないと対象外）。ポイントは注文時には反映されず、後日スタッフが付与し、次回の注文から使える。新規会員登録キャンペーン・会員限定リピート割引と併用可。"
+    },
+    {
+      "fair_id": "dmate-event-comitia",
+      "fair_name": "COMITIA応援企画",
+      "sources": [
+        "https://d-mate.net/guide/event_support.html"
+      ],
+      "summary": "COMITIA・地方コミティアに参加する会員が会員専用フォームから注文し、備考欄に申告すると、会員ポイント500ポイント（500円分）がもらえる。",
+      "benefit_summary": "COMITIA・地方コミティア参加で500ポイント",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "COMITIA・地方コミティアへの参加ごと",
+      "benefit_types": [
+        "points"
+      ],
+      "member_only": true,
+      "application_required": true,
+      "combinable": true,
+      "conditions_text": "会員登録のうえ「会員様専用ご注文フォーム」から注文し、備考欄（特記事項欄）に「COMITIA応援」または「コミティア応援」と書く（完全申告制。記載がないと対象外）。ポイントは注文時には反映されず、後日スタッフが付与し、次回の注文から使える。新規会員登録キャンペーン・会員限定リピート割引と併用可。"
+    },
+    {
+      "fair_id": "dmate-event-comiket",
+      "fair_name": "コミケ応援企画",
+      "sources": [
+        "https://d-mate.net/guide/event_support.html"
+      ],
+      "summary": "コミックマーケットに参加する会員が会員専用フォームから注文し、備考欄に申告すると、会員ポイント500ポイント（500円分）がもらえる。",
+      "benefit_summary": "コミックマーケット参加で500ポイント",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "コミックマーケットへの参加ごと",
+      "benefit_types": [
+        "points"
+      ],
+      "member_only": true,
+      "application_required": true,
+      "combinable": true,
+      "conditions_text": "会員登録のうえ「会員様専用ご注文フォーム」から注文し、備考欄（特記事項欄）に「コミケ応援」と書く（完全申告制。記載がないと対象外）。ポイントは注文時には反映されず、後日スタッフが付与し、次回の注文から使える。新規会員登録キャンペーン・会員限定リピート割引と併用可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "イベント応援は対象イベントごとに3件に分けた（運営者決定⑤ 2026-10-18。テイズのイベント支援と同じ考え方）。トップのバナー「同人誌即売会イベント応援企画実施中！」。同じページの新規会員登録キャンペーン（500ポイント）・会員様限定リピート割引は会員制度として対象外（運営者決定⑥）。"
+}

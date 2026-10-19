@@ -1,0 +1,211 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/tmi/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:45f623ab624758d5d77f7f2c7cf7051975d72c26023b20c7f948b505af495930",
+  "content_chars": 93,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "tsukuyomi-review-edge-dyeing",
+      "fair_name": "小口染め加工レビューを投稿",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/",
+        "https://www.tsuku-yomi.com/tsukuyomi/manual/information/"
+      ],
+      "summary": "小口染め加工のレビューを投稿して承認されると、小口染め加工10%オフクーポンがもらえる（投稿1・10・20・30回の到達ごと）。",
+      "benefit_summary": "小口染め加工レビューで小口染め加工10%オフクーポン",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 10,
+      "processes": [
+        "edge_dyeing"
+      ],
+      "application_required": true,
+      "conditions_text": "承認されたレビューの回数を数える。投稿1回・10回・20回・30回はそれぞれ別の達成条件で、到達するごとに小口染め加工10%オフクーポンを1枚受け取れる（1回の投稿ですべてもらえるわけではない）。クリア後にミッション一覧の「受け取る」から受け取る。有効期限は受け取り日の翌年12月31日まで。"
+    },
+    {
+      "fair_id": "tsukuyomi-sns-introduction",
+      "fair_name": "作品をSNSで紹介",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/",
+        "https://www.tsuku-yomi.com/tsukuyomi/manual/information/"
+      ],
+      "summary": "ツクヨミで作った作品を「#ツクヨミの本」を付けてSNSで紹介し、申請して承認されると、1作品ごとに値引きクーポンがもらえる。",
+      "benefit_summary": "SNS紹介で最大3,000円引きクーポン",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "application_required": true,
+      "conditions_text": "オンデマンドセットの作品は3,000円引き、オンデマンドカードの作品は1,000円引きのクーポン（1作品につき1枚、有効期限は受け取り日から6か月）。ハッシュタグ「#ツクヨミの本」・作品の写真・こだわりの紹介文を付けて公開アカウントで投稿し、SNS紹介申込ページから投稿のURLを送る。スタッフの確認・承認が必要。"
+    },
+    {
+      "fair_id": "tsukuyomi-sns-site-permission",
+      "fair_name": "SNS紹介記事のサイト掲載を許可",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/",
+        "https://www.tsuku-yomi.com/tsukuyomi/manual/information/"
+      ],
+      "summary": "承認済みの「#ツクヨミの本」SNS紹介記事を、ツクヨミのサイトに掲載することを許可すると、500円引きクーポンがもらえる。",
+      "benefit_summary": "SNS紹介記事の掲載許可で500円引きクーポン",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_amount": 500,
+      "application_required": true,
+      "conditions_text": "SNS紹介の承認済み記事の一覧から「サイト掲載」を許可するとクリア（オンデマンドセット・カード共通、1作品につき1回）。有効期限は受け取り日から6か月。掲載は印刷・用紙・加工の質感を伝えるために使われ、実際に掲載するかはツクヨミが判断する。"
+    },
+    {
+      "fair_id": "tsukuyomi-spring-event-coupon-2027",
+      "fair_name": "2027年春の大型イベントクーポンプレゼントフェア",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "2027年3〜5月の大型イベントへ直接搬入するオンデマンドセットを日割30以上で発注すると、日割に応じて3,000〜6,000円引きのクーポンがもらえる。",
+      "benefit_summary": "大型イベント直接搬入で最大6,000円引きクーポン",
+      "source_type": "official_campaign",
+      "start_date": null,
+      "start_date_text": "記載なし",
+      "start_date_precision": "unknown",
+      "end_date": "2027-05-30",
+      "end_date_text": "対象イベントは2027/5/30開催分まで（申込期限は日割の条件によりそれより前）",
+      "end_date_precision": "day",
+      "submission_dates_text": "対象イベント（初回納品日）：2027/3/7 HARU COMIC CITY 大阪 2027・3/14 COMITIA159・3/21 HARU COMIC CITY 東京 2027・4/25 にじそうさく12・5/3〜4 SUPER COMIC CITY 2027・5/30 FLOWER MOON FES 2027",
+      "benefit_types": [
+        "discount"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "event_delivery_only": true,
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドセットで、対象イベントへの「イベント直接搬入」を申し込み、初回納品日をイベント開催日と同日にする。日割30以上で3,000円、40以上で4,000円、50以上で5,000円、60以上で6,000円のクーポン（条件の最も高い1枚、1発注につき1枚）。発送準備完了の時点でカウントし、ミッション一覧から受け取る。クーポンの有効期限は2027/11/30。直近の納品日が対象イベントより前で、他イベント・宅配便の納品先へ分納する場合は対象外。日割の条件があるため、申し込める最終日はイベント日より前になる（公式に日数の記載なし）。"
+    },
+    {
+      "fair_id": "tsukuyomi-review-paper",
+      "fair_name": "用紙レビューを投稿",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "用紙のレビューを投稿して承認されると、1,000円引きクーポンがもらえる（投稿1・10・20・30回の到達ごと）。",
+      "benefit_summary": "用紙レビューで1,000円引きクーポン",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_amount": 1000,
+      "application_required": true,
+      "conditions_text": "承認されたレビューの回数を数える。投稿1回・10回・20回・30回はそれぞれ別の達成条件で、到達するごとに1,000円引きクーポンを1枚受け取れる（1回の投稿ですべてもらえるわけではない）。クリア後にミッション一覧の「受け取る」から受け取る。有効期限は受け取り日の翌年12月31日まで。"
+    },
+    {
+      "fair_id": "tsukuyomi-review-foil",
+      "fair_name": "箔押しレビューを投稿",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "箔押しのレビューを投稿して承認されると、箔押し料金10%オフクーポンがもらえる（投稿1・10・20・30回の到達ごと）。",
+      "benefit_summary": "箔押しレビューで箔押し料金10%オフクーポン",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 10,
+      "processes": [
+        "foil"
+      ],
+      "application_required": true,
+      "conditions_text": "承認されたレビューの回数を数える。投稿1回・10回・20回・30回はそれぞれ別の達成条件で、到達するごとに箔押し料金10%オフクーポンを1枚受け取れる（1回の投稿ですべてもらえるわけではない）。クリア後にミッション一覧の「受け取る」から受け取る。有効期限は受け取り日の翌年12月31日まで。"
+    },
+    {
+      "fair_id": "tsukuyomi-foil-use-2026",
+      "fair_name": "2026年にオンデマンドセットで箔押しを利用",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "2026年中にオンデマンドセットで箔押しを使うと、箔押し料金10%オフのクーポンがもらえる。",
+      "benefit_summary": "2026年に箔押し利用で箔押し10%オフクーポン",
+      "source_type": "official_campaign",
+      "start_date": "2026-01-01",
+      "start_date_text": "2026年1月",
+      "start_date_precision": "month",
+      "end_date": "2026-12-31",
+      "end_date_text": "2026年12月末（2026年中。発送準備完了の時点でカウント）",
+      "end_date_precision": "month",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 10,
+      "processes": [
+        "foil"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドセットで、表紙・カバーを問わず箔押しを利用するとクリア。発送準備完了の時点でカウントするため、注文が間に合う最終日は12/31より前になる。クーポンの有効期限は2027/12/31。"
+    },
+    {
+      "fair_id": "tsukuyomi-pp-three-types-2026",
+      "fair_name": "2026年にオンデマンドセットで3種類のPP加工を使用",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "2026年中にオンデマンドセットでグロスPP・マットPP・ベルベットPPの3種類を使うと、PP加工無料のクーポンがもらえる。",
+      "benefit_summary": "PP加工3種類の利用でPP加工無料クーポン",
+      "source_type": "official_campaign",
+      "start_date": "2026-01-01",
+      "start_date_text": "2026年1月",
+      "start_date_precision": "month",
+      "end_date": "2026-12-31",
+      "end_date_text": "2026年12月末（2026年中。発送準備完了の時点でカウント）",
+      "end_date_precision": "month",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "pp"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドセットでグロスPP・マットPP・ベルベットPPの3種類を使うとクリア（表紙・カバーどちらでもよく、複数の案件に分かれてもよい）。発送準備完了の時点でカウントするため、注文が間に合う最終日は12/31より前になる。クーポンの有効期限は2027/12/31。"
+    },
+    {
+      "fair_id": "tsukuyomi-foil-five-2026",
+      "fair_name": "2026年にオンデマンドセットで箔押しを5銘柄使用",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "2026年中にオンデマンドセットで箔押しを5銘柄使うと、箔押し料金半額のクーポンがもらえる。",
+      "benefit_summary": "箔押し5銘柄の利用で箔押し半額クーポン",
+      "source_type": "official_campaign",
+      "start_date": "2026-01-01",
+      "start_date_text": "2026年1月",
+      "start_date_precision": "month",
+      "end_date": "2026-12-31",
+      "end_date_text": "2026年12月末（2026年中。発送準備完了の時点でカウント）",
+      "end_date_precision": "month",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 50,
+      "processes": [
+        "foil"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドセットで、表紙・カバーを問わず箔押しを5銘柄使うとクリア（複数の案件に分かれてもよい）。発送準備完了の時点でカウントするため、注文が間に合う最終日は12/31より前になる。クーポンの有効期限は2027/12/31。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "TM:Iは巡回で本文が93文字しか取れないため2026-10-19に画面表示で確認。期限切れも「開催中」の下に残るので各ミッションの日付で判断。日付のないものは現在の公式一覧に掲載・一覧が更新中・終了告知なしを根拠に期間限定・日付なしで登録（決定A）。30日ごとに人が再確認。回数違いのレビューは1件に（決定B）。対象外の内訳は batch3-candidates.md"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/manual/trial_print/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:e7636757a7a067609d5d49cb47fca1e31dd75da693820023edcace0c6ec5d93e",
+  "content_chars": 4201,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "《期間限定》無料お試し印刷：申請は2026年1月31日で終了と明記（トップのバナーは残っている）。"
+}

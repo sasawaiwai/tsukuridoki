@@ -1,0 +1,21 @@
+fair_id: tsukuyomi-nichiwari
+slug: tsukuyomi-nichiwari
+fair_name: 日割（にちわり）
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/event/discount/
+  - https://www.tsuku-yomi.com/tsukuyomi/manual/FAQ/
+summary: 発注時に締切日を自由に選べる早期入稿割引のプラン。締切を納品日から早めに設定するほど値引きが大きくなる。
+benefit_summary: 早めの締切設定で値引き（早期入稿割引）
+source_type: official_campaign
+benefit_types:
+  - discount
+conditions_text: 締切日は発注後もお客さまページから変更でき、早めるとさらに値引きが大きくなる（値引き額は最終部材の入稿時点の設定で決まる）。1日の枠数に上限があり、満了になる場合がある。値引き額には上限がある。初回納品日は変更できない。値引き額は見積・発注フォームで確認。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

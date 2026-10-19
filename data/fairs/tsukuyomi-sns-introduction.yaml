@@ -1,0 +1,22 @@
+fair_id: tsukuyomi-sns-introduction
+slug: tsukuyomi-sns-introduction
+fair_name: 作品をSNSで紹介
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/tmi/
+  - https://www.tsuku-yomi.com/tsukuyomi/manual/information/
+summary: ツクヨミで作った作品を「#ツクヨミの本」を付けてSNSで紹介し、申請して承認されると、1作品ごとに値引きクーポンがもらえる。
+benefit_summary: SNS紹介で最大3,000円引きクーポン
+source_type: official_campaign
+benefit_types:
+  - discount
+application_required: true
+conditions_text: オンデマンドセットの作品は3,000円引き、オンデマンドカードの作品は1,000円引きのクーポン（1作品につき1枚、有効期限は受け取り日から6か月）。ハッシュタグ「#ツクヨミの本」・作品の写真・こだわりの紹介文を付けて公開アカウントで投稿し、SNS紹介申込ページから投稿のURLを送る。スタッフの確認・承認が必要。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

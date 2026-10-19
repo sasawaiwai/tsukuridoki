@@ -1,0 +1,32 @@
+fair_id: tsukuyomi-foil-five-2026
+slug: tsukuyomi-foil-five-2026
+fair_name: 2026年にオンデマンドセットで箔押しを5銘柄使用
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/tmi/
+summary: 2026年中にオンデマンドセットで箔押しを5銘柄使うと、箔押し料金半額のクーポンがもらえる。
+benefit_summary: 箔押し5銘柄の利用で箔押し半額クーポン
+source_type: official_campaign
+start_date: 2026-01-01
+start_date_text: 2026年1月
+start_date_precision: month
+end_date: 2026-12-31
+end_date_text: 2026年12月末（2026年中。発送準備完了の時点でカウント）
+end_date_precision: month
+benefit_types:
+  - discount
+discount_rate: 50
+processes:
+  - foil
+printing_methods:
+  - ondemand
+specific_sets_only: true
+conditions_text: オンデマンドセットで、表紙・カバーを問わず箔押しを5銘柄使うとクリア（複数の案件に分かれてもよい）。発送準備完了の時点でカウントするため、注文が間に合う最終日は12/31より前になる。クーポンの有効期限は2027/12/31。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

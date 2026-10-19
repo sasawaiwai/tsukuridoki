@@ -1,0 +1,23 @@
+fair_id: tsukuyomi-sns-site-permission
+slug: tsukuyomi-sns-site-permission
+fair_name: SNS紹介記事のサイト掲載を許可
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/tmi/
+  - https://www.tsuku-yomi.com/tsukuyomi/manual/information/
+summary: 承認済みの「#ツクヨミの本」SNS紹介記事を、ツクヨミのサイトに掲載することを許可すると、500円引きクーポンがもらえる。
+benefit_summary: SNS紹介記事の掲載許可で500円引きクーポン
+source_type: official_campaign
+benefit_types:
+  - discount
+discount_amount: 500
+application_required: true
+conditions_text: SNS紹介の承認済み記事の一覧から「サイト掲載」を許可するとクリア（オンデマンドセット・カード共通、1作品につき1回）。有効期限は受け取り日から6か月。掲載は印刷・用紙・加工の質感を伝えるために使われ、実際に掲載するかはツクヨミが判断する。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

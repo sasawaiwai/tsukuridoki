@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/event/discount/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:959d78380ddd626a1152e17ca38ebf0e9d6791f41872bc181572e770f2865649",
+  "content_chars": 1955,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "tsukuyomi-nichiwari",
+      "fair_name": "日割（にちわり）",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/event/discount/",
+        "https://www.tsuku-yomi.com/tsukuyomi/manual/FAQ/"
+      ],
+      "summary": "発注時に締切日を自由に選べる早期入稿割引のプラン。締切を納品日から早めに設定するほど値引きが大きくなる。",
+      "benefit_summary": "早めの締切設定で値引き（早期入稿割引）",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "conditions_text": "締切日は発注後もお客さまページから変更でき、早めるとさらに値引きが大きくなる（値引き額は最終部材の入稿時点の設定で決まる）。1日の枠数に上限があり、満了になる場合がある。値引き額には上限がある。初回納品日は変更できない。値引き額は見積・発注フォームで確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "公式に「常時」「通年」の記載がないため timing_type は省略（期間限定・日付なし。運営者決定① 2026-10-18）。同じページの「クーポン」は配布の仕組みの説明で、個別の配布はイベント支援・ミッション側。"
+}

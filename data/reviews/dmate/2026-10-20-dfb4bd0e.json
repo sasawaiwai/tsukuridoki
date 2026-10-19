@@ -1,0 +1,30 @@
+{
+  "source_url": "https://d-mate.net/mailform_campaign/mailform_hashtag.html",
+  "printer_id": "dmate",
+  "content_hash": "sha256:453263b82b65c90b36b619a1fabf35caabd94b2d580cb3a1beaf25875f788489",
+  "content_chars": 1756,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "dmate-hashtag-points",
+      "fair_name": "ハッシュタグ「#印刷はDメイト」投稿キャンペーン",
+      "sources": [
+        "https://d-mate.net/mailform_campaign/mailform_hashtag.html"
+      ],
+      "summary": "Dメイトで作った印刷物の感想を「#印刷はDメイト」を付けてXかInstagramに投稿し申請すると、1種類1投稿につき100ポイントがもらえる。",
+      "benefit_summary": "ハッシュタグ投稿で100ポイント",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "points"
+      ],
+      "member_only": true,
+      "application_required": true,
+      "conditions_text": "会員登録のうえ、Dメイトで作った同人誌・グッズの仕上がりや感想を公開アカウントで投稿し、ポイント申請フォームから申請（1〜5営業日で加算）。印刷物1種類1投稿につき100ポイント（同じ印刷物を複数回・複数のSNSに投稿しても1回分）。申請回数の制限なし。ポイントはDメイトを含む西岡総合印刷の運営サイトで使える。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "トップのバナーに掲載中（運営者決定⑤ 2026-10-18）。"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.doujinshi-p.com/user_data/hayawari.php",
+  "printer_id": "doujinshi-p",
+  "content_hash": "sha256:cc41a6e2b9ba78f7ecca8a81c4de07826ce59e588212a8df2f3b20a19fbd1f67",
+  "content_chars": 887,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "doujinshi-p-early-discount",
+      "fair_name": "早割りキャンペーン（早割りAコース／早割りBコース）",
+      "sources": [
+        "https://www.doujinshi-p.com/user_data/hayawari.php"
+      ],
+      "summary": "指定納期によって割引率が変わる早割り。Aコースは表示価格から10%OFF、Bコースは15%OFF。",
+      "benefit_summary": "早割りで最大15%OFF",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 15,
+      "application_required": true,
+      "conditions_text": "Aコース：10%OFF（18時までの入稿、受付確定の翌日から6日後に発送）、Bコース：15%OFF（12時までの入稿、同8日後に発送）。定休日は日数に含まない。注文予約メールで早割りの利用と希望コースを伝える。早割りでのリピート印刷も可。作家様支援割引など同時期のキャンペーンとは併用不可（同時入稿割りは併用可）。価格表にないオプション（特殊な用紙など）は別料金。宅配搬入はBコース（到着日によってはAコースも相談可）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "ページとトップのバナーに「実施中」。日付の記載なし（期間限定・日付なし）。2024年9月のトップのお知らせに「価格表・割引コース・特急コースは改定を検討中」とあるが、今の公式ページの掲載内容だけを使った（運営者決定⑦ 2026-10-18）。"
+}

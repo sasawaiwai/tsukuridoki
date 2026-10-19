@@ -1,0 +1,22 @@
+fair_id: doujinshi-p-simultaneous-submission
+slug: doujinshi-p-simultaneous-submission
+fair_name: 同時入稿割り
+printer_id: doujinshi-p
+category: dojinshi
+sources:
+  - https://www.doujinshi-p.com/user_data/douji.php
+summary: 2種類の原稿を同じ部数で同時に入稿すると通常価格の5%OFFになる、完全予約制の割引。友達と2人でも使え、早割りと併用できる。
+benefit_summary: 2種類同時入稿で5%OFF（早割りと併用可）
+source_type: official_campaign
+benefit_types:
+  - discount
+discount_rate: 5
+application_required: true
+conditions_text: 完全予約制（メールで予約してから注文）。2種類を同じ部数で同時入稿（同時入稿は2件まで）。表紙はアートボード180kg、本文は2種類とも同じ用紙（上質紙90kg・オペラホワイトマックス73kg・OKブライト90kg・ニューシフォンクリーム60kgから）。PP加工可。2人で使うときは、相手の注文の備考欄に名前・メールアドレスと利用希望を書く。2件の入稿と入金の完了で受付確定。併用できるのは早割りAコース（15%OFFに）・Bコース（20%OFFに）と、早割りでのリピート印刷だけ。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

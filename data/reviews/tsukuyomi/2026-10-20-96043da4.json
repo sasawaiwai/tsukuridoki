@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/event/event-support/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:8779e72f23a9c5b3dc85c4db64b9efcf76d4f6af43d7142ce77da0dfaf09cbe9",
+  "content_chars": 3950,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "tsukuyomi-event-support",
+      "fair_name": "イベント支援特典",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/event/event-support/",
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "ツクヨミが支援しているオンリーイベントに参加すると、次回使える2,000円分のクーポンがもらえる。",
+      "benefit_summary": "支援オンリー参加で次回2,000円引きクーポン",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "支援しているオンリーイベントごと（一覧は公式で確認）",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_amount": 2000,
+      "application_required": true,
+      "conditions_text": "どのセットでも可。発注時のイベント名の欄で参加イベントを選ぶ（一覧に無い支援イベントは備考欄に書く）。Web開催イベントは納品先・申請方法・クーポンの受け取り時期が異なる（公式で確認）。クーポンは次回の発注に使え、1イベントにつき1枚、有効期限は対象イベント開催日の6か月後。日割プランと併用可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "支援イベントの一覧に2026年10〜12月開催のイベントが掲載されている（2026-10-18確認）。TM:I のミッション「イベント支援特典」にも同じ内容。"
+}

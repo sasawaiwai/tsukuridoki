@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.doujinshi-p.com/",
+  "printer_id": "doujinshi-p",
+  "content_hash": "sha256:3dc84766538c027592084462bb9303b63a7859ae5106f8d8ae31fb797d458cce",
+  "content_chars": 1890,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ・バナー）。コミックマーケット108の受付終了などの告知のみ。各割引は個別ページで確認。2024年9月のトップのお知らせに「価格表・割引コース・特急コースは改定を検討中」とあるが、今の公式ページの掲載内容だけを使った（運営者決定⑦ 2026-10-18）。"
+}

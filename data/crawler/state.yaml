@@ -13,7 +13,7 @@
 - url: https://d-mate.net/
   printer_id: dmate
   content_hash: sha256:951a5b017b911acc65f9ef8bfb58640a170304510ee2a0fe2b4cca9c20baed82
-  reviewed_hash: null
+  reviewed_hash: sha256:951a5b017b911acc65f9ef8bfb58640a170304510ee2a0fe2b4cca9c20baed82
   content_chars: 11281
   etag: W/"13941-65d4e01b90980"
   last_modified: Thu, 08 Oct 2026 06:04:38 GMT
@@ -23,7 +23,7 @@
 - url: https://d-mate.net/guide/event_support.html
   printer_id: dmate
   content_hash: sha256:85a63a824aed590ef21f2b8f334bce5fdc9411e228f403b40c9b4d68b54b10ea
-  reviewed_hash: null
+  reviewed_hash: sha256:85a63a824aed590ef21f2b8f334bce5fdc9411e228f403b40c9b4d68b54b10ea
   content_chars: 2783
   etag: W/"98d6-64bdde048ffc0"
   last_modified: Sat, 28 Feb 2026 08:09:43 GMT
@@ -33,7 +33,7 @@
 - url: https://d-mate.net/mailform_campaign/mailform_hashtag.html
   printer_id: dmate
   content_hash: sha256:453263b82b65c90b36b619a1fabf35caabd94b2d580cb3a1beaf25875f788489
-  reviewed_hash: null
+  reviewed_hash: sha256:453263b82b65c90b36b619a1fabf35caabd94b2d580cb3a1beaf25875f788489
   content_chars: 1756
   etag: W/"85f4-65d20ace09540"
   last_modified: Mon, 05 Oct 2026 23:59:41 GMT
@@ -43,7 +43,7 @@
 - url: https://d-mate.net/option_kakou/asobigami_autumn.html
   printer_id: dmate
   content_hash: sha256:8f68dc0cf659a9c77676e93281ab64e8f607b78ba7a974ce9dc9cd41bb845d4a
-  reviewed_hash: null
+  reviewed_hash: sha256:8f68dc0cf659a9c77676e93281ab64e8f607b78ba7a974ce9dc9cd41bb845d4a
   content_chars: 1934
   etag: W/"93ba-65d4dc7032140"
   last_modified: Thu, 08 Oct 2026 05:48:13 GMT
@@ -53,7 +53,7 @@
 - url: https://d-mate.net/option_kakou/asobigami_summer.html
   printer_id: dmate
   content_hash: sha256:f7582f287bf35da1caecb6b6ae0535606ea637a6e2d9b14ec758ca019b04e2e0
-  reviewed_hash: null
+  reviewed_hash: sha256:f7582f287bf35da1caecb6b6ae0535606ea637a6e2d9b14ec758ca019b04e2e0
   content_chars: 1885
   etag: W/"927d-656a0c8ddd040"
   last_modified: Wed, 15 Jul 2026 06:53:45 GMT
@@ -63,7 +63,7 @@
 - url: https://www.doujinshi-p.com/
   printer_id: doujinshi-p
   content_hash: sha256:3dc84766538c027592084462bb9303b63a7859ae5106f8d8ae31fb797d458cce
-  reviewed_hash: null
+  reviewed_hash: sha256:3dc84766538c027592084462bb9303b63a7859ae5106f8d8ae31fb797d458cce
   content_chars: 1890
   etag: null
   last_modified: ""
@@ -73,7 +73,7 @@
 - url: https://www.doujinshi-p.com/user_data/ajisai.php
   printer_id: doujinshi-p
   content_hash: sha256:e50a0a7a50763c523bfd73980d842df3cbc7ceb665f9a6f1de9a424ff4df35a3
-  reviewed_hash: null
+  reviewed_hash: sha256:e50a0a7a50763c523bfd73980d842df3cbc7ceb665f9a6f1de9a424ff4df35a3
   content_chars: 860
   etag: null
   last_modified: ""
@@ -83,7 +83,7 @@
 - url: https://www.doujinshi-p.com/user_data/douji.php
   printer_id: doujinshi-p
   content_hash: sha256:6a6b99b22424c773ff74bf726646df9856ffd9429e7a6c122b048edc91555140
-  reviewed_hash: null
+  reviewed_hash: sha256:6a6b99b22424c773ff74bf726646df9856ffd9429e7a6c122b048edc91555140
   content_chars: 1276
   etag: null
   last_modified: ""
@@ -93,7 +93,7 @@
 - url: https://www.doujinshi-p.com/user_data/fuyukomi.php
   printer_id: doujinshi-p
   content_hash: sha256:b9cc9524658ee3b9b84bfe2bd23c98dfcb1e80e34ae0aebf45565f7fe92f913e
-  reviewed_hash: null
+  reviewed_hash: sha256:b9cc9524658ee3b9b84bfe2bd23c98dfcb1e80e34ae0aebf45565f7fe92f913e
   content_chars: 1706
   etag: null
   last_modified: ""
@@ -103,7 +103,7 @@
 - url: https://www.doujinshi-p.com/user_data/hayawari.php
   printer_id: doujinshi-p
   content_hash: sha256:cc41a6e2b9ba78f7ecca8a81c4de07826ce59e588212a8df2f3b20a19fbd1f67
-  reviewed_hash: null
+  reviewed_hash: sha256:cc41a6e2b9ba78f7ecca8a81c4de07826ce59e588212a8df2f3b20a19fbd1f67
   content_chars: 887
   etag: null
   last_modified: ""
@@ -123,7 +123,7 @@
 - url: https://www.doujinshi-p.com/user_data/tokkyu.php
   printer_id: doujinshi-p
   content_hash: sha256:c0339677dbdff6ccecb77d09636cdc0ed299702ce3697251ff54a94572b1d164
-  reviewed_hash: null
+  reviewed_hash: sha256:c0339677dbdff6ccecb77d09636cdc0ed299702ce3697251ff54a94572b1d164
   content_chars: 1143
   etag: null
   last_modified: ""
@@ -1363,7 +1363,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/event/discount/
   printer_id: tsukuyomi
   content_hash: sha256:959d78380ddd626a1152e17ca38ebf0e9d6791f41872bc181572e770f2865649
-  reviewed_hash: null
+  reviewed_hash: sha256:959d78380ddd626a1152e17ca38ebf0e9d6791f41872bc181572e770f2865649
   content_chars: 1955
   etag: null
   last_modified: null
@@ -1373,7 +1373,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/event/event-support/
   printer_id: tsukuyomi
   content_hash: sha256:8779e72f23a9c5b3dc85c4db64b9efcf76d4f6af43d7142ce77da0dfaf09cbe9
-  reviewed_hash: null
+  reviewed_hash: sha256:8779e72f23a9c5b3dc85c4db64b9efcf76d4f6af43d7142ce77da0dfaf09cbe9
   content_chars: 3950
   etag: null
   last_modified: null
@@ -1383,7 +1383,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/information/
   printer_id: tsukuyomi
   content_hash: sha256:690446fcadd74be36cda2b2df5a71b9f9e45d3f75858f9e3230c3005b1838490
-  reviewed_hash: null
+  reviewed_hash: sha256:690446fcadd74be36cda2b2df5a71b9f9e45d3f75858f9e3230c3005b1838490
   content_chars: 39983
   etag: null
   last_modified: null
@@ -1393,7 +1393,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/referral-program/
   printer_id: tsukuyomi
   content_hash: sha256:114d6eaf93065515108a6978e18c2120834a4b09a2f0e59c2130bf1686853092
-  reviewed_hash: null
+  reviewed_hash: sha256:114d6eaf93065515108a6978e18c2120834a4b09a2f0e59c2130bf1686853092
   content_chars: 1703
   etag: null
   last_modified: null
@@ -1403,7 +1403,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/trial_print/
   printer_id: tsukuyomi
   content_hash: sha256:e7636757a7a067609d5d49cb47fca1e31dd75da693820023edcace0c6ec5d93e
-  reviewed_hash: null
+  reviewed_hash: sha256:e7636757a7a067609d5d49cb47fca1e31dd75da693820023edcace0c6ec5d93e
   content_chars: 4201
   etag: null
   last_modified: null
@@ -1413,7 +1413,7 @@
 - url: https://www.tsuku-yomi.com/tsukuyomi/tmi/
   printer_id: tsukuyomi
   content_hash: sha256:45f623ab624758d5d77f7f2c7cf7051975d72c26023b20c7f948b505af495930
-  reviewed_hash: null
+  reviewed_hash: sha256:45f623ab624758d5d77f7f2c7cf7051975d72c26023b20c7f948b505af495930
   content_chars: 93
   etag: null
   last_modified: null

@@ -1,0 +1,31 @@
+fair_id: tsukuyomi-spring-event-coupon-2027
+slug: tsukuyomi-spring-event-coupon-2027
+fair_name: 2027年春の大型イベントクーポンプレゼントフェア
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/tmi/
+summary: 2027年3〜5月の大型イベントへ直接搬入するオンデマンドセットを日割30以上で発注すると、日割に応じて3,000〜6,000円引きのクーポンがもらえる。
+benefit_summary: 大型イベント直接搬入で最大6,000円引きクーポン
+source_type: official_campaign
+start_date: null
+start_date_text: 記載なし
+start_date_precision: unknown
+end_date: 2027-05-30
+end_date_text: 対象イベントは2027/5/30開催分まで（申込期限は日割の条件によりそれより前）
+end_date_precision: day
+submission_dates_text: 対象イベント（初回納品日）：2027/3/7 HARU COMIC CITY 大阪 2027・3/14 COMITIA159・3/21 HARU COMIC CITY 東京 2027・4/25 にじそうさく12・5/3〜4 SUPER COMIC CITY 2027・5/30 FLOWER MOON FES 2027
+benefit_types:
+  - discount
+printing_methods:
+  - ondemand
+event_delivery_only: true
+specific_sets_only: true
+conditions_text: オンデマンドセットで、対象イベントへの「イベント直接搬入」を申し込み、初回納品日をイベント開催日と同日にする。日割30以上で3,000円、40以上で4,000円、50以上で5,000円、60以上で6,000円のクーポン（条件の最も高い1枚、1発注につき1枚）。発送準備完了の時点でカウントし、ミッション一覧から受け取る。クーポンの有効期限は2027/11/30。直近の納品日が対象イベントより前で、他イベント・宅配便の納品先へ分納する場合は対象外。日割の条件があるため、申し込める最終日はイベント日より前になる（公式に日数の記載なし）。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published
