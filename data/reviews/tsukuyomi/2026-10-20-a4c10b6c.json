@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/manual/information/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:690446fcadd74be36cda2b2df5a71b9f9e45d3f75858f9e3230c3005b1838490",
+  "content_chars": 39983,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "tsukuyomi-winter-event-coupon-2026",
+      "fair_name": "冬の大型イベントクーポンプレゼントフェア",
+      "sources": [
+        "https://www.tsuku-yomi.com/tsukuyomi/manual/information/",
+        "https://www.tsuku-yomi.com/tsukuyomi/tmi/"
+      ],
+      "summary": "冬〜2027年2月の大型イベントへ直接搬入するオンデマンドセットを日割30以上で発注すると、日割に応じて3,000〜6,000円引きのクーポンがもらえる。",
+      "benefit_summary": "大型イベント直接搬入で最大6,000円引きクーポン",
+      "source_type": "official_news",
+      "start_date": null,
+      "start_date_text": "記載なし",
+      "start_date_precision": "unknown",
+      "end_date": "2027-02-21",
+      "end_date_text": "対象イベントは2027/2/21開催分まで（申込期限は日割の条件によりそれより前）",
+      "end_date_precision": "day",
+      "submission_dates_text": "対象イベント（初回納品日）：2026/12/13 COMITIA158・12/20 DOZEN ROSE FES 2026・12/29〜31 コミックマーケット109・2027/1/10 SUPER COMIC CITY 関西 2027・2/21 VALENTINE ROSE FES 2027",
+      "benefit_types": [
+        "discount"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "event_delivery_only": true,
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドセットで、対象イベントへの「イベント直接搬入」を申し込み、初回納品日をイベント開催日と同日にする。日割30以上で3,000円、40以上で4,000円、50以上で5,000円、60以上で6,000円のクーポン（条件の最も高い1枚、1発注につき1枚）。発送準備完了の時点でカウントし、TM:Iのミッション一覧から受け取る。クーポンの有効期限は2027/6/30。初回納品日が対象イベントより前で、他イベント・宅配便の納品先へ分納する場合は対象外。日割の条件があるため、申し込める最終日はイベント日より前になる（公式に日数の記載なし）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "秋のクーポンフェアは残り10/25の条件（日割30以上）を今から満たせると確認できず登録しない（決定②）。夏・初夏のフェア、感想ポスト・1冊無料、TOKYO FESのくじは終了。遊び紙への箔押しは新オプションでフェアではない。ミッションはTM:Iで登録。詳細は batch3-candidates.md"
+}

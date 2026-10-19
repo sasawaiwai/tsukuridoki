@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.tsuku-yomi.com/tsukuyomi/manual/referral-program/",
+  "printer_id": "tsukuyomi",
+  "content_hash": "sha256:114d6eaf93065515108a6978e18c2120834a4b09a2f0e59c2130bf1686853092",
+  "content_chars": 1703,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ツクヨミ紹介プログラム（紹介者・被紹介者に10,000カブ）：ポイント制度の付加機能として対象外（運営者決定④ 2026-10-18）。TM:I の「紹介プログラムでお友達を1人紹介」（1,000円引きクーポン）も、紹介制度に付いた特典で制作の内容に関係しないため対象外（運営者決定C 2026-10-20）。"
+}

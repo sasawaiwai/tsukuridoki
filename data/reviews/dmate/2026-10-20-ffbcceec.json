@@ -1,0 +1,15 @@
+{
+  "source_url": "https://d-mate.net/",
+  "printer_id": "dmate",
+  "content_hash": "sha256:951a5b017b911acc65f9ef8bfb58640a170304510ee2a0fe2b4cca9c20baed82",
+  "content_chars": 11281,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T00:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（バナー・お知らせの一覧）。各フェアは個別ページで確認。"
+}

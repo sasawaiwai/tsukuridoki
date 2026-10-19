@@ -1,0 +1,25 @@
+fair_id: tsukuyomi-event-support
+slug: tsukuyomi-event-support
+fair_name: イベント支援特典
+printer_id: tsukuyomi
+category: dojinshi
+sources:
+  - https://www.tsuku-yomi.com/tsukuyomi/event/event-support/
+  - https://www.tsuku-yomi.com/tsukuyomi/tmi/
+summary: ツクヨミが支援しているオンリーイベントに参加すると、次回使える2,000円分のクーポンがもらえる。
+benefit_summary: 支援オンリー参加で次回2,000円引きクーポン
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援しているオンリーイベントごと（一覧は公式で確認）
+benefit_types:
+  - discount
+discount_amount: 2000
+application_required: true
+conditions_text: どのセットでも可。発注時のイベント名の欄で参加イベントを選ぶ（一覧に無い支援イベントは備考欄に書く）。Web開催イベントは納品先・申請方法・クーポンの受け取り時期が異なる（公式で確認）。クーポンは次回の発注に使え、1イベントにつき1枚、有効期限は対象イベント開催日の6か月後。日割プランと併用可。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published

@@ -1,0 +1,25 @@
+fair_id: dmate-event-comitia
+slug: dmate-event-comitia
+fair_name: COMITIA応援企画
+printer_id: dmate
+category: dojinshi
+sources:
+  - https://d-mate.net/guide/event_support.html
+summary: COMITIA・地方コミティアに参加する会員が会員専用フォームから注文し、備考欄に申告すると、会員ポイント500ポイント（500円分）がもらえる。
+benefit_summary: COMITIA・地方コミティア参加で500ポイント
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: COMITIA・地方コミティアへの参加ごと
+benefit_types:
+  - points
+member_only: true
+application_required: true
+combinable: true
+conditions_text: 会員登録のうえ「会員様専用ご注文フォーム」から注文し、備考欄（特記事項欄）に「COMITIA応援」または「コミティア応援」と書く（完全申告制。記載がないと対象外）。ポイントは注文時には反映されず、後日スタッフが付与し、次回の注文から使える。新規会員登録キャンペーン・会員限定リピート割引と併用可。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published
