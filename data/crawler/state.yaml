@@ -483,7 +483,7 @@
 - url: https://www.nikko-pc.com/site/
   printer_id: nikko-kikaku
   content_hash: sha256:f41d86f8e0c6c7b721a486c61710b8e631066122d89c5d804699a90767cb6faa
-  reviewed_hash: sha256:f253e13d64056e8d5b322bdc9e871812448f350624f5cadde17462794d76c4f2
+  reviewed_hash: sha256:f41d86f8e0c6c7b721a486c61710b8e631066122d89c5d804699a90767cb6faa
   content_chars: 1784
   etag: null
   last_modified: null
@@ -543,7 +543,7 @@
 - url: https://www.nikko-pc.com/site/fair-smoky/
   printer_id: nikko-kikaku
   content_hash: sha256:47acef2359a9a1c937d34a2a31804e3d5529bcf12916f7c8b4fb4e00dcfbcbf8
-  reviewed_hash: sha256:32bc011041612cc7bf6a90d0800c888a1847a21ad010ea9c94f4058dda4d904b
+  reviewed_hash: sha256:47acef2359a9a1c937d34a2a31804e3d5529bcf12916f7c8b4fb4e00dcfbcbf8
   content_chars: 29108
   etag: null
   last_modified: null
@@ -553,7 +553,7 @@
 - url: https://www.nikko-pc.com/site/fair-souffle/
   printer_id: nikko-kikaku
   content_hash: sha256:c1dfe2a466b028c86a550df3d195b0a39efd3d9114e26cf40928d2c261073d55
-  reviewed_hash: sha256:ce2c62dccf9a302c1c09763460cc3a724177cc751ba0b296226317bcea1182fd
+  reviewed_hash: sha256:c1dfe2a466b028c86a550df3d195b0a39efd3d9114e26cf40928d2c261073d55
   content_chars: 16187
   etag: null
   last_modified: null
@@ -603,7 +603,7 @@
 - url: https://www.nikko-pc.com/site/fair-white/
   printer_id: nikko-kikaku
   content_hash: sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175
-  reviewed_hash: sha256:ae82111e0c4b548d80c74d3b371fc36442b4ab80dab824b91142fd04837495a1
+  reviewed_hash: sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175
   content_chars: 15421
   etag: null
   last_modified: null

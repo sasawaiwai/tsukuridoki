@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-smoky/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:47acef2359a9a1c937d34a2a31804e3d5529bcf12916f7c8b4fb4e00dcfbcbf8",
+  "content_chars": 29108,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T09:48:25+00:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-smoky",
+      "fair_name": "スモーキーフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-smoky/"
+      ],
+      "summary": "再生紙など個性的な表紙用紙に、好きな2色のインクでオフセット印刷する本のセット。早期入稿で10%オフ。",
+      "benefit_summary": "個性派の表紙用紙に2色刷り・早期入稿で10%OFF",
+      "source_type": "official_fair",
+      "conditions_text": "表紙はオフセット2色刷り（1色・3色も可）、用紙は無料の2種と1冊30円の1種。本文はオフセットスミ刷りで用紙1色選択（紙替え不可）。遊び紙あり（後ろに入れる場合は1冊10円）。再生紙のため毛羽立ち・インクの色の出方に特徴があり、不良扱いにはならない。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。3色刷りと300ページ以上は、それぞれ締切が3営業日早まる。",
+      "sizes": [
+        "A5",
+        "B6",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "color_modes": [
+        "spot_color"
+      ],
+      "processes": [
+        "special_paper",
+        "spot_color_printing",
+        "endpaper"
+      ],
+      "benefit_types": [
+        "discount"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "Run 3（2026-10-20）：表紙用紙・刷り色・本文用紙・遊び紙・早期入稿10%オフ・締切の注意は登録内容と同じ。本文用紙の選択肢の補足などの細かな更新のみで、掲載データの変更なし。"
+}

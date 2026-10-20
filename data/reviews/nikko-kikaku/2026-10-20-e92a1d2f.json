@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-white/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175",
+  "content_chars": 15421,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T09:48:25+00:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-white-ondemand",
+      "fair_name": "ホワイトオンデマンド",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-white/"
+      ],
+      "summary": "色のついた特殊紙の表紙に、オンデマンドの白トナーで印刷する本のセット。早く入稿するほど最大30%オフになる。",
+      "benefit_summary": "白トナー表紙・早期入稿で最大30%OFF",
+      "source_type": "official_fair",
+      "conditions_text": "表紙はオンデマンド白トナーのみ（他の色刷り不可）、PP加工・箔押しなど表面加工は不可。本文はオンデマンドスミ刷りで用紙は1色選択（紙替え不可）。早期入稿で30%・20%・15%・10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。300ページ以上は締切が3営業日早まる。",
+      "sizes": [
+        "A5",
+        "B6",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect",
+        "saddle"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "discount"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "Run 3（2026-10-20）：白トナーのみ・表面加工不可・本文用紙・早期入稿30/20/15/10%オフ・300p以上の締切は登録内容と同じ。掲載データの変更なし。"
+}
