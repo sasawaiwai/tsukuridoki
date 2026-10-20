@@ -1,0 +1,29 @@
+printer_id: editnet
+# 運営はEditNet株式会社（2026-10-20確認）
+name: EditNetプリンテック
+official_url: https://www.editnet-p.jp/
+# フェアの一覧ページ・お知らせの一覧ページは無い。フェアはお知らせ記事（/news/日付/）として出て、トップにリンクが並ぶため、トップを一覧として変化を見る
+fair_index_url: https://www.editnet-p.jp/
+# トップのリンクは料金・入稿案内が中心のため、たどらない。フェアの記事は watch_urls で見る
+follow_links: false
+# トップからリンクされているフェア・キャンペーンの記事（2026-10-20確認）。記事に日付の無いもの・2020〜2024年のものが混ざるため、開催中かは各記事で確かめる
+watch_urls:
+  - https://www.editnet-p.jp/news/240401/
+  - https://www.editnet-p.jp/news/251205/
+  - https://www.editnet-p.jp/news/251202/
+  - https://www.editnet-p.jp/news/251201/
+  - https://www.editnet-p.jp/news/221004/
+  - https://www.editnet-p.jp/news/221002/
+  - https://www.editnet-p.jp/news/221003/
+  - https://www.editnet-p.jp/news/221005/
+  - https://www.editnet-p.jp/news/221006/
+  - https://www.editnet-p.jp/news/200408/
+  - https://www.editnet-p.jp/news/240403/
+domains: [editnet-p.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.editnet-p.jp/about/site.phtml
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。「このサイトのご利用にあたって」に著作権は弊社が有する旨の記載のみで、転載・情報収集・リンクの定めは無い（2026-10-20確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-20

@@ -1,0 +1,17 @@
+printer_id: booknext
+# 運営は株式会社栄光 ブックネクスト事業部（会社概要。本社の所在地は栄光〈eikou.com〉の会社概要と同じ。2026-10-20確認）
+# リンク集では別の印刷所として載っており、サイト・注文窓口も別のため、栄光とは別の印刷所として登録する
+name: booknext
+official_url: https://booknext.ink/
+# フェアの一覧ページは無い。トップのお知らせを一覧として変化を見る（2026-10-20時点でフェア・キャンペーンの告知は見当たらない）
+fair_index_url: https://booknext.ink/
+# トップのリンクは商品・入稿案内が中心のため、たどらない
+follow_links: false
+domains: [booknext.ink]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://booknext.ink/company/agreement/
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/ のみ禁止。利用規約 第2条第5項に掲載内容の無断転載・複写・蓄積・転送・引用・改変の禁止（一般的な著作権の条項）があるため、本文を保存・転載・複製せず、事実だけを独自の表現で掲載し、公式URLを出典とする（2026-10-20確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-20
