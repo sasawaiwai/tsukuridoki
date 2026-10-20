@@ -9,6 +9,8 @@ fair_index_url: https://doujin-adp.sakura.ne.jp/
 follow_links: false
 # トップのメニュー・バナーからリンクされている、特典・企画の可能性があるページ（2026-10-20確認）
 watch_urls:
+  # 〆切スケジュール（日付ごとの割引・割増入稿の率）。早期入稿割引の根拠。イベントごとの日程が頻繁に更新される見込み（2026-10-21追加。運営者決定②）
+  - https://doujin-adp.sakura.ne.jp/shimekiri.html
   - https://doujin-adp.sakura.ne.jp/eventshien.html
   - https://doujin-adp.sakura.ne.jp/touhyou.html
   - https://doujin-adp.sakura.ne.jp/petit.html

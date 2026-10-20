@@ -15,8 +15,9 @@ watch_urls:
 domains: [starbooks.jp]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
-crawl_policy: allowed
+# 2026-10-21 運営者決定：Actions からの巡回で robots.txt が HTTP 403（www・blog とも）のため自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
 terms_url: null
-policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは www は全体を許可、blog は /wp-admin/ のみ禁止。利用規約・リンクポリシーのページは見当たらず（2026-10-20確認）。"
+policy_note: "自動アクセスの明示的な禁止は確認できなかったが、GitHub Actions からのアクセスで robots.txt が HTTP 403（2026-10-20）。サーバーが自動アクセスを拒否したものとして扱い、manual_only とする（人が通常のブラウザで公式情報を確認する）。robots.txtは www は全体を許可、blog は /wp-admin/ のみ禁止。利用規約・リンクポリシーのページは見当たらず（2026-10-20確認）。"
 crawl_interval_days: 7
 last_policy_checked_at: 2026-10-20
