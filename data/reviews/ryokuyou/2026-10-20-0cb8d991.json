@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:f2b56f9edb268cd4fdf69641c1fa443ad2f47a38c8ca30f4daf2e06368524bce",
+  "content_chars": 2196,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T09:20:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-poster-stand-free-2026-12",
+      "series_id": "ryokuyou-poster-stand-free",
+      "fair_name": "大判ポスターorポスタースタンド 無料フェア（12/13・12/20・冬コミ・1/10納品）",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html"
+      ],
+      "summary": "12/13・12/20・冬コミ・1/10に東京ビッグサイトかインテックス大阪へ直接搬入するオフセット印刷の新刊に、大判ポスターかポスタースタンドのどちらか1つを無料で付ける。",
+      "benefit_summary": "大判ポスターまたはポスタースタンドが無料",
+      "source_type": "official_fair",
+      "end_date": "2027-01-10",
+      "end_date_text": "2026/12/13・12/20・冬コミ・2027/1/10納品限定",
+      "end_date_precision": "day",
+      "usable_until": "2026-12-29",
+      "usable_until_text": "ポスタースタンドの予約〆切（1/10合わせ）12/29(火)正午",
+      "usable_until_precision": "day",
+      "deadline_type": "event",
+      "printing_methods": [
+        "offset"
+      ],
+      "benefit_types": [
+        "novelty"
+      ],
+      "free_options": [
+        "大判ポスター",
+        "ポスタースタンド"
+      ],
+      "event_delivery_only": true,
+      "specific_sets_only": true,
+      "application_required": true,
+      "conditions_text": "冊子1種につきどちらか1つ（併用不可）。対象会場は東京ビッグサイト・インテックス大阪。大判ポスターはB1以下（壁配置はA0まで）、入稿〆切はイベントごと（例：12/13合わせはA0が11/25(水)・B1以下が12/1(火)正午、1/10合わせはA0が12/22(火)・B1以下が12/26(土)正午。冊子の〆切とは別）。ポスタースタンドの予約〆切もイベントごと（12/13合わせ12/4(金)〜1/10合わせ12/29(火)正午）。対象はスタンダードコースのセット（カラーセット・色刷表紙セット・小説本セット・オールカラーセット・A4オールカラーセット・コミックスパック・上製本セット・オールカラー上製本セット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット）とカスタムコース。他社表紙持込は不可。新刊と一括で会場に直接搬入する場合のみ。自己申告制（予約時に申請）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "個別ページの「当フェアは終了しました」は非表示要素のため終了の根拠にしない（2026-10-10の既知事項）。一覧の対象期間は2026.12.13〜2027.01.10納品分。前の回（10月・11月）と同じフェア名のため series_id を付与。"
+}

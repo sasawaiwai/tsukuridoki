@@ -713,7 +713,7 @@
 - url: https://www.ryokuyou.co.jp/doujin/campaign
   printer_id: ryokuyou
   content_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
-  reviewed_hash: sha256:ce19cc63cb2cf12b3cb2de0a41c0fbe729f6fff483f05f1c78901f2cf84f2a03
+  reviewed_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
   content_chars: 3036
   etag: null
   last_modified: null
@@ -733,7 +733,7 @@
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bookstorefair2026w.html
   printer_id: ryokuyou
   content_hash: sha256:119d05d801b2eadb7b19afbe9bbc09b39b71fa28f1c11332678dc0c447d35b1e
-  reviewed_hash: null
+  reviewed_hash: sha256:119d05d801b2eadb7b19afbe9bbc09b39b71fa28f1c11332678dc0c447d35b1e
   content_chars: 1134
   etag: null
   last_modified: null
@@ -813,7 +813,7 @@
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select2026w.html
   printer_id: ryokuyou
   content_hash: sha256:87c05cd03117b0b8955a097e81a19ceacd2783dc1de02bb265e9af0aa477318b
-  reviewed_hash: null
+  reviewed_hash: sha256:87c05cd03117b0b8955a097e81a19ceacd2783dc1de02bb265e9af0aa477318b
   content_chars: 3585
   etag: null
   last_modified: null
@@ -853,7 +853,7 @@
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html
   printer_id: ryokuyou
   content_hash: sha256:f2b56f9edb268cd4fdf69641c1fa443ad2f47a38c8ca30f4daf2e06368524bce
-  reviewed_hash: null
+  reviewed_hash: sha256:f2b56f9edb268cd4fdf69641c1fa443ad2f47a38c8ca30f4daf2e06368524bce
   content_chars: 2196
   etag: null
   last_modified: null
