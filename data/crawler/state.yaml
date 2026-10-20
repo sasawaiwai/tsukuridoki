@@ -477,17 +477,17 @@
   content_chars: 1663
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/
   printer_id: nikko-kikaku
-  content_hash: sha256:b73036030d1f09a95a7aee0e3adfe1773da72cb48d66fe66ff9a2b0ad97b0553
+  content_hash: sha256:f41d86f8e0c6c7b721a486c61710b8e631066122d89c5d804699a90767cb6faa
   reviewed_hash: sha256:f253e13d64056e8d5b322bdc9e871812448f350624f5cadde17462794d76c4f2
-  content_chars: 1800
+  content_chars: 1784
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/12p/
@@ -497,7 +497,7 @@
   content_chars: 1673
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-8p
@@ -507,7 +507,7 @@
   content_chars: 1769
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-irumi/
@@ -517,7 +517,7 @@
   content_chars: 62170
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-novels/
@@ -527,7 +527,7 @@
   content_chars: 10525
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-ougon/
@@ -537,7 +537,7 @@
   content_chars: 2413
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-smoky/
@@ -547,7 +547,7 @@
   content_chars: 29108
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-souffle/
@@ -557,7 +557,7 @@
   content_chars: 16187
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru1/
@@ -567,7 +567,7 @@
   content_chars: 3787
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru2/
@@ -577,7 +577,7 @@
   content_chars: 3572
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-syari/
@@ -587,7 +587,7 @@
   content_chars: 118406
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-viva/
@@ -597,7 +597,7 @@
   content_chars: 1646
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-white/
@@ -607,7 +607,7 @@
   content_chars: 15421
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fc8p/
@@ -617,7 +617,7 @@
   content_chars: 2120
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T08:58:14+09:00
+  last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/2026option50_3.html
