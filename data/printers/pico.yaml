@@ -9,6 +9,8 @@ follow_links: false
 # トップのバナー・支援の案内からリンクされているページ（2026-10-20確認）。バナーは画像だけで見出しが無いため、特典かどうかは各ページで確かめる
 # 締切表（イベントごと）はイベントが終わると入れ替わる。主催者向けの支援（/campaign/organizer.html）は対象外のため入れない
 watch_urls:
+  # 幅広オビフェア（全ページ共通のメニューにある。2026-10-21追加）
+  - https://www.pico-net.com/doujinshi/service/setoption/binding/020.html
   - https://www.pico-net.com/doujinshi/event/
   - https://www.pico-net.com/doujinshi/event/shotaflow.html
   - https://www.pico-net.com/doujinshi/shf2026.html
