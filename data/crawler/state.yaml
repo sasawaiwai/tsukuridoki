@@ -712,12 +712,12 @@
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign
   printer_id: ryokuyou
-  content_hash: sha256:ce19cc63cb2cf12b3cb2de0a41c0fbe729f6fff483f05f1c78901f2cf84f2a03
+  content_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
   reviewed_hash: sha256:ce19cc63cb2cf12b3cb2de0a41c0fbe729f6fff483f05f1c78901f2cf84f2a03
-  content_chars: 2587
+  content_chars: 3036
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/aquarium.html
@@ -727,7 +727,17 @@
   content_chars: 28704
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ryokuyou.co.jp/doujin/campaign/bookstorefair2026w.html
+  printer_id: ryokuyou
+  content_hash: sha256:119d05d801b2eadb7b19afbe9bbc09b39b71fa28f1c11332678dc0c447d35b1e
+  reviewed_hash: null
+  content_chars: 1134
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bouquet_asobi.html
@@ -737,7 +747,7 @@
   content_chars: 6477
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html
@@ -747,7 +757,7 @@
   content_chars: 3189
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bungakusoutei.html
@@ -757,7 +767,7 @@
   content_chars: 24054
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bushido.html
@@ -767,7 +777,7 @@
   content_chars: 15495
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/designselecthaku.html
@@ -777,7 +787,7 @@
   content_chars: 10437
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select202610.html
@@ -787,7 +797,7 @@
   content_chars: 3344
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select202611.html
@@ -797,7 +807,17 @@
   content_chars: 3223
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select2026w.html
+  printer_id: ryokuyou
+  content_hash: sha256:87c05cd03117b0b8955a097e81a19ceacd2783dc1de02bb265e9af0aa477318b
+  reviewed_hash: null
+  content_chars: 3585
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_color_change.html
@@ -807,7 +827,7 @@
   content_chars: 1286
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select202610.html
@@ -817,7 +837,7 @@
   content_chars: 1970
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select202611.html
@@ -827,7 +847,17 @@
   content_chars: 1787
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html
+  printer_id: ryokuyou
+  content_hash: sha256:f2b56f9edb268cd4fdf69641c1fa443ad2f47a38c8ca30f4daf2e06368524bce
+  reviewed_hash: null
+  content_chars: 2196
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/glitterpp.html
@@ -837,7 +867,7 @@
   content_chars: 3968
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/hotstamp_big.html
@@ -847,7 +877,7 @@
   content_chars: 4826
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/obake_asobi.html
@@ -857,7 +887,7 @@
   content_chars: 6451
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/starhaku.html
@@ -867,7 +897,7 @@
   content_chars: 5367
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/sweetdiner.html
@@ -877,7 +907,7 @@
   content_chars: 21346
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-10-20T09:00:54+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/trustcolorhaku.html
