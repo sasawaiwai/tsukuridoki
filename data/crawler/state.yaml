@@ -243,7 +243,7 @@
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
   content_hash: sha256:d4eb208247f2e32d8688cc106851e80db0eaa04fcb31a74e0a3f8683d685b752
-  reviewed_hash: sha256:a23de0fa0b1eb2737be9751debe531fa99fb5e40c21fe09c200ae8ed57b6b71a
+  reviewed_hash: sha256:d4eb208247f2e32d8688cc106851e80db0eaa04fcb31a74e0a3f8683d685b752
   content_chars: 11738
   etag: '"da82-65e3f7af9a006"'
   last_modified: Tue, 20 Oct 2026 06:09:59 GMT
