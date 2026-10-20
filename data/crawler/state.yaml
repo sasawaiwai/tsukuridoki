@@ -477,17 +477,17 @@
   content_chars: 1663
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/
   printer_id: nikko-kikaku
-  content_hash: sha256:f253e13d64056e8d5b322bdc9e871812448f350624f5cadde17462794d76c4f2
+  content_hash: sha256:b73036030d1f09a95a7aee0e3adfe1773da72cb48d66fe66ff9a2b0ad97b0553
   reviewed_hash: sha256:f253e13d64056e8d5b322bdc9e871812448f350624f5cadde17462794d76c4f2
-  content_chars: 1877
+  content_chars: 1800
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/12p/
@@ -497,7 +497,7 @@
   content_chars: 1673
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-8p
@@ -507,7 +507,7 @@
   content_chars: 1769
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-irumi/
@@ -517,7 +517,7 @@
   content_chars: 62170
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-novels/
@@ -527,7 +527,7 @@
   content_chars: 10525
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-ougon/
@@ -537,27 +537,27 @@
   content_chars: 2413
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-smoky/
   printer_id: nikko-kikaku
-  content_hash: sha256:32bc011041612cc7bf6a90d0800c888a1847a21ad010ea9c94f4058dda4d904b
+  content_hash: sha256:47acef2359a9a1c937d34a2a31804e3d5529bcf12916f7c8b4fb4e00dcfbcbf8
   reviewed_hash: sha256:32bc011041612cc7bf6a90d0800c888a1847a21ad010ea9c94f4058dda4d904b
-  content_chars: 29156
+  content_chars: 29108
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-souffle/
   printer_id: nikko-kikaku
-  content_hash: sha256:ce2c62dccf9a302c1c09763460cc3a724177cc751ba0b296226317bcea1182fd
+  content_hash: sha256:c1dfe2a466b028c86a550df3d195b0a39efd3d9114e26cf40928d2c261073d55
   reviewed_hash: sha256:ce2c62dccf9a302c1c09763460cc3a724177cc751ba0b296226317bcea1182fd
-  content_chars: 16235
+  content_chars: 16187
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru1/
@@ -567,7 +567,7 @@
   content_chars: 3787
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru2/
@@ -577,7 +577,7 @@
   content_chars: 3572
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-syari/
@@ -587,7 +587,7 @@
   content_chars: 118406
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-viva/
@@ -597,17 +597,17 @@
   content_chars: 1646
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-white/
   printer_id: nikko-kikaku
-  content_hash: sha256:ae82111e0c4b548d80c74d3b371fc36442b4ab80dab824b91142fd04837495a1
+  content_hash: sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175
   reviewed_hash: sha256:ae82111e0c4b548d80c74d3b371fc36442b4ab80dab824b91142fd04837495a1
-  content_chars: 15469
+  content_chars: 15421
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fc8p/
@@ -617,7 +617,7 @@
   content_chars: 2120
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-09T16:42:20+09:00
+  last_fetched_at: 2026-10-20T08:58:14+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/2026option50_3.html
