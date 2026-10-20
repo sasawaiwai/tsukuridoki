@@ -1,0 +1,36 @@
+fair_id: ryokuyou-poster-stand-free-2026-12
+slug: ryokuyou-poster-stand-free-2026-12
+fair_name: 大判ポスターorポスタースタンド 無料フェア（12/13・12/20・冬コミ・1/10納品）
+printer_id: ryokuyou
+category: dojinshi
+series_id: ryokuyou-poster-stand-free
+sources:
+  - https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html
+summary: 12/13・12/20・冬コミ・1/10に東京ビッグサイトかインテックス大阪へ直接搬入するオフセット印刷の新刊に、大判ポスターかポスタースタンドのどちらか1つを無料で付ける。
+benefit_summary: 大判ポスターまたはポスタースタンドが無料
+source_type: official_fair
+end_date: 2027-01-10
+end_date_text: 2026/12/13・12/20・冬コミ・2027/1/10納品限定
+end_date_precision: day
+usable_until: 2026-12-29
+usable_until_text: ポスタースタンドの予約〆切（1/10合わせ）12/29(火)正午
+usable_until_precision: day
+deadline_type: event
+printing_methods:
+  - offset
+benefit_types:
+  - novelty
+free_options:
+  - 大判ポスター
+  - ポスタースタンド
+event_delivery_only: true
+specific_sets_only: true
+application_required: true
+conditions_text: 冊子1種につきどちらか1つ（併用不可）。対象会場は東京ビッグサイト・インテックス大阪。大判ポスターはB1以下（壁配置はA0まで）、入稿〆切はイベントごと（例：12/13合わせはA0が11/25(水)・B1以下が12/1(火)正午、1/10合わせはA0が12/22(火)・B1以下が12/26(土)正午。冊子の〆切とは別）。ポスタースタンドの予約〆切もイベントごと（12/13合わせ12/4(金)〜1/10合わせ12/29(火)正午）。対象はスタンダードコースのセット（カラーセット・色刷表紙セット・小説本セット・オールカラーセット・A4オールカラーセット・コミックスパック・上製本セット・オールカラー上製本セット・ふんわりモンテシオンセット・プレミアム箔押し×トポラスFセット）とカスタムコース。他社表紙持込は不可。新刊と一括で会場に直接搬入する場合のみ。自己申告制（予約時に申請）。
+published_at: 2026-10-20
+discovered_at: 2026-10-20
+verified_at: 2026-10-20
+verification_status: verified
+history:
+  - date: 2026-10-20
+    type: published
