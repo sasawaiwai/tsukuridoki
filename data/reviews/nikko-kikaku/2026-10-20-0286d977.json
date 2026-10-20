@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-souffle/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:c1dfe2a466b028c86a550df3d195b0a39efd3d9114e26cf40928d2c261073d55",
+  "content_chars": 16187,
+  "extractor": "manual",
+  "extracted_at": "2026-10-20T09:48:25+00:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-souffle-color",
+      "fair_name": "スフレカラーフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-souffle/"
+      ],
+      "summary": "ふかふか・パールなどの特殊紙の表紙に、淡い色味のスフレカラーインクでオフセット2色刷りする本のセット。早期入稿で10%オフ。",
+      "benefit_summary": "淡いスフレカラーの2色刷り・早期入稿で10%OFF",
+      "source_type": "official_fair",
+      "conditions_text": "表紙はオフセット2色刷り（1色・3色も可）。表紙用紙は一部在庫限り。本文はオフセットスミ刷りで用紙1色選択（紙替え不可）。遊び紙あり（後ろに入れる場合は1冊10円）。特殊紙のため毛羽立ち・インクの色の出方に特徴があり、不良扱いにはならない。早期入稿で10%オフ。",
+      "sizes": [
+        "A5",
+        "B6",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "color_modes": [
+        "spot_color"
+      ],
+      "processes": [
+        "special_paper",
+        "spot_color_printing",
+        "endpaper"
+      ],
+      "benefit_types": [
+        "discount"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "Run 3（2026-10-20）：表紙用紙（一部在庫限り）・刷り色・本文用紙・遊び紙・早期入稿10%オフは登録内容と同じ。インクの色味の注意書きなどの細かな更新のみで、掲載データの変更なし。"
+}
