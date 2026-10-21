@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/print/minikomi/omakase/index.html",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:2c5f60ede23e296bbfc84f00ae75232ac830fb7cb8351d30986af969e373b9f3",
+  "content_chars": 2429,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "単色おまかせ定期便フェア：紙ものの単色印刷の割引（ミニコミ本表紙印刷フェアは対象外）。期間の記載なし（運営者決定③）。"
+}

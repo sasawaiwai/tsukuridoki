@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/print/minikomi/minicomi/index.html",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:cd2b0c28d3ef00e8098b29560953c61d4938bb363a06af44db301a9dc6952ac4",
+  "content_chars": 3647,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ミニコミ印刷フェア：ミニコミ本の通常の料金・仕様の案内。「フェア」は商品区分の名前で、期間・特別な特典の記載なし（運営者決定③）。"
+}

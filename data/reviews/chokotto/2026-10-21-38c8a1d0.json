@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.chokotto.jp/order_campaign_pre.php",
+  "printer_id": "chokotto",
+  "content_hash": "sha256:a4ecd4c687b777617134770ac3437e2070a7ea200d4c737da404dfe8464b669f",
+  "content_chars": 327,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "chokotto-b5-booklet-10off",
+      "fair_name": "キャンペーン商品：B5冊子 50ページ以上 10%オフ",
+      "sources": [
+        "https://www.chokotto.jp/order_campaign_pre.php"
+      ],
+      "summary": "50ページ以上のB5の冊子が10%オフになるキャンペーン商品。",
+      "benefit_summary": "B5冊子（50ページ以上）が10%オフ",
+      "source_type": "official_campaign",
+      "sizes": [
+        "B5"
+      ],
+      "min_pages": 50,
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 10,
+      "specific_sets_only": true,
+      "conditions_text": "特別割引商品のため1日に対応できる数に限りがあり、一定数を超えると注文を一時停止する場合がある。営業日コースや用紙などの仕様が一部制限される（詳細は公式で確認）。料金は公式の自動見積で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定①（2026-10-21）。トップの「キャンペーン商品」からリンクされた注文ページ。期間の記載なし→期間限定・日付なし。"
+}

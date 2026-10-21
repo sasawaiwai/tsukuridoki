@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/schedule/event202610.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:a83b26cc9f487a86fb8313cdf0e26a126f94a83d03b55e8ecbd482807f303be9",
+  "content_chars": 15723,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "優遇イベントの入稿〆切表（2026年10月〜）。締切の案内で、早割は早期入稿割引（nekonoshippo-early-discount）にまとめた。"
+}

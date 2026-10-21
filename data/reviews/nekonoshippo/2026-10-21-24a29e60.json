@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:5607b52cf8e3ce5e076501f5284e78139b63584e689ea5c67890946bf4b3eb4a",
+  "content_chars": 4003,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ・バナー）。イベント応援キャンペーン（新春けもケット12・にくけっと16など）は公式の「現在実施中のキャンペーン」に無く、終了したものとして扱う。"
+}

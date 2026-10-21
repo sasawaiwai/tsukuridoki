@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/print/minikomi/minikomi-hyoushi/index.html",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:35cb293af0f4fcfaeef1f8e5339b39d7fec98df0ef8690fa56b837b2e5d8ed11",
+  "content_chars": 2356,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ミニコミ本 表紙印刷フェア：表紙だけを印刷する通常の商品の案内。期間・特別な特典の記載なし（運営者決定③）。"
+}

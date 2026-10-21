@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.chokotto.jp/",
+  "printer_id": "chokotto",
+  "content_hash": "sha256:e3373d38b6b5aab758d8900dd65f5e500086b460a1c8f96058433099e03a1101",
+  "content_chars": 1446,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（会社の紹介・メニュー）。キャンペーン商品は /order_campaign_pre.php で確認。"
+}

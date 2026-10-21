@@ -1,0 +1,15 @@
+{
+  "source_url": "https://mikan-no-ki.com/",
+  "printer_id": "mikannoki",
+  "content_hash": "sha256:5c94bee234b3e928c501688e25e320cd42b0b36e37b2acc26de20f8cabbcca7c",
+  "content_chars": 522,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。システムリニューアルのため全サービス（注文・入稿・見積など）を一時停止、再開時期は未定の告知のみ（休止中・フェア0件の印刷所として登録）。"
+}
