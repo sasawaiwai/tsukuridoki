@@ -1,0 +1,19 @@
+printer_id: comigra
+# 運営は株式会社グラフィックネットプリント（グラフィックの同人誌・同人グッズ部門。利用規約 第1条。2026-10-21確認）
+name: コミグラ
+official_url: https://www.graphic.jp/comic
+# 同人向けのキャンペーンの一覧ページは無い。トップ（お知らせ）を一覧として変化を見る（2026-10-21時点で今も有効な同人誌のキャンペーンは見当たらない）
+fair_index_url: https://www.graphic.jp/comic
+# トップのリンクは商品（グッズが多い）の案内が中心のため、たどらない
+follow_links: false
+# 直接搬入サービス（イベント合わせ）の案内
+watch_urls:
+  - https://www.graphic.jp/comic/event
+domains: [graphic.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.graphic.jp/corporate_info/agreement/service
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていない（全体向けは /external/・/modal/ など一部のみ禁止、ボット別の指定は Linespider の Crawl-delay など）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約 第8条3項にサービスの利用以外の目的でのコンテンツ利用の禁止（一般的な著作権の条項）、第9条にサーバーへの著しい負荷・運営の妨害の禁止があるため、低頻度で巡回し、本文を保存・転載せず、事実だけを独自の表現で掲載し、公式URLを出典とする（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21

@@ -1,0 +1,20 @@
+printer_id: orangekoubou
+name: オレンジ工房.com
+official_url: https://www.orangekoubou.com/
+# 「期間限定フェア」の一覧（文字コードは EUC-JP。巡回は meta charset で読む）。同じページに過去の回（2020〜2022年）も残る
+fair_index_url: https://www.orangekoubou.com/special/limited_fair.php
+# 一覧の各フェアの枠（section.fair）からだけリンクを拾う
+fair_link_selector: section.fair a
+# 入稿特典・イベント支援特典（トップのメニューから。会員特典は会員制度のため入れない。2026-10-21確認）
+watch_urls:
+  - https://www.orangekoubou.com/special/privilege_draft.php
+  - https://www.orangekoubou.com/special/privilege_draft_sp_02.php
+  - https://www.orangekoubou.com/special/privilege_eventsupport.php
+domains: [orangekoubou.com]
+# リンクはトップページ固定（運営方針）。公式のリンク用バナーもトップページへのリンク
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていない（フォームのみ禁止）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず、「リンク」のページは外部サイトの紹介（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21

@@ -1,0 +1,20 @@
+printer_id: axis
+# 運営はアクシス出版株式会社（2026-10-21確認）
+name: アクシス出版
+# リンク集の http://www.axis-publication.com/index.html。https でも同じページが開く
+official_url: https://www.axis-publication.com/
+# フェアの一覧ページは無い。トップのバナー・メニューからフェアの個別ページ（/fair/〜/）へリンクがあるため、トップを一覧にする
+fair_index_url: https://www.axis-publication.com/
+# トップのリンクのうち、フェアの個別ページ（/fair/〜/）だけを拾う
+fair_link_selector: a[href^="/fair/"]
+# イベント支援（トップのバナー・フッターから。2026-10-21確認）
+watch_urls:
+  - https://www.axis-publication.com/event/
+domains: [axis-publication.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約・リンクポリシーのページは見当たらず（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21
