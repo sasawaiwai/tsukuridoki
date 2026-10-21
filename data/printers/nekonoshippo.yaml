@@ -9,8 +9,10 @@ crawl_ignore:
   - "#endcamp"
 # 実施中の枠のうち「フェア」の区分（linebox4_body fair）からだけリンクを拾う。新用紙・新オプション・新グッズの紹介（newPaper・option・new）は新商品の案内のため拾わない（2026-10-21確認）
 fair_link_selector: "#campwrap .linebox4_body.fair a"
-# トップの告知（優遇イベントの早期入稿。月ごとにページが替わる）
+# 入稿〆切表（通常イベント・宅配納品向け）。早期割引（早割20%引・10%引）の根拠（2026-10-21追加。ADPの〆切スケジュールと同じ扱い）
+# トップの告知と、優遇イベントの早期入稿（月ごとにページが替わる）
 watch_urls:
+  - https://www.shippo.co.jp/neko/schedule/deliver.shtml
   - https://www.shippo.co.jp/neko/
   - https://www.shippo.co.jp/neko/schedule/event202610.shtml
 domains: [shippo.co.jp]
