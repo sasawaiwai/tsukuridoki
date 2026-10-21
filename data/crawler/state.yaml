@@ -717,7 +717,7 @@
   content_chars: 2109
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-10-21T09:41:53+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/info/saihan.shtml
@@ -728,6 +728,16 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/schedule/deliver.shtml
+  printer_id: nekonoshippo
+  content_hash: sha256:3b2441d1b9f5409553bcfa58c8630bfbc47e82c462fd935bb176acaab4572051
+  reviewed_hash: null
+  content_chars: 4269
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:41:53+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/schedule/event202610.shtml
