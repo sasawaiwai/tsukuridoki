@@ -952,12 +952,12 @@
   http_status: 200
 - url: https://otaclub.jp/
   printer_id: otaclub
-  content_hash: sha256:722b898b14b2e58e6b5189f1ccba9cdef0b4ffe25a81d938aa944f1a0d457457
+  content_hash: sha256:fcb8ea3341de620c98fe1741662fc9aa5e8d2fb47dd7926a657eb3b6fd05e343
   reviewed_hash: null
   content_chars: 6332
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:29:10+09:00
+  last_fetched_at: 2026-10-21T09:34:19+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/

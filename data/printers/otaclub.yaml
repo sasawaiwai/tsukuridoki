@@ -6,6 +6,9 @@ official_url: https://otaclub.jp/
 fair_index_url: https://otaclub.jp/
 # トップのリンクは商品・入稿案内が中心のため、たどらない
 follow_links: false
+# 営業日カレンダーに取得時刻（非表示の #calendar_now）が入り、取るたびに本文が変わるため外す（2026-10-21確認）
+crawl_ignore:
+  - "#calendar_now"
 domains: [otaclub.jp]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
