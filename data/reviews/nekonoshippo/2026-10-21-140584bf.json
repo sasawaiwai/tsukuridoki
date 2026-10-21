@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/info/saihan.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:6a16dfa88d6e4555e30559e5be995f1899d1d5332415722c0a36c7e143f604cb",
+  "content_chars": 1957,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nekonoshippo-reprint-discount",
+      "fair_name": "再版割",
+      "sources": [
+        "https://www.shippo.co.jp/neko/info/saihan.shtml",
+        "https://www.shippo.co.jp/neko/info/campaign/"
+      ],
+      "summary": "ねこのしっぽで初版を印刷した本を、表紙を変えずに再版・増刷すると10%割引になる（早割と合わせて最大20%）。",
+      "benefit_summary": "再版・増刷が10%引（早割と併用で最大20%）",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "ねこのしっぽで初版を印刷していること。表紙の原稿に変更がなく、本文の変更は奥付のみ。入稿時に納品先がすべて決まっていること（預かりが発生すると対象外）。入稿後の部数・納品先の変更は不可。通常〆切日までの申込で10%、早期入稿なら早割と併用で最大20%（上限20%）。特急入稿は対象外。他のキャンペーンと併用不可。割引はぱっくの基本料金のみでオプションは対象外。対象は常設の同人誌ぱっく全て（初版が期間限定・取扱い終了のぱっくは通常ぱっくへの仕様変更で可）。自己申告制（申込方法は公式で確認）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者承認（バッチ5、2026-10-21）。ページ・キャンペーン一覧に「いつでもご利用いただけます」→通年・常設。"
+}

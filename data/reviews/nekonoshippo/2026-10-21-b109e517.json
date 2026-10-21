@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/info/campaign/",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:d4f6363d926dfee24e50cd3157b5cb3c3ebe1a8884bd016e87a6108e25f28cc3",
+  "content_chars": 2109,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "キャンペーン一覧（現在実施中）。フェアは読書の秋・カレンダー・再版割の個別ページで確認。新用紙・新オプション・新グッズの紹介は期間・特典の記載がない新商品の案内。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://otaclub.jp/",
+  "printer_id": "otaclub",
+  "content_hash": "sha256:9d9d12c35c3d56765aaed7db18baaf7fee01bc03f236468c701fe1a9720a686c",
+  "content_chars": 6312,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ・商品メニュー）。お知らせは休業・印刷方法の変更・配送遅延の告知と、Akaboo専用投票引換券（対象外。運営者決定①）のみ（フェア0件の印刷所として登録）。"
+}

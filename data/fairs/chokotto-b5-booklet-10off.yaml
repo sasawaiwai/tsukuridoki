@@ -1,0 +1,25 @@
+fair_id: chokotto-b5-booklet-10off
+slug: chokotto-b5-booklet-10off
+fair_name: キャンペーン商品：B5冊子 50ページ以上 10%オフ
+printer_id: chokotto
+category: dojinshi
+sources:
+  - https://www.chokotto.jp/order_campaign_pre.php
+summary: 50ページ以上のB5の冊子が10%オフになるキャンペーン商品。
+benefit_summary: B5冊子（50ページ以上）が10%オフ
+source_type: official_campaign
+sizes:
+  - B5
+min_pages: 50
+benefit_types:
+  - discount
+discount_rate: 10
+specific_sets_only: true
+conditions_text: 特別割引商品のため1日に対応できる数に限りがあり、一定数を超えると注文を一時停止する場合がある。営業日コースや用紙などの仕様が一部制限される（詳細は公式で確認）。料金は公式の自動見積で確認。
+published_at: 2026-10-21
+discovered_at: 2026-10-21
+verified_at: 2026-10-21
+verification_status: verified
+history:
+  - date: 2026-10-21
+    type: published

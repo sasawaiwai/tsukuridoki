@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:c7ca3515e355c8b020c3f2a9598b2756749260c2bad5631c51d17115d9566c3e",
+  "content_chars": 2725,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（商品メニュー）。「第N回フェア」「〜フェア」は商品区分の名前で、期間の記載なし（運営者決定③ 2026-10-21：フェア0件）。"
+}

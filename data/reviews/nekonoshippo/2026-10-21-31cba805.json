@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/schedule/deliver.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:3b2441d1b9f5409553bcfa58c8630bfbc47e82c462fd935bb176acaab4572051",
+  "content_chars": 4269,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nekonoshippo-early-discount",
+      "fair_name": "早期入稿割引（早割）",
+      "sources": [
+        "https://www.shippo.co.jp/neko/schedule/deliver.shtml",
+        "https://www.shippo.co.jp/neko/schedule/event202610.shtml",
+        "https://www.shippo.co.jp/neko/info/saihan.shtml"
+      ],
+      "summary": "入稿〆切表で決められた早めの締切までに入稿すると、ぱっくの基本料金が割引になる。自宅宅配・店頭引取は10%引、優遇イベント合わせ（会場への搬入）は20%引・10%引の締切がある。",
+      "benefit_summary": "早めの入稿でぱっく基本料金が10%引（優遇イベント合わせは最大20%引）",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "割引はぱっくの基本料金のみで、オプションは対象外。早割の欄があるのは締切表に載っているぱっく（本文オフセット・オンデマンド1色刷の本、まるごとクラフトぱっく、フルカラーの本など。グッズには早割なしのものがある）。締切日はぱっく・ページ数・納品方法ごとに公式の入稿〆切表で確認。オプションによって締切が早まる。早期割引はキャンペーンに含まれない（キャンペーンの併用制限の対象外）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者承認（バッチ5、2026-10-21）。自宅宅配・店頭引取の〆切表は「早期10%引」、優遇イベント合わせの〆切表は「早割20%引・10%引」。期間の記載なし→期間限定・日付なし（ADP・ツクヨミの早割と同じ扱い）。"
+}

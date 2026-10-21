@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/print/minikomi/grade/grade-fea02/index.html",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:8dcd61db4d609f2418df942bf9d5de6fbb8d82aef582c9f5927ffdfc3d653eda",
+  "content_chars": 2403,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "指定色割引グラデーション：チラシ・便せん・シールなど紙ものの印刷の割引で、期間の記載なし（運営者決定③）。"
+}

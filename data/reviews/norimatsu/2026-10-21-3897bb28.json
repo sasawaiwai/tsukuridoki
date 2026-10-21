@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-norimatsu.com/print/minikomi/grade/grade-fea03/index.html",
+  "printer_id": "norimatsu",
+  "content_hash": "sha256:c16d6931cda059b5965d0f36202e59ca41c5bcdd71f241d51e9d2e1d96625a19",
+  "content_chars": 2209,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T10:00:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "割引券贈呈グラデーション：紙ものの印刷で次回の割引券を進呈。期間の記載なし（運営者決定③）。"
+}
