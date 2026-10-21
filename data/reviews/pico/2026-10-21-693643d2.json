@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/service/doujin_print/original_embossing.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:5768825f92609f19e04c80914c5b39683314fb2066c58712002f129283dc4659",
+  "content_chars": 10190,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "オリジナルエンボス紙セットの通常の商品ページ。期間・特典の記載なし。"
+}

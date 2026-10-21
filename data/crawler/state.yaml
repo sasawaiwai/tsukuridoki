@@ -3,7 +3,7 @@
 - url: https://doujin-adp.sakura.ne.jp/
   printer_id: adp
   content_hash: sha256:45a67b986589814924d941878ef0c6c89780a799bffda2ff4bfccec60b553da0
-  reviewed_hash: null
+  reviewed_hash: sha256:45a67b986589814924d941878ef0c6c89780a799bffda2ff4bfccec60b553da0
   content_chars: 1516
   etag: '"3b16-65a15fd390fd3"'
   last_modified: Fri, 28 Aug 2026 06:59:09 GMT
@@ -23,7 +23,7 @@
 - url: https://doujin-adp.sakura.ne.jp/petit.html
   printer_id: adp
   content_hash: sha256:0baf1fe521a1cce2ce4da313e77c797bf6611c34c5fae91a96128c561b8ed486
-  reviewed_hash: null
+  reviewed_hash: sha256:0baf1fe521a1cce2ce4da313e77c797bf6611c34c5fae91a96128c561b8ed486
   content_chars: 4326
   etag: '"8985-63149e0cb0268"'
   last_modified: Thu, 27 Mar 2025 02:40:34 GMT
@@ -33,7 +33,7 @@
 - url: https://doujin-adp.sakura.ne.jp/shimekiri.html
   printer_id: adp
   content_hash: sha256:6c44c10dab52aed6ba1a0e9c3b2ab7d7307be7856144cc947c3496bbf7a4e12a
-  reviewed_hash: null
+  reviewed_hash: sha256:6c44c10dab52aed6ba1a0e9c3b2ab7d7307be7856144cc947c3496bbf7a4e12a
   content_chars: 5422
   etag: '"17b79-65debe4256bc8"'
   last_modified: Fri, 16 Oct 2026 02:26:26 GMT
@@ -43,7 +43,7 @@
 - url: https://doujin-adp.sakura.ne.jp/touhyou.html
   printer_id: adp
   content_hash: sha256:cbc820eb575f0012ece405ad47f8e5e883eefc0a0d13e44658828c457cfc6066
-  reviewed_hash: null
+  reviewed_hash: sha256:cbc820eb575f0012ece405ad47f8e5e883eefc0a0d13e44658828c457cfc6066
   content_chars: 1110
   etag: '"2530-63149e0d302f2"'
   last_modified: Thu, 27 Mar 2025 02:40:34 GMT
@@ -53,7 +53,7 @@
 - url: https://booknext.ink/
   printer_id: booknext
   content_hash: sha256:ac0dffb8488eb4a887cb5d5ae428eaf78954f01f58ddd794572c2e98eac7022f
-  reviewed_hash: null
+  reviewed_hash: sha256:ac0dffb8488eb4a887cb5d5ae428eaf78954f01f58ddd794572c2e98eac7022f
   content_chars: 2472
   etag: null
   last_modified: null
@@ -203,7 +203,7 @@
 - url: https://www.editnet-p.jp/
   printer_id: editnet
   content_hash: sha256:3769934c1b416f1fa9ad3ee2f5285bab43ed0b1bcfaac428424f6b6b1c2f1479
-  reviewed_hash: null
+  reviewed_hash: sha256:3769934c1b416f1fa9ad3ee2f5285bab43ed0b1bcfaac428424f6b6b1c2f1479
   content_chars: 1477
   etag: null
   last_modified: null
@@ -213,7 +213,7 @@
 - url: https://www.editnet-p.jp/news/200408/
   printer_id: editnet
   content_hash: sha256:dfbfc6ef061164ce7ef11c910fa0cf67db2d1a7a50735e1933474e4cb1092cd9
-  reviewed_hash: null
+  reviewed_hash: sha256:dfbfc6ef061164ce7ef11c910fa0cf67db2d1a7a50735e1933474e4cb1092cd9
   content_chars: 1118
   etag: null
   last_modified: null
@@ -243,7 +243,7 @@
 - url: https://www.editnet-p.jp/news/221004/
   printer_id: editnet
   content_hash: sha256:e248ed104074b4ddd7876ec5ae4a08c9c300cd986a83c0ac94be525acd79979d
-  reviewed_hash: null
+  reviewed_hash: sha256:e248ed104074b4ddd7876ec5ae4a08c9c300cd986a83c0ac94be525acd79979d
   content_chars: 1545
   etag: null
   last_modified: null
@@ -253,7 +253,7 @@
 - url: https://www.editnet-p.jp/news/221005/
   printer_id: editnet
   content_hash: sha256:9bd0c17f16dab355424767003dc09409828abc508eed0ec94903fdee48ee371a
-  reviewed_hash: null
+  reviewed_hash: sha256:9bd0c17f16dab355424767003dc09409828abc508eed0ec94903fdee48ee371a
   content_chars: 5540
   etag: null
   last_modified: null
@@ -263,7 +263,7 @@
 - url: https://www.editnet-p.jp/news/221006/
   printer_id: editnet
   content_hash: sha256:96e3bd2e06896722195e1142ee6412d5e4cdb041862feb41f0f0d675a3596483
-  reviewed_hash: null
+  reviewed_hash: sha256:96e3bd2e06896722195e1142ee6412d5e4cdb041862feb41f0f0d675a3596483
   content_chars: 5915
   etag: null
   last_modified: null
@@ -273,7 +273,7 @@
 - url: https://www.editnet-p.jp/news/240401/
   printer_id: editnet
   content_hash: sha256:56749c5f8b6084a42017bfc1c002de4d4df8ad13c7043e14340523e68c1c6d2f
-  reviewed_hash: null
+  reviewed_hash: sha256:56749c5f8b6084a42017bfc1c002de4d4df8ad13c7043e14340523e68c1c6d2f
   content_chars: 3389
   etag: null
   last_modified: null
@@ -283,7 +283,7 @@
 - url: https://www.editnet-p.jp/news/240403/
   printer_id: editnet
   content_hash: sha256:4e23e1aac34a7ca593a5d64ad5d1b6d3bda1bf8586e5b3d509b281d905848ecd
-  reviewed_hash: null
+  reviewed_hash: sha256:4e23e1aac34a7ca593a5d64ad5d1b6d3bda1bf8586e5b3d509b281d905848ecd
   content_chars: 416
   etag: null
   last_modified: null
@@ -293,7 +293,7 @@
 - url: https://www.editnet-p.jp/news/251201/
   printer_id: editnet
   content_hash: sha256:e64b121bdbcd85f28d711174006d056a1b78c3e4f37baceca973a58494a88ed5
-  reviewed_hash: null
+  reviewed_hash: sha256:e64b121bdbcd85f28d711174006d056a1b78c3e4f37baceca973a58494a88ed5
   content_chars: 741
   etag: null
   last_modified: null
@@ -303,7 +303,7 @@
 - url: https://www.editnet-p.jp/news/251202/
   printer_id: editnet
   content_hash: sha256:d01dcef7e7b8e64c314fe19fa771ff33d3bbaa9d59fe57abcb67ca3e8d066cbf
-  reviewed_hash: null
+  reviewed_hash: sha256:d01dcef7e7b8e64c314fe19fa771ff33d3bbaa9d59fe57abcb67ca3e8d066cbf
   content_chars: 1270
   etag: null
   last_modified: null
@@ -313,7 +313,7 @@
 - url: https://www.editnet-p.jp/news/251205/
   printer_id: editnet
   content_hash: sha256:f1de763c035643724252cd49d91f03e6b778f32577e2d8891ee1a4abf8ffa10a
-  reviewed_hash: null
+  reviewed_hash: sha256:f1de763c035643724252cd49d91f03e6b778f32577e2d8891ee1a4abf8ffa10a
   content_chars: 2249
   etag: null
   last_modified: null
@@ -803,7 +803,7 @@
 - url: https://www.pico-net.com/doujinshi/
   printer_id: pico
   content_hash: sha256:d01219e812736702fa6cc87c8e752195c5af9669409194c3b1b2b2746f39a2ec
-  reviewed_hash: null
+  reviewed_hash: sha256:d01219e812736702fa6cc87c8e752195c5af9669409194c3b1b2b2746f39a2ec
   content_chars: 5401
   etag: '"12c6c-65e419228b831"'
   last_modified: Tue, 20 Oct 2026 08:39:38 GMT
@@ -813,7 +813,7 @@
 - url: https://www.pico-net.com/doujinshi/117.html
   printer_id: pico
   content_hash: sha256:830fce6a1fb73b9fe4b42ddaaa8ff125d8ca5b2ae56394ed94120b63c1e0edc7
-  reviewed_hash: null
+  reviewed_hash: sha256:830fce6a1fb73b9fe4b42ddaaa8ff125d8ca5b2ae56394ed94120b63c1e0edc7
   content_chars: 4340
   etag: '"eeec-65e41882d94c2"'
   last_modified: Tue, 20 Oct 2026 08:36:50 GMT
@@ -823,7 +823,7 @@
 - url: https://www.pico-net.com/doujinshi/20261108-bunnhuritokyo43.html
   printer_id: pico
   content_hash: sha256:5220da0274aac7f851f0f9f17e4d07970757f1d967b50206db4f5cba62119724
-  reviewed_hash: null
+  reviewed_hash: sha256:5220da0274aac7f851f0f9f17e4d07970757f1d967b50206db4f5cba62119724
   content_chars: 4350
   etag: '"eef7-65dc892101d02"'
   last_modified: Wed, 14 Oct 2026 08:18:05 GMT
@@ -833,7 +833,7 @@
 - url: https://www.pico-net.com/doujinshi/akaboo-shinkancard.html
   printer_id: pico
   content_hash: sha256:ce63e24ab6b4af7ac3afcf1cf46d9a92e561ad45e83cc82bed6a9b0cf0305366
-  reviewed_hash: null
+  reviewed_hash: sha256:ce63e24ab6b4af7ac3afcf1cf46d9a92e561ad45e83cc82bed6a9b0cf0305366
   content_chars: 5135
   etag: '"fa3e-65ca81ca47df6"'
   last_modified: Wed, 30 Sep 2026 00:09:25 GMT
@@ -853,7 +853,7 @@
 - url: https://www.pico-net.com/doujinshi/event/shotaflow.html
   printer_id: pico
   content_hash: sha256:9497013cc5009c66b565281aa6cfb5750e8fd9b1e2a03683b68760e3e517036b
-  reviewed_hash: null
+  reviewed_hash: sha256:9497013cc5009c66b565281aa6cfb5750e8fd9b1e2a03683b68760e3e517036b
   content_chars: 4547
   etag: '"f507-65cda7ec19e81"'
   last_modified: Fri, 02 Oct 2026 12:15:59 GMT
@@ -863,7 +863,7 @@
 - url: https://www.pico-net.com/doujinshi/hakuprint-yuuryoushi.html
   printer_id: pico
   content_hash: sha256:edb28c610de5353221c7841792a397b8da33af4c7283ffe1f84474eddd64e392
-  reviewed_hash: null
+  reviewed_hash: sha256:edb28c610de5353221c7841792a397b8da33af4c7283ffe1f84474eddd64e392
   content_chars: 4324
   etag: '"eed1-65ca81ca70669"'
   last_modified: Wed, 30 Sep 2026 00:09:25 GMT
@@ -873,7 +873,7 @@
 - url: https://www.pico-net.com/doujinshi/service/doujin_print/ondemand/select_nisuhyoushi.html
   printer_id: pico
   content_hash: sha256:fbfbf2315c9d5dc8a2d273b665e5356fa5d497faef26d5524154ac8ae052dc04
-  reviewed_hash: null
+  reviewed_hash: sha256:fbfbf2315c9d5dc8a2d273b665e5356fa5d497faef26d5524154ac8ae052dc04
   content_chars: 9384
   etag: '"1535e-65ca7fa81430a"'
   last_modified: Tue, 29 Sep 2026 23:59:52 GMT
@@ -883,7 +883,7 @@
 - url: https://www.pico-net.com/doujinshi/service/doujin_print/original_embossing.html
   printer_id: pico
   content_hash: sha256:5768825f92609f19e04c80914c5b39683314fb2066c58712002f129283dc4659
-  reviewed_hash: null
+  reviewed_hash: sha256:5768825f92609f19e04c80914c5b39683314fb2066c58712002f129283dc4659
   content_chars: 10190
   etag: '"15522-65ca7f9fde56b"'
   last_modified: Tue, 29 Sep 2026 23:59:43 GMT
@@ -893,7 +893,7 @@
 - url: https://www.pico-net.com/doujinshi/service/post_15.html
   printer_id: pico
   content_hash: sha256:b57ce4aefe4b3a3793c65eff39929128670d7190f9aae632223911b22db3f0af
-  reviewed_hash: null
+  reviewed_hash: sha256:b57ce4aefe4b3a3793c65eff39929128670d7190f9aae632223911b22db3f0af
   content_chars: 9895
   etag: '"142cd-64591f79cb4c5"'
   last_modified: Wed, 10 Dec 2025 05:04:47 GMT
@@ -913,7 +913,7 @@
 - url: https://www.pico-net.com/doujinshi/service/setoption/cover/004.html
   printer_id: pico
   content_hash: sha256:ff3e57cca401634d6bd442113bd1211e8678439c75d4f229899e0ee45a54d7fa
-  reviewed_hash: null
+  reviewed_hash: sha256:ff3e57cca401634d6bd442113bd1211e8678439c75d4f229899e0ee45a54d7fa
   content_chars: 6474
   etag: '"126ba-65ca7fe57cfbc"'
   last_modified: Wed, 30 Sep 2026 00:00:56 GMT
@@ -923,7 +923,7 @@
 - url: https://www.pico-net.com/doujinshi/shf2026.html
   printer_id: pico
   content_hash: sha256:bfba37d6144a297bf596034d99c6e418419d126dfed53d434d24022cb9c561a3
-  reviewed_hash: null
+  reviewed_hash: sha256:bfba37d6144a297bf596034d99c6e418419d126dfed53d434d24022cb9c561a3
   content_chars: 4370
   etag: '"eef5-65ceb3e2bb498"'
   last_modified: Sat, 03 Oct 2026 08:14:50 GMT

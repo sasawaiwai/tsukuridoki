@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/221006/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:96e3bd2e06896722195e1142ee6412d5e4cdb041862feb41f0f0d675a3596483",
+  "content_chars": 5915,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "オンデマンドお試しプラン・本文フルカラー（通年）。通常のセット商品のため対象外（運営者決定⑥ 2026-10-21）。"
+}

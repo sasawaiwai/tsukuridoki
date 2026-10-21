@@ -1,0 +1,15 @@
+{
+  "source_url": "https://booknext.ink/",
+  "printer_id": "booknext",
+  "content_hash": "sha256:ac0dffb8488eb4a887cb5d5ae428eaf78954f01f58ddd794572c2e98eac7022f",
+  "content_chars": 2472,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。お知らせは締切変更・サイト停止の告知のみで、フェア・キャンペーンの告知なし（フェア0件の印刷所として登録）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/akaboo-shinkancard.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:ce63e24ab6b4af7ac3afcf1cf46d9a92e561ad45e83cc82bed6a9b0cf0305366",
+  "content_chars": 5135,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "Akaboo専用投票引換券の案内。印刷所の割引・特典ではないため対象外（運営者決定① 2026-10-21）。"
+}

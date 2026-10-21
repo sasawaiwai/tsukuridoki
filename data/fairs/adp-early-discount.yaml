@@ -1,0 +1,23 @@
+fair_id: adp-early-discount
+slug: adp-early-discount
+fair_name: 早期入稿割引（割引入稿）
+printer_id: adp
+category: dojinshi
+sources:
+  - https://doujin-adp.sakura.ne.jp/shimekiri.html
+summary: 〆切スケジュールで決められた早めの締切までに入稿すると、入稿日に応じてセット料金が15%・10%・5%割引になる。
+benefit_summary: 早めの入稿でセット料金が最大15%OFF
+source_type: official_campaign
+printing_methods:
+  - ondemand
+benefit_types:
+  - discount
+specific_sets_only: true
+conditions_text: 割引はセット料金のみで、表紙用紙・オプション・送料は対象外。対象はオンデマンドカラー・モノクロ・フルカラー・ぷちカラー本・二色カラー本の各セット（選べる割引率はセット・日程によって異なる）。予約制で、定員に達し次第締切（締切の発表前に定員に達することもある）。締切日はイベント・納品方法ごとに公式の〆切スケジュールで確認。
+published_at: 2026-10-21
+discovered_at: 2026-10-21
+verified_at: 2026-10-21
+verification_status: verified
+history:
+  - date: 2026-10-21
+    type: published

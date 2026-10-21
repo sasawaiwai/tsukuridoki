@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/240403/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:4e23e1aac34a7ca593a5d64ad5d1b6d3bda1bf8586e5b3d509b281d905848ecd",
+  "content_chars": 416,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "未晒クラフト紙袋の送料100円キャンペーン（2024年4月）。同人誌の印刷に関係しないため対象外。"
+}

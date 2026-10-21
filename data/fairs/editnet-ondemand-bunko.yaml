@@ -1,0 +1,29 @@
+fair_id: editnet-ondemand-bunko
+slug: editnet-ondemand-bunko
+fair_name: オンデマンド文庫本フェア
+printer_id: editnet
+category: dojinshi
+sources:
+  - https://www.editnet-p.jp/news/240401/
+  - https://www.editnet-p.jp/
+summary: 文庫本向けの書籍用紙（ソリストN・ソリストSP）を本文に使い、普段は加算額のかかる表紙用紙からも選べる、文庫本のオンデマンド印刷のセット。
+benefit_summary: 文庫本向けの本文用紙と特殊紙の表紙をセット内で
+source_type: official_fair
+sizes:
+  - bunko
+binding:
+  - perfect
+printing_methods:
+  - ondemand
+benefit_types:
+  - limited_set
+  - free_paper_upgrade
+specific_sets_only: true
+conditions_text: 文庫判（105×148mm）・無線綴じのみ。ページ数はおおむね300ページまで、部数は500部まで（超える場合は問い合わせ）。本文はオンデマンド黒1色（淡いクリームのソリストNか淡いピンクのソリストSP）、表紙はオンデマンドのフルカラーか白1色。表紙用紙はこのフェアの指定のもの（里紙・ファーストヴィンテージ・ディープマット）だけ。横綴じ本とは併用できない。ページに記載のない割引は対象外。料金は公式で確認。
+published_at: 2026-10-21
+discovered_at: 2026-10-21
+verified_at: 2026-10-21
+verification_status: verified
+history:
+  - date: 2026-10-21
+    type: published

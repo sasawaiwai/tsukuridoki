@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.editnet-p.jp/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:3769934c1b416f1fa9ad3ee2f5285bab43ed0b1bcfaac428424f6b6b1c2f1479",
+  "content_chars": 1477,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ・「フェア・お得なサービス」のリンク集）。各フェアは個別の記事で確認。"
+}

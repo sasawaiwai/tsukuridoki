@@ -1,0 +1,15 @@
+{
+  "source_url": "https://doujin-adp.sakura.ne.jp/",
+  "printer_id": "adp",
+  "content_hash": "sha256:45a67b986589814924d941878ef0c6c89780a799bffda2ff4bfccec60b553da0",
+  "content_chars": 1516,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ・メニュー）。お知らせは入稿休止・修理の告知のみ。"
+}

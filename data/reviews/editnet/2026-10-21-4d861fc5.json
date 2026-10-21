@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/221005/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:9bd0c17f16dab355424767003dc09409828abc508eed0ec94903fdee48ee371a",
+  "content_chars": 5540,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "オンデマンドお試しプラン（通年）。公式の名前は「プラン」で通常のセット商品のため対象外（運営者決定⑥ 2026-10-21）。"
+}
