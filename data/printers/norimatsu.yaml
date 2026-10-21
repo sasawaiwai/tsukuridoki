@@ -1,0 +1,23 @@
+printer_id: norimatsu
+# 同人誌・チラシ・ミニコミ印刷。チラシ・便せんなどの紙ものが中心で、商品ごとのページに「第N回フェア開催中」とある（2026-10-21確認）
+name: のりまつ印刷
+official_url: https://www.print-norimatsu.com/
+# フェアの一覧ページは無い。トップ（Shift_JIS）のメニューを一覧として変化を見る
+fair_index_url: https://www.print-norimatsu.com/
+# トップのリンクは商品ページが中心（チラシ・封筒・シールなど）のため、たどらない
+follow_links: false
+# 本（ミニコミ本・表紙）に関係する商品ページと、割引のあるフェアのページ（2026-10-21確認）
+watch_urls:
+  - https://www.print-norimatsu.com/print/minikomi/minicomi/index.html
+  - https://www.print-norimatsu.com/print/minikomi/minikomi-hyoushi/index.html
+  - https://www.print-norimatsu.com/print/minikomi/grade/grade-fea02/index.html
+  - https://www.print-norimatsu.com/print/minikomi/grade/grade-fea03/index.html
+  - https://www.print-norimatsu.com/print/minikomi/omakase/index.html
+domains: [print-norimatsu.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21

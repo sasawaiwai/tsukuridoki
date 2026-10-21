@@ -1,0 +1,17 @@
+printer_id: mikannoki
+# 運営は情報印刷株式会社 みかんの樹事業部（2026-10-21確認）
+name: みかんの樹
+official_url: https://mikan-no-ki.com/
+# トップに「【重要】サービス再開時期の延期につきまして」：システムリニューアルのため全サービス（注文・入稿・見積など）を一時停止。2026年4月の再開予定を延期し、再開時期は未定（2026-10-21確認）
+# 休止中の印刷所も登録し、一覧に「※休止中」を出す（運営者決定、仕様書63-4）。再開を公式で確認したら service_suspended を消す
+service_suspended: true
+fair_index_url: https://mikan-no-ki.com/
+follow_links: false
+domains: [mikan-no-ki.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt は無い（/robots.txt にトップと同じページが返る）ため、低頻度巡回の対象とする（許諾を得たものではない）。休止中でトップ以外のページは見当たらず、利用規約も見当たらない（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21
