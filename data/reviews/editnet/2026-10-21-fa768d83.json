@@ -1,0 +1,44 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/221003/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:7549c34dd93acc8691a3cb7589642b8a18587031e1dd39477b7b29c5786e88dc",
+  "content_chars": 4537,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "editnet-dark-color-fair",
+      "fair_name": "濃色フェア（おもしろオンデマンド祭り第2弾）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221003/",
+        "https://www.editnet-p.jp/"
+      ],
+      "summary": "濃色の特殊紙の表紙に白1色で印刷した本を作るとき、白印刷の加算額が無料になる。表紙に「ミランダ」（黒）を選んだ場合は、用紙の加算額もほかのセット用紙と同額に値引きされる。",
+      "benefit_summary": "濃色紙表紙の白1色印刷で白印刷の加算額が無料（ミランダも同額に）",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "sizes": [
+        "A5",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option",
+        "free_paper_upgrade"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドお試しプランの特別割引として提供。表紙は指定の濃色紙（里紙〈あやめ・くり・こん・すみ〉・ディープマット〈インディゴ・ルージュ〉・ミランダ〈くろ〉）にオンデマンド白1色、本文はオンデマンド黒1色（2色印刷への変更は別料金）。無線綴じのみ。A5・B5（文庫・新書まで小さいサイズも可）。白の面積が全体の50%を超える場合は加算額が必要になることがある。白印刷が関係するためWebの入稿手続き（e窓）は使えず、印刷依頼書で申し込む。入稿期限はイベント前週の木曜20時（前々週なら割引あり。大きなイベントの前などは異なる）で、期限後はこのフェアを扱わない。ページに記載のない割引は対象外。料金は公式で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定⑪（2026-10-21）。ページ末尾に「通年で当分の間提供」→通年・常設。古い料金（2023年改定時の料金表）は載せない。2026/10/23納品分からの料金改定後に、内容・条件の変更がないか再確認する。"
+}
