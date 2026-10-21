@@ -1,0 +1,23 @@
+printer_id: nekonoshippo
+# 運営は有限会社ねこのしっぽ（2026-10-21確認）
+name: ねこのしっぽ
+official_url: https://www.shippo.co.jp/neko/
+# 「現在実施中のキャンペーン」（キャンペーン＆新商品）。同じページの下に終了した過去のキャンペーンも並ぶ（#endcamp、開閉式）
+fair_index_url: https://www.shippo.co.jp/neko/info/campaign/
+# 終了した過去のキャンペーンの一覧は本文から外す（実施中の変化だけを見る）
+crawl_ignore:
+  - "#endcamp"
+# 実施中の枠のうち「フェア」の区分（linebox4_body fair）からだけリンクを拾う。新用紙・新オプション・新グッズの紹介（newPaper・option・new）は新商品の案内のため拾わない（2026-10-21確認）
+fair_link_selector: "#campwrap .linebox4_body.fair a"
+# トップの告知（優遇イベントの早期入稿。月ごとにページが替わる）
+watch_urls:
+  - https://www.shippo.co.jp/neko/
+  - https://www.shippo.co.jp/neko/schedule/event202610.shtml
+domains: [shippo.co.jp]
+# リンクはトップページ固定（運営方針）。公式は「リンクはご自由にどうぞ」
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず、トップに「リンクはご自由にどうぞ」（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21

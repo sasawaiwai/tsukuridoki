@@ -1,0 +1,19 @@
+printer_id: chokotto
+# 運営は株式会社ちょこっと（屋号：ちょ古っ都製本工房。関連会社に都麦出版。2026-10-21確認）。冊子の印刷・製本の通販で、同人誌専門ではない
+name: ちょ古っ都製本工房
+official_url: https://www.chokotto.jp/
+# フェアの一覧ページは無い。トップを一覧として変化を見る
+fair_index_url: https://www.chokotto.jp/
+# トップのリンクは価格・入稿案内が中心のため、たどらない
+follow_links: false
+# トップの「キャンペーン商品」（2026-10-21確認）
+watch_urls:
+  - https://www.chokotto.jp/order_campaign_pre.php
+domains: [chokotto.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21
