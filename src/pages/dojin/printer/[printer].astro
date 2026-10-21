@@ -33,6 +33,7 @@ const past = fairs.filter((f) => isExpired(f, today)).sort(byUntilDesc);
   searchHref={`${SEARCH_HREF}?printer=${printer.printer_id}`}
   emptyText="現在、ツクリドキ！に掲載しているフェアはありません。"
 >
+  {printer.service_suspended && <p slot="header">※公式サイトで、サービスの休止が案内されています。再開や最新の状況は公式サイトでご確認ください。</p>}
   <p slot="header">
     <Button href={printer.official_url} variant="secondary" target="_blank" rel="noopener">{printer.name}の公式サイト</Button>
   </p>

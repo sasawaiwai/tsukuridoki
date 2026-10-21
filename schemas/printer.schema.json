@@ -35,6 +35,7 @@
     "follow_links": { "type": "boolean" },
     "crawl_interval_days": { "type": "integer", "minimum": 1 },
     "last_crawled_at": { "type": ["string", "null"], "format": "date-time" },
-    "last_policy_checked_at": { "type": ["string", "null"], "format": "date" }
+    "last_policy_checked_at": { "type": ["string", "null"], "format": "date" },
+    "service_suspended": { "type": "boolean" }
   }
 }
