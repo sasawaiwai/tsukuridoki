@@ -12,8 +12,9 @@ watch_urls:
 domains: [graphic.jp]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
-crawl_policy: allowed
+# 2026-10-21：Actions からの巡回で robots.txt が2回とも通信エラー（39525080807・39525368826。手元からは取得できる）。手順書1-5により自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
 terms_url: https://www.graphic.jp/corporate_info/agreement/service
-policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていない（全体向けは /external/・/modal/ など一部のみ禁止、ボット別の指定は Linespider の Crawl-delay など）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約 第8条3項にサービスの利用以外の目的でのコンテンツ利用の禁止（一般的な著作権の条項）、第9条にサーバーへの著しい負荷・運営の妨害の禁止があるため、低頻度で巡回し、本文を保存・転載せず、事実だけを独自の表現で掲載し、公式URLを出典とする（2026-10-21確認）。"
+policy_note: "Actions からのアクセスで robots.txt が通信エラー（2026-10-21、2回）のため manual_only（人が通常のブラウザで公式情報を確認する）。自動アクセスの明示的な禁止は確認できず、robots.txt上も対象ページは禁止されていない（全体向けは /external/・/modal/ など一部のみ禁止、ボット別の指定は Linespider の Crawl-delay など）。利用規約 第8条3項にサービスの利用以外の目的でのコンテンツ利用の禁止（一般的な著作権の条項）、第9条にサーバーへの著しい負荷・運営の妨害の禁止があるため、本文を保存・転載せず、事実だけを独自の表現で掲載し、公式URLを出典とする（2026-10-21確認）。"
 crawl_interval_days: 7
 last_policy_checked_at: 2026-10-21
