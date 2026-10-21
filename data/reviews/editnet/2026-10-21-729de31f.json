@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/221002/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:7e6ceb9829bcc598d328105c6cb241daab7a06f815b5ccc0ba80d8f71e0b3de8",
+  "content_chars": 4354,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T09:30:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "editnet-kraft-fair",
+      "fair_name": "クラフトフェア（おもしろオンデマンド祭り第1弾）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221002/",
+        "https://www.editnet-p.jp/"
+      ],
+      "summary": "クラフト紙の表紙に白1色で印刷した本を作るとき、普段は必要な白印刷の加算額が無料になる（オンデマンドお試しプランの特別割引）。",
+      "benefit_summary": "クラフト紙表紙の白1色印刷で白印刷の加算額が無料",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "sizes": [
+        "A5",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドお試しプランの特別割引として提供。表紙は指定のクラフト紙（未晒クラフト・D'CRAFT・クラフトリプロライナー）にオンデマンド白1色、本文はオンデマンド黒1色（2色印刷への変更は別料金）。無線綴じのみ。A5・B5（文庫・新書まで小さいサイズも可）。白の面積が全体の50%を超える場合は加算額が必要になることがある。入稿期限はイベント前週の木曜20時（前々週なら割引あり。大きなイベントの前などは異なる）で、期限後はこのフェアを扱わない。ページに記載のない割引は対象外。料金は公式で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定⑪（2026-10-21）。ページ末尾に「通年で当分の間提供」→通年・常設。古い料金（2023年改定時の料金表）は載せない。2026/10/23納品分からの料金改定後に、内容・条件の変更がないか再確認する。"
+}

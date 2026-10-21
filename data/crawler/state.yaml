@@ -223,7 +223,7 @@
 - url: https://www.editnet-p.jp/news/221002/
   printer_id: editnet
   content_hash: sha256:7e6ceb9829bcc598d328105c6cb241daab7a06f815b5ccc0ba80d8f71e0b3de8
-  reviewed_hash: null
+  reviewed_hash: sha256:7e6ceb9829bcc598d328105c6cb241daab7a06f815b5ccc0ba80d8f71e0b3de8
   content_chars: 4354
   etag: null
   last_modified: null
@@ -233,7 +233,7 @@
 - url: https://www.editnet-p.jp/news/221003/
   printer_id: editnet
   content_hash: sha256:7549c34dd93acc8691a3cb7589642b8a18587031e1dd39477b7b29c5786e88dc
-  reviewed_hash: null
+  reviewed_hash: sha256:7549c34dd93acc8691a3cb7589642b8a18587031e1dd39477b7b29c5786e88dc
   content_chars: 4537
   etag: null
   last_modified: null

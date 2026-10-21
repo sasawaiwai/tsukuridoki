@@ -1,0 +1,32 @@
+fair_id: editnet-kraft-fair
+slug: editnet-kraft-fair
+fair_name: クラフトフェア（おもしろオンデマンド祭り第1弾）
+printer_id: editnet
+category: dojinshi
+sources:
+  - https://www.editnet-p.jp/news/221002/
+  - https://www.editnet-p.jp/
+summary: クラフト紙の表紙に白1色で印刷した本を作るとき、普段は必要な白印刷の加算額が無料になる（オンデマンドお試しプランの特別割引）。
+benefit_summary: クラフト紙表紙の白1色印刷で白印刷の加算額が無料
+source_type: official_fair
+timing_type: ongoing
+sizes:
+  - A5
+  - B5
+  - bunko
+  - shinsho
+binding:
+  - perfect
+printing_methods:
+  - ondemand
+benefit_types:
+  - free_option
+specific_sets_only: true
+conditions_text: オンデマンドお試しプランの特別割引として提供。表紙は指定のクラフト紙（未晒クラフト・D'CRAFT・クラフトリプロライナー）にオンデマンド白1色、本文はオンデマンド黒1色（2色印刷への変更は別料金）。無線綴じのみ。A5・B5（文庫・新書まで小さいサイズも可）。白の面積が全体の50%を超える場合は加算額が必要になることがある。入稿期限はイベント前週の木曜20時（前々週なら割引あり。大きなイベントの前などは異なる）で、期限後はこのフェアを扱わない。ページに記載のない割引は対象外。料金は公式で確認。
+published_at: 2026-10-21
+discovered_at: 2026-10-21
+verified_at: 2026-10-21
+verification_status: verified
+history:
+  - date: 2026-10-21
+    type: published
