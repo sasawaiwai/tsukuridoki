@@ -1,0 +1,21 @@
+printer_id: comicmall
+name: コミックモール
+# トップ（https://comicmall.jp/）は wiki.cgi へ転送される。Wiki形式のサイトで文字コードは EUC-JP（巡回は meta charset で読む）
+official_url: https://comicmall.jp/
+# 「フェア情報」のページ（月曜日フェア・数量限定フェア・期間限定フェアなどの一覧）
+fair_index_url: https://comicmall.jp/wiki.cgi?page=fair
+# 本文は #main（メニュー・ログインの部分を除く）
+crawl_selector: "#main"
+# 一覧の本文にある Wiki のページへのリンクだけを拾う
+fair_link_selector: "#main a.wikipage"
+# イベント支援（メニューから。2026-10-21確認）
+watch_urls:
+  - https://comicmall.jp/wiki.cgi?page=Events
+domains: [comicmall.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt は無い（/robots.txt に Wiki のページが返る）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（2026-10-21確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-10-21
