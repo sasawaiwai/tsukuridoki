@@ -60,6 +60,26 @@
   last_fetched_at: 2026-10-20T23:27:31+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.chokotto.jp/
+  printer_id: chokotto
+  content_hash: sha256:e3373d38b6b5aab758d8900dd65f5e500086b460a1c8f96058433099e03a1101
+  reviewed_hash: null
+  content_chars: 1446
+  etag: '"3d46-60904684b1453"'
+  last_modified: Tue, 31 Oct 2023 14:59:54 GMT
+  last_fetched_at: 2026-10-21T09:29:39+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.chokotto.jp/order_campaign_pre.php
+  printer_id: chokotto
+  content_hash: sha256:a4ecd4c687b777617134770ac3437e2070a7ea200d4c737da404dfe8464b669f
+  reviewed_hash: null
+  content_chars: 327
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:29:39+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://comflex-doujin.com/sale_infomation/
   printer_id: comflex
   content_hash: sha256:ba4f2e94f166d562bcc189c06b4add3a2bb4c55aba14bb46029d452f82c5926b
@@ -600,6 +620,16 @@
   last_fetched_at: 2026-10-18T11:44:56+09:00
   fetch_status: ok
   http_status: 200
+- url: https://mikan-no-ki.com/
+  printer_id: mikannoki
+  content_hash: sha256:5c94bee234b3e928c501688e25e320cd42b0b36e37b2acc26de20f8cabbcca7c
+  reviewed_hash: null
+  content_chars: 522
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:32:23+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://nanairodo.jp/
   printer_id: nanairodo
   content_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
@@ -648,6 +678,66 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-16T01:27:11+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/
+  printer_id: nekonoshippo
+  content_hash: sha256:5607b52cf8e3ce5e076501f5284e78139b63584e689ea5c67890946bf4b3eb4a
+  reviewed_hash: null
+  content_chars: 4003
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/info/2026_book_autumn.shtml
+  printer_id: nekonoshippo
+  content_hash: sha256:707ed88d4f0922f1743ef18bf131620d522c9424757348c306e78850bf68b07c
+  reviewed_hash: null
+  content_chars: 1947
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/info/2026_cal_autumn.shtml
+  printer_id: nekonoshippo
+  content_hash: sha256:4b5729f2b91dc51616d4d07a811864f682016892d2cf8a7cafafb7bed5706866
+  reviewed_hash: null
+  content_chars: 1681
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/info/campaign/
+  printer_id: nekonoshippo
+  content_hash: sha256:d4f6363d926dfee24e50cd3157b5cb3c3ebe1a8884bd016e87a6108e25f28cc3
+  reviewed_hash: null
+  content_chars: 2109
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/info/saihan.shtml
+  printer_id: nekonoshippo
+  content_hash: sha256:6a16dfa88d6e4555e30559e5be995f1899d1d5332415722c0a36c7e143f604cb
+  reviewed_hash: null
+  content_chars: 1957
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.shippo.co.jp/neko/schedule/event202610.shtml
+  printer_id: nekonoshippo
+  content_hash: sha256:a83b26cc9f487a86fb8313cdf0e26a126f94a83d03b55e8ecbd482807f303be9
+  reviewed_hash: null
+  content_chars: 15723
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:30:15+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/fair/ondekuchie
@@ -798,6 +888,76 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-20T18:44:38+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/
+  printer_id: norimatsu
+  content_hash: sha256:c7ca3515e355c8b020c3f2a9598b2756749260c2bad5631c51d17115d9566c3e
+  reviewed_hash: null
+  content_chars: 2725
+  etag: null
+  last_modified: Fri, 22 Apr 2016 09:39:58 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/print/minikomi/grade/grade-fea02/index.html
+  printer_id: norimatsu
+  content_hash: sha256:8dcd61db4d609f2418df942bf9d5de6fbb8d82aef582c9f5927ffdfc3d653eda
+  reviewed_hash: null
+  content_chars: 2403
+  etag: null
+  last_modified: Fri, 26 Dec 2014 09:59:03 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/print/minikomi/grade/grade-fea03/index.html
+  printer_id: norimatsu
+  content_hash: sha256:c16d6931cda059b5965d0f36202e59ca41c5bcdd71f241d51e9d2e1d96625a19
+  reviewed_hash: null
+  content_chars: 2209
+  etag: null
+  last_modified: Fri, 26 Dec 2014 09:59:05 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/print/minikomi/minicomi/index.html
+  printer_id: norimatsu
+  content_hash: sha256:cd2b0c28d3ef00e8098b29560953c61d4938bb363a06af44db301a9dc6952ac4
+  reviewed_hash: null
+  content_chars: 3647
+  etag: null
+  last_modified: Fri, 26 Dec 2014 09:59:10 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/print/minikomi/minikomi-hyoushi/index.html
+  printer_id: norimatsu
+  content_hash: sha256:35cb293af0f4fcfaeef1f8e5339b39d7fec98df0ef8690fa56b837b2e5d8ed11
+  reviewed_hash: null
+  content_chars: 2356
+  etag: null
+  last_modified: Fri, 26 Dec 2014 09:59:11 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.print-norimatsu.com/print/minikomi/omakase/index.html
+  printer_id: norimatsu
+  content_hash: sha256:2c5f60ede23e296bbfc84f00ae75232ac830fb7cb8351d30986af969e373b9f3
+  reviewed_hash: null
+  content_chars: 2429
+  etag: null
+  last_modified: Fri, 26 Dec 2014 09:59:44 GMT
+  last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://otaclub.jp/
+  printer_id: otaclub
+  content_hash: sha256:722b898b14b2e58e6b5189f1ccba9cdef0b4ffe25a81d938aa944f1a0d457457
+  reviewed_hash: null
+  content_chars: 6332
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-10-21T09:29:10+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/
