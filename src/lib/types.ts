@@ -158,6 +158,8 @@ export interface Printer {
   crawl_interval_days?: number;
   last_crawled_at?: string | null;
   last_policy_checked_at?: DateString | null;
+  /** 公式サイトでサービスの休止が案内されている。印刷所一覧に「※休止中」、印刷所ページに注記を出す（仕様書63-4） */
+  service_suspended?: boolean;
 }
 
 export interface Paper {

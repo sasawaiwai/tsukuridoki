@@ -32,6 +32,7 @@ const printers = data.printers
           <li class="printers__item">
             <h2 class="printers__name">
               <a href={`/dojin/printer/${printer.printer_id}/`}>{printer.name}</a>
+              {printer.service_suspended && <span class="printers__suspended">※休止中</span>}
             </h2>
             <p class="printers__count">
               ツクリドキ！掲載中のフェア：開催中 <strong>{active}</strong>件{upcoming > 0 && `（開催前 ${upcoming}件）`}
@@ -114,6 +115,13 @@ const printers = data.printers
 
   .printers__name a:hover {
     color: var(--color-primary-strong);
+  }
+
+  .printers__suspended {
+    margin-left: var(--space-2);
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+    font-weight: normal;
   }
 
   .printers__count {
