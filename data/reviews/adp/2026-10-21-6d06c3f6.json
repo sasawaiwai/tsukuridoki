@@ -1,0 +1,15 @@
+{
+  "source_url": "https://doujin-adp.sakura.ne.jp/touhyou.html",
+  "printer_id": "adp",
+  "content_hash": "sha256:cbc820eb575f0012ece405ad47f8e5e883eefc0a0d13e44658828c457cfc6066",
+  "content_chars": 1110,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "Akaboo投票引換券の発行条件の案内。印刷所の割引・特典ではないため対象外（運営者決定① 2026-10-21）。"
+}

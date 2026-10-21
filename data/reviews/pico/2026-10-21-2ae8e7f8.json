@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/",
+  "printer_id": "pico",
+  "content_hash": "sha256:d01219e812736702fa6cc87c8e752195c5af9669409194c3b1b2b2746f39a2ec",
+  "content_chars": 5401,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（支援中イベントの一覧・お知らせ）。お知らせは価格改定・欠品の告知のみ。支援イベントは /event/ で確認。"
+}

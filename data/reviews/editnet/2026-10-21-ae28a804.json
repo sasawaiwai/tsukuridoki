@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/200408/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:dfbfc6ef061164ce7ef11c910fa0cf67db2d1a7a50735e1933474e4cb1092cd9",
+  "content_chars": 1118,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "みんなで交換ポストカードフェア（ポストカードフェアの付帯サービス、2020年4月）。紙もの・グッズのため対象外（2026-10-16の決定。紙もの・グッズの拡大は正式公開後に検討）。"
+}

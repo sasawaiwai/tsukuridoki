@@ -1,0 +1,15 @@
+{
+  "source_url": "https://doujin-adp.sakura.ne.jp/petit.html",
+  "printer_id": "adp",
+  "content_hash": "sha256:0baf1fe521a1cce2ce4da313e77c797bf6611c34c5fae91a96128c561b8ed486",
+  "content_chars": 4326,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ぷちカラー本セットの通常の商品ページ。期間・特典の記載なし。"
+}

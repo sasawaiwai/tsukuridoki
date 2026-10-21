@@ -1,0 +1,32 @@
+{
+  "source_url": "https://doujin-adp.sakura.ne.jp/shimekiri.html",
+  "printer_id": "adp",
+  "content_hash": "sha256:6c44c10dab52aed6ba1a0e9c3b2ab7d7307be7856144cc947c3496bbf7a4e12a",
+  "content_chars": 5422,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:20:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "adp-early-discount",
+      "fair_name": "早期入稿割引（割引入稿）",
+      "sources": [
+        "https://doujin-adp.sakura.ne.jp/shimekiri.html"
+      ],
+      "summary": "〆切スケジュールで決められた早めの締切までに入稿すると、入稿日に応じてセット料金が15%・10%・5%割引になる。",
+      "benefit_summary": "早めの入稿でセット料金が最大15%OFF",
+      "source_type": "official_campaign",
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "割引はセット料金のみで、表紙用紙・オプション・送料は対象外。対象はオンデマンドカラー・モノクロ・フルカラー・ぷちカラー本・二色カラー本の各セット（選べる割引率はセット・日程によって異なる）。予約制で、定員に達し次第締切（締切の発表前に定員に達することもある）。締切日はイベント・納品方法ごとに公式の〆切スケジュールで確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定②（2026-10-21）。〆切スケジュールは2026/11/22・23のイベント分まで掲載中。期間の記載はなく期間限定・日付なし（ツクヨミの日割と同じ扱い）。"
+}

@@ -1,0 +1,28 @@
+fair_id: pico-shotaflow-13-support
+slug: pico-shotaflow-13-support
+fair_name: 第13回男の娘ショタFLOW 特別支援
+printer_id: pico
+category: dojinshi
+sources:
+  - https://www.pico-net.com/doujinshi/event/shotaflow.html
+  - https://www.pico-net.com/doujinshi/event/
+summary: 第13回男の娘ショタFLOW（2026年11月30日）に参加するサークル向けの特別支援。どの納品先でも基本の〆切表が適用され、通常締切での入稿が10%OFFになる。
+benefit_summary: 対象イベント参加で通常締切10%OFF・基本〆切表を適用
+source_type: official_campaign
+end_date: 2026-11-30
+end_date_text: 第13回男の娘ショタFLOW（2026年11月30日）
+end_date_precision: day
+deadline_type: event
+event_name: 第13回男の娘ショタFLOW
+event_date: 2026-11-30
+benefit_types:
+  - discount
+discount_rate: 10
+conditions_text: 男の娘／ショタ オンリーイベント「第13回男の娘ショタFLOW」に参加するサークルが対象。特典は2つ：①どの納品先でも基本の〆切表を適用 ②通常締切で10%OFF。締切日・料金は公式の〆切表で確認（〆切表は画像）。
+published_at: 2026-10-21
+discovered_at: 2026-10-21
+verified_at: 2026-10-21
+verification_status: verified
+history:
+  - date: 2026-10-21
+    type: published

@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/20261108-bunnhuritokyo43.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:5220da0274aac7f851f0f9f17e4d07970757f1d967b50206db4f5cba62119724",
+  "content_chars": 4350,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair",
+    "image_only"
+  ],
+  "master_candidates": [],
+  "note": "文学フリマ東京43（11/8）の〆切表。支援中イベントの一覧に無く、締切案内のため対象外（本文は画像のみ）。"
+}

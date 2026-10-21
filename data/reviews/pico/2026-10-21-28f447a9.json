@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/shf2026.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:bfba37d6144a297bf596034d99c6e418419d126dfed53d434d24022cb9c561a3",
+  "content_chars": 4370,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:30:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair",
+    "image_only"
+  ],
+  "master_candidates": [],
+  "note": "SWEET HALLOWEEN FES（10/25）の〆切表。支援中イベントの一覧に無く、締切案内のため対象外（本文は画像のみ）。"
+}

@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/240401/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:56749c5f8b6084a42017bfc1c002de4d4df8ad13c7043e14340523e68c1c6d2f",
+  "content_chars": 3389,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:20:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "editnet-ondemand-bunko",
+      "fair_name": "オンデマンド文庫本フェア",
+      "sources": [
+        "https://www.editnet-p.jp/news/240401/",
+        "https://www.editnet-p.jp/"
+      ],
+      "summary": "文庫本向けの書籍用紙（ソリストN・ソリストSP）を本文に使い、普段は加算額のかかる表紙用紙からも選べる、文庫本のオンデマンド印刷のセット。",
+      "benefit_summary": "文庫本向けの本文用紙と特殊紙の表紙をセット内で",
+      "source_type": "official_fair",
+      "sizes": [
+        "bunko"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "limited_set",
+        "free_paper_upgrade"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "文庫判（105×148mm）・無線綴じのみ。ページ数はおおむね300ページまで、部数は500部まで（超える場合は問い合わせ）。本文はオンデマンド黒1色（淡いクリームのソリストNか淡いピンクのソリストSP）、表紙はオンデマンドのフルカラーか白1色。表紙用紙はこのフェアの指定のもの（里紙・ファーストヴィンテージ・ディープマット）だけ。横綴じ本とは併用できない。ページに記載のない割引は対象外。料金は公式で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "トップの「フェア・お得なサービス」に「実施中」と表示。ページに「当分の間提供」（期間の記載なし→期間限定・日付なし）。古い料金は掲載しない（2026/10/23納品分から料金改定。運営者決定⑩）。"
+}

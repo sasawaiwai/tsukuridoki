@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.editnet-p.jp/news/221004/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:e248ed104074b4ddd7876ec5ae4a08c9c300cd986a83c0ac94be525acd79979d",
+  "content_chars": 1545,
+  "extractor": "manual",
+  "extracted_at": "2026-10-21T01:20:00+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "editnet-offset-spot-color",
+      "fair_name": "特色フェア（オフセット表紙）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221004/",
+        "https://www.editnet-p.jp/services/tariff-202610/"
+      ],
+      "summary": "オフセット印刷「エコエコワン早期特典」の表紙で、金・銀・蛍光色などの特色を基本色として扱い、2色までセット内で使えるフェア。",
+      "benefit_summary": "表紙の特色（金・銀・蛍光など）2色までセット内",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset"
+      ],
+      "spot_color_supported": true,
+      "benefit_types": [
+        "free_option"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "対象はオフセット印刷「エコエコワン早期特典」の表紙。使える特色は銀・金（青口・赤口）・蛍光（ピンク・オレンジ・イエロー・グリーン・レッド）・白・白（不透明）・群青の11色。3色以上は、3色目から基本色としてのインキ加算額と多色刷り加算額がかかる。本文に特色を使う場合は通常どおりの計算。部数やページ数によっては、通常のプランに加算額を足したほうが安くなる場合がある。料金は公式で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "ページに「当分の間通年で実施」「通年で当分の間提供」→通年・常設。土台のプラン「エコエコワン早期特典」は2026年10月以降の料金表（/services/tariff-202610/）にも掲載（休止の注記なし）。古い料金（加算額・料金例）は掲載しない（運営者決定⑩）。"
+}
