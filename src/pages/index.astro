@@ -1,6 +1,6 @@
 ---
 // トップページ（仕様書40-1、timing-design 4-1）
-// トップ＝フェアを発見する場所。6つの見方のタブ（各一覧ページへのリンク）と、人気の加工から入る
+// トップ＝フェアを発見する場所。6つの見方のタブ（各一覧ページへのリンク）と、加工・特典から入る
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import SectionHeader from '../components/SectionHeader.astro';
@@ -23,7 +23,7 @@ const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select
   <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">
-    <PopularProcesses id="popular-processes" />
+    <PopularProcesses id="popular-processes" compact />
 
     <section>
       <SectionHeader title="フェアを見る" />
@@ -52,6 +52,11 @@ const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
+  }
+
+  /* 加工・特典から探すは補助の導線なので、すぐ下の「フェアを見る」との間を詰める */
+  .top > :global(.popular) {
+    margin-bottom: calc(var(--space-4) * -1);
   }
 
   .about {
