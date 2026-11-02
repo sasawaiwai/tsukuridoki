@@ -82,7 +82,7 @@ const { imageSrc, imageAlt = '' } = Astro.props;
 
   .hero__copy {
     position: relative;
-    padding-block: var(--space-6) var(--space-6);
+    padding-block: var(--space-5) var(--space-6);
   }
 
   .hero__title {
@@ -123,7 +123,7 @@ const { imageSrc, imageAlt = '' } = Astro.props;
     }
 
     .hero__copy {
-      padding-block: var(--space-7) var(--space-7);
+      padding-block: var(--space-6) var(--space-6);
     }
 
     .hero__sub {
@@ -131,13 +131,10 @@ const { imageSrc, imageAlt = '' } = Astro.props;
     }
   }
 
+  /* 高さを固定せず文字の量に合わせる（以前の min-height: 340px は上下に余分な余白を作っていた） */
   @media (min-width: 1024px) {
     .hero__copy {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 340px;
-      padding-block: var(--space-6) var(--space-8);
+      padding-block: var(--space-6) var(--space-7);
     }
   }
 </style>

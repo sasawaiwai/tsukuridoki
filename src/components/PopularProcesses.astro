@@ -1,106 +1,84 @@
 ---
-// 人気の加工から探す（参考画像）。印章のような丸い見本に、一文字だけを置く
-// アイコン画像を描き起こさず、文字と色だけで「加工見本」の雰囲気を出す
+// 加工・特典から探す。補助的な検索導線なので、装飾を付けずテキストリンクを「/」区切りで並べる
 import { POPULAR_PROCESS_LINKS, SEARCH_HREF } from '../lib/nav.ts';
 import SectionHeader from './SectionHeader.astro';
 
 interface Props {
   id?: string;
+  /** 見出しを一段小さくする（トップ。「フェアを見る」より控えめにする） */
+  compact?: boolean;
 }
 
-const { id } = Astro.props;
+const { id, compact = false } = Astro.props;
 ---
 
-<section class="popular" aria-labelledby={id}>
-  <SectionHeader id={id} title="人気の加工から探す" />
-  <ul class="popular__list">
-    {
-      POPULAR_PROCESS_LINKS.map((link) => (
-        <li>
-          <a href={link.href} data-category={link.category}>
-            <span class="popular__mark" aria-hidden="true">
-              {link.glyph}
-            </span>
-            <span class="popular__label">{link.label}</span>
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-  <p class="popular__more"><a href={SEARCH_HREF}>すべて見る ›</a></p>
+<section class:list={['popular', { 'popular--compact': compact }]} aria-labelledby={id}>
+  <SectionHeader id={id} title="加工・特典から探す" moreHref={SEARCH_HREF} />
+  <div class="popular__clip">
+    <ul class="popular__list">
+      {
+        POPULAR_PROCESS_LINKS.map((link) => (
+          <li>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </section>
 
 <style>
-  .popular__more {
-    margin: var(--space-2) 0 0;
-    text-align: right;
+  .popular--compact :global(h2) {
+    font-size: var(--fs-lg);
   }
 
-  /* スマホ：4つずつ2段／タブレット以上：1行に並べる */
+  .popular--compact :global(.section-header) {
+    margin-bottom: var(--space-2);
+  }
+
+  /*
+   * 区切りの「/」は各項目の前に置き、行頭に来たものは左端の外へ出して隠す（行頭・行末に「/」だけが残らない）。
+   * 外枠の上下左右に余白を取り、フォーカスの枠線が切れないようにする
+   */
+  .popular__clip {
+    --sep: 1.5em;
+    overflow: hidden;
+    margin: calc(var(--space-1) * -1);
+    padding: var(--space-1);
+  }
+
   .popular__list {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--space-1);
-    margin: 0;
-    padding: 0; /* リストの初期の字下げで右に寄らないように */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 calc(var(--sep) * -1);
+    padding: 0;
     list-style: none;
   }
 
-  @media (min-width: 768px) {
-    .popular__list {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
-      gap: var(--space-2);
-    }
-  }
-
-  .popular__list a {
+  .popular__list li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: var(--space-2);
-    padding: var(--space-3) var(--space-1);
-    border: 1px solid transparent;
-    border-radius: var(--radius);
-    color: var(--color-text);
-    text-decoration: none;
-  }
-
-  .popular__list a:hover {
-    border-color: var(--color-border);
-    background: var(--color-surface);
-  }
-
-  .popular__mark {
-    display: grid;
-    place-items: center;
-    width: 48px;
-    height: 48px;
-    border: 1.5px solid color-mix(in srgb, var(--category-color) 55%, white);
-    border-radius: 50%;
-    background: color-mix(in srgb, var(--category-color) 16%, white);
-    color: var(--category-text);
-    font-size: 1.05rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-
-  .popular__label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    line-height: 1.4;
-    text-align: center;
     white-space: nowrap;
   }
 
-  @media (min-width: 1024px) {
-    .popular__mark {
-      width: 56px;
-      height: 56px;
-      font-size: 1.2rem;
-    }
+  .popular__list li::before {
+    content: '/';
+    width: var(--sep);
+    color: var(--color-text-muted);
+    text-align: center;
+  }
 
-    .popular__label {
-      font-size: var(--fs-sm);
-    }
+  /* タップしやすい高さ（44px）を確保する */
+  .popular__list a {
+    padding: 10px 2px;
+    color: var(--color-text);
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .popular__list a:hover,
+  .popular__list a:focus-visible {
+    color: var(--color-primary-strong);
+    text-decoration: underline;
   }
 </style>

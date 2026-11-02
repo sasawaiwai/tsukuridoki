@@ -1,7 +1,5 @@
 // ナビゲーションのリンク先（リンク先を変えるときはここだけ直す）
 
-import type { CardCategory } from './fair-display.ts';
-
 export interface NavLink {
   label: string;
   href: string;
@@ -52,20 +50,20 @@ export const tabFragmentHref = (view: string) => `/dojin/tab/${view}/`;
 
 export const PRINTERS_HREF = '/dojin/printer/';
 
-/** トップの「人気の加工から探す」へのリンク（時期別導線の「加工から探す」から飛ぶ） */
+/** トップの「加工・特典から探す」へのリンク（時期別導線の「加工から探す」から飛ぶ） */
 export const POPULAR_PROCESS_ANCHOR = '#popular-processes';
 
 /**
- * 人気の加工から探す（参考画像）。glyph は丸い見本に置く一文字。
+ * 加工・特典から探す。
  * 加工以外（印刷方式・特典）も含むため、リンク先は検索ページのクエリで受ける
  */
-export const POPULAR_PROCESS_LINKS: (NavLink & { category: CardCategory; glyph: string })[] = [
-  { label: '箔押し', glyph: '箔', href: `${SEARCH_HREF}?process=foil`, category: 'foil' },
-  { label: '特殊紙', glyph: '紙', href: `${SEARCH_HREF}?process=special_paper`, category: 'paper' },
-  { label: '割引', glyph: '割', href: `${SEARCH_HREF}?benefit=discount`, category: 'deal' },
-  { label: 'PP加工', glyph: 'PP', href: `${SEARCH_HREF}?process=pp,matte_pp,hologram_pp,special_pp`, category: 'surface' },
-  { label: '遊び紙', glyph: '遊', href: `${SEARCH_HREF}?process=endpaper`, category: 'craft' },
-  { label: '用紙変更', glyph: '替', href: `${SEARCH_HREF}?benefit=free_paper_upgrade`, category: 'paper' },
-  { label: '小口染め', glyph: '染', href: `${SEARCH_HREF}?process=edge_dyeing`, category: 'craft' },
-  { label: 'その他', glyph: '…', href: SEARCH_HREF, category: 'other' },
+export const POPULAR_PROCESS_LINKS: NavLink[] = [
+  { label: '箔押し', href: `${SEARCH_HREF}?process=foil` },
+  { label: '特殊紙', href: `${SEARCH_HREF}?process=special_paper` },
+  { label: '割引', href: `${SEARCH_HREF}?benefit=discount` },
+  { label: 'PP加工', href: `${SEARCH_HREF}?process=pp,matte_pp,hologram_pp,special_pp` },
+  { label: '遊び紙', href: `${SEARCH_HREF}?process=endpaper` },
+  { label: '用紙変更', href: `${SEARCH_HREF}?benefit=free_paper_upgrade` },
+  { label: '小口染め', href: `${SEARCH_HREF}?process=edge_dyeing` },
+  { label: 'その他', href: SEARCH_HREF },
 ];
