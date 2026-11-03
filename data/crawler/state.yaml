@@ -52,12 +52,12 @@
   http_status: 200
 - url: https://www.axis-publication.com/
   printer_id: axis
-  content_hash: sha256:bace9807c516d7cb074d8c24daa18d671d3a3dbebe73c3e3ac9f20ada2431400
+  content_hash: sha256:22eaa6454f9a47f920d8530a85d31e45dd8ea775ff342cd038bfc5d31e91a00b
   reviewed_hash: null
-  content_chars: 8794
+  content_chars: 8849
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/event/
@@ -67,7 +67,7 @@
   content_chars: 2610
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/akuriru_stand/
@@ -77,17 +77,17 @@
   content_chars: 2738
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/asobi/
   printer_id: axis
-  content_hash: sha256:062f8b9433eeb019047446db4251339c0008353ed82be303b5bb73d73c7b0c6e
+  content_hash: sha256:4987863747726d4ce08392813a42ad943577f15ab0f4b6db906b983bd5a8b2cb
   reviewed_hash: null
-  content_chars: 4147
+  content_chars: 4021
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/autumn/
@@ -97,7 +97,7 @@
   content_chars: 3690
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/embos_nisu/
@@ -107,7 +107,7 @@
   content_chars: 2859
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/enamel_enamel_rame30/
@@ -117,7 +117,7 @@
   content_chars: 3779
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/glitter_PP/
@@ -127,7 +127,7 @@
   content_chars: 2711
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_haku_gentei/
@@ -137,7 +137,7 @@
   content_chars: 5365
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_haku/
@@ -147,7 +147,7 @@
   content_chars: 5351
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_PP/
@@ -157,7 +157,7 @@
   content_chars: 2769
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/kado_lace/
@@ -167,7 +167,7 @@
   content_chars: 2866
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/koguchi/
@@ -177,7 +177,7 @@
   content_chars: 15714
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/kuchie10/
@@ -187,7 +187,7 @@
   content_chars: 2856
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/poster/
@@ -197,7 +197,17 @@
   content_chars: 3215
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.axis-publication.com/fair/royal/
+  printer_id: axis
+  content_hash: sha256:746d1681817c9baee5091e852256964541e3a5cc8bb930129d7a5720d8671095
+  reviewed_hash: null
+  content_chars: 3714
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/vivid_harowin/
@@ -207,7 +217,27 @@
   content_chars: 4115
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:00:22+09:00
+  last_fetched_at: 2026-11-04T02:29:05+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.axis-publication.com/fair/vivid/
+  printer_id: axis
+  content_hash: sha256:cf208c853c2ea3746bb84938e227027bf989d4d527e8bce7f1e09f29fe5ec556
+  reviewed_hash: null
+  content_chars: 5933
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:29:05+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.axis-publication.com/fair/winter/
+  printer_id: axis
+  content_hash: sha256:7608f057b3d078e030f8352bfc9c003d551271440c6360f4cd56f8e9e1aaefe7
+  reviewed_hash: null
+  content_chars: 3676
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:29:05+09:00
   fetch_status: ok
   http_status: 200
 - url: https://booknext.ink/
@@ -257,17 +287,17 @@
   content_chars: 1290
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=Events
   printer_id: comicmall
-  content_hash: sha256:9e8acfb0e124baa6548614a70817ffc555c2bf2b7f4cc9f8384e7a801c3a737a
+  content_hash: sha256:829f88c59c7e52902a970bad43c57618b0f4f58efbf40ca0e1a821e0abb8f308
   reviewed_hash: null
-  content_chars: 1255
+  content_chars: 652
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair
@@ -277,7 +307,7 @@
   content_chars: 298
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss
@@ -287,7 +317,7 @@
   content_chars: 612
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dbook%2Djacket
@@ -297,7 +327,7 @@
   content_chars: 1039
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dtwilight
@@ -307,7 +337,7 @@
   content_chars: 269
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dvelvet
@@ -317,7 +347,7 @@
   content_chars: 314
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dmonday
@@ -327,7 +357,7 @@
   content_chars: 178
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dreprint%2Dbenefits
@@ -337,7 +367,7 @@
   content_chars: 759
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=Lame
@@ -347,7 +377,7 @@
   content_chars: 327
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=present
@@ -357,7 +387,7 @@
   content_chars: 1390
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=present2week
@@ -367,7 +397,7 @@
   content_chars: 613
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=summer%2Dautumn%2Dpp%2Dfair
@@ -377,7 +407,7 @@
   content_chars: 1472
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:04:31+09:00
+  last_fetched_at: 2026-11-04T02:27:30+09:00
   fetch_status: ok
   http_status: 200
 - url: https://d-mate.net/
@@ -1250,6 +1280,16 @@
   last_fetched_at: 2026-10-21T09:31:20+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.orangekoubou.com/goods/goods_acrylic_keyholder.php
+  printer_id: orangekoubou
+  content_hash: sha256:1d339d3c7a52eb88baf6894dc0df6b2a21a803e93d0b12559fbe757f68492fa3
+  reviewed_hash: null
+  content_chars: 6444
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:31:34+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261025.php
   printer_id: orangekoubou
   content_hash: sha256:b6524983994c10600ddb7531bb39afd7e0a637d215796c4a4b1acf96917f38f2
@@ -1257,7 +1297,7 @@
   content_chars: 22999
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261129.php
@@ -1267,7 +1307,7 @@
   content_chars: 24709
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261220.php
@@ -1277,7 +1317,27 @@
   content_chars: 23082
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.orangekoubou.com/special/limited_fair_20261227.php
+  printer_id: orangekoubou
+  content_hash: sha256:fed9bd4567eb4db46caeb0852f50e94fb7c9d57dbb6cb93db8be9bf04cb53dad
+  reviewed_hash: null
+  content_chars: 23077
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:31:34+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.orangekoubou.com/special/limited_fair_20270110.php
+  printer_id: orangekoubou
+  content_hash: sha256:ed646631765b0551aec5e4b7b3a63fb8ac1943a8ad75e1795597f5ba7b79826a
+  reviewed_hash: null
+  content_chars: 22975
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_novel_2026.php
@@ -1287,7 +1347,7 @@
   content_chars: 1785
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_onebook_nekoposu_202604.php
@@ -1297,7 +1357,7 @@
   content_chars: 2288
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_saihan_20261014.php
@@ -1307,7 +1367,7 @@
   content_chars: 2078
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_saihan_20261028.php
@@ -1317,17 +1377,17 @@
   content_chars: 2080
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair.php
   printer_id: orangekoubou
-  content_hash: sha256:8ae85875c87edf7af837f19dd33d3adddf75feddb8423d92412343eb24cd2133
+  content_hash: sha256:3ca97df06ce877a9958e28d4648ff26c623bdc7e7b2c43d0bcb2dec8c41d9db3
   reviewed_hash: null
-  content_chars: 1530
+  content_chars: 2222
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/orange_original_goods2023.php
@@ -1337,7 +1397,7 @@
   content_chars: 248
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_draft_sp_02.php
@@ -1347,7 +1407,7 @@
   content_chars: 310
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_draft.php
@@ -1357,7 +1417,7 @@
   content_chars: 4589
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_eventsupport.php
@@ -1367,7 +1427,7 @@
   content_chars: 3710
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T10:02:19+09:00
+  last_fetched_at: 2026-11-04T02:31:34+09:00
   fetch_status: ok
   http_status: 200
 - url: https://otaclub.jp/
