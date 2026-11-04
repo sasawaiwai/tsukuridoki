@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026calendar.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:4318c72581dc871299fff8ab7fd0315cee3eb0e89d5c3d06788a25a3229e67e9",
+  "content_chars": 599,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T10:50:48+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "卓上カレンダーフェア（両面7枚セットの基本料金20%OFF）。グッズのみの印刷のため対象外（Run 4）。"
+}

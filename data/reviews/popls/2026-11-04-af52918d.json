@@ -1,0 +1,39 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026saihan20_2.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:f00644f4e51b8fcdd7cf32f6943f9f900f4d50cc79868cd38659dde68c577d84",
+  "content_chars": 751,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T10:50:48+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-reprint-20off-2026-2",
+      "fair_name": "再版値引き20%フェア",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026saihan20_2.html",
+        "https://www2.popls.co.jp/pop/fair/index.html"
+      ],
+      "summary": "この日の注文に限り、本の基本料金が割引になる「再版値引き」が20%になる。",
+      "benefit_summary": "1日限定で再版値引きが20%",
+      "source_type": "official_fair",
+      "timing_type": "specific_dates",
+      "submission_dates": [
+        {
+          "date": "2026-11-17"
+        }
+      ],
+      "submission_dates_text": "11月17日(火) 0時~23時59分ご注文分",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 20,
+      "conditions_text": "マイページの「再版する」ボタンから注文した本が対象（本の全セット。快速本・モノクロ特快も可だが、納期はスタンダードセットの通常納期）。特急料金がかかる日程は不可（快速本・モノクロ特快の再版は5営業日から）。奥付のみ差し替え可。期間中の注文に自動で適用（申請不要）。ミニ本フェアとは併用不可。"
+    }
+  ],
+  "issues": [
+    "year_inferred"
+  ],
+  "master_candidates": [],
+  "note": "ページに年の記載なし。フェア一覧の10月〜1月の開催表に「再版値引き20%フェア 11/17」として載っていることを根拠に2026年とした（Run 4）。"
+}
