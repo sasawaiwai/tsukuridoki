@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/akuriru_stand/",
+  "printer_id": "axis",
+  "content_hash": "sha256:3c4a5881eb8ff87075f8cdeceefa4bbe95df00b4dabfe9ea49f5408c846deeda",
+  "content_chars": 2738,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "axis-acrylic-stand-free",
+      "fair_name": "アクリルスタンド無料フェア",
+      "sources": [
+        "https://www.axis-publication.com/fair/akuriru_stand/"
+      ],
+      "summary": "セット商品の表紙と本文を印刷すると、アクリルスタンド（Lサイズ）を無料でプレゼントしてもらえる。",
+      "benefit_summary": "アクリルスタンド（L）を無料プレゼント",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "novelty"
+      ],
+      "application_required": true,
+      "conditions_text": "同人誌ご予約フォームで「アクリルスタンド無料フェア」にチェックし、専用注文書を使う。セット商品の「表紙＋本文」印刷（豆本・折りとじ本セットを除く）で、表紙と同時に入稿。台座印刷・キーホルダー仕様は有料。表紙だけの印刷になったときは通常料金。イベント会場以外への発送は別途送料。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定⑦（バッチ6）：公式が「フェア期間：特にありません」と明記→通年・常設。"
+}

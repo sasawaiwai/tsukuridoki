@@ -1,0 +1,30 @@
+fair_id: comicmall-twilight-pp-free
+slug: comicmall-twilight-pp-free
+fair_name: トワイライトPP加工無料フェア
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dtwilight
+  - https://comicmall.jp/wiki.cgi?page=Lame
+summary: 基本セット・表紙本文カラーセットのトワイライトPP加工が、セットに登録されるまで無料になる。
+benefit_summary: トワイライトPP加工が無料
+source_type: official_fair
+start_date: 2024-08-31
+start_date_text: 2024年8月31日から
+start_date_precision: day
+end_date: null
+end_date_text: セットを登録するまで
+end_date_precision: unknown
+benefit_types:
+  - free_process
+processes:
+  - special_pp
+specific_sets_only: true
+conditions_text: 基本セット・表紙本文カラーセットで、表紙用紙がアートポスト180kg・マシュマロ180kgのとき。納期は2週間後。ドタンバ3日・4日仕上げでは利用できない。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

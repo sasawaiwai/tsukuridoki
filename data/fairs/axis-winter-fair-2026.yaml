@@ -1,0 +1,35 @@
+fair_id: axis-winter-fair-2026
+slug: axis-winter-fair-2026
+fair_name: ウィンターフェア
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/fair/winter/
+  - https://www.axis-publication.com/
+summary: 期間中、箔押し・エンボス・デボスから1つと、表紙2-3印刷・マットPP・角丸・遊び紙・変型断裁・表紙1カットなどのオプションが無料で使える（納期は加算）。
+benefit_summary: 特殊加工・オプションが無料
+source_type: official_fair
+end_date: 2027-01-31
+end_date_text: 1/31、入稿分まで対応(お昼12時まで)
+end_date_precision: day
+benefit_types:
+  - free_process
+  - free_option
+processes:
+  - foil
+  - emboss
+  - deboss
+  - matte_pp
+  - round_corner
+  - endpaper
+specific_sets_only: true
+tags:
+  - seasonal
+conditions_text: 同人誌ご予約フォームから予約し（フェア最終日の1営業日前まで）、入稿時に同人誌注文書に記載する。セット商品の「表紙＋本文」印刷が対象（豆本・折りとじ本セットを除く）。表紙だけの印刷になったときは通常料金。オプション1（箔押し〔金・銀〕・エンボス・デボス、表紙1か4に1か所・50cm²まで）は1つだけ、表紙・カバーのみ。オプション2（表紙2-3印刷〔シアンのみ〕・マットPPに変更・角丸・色上質紙の遊び紙〔前〕・変型断裁・表紙1カット製本）は複数可。加工ごとに納期が加算（表紙納期＋2〜5営業日）。5000部まで。オータム・スプリングフェアと併用不可。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

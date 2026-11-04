@@ -1,0 +1,39 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dbook%2Djacket",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:77622bc3b35df346b2a734fc4c8ff96fb77cd7a8eac462f1b7882830e079732a",
+  "content_chars": 1039,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-jacket-two-weeks-early",
+      "fair_name": "オプション・カバー【2週間前入稿 限定フェア】",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dbook%2Djacket",
+        "https://comicmall.jp/wiki.cgi?page=fair"
+      ],
+      "summary": "納品希望日の2週間前までに入稿すると、新書判・文庫判のオプションのカバーにトワイライト・ベルベット・ホロ・和紙・ラメのPPが無料で使える。",
+      "benefit_summary": "2週間前入稿でカバーの特殊PPが無料",
+      "source_type": "official_fair",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "special_pp",
+        "hologram_pp"
+      ],
+      "sizes": [
+        "shinsho",
+        "bunko"
+      ],
+      "conditions_text": "対象は新書判・文庫判のオプション・カバー。納品希望日の2週間前までの入稿が条件（直接搬入イベントは告知の締切からさらに1週間前が目安、宅配搬入は必着日から2週間前）。使えるPP：トワイライト・ベルベット・ホロ（さくら・花吹雪・スター・新スターライト・ハート）・和紙（雲竜）・ラメ。トワイライト・ホロ・和紙・ラメは背幅20mmまで。ベルベットPPは折り返しに濃い色があると浮くことがある。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間の記載なし→期間限定・日付なし（バッチ6）。"
+}

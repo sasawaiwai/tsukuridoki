@@ -1,0 +1,36 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=fair%2Dreprint%2Dbenefits",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:aeeda2f810e6c93195e0e3b0d366d04f74d7b74241266810c1a73f2823971923",
+  "content_chars": 759,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-reprint-pp-free",
+      "fair_name": "再版特典 PP加工無料",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dreprint%2Dbenefits"
+      ],
+      "summary": "再版のとき、表紙・カバーのマットPP・クリアPP加工がいつでも無料になる。",
+      "benefit_summary": "再版で表紙・カバーのPP加工が無料",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "pp",
+        "matte_pp"
+      ],
+      "application_required": true,
+      "conditions_text": "発注時にPPを選び、備考欄に【再版特典】と書く（初版とPPの種類が変わってもよい）。ドタンバ仕上げは不可。対象の条件（初版をどこで印刷したか、前回PP加工をしたか）はページ内で書き方が分かれているため公式で確認。"
+    }
+  ],
+  "issues": [
+    "conditions_unclear"
+  ],
+  "master_candidates": [],
+  "note": "「フェアに拘わらずいつでも」→通年・常設。運営者決定②（バッチ6）：対象の書き方が同じページで食い違う（他社で印刷した本も可／コミックモールで印刷した本のみ）ため断定せず、公式で確認と書いた。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/privilege_draft_sp_02.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:983a108405cde7e7c07f60481558064094205bd23bca128d6763203a7b5004f2",
+  "content_chars": 310,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "早入稿特典（グッズダブルsp）の専用グッズ一覧。早入稿特典として登録（バッチ6）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/limited_fair_20261025.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:b6524983994c10600ddb7531bb39afd7e0a637d215796c4a4b1acf96917f38f2",
+  "content_chars": 22999,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "SWEET HALLOWEEN FES 2026 スペシャルフェア。最終締切10/14・納品10/24〜26で終了済み（バッチ6）。"
+}

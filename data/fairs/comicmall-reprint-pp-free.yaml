@@ -1,0 +1,25 @@
+fair_id: comicmall-reprint-pp-free
+slug: comicmall-reprint-pp-free
+fair_name: 再版特典 PP加工無料
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=fair%2Dreprint%2Dbenefits
+summary: 再版のとき、表紙・カバーのマットPP・クリアPP加工がいつでも無料になる。
+benefit_summary: 再版で表紙・カバーのPP加工が無料
+source_type: official_fair
+timing_type: ongoing
+benefit_types:
+  - free_process
+processes:
+  - pp
+  - matte_pp
+application_required: true
+conditions_text: 発注時にPPを選び、備考欄に【再版特典】と書く（初版とPPの種類が変わってもよい）。ドタンバ仕上げは不可。対象の条件（初版をどこで印刷したか、前回PP加工をしたか）はページ内で書き方が分かれているため公式で確認。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

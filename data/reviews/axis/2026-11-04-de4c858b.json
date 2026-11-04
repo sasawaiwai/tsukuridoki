@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/koguchi/",
+  "printer_id": "axis",
+  "content_hash": "sha256:790889391d9de003c5ec93ed900d24b5deafac1267a5d24981024c3326ff7de1",
+  "content_chars": 15714,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "小口染めフェア（10/31入稿の表紙まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

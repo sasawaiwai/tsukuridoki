@@ -1,0 +1,22 @@
+fair_id: orangekoubou-intex-osaka-direct-free
+slug: orangekoubou-intex-osaka-direct-free
+fair_name: 【直接搬入料金無料】インテックス大阪開催イベント限定
+printer_id: orangekoubou
+category: dojinshi
+sources:
+  - https://www.orangekoubou.com/special/limited_fair.php
+summary: インテックス大阪で開催されるイベントへの冊子の直接搬入料金が無料になる（オンライン注文で直接搬入を選ぶと自動で適用）。
+benefit_summary: インテックス大阪への直接搬入料金が無料
+source_type: official_fair
+deadline_type: event
+benefit_types:
+  - free_option
+event_delivery_only: true
+conditions_text: インテックス大阪開催のイベントへの直接搬入に限る。冊子は直接搬入を選べば自動で無料。グッズ・表紙だけ印刷への拡大はシステムの不具合で開始時期未定（当面はイベント支援特典で対応すると案内）。他の特典・フェアとの併用は公式で確認。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

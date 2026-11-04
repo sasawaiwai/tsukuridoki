@@ -1,0 +1,25 @@
+fair_id: comicmall-monday-pp-half-price
+slug: comicmall-monday-pp-half-price
+fair_name: 月曜日フェア（クリア・マットPP半額）
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=fair%2Dmonday
+  - https://comicmall.jp/wiki.cgi?page=fair
+summary: 毎週月曜日（平日）までに入稿すると、クリアPP・マットPPの加工代が半額になる。カバーにも使える。
+benefit_summary: 月曜日までの入稿でPP加工代が半額
+source_type: official_fair
+benefit_types:
+  - discount
+discount_rate: 50
+processes:
+  - pp
+  - matte_pp
+conditions_text: 毎週月曜日（平日）までに入稿する場合に限る。カバーにも利用可。ドタンバ3日・4日仕上げでは利用できない。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

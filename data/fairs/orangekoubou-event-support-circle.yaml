@@ -1,0 +1,25 @@
+fair_id: orangekoubou-event-support-circle
+slug: orangekoubou-event-support-circle
+fair_name: イベント支援特典（サークル参加者様）
+printer_id: orangekoubou
+category: dojinshi
+sources:
+  - https://www.orangekoubou.com/special/privilege_eventsupport.php
+summary: 対象イベントに参加するサークルは、冊子印刷5%OFF・グッズ印刷5%OFF・会場搬入料金の割引・表紙紙替え（特殊紙A）無料から1つを選べる。
+benefit_summary: イベント参加で5%OFFなどから1つ
+source_type: official_campaign
+deadline_type: event
+benefit_types:
+  - discount
+  - free_paper_upgrade
+discount_rate: 5
+processes:
+  - special_paper
+conditions_text: イベント開催日の60日前から利用可。注文フォームSTEP01の「イベント支援特典」で参加イベントと特典を選ぶ。特典は1点：冊子印刷セット料金5%OFF／グッズ印刷料金5%OFF／会場搬入料金の割引（宅配搬入無料・直接搬入半額、会場搬入のときのみ）／表紙紙替え（特殊紙A）無料。WEBイベントは搬入以外を利用可。早入稿特典・ポイントと併用可、フェア・クーポンとは併用できない場合がある。一部商品・表紙だけ印刷は不可。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

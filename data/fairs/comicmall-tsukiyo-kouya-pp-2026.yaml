@@ -1,0 +1,34 @@
+fair_id: comicmall-tsukiyo-kouya-pp-2026
+slug: comicmall-tsukiyo-kouya-pp-2026
+fair_name: イベント優待：月夜の荒野にきらめく牙（COMIC CITY東京153内 プチオンリー）
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=Events
+summary: 2026年11月29日のCOMIC CITY東京153内のプチオンリー「月夜の荒野にきらめく牙」の参加者は、直接搬入でクリアPP・マットPP加工が無料になる。
+benefit_summary: 対象プチオンリー参加でPP加工無料
+source_type: official_campaign
+end_date: 2026-11-29
+end_date_text: 2026-11-29（COMIC CITY東京153内開催）
+end_date_precision: day
+usable_until: 2026-11-23
+usable_until_text: 11/23(月)午前11時まで
+usable_until_precision: day
+deadline_type: event
+event_name: 月夜の荒野にきらめく牙（COMIC CITY東京153内 プチオンリー）
+event_date: 2026-11-29
+event_deadline: 2026-11-23
+benefit_types:
+  - free_process
+processes:
+  - pp
+  - matte_pp
+application_required: true
+conditions_text: コメント欄に「【プチオンリー名】イベントPP優待利用」と書く。会場への直接搬入、または自宅（11/28着）への納品で、締切は11/23(月)午前11時（通常料金での会場搬入は11/24）。カバーにも利用可。カバーのベルベットPP・トワイライトPPの締切も同じ。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

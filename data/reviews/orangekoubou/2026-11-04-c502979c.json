@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/limited_fair.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:3ca97df06ce877a9958e28d4648ff26c623bdc7e7b2c43d0bcb2dec8c41d9db3",
+  "content_chars": 2222,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "orangekoubou-intex-osaka-direct-free",
+      "fair_name": "【直接搬入料金無料】インテックス大阪開催イベント限定",
+      "sources": [
+        "https://www.orangekoubou.com/special/limited_fair.php"
+      ],
+      "summary": "インテックス大阪で開催されるイベントへの冊子の直接搬入料金が無料になる（オンライン注文で直接搬入を選ぶと自動で適用）。",
+      "benefit_summary": "インテックス大阪への直接搬入料金が無料",
+      "source_type": "official_fair",
+      "deadline_type": "event",
+      "benefit_types": [
+        "free_option"
+      ],
+      "event_delivery_only": true,
+      "conditions_text": "インテックス大阪開催のイベントへの直接搬入に限る。冊子は直接搬入を選べば自動で無料。グッズ・表紙だけ印刷への拡大はシステムの不具合で開始時期未定（当面はイベント支援特典で対応すると案内）。他の特典・フェアとの併用は公式で確認。"
+    }
+  ],
+  "issues": [
+    "no_end_date",
+    "conditions_unclear"
+  ],
+  "master_candidates": [],
+  "note": "期間限定フェアの一覧ページ。この中に本文があるインテックス大阪の直接搬入料金無料を登録（運営者決定⑧、期間限定・日付なし）。併用の可否は記号が本文に出ず読み取れないため書かない。ほかのフェアは個別ページで確認（バッチ6）。"
+}

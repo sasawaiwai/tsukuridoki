@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/kuchie10/",
+  "printer_id": "axis",
+  "content_hash": "sha256:2a5b199ae92204238d385b05e7779750e2194bd60f87dd701a847b880211531c",
+  "content_chars": 2856,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "口絵1部10円フェア（COMIC CITY SPARK 21、9/28入稿の表紙まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

@@ -1,0 +1,57 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:b3722e655481dd0e2034f9e992bbb8452d6ce2fc633e7030a552c60e3f429019",
+  "content_chars": 612,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-shellin-n-plain-limited",
+      "fair_name": "数量限定フェア：新シェルリンNプレーン180kg",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss",
+        "https://comicmall.jp/wiki.cgi?page=fair"
+      ],
+      "summary": "和紙PPセット以外の紙替えとして、新シェルリンNプレーン180kgが追加料金なしで使える（在庫がなくなり次第終了）。",
+      "benefit_summary": "新シェルリンNプレーンへの紙替えが無料",
+      "source_type": "official_fair",
+      "end_date": null,
+      "end_date_text": "在庫が無くなり次第、終了",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_paper_upgrade"
+      ],
+      "application_required": true,
+      "conditions_text": "和紙PPセット以外の紙替えとして利用できる。全版サイズ・PP加工可。注文時の備考欄に【新シェルリンNプレーン在庫限定希望】と書く。オプションのシェルリン180kgプレーンとは別の紙。"
+    },
+    {
+      "fair_id": "comicmall-emboss-pp-crossline-limited",
+      "fair_name": "数量限定フェア：エンボスPPクロスライン",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss"
+      ],
+      "summary": "基本セット・表紙本文カラーセット・カバーで、エンボスPPクロスラインが無料で使える（在庫がなくなり次第終了）。",
+      "benefit_summary": "エンボスPPクロスラインが無料",
+      "source_type": "official_fair",
+      "end_date": null,
+      "end_date_text": "在庫が無くなり次第、終了",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "special_pp"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "基本セット・表紙本文カラーセット・カバーで、用紙がアートポスト180kg・マシュマロ180kg・コート110kg・マシュマロ110kgのとき。エンボスPPレザーは在庫終了。ドタンバ3日・4日仕上げでは利用できない。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs",
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "運営者決定③（バッチ6）：数量限定フェアとしてフェア一覧に載っており今も有効として登録。エンボスPPレザー（2020年）・書籍用紙ロゼ（2021年）は在庫終了と明記。クリーム上質57kgは特典の内容がページから読み取れないため登録しない。"
+}

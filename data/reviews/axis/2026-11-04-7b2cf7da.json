@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/enamel_enamel_rame30/",
+  "printer_id": "axis",
+  "content_hash": "sha256:fa26c6f7db948c6dcb4a23155df6d6a14798f04dda168c846ebf51f652d47d45",
+  "content_chars": 3779,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "エナメル・エナメルラメフェア（10/31入稿の表紙まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

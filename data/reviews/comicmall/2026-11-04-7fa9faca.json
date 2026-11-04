@@ -1,0 +1,43 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=cppmpp%2Dakifuyu%2Dfair",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:a7265d213b6430f615c25b3aa9f583ffd177e0d7c356a8e672e7bdfaa2f2bece",
+  "content_chars": 1290,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-autumn-winter-pp-free-2026",
+      "fair_name": "2026・2027秋冬PP加工無料フェア",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=cppmpp%2Dakifuyu%2Dfair",
+        "https://comicmall.jp/wiki.cgi?page=fair"
+      ],
+      "summary": "秋冬の期間中、基本セットの表紙・カバー・オプション表紙用紙のクリアPP・マットPP加工が無料になる。",
+      "benefit_summary": "クリアPP・マットPP加工が無料",
+      "source_type": "official_fair",
+      "start_date": "2026-09-23",
+      "start_date_text": "2026年9月23日(火祝)",
+      "start_date_precision": "day",
+      "end_date": null,
+      "end_date_text": "2027月22日(月・祝振替)まで",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "pp",
+        "matte_pp"
+      ],
+      "application_required": true,
+      "conditions_text": "発注時にPPを選び、備考欄に【秋冬PP加工無料フェア】と書く。対象は基本セットのPP加工可能な表紙用紙、カバー（コート・マシュマロ・しこくてんれい白・サーブル）、オプション表紙用紙。平日午前11時までの入稿で翌週の同じ曜日に納品（祝日・年末年始の納期は公式で確認）。終了日は公式の表記に月の記載がないため公式で確認（2027年3月23日からは春夏PP加工無料フェア）。"
+    }
+  ],
+  "issues": [
+    "no_end_date",
+    "conditions_unclear"
+  ],
+  "master_candidates": [],
+  "note": "運営者決定①（バッチ6）：終了日の原文「2027月22日(月・祝振替)まで」は月が抜けているため終了日は空けた（月を補わない）。開始日は記載どおり。"
+}

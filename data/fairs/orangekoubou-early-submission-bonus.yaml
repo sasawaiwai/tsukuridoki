@@ -1,0 +1,24 @@
+fair_id: orangekoubou-early-submission-bonus
+slug: orangekoubou-early-submission-bonus
+fair_name: 早入稿特典
+printer_id: orangekoubou
+category: dojinshi
+sources:
+  - https://www.orangekoubou.com/special/privilege_draft.php
+  - https://www.orangekoubou.com/special/privilege_draft_sp_02.php
+summary: 通常より早く入稿すると、グッズの無料作成・ポイント・60冊以上で10冊おまけのいずれか1つを選べる。
+benefit_summary: 早めの入稿でグッズ無料・ポイント・10冊おまけから1つ
+source_type: official_campaign
+deadline_type: early
+benefit_types:
+  - novelty
+  - points
+minimum_order: 冊子印刷の基本料金5000円以上（冊子特典は60冊以上）
+conditions_text: 冊子印刷を5000円以上（オプション・送料を除く基本料金）注文する場合に、グッズ特典（グッズシングル・ダブル・ダブルsp）、ポイント特典（シングル・ダブル）、冊子特典（60冊以上で＋10冊）から1点。1冊・5冊の注文は不可（10冊から）。イベント支援特典とは併用可、期間限定フェアとは併用不可（一部を除く）。大きなイベントの特別スケジュール期間は使えない場合がある。締切は公式の〆切スケジュールで確認。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

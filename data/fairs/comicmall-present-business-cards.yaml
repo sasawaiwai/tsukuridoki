@@ -1,0 +1,24 @@
+fair_id: comicmall-present-business-cards
+slug: comicmall-present-business-cards
+fair_name: プレゼント名刺フェア
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=present
+summary: 本の発注1件につき、名刺100枚を無料で印刷して本に同梱してもらえる（両面は50枚まで）。
+benefit_summary: 発注1件につき名刺100枚プレゼント
+source_type: official_fair
+end_date: null
+end_date_text: 仕様が決定され、ショッピングカートに追加されるまで
+end_date_precision: unknown
+benefit_types:
+  - novelty
+application_required: true
+conditions_text: 備考欄に【プレゼント名刺希望】と用紙を書き、名刺のデータはメールで送る（送る目安は公式で確認）。用紙はマシュマロ180kg・キュリアスIRパール・キュリアスIRホワイトから選ぶ。1発注につき100枚まで（複数の絵柄に分けられる）。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

@@ -1,0 +1,26 @@
+fair_id: comicmall-emboss-pp-crossline-limited
+slug: comicmall-emboss-pp-crossline-limited
+fair_name: 数量限定フェア：エンボスPPクロスライン
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss
+summary: 基本セット・表紙本文カラーセット・カバーで、エンボスPPクロスラインが無料で使える（在庫がなくなり次第終了）。
+benefit_summary: エンボスPPクロスラインが無料
+source_type: official_fair
+end_date: null
+end_date_text: 在庫が無くなり次第、終了
+end_date_precision: unknown
+benefit_types:
+  - free_process
+processes:
+  - special_pp
+specific_sets_only: true
+conditions_text: 基本セット・表紙本文カラーセット・カバーで、用紙がアートポスト180kg・マシュマロ180kg・コート110kg・マシュマロ110kgのとき。エンボスPPレザーは在庫終了。ドタンバ3日・4日仕上げでは利用できない。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published
