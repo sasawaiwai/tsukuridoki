@@ -1570,14 +1570,64 @@
   last_fetched_at: 2026-10-20T23:29:42+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www2.popls.co.jp/pop/fair/2026B5hon2.html
+  printer_id: popls
+  content_hash: sha256:b3f219bc18b8f0377764d3d350801b9e31d2ecbdedbc3a32aa0e7a6a24776656
+  reviewed_hash: null
+  content_chars: 776
+  etag: '"213bf724-3da4-65ddc671a8ce2"'
+  last_modified: Thu, 15 Oct 2026 07:57:44 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www2.popls.co.jp/pop/fair/2026calendar.html
+  printer_id: popls
+  content_hash: sha256:4318c72581dc871299fff8ab7fd0315cee3eb0e89d5c3d06788a25a3229e67e9
+  reviewed_hash: null
+  content_chars: 599
+  etag: '"213bf758-2473-65ef0e14176e7"'
+  last_modified: Thu, 29 Oct 2026 01:48:44 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www2.popls.co.jp/pop/fair/2026minihon2.html
+  printer_id: popls
+  content_hash: sha256:d9b84d7b5323878e2d1c2b30d557c8627daa9b1315ce313701d168541be8f2fb
+  reviewed_hash: null
+  content_chars: 1721
+  etag: '"213bf759-6c81-65e8ba400d620"'
+  last_modified: Sat, 24 Oct 2026 01:01:45 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www2.popls.co.jp/pop/fair/2026nuno3.html
+  printer_id: popls
+  content_hash: sha256:b03d98978a8755dc5773cfc2995dcdbe5b6f59698c7afa52ad54343653542f0e
+  reviewed_hash: null
+  content_chars: 428
+  etag: '"213bf754-4276-65e69b8b505c5"'
+  last_modified: Thu, 22 Oct 2026 08:33:43 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/2026option50_3.html
   printer_id: popls
-  content_hash: sha256:aeb9856fb703ada76a2d5d01bddaa75ee3f6e5b6e3cbb9f36218b23691a3c046
+  content_hash: sha256:eaca0de222a71a67d733f31d80aa7a57fbdd95014c4479c86316118900336293
   reviewed_hash: sha256:aeb9856fb703ada76a2d5d01bddaa75ee3f6e5b6e3cbb9f36218b23691a3c046
-  content_chars: null
-  etag: '"213bf7af-6017-65b2df86a466c"'
-  last_modified: Fri, 11 Sep 2026 05:00:59 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
+  content_chars: 951
+  etag: '"213bf7af-5f97-65e8bba495650"'
+  last_modified: Sat, 24 Oct 2026 01:07:59 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www2.popls.co.jp/pop/fair/2026saihan20_2.html
+  printer_id: popls
+  content_hash: sha256:f00644f4e51b8fcdd7cf32f6943f9f900f4d50cc79868cd38659dde68c577d84
+  reviewed_hash: null
+  content_chars: 751
+  etag: '"2018ebe0-46f1-65edfb52504a9"'
+  last_modified: Wed, 28 Oct 2026 05:19:30 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/2026summer.html
@@ -1587,9 +1637,9 @@
   content_chars: null
   etag: '"214bc294-89b3-65b2bee0f3596"'
   last_modified: Fri, 11 Sep 2026 02:34:55 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026tamanuno2.html
   printer_id: popls
   content_hash: sha256:7174f7d29423e1a0046c7d51d7e9dd39d6221b1a7c979cd4515f7a405b79e803
@@ -1597,9 +1647,9 @@
   content_chars: null
   etag: '"213bf721-4511-65b03e374fdfb"'
   last_modified: Wed, 09 Sep 2026 02:48:39 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026wabon.html
   printer_id: popls
   content_hash: sha256:4b336e5dda2238f079e821b66139ef08a93d43f07a818e217bec4f239958dc3d
@@ -1607,17 +1657,17 @@
   content_chars: null
   etag: '"213bf723-86e6-65bcf2864dfd8"'
   last_modified: Sat, 19 Sep 2026 05:19:14 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/index.html
   printer_id: popls
-  content_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
+  content_hash: sha256:bf5ff6ecf0521e6fe1b8bdbd642d5501f4803c5c2a16e8d7df7c05733f648b7b
   reviewed_hash: sha256:eeb8215afb218ef1f14ebdd87c1189705146d836e17d2cbc7f7e54328554e7cd
-  content_chars: 109
-  etag: '"21475ce2-1184-65cbcc18b0ef9"'
-  last_modified: Thu, 01 Oct 2026 00:47:10 GMT
-  last_fetched_at: 2026-10-15T00:53:13+09:00
+  content_chars: 269
+  etag: '"21475ce2-18b4-65edfb6ce5577"'
+  last_modified: Wed, 28 Oct 2026 05:19:57 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/saihan.html
@@ -1627,7 +1677,27 @@
   content_chars: null
   etag: '"20041e84-46b0-6511cacddb215"'
   last_modified: Wed, 06 May 2026 02:11:01 GMT
-  last_fetched_at: 2026-10-06T14:26:54+09:00
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: not_modified
+  http_status: 304
+- url: https://www2.popls.co.jp/pop/shinchaku/s261017_2.html
+  printer_id: popls
+  content_hash: sha256:525d127cb27a058fa749eb42a10372cde27d99889ec72ea9fded8031a60c08d3
+  reviewed_hash: null
+  content_chars: 441
+  etag: '"60149f54-fa1-65dfe392bb7b6"'
+  last_modified: Sat, 17 Oct 2026 00:18:42 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www2.popls.co.jp/pop/shinchaku/s261017.html
+  printer_id: popls
+  content_hash: sha256:b347c3f34f47064e0db8ec3101391d6fc9dda1d70ac85d8ca9035248def9fabb
+  reviewed_hash: null
+  content_chars: 427
+  etag: '"60147ff2-f80-65dfe39295274"'
+  last_modified: Sat, 17 Oct 2026 00:18:42 GMT
+  last_fetched_at: 2026-11-04T09:11:40+09:00
   fetch_status: ok
   http_status: 200
 - url: https://printking.co.jp/doujin/campaign/betsu_mitsu_fes.php
