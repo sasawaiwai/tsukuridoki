@@ -1,0 +1,48 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/limited_fair_novel_2026.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:44c8d154b21b36e13d5fef15315d8923bf1e77ffe9e098f7b3e6b8a735e39e6c",
+  "content_chars": 1785,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "orangekoubou-novel-autumn-2026",
+      "fair_name": "読書の秋フェア",
+      "sources": [
+        "https://www.orangekoubou.com/special/limited_fair_novel_2026.php",
+        "https://www.orangekoubou.com/special/limited_fair.php"
+      ],
+      "summary": "小説本向けの期間限定セット（クラフト小説本・ゴールデンチャイナ小説本）や書店風ブックカバー・特色印刷の特殊紙しおりを用意し、対象セットの注文で「くろすみしおり」を冊数分プレゼントする。",
+      "benefit_summary": "小説本の期間限定セット＋しおりプレゼント",
+      "source_type": "official_fair",
+      "start_date": "2026-08-27",
+      "start_date_text": "2026年8月27日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-27",
+      "end_date_text": "11月27日午前10時まで",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "limited_set",
+        "novelty",
+        "limited_product"
+      ],
+      "processes": [
+        "spot_color_printing"
+      ],
+      "book_types": [
+        "novel"
+      ],
+      "tags": [
+        "for_novels",
+        "seasonal"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "期間限定セット：クラフト小説本セット（〜11/27午前10時）、ゴールデンチャイナ小説本セット（10/29〜2027/2/26午前10時）。特別企画：疑似小口染めサービス（文字のみの原稿で利用可・15種類）、書店風ブックカバー（〜11/27、カバーは折らずに納品）、特殊紙しおり（ゴールド印刷 10/29〜2027/2/26）、対象セットの注文で「くろすみしおり」を注文冊数分プレゼント（対象セットは公式で確認）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定⑤（バッチ6）：公式の「読書の秋フェア」を1件にまとめた。シルバーモダン小説本セット・特殊紙しおり（シルバー）は10/30で終了。くろすみしおりの対象セットは別ページ（未確認）。"
+}

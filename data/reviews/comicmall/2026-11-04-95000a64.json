@@ -1,0 +1,41 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dvelvet",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:24192496cce7f0317f8a795a70604c609347f79502216cd22466e23e493cdc13",
+  "content_chars": 314,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-velvet-pp-free",
+      "fair_name": "ベルベットPP加工無料フェア",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dvelvet",
+        "https://comicmall.jp/wiki.cgi?page=Lame"
+      ],
+      "summary": "基本セット・表紙本文カラーセットのベルベットPP加工が、セットに登録されるまで無料になる。",
+      "benefit_summary": "ベルベットPP加工が無料",
+      "source_type": "official_fair",
+      "start_date": "2024-08-31",
+      "start_date_text": "2024年8月31日から",
+      "start_date_precision": "day",
+      "end_date": null,
+      "end_date_text": "セットを登録するまで",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "special_pp"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "基本セット・表紙本文カラーセットで、表紙用紙がアートポスト180kg・マシュマロ180kgのとき。納期は2週間後。本の端や背の角に濃い色があるとPPが剥がれやすい。ドタンバ3日・4日仕上げでは利用できない。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "「2024年8月31日からセットを登録するまで」（延長）。2026/4/6付のラメPPのページで今も続いていることを確認（バッチ6）。"
+}

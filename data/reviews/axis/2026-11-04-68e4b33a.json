@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/poster/",
+  "printer_id": "axis",
+  "content_hash": "sha256:162e7379c3d00c2d035f3dc1b9546f2271b2248870fbc0155e9de02aeefef370",
+  "content_chars": 3215,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "axis-large-poster-free",
+      "fair_name": "大判ポスター無料フェア",
+      "sources": [
+        "https://www.axis-publication.com/fair/poster/"
+      ],
+      "summary": "同人誌即売会に参加する人がセット商品を印刷すると、大判ポスター1枚（B0まで）を無料でプレゼントしてもらえる。",
+      "benefit_summary": "イベント参加で大判ポスター（B0まで）無料",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "benefit_types": [
+        "novelty"
+      ],
+      "application_required": true,
+      "conditions_text": "同人誌ご予約フォームで「大判ポスター無料」にチェックし、ポスター注文書を出す。セット商品の「表紙＋本文」印刷で、同人誌即売会に参加すること。表紙と同時に入稿（スペース番号の発表後すぐ）。東京ビッグサイト・東京流通センター・東京卸商センターなどの会場は直接搬入（搬入料無料）、それ以外への発送は別途送料。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "運営者決定⑦（バッチ6）：公式が「フェア期間：特にありません」と明記→通年・常設。"
+}

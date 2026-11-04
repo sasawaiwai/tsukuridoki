@@ -1,0 +1,40 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=Lame",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:b4e921f94a6d3ab3dc8ee5b5626cae8183040f489d85c9657e6636445e989002",
+  "content_chars": 327,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-lame-pp-free",
+      "fair_name": "ラメPP加工無料フェア",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=Lame"
+      ],
+      "summary": "基本セット・表紙本文カラーセットのラメPP加工が、セットに登録されるまで無料になる。",
+      "benefit_summary": "ラメPP加工が無料",
+      "source_type": "official_fair",
+      "start_date": "2026-04-06",
+      "start_date_text": "2026年4月6日から",
+      "start_date_precision": "day",
+      "end_date": null,
+      "end_date_text": "セットを登録するまで",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "free_process"
+      ],
+      "processes": [
+        "special_pp"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "基本セット・表紙本文カラーセットで、表紙用紙がアートポスト180kg・マシュマロ180kgのとき。納期は2週間後（春夏・秋冬PP加工無料フェアと同じ）。ドタンバ3日・4日仕上げでは利用できない。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": null
+}

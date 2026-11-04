@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/holo_haku/",
+  "printer_id": "axis",
+  "content_hash": "sha256:ca20254fcc686bf33fe83d0ca58a8a10e87765c651a956c235d5f749adddc3d0",
+  "content_chars": 5351,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "ホログラム箔押しフェア（10/31入稿の表紙まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

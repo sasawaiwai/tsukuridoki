@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/glitter_PP/",
+  "printer_id": "axis",
+  "content_hash": "sha256:757046ddb0ad33bdfad6d29ee05914c890b167d4a3cba445c92ea5f62c054a65",
+  "content_chars": 2711,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "グリッターPPフェア（10/31入稿の表紙まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

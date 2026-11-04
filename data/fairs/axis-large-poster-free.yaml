@@ -1,0 +1,22 @@
+fair_id: axis-large-poster-free
+slug: axis-large-poster-free
+fair_name: 大判ポスター無料フェア
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/fair/poster/
+summary: 同人誌即売会に参加する人がセット商品を印刷すると、大判ポスター1枚（B0まで）を無料でプレゼントしてもらえる。
+benefit_summary: イベント参加で大判ポスター（B0まで）無料
+source_type: official_fair
+timing_type: ongoing
+benefit_types:
+  - novelty
+application_required: true
+conditions_text: 同人誌ご予約フォームで「大判ポスター無料」にチェックし、ポスター注文書を出す。セット商品の「表紙＋本文」印刷で、同人誌即売会に参加すること。表紙と同時に入稿（スペース番号の発表後すぐ）。東京ビッグサイト・東京流通センター・東京卸商センターなどの会場は直接搬入（搬入料無料）、それ以外への発送は別途送料。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

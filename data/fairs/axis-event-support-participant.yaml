@@ -1,0 +1,23 @@
+fair_id: axis-event-support-participant
+slug: axis-event-support-participant
+fair_name: イベント支援（参加者様特典）
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/event/
+summary: アクシス出版が支援するイベントの参加者は、セット商品が10%割引（早割と併用で15%まで）、グッズが5%割引になる。
+benefit_summary: 支援イベント参加でセット商品10%割引
+source_type: official_campaign
+deadline_type: event
+benefit_types:
+  - discount
+discount_rate: 10
+specific_sets_only: true
+conditions_text: 公式のイベント一覧に載っている支援イベントの参加者が対象。見積り・予約フォームの備考欄に「イベント参加者特典利用」と書く。早割との併用割引は15%まで。グッズは5%割引（大型イベント合わせは併用割引可）。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

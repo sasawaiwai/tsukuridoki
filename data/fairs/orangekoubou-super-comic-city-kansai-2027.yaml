@@ -1,0 +1,45 @@
+fair_id: orangekoubou-super-comic-city-kansai-2027
+slug: orangekoubou-super-comic-city-kansai-2027
+fair_name: 【早割】SUPER COMIC CITY 関西 2027 スペシャルフェア
+printer_id: orangekoubou
+category: dojinshi
+sources:
+  - https://www.orangekoubou.com/special/limited_fair_20270110.php
+  - https://www.orangekoubou.com/special/limited_fair.php
+summary: SUPER COMIC CITY 関西 2027に合わせた早割。締切の早いコースほどセット料金の割引（最大15%OFF）やオプションの無料・割引を多く選べる。イベントに参加しなくても納品期間内なら使える。
+benefit_summary: 早割で印刷料金最大15%OFF＋オプション特典
+source_type: official_fair
+end_date: 2027-01-12
+end_date_text: 納品期間 2027年1月9日(土)~2027年1月12日(火)
+end_date_precision: day
+usable_until: 2026-12-23
+usable_until_text: 2026 12.23(水) 午前10時まで
+usable_until_precision: day
+deadline_type: early
+event_name: SUPER COMIC CITY 関西 2027
+benefit_types:
+  - discount
+  - free_option
+  - free_paper_upgrade
+  - novelty
+processes:
+  - special_paper
+  - foil
+  - endpaper
+  - round_corner
+specific_sets_only: true
+combinable: false
+minimum_order: 冊子印刷の基本料金5000円以上
+conditions_text: 入稿締切：Sコース2026/12/2・Aコース12/9・Bコース12/16・Cコース12/23（各午前10時）。冊子印刷（表紙だけ印刷を除く）の基本料金が5000円以上（オプション・送料を除く）。早入稿特典・イベント支援特典・その他のフェア・クーポンとは併用不可（ポイントは可）。注文フォームの「各種フェア適用」で選ぶ。締切が早いコースほど選べる特典が多い（S・Aは3点、Bは2点、Cは印刷料金5%OFFか直接搬入料金半額）。特典はセット料金の割引（S15%・A10%・B5%・C5%）、直接搬入料金の割引（納品期間中の直接搬入イベントのみ）、表紙紙替え・表紙2.3印刷・箔押し・本文紙替え・遊び紙・角丸・特殊断裁・余部別送などのオプションの無料・割引、早入稿グッズから2点無料（Bは不可）。対象セット・オプションはコースごとに違うので公式で確認。Cコースは6営業日以上の冊子は対象外。表紙だけ印刷は印刷料金5%OFF＋直接搬入料金半額のフェアが別にある。フルカラー口絵2P無料もある（Bは不可）。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published
+  - date: 2026-11-04
+    type: corrected
+    field: usable_until_text
+    old_value: 202612.23(水) 午前10時まで
+    new_value: 2026 12.23(水) 午前10時まで

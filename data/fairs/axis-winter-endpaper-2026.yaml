@@ -1,0 +1,29 @@
+fair_id: axis-winter-endpaper-2026
+slug: axis-winter-endpaper-2026
+fair_name: ウィンター遊び紙フェア
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/fair/asobi/
+  - https://www.axis-publication.com/
+summary: 期間中、遊び紙を特価で使える（1部10円・20円の紙。雪の結晶のトレペや箔押し遊び紙など期間限定の紙もある）。
+benefit_summary: 遊び紙が1部10円・20円の特価
+source_type: official_fair
+end_date: 2027-01-31
+end_date_text: 1月31日入稿分まで
+end_date_precision: day
+benefit_types:
+  - discount
+processes:
+  - endpaper
+specific_sets_only: true
+tags:
+  - seasonal
+conditions_text: 同人誌ご予約フォームで「遊び紙フェア」にチェックし、使う紙を知らせる。セット商品の「表紙＋本文」印刷が対象。数量限定で在庫がない場合がある（予約を推奨）。価格は前のみ1枚分で、前後に入れる場合は2倍。料金は紙ごとに公式で確認。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

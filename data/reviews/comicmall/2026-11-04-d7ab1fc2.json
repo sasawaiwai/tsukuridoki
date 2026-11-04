@@ -1,0 +1,34 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=present2week",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:44eba4007f1b9decc4cf37efd3c00977f75fe427173ce198a76a456a2bc5ef5d",
+  "content_chars": 613,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-present-business-cards-two-weeks",
+      "fair_name": "プレゼント名刺2週間まえ入稿フェア",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=present2week"
+      ],
+      "summary": "2週間前に入稿すると、プレゼントの名刺が増量になる（片面100枚までを注文冊数分。50部以下は両面100枚・片面200枚まで）。",
+      "benefit_summary": "2週間前入稿で名刺プレゼントを増量",
+      "source_type": "official_fair",
+      "end_date": null,
+      "end_date_text": "有料化されるまで",
+      "end_date_precision": "unknown",
+      "benefit_types": [
+        "novelty"
+      ],
+      "application_required": true,
+      "conditions_text": "備考欄に【プレゼント名刺2週間前フェア希望】と用紙・枚数を書き、データは本の入稿と同時か入稿日中にメールで送る。用紙はマシュマロ180kg・キュリアスIRパール・キュリアスIRホワイトから選ぶ。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "「有料化されるまで」（バッチ6）。プレゼント名刺フェアとは別の企画として登録。"
+}

@@ -1,0 +1,25 @@
+fair_id: comicmall-shellin-n-plain-limited
+slug: comicmall-shellin-n-plain-limited
+fair_name: 数量限定フェア：新シェルリンNプレーン180kg
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss
+  - https://comicmall.jp/wiki.cgi?page=fair
+summary: 和紙PPセット以外の紙替えとして、新シェルリンNプレーン180kgが追加料金なしで使える（在庫がなくなり次第終了）。
+benefit_summary: 新シェルリンNプレーンへの紙替えが無料
+source_type: official_fair
+end_date: null
+end_date_text: 在庫が無くなり次第、終了
+end_date_precision: unknown
+benefit_types:
+  - free_paper_upgrade
+application_required: true
+conditions_text: 和紙PPセット以外の紙替えとして利用できる。全版サイズ・PP加工可。注文時の備考欄に【新シェルリンNプレーン在庫限定希望】と書く。オプションのシェルリン180kgプレーンとは別の紙。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

@@ -1,0 +1,24 @@
+fair_id: comicmall-present-business-cards-two-weeks
+slug: comicmall-present-business-cards-two-weeks
+fair_name: プレゼント名刺2週間まえ入稿フェア
+printer_id: comicmall
+category: dojinshi
+sources:
+  - https://comicmall.jp/wiki.cgi?page=present2week
+summary: 2週間前に入稿すると、プレゼントの名刺が増量になる（片面100枚までを注文冊数分。50部以下は両面100枚・片面200枚まで）。
+benefit_summary: 2週間前入稿で名刺プレゼントを増量
+source_type: official_fair
+end_date: null
+end_date_text: 有料化されるまで
+end_date_precision: unknown
+benefit_types:
+  - novelty
+application_required: true
+conditions_text: 備考欄に【プレゼント名刺2週間前フェア希望】と用紙・枚数を書き、データは本の入稿と同時か入稿日中にメールで送る。用紙はマシュマロ180kg・キュリアスIRパール・キュリアスIRホワイトから選ぶ。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

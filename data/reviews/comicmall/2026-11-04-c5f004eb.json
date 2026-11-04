@@ -1,0 +1,36 @@
+{
+  "source_url": "https://comicmall.jp/wiki.cgi?page=fair%2Dmonday",
+  "printer_id": "comicmall",
+  "content_hash": "sha256:09e1144a91bfe74f98a8a5cc1c6638c8f21677640e678fdeed067194e1310031",
+  "content_chars": 178,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "comicmall-monday-pp-half-price",
+      "fair_name": "月曜日フェア（クリア・マットPP半額）",
+      "sources": [
+        "https://comicmall.jp/wiki.cgi?page=fair%2Dmonday",
+        "https://comicmall.jp/wiki.cgi?page=fair"
+      ],
+      "summary": "毎週月曜日（平日）までに入稿すると、クリアPP・マットPPの加工代が半額になる。カバーにも使える。",
+      "benefit_summary": "月曜日までの入稿でPP加工代が半額",
+      "source_type": "official_fair",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 50,
+      "processes": [
+        "pp",
+        "matte_pp"
+      ],
+      "conditions_text": "毎週月曜日（平日）までに入稿する場合に限る。カバーにも利用可。ドタンバ3日・4日仕上げでは利用できない。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "期間の記載なし→期間限定・日付なし（バッチ6）。"
+}

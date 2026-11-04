@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/fair/autumn/",
+  "printer_id": "axis",
+  "content_hash": "sha256:e59a6f85b8915f6ecf77c7ec395f5f1d8eaf40ec2bd0f3123e5909f812ad3c21",
+  "content_chars": 3690,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "オータムフェア（10/31入稿分まで）。入稿期限を過ぎて終了済み（ページに年の記載なし。バッチ6）。"
+}

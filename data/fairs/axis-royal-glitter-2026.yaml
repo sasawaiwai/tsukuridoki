@@ -1,0 +1,26 @@
+fair_id: axis-royal-glitter-2026
+slug: axis-royal-glitter-2026
+fair_name: ロイヤルグリッターフェア
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/fair/royal/
+  - https://www.axis-publication.com/
+summary: 期間中、ロイヤルグリッター加工の料金が30%割引になる。
+benefit_summary: ロイヤルグリッター加工30%割引
+source_type: official_fair
+end_date: 2027-01-30
+end_date_text: 1/30入稿の表紙まで対応(〆切時間 お昼12時)
+end_date_precision: day
+benefit_types:
+  - discount
+discount_rate: 30
+specific_sets_only: true
+conditions_text: 同人誌ご予約フォームから予約し（フェア最終日の1営業日前まで）、入稿時に同人誌注文書に記載する。セット商品の「表紙＋本文」印刷が対象（豆本・折りとじ本セットを除く）。表紙だけの印刷になったときは通常料金。納期は表紙納期＋7営業日。加工する部分は別レイヤーかアルファチャンネルで黒（グラデーション不可）。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published

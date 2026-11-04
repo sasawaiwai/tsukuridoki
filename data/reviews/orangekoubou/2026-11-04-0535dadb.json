@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/privilege_draft.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:311120e6517edef499482f1e12bd64d360aa4c4c801266c26cd0eb4d91eeb33e",
+  "content_chars": 4589,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T09:13:39+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "orangekoubou-early-submission-bonus",
+      "fair_name": "早入稿特典",
+      "sources": [
+        "https://www.orangekoubou.com/special/privilege_draft.php",
+        "https://www.orangekoubou.com/special/privilege_draft_sp_02.php"
+      ],
+      "summary": "通常より早く入稿すると、グッズの無料作成・ポイント・60冊以上で10冊おまけのいずれか1つを選べる。",
+      "benefit_summary": "早めの入稿でグッズ無料・ポイント・10冊おまけから1つ",
+      "source_type": "official_campaign",
+      "deadline_type": "early",
+      "benefit_types": [
+        "novelty",
+        "points"
+      ],
+      "minimum_order": "冊子印刷の基本料金5000円以上（冊子特典は60冊以上）",
+      "conditions_text": "冊子印刷を5000円以上（オプション・送料を除く基本料金）注文する場合に、グッズ特典（グッズシングル・ダブル・ダブルsp）、ポイント特典（シングル・ダブル）、冊子特典（60冊以上で＋10冊）から1点。1冊・5冊の注文は不可（10冊から）。イベント支援特典とは併用可、期間限定フェアとは併用不可（一部を除く）。大きなイベントの特別スケジュール期間は使えない場合がある。締切は公式の〆切スケジュールで確認。"
+    }
+  ],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "運営者決定⑥（バッチ6）：期間の記載なし→期間限定・日付なし。何営業日早く入稿するかは〆切スケジュールのページで確認。"
+}
