@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/shinchaku/s261017.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:b347c3f34f47064e0db8ec3101391d6fc9dda1d70ac85d8ca9035248def9fabb",
+  "content_chars": 427,
+  "extractor": "manual",
+  "extracted_at": "2026-11-04T10:50:48+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-dozen-rose-fes-2026-early",
+      "fair_name": "「DOZEN ROSE FES 2026」向け早割20%OFF",
+      "sources": [
+        "https://www2.popls.co.jp/pop/shinchaku/s261017.html",
+        "https://www2.popls.co.jp/pop/fair/index.html"
+      ],
+      "summary": "DOZEN ROSE FES 2026に全冊を搬入する本のセットの基本料金が20%引きになるイベント合わせの早割。",
+      "benefit_summary": "イベント搬入の本が基本料金20%OFF",
+      "source_type": "official_news",
+      "start_date": "2026-11-12",
+      "start_date_text": "2026年11月12日~11月14日正午の期間のご入稿",
+      "start_date_precision": "day",
+      "end_date": "2026-11-14",
+      "end_date_text": "2026年11月12日~11月14日正午の期間のご入稿",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "DOZEN ROSE FES 2026",
+      "event_date": "2026-12-20",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 20,
+      "event_delivery_only": true,
+      "conditions_text": "全冊を「DOZEN ROSE FES 2026」に搬入する本が対象（書店・自宅への分納不可）。全ての原稿を同時に入稿する（紙原稿が混ざる場合は先に到着させる）。スタンプ値引き・再版値引きとは併用不可（再版は20%引きが優先）。オプションの利用・他のフェアとの併用は可。締切表は公式で確認。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "お知らせ（新着情報）の告知を登録。フェア一覧にも早割として掲載（Run 4）。"
+}

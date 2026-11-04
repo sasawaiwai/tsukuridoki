@@ -1,0 +1,34 @@
+fair_id: popls-mini-book-2027-2
+slug: popls-mini-book-2027-2
+fair_name: ミニ本フェア（第2回）
+printer_id: popls
+category: dojinshi
+sources:
+  - https://www2.popls.co.jp/pop/fair/2026minihon2.html
+  - https://www2.popls.co.jp/pop/fair/index.html
+summary: A8・B8のミニサイズ本を、A6（文庫）サイズと同じ料金で作れる期間限定のフェア。
+benefit_summary: A8・B8のミニ本が作れる（A6と同じ料金）
+source_type: official_fair
+start_date: 2027-01-16
+start_date_text: 第2回:2027年1月16日
+start_date_precision: day
+end_date: 2027-01-27
+end_date_text: 1月27日 24時までの入稿
+end_date_precision: day
+deadline_note: 2月14日以降納品（VALENTINE ROSE FES 2027 合わせなど）。この納品日より前の日付は指定できない。
+sizes:
+  - other
+binding:
+  - perfect
+benefit_types:
+  - limited_set
+specific_sets_only: true
+combinable: false
+conditions_text: スタンダードセットから注文（申請不要・期間内の申込に自動で適用）。仕様：平とじ（無線とじ）、表紙フルカラー（標準コート紙＋クリアPP・マットPP／白上質180k／色上質最厚口）、本文モノクロ（白上質90k・70k、淡クリームキンマリ90k・70k、コミック紙）。料金はA6（文庫）サイズと同じ。一部のオプションは使えない・制限がある（公式で確認）。急ぎの製作は不可。本のオプション50%値引きフェア・再版値引き20%フェアとは併用不可（ミニ本フェアのみの利用になる）。
+published_at: 2026-11-04
+discovered_at: 2026-11-04
+verified_at: 2026-11-04
+verification_status: verified
+history:
+  - date: 2026-11-04
+    type: published
