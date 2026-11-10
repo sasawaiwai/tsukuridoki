@@ -1,0 +1,18 @@
+printer_id: marusho
+# 運営は丸正インキ有限会社（愛知県豊橋市）
+name: 丸正インキ
+official_url: https://www.marusho-ink.co.jp/
+# フェアはお知らせ（Information）の記事として出る。一覧を見る（robots.txt が /doujin/・/pages/ を禁止しているため、そこは巡回しない）
+fair_index_url: https://www.marusho-ink.co.jp/info
+follow_links: false
+# 書店割フェア2026～晩秋～（2026-11-10確認）
+watch_urls:
+  - https://www.marusho-ink.co.jp/info/shoten20261104
+domains: [marusho-ink.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できないため、robots.txt で禁止されていないページ（お知らせ /info/）に限って低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/・/doujin/・/pages/ を禁止。利用規約のページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

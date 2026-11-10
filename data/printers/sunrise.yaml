@@ -1,0 +1,20 @@
+printer_id: sunrise
+# 運営は株式会社サンライズ（SUNRISE PUBLICATION）
+name: サンライズ
+official_url: https://www.sunrisep.co.jp/
+# フェア・企画の一覧（全件）。ギガとくのページが非常に長い（下見で約6万字）ため、一覧から自動ではたどらず、本の印刷に関係する企画だけを watch_urls に入れる
+fair_index_url: https://www.sunrisep.co.jp/event/?terms=ALL
+follow_links: false
+# 冬コミ合わせポスタープレゼント・40周年40%OFF（超ギガ）・40周年特別企画（2026-11-10確認）。グッズだけの企画（冬のグッズ割引・バキッと1,000円）は対象外
+watch_urls:
+  - https://www.sunrisep.co.jp/event/202612poster/
+  - https://www.sunrisep.co.jp/event/annni-40off/
+  - https://www.sunrisep.co.jp/event/40anniversary-1/
+domains: [sunrisep.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /cgi-bin/ のみ禁止（MJ12bot・AhrefsBot は全体を禁止）。利用規約のページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

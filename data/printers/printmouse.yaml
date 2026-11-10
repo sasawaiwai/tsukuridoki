@@ -1,0 +1,18 @@
+printer_id: printmouse
+name: プリントマウス
+# リンク集の http://www.print-mouse.com/index.php は print-mouse.com へ転送される
+official_url: https://print-mouse.com/
+# キャンペーンのカテゴリ一覧（ブログ形式。2026-11-10時点の記事は2021〜2024年の古いもので、開催中と確認できるものはない）
+fair_index_url: https://print-mouse.com/archives/category/campaign
+follow_links: false
+# イベント支援（参加者・主催者向けの常設の特典）
+watch_urls:
+  - https://print-mouse.com/event-support
+domains: [print-mouse.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtはカート・管理画面・アップロードの一部のみ禁止。利用規約のページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

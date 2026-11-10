@@ -1,0 +1,19 @@
+printer_id: printon
+name: プリントオン
+# リンク集の http://www.print-on.jp/doujin/doujin_index.htm は https へ転送される
+official_url: https://www.print-on.jp/doujin/doujin_index.htm
+# フェアの一覧ページは無い。同人誌トップのフェアのリンク（/doujin/fair/fair_番号.htm）を見る。古い回のページも残るため、自動ではたどらず今の回を watch_urls に入れる
+fair_index_url: https://www.print-on.jp/doujin/doujin_index.htm
+follow_links: false
+# 2026冬フェア（10/26〜2027/1/29）・冬の企画商品（〜2027/2/26、内容は画像のみ）（2026-11-10確認）。季節ごとに番号が変わる
+watch_urls:
+  - https://www.print-on.jp/doujin/fair/fair_120.htm
+  - https://www.print-on.jp/doujin/fair/fair_97.htm
+domains: [print-on.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（会社案内・特定商取引に基づく表示・個人情報保護のみ）（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

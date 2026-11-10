@@ -1,0 +1,15 @@
+printer_id: bros
+# 運営は株式会社BRO'S（岡山市）
+name: ブロス
+official_url: https://www.bros-comic.co.jp/
+# フェアの一覧ページは無い。トップのキャンペーンのバナー（/campaign/〜.html）を一覧として見る
+fair_index_url: https://www.bros-comic.co.jp/
+fair_link_selector: a[href*="campaign/"]
+domains: [bros-comic.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: https://www.bros-comic.co.jp/privacy.html
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。プライバシーポリシー・利用規約のページに自動アクセス・転載に関する条項は見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

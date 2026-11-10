@@ -1,0 +1,20 @@
+printer_id: taiyou
+# 運営は大陽出版株式会社
+name: 大陽出版
+# リンク集の http://www.taiyoushuppan.co.jp/doujin/index.php は https へ転送される
+official_url: https://www.taiyoushuppan.co.jp/doujin/index.php
+# 割引企画の一覧。季節のフェアは季節ごとにページが変わる（2026-11-10時点は秋 kisetu_fair_2.php）
+fair_index_url: https://www.taiyoushuppan.co.jp/doujin/discount/index.php
+follow_links: false
+# 季節のフェア～秋～・特殊紙キャンペーン（2026-11-10確認）
+watch_urls:
+  - https://www.taiyoushuppan.co.jp/doujin/discount/kisetu_fair_2.php
+  - https://www.taiyoushuppan.co.jp/doujin/discount/winter_fair.php
+domains: [taiyoushuppan.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無い（404）ため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

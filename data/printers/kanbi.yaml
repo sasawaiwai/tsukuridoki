@@ -1,0 +1,19 @@
+printer_id: kanbi
+# 運営は関西美術印刷株式会社（奈良市）。グッズ・CD/DVDプレスも扱う
+name: 関西美術印刷
+# リンク集の http://www.kanbi.co.jp/comic/index.html から同人誌のサイトが comic.kanbi-comic.com に移っている
+official_url: https://comic.kanbi-comic.com/
+# フェアの一覧。グッズのフェアが多い
+fair_index_url: https://comic.kanbi-comic.com/fair/
+follow_links: false
+# コミケ109合わせフェアまとめ（2026-11-10時点は内容が画像のみ）
+watch_urls:
+  - https://comic.kanbi-comic.com/fair/c109-fair/
+domains: [comic.kanbi-comic.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/ のみ禁止。利用規約のページは見当たらず（企業情報・プライバシーポリシー・特定商取引法に基づく表記のみ）（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

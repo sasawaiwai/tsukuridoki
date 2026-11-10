@@ -1,0 +1,17 @@
+printer_id: tomshuppan
+name: トム出版
+official_url: https://www.tomshuppan.co.jp/
+# フェアの一覧ページは無い。トップのメニュー「オンリーイベント支援割引」の支援内容のページを一覧にする（2026-11-10確認）。文字コードはShift_JIS
+fair_index_url: https://www.tomshuppan.co.jp/topics/event.html
+follow_links: false
+# 支援オンリーイベントの一覧（年ごとに更新）
+watch_urls:
+  - https://www.tomshuppan.co.jp/topics/event_now.html
+domains: [tomshuppan.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtは書式が不正確で実質的な禁止の指定がないため、低頻度巡回の対象とする（許諾を得たものではない）。利用規約のページは見当たらず（プライバシーポリシーのみ）（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

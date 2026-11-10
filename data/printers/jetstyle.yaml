@@ -1,0 +1,16 @@
+printer_id: jetstyle
+# 運営は株式会社ジェットスタイル（名古屋市）。同人誌と自費出版
+name: ジェットスタイル
+official_url: https://www.jetstyle.co.jp/
+# 〆切インフォメーション（トップの「最大20%割引実施中!!」のリンク先）。2026-11-10時点は早割・割増・オンリーイベント特典・他社表紙支給割引などの常設の料金の案内
+fair_index_url: https://www.jetstyle.co.jp/d_line/
+follow_links: false
+domains: [jetstyle.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+# 2026-11-10：robots.txt が HTTP 403（http は全ページ403）。サーバーが自動アクセスを拒否したものとして自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止は確認できなかったが、ツクリドキの巡回と同じ User-Agent で robots.txt が HTTP 403（2026-11-10。http のトップも403）。サーバーが自動アクセスを拒否したものとして扱い、manual_only とする（人が通常のブラウザで公式情報を確認する）。利用規約のページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10
