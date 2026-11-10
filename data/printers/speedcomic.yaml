@@ -1,0 +1,15 @@
+printer_id: speedcomic
+name: スピードコミック.com
+official_url: https://speed-comic.com/
+# フェアの一覧ページは無い（2026-10-15の下見ではトップにフェアのリンクなし）
+fair_index_url: https://speed-comic.com/
+follow_links: false
+domains: [speed-comic.com]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+# robots.txt が検索エンジン（Googlebot・AdsBot-Google・bingbot）以外のすべてを禁止しているため自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
+terms_url: null
+policy_note: "robots.txt が Googlebot・AdsBot-Google・bingbot 以外のすべてのロボットに全体を禁止（Disallow: /）しているため、manual_only とする（人が通常のブラウザで公式情報を確認する）。robots.txt 以外のページは取得していない（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10

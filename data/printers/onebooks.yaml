@@ -1,0 +1,16 @@
+printer_id: onebooks
+# 運営は株式会社RED TRAIN。リンク集ではワンブックス（OneBooks）として載っている。同じ会社に MonoRe:th（中部数）・オフセット文庫本プランもある
+name: ワンブックス
+# リンク集の https://www.red-train.co.jp/onebooks は red-train.co.jp/onebooks へ転送される
+official_url: https://red-train.co.jp/onebooks
+# 期間限定・キャンペーンの一覧（メニューの「期間限定」）。フェアの個別ページは /fair/〜/（2026-11-10確認）
+fair_index_url: https://red-train.co.jp/kikan
+fair_link_selector: a[href*="/fair/"]
+domains: [red-train.co.jp]
+# リンクはトップページ固定（運営方針）
+link_policy: top_page_only
+crawl_policy: allowed
+terms_url: null
+policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/ のみ禁止。利用規約・リンクポリシーのページは見当たらず（2026-11-10確認）。"
+crawl_interval_days: 7
+last_policy_checked_at: 2026-11-10
