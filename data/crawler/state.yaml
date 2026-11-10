@@ -250,6 +250,16 @@
   last_fetched_at: 2026-10-20T23:27:31+09:00
   fetch_status: ok
   http_status: 200
+- url: https://choinoma.com/
+  printer_id: choinoma
+  content_hash: sha256:538c0e1744d76907a7eebcdfce9a4366b31c24e5c0238c4c0e712737a49c70f3
+  reviewed_hash: sha256:538c0e1744d76907a7eebcdfce9a4366b31c24e5c0238c4c0e712737a49c70f3
+  content_chars: 209
+  etag: null
+  last_modified: Tue, 13 Oct 2026 23:41:42 GMT
+  last_fetched_at: 2026-11-10T15:12:50+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.chokotto.jp/
   printer_id: chokotto
   content_hash: sha256:e3373d38b6b5aab758d8900dd65f5e500086b460a1c8f96058433099e03a1101
@@ -750,6 +760,16 @@
   last_fetched_at: 2026-10-16T01:29:52+09:00
   fetch_status: ok
   http_status: 200
+- url: https://print-jbf.jp/print/dojinshi_lp.html
+  printer_id: jbf
+  content_hash: sha256:b91ecc70d6a6e12b261c4dacc5b60358b2ad44be5de691fc438cc007061f52b7
+  reviewed_hash: sha256:b91ecc70d6a6e12b261c4dacc5b60358b2ad44be5de691fc438cc007061f52b7
+  content_chars: 4910
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:12:04+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.k-k9.jp/campaign/
   printer_id: k9
   content_hash: sha256:93cc751a3f6c56192426610c5e83d2ae803a91c575938c052a5f5a5b1a0ec898
@@ -1220,6 +1240,16 @@
   last_fetched_at: 2026-10-20T18:44:38+09:00
   fetch_status: ok
   http_status: 200
+- url: https://nishimura-p.co.jp/news/
+  printer_id: nishimura
+  content_hash: sha256:f645978330f1987579b50fe3d448e72da0abe92acf51707cdc4bfe30e6d7245e
+  reviewed_hash: sha256:f645978330f1987579b50fe3d448e72da0abe92acf51707cdc4bfe30e6d7245e
+  content_chars: 419
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:15:36+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.print-norimatsu.com/
   printer_id: norimatsu
   content_hash: sha256:c7ca3515e355c8b020c3f2a9598b2756749260c2bad5631c51d17115d9566c3e
@@ -1278,6 +1308,26 @@
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:44 GMT
   last_fetched_at: 2026-10-21T09:31:20+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://red-train.co.jp/fair/260828_ppp-hologram/
+  printer_id: onebooks
+  content_hash: sha256:cbe6f58e7c9e3b93e059f831eb5638d1a1fd3bfd0c988c67ea57375e84af5230
+  reviewed_hash: sha256:cbe6f58e7c9e3b93e059f831eb5638d1a1fd3bfd0c988c67ea57375e84af5230
+  content_chars: 788
+  etag: '"3d10-65bbe3f86be4c"'
+  last_modified: Fri, 18 Sep 2026 09:08:47 GMT
+  last_fetched_at: 2026-11-10T15:06:46+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://red-train.co.jp/kikan
+  printer_id: onebooks
+  content_hash: sha256:1c0820b358d5e59e1d8d10b49f199bf05270389659eeee6db3228e4372aeb95b
+  reviewed_hash: sha256:1c0820b358d5e59e1d8d10b49f199bf05270389659eeee6db3228e4372aeb95b
+  content_chars: 117
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:06:46+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/goods/goods_acrylic_keyholder.php
@@ -1438,6 +1488,16 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-21T09:36:00+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://pentaro.jp/
+  printer_id: pentaro
+  content_hash: sha256:2bca6a93cdc850711aedb0035b331a6097da77164445e1b314043c60659256e4
+  reviewed_hash: sha256:2bca6a93cdc850711aedb0035b331a6097da77164445e1b314043c60659256e4
+  content_chars: 5041
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:10:09+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/
@@ -1730,6 +1790,46 @@
   last_fetched_at: 2026-10-16T01:31:29+09:00
   fetch_status: ok
   http_status: 200
+- url: https://odahara.jp/doujinshi/
+  printer_id: printnet
+  content_hash: sha256:50a5f9ef346ce6ce83b952d1eebfc49ff8002042731dc9e65672d76db5ccb938
+  reviewed_hash: sha256:50a5f9ef346ce6ce83b952d1eebfc49ff8002042731dc9e65672d76db5ccb938
+  content_chars: 5592
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:08:15+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.printpac.co.jp/contents/lineup/doujinshi/index.html
+  printer_id: printpac
+  content_hash: sha256:514e8064e77c34370d1624b3390b6bd0b9ec52714ce59caa509fbcddaa62fd42
+  reviewed_hash: sha256:514e8064e77c34370d1624b3390b6bd0b9ec52714ce59caa509fbcddaa62fd42
+  content_chars: 21807
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:09:25+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://pripela.com/
+  printer_id: pripela
+  content_hash: sha256:f7148ca7dc916705999440cf806cd3d2d25082c2c59adb5d65d0d04be566910e
+  reviewed_hash: sha256:f7148ca7dc916705999440cf806cd3d2d25082c2c59adb5d65d0d04be566910e
+  content_chars: 3991
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:07:37+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://rururu-p.com/
+  printer_id: rururu
+  content_hash: sha256:081cc02a8359c5b18d781e46c9796f49c6d0924989a16d2463f9394a53ba8a02
+  reviewed_hash: sha256:081cc02a8359c5b18d781e46c9796f49c6d0924989a16d2463f9394a53ba8a02
+  content_chars: 131
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:13:21+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign
   printer_id: ryokuyou
   content_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
@@ -1958,6 +2058,16 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-10T09:16:58+09:00
+  fetch_status: ok
+  http_status: 200
+- url: http://www.shima-pro.com/
+  printer_id: shimapro
+  content_hash: sha256:f0264324fa9470f10d7d47ae6e95eb54e92f5350b86ba685e0856947cc918021
+  reviewed_hash: sha256:f0264324fa9470f10d7d47ae6e95eb54e92f5350b86ba685e0856947cc918021
+  content_chars: 727
+  etag: '"1516-645b9edd16fc4"'
+  last_modified: Fri, 12 Dec 2025 04:45:21 GMT
+  last_fetched_at: 2026-11-10T15:14:47+09:00
   fetch_status: ok
   http_status: 200
 - url: https://shimaya.net/fair/5colorhakuoshi/index.html
@@ -2468,5 +2578,25 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-18T21:10:10+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.unicolor.jp/doujinshi/
+  printer_id: unicolor
+  content_hash: sha256:f226c294cd844e529c6826672e93926b007cfb381c35308df8655fafc2b0d5be
+  reviewed_hash: sha256:f226c294cd844e529c6826672e93926b007cfb381c35308df8655fafc2b0d5be
+  content_chars: 3271
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:10:48+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://yumekoubou-m.net/
+  printer_id: yumekoubou
+  content_hash: sha256:ff8809ea9f8777fb5ac73fb8b364a05d5d8dc98b3d18d65a09e4f68615cf0071
+  reviewed_hash: sha256:ff8809ea9f8777fb5ac73fb8b364a05d5d8dc98b3d18d65a09e4f68615cf0071
+  content_chars: 2855
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-10T15:14:08+09:00
   fetch_status: ok
   http_status: 200

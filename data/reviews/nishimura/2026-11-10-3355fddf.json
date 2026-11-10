@@ -1,0 +1,15 @@
+{
+  "source_url": "https://nishimura-p.co.jp/news/",
+  "printer_id": "nishimura",
+  "content_hash": "sha256:f645978330f1987579b50fe3d448e72da0abe92acf51707cdc4bfe30e6d7245e",
+  "content_chars": 419,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:28+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "NEWSの一覧。名刺・箔押し・招待状などの紹介記事で、フェア・キャンペーンの告知は見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

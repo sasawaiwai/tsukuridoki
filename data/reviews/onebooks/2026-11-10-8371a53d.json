@@ -1,0 +1,15 @@
+{
+  "source_url": "https://red-train.co.jp/kikan",
+  "printer_id": "onebooks",
+  "content_hash": "sha256:1c0820b358d5e59e1d8d10b49f199bf05270389659eeee6db3228e4372aeb95b",
+  "content_chars": 117,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:10:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "期間限定メニューの一覧。掲載はホログラムPP加工の1件で、内容は個別ページで登録（バッチ7）。"
+}

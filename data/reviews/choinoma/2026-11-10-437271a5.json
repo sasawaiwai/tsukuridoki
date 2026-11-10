@@ -1,0 +1,15 @@
+{
+  "source_url": "https://choinoma.com/",
+  "printer_id": "choinoma",
+  "content_hash": "sha256:538c0e1744d76907a7eebcdfce9a4366b31c24e5c0238c4c0e712737a49c70f3",
+  "content_chars": 209,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:22+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（画像が中心で本文が少ない）。お知らせはシステム変更・メール不達の案内のみで、フェア・キャンペーンの告知は見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://yumekoubou-m.net/",
+  "printer_id": "yumekoubou",
+  "content_hash": "sha256:ff8809ea9f8777fb5ac73fb8b364a05d5d8dc98b3d18d65a09e4f68615cf0071",
+  "content_chars": 2855,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:25+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。「無料お試し2色・グラデーション印刷」は原稿を出力した写真をメールで送る常設の試し刷りサービス（現物送付は有料）でフェアではないため掲載しない（フェア0件の印刷所として登録、バッチ7）。"
+}

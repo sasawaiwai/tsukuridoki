@@ -1,0 +1,15 @@
+{
+  "source_url": "http://www.shima-pro.com/",
+  "printer_id": "shimapro",
+  "content_hash": "sha256:f0264324fa9470f10d7d47ae6e95eb54e92f5350b86ba685e0856947cc918021",
+  "content_chars": 727,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:27+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（本文が少ない）。フェア・キャンペーンの告知は見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

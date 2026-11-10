@@ -8,8 +8,9 @@ follow_links: false
 domains: [ueno-p.co.jp]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
-crawl_policy: allowed
+# 2026-11-10：Actions からの巡回で robots.txt が2回とも通信エラー（コミグラと同じ）のため自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
 terms_url: null
-policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txt上も対象ページは禁止されていないため、低頻度巡回の対象とする（許諾を得たものではない）。robots.txtは /wp-admin/ のみ禁止。利用規約のページは見当たらず、「ご注文について」にも自動アクセス・転載に関する記載なし（2026-11-10確認）。"
+policy_note: "自動アクセスの明示的な禁止は確認できなかったが、GitHub Actions からのアクセスで robots.txt が2回とも通信エラー（2026-11-10）のため、manual_only とする（人が通常のブラウザで公式情報を確認する）。robots.txtは /wp-admin/ のみ禁止。利用規約のページは見当たらず、「ご注文について」にも自動アクセス・転載に関する記載なし（2026-11-10確認）。"
 crawl_interval_days: 7
 last_policy_checked_at: 2026-11-10

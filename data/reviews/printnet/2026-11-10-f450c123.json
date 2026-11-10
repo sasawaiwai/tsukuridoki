@@ -1,0 +1,15 @@
+{
+  "source_url": "https://odahara.jp/doujinshi/",
+  "printer_id": "printnet",
+  "content_hash": "sha256:50a5f9ef346ce6ce83b952d1eebfc49ff8002042731dc9e65672d76db5ccb938",
+  "content_chars": 5592,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:11:11+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌トップ（お知らせ・商品メニュー）。「お得なキャンペーンを毎月実施中」は名刺・DM・チラシなど販促物全般の案内で、同人誌向けのフェアの告知は見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

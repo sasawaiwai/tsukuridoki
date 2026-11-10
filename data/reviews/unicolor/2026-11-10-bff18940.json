@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.unicolor.jp/doujinshi/",
+  "printer_id": "unicolor",
+  "content_hash": "sha256:f226c294cd844e529c6826672e93926b007cfb381c35308df8655fafc2b0d5be",
+  "content_chars": 3271,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:12:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌トップ。巡回で取れる本文にフェアの告知はない。お知らせ欄（本文の取り出し範囲外）に「中綴じ10％OFFキャンペーン」（2026-01-09開始・終了日の記載なし）と「文庫セットのカバーあり期間限定」（2024-11-28）があるが、今も利用できると公式で確かめられないため掲載しない（フェア0件の印刷所として登録、バッチ7）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://pentaro.jp/",
+  "printer_id": "pentaro",
+  "content_hash": "sha256:2bca6a93cdc850711aedb0035b331a6097da77164445e1b314043c60659256e4",
+  "content_chars": 5041,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:11:58+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（NEWS・商品・FAQ）。フェア・キャンペーンの告知は見当たらない。FAQの「試作品は原則50冊以上の注文で1回1冊まで無料」は常設のサービスでフェアではないため掲載しない（フェア0件の印刷所として登録、バッチ7）。"
+}

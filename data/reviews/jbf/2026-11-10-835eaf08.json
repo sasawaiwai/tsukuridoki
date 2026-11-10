@@ -1,0 +1,15 @@
+{
+  "source_url": "https://print-jbf.jp/print/dojinshi_lp.html",
+  "printer_id": "jbf",
+  "content_hash": "sha256:b91ecc70d6a6e12b261c4dacc5b60358b2ad44be5de691fc438cc007061f52b7",
+  "content_chars": 4910,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:19+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌のページ（商品・全社共通のサービス）。冊子同時注文の電子ブック無料・サンプル無料・送料無料は常設のサービス、超特価ポストカードはグッズのため、フェアとしては掲載しない（フェア0件の印刷所として登録、バッチ7）。"
+}

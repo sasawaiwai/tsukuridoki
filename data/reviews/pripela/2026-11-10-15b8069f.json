@@ -1,0 +1,15 @@
+{
+  "source_url": "https://pripela.com/",
+  "printer_id": "pripela",
+  "content_hash": "sha256:f7148ca7dc916705999440cf806cd3d2d25082c2c59adb5d65d0d04be566910e",
+  "content_chars": 3991,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:09:47+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（新着情報・商品メニュー）。新着情報は用紙の追加・数量限定の用紙（在庫限り、2026/06/15）・お試し印刷の休止などの案内で、フェア・キャンペーンの告知は見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

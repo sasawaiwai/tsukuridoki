@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.printpac.co.jp/contents/lineup/doujinshi/index.html",
+  "printer_id": "printpac",
+  "content_hash": "sha256:514e8064e77c34370d1624b3390b6bd0b9ec52714ce59caa509fbcddaa62fd42",
+  "content_chars": 21807,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:11:57+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌のページ（商品説明・全社メニュー）。キャンペーンは全社共通（満足保証・おためし・今週のスペシャルセール・クーポン付チラシ等）で、同人誌向けのフェアは見当たらない（フェア0件の印刷所として登録、バッチ7）。"
+}

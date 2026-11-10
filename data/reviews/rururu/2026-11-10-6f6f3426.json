@@ -1,0 +1,15 @@
+{
+  "source_url": "https://rururu-p.com/",
+  "printer_id": "rururu",
+  "content_hash": "sha256:081cc02a8359c5b18d781e46c9796f49c6d0924989a16d2463f9394a53ba8a02",
+  "content_chars": 131,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:18:24+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。各セットに「20% OFF!!!」の表示があるが、何に対する割引か・期間・条件の説明がトップにもセットの詳細ページにも見当たらないため掲載しない（フェア0件の印刷所として登録、バッチ7）。"
+}

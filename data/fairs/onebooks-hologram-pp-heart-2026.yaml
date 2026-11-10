@@ -1,0 +1,33 @@
+fair_id: onebooks-hologram-pp-heart-2026
+slug: onebooks-hologram-pp-heart-2026
+fair_name: お試し！ホログラムPP加工（ホログラムPP_B ハート）
+printer_id: onebooks
+category: dojinshi
+sources:
+  - https://red-train.co.jp/fair/260828_ppp-hologram/
+  - https://red-train.co.jp/kikan
+summary: ワンブックスの本に、期間限定のホログラムPP加工（ハート）を付けられる。料金は1件あたり5〜50部3,300円、51部以上5,500円（税込）。
+benefit_summary: 期間限定のホログラムPP（ハート）
+source_type: official_fair
+end_date: 2026-11-30
+end_date_text: ご入稿締切 11月30日（月）
+end_date_precision: day
+benefit_types:
+  - limited_product
+processes:
+  - hologram_pp
+sizes:
+  - B5
+  - A5
+  - B6
+  - shinsho
+  - A6
+min_quantity: 5
+conditions_text: 対象はOneBooks。予約フォームの「PP加工の有無」でホログラムPP加工（フェア）を選ぶ。用紙は表紙アートポスト180kg・カバーコート110kgに固定。A4は不可。12月20日のDOZEN ROSE FES 2026に搬入・納品でき、自宅宛ては12月22日から順次発送（12月20日より前の納品・指定は不可）。それ以降のイベントへの搬入もできるが、入稿締切は同じ。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published
