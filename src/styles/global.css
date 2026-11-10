@@ -15,7 +15,7 @@
   --color-surface: #ffffff;
   --color-surface-sunken: #f4eee6;
   --color-text: #292522;
-  --color-text-muted: #756d66;
+  --color-text-muted: #716962; /* 薄いベージュの背景（#f4eee6）でもコントラスト比4.5以上（4.67） */
   --color-border: #e7ddd3;
   --color-border-strong: #d6c9bc;
 
