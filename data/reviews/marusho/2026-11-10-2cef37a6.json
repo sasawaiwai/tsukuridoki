@@ -13,7 +13,7 @@
       "sources": [
         "https://www.marusho-ink.co.jp/info/shoten20261104"
       ],
-      "summary": "対象のセットを書店・自宅などに納品すると（イベントへの搬入は対象外）、基本料金が20%割引になる。11月22日〜12月6日合わせの納品分が対象で、期間中は何回でも使える。",
+      "summary": "対象のセットを書店・自宅などに納品すると（イベントへの搬入は対象外）、基本料金が20%割引になる。11月22日〜12月6日合わせの納品分が対象で、期間中は何回でも使える。締切は納品日とオプションの有無で異なる（最終は12/6納品分の通常締切11/24）。",
       "benefit_summary": "書店・自宅納品で基本料金20%割引",
       "source_type": "official_fair",
       "start_date": "2026-11-22",
@@ -22,8 +22,11 @@
       "end_date": "2026-12-06",
       "end_date_text": "12月6日（日）合わせ",
       "end_date_precision": "day",
+      "usable_from": "2026-11-04",
+      "usable_from_text": "11月4日（告知日・最初の締切日）",
+      "usable_from_precision": "day",
       "usable_until": "2026-11-24",
-      "usable_until_text": "12/6納品：通常締切 11/24（火）",
+      "usable_until_text": "最終締切 11/24（火）※納品日・オプション有無で異なる",
       "usable_until_precision": "day",
       "benefit_types": [
         "discount"
