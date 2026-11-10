@@ -3,19 +3,26 @@ import '../styles/global.css';
 import { SITE } from '../lib/site.ts';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import { todayJST } from '../lib/period.ts';
+import { formatJpDate } from '../lib/fair-display.ts';
 
 interface Props {
   title?: string;
   description?: string;
   /** サイト全体の設定にかかわらず検索エンジンに載せない（/dev/ 以下など） */
   noindex?: boolean;
+  /** 開催状況など、日付で変わる表示があるページ。日付が変わったのに再公開がまだのとき、時点の注意を出す */
+  dated?: boolean;
 }
 
 const {
   title,
   description = `${SITE.tagline}。各印刷所のフェア・キャンペーン情報を、時期・加工・サイズから探せます。`,
   noindex = false,
+  dated = false,
 } = Astro.props;
+// 毎日の再公開は数時間遅れることがあるため、ページを作った日（日本時間）を埋め込み、見ている日と違えば注意を出す（60章）
+const builtOn = todayJST();
 const fullTitle = title ? `${title}｜${SITE.name}` : `${SITE.name}｜${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 // アクセス解析は本番ビルドだけ。確認用ページ（noindex 指定）では読み込まない
@@ -64,6 +71,22 @@ const gaId = import.meta.env.PROD && !noindex ? SITE.gaMeasurementId : null;
   </head>
   <body>
     <SiteHeader />
+    {
+      dated && (
+        <>
+          <p class="date-notice" id="date-notice" data-built-on={builtOn} role="status" hidden>
+            この表示は{formatJpDate(builtOn)}時点の内容です。日付が変わった直後は、開催状況や締切までの日数が新しくなるまで数時間かかることがあります。
+          </p>
+          <script is:inline>
+            (() => {
+              const el = document.getElementById('date-notice');
+              const now = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+              if (el && now > el.dataset.builtOn) el.hidden = false;
+            })();
+          </script>
+        </>
+      )
+    }
     <main>
       <slot />
     </main>

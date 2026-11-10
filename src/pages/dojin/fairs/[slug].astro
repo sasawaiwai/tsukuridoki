@@ -100,7 +100,7 @@ const description = [`${printerName}の「${fair.fair_name}」`, benefit, expire
   .join('。') + '。';
 ---
 
-<BaseLayout title={`${fair.fair_name}（${printerName}）`} description={description}>
+<BaseLayout dated title={`${fair.fair_name}（${printerName}）`} description={description}>
   <article class="container fair">
     {
       expired && (

@@ -191,3 +191,19 @@ img {
 [data-category='craft'] { --category-color: var(--cat-craft); --category-text: var(--cat-craft-text); }
 [data-category='deal'] { --category-color: var(--cat-deal); --category-text: var(--cat-deal-text); }
 [data-category='other'] { --category-color: var(--cat-other); --category-text: var(--cat-other-text); }
+
+/* 日付が変わったのに再公開がまだのときの注意（BaseLayout の dated）。ふだんは hidden */
+.date-notice {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: var(--color-surface-sunken);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.date-notice[hidden] {
+  display: none;
+}

@@ -26,7 +26,7 @@ const { title, description, cards, pastCards = [], total = cards.length, searchH
 const showPast = cards.length === 0 && pastCards.length > 0;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout dated title={title} description={description}>
   <div class="container list-page">
     <header class="list-page__header">
       <h1>{title}</h1>

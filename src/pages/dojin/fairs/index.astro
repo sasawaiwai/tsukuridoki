@@ -25,7 +25,7 @@ const itemAttrs = fairs.map((fair) => ({
 const openCount = fairs.filter((f) => !isExpired(f, today)).length;
 ---
 
-<BaseLayout title="フェアを検索" description="同人誌印刷所のフェアを、入稿時期・加工・サイズ・印刷方式・色・特典・印刷所の組み合わせで探せます。">
+<BaseLayout dated title="フェアを検索" description="同人誌印刷所のフェアを、入稿時期・加工・サイズ・印刷方式・色・特典・印刷所の組み合わせで探せます。">
   <div class="container search">
     <h1 class="search__title">フェアを検索</h1>
 

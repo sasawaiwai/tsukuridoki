@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import type { Fair, Process } from '../src/lib/types.ts';
-import { benefitText, cardCategory, deadlineText, processMap, toCardModel } from '../src/lib/fair-display.ts';
+import { benefitText, cardCategory, confirmedAt, deadlineText, needsRecheck, processMap, toCardModel } from '../src/lib/fair-display.ts';
 
 const processes = processMap([
   { process_id: 'foil', name: '箔押し', group: 'foil_cover' },
@@ -78,4 +78,19 @@ test('チップ：最大5個、残りは件数で返す', () => {
   assert.equal(model.hiddenChipCount, 2); // オンデマンド・RGB対応（CMYKは表示しない）
   assert.equal(model.chips[0].category, 'foil');
   assert.equal(model.href, '/dojin/fairs/test-fair/');
+});
+
+test('confirmedAt：人の確認日（verified_at）だけを使い、巡回の確認日は使わない', () => {
+  assert.equal(confirmedAt(fair({ verified_at: '2026-10-01', last_checked_at: '2026-11-01' })), '2026-10-01');
+  assert.equal(confirmedAt(fair({ last_checked_at: '2026-11-01' })), null);
+  assert.equal(confirmedAt(fair({})), null);
+});
+
+test('needsRecheck：確認から30日以上で警告。終了済みのフェアには出さない', () => {
+  const today = '2026-11-10';
+  assert.equal(needsRecheck(fair({ verified_at: '2026-10-12', end_date: '2026-12-31' }), today), false); // 29日
+  assert.equal(needsRecheck(fair({ verified_at: '2026-10-11', end_date: '2026-12-31' }), today), true); // 30日
+  assert.equal(needsRecheck(fair({ end_date: '2026-12-31' }), today), true); // 確認日なし
+  assert.equal(needsRecheck(fair({ verified_at: '2026-01-01', end_date: '2026-10-01' }), today), false); // 終了済み
+  assert.equal(needsRecheck(fair({ end_date: '2026-10-01' }), today), false); // 終了済み・確認日なし
 });

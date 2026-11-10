@@ -19,7 +19,7 @@ const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].la
 const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs);
 ---
 
-<BaseLayout>
+<BaseLayout dated>
   <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">

@@ -114,14 +114,17 @@ export function formatJpDateFull(date: DateString): string {
   return `${y}年${m}月${d}日`;
 }
 
-/** 公式情報の確認日（29-2）：verified_at と last_checked_at の新しい方 */
+/**
+ * 公式情報の確認日（29-2）：人が公式ページと照合した日（verified_at）だけ。
+ * 巡回の確認日（last_checked_at）は「ページに変化がない」ことしか分からないため使わない（2026-11-10 決定）
+ */
 export function confirmedAt(fair: Fair): DateString | null {
-  const dates = [fair.verified_at, fair.last_checked_at].filter((d): d is DateString => !!d);
-  return dates.length > 0 ? dates.sort().at(-1)! : null;
+  return fair.verified_at ?? null;
 }
 
-/** 確認日が30日以上前、または確認日がない（29-3） */
+/** 確認日が30日以上前、または確認日がない（29-3）。終了済みのフェアは過去の記録なので対象外（2026-11-10 決定） */
 export function needsRecheck(fair: Fair, today: DateString): boolean {
+  if (getStatus(fair, today) === 'expired') return false;
   const date = confirmedAt(fair);
   return date === null || diffDays(date, today) >= RECHECK_DAYS;
 }
