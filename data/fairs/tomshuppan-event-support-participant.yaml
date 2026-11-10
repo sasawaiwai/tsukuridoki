@@ -1,0 +1,23 @@
+fair_id: tomshuppan-event-support-participant
+slug: tomshuppan-event-support-participant
+fair_name: オンリーイベント支援割引（参加サークル向け）
+printer_id: tomshuppan
+category: dojinshi
+sources:
+  - https://www.tomshuppan.co.jp/topics/event.html
+  - https://www.tomshuppan.co.jp/topics/event_now.html
+summary: トム出版が支援するオンリーイベントの参加サークルは、開催日の9日前（金曜）午前9時までに表紙・本文をそろえて入稿すると、本文基本料金が20%割引になる（支援イベント以外の20%割引の締切は木曜午前9時で、支援イベントは1日遅い）。
+benefit_summary: 支援イベントは20%割引の締切が1日遅い
+source_type: official_campaign
+deadline_type: event
+benefit_types:
+  - discount
+discount_rate: 20
+conditions_text: 支援オンリーイベント一覧に載っているイベント（スタジオYOU・コミティア・J.GARDEN主催のオンリーイベントはすべて対象）の参加サークルが対象。自動見積システムの「使用セット」欄に「○○○オンリーイベント支援」と記入する（記入がないと適用されない）。イベントが日曜以外の場合は、その日数だけ入稿日が前後する。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.bros-comic.co.jp/campaign/dourebo_bakkit.html",
+  "printer_id": "bros",
+  "content_hash": "sha256:11b5a21e2ad7b7c4ece719c15b872e14e6efea7ddc6753bbd9620dcd41839768",
+  "content_chars": 1649,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:31:09+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "FUJIFILM共同のノベルティキャンペーン（名刺・カードなどのオンデマンド印刷を1,000円で、先着50名）。グッズのみのため対象外（バッチ8）。"
+}

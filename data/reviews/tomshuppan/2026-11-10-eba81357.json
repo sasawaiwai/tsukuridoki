@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.tomshuppan.co.jp/topics/event.html",
+  "printer_id": "tomshuppan",
+  "content_hash": "sha256:df0d12c316c4d7d0f94a6e91be93e812301a1b8b8c61f2caf519cc2889da023f",
+  "content_chars": 1776,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:30:17+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "tomshuppan-event-support-participant",
+      "fair_name": "オンリーイベント支援割引（参加サークル向け）",
+      "sources": [
+        "https://www.tomshuppan.co.jp/topics/event.html",
+        "https://www.tomshuppan.co.jp/topics/event_now.html"
+      ],
+      "summary": "トム出版が支援するオンリーイベントの参加サークルは、開催日の9日前（金曜）午前9時までに表紙・本文をそろえて入稿すると、本文基本料金が20%割引になる（支援イベント以外の20%割引の締切は木曜午前9時で、支援イベントは1日遅い）。",
+      "benefit_summary": "支援イベントは20%割引の締切が1日遅い",
+      "source_type": "official_campaign",
+      "deadline_type": "event",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 20,
+      "conditions_text": "支援オンリーイベント一覧に載っているイベント（スタジオYOU・コミティア・J.GARDEN主催のオンリーイベントはすべて対象）の参加サークルが対象。自動見積システムの「使用セット」欄に「○○○オンリーイベント支援」と記入する（記入がないと適用されない）。イベントが日曜以外の場合は、その日数だけ入稿日が前後する。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "支援内容のページ（参加サークル向け・主催者向け）。主催者向けの特典は対象外（バッチ8）。"
+}

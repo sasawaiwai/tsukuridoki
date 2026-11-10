@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.taiyoushuppan.co.jp/doujin/discount/winter_fair.php",
+  "printer_id": "taiyou",
+  "content_hash": "sha256:cbf810c816f6ffc72cc5da31045fb701123fb458142b8e13543f76ccb7e09c29",
+  "content_chars": 4706,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:36:35+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "taiyou-special-paper-campaign",
+      "fair_name": "特殊紙キャンペーン",
+      "sources": [
+        "https://www.taiyoushuppan.co.jp/doujin/discount/winter_fair.php"
+      ],
+      "summary": "オンデマンド表紙カラーセットで、角度によって色が変わるメタルペーパー（おとぎのくに）や漉き合わせの和紙など、期間限定の特殊紙を表紙に選べる。",
+      "benefit_summary": "期間限定の特殊紙を表紙に選べる",
+      "source_type": "official_campaign",
+      "benefit_types": [
+        "limited_product"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "対象はオンデマンド表紙カラーセット。早割・同時割のみ併用可。〆切が早まる。白押さえが必須。一部の紙は在庫限り。終了日の記載はない（2026/11/1に受付期間を延長と告知）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "特殊紙キャンペーン。終了日の記載がないため開催期間なしで登録（バッチ8）。"
+}

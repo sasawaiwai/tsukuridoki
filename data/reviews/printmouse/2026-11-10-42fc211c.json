@@ -1,0 +1,15 @@
+{
+  "source_url": "https://print-mouse.com/archives/category/campaign",
+  "printer_id": "printmouse",
+  "content_hash": "sha256:d545d5180cb97562d486f7b1ae42b5e7fbdabda05d91e5d29bad08303b7ed8bc",
+  "content_chars": 28,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:31:51+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "キャンペーンの記事一覧。記事はフランス表紙加工無料（2024/6/30納品分まで）・遊び紙無料（2023/7/30まで）・冬コミ限定割引（C101）などの終了済みのものと、2021年のポスタープレゼント・紹介割引（会員制度）で、今も利用できると確かめられるものはない（バッチ8）。"
+}

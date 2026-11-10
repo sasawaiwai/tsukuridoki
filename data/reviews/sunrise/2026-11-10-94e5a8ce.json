@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.sunrisep.co.jp/event/?terms=ALL",
+  "printer_id": "sunrise",
+  "content_hash": "sha256:267a1fcd8a41393d0a0adb3d6c2171db86a2a279c4f0fef50e38a24538bad9ba",
+  "content_chars": 1231,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:57+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "フェア・企画の一覧。本の印刷に関係する企画（冬コミポスタープレゼント・40%OFF・40周年特別企画）を個別ページで登録。ギガとく30%OFF（不定期）は今回は見送り、冬のグッズ割引・バキッと1,000円はグッズのため対象外、協賛イベントの日ノ出ポイント・アンソロジー企画・掘り出しもの市も今回は見送り（バッチ8）。"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://print-mouse.com/event-support",
+  "printer_id": "printmouse",
+  "content_hash": "sha256:5db8aea6f98acb064dc0d8e5112d26408e41295ae1564c5bed5d2eec3fafaa9d",
+  "content_chars": 1518,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:31:41+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "printmouse-event-support-participant",
+      "fair_name": "イベント支援（参加サークル特典）",
+      "sources": [
+        "https://print-mouse.com/event-support"
+      ],
+      "summary": "プリントマウスが支援するイベントの参加者向けの特典。会場開催のイベントは1イベントへの納品が無料、TwitterフォローでA2ポスター1枚無料。プチオンリーの参加サークルは通常〆切のまま早トク料金になり、オフセット本の注文でA2ポスターか缶バッジ10個を選べる。",
+      "benefit_summary": "支援イベント参加で納品無料・ポスター無料など",
+      "source_type": "official_campaign",
+      "deadline_type": "event",
+      "benefit_types": [
+        "novelty",
+        "discount"
+      ],
+      "conditions_text": "主催者の申し込みで支援しているイベント（常時支援イベントの一覧あり）が対象。自己申請制で、注文時に支援イベント名・開催日（参加日）・特典番号（必要な場合）を入力する。ほかのキャンペーンとの併用不可。WEB開催のプチオンリーは余部の自宅発送も可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "イベント支援。主催者向けの特典は対象外（バッチ8）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-on.jp/doujin/doujin_index.htm",
+  "printer_id": "printon",
+  "content_hash": "sha256:3bc9835c724066d1bb1ac6d5af0550e6feb4658d6c82056048be260dc96f39b2",
+  "content_chars": 13468,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:34:09+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌トップ。フェアのリンクは冬フェア（fair_120）・冬の企画商品（fair_97）を各ページで確認。秋・夏などの過去の回のリンクも残っている。バックアップイベント・マイブックキャンペーンは今回は見送り（バッチ8）。"
+}

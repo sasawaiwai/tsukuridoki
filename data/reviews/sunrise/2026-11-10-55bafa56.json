@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.sunrisep.co.jp/event/202612poster/",
+  "printer_id": "sunrise",
+  "content_hash": "sha256:4f9e500bbaaba3f908c6c3e2704f786d302e004aa68ed03caea45f43d86edf57",
+  "content_chars": 1724,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:29+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "sunrise-c109-poster-2026",
+      "fair_name": "2026年冬コミ合わせポスタープレゼント企画",
+      "sources": [
+        "https://www.sunrisep.co.jp/event/202612poster/"
+      ],
+      "summary": "冬コミに直接搬入する本を100部以上発注すると、ポスターを1枚プレゼント（部数によって選べるサイズが異なる）。",
+      "benefit_summary": "冬コミ合わせ100部以上でポスター1枚",
+      "source_type": "official_fair",
+      "start_date": "2026-12-07",
+      "start_date_text": "2026年12月7日",
+      "start_date_precision": "day",
+      "end_date": "2026-12-19",
+      "end_date_text": "12月19日午前9時入稿分まで",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_delivery_only": true,
+      "benefit_types": [
+        "novelty"
+      ],
+      "min_quantity": 100,
+      "specific_sets_only": true,
+      "conditions_text": "対象はフルカラー表紙・特殊紙カラー表紙・色刷り表紙・特殊紙色刷り表紙の各同人誌セットと小説本セット、オールカラー本セット、特殊紙表紙オールカラー本セット、同人誌企画セット（Petitセット、ペラ本・ステッチ本は対象外）。オフセット・オンデマンドどちらも可。発注書の備考欄に「ポスタープレゼント希望（希望ポスターサイズ）」を書き、ポスターのデータは本文と同時に入稿する。本・ポスターとも冬コミへの直接搬入で、ポスターの自宅発送への変更は不可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "冬コミ合わせポスタープレゼント（バッチ8）。"
+}

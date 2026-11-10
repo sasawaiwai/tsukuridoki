@@ -1,0 +1,39 @@
+{
+  "source_url": "https://www.marusho-ink.co.jp/info/shoten20261104",
+  "printer_id": "marusho",
+  "content_hash": "sha256:d57ef26b89443c5a771dcb458b4d11cb57945f2c57c249f819f580b54dd7b1b7",
+  "content_chars": 2333,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:32:09+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "marusho-shoten-fair-late-autumn-2026",
+      "fair_name": "書店割フェア2026 ～晩秋～",
+      "sources": [
+        "https://www.marusho-ink.co.jp/info/shoten20261104"
+      ],
+      "summary": "対象のセットを書店・自宅などに納品すると（イベントへの搬入は対象外）、基本料金が20%割引になる。11月22日〜12月6日合わせの納品分が対象で、期間中は何回でも使える。",
+      "benefit_summary": "書店・自宅納品で基本料金20%割引",
+      "source_type": "official_fair",
+      "start_date": "2026-11-22",
+      "start_date_text": "11月22日（日）合わせ",
+      "start_date_precision": "day",
+      "end_date": "2026-12-06",
+      "end_date_text": "12月6日（日）合わせ",
+      "end_date_precision": "day",
+      "usable_until": "2026-11-24",
+      "usable_until_text": "12/6納品：通常締切 11/24（火）",
+      "usable_until_precision": "day",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 20,
+      "specific_sets_only": true,
+      "conditions_text": "対象はスパイクNo.1・No.2、アタックNo.1・No.2、ノベルズNo.1・2。締切は11/22・23納品がオプションあり11/4・通常11/10、11/29納品が11/11・11/17、12/6納品が11/18・11/24。アタックシリーズは発注書の備考欄に「書店割フェア晩秋」と書き、スパイク・ノベルズシリーズは割引率で「書店割フェア20%OFF」を選ぶ。MYページでは納品先に「自宅等（書店含む）へ発送」を選ぶ。ほかの割引（支援割・早割など）と併用不可。とらのあなのゼロエン印刷は対象外。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "書店割フェアの告知記事（2026.11.4）（バッチ8）。"
+}

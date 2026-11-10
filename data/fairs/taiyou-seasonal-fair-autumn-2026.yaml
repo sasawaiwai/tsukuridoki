@@ -1,0 +1,34 @@
+fair_id: taiyou-seasonal-fair-autumn-2026
+slug: taiyou-seasonal-fair-autumn-2026
+fair_name: 季節のフェア～秋～
+printer_id: taiyou
+category: dojinshi
+sources:
+  - https://www.taiyoushuppan.co.jp/doujin/discount/kisetu_fair_2.php
+summary: ゆうゆうセットの表紙を特殊紙に無料または半額で変更でき、表紙5色刷り（金・銀・蛍光ピンク・蛍光グリーン）が半額、オンデマンドの表紙5色刷り（TCシリーズ）が特価になる。紙原稿を店頭で直接入稿すると原稿用紙のプレゼントもある（先着30名）。
+benefit_summary: 特殊紙表紙が無料・半額、表紙5色刷りが半額
+source_type: official_fair
+start_date: 2026-09-05
+start_date_text: 2026/9/5(土)
+start_date_precision: day
+end_date: 2027-02-28
+end_date_text: 2027/2/28(日)合わせ
+end_date_precision: day
+benefit_types:
+  - free_paper_upgrade
+  - discount
+  - novelty
+discount_rate: 50
+processes:
+  - special_paper
+  - spot_color_printing
+tags:
+  - seasonal
+conditions_text: 割増〆切では利用不可（通常〆切までに入稿）。特殊紙表紙（無料：エスプリVNエンボス・ベィビーフェイスN・ヴァンヌーボVG-FS、半額：里紙・OKフロート）はゆうゆうセットが対象で、特殊紙にPP加工はできない。表紙5色刷り（半額）はゆうゆうセット・パンダフルセットで、表紙の紙はスーパーポスト、PPはクリア・マットのみ。TCシリーズはオンデマンド表紙カラー・オールカラーセットが対象で、〆切が早まる。併用できる割引はフェアごとに異なる。原稿用紙プレゼントは1人1冊。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published

@@ -1,0 +1,35 @@
+fair_id: sunrise-anniv-plusone-half
+slug: sunrise-anniv-plusone-half
+fair_name: 40周年特別企画：蛍光4色プラスワン表紙半額
+printer_id: sunrise
+category: dojinshi
+sources:
+  - https://www.sunrisep.co.jp/event/40anniversary-1/
+summary: オフセット4色カラーの表紙に蛍光インク（ピンク・オレンジ・イエロー・グリーン）を追加する「オフセット プラス・ワン表紙」が通常の半額になる。
+benefit_summary: 蛍光プラスワン表紙が半額
+source_type: official_fair
+start_date: 2026-06-01
+start_date_text: 2026年6月1日
+start_date_precision: day
+end_date: 2026-11-30
+end_date_text: 2026年11月30日午前9時
+end_date_precision: day
+benefit_types:
+  - discount
+discount_rate: 50
+sizes:
+  - A5
+  - B5
+printing_methods:
+  - offset
+processes:
+  - spot_color_printing
+specific_sets_only: true
+conditions_text: 対象はフルカラー表紙セット・フルカラー表紙小説本セット・オールカラー本セット（表紙オフセット印刷で3000部まで）。A5かB5、表面加工はPPかマット。本文はオフセット・オンデマンドどちらも可。表紙のみの発注は不可。発注書の備考欄に「40周年記念プラスワン半額希望」と書く。表紙早割と併用不可。ゴールド・シルバーは対象外。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published

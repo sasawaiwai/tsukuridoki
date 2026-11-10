@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.taiyoushuppan.co.jp/doujin/discount/index.php",
+  "printer_id": "taiyou",
+  "content_hash": "sha256:fab3eb00e8d3cf757af4986f5871aaec2070b6a3a466a5d2165bb87fb0749bdf",
+  "content_chars": 2538,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:36:44+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "割引企画の一覧（書店割・イベント割・早割・同時割・特割・イベント支援など）。常設の料金の割引は今回は見送り、季節のフェア（秋）と特殊紙キャンペーンを個別ページで登録。早割SUPER（期間限定）も今回は見送り（バッチ8）。"
+}

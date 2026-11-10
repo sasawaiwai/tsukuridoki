@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.bros-comic.co.jp/campaign/akaboo_touhyou.html",
+  "printer_id": "bros",
+  "content_hash": "sha256:ad38507b5fa9bba2369f7febfad5559cd0d95967c95f6dad59c70a5d77874850",
+  "content_chars": 376,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:31:16+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "Akaboo専用投票引換券の案内。フェアではないため対象外（バッチ8）。"
+}

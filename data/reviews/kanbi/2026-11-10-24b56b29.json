@@ -1,0 +1,15 @@
+{
+  "source_url": "https://comic.kanbi-comic.com/fair/",
+  "printer_id": "kanbi",
+  "content_hash": "sha256:ce5098ce9fed5ab8a28d5a7ed3ae5b9824ea5fe429ec0691452e76e40cfb1a42",
+  "content_chars": 131,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:20+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "フェアの一覧。カレンダー10%OFF（11/30まで）・不織布ブックカバー在庫処分はグッズのため対象外、C109合わせまとめは画像のみで見送り（バッチ8）。"
+}

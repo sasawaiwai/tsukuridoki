@@ -1,0 +1,47 @@
+{
+  "source_url": "https://www.print-on.jp/doujin/fair/fair_120.htm",
+  "printer_id": "printon",
+  "content_hash": "sha256:a5c4f2b09884fd30a361fecc758d074daea8279e127278629e143ef046218b03",
+  "content_chars": 3702,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:33:50+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "printon-winter-fair-2026",
+      "fair_name": "2026 冬フェア",
+      "sources": [
+        "https://www.print-on.jp/doujin/fair/fair_120.htm"
+      ],
+      "summary": "期間中の入稿で、表紙のPP加工、フルカラー口絵、遊び紙、表紙1カット・変形断裁・角丸、しおりやポストカードなどのサービス、有料オプション・特殊加工の20%割引、納品本+5冊、締切3時間延長などのサービスオプションから選べる。",
+      "benefit_summary": "加工・グッズのサービスや20%割引から選べる",
+      "source_type": "official_fair",
+      "start_date": "2026-10-26",
+      "start_date_text": "2026年10月26日(月)",
+      "start_date_precision": "day",
+      "end_date": "2027-01-29",
+      "end_date_text": "2027年1月29日(金)午前中入稿分まで",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "free_option",
+        "free_process",
+        "discount",
+        "novelty"
+      ],
+      "discount_rate": 20,
+      "processes": [
+        "pp",
+        "matte_pp",
+        "endpaper",
+        "round_corner"
+      ],
+      "tags": [
+        "seasonal"
+      ],
+      "conditions_text": "新規・再版どちらも利用可。急行・特急・超特急の本セット、表紙のみ印刷、グッズ全般は対象外。自己申告制で、入稿完了後の申請は不可。同じサービスオプションの重複は不可。最大割引率25%・最大割引額30,000円まで。支援イベントと併用する場合は支援イベント名を記入。選んだオプション・特殊加工の納期が加算される。有料オプション・特殊加工の20%割引は一番高いものに適用（わくわくドキドキシリーズは対象外）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "冬フェアのページ。選べるサービスオプションの数はページの本文に書かれていない（バッチ8）。"
+}

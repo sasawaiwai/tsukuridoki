@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.bros-comic.co.jp/",
+  "printer_id": "bros",
+  "content_hash": "sha256:d25e5e280848f8f0c0670fe1c3f4e6dbb2990d6ba1b8248040068b7729b1af3b",
+  "content_chars": 527,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:31:23+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。キャンペーンのバナーは協賛イベント特典・バキッと1,000円・Akaboo投票引換券の3件で、各ページで確認（バッチ8）。"
+}

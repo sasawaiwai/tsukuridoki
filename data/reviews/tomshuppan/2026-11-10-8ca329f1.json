@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.tomshuppan.co.jp/topics/event_now.html",
+  "printer_id": "tomshuppan",
+  "content_hash": "sha256:86ed29040ee3525017ee76811ed855ecd286836f6ea58171311bd7916b9894d8",
+  "content_chars": 2838,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:30:26+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "支援オンリーイベントの一覧（2026年）。内容は支援内容のページのフェアに含めた（バッチ8）。"
+}

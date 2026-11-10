@@ -1,0 +1,23 @@
+fair_id: bros-kyosan-event-participant
+slug: bros-kyosan-event-participant
+fair_name: 協賛イベント特典
+printer_id: bros
+category: dojinshi
+sources:
+  - https://www.bros-comic.co.jp/campaign/kyosan.html
+summary: ブロスが協賛するイベントの参加者は、オフセット印刷の本を入稿すると、フルカラーポスター（A1かB2）かKPパネル（A3かA4）のどちらか1点が無料になる。WEBオンリーのイベントは分納送料1か所無料。
+benefit_summary: 協賛イベント参加でポスターかパネル1点無料
+source_type: official_campaign
+deadline_type: event
+benefit_types:
+  - novelty
+printing_methods:
+  - offset
+conditions_text: 協賛イベント一覧に載っているイベント（スタジオYOU・コミティア・J.GARDEN・ピクトスクエア・ピクリエは常時協賛）の参加者が対象。表紙のみオフセット印刷は対象外。備考欄に協賛のイベント名・希望サイズ・希望の特典を書き、ポスター・パネルのデータは本と一緒に（締切が本より早い場合は先に）入稿する。通常特典やほかのキャンペーンとの併用不可。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://comic.kanbi-comic.com/fair/c109-fair/",
+  "printer_id": "kanbi",
+  "content_hash": "sha256:c3c9197267c37518394ea1f5f275b8c633764c54c96618d9d847df6d3a1e1c1e",
+  "content_chars": 1127,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:09+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "コミケ109合わせフェアまとめ。内容が画像のみで本文から確かめられないため登録しない（見送り、要画像確認、バッチ8）。"
+}

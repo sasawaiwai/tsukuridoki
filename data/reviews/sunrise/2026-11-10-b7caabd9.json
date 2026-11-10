@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.sunrisep.co.jp/event/annni-40off/",
+  "printer_id": "sunrise",
+  "content_hash": "sha256:1cfc35e85893e13fae68c104524a3b5b9acbe6b4e2cd9a2107a70bef766ca28d",
+  "content_chars": 1267,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:38+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "sunrise-anniv-40off-c109",
+      "fair_name": "40周年特別企画40%OFF（超ギガ）コミックマーケット109合わせ",
+      "sources": [
+        "https://www.sunrisep.co.jp/event/annni-40off/",
+        "https://www.sunrisep.co.jp/event/40anniversary-1/"
+      ],
+      "summary": "コミックマーケット109（12/29〜31）合わせの対象セットが40%割引になる。入稿は11月26日午前9時まで。",
+      "benefit_summary": "冬コミ合わせ入稿で40%割引",
+      "source_type": "official_fair",
+      "end_date": "2026-11-26",
+      "end_date_text": "～2026年11月26日 午前9時まで",
+      "end_date_precision": "day",
+      "deadline_type": "event",
+      "event_name": "コミックマーケット109",
+      "event_date": "2026-12-29",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 40,
+      "specific_sets_only": true,
+      "conditions_text": "対象はフルカラー表紙・特殊紙カラー表紙・色刷り表紙・特殊紙色刷り表紙の各セットと小説本セット、オールカラー本セット、特殊紙オールカラー本セット。常時から早割25の設定がない商品や、早割25が適用されない箇所（色刷りの表紙・オプション・送料など）は対象外。入稿時に希望納品日と入稿日時から自動で判別される。加工オプションを使うと締切が早まる（例：箔押しは＋4営業日）。割引額の上限は22万円（税込）。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "C109合わせの締切を登録。ほかの回（5月・7月・9月）は終了済み（バッチ8）。"
+}

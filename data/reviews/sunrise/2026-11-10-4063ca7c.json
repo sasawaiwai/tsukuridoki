@@ -1,0 +1,81 @@
+{
+  "source_url": "https://www.sunrisep.co.jp/event/40anniversary-1/",
+  "printer_id": "sunrise",
+  "content_hash": "sha256:e4bdd6087e178839b2a0e8ee1daa1e7189fa43dd5f45615840ea69aa7e9a11fc",
+  "content_chars": 5247,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:37:49+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "sunrise-anniv-plusone-half",
+      "fair_name": "40周年特別企画：蛍光4色プラスワン表紙半額",
+      "sources": [
+        "https://www.sunrisep.co.jp/event/40anniversary-1/"
+      ],
+      "summary": "オフセット4色カラーの表紙に蛍光インク（ピンク・オレンジ・イエロー・グリーン）を追加する「オフセット プラス・ワン表紙」が通常の半額になる。",
+      "benefit_summary": "蛍光プラスワン表紙が半額",
+      "source_type": "official_fair",
+      "start_date": "2026-06-01",
+      "start_date_text": "2026年6月1日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-30",
+      "end_date_text": "2026年11月30日午前9時",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 50,
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "processes": [
+        "spot_color_printing"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "対象はフルカラー表紙セット・フルカラー表紙小説本セット・オールカラー本セット（表紙オフセット印刷で3000部まで）。A5かB5、表面加工はPPかマット。本文はオフセット・オンデマンドどちらも可。表紙のみの発注は不可。発注書の備考欄に「40周年記念プラスワン半額希望」と書く。表紙早割と併用不可。ゴールド・シルバーは対象外。"
+    },
+    {
+      "fair_id": "sunrise-anniv-omakase-set",
+      "fair_name": "40周年特別企画：おまかせフルカラー表紙セット／おまかせスミ刷り表紙セット",
+      "sources": [
+        "https://www.sunrisep.co.jp/event/40anniversary-1/"
+      ],
+      "summary": "表紙・遊び紙の用紙をサンライズにおまかせする、特別価格のオンデマンドのセット。特殊紙のフルカラー表紙とスミ刷り表紙の2種類。",
+      "benefit_summary": "用紙おまかせの特別価格セット",
+      "source_type": "official_fair",
+      "start_date": "2026-06-01",
+      "start_date_text": "2026年6月1日",
+      "start_date_precision": "day",
+      "end_date": "2026-11-27",
+      "end_date_text": "2026年11月27日午前9時",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "limited_set"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "sizes": [
+        "B5",
+        "A5",
+        "B6",
+        "shinsho",
+        "bunko"
+      ],
+      "min_quantity": 10,
+      "max_quantity": 300,
+      "processes": [
+        "special_paper"
+      ],
+      "conditions_text": "表紙は特殊紙にオンデマンド4色/5色カラーかスミ刷り（表面加工なし）、本文はおまかせの本文用紙にスミ刷り、遊び紙は前のみ1枚、無線綴じ。B5は16〜164P、A5以下は16〜300P。箔押し・表面加工・横綴じなどのオプションは不可（裁ち落とし不要の正方形断裁のみ可）。再版時は初版と用紙が変わる場合がある。締切は月曜午前9時入稿→金曜出荷。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "40周年特別企画の特集ページ。①40%OFFは個別ページで登録。④⑤（アクリル・メモパッド）はグッズのため対象外、⑥⑦⑧は内容・期間を確かめず見送り（バッチ8）。"
+}

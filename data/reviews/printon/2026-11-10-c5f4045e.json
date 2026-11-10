@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-on.jp/doujin/fair/fair_97.htm",
+  "printer_id": "printon",
+  "content_hash": "sha256:cbc4fb9a6e0674518dcfbb06849b768f6e24a43d03b1610baeb2fe1790c85483",
+  "content_chars": 127,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:33:59+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "冬の企画商品のページ。本文は受付期間（2026年10月26日〜2027年2月26日入稿分）だけで、商品の内容は画像のみのため登録しない（見送り、バッチ8）。"
+}

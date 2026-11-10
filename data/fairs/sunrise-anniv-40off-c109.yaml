@@ -1,0 +1,29 @@
+fair_id: sunrise-anniv-40off-c109
+slug: sunrise-anniv-40off-c109
+fair_name: 40周年特別企画40%OFF（超ギガ）コミックマーケット109合わせ
+printer_id: sunrise
+category: dojinshi
+sources:
+  - https://www.sunrisep.co.jp/event/annni-40off/
+  - https://www.sunrisep.co.jp/event/40anniversary-1/
+summary: コミックマーケット109（12/29〜31）合わせの対象セットが40%割引になる。入稿は11月26日午前9時まで。
+benefit_summary: 冬コミ合わせ入稿で40%割引
+source_type: official_fair
+end_date: 2026-11-26
+end_date_text: ～2026年11月26日 午前9時まで
+end_date_precision: day
+deadline_type: event
+event_name: コミックマーケット109
+event_date: 2026-12-29
+benefit_types:
+  - discount
+discount_rate: 40
+specific_sets_only: true
+conditions_text: 対象はフルカラー表紙・特殊紙カラー表紙・色刷り表紙・特殊紙色刷り表紙の各セットと小説本セット、オールカラー本セット、特殊紙オールカラー本セット。常時から早割25の設定がない商品や、早割25が適用されない箇所（色刷りの表紙・オプション・送料など）は対象外。入稿時に希望納品日と入稿日時から自動で判別される。加工オプションを使うと締切が早まる（例：箔押しは＋4営業日）。割引額の上限は22万円（税込）。
+published_at: 2026-11-10
+discovered_at: 2026-11-10
+verified_at: 2026-11-10
+verification_status: verified
+history:
+  - date: 2026-11-10
+    type: published

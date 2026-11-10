@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.marusho-ink.co.jp/info",
+  "printer_id": "marusho",
+  "content_hash": "sha256:1a433ac554263e810457125a67f0c3f96da52c7868b53aa3c3ad396547046de1",
+  "content_chars": 2759,
+  "extractor": "manual",
+  "extracted_at": "2026-11-10T15:32:20+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "お知らせの一覧。締切一覧・受付開始・予約制度などの案内が中心で、フェアは書店割フェア晩秋の記事で登録。支援対象イベントの記事（イベント支援割）と早割は常設の料金の案内のため今回は見送り（バッチ8）。"
+}
