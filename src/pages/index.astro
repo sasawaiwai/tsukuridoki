@@ -1,33 +1,33 @@
 ---
-// トップページ（仕様書40-1、timing-design 4-1）
-// トップ＝フェアを発見する場所。6つの見方のタブ（各一覧ページへのリンク）と、加工・特典から入る
+// トップページ（仕様書40章、timing-design 4-1）
+// トップ＝フェアを発見する場所。6つの見方のタブ（各一覧ページへのリンク）ごとに、加工・特典カテゴリ別の全件を眺められる
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import ViewTabs, { type ViewTab } from '../components/ViewTabs.astro';
-import PopularProcesses from '../components/PopularProcesses.astro';
 import { SITE } from '../lib/site.ts';
-import { LIST_PAGES, MORE_LABELS, PRINTERS_HREF, TAB_VIEWS, tabFragmentHref } from '../lib/nav.ts';
+import { FAIRS_SECTION_ID, LIST_PAGES, PRINTERS_HREF, TAB_VIEWS, tabFragmentHref } from '../lib/nav.ts';
 import { cardBuilder } from '../lib/cards.ts';
-import { listPages, TAB_SIZE } from '../lib/lists.ts';
+import { groupByCategory } from '../lib/categories.ts';
+import { listPages } from '../lib/lists.ts';
 import { todayJST } from '../lib/period.ts';
 
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
+const pages = listPages(today);
+const titleOf = (key: string) => pages.find((p) => p.slug === key)!.title;
 
-const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), moreLabel: MORE_LABELS[key] }));
-const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs);
+const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), title: titleOf(key) }));
+const firstFairs = pages.find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs);
 ---
 
 <BaseLayout dated>
   <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">
-    <PopularProcesses id="popular-processes" compact />
-
     <section>
-      <SectionHeader title="フェアを見る" />
-      <ViewTabs tabs={tabs} cards={firstFairs.slice(0, TAB_SIZE).map(toCard)} total={firstFairs.length} />
+      <SectionHeader id={FAIRS_SECTION_ID} title="フェアを見る" />
+      <ViewTabs tabs={tabs} groups={groupByCategory(firstFairs, toCard)} total={firstFairs.length} />
     </section>
 
     <section class="about">
@@ -38,7 +38,7 @@ const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select
         「突発本だけど、何かひと工夫したい！」
       </p>
       <p>そんな同人作家さんのために、各印刷所のフェアやキャンペーン情報をまとめました。</p>
-      <p>今開催中のフェアから、来月・年内に使えるフェア、いつでも使える常設の割引、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
+      <p>開催中のフェアから、来月・年内に使えるフェア、いつでも使える常設の割引、箔押し・特殊紙・RGB印刷などの加工別フェアまで。</p>
       <p>眺めているだけで、次の本を作りたくなる。</p>
       <p class="about__name"><strong>{SITE.name}</strong>｜{SITE.tagline}</p>
     </section>
@@ -54,9 +54,9 @@ const firstFairs = listPages(today).find((p) => p.slug === TAB_VIEWS[0])!.select
     gap: var(--space-7);
   }
 
-  /* 加工・特典から探すは補助の導線なので、すぐ下の「フェアを見る」との間を詰める */
-  .top > :global(.popular) {
-    margin-bottom: calc(var(--space-4) * -1);
+  /* 「タブ・カテゴリへ」で戻ったとき、見出しが画面の端にくっつかないように */
+  .top :global(#fairs) {
+    scroll-margin-top: var(--space-4);
   }
 
   .about {

@@ -1,0 +1,237 @@
+---
+// トップの「加工・特典カテゴリ別の一覧」（仕様書40-2）。カードは使わず、1件を1行（長いときは折り返す）で全件出す。
+// 上にカテゴリへの移動（ジャンプ）、カテゴリごとに見出し（左の色線・件数・横の罫線）と行を並べる。
+// 行が数百になるので、スタイルは :global でまとめて各要素に属性を付けない（HTMLを軽くする）
+import type { CategoryGroup } from '../lib/categories.ts';
+import type { CardModel } from '../lib/fair-display.ts';
+import StatusLabel from './StatusLabel.astro';
+
+interface Props {
+  groups: CategoryGroup<CardModel>[];
+  emptyText?: string;
+}
+
+const { groups, emptyText = '今は該当するフェアがありません。' } = Astro.props;
+const anchor = (key: string) => `cat-${key}`;
+---
+
+{
+  groups.length === 0 ? (
+    <p class="fair-list__empty">{emptyText}</p>
+  ) : (
+    <div class="fair-list" data-fair-list>
+      <nav class="fair-list__jump" aria-label="カテゴリへ移動">
+        <ul>
+          {groups.map(({ category, items }) => (
+            <li>
+              <a href={`#${anchor(category.key)}`}>
+                {category.label}
+                <span class="fair-list__jump-count">
+                  {items.length}
+                  <span class="visually-hidden">件</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {groups.map(({ category, items }) => (
+        <section class="fair-list__cat" data-category={category.color}>
+          <h3 class="fair-list__heading" id={anchor(category.key)}>
+            <span>{category.label}</span>
+            <span class="fair-list__count">{items.length}件</span>
+          </h3>
+          <ul class="fair-list__rows">
+            {items.map((card) => (
+              <li class="fair-row">
+                <span class="fair-row__printer">{card.printer}</span>
+                <span class="fair-row__main">
+                  <a class="fair-row__name" href={card.href}>
+                    {card.name}
+                  </a>
+                  {card.benefit && <span class="fair-row__benefit">{card.benefit}</span>}
+                </span>
+                <span class="fair-row__period">
+                  {card.deadline}
+                  {card.label && <StatusLabel {...card.label} />}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  )
+}
+
+<style is:global>
+  /* カテゴリへの移動・「タブ・カテゴリへ」の移動をなめらかに（動きを減らす設定のときはしない） */
+  @media (prefers-reduced-motion: no-preference) {
+    html:has([data-fair-list]) {
+      scroll-behavior: smooth;
+    }
+  }
+
+  .fair-list__empty {
+    color: var(--color-text-muted);
+  }
+
+  /* ---- カテゴリへの移動：テキストリンクを折り返して並べる ---- */
+  .fair-list__jump ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .fair-list__jump a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    min-height: 44px;
+    color: var(--color-text);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+  }
+
+  .fair-list__jump a:hover,
+  .fair-list__jump a:focus-visible {
+    color: var(--color-primary-strong);
+    text-decoration: underline;
+  }
+
+  .fair-list__jump-count {
+    color: var(--color-text-muted);
+    font-size: var(--fs-xs);
+  }
+
+  /* ---- カテゴリ：印刷見本帳の仕切りのような見出し ---- */
+  /*
+   * content-visibility: auto は使わない（2026-11-12 確認）。画面外のカテゴリの高さを仮の値で見積もるため、
+   * カテゴリへの移動が数千pxずれて止まる。要素数は2,000程度で、使わなくても表示は軽い
+   */
+  .fair-list__cat {
+    margin-top: var(--space-7);
+  }
+
+  .fair-list__heading {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    padding-left: var(--space-3);
+    border-left: 4px solid var(--category-color);
+    font-size: var(--fs-lg);
+    line-height: 1.4;
+    scroll-margin-top: var(--space-4);
+  }
+
+  .fair-list__count {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+    font-weight: 400;
+  }
+
+  /* 件数の右に、横の細い罫線 */
+  .fair-list__heading::after {
+    content: '';
+    flex: 1;
+    align-self: center;
+    min-width: var(--space-4);
+    border-top: 1px solid var(--color-border-strong);
+  }
+
+  .fair-list__rows {
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* ---- 1件の行。スマホ：印刷所 → フェア名 → 概要 → 期間の順に縦に並べる ---- */
+  .fair-row {
+    position: relative;
+    display: grid;
+    gap: 2px;
+    padding: var(--space-3) var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .fair-row:hover {
+    background: var(--color-surface-sunken);
+  }
+
+  .fair-row__printer {
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+  }
+
+  .fair-row__main {
+    display: grid;
+    gap: 2px;
+  }
+
+  .fair-row__name {
+    color: var(--color-text);
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  /* 行全体をクリックできるようにする */
+  .fair-row__name::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .fair-row__name:hover {
+    color: var(--color-primary-strong);
+  }
+
+  .fair-row__name:focus-visible {
+    outline: none;
+  }
+
+  .fair-row__name:focus-visible::after {
+    outline: 2px solid var(--color-primary-strong);
+    outline-offset: -2px;
+  }
+
+  .fair-row__benefit {
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+  }
+
+  .fair-row__period {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1) var(--space-2);
+    margin-top: var(--space-1);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+
+  /* タブレット・PC：印刷所｜フェア名と概要｜期間 の3つの列 */
+  @media (min-width: 768px) {
+    .fair-row {
+      grid-template-columns: 9em minmax(0, 1fr) 13em;
+      gap: var(--space-4);
+      align-items: baseline;
+    }
+
+    .fair-row__period {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fair-row {
+      grid-template-columns: 11em minmax(0, 1fr) 16em;
+      gap: var(--space-5);
+    }
+  }
+</style>

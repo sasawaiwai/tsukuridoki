@@ -69,7 +69,10 @@ test('状態：開始前・開始当日・終了当日・終了翌日・不明',
 });
 
 const VIEWS: ViewKey[] = ['new', 'now', 'this-month', 'next-month', 'this-year', 'ongoing'];
-/** 6つの見方のうち、出るものだけを返す */
+/**
+ * 6つの見方のうち、出るものだけを返す。
+ * テスト用のフェアは掲載日が 2026-01-01（30日より前）なので「新着」には出ない。新着は下の専用のテストで確かめる
+ */
 const shownIn = (f: Fair, today: string) => VIEWS.filter((v) => inView(f, v, today));
 
 test('6つの見方：timing-design 3-2 の例（今日＝10月6日）', () => {
@@ -78,9 +81,9 @@ test('6つの見方：timing-design 3-2 の例（今日＝10月6日）', () => {
   const wabon = fair({ start_date: '2026-10-01', end_date: '2027-02-26' });
   const anniversary = fair({ timing_type: 'specific_dates', submission_dates: [{ date: '2026-10-15' }, { date: '2026-11-19' }] });
   const reprint = fair({ timing_type: 'ongoing' });
-  assert.deepEqual(shownIn(seeThrough, today), ['new', 'now', 'this-month', 'this-year']);
-  assert.deepEqual(shownIn(wabon, today), ['new', 'now', 'this-month', 'next-month', 'this-year']);
-  assert.deepEqual(shownIn(anniversary, today), ['new', 'this-month', 'next-month', 'this-year']);
+  assert.deepEqual(shownIn(seeThrough, today), ['now', 'this-month', 'this-year']);
+  assert.deepEqual(shownIn(wabon, today), ['now', 'this-month', 'next-month', 'this-year']);
+  assert.deepEqual(shownIn(anniversary, today), ['this-month', 'next-month', 'this-year']);
   // 通年・常設：新着以外のすべて（仕様書57章。並び順は lists で後ろに回す）
   assert.deepEqual(shownIn(reprint, today), ['now', 'this-month', 'next-month', 'this-year', 'ongoing']);
   // 定期開催も同じ
@@ -91,11 +94,29 @@ test('6つの見方：timing-design 3-2 の例（今日＝10月6日）', () => {
   assert.ok(!inView(anniversary, 'this-month', '2026-10-16')); // 10月にはもう入稿日がない
 });
 
+test('新着：掲載日を1日目として30日目まで（NEWラベルの7日とは別。仕様書36章）', () => {
+  const f = fair({ start_date: '2026-10-01', end_date: '2026-12-31', published_at: '2026-10-01' });
+  assert.ok(inView(f, 'new', '2026-10-01')); // 1日目
+  assert.ok(inView(f, 'new', '2026-10-30')); // 30日目
+  assert.ok(!inView(f, 'new', '2026-10-31')); // 31日目
+  // NEWラベルは7日目まで（新着に入っていても、8日目からはNEWを付けない）
+  assert.equal(isNew(f, '2026-10-07'), true);
+  assert.equal(isNew(f, '2026-10-08'), false);
+  assert.ok(inView(f, 'new', '2026-10-08'));
+  // 新着から外れても、ほかの見方には今までどおり出る
+  assert.deepEqual(shownIn(f, '2026-10-31'), ['now', 'this-month', 'next-month', 'this-year']);
+  // 掲載日が先の日付（予約投稿の扱いはない）・終了済み・通年常設・定期開催は出さない
+  assert.ok(!inView(f, 'new', '2026-09-30'));
+  assert.ok(!inView(fair({ end_date: '2026-10-05', published_at: '2026-10-01' }), 'new', '2026-10-06'));
+  assert.ok(!inView(fair({ timing_type: 'ongoing', published_at: '2026-10-01' }), 'new', '2026-10-02'));
+  assert.ok(!inView(fair({ timing_type: 'recurring', published_at: '2026-10-01' }), 'new', '2026-10-02'));
+});
+
 test('今月・年内は「これから」だけを見る（月のはじめに終わったものは出さない）', () => {
   const endedEarly = fair({ start_date: '2026-09-01', end_date: '2026-10-03' });
   assert.deepEqual(shownIn(endedEarly, '2026-10-06'), []);
   const endsToday = fair({ start_date: '2026-09-01', end_date: '2026-10-06' });
-  assert.deepEqual(shownIn(endsToday, '2026-10-06'), ['new', 'now', 'this-month', 'this-year']);
+  assert.deepEqual(shownIn(endsToday, '2026-10-06'), ['now', 'this-month', 'this-year']);
 });
 
 test('来月：来月1日〜末日と重なれば出る。開始前でも来月に始まれば出る', () => {
@@ -110,11 +131,11 @@ test('来月：来月1日〜末日と重なれば出る。開始前でも来月�
 
 test('終了日不明（なくなり次第終了）：今開催中・今月・年内には出し、来月には出さない', () => {
   const today = '2026-10-06';
-  assert.deepEqual(shownIn(fair({ start_date: '2026-09-01', end_date_text: 'なくなり次第終了' }), today), ['new', 'now', 'this-month', 'this-year']);
+  assert.deepEqual(shownIn(fair({ start_date: '2026-09-01', end_date_text: 'なくなり次第終了' }), today), ['now', 'this-month', 'this-year']);
   // 来月に始まる終了日不明のフェアは、開始日の来月には出る
-  assert.deepEqual(shownIn(fair({ start_date: '2026-11-10' }), today), ['new', 'next-month', 'this-year']);
+  assert.deepEqual(shownIn(fair({ start_date: '2026-11-10' }), today), ['next-month', 'this-year']);
   // 開始日も終了日も書かれていない（公式で開催中と確認したもの）も、終了日不明と同じ扱い（仕様書10章）
-  assert.deepEqual(shownIn(fair({}), today), ['new', 'now', 'this-month', 'this-year']);
+  assert.deepEqual(shownIn(fair({}), today), ['now', 'this-month', 'this-year']);
 });
 
 test('年内：今日から12月31日までの間に少なくとも1日使えるか', () => {

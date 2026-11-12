@@ -9,6 +9,8 @@ export type FairStatus = 'upcoming' | 'active' | 'expired' | 'unknown';
 const DAY_MS = 24 * 60 * 60 * 1000;
 const BADGE_DAYS = 7;
 const ENDING_SOON_DAYS = 7;
+/** 「新着」の見方に入る日数（掲載日を1日目として30日目まで）。NEWラベルの7日（BADGE_DAYS）とは別の条件 */
+export const NEW_LIST_DAYS = 30;
 
 /** 日本時間の今日（YYYY-MM-DD） */
 export function todayJST(now: Date = new Date()): DateString {
@@ -173,12 +175,15 @@ function viewRange(view: 'now' | 'this-month' | 'next-month' | 'this-year', toda
 
 /**
  * その見方で、最初に使える日（並び順に使う）。対象外なら null。
- * 新着・通年・常設タブは日付で選ばないので、対象なら今日を返す。
- * 通年・常設・定期開催は、時期の見方（今開催中・今月・来月・年内）すべてに入る（いつでも使えるため。仕様書57章）。新着には入れない
+ * 新着・通年・常設タブは使える日で選ばないので、対象なら今日を返す。
+ * 通年・常設・定期開催は、時期の見方（開催中・今月・来月・年内）すべてに入る（いつでも使えるため。仕様書57章）。新着には入れない
  */
 export function viewDate(fair: Fair, view: ViewKey, today: DateString): DateString | null {
-  // 新着には、いつでも使えるもの（通年・常設、定期開催）は出さない（仕様書57章）
-  if (view === 'new') return isAlwaysAvailable(fair) || getStatus(fair, today) === 'expired' ? null : today;
+  // 新着：掲載から30日以内で、終了していないもの。いつでも使えるもの（通年・常設、定期開催）は出さない（仕様書36・57章）
+  if (view === 'new') {
+    if (isAlwaysAvailable(fair) || getStatus(fair, today) === 'expired') return null;
+    return withinDays(fair.published_at, today, NEW_LIST_DAYS) ? today : null;
+  }
   if (view === 'ongoing') return isAlwaysAvailable(fair) ? today : null;
   const [a, b] = viewRange(view, today);
   return firstUsableBetween(fair, today, a, b);
@@ -223,10 +228,15 @@ export function endingLabel(fair: Fair, today: DateString): string | null {
   return `あと${days}日`;
 }
 
-function withinBadgeDays(date: DateString | null | undefined, today: DateString): boolean {
+/** date を1日目として n 日目までか */
+function withinDays(date: DateString | null | undefined, today: DateString, n: number): boolean {
   if (!date) return false;
   const days = diffDays(date, today);
-  return days >= 0 && days < BADGE_DAYS;
+  return days >= 0 && days < n;
+}
+
+function withinBadgeDays(date: DateString | null | undefined, today: DateString): boolean {
+  return withinDays(date, today, BADGE_DAYS);
 }
 
 /** NEW表示（36章）：掲載日を1日目として7日目まで */

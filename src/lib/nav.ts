@@ -24,7 +24,7 @@ export const FOOTER_LINKS: NavLink[] = [
 /** 一覧ページ（6つの見方と更新。timing-design 3章）。トップのタブもこの順に並べる */
 export const LIST_PAGES = {
   new: { label: '新着', href: '/dojin/new/' },
-  now: { label: '今開催中', href: '/dojin/now/' },
+  now: { label: '開催中', href: '/dojin/now/' },
   'this-month': { label: '今月使える', href: '/dojin/this-month/' },
   'next-month': { label: '来月使える', href: '/dojin/next-month/' },
   'this-year': { label: '年内使える', href: '/dojin/this-year/' },
@@ -32,26 +32,16 @@ export const LIST_PAGES = {
   updated: { label: '更新されたフェア', href: '/dojin/updated/' },
 } satisfies Record<string, NavLink>;
 
-/** タブの下の「もっと見る」に出す名前 */
-export const MORE_LABELS: Record<string, string> = {
-  new: '新着フェア',
-  now: '今開催中のフェア',
-  'this-month': '今月使えるフェア',
-  'next-month': '来月使えるフェア',
-  'this-year': '年内に使えるフェア',
-  ongoing: '通年・常設の割引',
-};
-
 /** トップのタブ（この順に並べる。最初が初期表示） */
-export const TAB_VIEWS = ['new', 'now', 'this-month', 'next-month', 'this-year', 'ongoing'] as const;
+export const TAB_VIEWS = ['now', 'new', 'this-month', 'next-month', 'this-year', 'ongoing'] as const;
 
-/** トップのタブ用の部品ページ（一覧と同じデータ・同じカードから作る。sitemap・検索エンジンの対象外） */
+/** トップの「フェアを見る」（タブとカテゴリへの移動の上）。一覧の「タブ・カテゴリへ戻る」の戻り先 */
+export const FAIRS_SECTION_ID = 'fairs';
+
+/** トップのタブ用の部品ページ（一覧と同じ見方の定義から作る。sitemap・検索エンジンの対象外） */
 export const tabFragmentHref = (view: string) => `/dojin/tab/${view}/`;
 
 export const PRINTERS_HREF = '/dojin/printer/';
-
-/** トップの「加工・特典から探す」へのリンク（時期別導線の「加工から探す」から飛ぶ） */
-export const POPULAR_PROCESS_ANCHOR = '#popular-processes';
 
 /**
  * 加工・特典から探す。

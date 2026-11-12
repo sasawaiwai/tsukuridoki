@@ -1,7 +1,7 @@
 // 一覧ページの定義（仕様書10〜12章・14章・36〜39章）
 
 import type { DateString, Fair, SiteData } from './types.ts';
-import { addMonths, deadlineDate, effectiveUntil, inView, timingRank, viewDate, type ViewKey } from './period.ts';
+import { addMonths, deadlineDate, effectiveUntil, inView, NEW_LIST_DAYS, timingRank, viewDate, type ViewKey } from './period.ts';
 import { colorValues, isExpired } from './search.ts';
 import { BENEFIT_LABELS, COLOR_MODE_LABELS, PRINTING_METHOD_LABELS, SIZE_LABELS } from './labels.ts';
 
@@ -29,8 +29,6 @@ export interface ListPage {
 
 /** 一覧ページの1ページあたりの件数（PCの3列・4列で割り切れる。timing-design 4-2） */
 export const LIST_PAGE_SIZE = 24;
-/** トップのタブに出す件数 */
-export const TAB_SIZE = 10;
 
 /** 並び順のグループ（①日付あり → ②定期開催 → ③通年・常設。仕様書57章） */
 const byRank = (a: Fair, b: Fair) => timingRank(a) - timingRank(b);
@@ -47,7 +45,7 @@ function byViewDate(view: ViewKey, today: DateString) {
 /** グループごとに、掲載日の新しい順（印刷所別・属性別の一覧でも使う） */
 export const byRankThenPublished = (a: Fair, b: Fair) => byRank(a, b) || byPublishedDesc(a, b);
 
-/** 6つの見方（新着・今開催中・今月・来月・年内・通年常設）と、更新されたフェアの一覧（timing-design 3章） */
+/** 6つの見方（新着・開催中・今月・来月・年内・通年常設）と、更新されたフェアの一覧（timing-design 3章） */
 export function listPages(today: DateString): ListPage[] {
   const month = Number(today.slice(5, 7));
   const nextMonth = Number(addMonths(`${today.slice(0, 7)}-01`, 1).slice(5, 7));
@@ -63,10 +61,10 @@ export function listPages(today: DateString): ListPage[] {
     {
       slug: 'new',
       title: '新着フェア',
-      description: 'ツクリドキ！に新しく掲載されたフェアです。これから始まるフェアも含みます。掲載日の新しい順に並べています（通年・常設の割引は「通年・常設」でご覧ください）。',
+      description: `ツクリドキ！に掲載してから${NEW_LIST_DAYS}日以内のフェアです。これから始まるフェアも含みます。掲載日の新しい順に並べています（通年・常設の割引は「通年・常設」でご覧ください）。`,
       select: (fairs) => fairs.filter((f) => inView(f, 'new', today)).sort(byPublishedDesc),
     },
-    view('now', '今開催中のフェア', '今日使えるフェアです。終わりが近い順に並べています。'),
+    view('now', '開催中のフェア','今日使えるフェアです。終わりが近い順に並べています。'),
     view('this-month', `今月（${month}月）使えるフェア`, `今日から${month}月末までの間に、使える日があるフェアです。`),
     view('next-month', `来月（${nextMonth}月）使えるフェア`, `${nextMonth}月中に使える日があるフェアです。終了日が決まっていないフェア（なくなり次第終了など）は含みません。`),
     view('this-year', '年内に使えるフェア', `今日から${year}年12月31日までの間に、少なくとも1日使えるフェアです。`),

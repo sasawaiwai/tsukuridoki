@@ -9,7 +9,9 @@ import Button from '../../../components/Button.astro';
 import PopularProcesses from '../../../components/PopularProcesses.astro';
 import ViewTabs, { type ViewTab } from '../../../components/ViewTabs.astro';
 import Pagination from '../../../components/Pagination.astro';
-import { LIST_PAGES, MORE_LABELS, TAB_VIEWS, tabFragmentHref } from '../../../lib/nav.ts';
+import { LIST_PAGES, TAB_VIEWS, tabFragmentHref } from '../../../lib/nav.ts';
+import { groupByCategory } from '../../../lib/categories.ts';
+import { listPages } from '../../../lib/lists.ts';
 import ImagePlaceholder from '../../../components/ImagePlaceholder.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
 import { todayJST } from '../../../lib/period.ts';
@@ -18,7 +20,9 @@ import type { CardModel } from '../../../lib/fair-display.ts';
 const today = todayJST();
 const { data, toCard } = cardBuilder(today);
 const sampleCards = data.fairs.map(toCard);
-const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), moreLabel: MORE_LABELS[key] }));
+const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].label, href: LIST_PAGES[key].href, fragment: tabFragmentHref(key), title: listPages(today).find((p) => p.slug === key)!.title }));
+// タブの見本は、カテゴリ別の一覧のうち先頭の2カテゴリ・各3件だけ
+const sampleGroups = groupByCategory(data.fairs, toCard).slice(0, 2).map((g) => ({ ...g, items: g.items.slice(0, 3) }));
 // ページ送りの見本（3ページ中の2ページ目）
 const samplePage = {
   data: [],
@@ -176,8 +180,8 @@ const categories = [
     </section>
 
     <section>
-      <SectionHeader title="見方のタブ（トップ）" lead="タブは一覧ページへのリンク。JavaScript があればその場で切り替える" />
-      <ViewTabs tabs={tabs} cards={sampleCards.slice(0, 3)} total={sampleCards.length} />
+      <SectionHeader title="見方のタブとカテゴリ別の一覧（トップ）" lead="タブは一覧ページへのリンク。JavaScript があればその場で切り替える。一覧は加工・特典カテゴリ別の全件（見本は一部だけ）" />
+      <ViewTabs tabs={tabs} groups={sampleGroups} total={data.fairs.length} />
     </section>
 
     <section>

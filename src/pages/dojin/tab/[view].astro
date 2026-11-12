@@ -1,10 +1,11 @@
 ---
-// トップのタブ用の部品（timing-design 4-1）。一覧ページと同じ見方の定義・同じカード部品から、最初の10件だけを作る。
+// トップのタブ用の部品（仕様書40-2、timing-design 4-1）。一覧ページと同じ見方の定義から、そのタブの全件をカテゴリ別に作る。
 // トップの JavaScript がこのページを読み込み、[data-tab-content] の中身を差し込む（完成した一覧ページからは抜き出さない）。
 // 単体で見るページではないのでレイアウトは付けない。sitemap.xml の対象外（astro.config.mjs）
-import FairGrid from '../../../components/FairGrid.astro';
+import FairList from '../../../components/FairList.astro';
 import { cardBuilder } from '../../../lib/cards.ts';
-import { listPages, TAB_SIZE } from '../../../lib/lists.ts';
+import { groupByCategory } from '../../../lib/categories.ts';
+import { listPages } from '../../../lib/lists.ts';
 import { todayJST } from '../../../lib/period.ts';
 import { TAB_VIEWS } from '../../../lib/nav.ts';
 
@@ -19,5 +20,5 @@ const fairs = list.select(data.fairs);
 ---
 
 <div data-tab-content data-total={fairs.length}>
-  <FairGrid cards={fairs.slice(0, TAB_SIZE).map(toCard)} emptyText="今は該当するフェアがありません。" />
+  <FairList groups={groupByCategory(fairs, toCard)} />
 </div>
