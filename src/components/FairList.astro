@@ -25,7 +25,7 @@ const anchor = (key: string) => `cat-${key}`;
           {groups.map(({ category, items }) => (
             <li>
               <a href={`#${anchor(category.key)}`}>
-                {category.label}
+                <span class="fair-list__jump-label">{category.label}</span>
                 <span class="fair-list__jump-count">
                   {items.length}
                   <span class="visually-hidden">件</span>
@@ -45,17 +45,17 @@ const anchor = (key: string) => `cat-${key}`;
           <ul class="fair-list__rows">
             {items.map((card) => (
               <li class="fair-row">
-                <span class="fair-row__printer">{card.printer}</span>
+                <span class="fair-row__period">
+                  {card.deadline}
+                  {card.label && <StatusLabel {...card.label} />}
+                </span>
                 <span class="fair-row__main">
                   <a class="fair-row__name" href={card.href}>
                     {card.name}
                   </a>
                   {card.benefit && <span class="fair-row__benefit">{card.benefit}</span>}
                 </span>
-                <span class="fair-row__period">
-                  {card.deadline}
-                  {card.label && <StatusLabel {...card.label} />}
-                </span>
+                <span class="fair-row__printer">{card.printer}</span>
               </li>
             ))}
           </ul>
@@ -100,7 +100,17 @@ const anchor = (key: string) => `cat-${key}`;
   .fair-list__jump a:hover,
   .fair-list__jump a:focus-visible {
     color: var(--color-primary-strong);
+  }
+
+  /*
+   * ホバー・キーボードのフォーカスで、カテゴリ名にだけ下線を出す（件数には出さない）。
+   * 下線は高さを取らないので、行の位置はずれない。フォーカスの枠（:focus-visible の outline）はそのまま
+   */
+  .fair-list__jump a:hover .fair-list__jump-label,
+  .fair-list__jump a:focus-visible .fair-list__jump-label {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
   }
 
   .fair-list__jump-count {
@@ -150,7 +160,18 @@ const anchor = (key: string) => `cat-${key}`;
     list-style: none;
   }
 
-  /* ---- 1件の行。スマホ：印刷所 → フェア名 → 概要 → 期間の順に縦に並べる ---- */
+  /*
+   * フェア名の色（ネイビー、2026-11-13 決定）。黒・グレーの多い一覧で、フェア名だけを目立たせる。
+   * 黒に近すぎない青みで、白・生成り・ホバー時の背景（#f4eee6）のどれでもコントラスト比8以上
+   */
+  .fair-list {
+    --fair-name-color: #294866;
+  }
+
+  /*
+   * ---- 1件の行。期間 → フェア名・概要 → 印刷所 の順 ----
+   * 期限が近い順に並ぶので、期間を左（スマホは上）に置く。印刷所は行ごとに変わるので右（スマホは下）に控えめに
+   */
   .fair-row {
     position: relative;
     display: grid;
@@ -174,7 +195,7 @@ const anchor = (key: string) => `cat-${key}`;
   }
 
   .fair-row__name {
-    color: var(--color-text);
+    color: var(--fair-name-color);
     font-weight: 700;
     line-height: 1.5;
     text-decoration: none;
@@ -187,8 +208,10 @@ const anchor = (key: string) => `cat-${key}`;
     inset: 0;
   }
 
+  /* 色はそのまま、下線でホバーを示す */
   .fair-row__name:hover {
-    color: var(--color-primary-strong);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
   }
 
   .fair-row__name:focus-visible {
@@ -210,27 +233,35 @@ const anchor = (key: string) => `cat-${key}`;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-1) var(--space-2);
-    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
     font-size: var(--fs-sm);
     line-height: 1.5;
   }
 
-  /* タブレット・PC：印刷所｜フェア名と概要｜期間 の3つの列 */
+  .fair-row__printer {
+    margin-top: var(--space-1);
+  }
+
+  /*
+   * タブレット・PC：期間｜フェア名と概要｜印刷所 の3つの列。
+   * 期間は長い文（40字ほど）もあるので、列の幅で折り返す。ラベルは期間の後ろに続けて置く
+   */
   @media (min-width: 768px) {
     .fair-row {
-      grid-template-columns: 9em minmax(0, 1fr) 13em;
+      grid-template-columns: 12em minmax(0, 1fr) 8em;
       gap: var(--space-4);
       align-items: baseline;
     }
 
-    .fair-row__period {
-      margin-top: 0;
+    .fair-row__period,
+    .fair-row__printer {
+      margin: 0;
     }
   }
 
   @media (min-width: 1024px) {
     .fair-row {
-      grid-template-columns: 11em minmax(0, 1fr) 16em;
+      grid-template-columns: 14em minmax(0, 1fr) 10em;
       gap: var(--space-5);
     }
   }
