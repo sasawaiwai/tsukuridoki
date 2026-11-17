@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.printpac.co.jp/contents/lineup/doujinshi/index.html",
+  "printer_id": "printpac",
+  "content_hash": "sha256:76cbefc4d2ab7e6d1034259226c645882bca8263867a07356be07dbac0b952c8",
+  "content_chars": 21807,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:33+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

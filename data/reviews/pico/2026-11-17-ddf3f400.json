@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/hakuprint-yuuryoushi.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:6058831761c5dbda3e75f541a4a36f7d10164880a0fd067a53aeb70e15addac0",
+  "content_chars": 4325,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:48:24+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "箔プリント有料紙の案内。有料用紙の案内のため対象外。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://pentaro.jp/",
+  "printer_id": "pentaro",
+  "content_hash": "sha256:cac303e1830252505f1cb4df18dfe5f2a8c65075a63e311321d32e4de277019c",
+  "content_chars": 5089,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:51:48+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

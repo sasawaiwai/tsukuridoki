@@ -1,0 +1,15 @@
+{
+  "source_url": "https://otaclub.jp/",
+  "printer_id": "otaclub",
+  "content_hash": "sha256:9098e9cca4d44c74b61d57a0da892b73b39c21968e06cabd619c15f66374d015",
+  "content_chars": 7477,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:51:41+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

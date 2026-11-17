@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:ad8d765fff1f5dd7609bb7e4ee14027e536c9f001183b75b018337154ae902bc",
+  "content_chars": 4182,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:45:59+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。各キャンペーンは個別ページで確認。"
+}

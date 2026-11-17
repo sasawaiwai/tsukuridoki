@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/schedule/event202610.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:edbac6e949090b812158e700ae646c7b4bee5beec3330b7b1336b1d4dc0ac4ec",
+  "content_chars": 5856,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:45:42+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "イベントの締切スケジュールのページ。早割は登録済みの早期割引で扱う。"
+}

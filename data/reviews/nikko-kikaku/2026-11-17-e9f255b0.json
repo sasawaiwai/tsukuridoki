@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-8p",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:f8968b5879cb7978925e9116671928c0a7907f525854bc7c0f58525174d6bf4b",
+  "content_chars": 1822,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:44:28+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-custom-8p",
+      "fair_name": "ハチペフェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-8p"
+      ],
+      "summary": "8ページの小冊子を決まった料金で作れるオンデマンドのセット。表紙と本文に同じ用紙を使い（変更も可）、表2・3を含む8ページすべてに印刷できる。",
+      "benefit_summary": "表2・3も印刷できる8ページの小冊子セット",
+      "source_type": "official_fair",
+      "conditions_text": "インクはオンデマンドスミ刷りのみ。一部の用紙はA5限定・在庫限り（第二希望を書く）。変形サイズは不可。料金はA5・B5共通で、部数により異なる（公式の料金表で確認）。コミケを除くピックアップイベントは送料無料。完全前金制（銀行振込のみ）。",
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "min_pages": 8,
+      "max_pages": 8
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：内容に変更なし。変化はAkaboo投票引換券の条件（5,000円以上、11/9入稿分〜）の追記。"
+}

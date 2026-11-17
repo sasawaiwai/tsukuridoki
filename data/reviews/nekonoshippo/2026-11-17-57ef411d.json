@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/info/2026_cal_autumn.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:73e1fa50de22933ef14761bcae797316d8730edd9528ec25e94300f22b13b0ed",
+  "content_chars": 1719,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:46:04+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "秋のカレンダーキャンペーン（カレンダーの印刷）。グッズのみのため対象外。"
+}

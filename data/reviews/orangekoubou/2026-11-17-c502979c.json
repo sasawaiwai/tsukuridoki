@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/limited_fair.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:d40c72c899c1237c9cb34290ab6039bbf50bb7acade226130756c21fcc9ee812",
+  "content_chars": 1681,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:58+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "期間限定フェアの一覧。各フェアは個別ページで確認（2026-11-17にこみトレ49・1冊送料無料を新規登録）。"
+}

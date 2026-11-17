@@ -1,0 +1,15 @@
+{
+  "source_url": "https://booknext.ink/",
+  "printer_id": "booknext",
+  "content_hash": "sha256:81adb10479c2f894440c7b06bf89a080350ea345b7c2aca38f1892d1e38cf72b",
+  "content_chars": 2474,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:51:16+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

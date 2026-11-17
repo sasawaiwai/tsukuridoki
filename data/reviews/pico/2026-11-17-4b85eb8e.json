@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/service/setoption/cover/004.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:65c17ba47b695a2aeeea9ae883c71a248a53adaa6d93d6d745caf5b02990e3ea",
+  "content_chars": 6444,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:48:46+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "箔押し・浮き出しサービスの通常のオプションのページ。期間・特典の記載なし。"
+}

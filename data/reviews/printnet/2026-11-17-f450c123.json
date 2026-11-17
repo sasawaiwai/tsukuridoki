@@ -1,0 +1,15 @@
+{
+  "source_url": "https://odahara.jp/doujinshi/",
+  "printer_id": "printnet",
+  "content_hash": "sha256:0af2a0e1115233b43f63614584407772a052ed068ae0d5b0ee58c44aa3cebd19",
+  "content_chars": 5602,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:19+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

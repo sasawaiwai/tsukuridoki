@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/service/setoption/binding/020.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:dd5bb233f3c0f04892e9bc812736b125f9161a1556f8a1fb33dd46647820bed1",
+  "content_chars": 4925,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:47:22+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "幅広オビフェア：名前は「フェア」だが、オビの仕様と印刷料金の表（画像）だけで期間・特典の記載なし。通常の有料オプションとして対象外。"
+}

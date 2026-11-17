@@ -1,0 +1,15 @@
+{
+  "source_url": "https://yumekoubou-m.net/",
+  "printer_id": "yumekoubou",
+  "content_hash": "sha256:02b454cb11b31eea7fb669f81bbf81ff857050ead860bc716290e2703e4efbda",
+  "content_chars": 2853,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:54+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

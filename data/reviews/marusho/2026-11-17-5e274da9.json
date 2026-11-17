@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.marusho-ink.co.jp/info",
+  "printer_id": "marusho",
+  "content_hash": "sha256:e46dd01ebfc93504499de5cf5304f5e43e49f7a13aa9a2d46c0eb4e3ee4e5816",
+  "content_chars": 2828,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:51:35+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

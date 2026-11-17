@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.print-on.jp/doujin/doujin_index.htm",
+  "printer_id": "printon",
+  "content_hash": "sha256:1ae3305153cb801bed3e949716bc5c7d8f105dc5052a9911e70d5e4a8d12170d",
+  "content_chars": 13494,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:25+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

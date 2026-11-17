@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:ddda4d0bdf97abb9161dbacf14811a975bc8f6ba80d974e410da30761c86f907",
+  "content_chars": 1704,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:44:10+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせ）。各フェアは個別ページで確認。"
+}

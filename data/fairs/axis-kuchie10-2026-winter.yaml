@@ -1,0 +1,30 @@
+fair_id: axis-kuchie10-2026-winter
+slug: axis-kuchie10-2026-winter
+fair_name: 口絵1部10円フェア（DOZEN ROSE FES 2026・コミックマーケット109）
+printer_id: axis
+category: dojinshi
+sources:
+  - https://www.axis-publication.com/fair/kuchie10/
+summary: DOZEN ROSE FES 2026かコミックマーケット109に参加する人は、フルカラー口絵（片面1枚）を1部10円で付けられる。
+benefit_summary: フルカラー口絵が1部10円
+source_type: official_fair
+end_date: 2026-12-07
+end_date_text: 12/7入稿の表紙まで対応（〆切時間 お昼12時）
+end_date_precision: day
+printing_methods:
+  - offset
+benefit_types:
+  - discount
+event_delivery_only: false
+specific_sets_only: true
+application_required: true
+tags:
+  - limited_time
+conditions_text: 「DOZEN ROSE FES 2026」か「コミックマーケット109」に参加する人が対象。同人誌ご予約フォームからの予約（フェア最終日の1営業日前まで）でフェアにチェックし、入稿時に注文書にも書く。セット商品の表紙＋本文印刷が対象（豆本セット・折りとじ本セット・中とじのセットは不可）。表紙と同時入稿。口絵はオフセットの片面フルカラー・コート紙110kg（裏面印刷は1冊10円加算）。納期の加算なし。本文の途中に差し込む場合は差し込み料が別途かかる。付け合わせの状況によりデジタルオフセット印刷になる場合あり。
+published_at: 2026-11-17
+discovered_at: 2026-11-17
+verified_at: 2026-11-17
+verification_status: verified
+history:
+  - date: 2026-11-17
+    type: published

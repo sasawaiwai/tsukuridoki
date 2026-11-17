@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.axis-publication.com/",
+  "printer_id": "axis",
+  "content_hash": "sha256:0cf8b6e3a58e064f891d19278b435f3fbf641ec565d817a100beb78a7557b7f0",
+  "content_chars": 8878,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:43:13+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせの一覧）。冬のフェアは10/30更新の告知のまま。各フェアは個別ページで確認。"
+}

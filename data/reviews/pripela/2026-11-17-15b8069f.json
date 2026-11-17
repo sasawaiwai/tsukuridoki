@@ -1,0 +1,15 @@
+{
+  "source_url": "https://pripela.com/",
+  "printer_id": "pripela",
+  "content_hash": "sha256:0be82f87734e6f1c5f14a29f34984116b40c41ff02478254ca63bb8ea37674ad",
+  "content_chars": 4422,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:40+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

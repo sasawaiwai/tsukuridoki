@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/117.html",
+  "printer_id": "pico",
+  "content_hash": "sha256:e63975748845150a0d4da4cef4c067ce4a7676cc0b83e8ed43136f1d085dbb3d",
+  "content_chars": 177,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:46:39+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "ツクヨミ物語（11/7）の〆切表。開催済みで対象外（ページは会社トップへ移動）。"
+}

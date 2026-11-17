@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/info/campaign/",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:a3299c4c3c22e34aab361143ff0373b899e06b664a8cafc08d92efe92c95fddc",
+  "content_chars": 2147,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:33:11+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "キャンペーン・新商品の一覧。再版割（いつでも）は掲載が続いている。読書の秋（11/29合わせまで）は登録しない（運営者決定 2026-11-17）、カレンダーはグッズのため対象外。"
+}

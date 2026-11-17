@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.sunrisep.co.jp/event/?terms=ALL",
+  "printer_id": "sunrise",
+  "content_hash": "sha256:bcd50bf5ae57392d163a4db4b0459cf4d1f9415277556c522409b56e40635d97",
+  "content_chars": 1344,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:52:47+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.pico-net.com/doujinshi/event/",
+  "printer_id": "pico",
+  "content_hash": "sha256:0a470025a855b72fd3d31fb78a2714538b38324be3f62ec4cb2a4a2ce68c3e5f",
+  "content_chars": 5192,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:46:26+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "支援中イベントの一覧。2026-11-17時点で「第13回男の娘ショタFLOW」は一覧に無い。"
+}

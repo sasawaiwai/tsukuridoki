@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.nikko-pc.com/site/fair-sukeru1/",
+  "printer_id": "nikko-kikaku",
+  "content_hash": "sha256:f0a9219d975ff6e69a49c0454c594c58bf9ab82a2fdebe6f801461fb0a47ae50",
+  "content_chars": 3891,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:44:45+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "nikko-kikaku-sukeru",
+      "fair_name": "透ける本フェア",
+      "sources": [
+        "https://www.nikko-pc.com/site/fair-sukeru1/"
+      ],
+      "summary": "トレペの表紙にオンデマンドの白トナーで印刷し、本文の1ページ目が透けて見える中綴じの本のセット。早期入稿で10%オフ。",
+      "benefit_summary": "トレペ表紙の透ける本・早期入稿で10%OFF",
+      "source_type": "official_fair",
+      "conditions_text": "表紙はトレペに白トナー1色（ベタはムラになる）。本文は色の用紙から1色（紙替え不可）、上質紙90kg・淡クリームキンマリ90kgも可。中綴じのみで、総ページは表紙込みで4ページ単位。早期入稿で10%オフ。早期入稿の割引は料金表の料金のみが対象で、追加オプションは対象外。",
+      "sizes": [
+        "A5",
+        "B5"
+      ],
+      "binding": [
+        "saddle"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "processes": [
+        "special_paper"
+      ],
+      "benefit_types": [
+        "discount"
+      ]
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：内容に変更なし。変化はAkaboo投票引換券の条件（5,000円以上、11/9入稿分〜）の追記。"
+}

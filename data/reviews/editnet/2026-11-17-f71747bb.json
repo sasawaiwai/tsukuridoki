@@ -1,0 +1,96 @@
+{
+  "source_url": "https://www.editnet-p.jp/",
+  "printer_id": "editnet",
+  "content_hash": "sha256:4cfc68235e0a36e78c46120ac7dcc59d4889f518dfe4ade833849541464dd9e2",
+  "content_chars": 1516,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:40:58+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "editnet-kraft-fair",
+      "fair_name": "クラフトフェア（おもしろオンデマンド祭り第1弾）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221002/",
+        "https://www.editnet-p.jp/"
+      ],
+      "summary": "クラフト紙の表紙に白1色で印刷した本を作るとき、普段は必要な白印刷の加算額が無料になる（オンデマンドお試しプランの特別割引）。",
+      "benefit_summary": "クラフト紙表紙の白1色印刷で白印刷の加算額が無料",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "sizes": [
+        "A5",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドお試しプランの特別割引として提供。表紙は指定のクラフト紙（未晒クラフト・D'CRAFT・クラフトリプロライナー）にオンデマンド白1色、本文はオンデマンド黒1色（2色印刷への変更は別料金）。無線綴じのみ。A5・B5（文庫・新書まで小さいサイズも可）。白の面積が全体の50%を超える場合は加算額が必要になることがある。入稿期限はイベント前週の木曜20時（前々週なら割引あり。大きなイベントの前などは異なる）で、期限後はこのフェアを扱わない。ページに記載のない割引は対象外。料金は公式で確認。"
+    },
+    {
+      "fair_id": "editnet-dark-color-fair",
+      "fair_name": "濃色フェア（おもしろオンデマンド祭り第2弾）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221003/",
+        "https://www.editnet-p.jp/"
+      ],
+      "summary": "濃色の特殊紙の表紙に白1色で印刷した本を作るとき、白印刷の加算額が無料になる。表紙に「ミランダ」（黒）を選んだ場合は、用紙の加算額もほかのセット用紙と同額に値引きされる。",
+      "benefit_summary": "濃色紙表紙の白1色印刷で白印刷の加算額が無料（ミランダも同額に）",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "sizes": [
+        "A5",
+        "B5",
+        "bunko",
+        "shinsho"
+      ],
+      "binding": [
+        "perfect"
+      ],
+      "printing_methods": [
+        "ondemand"
+      ],
+      "benefit_types": [
+        "free_option",
+        "free_paper_upgrade"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "オンデマンドお試しプランの特別割引として提供。表紙は指定の濃色紙（里紙〈あやめ・くり・こん・すみ〉・ディープマット〈インディゴ・ルージュ〉・ミランダ〈くろ〉）にオンデマンド白1色、本文はオンデマンド黒1色（2色印刷への変更は別料金）。無線綴じのみ。A5・B5（文庫・新書まで小さいサイズも可）。白の面積が全体の50%を超える場合は加算額が必要になることがある。白印刷が関係するためWebの入稿手続き（e窓）は使えず、印刷依頼書で申し込む。入稿期限はイベント前週の木曜20時（前々週なら割引あり。大きなイベントの前などは異なる）で、期限後はこのフェアを扱わない。ページに記載のない割引は対象外。料金は公式で確認。"
+    },
+    {
+      "fair_id": "editnet-offset-spot-color",
+      "fair_name": "特色フェア（オフセット表紙）",
+      "sources": [
+        "https://www.editnet-p.jp/news/221004/",
+        "https://www.editnet-p.jp/services/tariff-202610/"
+      ],
+      "summary": "オフセット印刷「エコエコワン早期特典」の表紙で、金・銀・蛍光色などの特色を基本色として扱い、2色までセット内で使えるフェア。",
+      "benefit_summary": "表紙の特色（金・銀・蛍光など）2色までセット内",
+      "source_type": "official_fair",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset"
+      ],
+      "spot_color_supported": true,
+      "benefit_types": [
+        "free_option"
+      ],
+      "specific_sets_only": true,
+      "conditions_text": "対象はオフセット印刷「エコエコワン早期特典」の表紙。使える特色は銀・金（青口・赤口）・蛍光（ピンク・オレンジ・イエロー・グリーン・レッド）・白・白（不透明）・群青の11色。3色以上は、3色目から基本色としてのインキ加算額と多色刷り加算額がかかる。本文に特色を使う場合は通常どおりの計算。部数やページ数によっては、通常のプランに加算額を足したほうが安くなる場合がある。料金は公式で確認。"
+    }
+  ],
+  "issues": [
+    "multiple_fairs"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。フェアの一覧に4件とも掲載が続いている（2026-11-17）。"
+}

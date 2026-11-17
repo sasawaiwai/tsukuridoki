@@ -1,0 +1,15 @@
+{
+  "source_url": "https://d-mate.net/",
+  "printer_id": "dmate",
+  "content_hash": "sha256:8c381ced68efea1a31a30dd64192f558918310c22d5263e287f93e9bd440dd02",
+  "content_chars": 11329,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:51:22+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：トップ・一覧ページ。新しいフェアの告知は見当たらない（前回の判断のまま）。"
+}

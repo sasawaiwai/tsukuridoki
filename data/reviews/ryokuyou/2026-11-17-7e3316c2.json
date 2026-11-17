@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:ea35da31207a65eb535e4ff4937a2a89c7c05b62a8dd75a0583c292c6d0c1348",
+  "content_chars": 2439,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:33:05+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "開催中のフェアの一覧。各フェアは個別ページで確認（2026-11-17に再版割プラスを新規登録）。"
+}
