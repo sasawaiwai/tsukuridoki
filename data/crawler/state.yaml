@@ -240,6 +240,16 @@
   last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
+- url: https://www.bestprints.biz/doujin/
+  printer_id: bestprint
+  content_hash: sha256:7e19d4c93522bb7d1a7807abbf88030583ec9ccddc5a2e1685f9a1a195604518
+  reviewed_hash: sha256:7e19d4c93522bb7d1a7807abbf88030583ec9ccddc5a2e1685f9a1a195604518
+  content_chars: 640
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-18T03:34:26+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://booknext.ink/
   printer_id: booknext
   content_hash: sha256:81adb10479c2f894440c7b06bf89a080350ea345b7c2aca38f1892d1e38cf72b
