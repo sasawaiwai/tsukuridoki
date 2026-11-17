@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/dosen-rose-fes/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:6e0a25aa2f7f3d7c4a3dae36e719ceccf89f16f9b0b07676edf3f54499e3d9da",
+  "content_chars": 2485,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:01:22+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "イベントの締切スケジュールのページ。早割は登録済みの早期入稿割引で扱う。"
+}

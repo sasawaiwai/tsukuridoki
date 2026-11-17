@@ -1,0 +1,26 @@
+fair_id: shimaya-syoseki-paper-2026
+slug: shimaya-syoseki-paper-2026
+fair_name: 書籍用紙リリース記念 紙替え料金無料
+printer_id: shimaya
+category: dojinshi
+sources:
+  - https://www.shimaya.net/fair/syoseki_paper/
+summary: しまや出版の新しい本文用紙「ホワイト書籍55kg」「クリーム書籍63kg」のリリース記念。対象8セットの基本料金内で、この2種の本文用紙を選べる。
+benefit_summary: 新しい書籍用紙への紙替えが無料
+source_type: official_fair
+start_date: 2026-11-10
+start_date_text: 2026年11月10日より受付開始
+start_date_precision: day
+benefit_types:
+  - free_paper_upgrade
+specific_sets_only: true
+tags:
+  - for_novels
+conditions_text: 対象は文芸オンデセット・文芸オンデカラーカバーセット・十人十色セット・オールネオンピンクセット・オールシャインゴールドセット・オールルミナスシルバーセット・フランス製本セット・ハイフランス製本セット。各セットの基本料金内で、本文用紙をホワイト書籍55kg・クリーム書籍63kgから選べる（追加料金なし）。リリース記念の企画で、終了日の記載なし。詳しい仕様・料金・締切は各セットのページで確認。
+published_at: 2026-11-17
+discovered_at: 2026-11-17
+verified_at: 2026-11-17
+verification_status: verified
+history:
+  - date: 2026-11-17
+    type: published

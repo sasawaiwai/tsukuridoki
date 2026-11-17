@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/comiccitytokyo1129/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:802f288a210b4b45729cadb89c8361907fa37b284feb2b620415b71ec08caeb9",
+  "content_chars": 2503,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:01:16+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "イベントの締切スケジュールのページ。早割は登録済みの早期入稿割引で扱う。"
+}

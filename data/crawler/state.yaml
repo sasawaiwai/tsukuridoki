@@ -713,7 +713,7 @@
 - url: https://www.eikou.com/campaign/
   printer_id: eikou
   content_hash: sha256:03eb837fb462fb274ca0c86ddf5d132cff3b38bde6d218e33577619a8154ab4a
-  reviewed_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
+  reviewed_hash: sha256:03eb837fb462fb274ca0c86ddf5d132cff3b38bde6d218e33577619a8154ab4a
   content_chars: 4852
   etag: null
   last_modified: null
@@ -913,7 +913,7 @@
 - url: https://www.kurieisha.co.jp/
   printer_id: kurieisha
   content_hash: sha256:48f3b05224f8579203711d7f21176e3de93964a7f958195c088d9090cd7cdd40
-  reviewed_hash: sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c
+  reviewed_hash: sha256:48f3b05224f8579203711d7f21176e3de93964a7f958195c088d9090cd7cdd40
   content_chars: 434
   etag: null
   last_modified: null
@@ -923,7 +923,7 @@
 - url: https://www.kurieisha.co.jp/allfullcolor_fair/
   printer_id: kurieisha
   content_hash: sha256:3ab56e72f4a3c45fe3d56da3454c17f334b6c7932810e2a5be7ddde899eb08f0
-  reviewed_hash: null
+  reviewed_hash: sha256:3ab56e72f4a3c45fe3d56da3454c17f334b6c7932810e2a5be7ddde899eb08f0
   content_chars: 1203
   etag: null
   last_modified: null
@@ -933,7 +933,7 @@
 - url: https://www.kurieisha.co.jp/campaign/
   printer_id: kurieisha
   content_hash: sha256:ff319c9e232520b093cd93b23019b12debce1b4d228990fb56b83a4fb5409ec9
-  reviewed_hash: sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6
+  reviewed_hash: sha256:ff319c9e232520b093cd93b23019b12debce1b4d228990fb56b83a4fb5409ec9
   content_chars: 2771
   etag: null
   last_modified: null
@@ -943,7 +943,7 @@
 - url: https://www.kurieisha.co.jp/campaign/jyanwari/
   printer_id: kurieisha
   content_hash: sha256:4aa00088aa139b2a8702db59381ba2b1c8abea58603dfc11bdc506dd79356b0e
-  reviewed_hash: sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef
+  reviewed_hash: sha256:4aa00088aa139b2a8702db59381ba2b1c8abea58603dfc11bdc506dd79356b0e
   content_chars: 4045
   etag: null
   last_modified: null
@@ -953,7 +953,7 @@
 - url: https://www.kurieisha.co.jp/comiccitytokyo1129/
   printer_id: kurieisha
   content_hash: sha256:802f288a210b4b45729cadb89c8361907fa37b284feb2b620415b71ec08caeb9
-  reviewed_hash: null
+  reviewed_hash: sha256:802f288a210b4b45729cadb89c8361907fa37b284feb2b620415b71ec08caeb9
   content_chars: 2503
   etag: null
   last_modified: null
@@ -963,7 +963,7 @@
 - url: https://www.kurieisha.co.jp/dosen-rose-fes/
   printer_id: kurieisha
   content_hash: sha256:6e0a25aa2f7f3d7c4a3dae36e719ceccf89f16f9b0b07676edf3f54499e3d9da
-  reviewed_hash: null
+  reviewed_hash: sha256:6e0a25aa2f7f3d7c4a3dae36e719ceccf89f16f9b0b07676edf3f54499e3d9da
   content_chars: 2485
   etag: null
   last_modified: null
@@ -993,7 +993,7 @@
 - url: https://www.kurieisha.co.jp/ginpara/
   printer_id: kurieisha
   content_hash: sha256:ef06ba13119073db547ac979887801e74de37dc16a1e2720a12ab418b9089c7f
-  reviewed_hash: null
+  reviewed_hash: sha256:ef06ba13119073db547ac979887801e74de37dc16a1e2720a12ab418b9089c7f
   content_chars: 1191
   etag: null
   last_modified: null
@@ -1033,7 +1033,7 @@
 - url: https://www.luck-pb.jp/
   printer_id: luck
   content_hash: sha256:da0c3986081e1cc1f9640d8cb443f0396824da5ceb9db545286963def3164273
-  reviewed_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
+  reviewed_hash: sha256:da0c3986081e1cc1f9640d8cb443f0396824da5ceb9db545286963def3164273
   content_chars: 7621
   etag: '"9904-65f96d4001f39"'
   last_modified: Fri, 06 Nov 2026 07:47:46 GMT
@@ -1143,7 +1143,7 @@
 - url: https://nanairodo.jp/
   printer_id: nanairodo
   content_hash: sha256:8008bb7f20085dd40fc685d10f49051bc187ee40a5d61f45834dd6028a0bd9da
-  reviewed_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
+  reviewed_hash: sha256:8008bb7f20085dd40fc685d10f49051bc187ee40a5d61f45834dd6028a0bd9da
   content_chars: 2455
   etag: null
   last_modified: null
@@ -2713,7 +2713,7 @@
 - url: https://www.shimaya.net/fair/syoseki_paper/
   printer_id: shimaya
   content_hash: sha256:39d55be7480812dda5fb0a64e987bd5d8e7c7a007e1d23df6143f5668ec92c0a
-  reviewed_hash: null
+  reviewed_hash: sha256:39d55be7480812dda5fb0a64e987bd5d8e7c7a007e1d23df6143f5668ec92c0a
   content_chars: 1730
   etag: '"445c-65f568821b300"'
   last_modified: Tue, 03 Nov 2026 03:05:16 GMT

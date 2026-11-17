@@ -1,0 +1,49 @@
+{
+  "source_url": "https://www.kurieisha.co.jp/allfullcolor_fair/",
+  "printer_id": "kurieisha",
+  "content_hash": "sha256:3ab56e72f4a3c45fe3d56da3454c17f334b6c7932810e2a5be7ddde899eb08f0",
+  "content_chars": 1203,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:01:10+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "kurieisha-allfullcolor-fair-2026",
+      "fair_name": "オールフルカラー本セット激安フェア",
+      "sources": [
+        "https://www.kurieisha.co.jp/allfullcolor_fair/"
+      ],
+      "summary": "6日前入稿で、オールフルカラー本セット（オフセット）が30%OFF、オールフルカラーオンデマンドセットが50%OFFになる。表紙のホログラムPP・クラックドアイスも無料。",
+      "benefit_summary": "オールフルカラー本が最大50%OFF",
+      "source_type": "official_fair",
+      "start_date": "2026-11-16",
+      "start_date_text": "2026年11月16日(月)",
+      "start_date_precision": "day",
+      "end_date": "2027-01-16",
+      "end_date_text": "2027年1月16日(土)入稿分まで",
+      "end_date_precision": "day",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "discount",
+        "free_process"
+      ],
+      "discount_rate": 50,
+      "processes": [
+        "hologram_pp"
+      ],
+      "specific_sets_only": true,
+      "application_required": true,
+      "combinable": false,
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "オールフルカラー本セット（オフセット）は30%OFF、オールフルカラーオンデマンドセットは50%OFF（割引額の上限なし）。表紙加工のホログラムPP・クラックドアイスが無料。納期は入稿から6営業日後に発送（月曜締切なら日曜納品）。発注後に申込フォームで申請（ホログラムPPはフォームで選ぶ）。早割・ジャン割・スーパープリント・他のフェアやキャンペーンとは併用不可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 新規：トップのお知らせ（11/9）とフェアのページで確認。"
+}

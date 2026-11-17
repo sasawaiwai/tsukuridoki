@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/",
+  "printer_id": "luck",
+  "content_hash": "sha256:da0c3986081e1cc1f9640d8cb443f0396824da5ceb9db545286963def3164273",
+  "content_chars": 7621,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:04:57+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ（お知らせの一覧）。各フェアは個別ページで確認。"
+}

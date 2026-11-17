@@ -1,0 +1,30 @@
+fair_id: kurieisha-ginpara-cover-fes
+slug: kurieisha-ginpara-cover-fes
+fair_name: ギンパラ表紙フェス
+printer_id: kurieisha
+category: dojinshi
+sources:
+  - https://www.kurieisha.co.jp/ginpara/
+summary: チンドンベリィパック・コース2（特殊紙フルカラー表紙コース）で、表紙にオフメタル165kgの金・銀（PP加工付き）を無料で使える。白を加えた5色刷りや蛍光ピンクへの差し替えも無料。
+benefit_summary: 表紙のオフメタル金・銀が無料
+source_type: official_fair
+start_date: 2026-09-21
+start_date_text: 9月21日
+start_date_precision: day
+end_date: null
+end_date_text: 用紙在庫終了まで
+end_date_precision: unknown
+benefit_types:
+  - free_paper_upgrade
+processes:
+  - special_paper
+specific_sets_only: true
+application_required: true
+conditions_text: チンドンベリィパック・コース2が対象。表紙はオフメタル165kg金か銀で、オンデマンドフルカラー印刷（通常の4色・白を先刷りした5色・マゼンタを蛍光ピンクに差し替えた4色から選ぶ）、クリアPPかマットPP付き。水曜入稿（朝10時まで）で、入稿から4営業日後に発送。備考欄に「ギンパラフェア」と書き、発注後に専用フォームで装丁を送る。用紙在庫がなくなった時点で終了。紙の性質上、印刷方向に擦り傷が入る。
+published_at: 2026-11-17
+discovered_at: 2026-11-17
+verified_at: 2026-11-17
+verification_status: verified
+history:
+  - date: 2026-11-17
+    type: published

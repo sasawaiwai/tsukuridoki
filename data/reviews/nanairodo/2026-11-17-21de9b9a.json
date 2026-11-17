@@ -1,0 +1,15 @@
+{
+  "source_url": "https://nanairodo.jp/",
+  "printer_id": "nanairodo",
+  "content_hash": "sha256:8008bb7f20085dd40fc685d10f49051bc187ee40a5d61f45834dd6028a0bd9da",
+  "content_chars": 2455,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:03:34+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップページ。各フェアは個別ページで確認。"
+}

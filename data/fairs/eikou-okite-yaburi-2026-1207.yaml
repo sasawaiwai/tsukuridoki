@@ -18,7 +18,7 @@ usable_until_precision: day
 end_date: 2026-12-07
 end_date_text: 12月7日(月)締切
 end_date_precision: day
-deadline_note: 12月27日出荷、12/29のイベント合わせから。
+deadline_note: 12月25日出荷、12/29のイベント合わせから。
 specific_sets_only: true
 application_required: true
 combinable: false
@@ -31,7 +31,7 @@ tags:
   - seasonal
 published_at: 2026-10-07
 discovered_at: 2026-10-07
-verified_at: 2026-10-15
+verified_at: 2026-11-17
 verification_status: verified
 history:
   - date: 2026-10-07
@@ -39,3 +39,9 @@ history:
   - date: 2026-10-08
     type: updated
     field: conditions_text
+  - date: 2026-11-17
+    type: updated
+    field: deadline_note
+    old_value: 12月27日出荷、12/29のイベント合わせから。
+    new_value: 12月25日出荷、12/29のイベント合わせから。
+updated_at: 2026-11-17
