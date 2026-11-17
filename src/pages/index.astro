@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import ViewTabs, { type ViewTab } from '../components/ViewTabs.astro';
+import DateNotice from '../components/DateNotice.astro';
 import { SITE } from '../lib/site.ts';
 import { FAIRS_SECTION_ID, LIST_PAGES, PRINTERS_HREF, TAB_VIEWS, tabFragmentHref } from '../lib/nav.ts';
 import { cardBuilder } from '../lib/cards.ts';
@@ -21,7 +22,7 @@ const tabs: ViewTab[] = TAB_VIEWS.map((key) => ({ key, label: LIST_PAGES[key].la
 const firstFairs = pages.find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs);
 ---
 
-<BaseLayout dated>
+<BaseLayout>
   <Hero imageSrc={SITE.heroImage ?? undefined} imageAlt={SITE.heroImageAlt} />
 
   <div class="container top">
@@ -29,6 +30,9 @@ const firstFairs = pages.find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs
       <SectionHeader id={FAIRS_SECTION_ID} title="フェアを見る" />
       <ViewTabs tabs={tabs} groups={groupByCategory(firstFairs, toCard)} total={firstFairs.length} />
     </section>
+
+    <!-- 日付更新の注意は、一覧の末尾（「タブ・カテゴリへ」の下）に控えめに出す -->
+    <DateNotice quiet />
 
     <section class="about">
       <SectionHeader title="このサイトについて" />
@@ -57,6 +61,11 @@ const firstFairs = pages.find((p) => p.slug === TAB_VIEWS[0])!.select(data.fairs
   /* 「タブ・カテゴリへ」で戻ったとき、見出しが画面の端にくっつかないように */
   .top :global(#fairs) {
     scroll-margin-top: var(--space-4);
+  }
+
+  /* 日付更新の注意：一覧に寄せ、「このサイトについて」とは区切りの余白を残す */
+  .top :global(.date-notice) {
+    margin-top: calc(var(--space-5) * -1);
   }
 
   .about {

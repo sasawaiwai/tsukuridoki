@@ -1,0 +1,25 @@
+---
+// 日付が変わったのに再公開がまだのときの注意（60章）。ふだんは hidden
+// 毎日の再公開は数時間遅れることがあるため、ページを作った日（日本時間）を埋め込み、見ている日と違えば注意を出す
+// quiet：帯にせず、控えめな文字で出す（トップの一覧末尾）
+import { todayJST } from '../lib/period.ts';
+import { formatJpDate } from '../lib/fair-display.ts';
+
+interface Props {
+  quiet?: boolean;
+}
+
+const { quiet = false } = Astro.props;
+const builtOn = todayJST();
+---
+
+<p class:list={['date-notice', { 'date-notice--quiet': quiet }]} id="date-notice" data-built-on={builtOn} role="status" hidden>
+  この表示は{formatJpDate(builtOn)}時点の内容です。日付が変わった直後は、開催状況や締切までの日数が新しくなるまで数時間かかることがあります。
+</p>
+<script is:inline>
+  (() => {
+    const el = document.getElementById('date-notice');
+    const now = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+    if (el && now > el.dataset.builtOn) el.hidden = false;
+  })();
+</script>
