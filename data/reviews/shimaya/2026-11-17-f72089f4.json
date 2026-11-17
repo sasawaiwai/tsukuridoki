@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shimaya.net/",
+  "printer_id": "shimaya",
+  "content_hash": "sha256:c2d11192dc4595a4ae11fe92b387e5b2371e3e5c49ee4710a94fb5282d7e7a4a",
+  "content_chars": 1203,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T21:58:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "トップ。新しいお知らせは用紙の仕様変更と投票引換券（10/21に対象外と決定）のみで、フェアの追加なし。"
+}

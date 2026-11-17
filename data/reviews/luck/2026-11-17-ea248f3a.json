@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/hajimemashite.html",
+  "printer_id": "luck",
+  "content_hash": "sha256:d2eb77f5273f1fdf06313d04e5d36fd775debbd4bac94024dd6cf5755e9b3d04",
+  "content_chars": 1873,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T21:58:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "初回利用割引と紹介特典。新規・紹介などの会員制度は掲載対象外（10/20の決まり、運営者決定）。"
+}

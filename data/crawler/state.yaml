@@ -1043,7 +1043,7 @@
 - url: https://www.luck-pb.jp/asobigamifair.html
   printer_id: luck
   content_hash: sha256:77d7781ce28d5655014ea3a9b84cd4d4c0ca58e267046d07df60e310f41f0515
-  reviewed_hash: null
+  reviewed_hash: sha256:77d7781ce28d5655014ea3a9b84cd4d4c0ca58e267046d07df60e310f41f0515
   content_chars: 1428
   etag: '"3182-65dad9b73da58"'
   last_modified: Tue, 13 Oct 2026 00:07:59 GMT
@@ -1063,7 +1063,7 @@
 - url: https://www.luck-pb.jp/hajimemashite.html
   printer_id: luck
   content_hash: sha256:d2eb77f5273f1fdf06313d04e5d36fd775debbd4bac94024dd6cf5755e9b3d04
-  reviewed_hash: null
+  reviewed_hash: sha256:d2eb77f5273f1fdf06313d04e5d36fd775debbd4bac94024dd6cf5755e9b3d04
   content_chars: 1873
   etag: '"2fe8-64ec617e22326"'
   last_modified: Mon, 06 Apr 2026 08:02:51 GMT
@@ -1083,7 +1083,7 @@
 - url: https://www.luck-pb.jp/review.html
   printer_id: luck
   content_hash: sha256:c676a7d7684bcbd071db8a71a8281e16af02b5aaade6432c5baa1df170b6d7a1
-  reviewed_hash: null
+  reviewed_hash: sha256:c676a7d7684bcbd071db8a71a8281e16af02b5aaade6432c5baa1df170b6d7a1
   content_chars: 647
   etag: '"1b8b-59dce7973a880"'
   last_modified: Wed, 05 Feb 2020 06:43:30 GMT
@@ -1093,7 +1093,7 @@
 - url: https://www.luck-pb.jp/tokusyushifair.html
   printer_id: luck
   content_hash: sha256:0523dd0315f75baded1bbe788cabd3ee943c10c2a5a9618b3c2960b9de4ab562
-  reviewed_hash: null
+  reviewed_hash: sha256:0523dd0315f75baded1bbe788cabd3ee943c10c2a5a9618b3c2960b9de4ab562
   content_chars: 1239
   etag: '"292b-6595ae5d1a7d0"'
   last_modified: Tue, 18 Aug 2026 23:46:37 GMT
@@ -2317,7 +2317,7 @@
   content_chars: 1377
   etag: '"30ae-6384872cb70c0"'
   last_modified: Tue, 24 Jun 2025 02:54:35 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/decospin/
@@ -2392,12 +2392,12 @@
   http_status: 304
 - url: https://www.shimaya.net/
   printer_id: shimaya
-  content_hash: sha256:a374497f2c3d72a7358e517745829232e2e1c69aaad8d82ab1e220fd0cf98103
-  reviewed_hash: sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9
-  content_chars: 1342
-  etag: '"d925-6603a19162099"'
-  last_modified: Sat, 14 Nov 2026 10:35:05 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  content_hash: sha256:c2d11192dc4595a4ae11fe92b387e5b2371e3e5c49ee4710a94fb5282d7e7a4a
+  reviewed_hash: sha256:c2d11192dc4595a4ae11fe92b387e5b2371e3e5c49ee4710a94fb5282d7e7a4a
+  content_chars: 1203
+  etag: '"d640-6606ed2e29e40"'
+  last_modified: Tue, 17 Nov 2026 01:29:21 GMT
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shimaya.net/fair/2021summer/kura_zarae_cutie.html
@@ -2417,7 +2417,7 @@
   content_chars: 3198
   etag: '"9d33-65002b8ed9ac0"'
   last_modified: Wed, 22 Apr 2026 01:48:03 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/2021summer/washipp.html
@@ -2457,7 +2457,7 @@
   content_chars: 1538
   etag: '"604f-65a90b3b5e9ea"'
   last_modified: Thu, 03 Sep 2026 09:23:17 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/haku/index.html
@@ -2467,7 +2467,7 @@
   content_chars: 1881
   etag: '"5c58-65a68994f0f83"'
   last_modified: Tue, 01 Sep 2026 09:32:35 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/iroduri/index.html
@@ -2477,7 +2477,7 @@
   content_chars: 1785
   etag: '"5d54-65ce699a2d1c1"'
   last_modified: Sat, 03 Oct 2026 02:42:30 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tokusyushi/index.html
@@ -2487,7 +2487,7 @@
   content_chars: 2749
   etag: '"923c-65b2dc48a1b57"'
   last_modified: Fri, 11 Sep 2026 04:46:29 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tomuson/index.html
@@ -2497,7 +2497,7 @@
   content_chars: 7153
   etag: '"15c86-65a7a8840da29"'
   last_modified: Wed, 02 Sep 2026 06:56:18 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/bunfuri/index.html
@@ -2507,7 +2507,7 @@
   content_chars: 2350
   etag: '"5c15-65d5dea080600"'
   last_modified: Fri, 09 Oct 2026 01:03:20 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/cassette-tape_semiorder/
@@ -2542,14 +2542,14 @@
   http_status: 304
 - url: https://www.shimaya.net/fair/dourevo_collab/index.html
   printer_id: shimaya
-  content_hash: sha256:f0c3a46b837cbc30501d58cd0157b61622b86385414a002b76c37da09202f00d
-  reviewed_hash: sha256:f0c3a46b837cbc30501d58cd0157b61622b86385414a002b76c37da09202f00d
-  content_chars: null
-  etag: '"13b27-65108d60c9140"'
-  last_modified: Tue, 05 May 2026 02:30:53 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
-  fetch_status: not_modified
-  http_status: 304
+  content_hash: sha256:913080b377083a0f817f3c84b9104676d0a3314c6ec26e445ea6028b5a77aefc
+  reviewed_hash: sha256:913080b377083a0f817f3c84b9104676d0a3314c6ec26e445ea6028b5a77aefc
+  content_chars: 8159
+  etag: '"13b09-66036d45366c0"'
+  last_modified: Sat, 14 Nov 2026 06:41:07 GMT
+  last_fetched_at: 2026-11-17T21:40:56+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.shimaya.net/fair/fuchicolor/index.html
   printer_id: shimaya
   content_hash: sha256:6ed44f07a035d57c7ed9d5ce2d5141629ccbb76e6721f004e9dd98990199d7cd
@@ -2567,7 +2567,7 @@
   content_chars: null
   etag: '"8846-652640787be8c"'
   last_modified: Fri, 22 May 2026 08:43:56 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/high_pink/index.html
@@ -2577,7 +2577,7 @@
   content_chars: null
   etag: '"52bf-646c509ab8040"'
   last_modified: Thu, 25 Dec 2025 11:25:45 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/kazariwaku/index.html
@@ -2607,7 +2607,7 @@
   content_chars: null
   etag: '"27768-636b92c0a8300"'
   last_modified: Wed, 04 Jun 2025 06:33:16 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/oshiiro_asobikami/index.html
@@ -2617,7 +2617,7 @@
   content_chars: null
   etag: '"59c5-6439ddd2e7600"'
   last_modified: Sat, 15 Nov 2025 08:26:00 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/see_through/index.html
@@ -2627,7 +2627,7 @@
   content_chars: null
   etag: '"d6ce-636b938ea6900"'
   last_modified: Wed, 04 Jun 2025 06:36:52 GMT
-  last_fetched_at: 2026-10-08T15:09:18+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/slidecase/
@@ -2667,7 +2667,7 @@
   content_chars: 2647
   etag: '"77e4-658bfed03b6aa"'
   last_modified: Tue, 11 Aug 2026 06:53:18 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/haku/index.html
@@ -2677,7 +2677,7 @@
   content_chars: 2212
   etag: '"5bd8-658bfeb2aa8c5"'
   last_modified: Tue, 11 Aug 2026 06:52:47 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/iroduri/index.html
@@ -2687,7 +2687,7 @@
   content_chars: 1855
   etag: '"7f0c-65cae7ee19764"'
   last_modified: Wed, 30 Sep 2026 07:46:23 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/separeasobi/index.html
@@ -2697,7 +2697,7 @@
   content_chars: 1710
   etag: '"5f80-658bfe529b43a"'
   last_modified: Tue, 11 Aug 2026 06:51:06 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/tokusyushi/index.html
@@ -2707,7 +2707,7 @@
   content_chars: 2131
   etag: '"7026-65985b323b026"'
   last_modified: Fri, 21 Aug 2026 02:50:31 GMT
-  last_fetched_at: 2026-11-17T09:59:06+09:00
+  last_fetched_at: 2026-11-17T21:40:56+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/syoseki_paper/

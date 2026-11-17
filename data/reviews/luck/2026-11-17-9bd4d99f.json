@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.luck-pb.jp/tokusyushifair.html",
+  "printer_id": "luck",
+  "content_hash": "sha256:0523dd0315f75baded1bbe788cabd3ee943c10c2a5a9618b3c2960b9de4ab562",
+  "content_chars": 1239,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T21:58:00+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "no_end_date"
+  ],
+  "master_candidates": [],
+  "note": "特殊紙フェア（在庫限り）。日付がなく今も有効と公式情報で確認できないため掲載しない（運営者決定）。ページが変われば再確認。"
+}
