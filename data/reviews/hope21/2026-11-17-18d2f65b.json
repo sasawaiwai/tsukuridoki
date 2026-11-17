@@ -1,0 +1,15 @@
+{
+  "source_url": "https://hope21.jp/pr/nosenose_gold_cp/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:4d555cd01299f44ac283d18c15f6261b4fbf9d8f14b11e0a32091b338a1d709a",
+  "content_chars": 9239,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T10:29:48+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "のせのせキャンペーン（/pr/nosenose_cp/）と同じ内容のページ。のせのせの各フェアで扱う。"
+}

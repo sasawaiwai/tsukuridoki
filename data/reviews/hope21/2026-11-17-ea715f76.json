@@ -1,0 +1,15 @@
+{
+  "source_url": "https://hope21.jp/pr/hayawari-event/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b",
+  "content_chars": 1760,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T10:29:31+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "早割・早得（/pr/hayawari/）と同じ内容のページ。登録済みの hope21-early-discount で扱う。"
+}

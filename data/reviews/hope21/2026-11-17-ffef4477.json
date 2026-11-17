@@ -1,0 +1,31 @@
+{
+  "source_url": "https://hope21.jp/pr/ivent_shien/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:cb7700277b2390d6b1ba5c5b5ae33f2ae1ecc4d99c39f3a46481ddde08d8870a",
+  "content_chars": 3862,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T10:29:37+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "hope21-event-support",
+      "fair_name": "イベント支援",
+      "sources": [
+        "https://hope21.jp/pr/ivent_shien/"
+      ],
+      "summary": "支援対象のオンリー・プチオンリーに参加するサークルの発注で、ポイント還元率が通常2%から10%になる。",
+      "benefit_summary": "支援イベント参加でポイント10%還元",
+      "source_type": "official_campaign",
+      "timing_type": "recurring",
+      "submission_dates_text": "支援対象のオンリー・プチオンリーごと",
+      "benefit_types": [
+        "points"
+      ],
+      "application_required": true,
+      "conditions_text": "支援対象イベントへの参加が条件（一覧は公式で確認。プチオンリーは親イベントの参加者全員が対象ではない）。見積もりNaviで「イベント支援」から参加イベントを選び、搬入先にオンリー名も書く。原則イベント当日納品（自宅送りは開催1週間前まで）。季節のセット・グッズ・超短納期お助け企画・締切後の入稿は対象外。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 再確認：のせのせ併用で最大20%の記載が公式ページにないため条件から外した（運営者承認）。"
+}

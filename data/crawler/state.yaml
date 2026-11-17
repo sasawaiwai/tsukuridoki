@@ -5,19 +5,19 @@
   content_hash: sha256:45a67b986589814924d941878ef0c6c89780a799bffda2ff4bfccec60b553da0
   reviewed_hash: sha256:45a67b986589814924d941878ef0c6c89780a799bffda2ff4bfccec60b553da0
   content_chars: 1516
-  etag: '"3b16-65a15fd390fd3"'
-  last_modified: Fri, 28 Aug 2026 06:59:09 GMT
-  last_fetched_at: 2026-10-21T00:31:19+09:00
+  etag: '"3b16-65e7ad55c261d"'
+  last_modified: Fri, 23 Oct 2026 04:58:38 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://doujin-adp.sakura.ne.jp/eventshien.html
   printer_id: adp
-  content_hash: sha256:b879ca8944b78d52cfda1d8075eca16dc7b41b424eebd561a51be1e62eb9c0f3
+  content_hash: sha256:4f212fb1ea722fac54340796bb812ee0be2bb77af583eac6df9d9aad7ccefac6
   reviewed_hash: null
-  content_chars: 1800
-  etag: '"a74e-657e1e3ba6360"'
-  last_modified: Fri, 31 Jul 2026 05:59:20 GMT
-  last_fetched_at: 2026-10-20T23:10:43+09:00
+  content_chars: 1840
+  etag: '"9fe1-65e784bd878c8"'
+  last_modified: Fri, 23 Oct 2026 01:57:01 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://doujin-adp.sakura.ne.jp/petit.html
@@ -25,19 +25,19 @@
   content_hash: sha256:0baf1fe521a1cce2ce4da313e77c797bf6611c34c5fae91a96128c561b8ed486
   reviewed_hash: sha256:0baf1fe521a1cce2ce4da313e77c797bf6611c34c5fae91a96128c561b8ed486
   content_chars: 4326
-  etag: '"8985-63149e0cb0268"'
-  last_modified: Thu, 27 Mar 2025 02:40:34 GMT
-  last_fetched_at: 2026-10-20T23:10:43+09:00
+  etag: '"88f6-65e773f772026"'
+  last_modified: Fri, 23 Oct 2026 00:41:59 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://doujin-adp.sakura.ne.jp/shimekiri.html
   printer_id: adp
-  content_hash: sha256:6c44c10dab52aed6ba1a0e9c3b2ab7d7307be7856144cc947c3496bbf7a4e12a
+  content_hash: sha256:9c9caeb02733000abcf937370b08c53056b96825a07175f133307d3699805d31
   reviewed_hash: sha256:6c44c10dab52aed6ba1a0e9c3b2ab7d7307be7856144cc947c3496bbf7a4e12a
-  content_chars: 5422
-  etag: '"17b79-65debe4256bc8"'
-  last_modified: Fri, 16 Oct 2026 02:26:26 GMT
-  last_fetched_at: 2026-10-21T00:31:19+09:00
+  content_chars: 4869
+  etag: '"217eb-66020f5a23057"'
+  last_modified: Fri, 13 Nov 2026 04:35:36 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://doujin-adp.sakura.ne.jp/touhyou.html
@@ -47,17 +47,17 @@
   content_chars: 1110
   etag: '"2530-63149e0d302f2"'
   last_modified: Thu, 27 Mar 2025 02:40:34 GMT
-  last_fetched_at: 2026-10-20T23:10:43+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.axis-publication.com/
   printer_id: axis
-  content_hash: sha256:22eaa6454f9a47f920d8530a85d31e45dd8ea775ff342cd038bfc5d31e91a00b
+  content_hash: sha256:0cf8b6e3a58e064f891d19278b435f3fbf641ec565d817a100beb78a7557b7f0
   reviewed_hash: sha256:22eaa6454f9a47f920d8530a85d31e45dd8ea775ff342cd038bfc5d31e91a00b
-  content_chars: 8849
+  content_chars: 8878
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/event/
@@ -67,7 +67,7 @@
   content_chars: 2610
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/akuriru_stand/
@@ -77,7 +77,7 @@
   content_chars: 2738
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/asobi/
@@ -87,7 +87,7 @@
   content_chars: 4021
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/autumn/
@@ -97,7 +97,7 @@
   content_chars: 3690
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/embos_nisu/
@@ -107,7 +107,7 @@
   content_chars: 2859
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/enamel_enamel_rame30/
@@ -117,7 +117,7 @@
   content_chars: 3779
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/glitter_PP/
@@ -127,7 +127,7 @@
   content_chars: 2711
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_haku_gentei/
@@ -137,7 +137,7 @@
   content_chars: 5365
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_haku/
@@ -147,7 +147,7 @@
   content_chars: 5351
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/holo_PP/
@@ -157,7 +157,7 @@
   content_chars: 2769
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/kado_lace/
@@ -167,7 +167,7 @@
   content_chars: 2866
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/koguchi/
@@ -177,17 +177,17 @@
   content_chars: 15714
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/kuchie10/
   printer_id: axis
-  content_hash: sha256:2a5b199ae92204238d385b05e7779750e2194bd60f87dd701a847b880211531c
+  content_hash: sha256:d1760c4b2909a96337f61c162d3c55e80acb4faabc89971a93970010b8574989
   reviewed_hash: sha256:2a5b199ae92204238d385b05e7779750e2194bd60f87dd701a847b880211531c
-  content_chars: 2856
+  content_chars: 2875
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/poster/
@@ -197,7 +197,7 @@
   content_chars: 3215
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/royal/
@@ -207,7 +207,7 @@
   content_chars: 3714
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/vivid_harowin/
@@ -217,7 +217,7 @@
   content_chars: 4115
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/vivid/
@@ -227,7 +227,7 @@
   content_chars: 5933
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.axis-publication.com/fair/winter/
@@ -237,17 +237,17 @@
   content_chars: 3676
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:29:05+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://booknext.ink/
   printer_id: booknext
-  content_hash: sha256:ac0dffb8488eb4a887cb5d5ae428eaf78954f01f58ddd794572c2e98eac7022f
+  content_hash: sha256:81adb10479c2f894440c7b06bf89a080350ea345b7c2aca38f1892d1e38cf72b
   reviewed_hash: sha256:ac0dffb8488eb4a887cb5d5ae428eaf78954f01f58ddd794572c2e98eac7022f
-  content_chars: 2472
+  content_chars: 2474
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:27:31+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.bros-comic.co.jp/
@@ -257,7 +257,7 @@
   content_chars: 527
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:29:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.bros-comic.co.jp/campaign/akaboo_touhyou.html
@@ -267,7 +267,7 @@
   content_chars: 376
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:29:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.bros-comic.co.jp/campaign/dourebo_bakkit.html
@@ -277,17 +277,17 @@
   content_chars: 1649
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:29:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.bros-comic.co.jp/campaign/kyosan.html
   printer_id: bros
-  content_hash: sha256:7827b5d0ea96398484a02007224d8638a17a867d942f33c1fbbb61090293141d
+  content_hash: sha256:bf1573de05d54bdc75515d86b73862663afa924ddcf61c01d6abbe1db316fb3e
   reviewed_hash: sha256:7827b5d0ea96398484a02007224d8638a17a867d942f33c1fbbb61090293141d
-  content_chars: 2023
+  content_chars: 2111
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:29:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://choinoma.com/
@@ -297,7 +297,7 @@
   content_chars: 209
   etag: null
   last_modified: Tue, 13 Oct 2026 23:41:42 GMT
-  last_fetched_at: 2026-11-10T15:12:50+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.chokotto.jp/
@@ -307,7 +307,7 @@
   content_chars: 1446
   etag: '"3d46-60904684b1453"'
   last_modified: Tue, 31 Oct 2023 14:59:54 GMT
-  last_fetched_at: 2026-10-21T09:29:39+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.chokotto.jp/order_campaign_pre.php
@@ -317,7 +317,7 @@
   content_chars: 327
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:29:39+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comflex-doujin.com/sale_infomation/
@@ -327,7 +327,7 @@
   content_chars: 1514
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T11:42:26+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=cppmpp%2Dakifuyu%2Dfair
@@ -337,7 +337,7 @@
   content_chars: 1290
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=Events
@@ -347,7 +347,7 @@
   content_chars: 652
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair
@@ -357,7 +357,7 @@
   content_chars: 298
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Demboss
@@ -367,7 +367,7 @@
   content_chars: 612
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dbook%2Djacket
@@ -377,7 +377,7 @@
   content_chars: 1039
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dtwilight
@@ -387,7 +387,7 @@
   content_chars: 269
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dlimited%2Dtime%2Dvelvet
@@ -397,7 +397,7 @@
   content_chars: 314
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dmonday
@@ -407,7 +407,7 @@
   content_chars: 178
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=fair%2Dreprint%2Dbenefits
@@ -417,7 +417,7 @@
   content_chars: 759
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=Lame
@@ -427,7 +427,7 @@
   content_chars: 327
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=present
@@ -437,7 +437,7 @@
   content_chars: 1390
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=present2week
@@ -447,7 +447,7 @@
   content_chars: 613
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comicmall.jp/wiki.cgi?page=summer%2Dautumn%2Dpp%2Dfair
@@ -457,17 +457,17 @@
   content_chars: 1472
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:27:30+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://d-mate.net/
   printer_id: dmate
-  content_hash: sha256:951a5b017b911acc65f9ef8bfb58640a170304510ee2a0fe2b4cca9c20baed82
+  content_hash: sha256:8c381ced68efea1a31a30dd64192f558918310c22d5263e287f93e9bd440dd02
   reviewed_hash: sha256:951a5b017b911acc65f9ef8bfb58640a170304510ee2a0fe2b4cca9c20baed82
-  content_chars: 11281
-  etag: W/"13941-65d4e01b90980"
-  last_modified: Thu, 08 Oct 2026 06:04:38 GMT
-  last_fetched_at: 2026-10-18T21:13:05+09:00
+  content_chars: 11329
+  etag: W/"13a34-65ff965ff75c0"
+  last_modified: Wed, 11 Nov 2026 05:23:43 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://d-mate.net/guide/event_support.html
@@ -477,17 +477,17 @@
   content_chars: 2783
   etag: W/"98d6-64bdde048ffc0"
   last_modified: Sat, 28 Feb 2026 08:09:43 GMT
-  last_fetched_at: 2026-10-18T21:13:05+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://d-mate.net/mailform_campaign/mailform_hashtag.html
   printer_id: dmate
-  content_hash: sha256:453263b82b65c90b36b619a1fabf35caabd94b2d580cb3a1beaf25875f788489
+  content_hash: sha256:fce83eb9df12eeff526b66f9c76b62026878be33dc877993986c79741a4a95b5
   reviewed_hash: sha256:453263b82b65c90b36b619a1fabf35caabd94b2d580cb3a1beaf25875f788489
-  content_chars: 1756
-  etag: W/"85f4-65d20ace09540"
-  last_modified: Mon, 05 Oct 2026 23:59:41 GMT
-  last_fetched_at: 2026-10-18T21:13:05+09:00
+  content_chars: 1775
+  etag: W/"82b7-65e5081b855c0"
+  last_modified: Wed, 21 Oct 2026 02:28:47 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://d-mate.net/option_kakou/asobigami_autumn.html
@@ -497,9 +497,9 @@
   content_chars: 1934
   etag: W/"93ba-65d4dc7032140"
   last_modified: Thu, 08 Oct 2026 05:48:13 GMT
-  last_fetched_at: 2026-10-18T21:13:05+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://d-mate.net/option_kakou/asobigami_summer.html
   printer_id: dmate
   content_hash: sha256:f7582f287bf35da1caecb6b6ae0535606ea637a6e2d9b14ec758ca019b04e2e0
@@ -507,9 +507,9 @@
   content_chars: 1885
   etag: W/"927d-656a0c8ddd040"
   last_modified: Wed, 15 Jul 2026 06:53:45 GMT
-  last_fetched_at: 2026-10-18T21:13:05+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.doujinshi-p.com/
   printer_id: doujinshi-p
   content_hash: sha256:3dc84766538c027592084462bb9303b63a7859ae5106f8d8ae31fb797d458cce
@@ -518,8 +518,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/ajisai.php
   printer_id: doujinshi-p
   content_hash: sha256:e50a0a7a50763c523bfd73980d842df3cbc7ceb665f9a6f1de9a424ff4df35a3
@@ -528,8 +528,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/douji.php
   printer_id: doujinshi-p
   content_hash: sha256:6a6b99b22424c773ff74bf726646df9856ffd9429e7a6c122b048edc91555140
@@ -538,8 +538,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/fuyukomi.php
   printer_id: doujinshi-p
   content_hash: sha256:b9cc9524658ee3b9b84bfe2bd23c98dfcb1e80e34ae0aebf45565f7fe92f913e
@@ -548,8 +548,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/hayawari.php
   printer_id: doujinshi-p
   content_hash: sha256:cc41a6e2b9ba78f7ecca8a81c4de07826ce59e588212a8df2f3b20a19fbd1f67
@@ -558,8 +558,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/otameshi30.php
   printer_id: doujinshi-p
   content_hash: sha256:8e0730caf5c060d9f4d499de43b745424d4d218aaba26ede532ace045f25f2e6
@@ -568,8 +568,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/tokkyu.php
   printer_id: doujinshi-p
   content_hash: sha256:c0339677dbdff6ccecb77d09636cdc0ed299702ce3697251ff54a94572b1d164
@@ -578,8 +578,8 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.doujinshi-p.com/user_data/waribiki.php
   printer_id: doujinshi-p
   content_hash: sha256:5504d667ad11e2fc2a0e5fc8a96ae8f314696677636ac658762e3a2b60a1ce19
@@ -588,16 +588,16 @@
   etag: null
   last_modified: ""
   last_fetched_at: 2026-10-18T21:16:17+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: error
+  http_status: null
 - url: https://www.editnet-p.jp/
   printer_id: editnet
-  content_hash: sha256:3769934c1b416f1fa9ad3ee2f5285bab43ed0b1bcfaac428424f6b6b1c2f1479
+  content_hash: sha256:4cfc68235e0a36e78c46120ac7dcc59d4889f518dfe4ade833849541464dd9e2
   reviewed_hash: sha256:3769934c1b416f1fa9ad3ee2f5285bab43ed0b1bcfaac428424f6b6b1c2f1479
-  content_chars: 1477
+  content_chars: 1516
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/200408/
@@ -607,67 +607,67 @@
   content_chars: 1118
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/221002/
   printer_id: editnet
-  content_hash: sha256:7e6ceb9829bcc598d328105c6cb241daab7a06f815b5ccc0ba80d8f71e0b3de8
+  content_hash: sha256:dcfc7d22b20cb227e558bb57d8b10014388880f2c338238d1524a1c97cd389f7
   reviewed_hash: sha256:7e6ceb9829bcc598d328105c6cb241daab7a06f815b5ccc0ba80d8f71e0b3de8
-  content_chars: 4354
+  content_chars: 1606
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/221003/
   printer_id: editnet
-  content_hash: sha256:7549c34dd93acc8691a3cb7589642b8a18587031e1dd39477b7b29c5786e88dc
+  content_hash: sha256:4bcd31e64f2bef09df1f1a3bbccad7147cb49d82af7a7373c24c2259de320bc6
   reviewed_hash: sha256:7549c34dd93acc8691a3cb7589642b8a18587031e1dd39477b7b29c5786e88dc
-  content_chars: 4537
+  content_chars: 1687
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/221004/
   printer_id: editnet
-  content_hash: sha256:e248ed104074b4ddd7876ec5ae4a08c9c300cd986a83c0ac94be525acd79979d
+  content_hash: sha256:f0c491b522a7a3e0075797f16793942686c19d5fda6584c54bf257d051d87777
   reviewed_hash: sha256:e248ed104074b4ddd7876ec5ae4a08c9c300cd986a83c0ac94be525acd79979d
-  content_chars: 1545
+  content_chars: 1481
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/221005/
   printer_id: editnet
-  content_hash: sha256:9bd0c17f16dab355424767003dc09409828abc508eed0ec94903fdee48ee371a
+  content_hash: sha256:4cc0163e62653a7f7ed5418c52d8565f888825441c79b4f15c44f0b9968ef3f2
   reviewed_hash: sha256:9bd0c17f16dab355424767003dc09409828abc508eed0ec94903fdee48ee371a
-  content_chars: 5540
+  content_chars: 1992
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/221006/
   printer_id: editnet
-  content_hash: sha256:96e3bd2e06896722195e1142ee6412d5e4cdb041862feb41f0f0d675a3596483
+  content_hash: sha256:c803e9f2c6dfb2512edce0fbb16028703e846b14074cdc2b95a69af1507e1856
   reviewed_hash: sha256:96e3bd2e06896722195e1142ee6412d5e4cdb041862feb41f0f0d675a3596483
-  content_chars: 5915
+  content_chars: 2221
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/240401/
   printer_id: editnet
-  content_hash: sha256:56749c5f8b6084a42017bfc1c002de4d4df8ad13c7043e14340523e68c1c6d2f
+  content_hash: sha256:8b94d45f070242a468136deb1e188926e86654497f2c65beccb4904f90e47b13
   reviewed_hash: sha256:56749c5f8b6084a42017bfc1c002de4d4df8ad13c7043e14340523e68c1c6d2f
-  content_chars: 3389
+  content_chars: 1670
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/240403/
@@ -677,7 +677,7 @@
   content_chars: 416
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/251201/
@@ -687,7 +687,7 @@
   content_chars: 741
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/251202/
@@ -697,7 +697,7 @@
   content_chars: 1270
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.editnet-p.jp/news/251205/
@@ -707,17 +707,27 @@
   content_chars: 2249
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T23:28:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.eikou.com/campaign/
   printer_id: eikou
-  content_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
+  content_hash: sha256:03eb837fb462fb274ca0c86ddf5d132cff3b38bde6d218e33577619a8154ab4a
   reviewed_hash: sha256:73ae5c3302920cdf12d943448d65aac643c7566a62e6d3253176efc89800718c
-  content_chars: 5155
+  content_chars: 4852
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/lineup/set/autumnset_2026/
+  printer_id: hope21
+  content_hash: sha256:a5d139d3ed11b7f1438ffc436a7354aceee57f1a690e63ec0c1d5c478a5a5bb2
+  reviewed_hash: sha256:a5d139d3ed11b7f1438ffc436a7354aceee57f1a690e63ec0c1d5c478a5a5bb2
+  content_chars: 15523
+  etag: W/"fea756d82a00959f47fd318c520aa78e"
+  last_modified: Mon, 16 Nov 2026 06:28:49 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/
@@ -725,39 +735,59 @@
   content_hash: sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db
   reviewed_hash: sha256:2cb70cd9d31263d179dd13f74da35d62ed6147f2605a1fbeecb5afbcdfa8e3db
   content_chars: 466
-  etag: W/"699d5a2f4b8f692a76a16f8e55f3aaed"
-  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  etag: W/"1b979efe4317f746d0d8b2f5d7bc499c"
+  last_modified: Mon, 16 Nov 2026 06:28:56 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/2026oct-artasobi/
+  printer_id: hope21
+  content_hash: sha256:02b4502640c78274074ddfa257d937ac54ac734b7872fe2f9231311a9e57bef2
+  reviewed_hash: sha256:02b4502640c78274074ddfa257d937ac54ac734b7872fe2f9231311a9e57bef2
+  content_chars: 2079
+  etag: W/"56fdbdb550918448d7a08f092fe2dfd1"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/2026oct-cp/
   printer_id: hope21
   content_hash: sha256:89381d672061e98cff7d55b5e1aa955115a05da5c735fd00a7f980f7a7937aee
-  reviewed_hash: null
+  reviewed_hash: sha256:89381d672061e98cff7d55b5e1aa955115a05da5c735fd00a7f980f7a7937aee
   content_chars: 975
-  etag: W/"864b91587f1d71fc36979997b28d55a9"
-  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  etag: W/"536b87b6c14e5879a8b9b24f8705d464"
+  last_modified: Mon, 16 Nov 2026 06:28:56 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/hayawari-event/
+  printer_id: hope21
+  content_hash: sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b
+  reviewed_hash: sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b
+  content_chars: 1760
+  etag: W/"5647ca4b4c2e696d80634134680e527a"
+  last_modified: Mon, 16 Nov 2026 06:28:56 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/hayawari/
   printer_id: hope21
-  content_hash: sha256:44d2dfc9e7a2bf6a8918469fe45f1927bd8e545f675c50ee48610546e6d20c8b
-  reviewed_hash: sha256:44d2dfc9e7a2bf6a8918469fe45f1927bd8e545f675c50ee48610546e6d20c8b
-  content_chars: 1189
-  etag: W/"151dc242610c112cc9eb01df7ce7b4a3"
-  last_modified: Fri, 09 Oct 2026 02:28:12 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  content_hash: sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b
+  reviewed_hash: sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b
+  content_chars: 1760
+  etag: W/"5647ca4b4c2e696d80634134680e527a"
+  last_modified: Mon, 16 Nov 2026 06:28:56 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/ivent_shien/
   printer_id: hope21
-  content_hash: sha256:9eae14bdc2a425abac8e213c51730a4d825c9f5230728896afd703088213c2f5
-  reviewed_hash: sha256:9eae14bdc2a425abac8e213c51730a4d825c9f5230728896afd703088213c2f5
-  content_chars: 4815
-  etag: W/"10617478e212b73fabaafd030f9fb746"
-  last_modified: Fri, 09 Oct 2026 02:28:13 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  content_hash: sha256:cb7700277b2390d6b1ba5c5b5ae33f2ae1ecc4d99c39f3a46481ddde08d8870a
+  reviewed_hash: sha256:cb7700277b2390d6b1ba5c5b5ae33f2ae1ecc4d99c39f3a46481ddde08d8870a
+  content_chars: 3862
+  etag: W/"76dbc4584e0fd0f8d9a5a77b4dec5efd"
+  last_modified: Mon, 16 Nov 2026 06:28:56 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/mihonshi-survice/
@@ -765,49 +795,59 @@
   content_hash: sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15
   reviewed_hash: sha256:508e0b1f6b21fba1355c0fd70aa1114a678769677063bb0c64e1093cf834cc15
   content_chars: 1460
-  etag: W/"c9f818d61aadb8948418c74f722e8fa4"
-  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  etag: W/"8c929aa09270ca8f56d7a7dc1c1fa463"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/nosenose_cp/
   printer_id: hope21
-  content_hash: sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3
-  reviewed_hash: sha256:682e5fe716bd0fcf631803e853a2c5db9bb86f1106bb4dd5f712a6ea96e12eb3
-  content_chars: 5570
-  etag: W/"b264cf7009e083acc24162dcb68b0935"
-  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  content_hash: sha256:4d555cd01299f44ac283d18c15f6261b4fbf9d8f14b11e0a32091b338a1d709a
+  reviewed_hash: sha256:4d555cd01299f44ac283d18c15f6261b4fbf9d8f14b11e0a32091b338a1d709a
+  content_chars: 9239
+  etag: W/"cff6739e02af65e285b297eb8b6a6d0f"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://hope21.jp/pr/nosenose_gold_cp/
+  printer_id: hope21
+  content_hash: sha256:4d555cd01299f44ac283d18c15f6261b4fbf9d8f14b11e0a32091b338a1d709a
+  reviewed_hash: sha256:4d555cd01299f44ac283d18c15f6261b4fbf9d8f14b11e0a32091b338a1d709a
+  content_chars: 9239
+  etag: W/"cff6739e02af65e285b297eb8b6a6d0f"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/otasuke_choutan/
   printer_id: hope21
-  content_hash: sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27
-  reviewed_hash: sha256:273048e9b72c8c4ecd590a8890f8341fd344851c3bba2d49a823cf9575a0fe27
-  content_chars: 5879
-  etag: W/"472959d7ee0baf50a4c2ee86d19d4123"
-  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  content_hash: sha256:25d1f24b53cba4c0b37f2c7b0ffabd81d03346053690be735c201845ecc7eec3
+  reviewed_hash: sha256:25d1f24b53cba4c0b37f2c7b0ffabd81d03346053690be735c201845ecc7eec3
+  content_chars: 7573
+  etag: W/"2809d95f9e28de34997ef25b5bbaee42"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://hope21.jp/pr/reprint/
   printer_id: hope21
-  content_hash: sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c
-  reviewed_hash: sha256:92fbd71460dd376e1a719d4d64be9a7042cfed0edda170ddae9b1065cdd8b90c
-  content_chars: 857
-  etag: W/"e4a43f6325818c2a063b362e501d7530"
-  last_modified: Fri, 09 Oct 2026 02:28:15 GMT
-  last_fetched_at: 2026-10-16T01:29:52+09:00
+  content_hash: sha256:ca46a4e97cb84ca4501572687ef679388dd76508189e55241a7c9310c39841f8
+  reviewed_hash: sha256:ca46a4e97cb84ca4501572687ef679388dd76508189e55241a7c9310c39841f8
+  content_chars: 836
+  etag: W/"8f1e790bfe0af1a91306bb40ea1cb536"
+  last_modified: Mon, 16 Nov 2026 06:28:57 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://print-jbf.jp/print/dojinshi_lp.html
   printer_id: jbf
-  content_hash: sha256:b91ecc70d6a6e12b261c4dacc5b60358b2ad44be5de691fc438cc007061f52b7
+  content_hash: sha256:5bbf64bfd825957767f5b776cef9fe7f6b8c848f2f8e6be76b64b4198075b97a
   reviewed_hash: sha256:b91ecc70d6a6e12b261c4dacc5b60358b2ad44be5de691fc438cc007061f52b7
-  content_chars: 4910
+  content_chars: 4960
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:12:04+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.k-k9.jp/campaign/
@@ -817,17 +857,17 @@
   content_chars: 3174
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:28:51+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kanazawa-p.co.jp/fea/index.html
   printer_id: kanazawa-insatsu
-  content_hash: sha256:d4eb208247f2e32d8688cc106851e80db0eaa04fcb31a74e0a3f8683d685b752
+  content_hash: sha256:463726c8dc0eb05e1822275921fda0006b2ef2cf942aeaa6fbbfd317494246db
   reviewed_hash: sha256:d4eb208247f2e32d8688cc106851e80db0eaa04fcb31a74e0a3f8683d685b752
-  content_chars: 11738
-  etag: '"da82-65e3f7af9a006"'
-  last_modified: Tue, 20 Oct 2026 06:09:59 GMT
-  last_fetched_at: 2026-10-20T18:40:55+09:00
+  content_chars: 18333
+  etag: '"14fa2-6602225907c0c"'
+  last_modified: Fri, 13 Nov 2026 06:00:35 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comic.kanbi-comic.com/fair/
@@ -837,7 +877,7 @@
   content_chars: 131
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:34:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://comic.kanbi-comic.com/fair/c109-fair/
@@ -847,37 +887,87 @@
   content_chars: 1127
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:34:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ko-sin.co.jp/syindex/
+  printer_id: koshin
+  content_hash: sha256:49d5bb4c4fc5f8b0b96ead512b61de07c5ac0ab91d380c2bf12c29ae869d77dd
+  reviewed_hash: null
+  content_chars: 1279
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ko-sin.co.jp/syindex/info/
+  printer_id: koshin
+  content_hash: sha256:80ab8b11a61c4f7879f0190de2b828152699bd81831c668c0b3b8057bdb3a321
+  reviewed_hash: null
+  content_chars: 335
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/
   printer_id: kurieisha
-  content_hash: sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c
+  content_hash: sha256:48f3b05224f8579203711d7f21176e3de93964a7f958195c088d9090cd7cdd40
   reviewed_hash: sha256:2b58d0c5307f0189e831f7ef807319176a9b000a486c30b5fdedc99836608e8c
-  content_chars: 501
+  content_chars: 434
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.kurieisha.co.jp/allfullcolor_fair/
+  printer_id: kurieisha
+  content_hash: sha256:3ab56e72f4a3c45fe3d56da3454c17f334b6c7932810e2a5be7ddde899eb08f0
+  reviewed_hash: null
+  content_chars: 1203
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/campaign/
   printer_id: kurieisha
-  content_hash: sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6
+  content_hash: sha256:ff319c9e232520b093cd93b23019b12debce1b4d228990fb56b83a4fb5409ec9
   reviewed_hash: sha256:3af38180e3c0c90c82bbc45df2fdfbe8f82412553131b60ea268b3086b040bb6
-  content_chars: 2800
+  content_chars: 2771
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/campaign/jyanwari/
   printer_id: kurieisha
-  content_hash: sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef
+  content_hash: sha256:4aa00088aa139b2a8702db59381ba2b1c8abea58603dfc11bdc506dd79356b0e
   reviewed_hash: sha256:6277c014ab8c1d649cba1fbbaaeedb2425c7a64213ded74cb95939296f3462ef
-  content_chars: 4497
+  content_chars: 4045
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.kurieisha.co.jp/comiccitytokyo1129/
+  printer_id: kurieisha
+  content_hash: sha256:802f288a210b4b45729cadb89c8361907fa37b284feb2b620415b71ec08caeb9
+  reviewed_hash: null
+  content_chars: 2503
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.kurieisha.co.jp/dosen-rose-fes/
+  printer_id: kurieisha
+  content_hash: sha256:6e0a25aa2f7f3d7c4a3dae36e719ceccf89f16f9b0b07676edf3f54499e3d9da
+  reviewed_hash: null
+  content_chars: 2485
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/eventsupport_paper/
@@ -888,8 +978,8 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-16T01:24:55+09:00
-  fetch_status: ok
-  http_status: 200
+  fetch_status: not_found
+  http_status: 404
 - url: https://www.kurieisha.co.jp/fullspecsale/
   printer_id: kurieisha
   content_hash: sha256:534707e5a4ecc6205e3f209ad99a90f49beb267a870c5c2150e621e707856caf
@@ -897,7 +987,7 @@
   content_chars: 1250
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/ginpara/
@@ -907,7 +997,7 @@
   content_chars: 1191
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/itoshiori_fair/
@@ -917,7 +1007,7 @@
   content_chars: 2065
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/paradisefair/
@@ -927,7 +1017,7 @@
   content_chars: 991
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.kurieisha.co.jp/sweet-halloween-fes/
@@ -937,17 +1027,17 @@
   content_chars: 2504
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:24:55+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.luck-pb.jp/
   printer_id: luck
-  content_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
+  content_hash: sha256:da0c3986081e1cc1f9640d8cb443f0396824da5ceb9db545286963def3164273
   reviewed_hash: sha256:0ffbcabf42f88e7cdecd4380dcab66e4e32a732dee750c657c07308d2d4e815f
-  content_chars: 7425
-  etag: '"9234-65dae25b0dde9"'
-  last_modified: Tue, 13 Oct 2026 00:46:38 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
+  content_chars: 7621
+  etag: '"9904-65f96d4001f39"'
+  last_modified: Fri, 06 Nov 2026 07:47:46 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.luck-pb.jp/asobigamifair.html
@@ -957,9 +1047,9 @@
   content_chars: 1428
   etag: '"3182-65dad9b73da58"'
   last_modified: Tue, 13 Oct 2026 00:07:59 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/carpsale.html
   printer_id: luck
   content_hash: sha256:c1fe69b738288fb794ab2941dcbdd9ed1b8d8db07dc4710ae76109076fe4b9f8
@@ -967,9 +1057,9 @@
   content_chars: 1139
   etag: '"272f-5ba3d6c854d00"'
   last_modified: Mon, 01 Feb 2021 02:51:00 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/hajimemashite.html
   printer_id: luck
   content_hash: sha256:d2eb77f5273f1fdf06313d04e5d36fd775debbd4bac94024dd6cf5755e9b3d04
@@ -977,9 +1067,9 @@
   content_chars: 1873
   etag: '"2fe8-64ec617e22326"'
   last_modified: Mon, 06 Apr 2026 08:02:51 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/only.html
   printer_id: luck
   content_hash: sha256:73a95d14c9d5a6b3f7fadcdf13b6ab62df8b4e9314f77884ebd91d324dc889e9
@@ -987,9 +1077,9 @@
   content_chars: 2550
   etag: '"384e-65b15764c0c28"'
   last_modified: Wed, 09 Sep 2026 23:46:37 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/review.html
   printer_id: luck
   content_hash: sha256:c676a7d7684bcbd071db8a71a8281e16af02b5aaade6432c5baa1df170b6d7a1
@@ -997,9 +1087,9 @@
   content_chars: 647
   etag: '"1b8b-59dce7973a880"'
   last_modified: Wed, 05 Feb 2020 06:43:30 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/tokusyushifair.html
   printer_id: luck
   content_hash: sha256:0523dd0315f75baded1bbe788cabd3ee943c10c2a5a9618b3c2960b9de4ab562
@@ -1007,9 +1097,9 @@
   content_chars: 1239
   etag: '"292b-6595ae5d1a7d0"'
   last_modified: Tue, 18 Aug 2026 23:46:37 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.luck-pb.jp/zeroen.html
   printer_id: luck
   content_hash: sha256:9f0de2131be79682b279d1b7359fefc6a1f8f6d9c7843cc68dbc6d763cafda3e
@@ -1017,17 +1107,17 @@
   content_chars: 362
   etag: '"1982-5ff8da193a9b0"'
   last_modified: Mon, 03 Jul 2023 04:30:49 GMT
-  last_fetched_at: 2026-10-18T11:44:56+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.marusho-ink.co.jp/info
   printer_id: marusho
-  content_hash: sha256:1a433ac554263e810457125a67f0c3f96da52c7868b53aa3c3ad396547046de1
+  content_hash: sha256:e46dd01ebfc93504499de5cf5304f5e43e49f7a13aa9a2d46c0eb4e3ee4e5816
   reviewed_hash: sha256:1a433ac554263e810457125a67f0c3f96da52c7868b53aa3c3ad396547046de1
-  content_chars: 2759
+  content_chars: 2828
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:30:52+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.marusho-ink.co.jp/info/shoten20261104
@@ -1037,7 +1127,7 @@
   content_chars: 2333
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:30:52+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://mikan-no-ki.com/
@@ -1045,19 +1135,19 @@
   content_hash: sha256:5c94bee234b3e928c501688e25e320cd42b0b36e37b2acc26de20f8cabbcca7c
   reviewed_hash: sha256:5c94bee234b3e928c501688e25e320cd42b0b36e37b2acc26de20f8cabbcca7c
   content_chars: 522
-  etag: null
-  last_modified: null
-  last_fetched_at: 2026-10-21T09:32:23+09:00
+  etag: '"1652-64d1db4fb2460"'
+  last_modified: Mon, 16 Mar 2026 05:44:06 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nanairodo.jp/
   printer_id: nanairodo
-  content_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
+  content_hash: sha256:8008bb7f20085dd40fc685d10f49051bc187ee40a5d61f45834dd6028a0bd9da
   reviewed_hash: sha256:1a5c0ebcf134c2c6ea2c74007c5287fddcb74ddc60933b4f761075060900d761
-  content_chars: 2475
+  content_chars: 2455
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:27:11+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nanairodo.jp/campaign/
@@ -1067,7 +1157,7 @@
   content_chars: 191
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:27:11+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nanairodo.jp/eventsupport/
@@ -1077,7 +1167,7 @@
   content_chars: 1392
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:27:11+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nanairodo.jp/hashtagcampaign/
@@ -1087,7 +1177,7 @@
   content_chars: 837
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:27:11+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nanairodo.jp/products/request_information/sample/
@@ -1097,77 +1187,77 @@
   content_chars: 1218
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:27:11+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/
   printer_id: nekonoshippo
-  content_hash: sha256:5607b52cf8e3ce5e076501f5284e78139b63584e689ea5c67890946bf4b3eb4a
+  content_hash: sha256:ad8d765fff1f5dd7609bb7e4ee14027e536c9f001183b75b018337154ae902bc
   reviewed_hash: sha256:5607b52cf8e3ce5e076501f5284e78139b63584e689ea5c67890946bf4b3eb4a
-  content_chars: 4003
+  content_chars: 4182
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/info/2026_book_autumn.shtml
   printer_id: nekonoshippo
-  content_hash: sha256:707ed88d4f0922f1743ef18bf131620d522c9424757348c306e78850bf68b07c
+  content_hash: sha256:f73ff5c09b96379d4d4019efe1d7fe19a5fbf94a9c840730a4af1161cb879cf0
   reviewed_hash: null
-  content_chars: 1947
+  content_chars: 1985
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/info/2026_cal_autumn.shtml
   printer_id: nekonoshippo
-  content_hash: sha256:4b5729f2b91dc51616d4d07a811864f682016892d2cf8a7cafafb7bed5706866
+  content_hash: sha256:73e1fa50de22933ef14761bcae797316d8730edd9528ec25e94300f22b13b0ed
   reviewed_hash: sha256:4b5729f2b91dc51616d4d07a811864f682016892d2cf8a7cafafb7bed5706866
-  content_chars: 1681
+  content_chars: 1719
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/info/campaign/
   printer_id: nekonoshippo
-  content_hash: sha256:d4f6363d926dfee24e50cd3157b5cb3c3ebe1a8884bd016e87a6108e25f28cc3
+  content_hash: sha256:a3299c4c3c22e34aab361143ff0373b899e06b664a8cafc08d92efe92c95fddc
   reviewed_hash: sha256:d4f6363d926dfee24e50cd3157b5cb3c3ebe1a8884bd016e87a6108e25f28cc3
-  content_chars: 2109
+  content_chars: 2147
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:41:53+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/info/saihan.shtml
   printer_id: nekonoshippo
-  content_hash: sha256:6a16dfa88d6e4555e30559e5be995f1899d1d5332415722c0a36c7e143f604cb
+  content_hash: sha256:1e3dffd5345aec2c08f5b5ee1a3f82b54b7497aea79a402b2c343ccc76312b4d
   reviewed_hash: sha256:6a16dfa88d6e4555e30559e5be995f1899d1d5332415722c0a36c7e143f604cb
-  content_chars: 1957
+  content_chars: 1995
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/schedule/deliver.shtml
   printer_id: nekonoshippo
-  content_hash: sha256:3b2441d1b9f5409553bcfa58c8630bfbc47e82c462fd935bb176acaab4572051
+  content_hash: sha256:07f705763342809d2e0d3849f279393aa17875a542d3a03ca819f34d5a577916
   reviewed_hash: sha256:3b2441d1b9f5409553bcfa58c8630bfbc47e82c462fd935bb176acaab4572051
-  content_chars: 4269
+  content_chars: 4206
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:41:53+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shippo.co.jp/neko/schedule/event202610.shtml
   printer_id: nekonoshippo
-  content_hash: sha256:a83b26cc9f487a86fb8313cdf0e26a126f94a83d03b55e8ecbd482807f303be9
+  content_hash: sha256:edbac6e949090b812158e700ae646c7b4bee5beec3330b7b1336b1d4dc0ac4ec
   reviewed_hash: sha256:a83b26cc9f487a86fb8313cdf0e26a126f94a83d03b55e8ecbd482807f303be9
-  content_chars: 15723
+  content_chars: 5856
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:30:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/fair/ondekuchie
@@ -1177,37 +1267,37 @@
   content_chars: 1663
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/
   printer_id: nikko-kikaku
-  content_hash: sha256:f41d86f8e0c6c7b721a486c61710b8e631066122d89c5d804699a90767cb6faa
+  content_hash: sha256:ddda4d0bdf97abb9161dbacf14811a975bc8f6ba80d974e410da30761c86f907
   reviewed_hash: sha256:f41d86f8e0c6c7b721a486c61710b8e631066122d89c5d804699a90767cb6faa
-  content_chars: 1784
+  content_chars: 1704
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/12p/
   printer_id: nikko-kikaku
-  content_hash: sha256:e08a2b40878ccca180792764f6cfbf39e2e14d03688adf456f0377aaf62a9c9f
+  content_hash: sha256:499b8f1b221b56331b82dd596d6853d9f8b0a255637f63a29e04c05e51ce10dd
   reviewed_hash: sha256:e08a2b40878ccca180792764f6cfbf39e2e14d03688adf456f0377aaf62a9c9f
-  content_chars: 1673
+  content_chars: 1732
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-8p
   printer_id: nikko-kikaku
-  content_hash: sha256:9c260c6decbac0722d2e509f70942e423cf926da325016b791c195c1c8a51b6b
+  content_hash: sha256:f8968b5879cb7978925e9116671928c0a7907f525854bc7c0f58525174d6bf4b
   reviewed_hash: sha256:9c260c6decbac0722d2e509f70942e423cf926da325016b791c195c1c8a51b6b
-  content_chars: 1769
+  content_chars: 1822
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-irumi/
@@ -1217,17 +1307,17 @@
   content_chars: 62170
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-novels/
   printer_id: nikko-kikaku
-  content_hash: sha256:13ef4a4d99533ee42030994d6c3a3fcf8f886d42e77235ccc603634b2ae1d869
+  content_hash: sha256:898c52b4e9d455f7e89dc780f06382b586632aec48d33b0017f0651068f2f57b
   reviewed_hash: sha256:13ef4a4d99533ee42030994d6c3a3fcf8f886d42e77235ccc603634b2ae1d869
-  content_chars: 10525
+  content_chars: 10577
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-ougon/
@@ -1237,7 +1327,7 @@
   content_chars: 2413
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-smoky/
@@ -1247,7 +1337,7 @@
   content_chars: 29108
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-souffle/
@@ -1257,27 +1347,27 @@
   content_chars: 16187
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru1/
   printer_id: nikko-kikaku
-  content_hash: sha256:dd1b3d81a8d3b8d57a5446d8a3df3b2c4658cddb6629003430a8ca8eda8cba30
+  content_hash: sha256:f0a9219d975ff6e69a49c0454c594c58bf9ab82a2fdebe6f801461fb0a47ae50
   reviewed_hash: sha256:dd1b3d81a8d3b8d57a5446d8a3df3b2c4658cddb6629003430a8ca8eda8cba30
-  content_chars: 3787
+  content_chars: 3891
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-sukeru2/
   printer_id: nikko-kikaku
-  content_hash: sha256:2778594b7ac0cf97631514ca5d071eafe4cf623afd5967cddfb29bf3c026a9b5
+  content_hash: sha256:aa51f1570199ac5c22d1d6013fcf5b8d14d531c3bba14521e76986e422a11805
   reviewed_hash: sha256:2778594b7ac0cf97631514ca5d071eafe4cf623afd5967cddfb29bf3c026a9b5
-  content_chars: 3572
+  content_chars: 3676
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-syari/
@@ -1287,7 +1377,7 @@
   content_chars: 118406
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-viva/
@@ -1297,27 +1387,27 @@
   content_chars: 1646
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fair-white/
   printer_id: nikko-kikaku
-  content_hash: sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175
+  content_hash: sha256:1d10b1e2c90ffcfc54a2e0faa34108e33ac78c0f09ca6bbedafe2b903191cb8e
   reviewed_hash: sha256:95765d791859680f6e733c8842c381e9cab6271f64981e12533da592b3ca6175
-  content_chars: 15421
+  content_chars: 15473
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.nikko-pc.com/site/fc8p/
   printer_id: nikko-kikaku
-  content_hash: sha256:1e87ae3ba2449ab9cf07d96774d0accac6526347839c734c02487df7eec362e8
+  content_hash: sha256:fb2e5aee1e71b53729780be26e60818c65ac598a519cdc6fed56afb8bb7255b4
   reviewed_hash: sha256:1e87ae3ba2449ab9cf07d96774d0accac6526347839c734c02487df7eec362e8
-  content_chars: 2120
+  content_chars: 2195
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T18:44:38+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://nishimura-p.co.jp/news/
@@ -1327,7 +1417,7 @@
   content_chars: 419
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:15:36+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.print-norimatsu.com/
@@ -1337,7 +1427,7 @@
   content_chars: 2725
   etag: null
   last_modified: Fri, 22 Apr 2016 09:39:58 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.print-norimatsu.com/print/minikomi/grade/grade-fea02/index.html
@@ -1347,9 +1437,9 @@
   content_chars: 2403
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:03 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.print-norimatsu.com/print/minikomi/grade/grade-fea03/index.html
   printer_id: norimatsu
   content_hash: sha256:c16d6931cda059b5965d0f36202e59ca41c5bcdd71f241d51e9d2e1d96625a19
@@ -1357,9 +1447,9 @@
   content_chars: 2209
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:05 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.print-norimatsu.com/print/minikomi/minicomi/index.html
   printer_id: norimatsu
   content_hash: sha256:cd2b0c28d3ef00e8098b29560953c61d4938bb363a06af44db301a9dc6952ac4
@@ -1367,9 +1457,9 @@
   content_chars: 3647
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:10 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.print-norimatsu.com/print/minikomi/minikomi-hyoushi/index.html
   printer_id: norimatsu
   content_hash: sha256:35cb293af0f4fcfaeef1f8e5339b39d7fec98df0ef8690fa56b837b2e5d8ed11
@@ -1377,9 +1467,9 @@
   content_chars: 2356
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:11 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.print-norimatsu.com/print/minikomi/omakase/index.html
   printer_id: norimatsu
   content_hash: sha256:2c5f60ede23e296bbfc84f00ae75232ac830fb7cb8351d30986af969e373b9f3
@@ -1387,9 +1477,9 @@
   content_chars: 2429
   etag: null
   last_modified: Fri, 26 Dec 2014 09:59:44 GMT
-  last_fetched_at: 2026-10-21T09:31:20+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://red-train.co.jp/fair/260828_ppp-hologram/
   printer_id: onebooks
   content_hash: sha256:cbe6f58e7c9e3b93e059f831eb5638d1a1fd3bfd0c988c67ea57375e84af5230
@@ -1417,7 +1507,7 @@
   content_chars: 6444
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261025.php
@@ -1427,7 +1517,7 @@
   content_chars: 22999
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261129.php
@@ -1437,7 +1527,7 @@
   content_chars: 24709
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261220.php
@@ -1447,7 +1537,7 @@
   content_chars: 23082
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20261227.php
@@ -1457,7 +1547,7 @@
   content_chars: 23077
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_20270110.php
@@ -1467,7 +1557,17 @@
   content_chars: 22975
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.orangekoubou.com/special/limited_fair_20270117.php
+  printer_id: orangekoubou
+  content_hash: sha256:3d9efabf83d4567d9f002f839fc12deef6b55a2652bb9a429710172ad0989759
+  reviewed_hash: null
+  content_chars: 22987
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_novel_2026.php
@@ -1477,17 +1577,17 @@
   content_chars: 1785
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_onebook_nekoposu_202604.php
   printer_id: orangekoubou
-  content_hash: sha256:7f362c73f5abc361d285b76ca390560046b8446a42aafbc59d375ed21ee9e651
+  content_hash: sha256:92e1d802354412a8b95113945356bffdc4c3d21d97e6dc8a6ef950161a8cde54
   reviewed_hash: null
-  content_chars: 2288
+  content_chars: 2093
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_saihan_20261014.php
@@ -1497,7 +1597,7 @@
   content_chars: 2078
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair_saihan_20261028.php
@@ -1507,17 +1607,17 @@
   content_chars: 2080
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/limited_fair.php
   printer_id: orangekoubou
-  content_hash: sha256:3ca97df06ce877a9958e28d4648ff26c623bdc7e7b2c43d0bcb2dec8c41d9db3
+  content_hash: sha256:d40c72c899c1237c9cb34290ab6039bbf50bb7acade226130756c21fcc9ee812
   reviewed_hash: sha256:3ca97df06ce877a9958e28d4648ff26c623bdc7e7b2c43d0bcb2dec8c41d9db3
-  content_chars: 2222
+  content_chars: 1681
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/orange_original_goods2023.php
@@ -1527,7 +1627,7 @@
   content_chars: 248
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_draft_sp_02.php
@@ -1537,7 +1637,7 @@
   content_chars: 310
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_draft.php
@@ -1547,7 +1647,7 @@
   content_chars: 4589
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.orangekoubou.com/special/privilege_eventsupport.php
@@ -1557,117 +1657,117 @@
   content_chars: 3710
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-04T02:31:34+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://otaclub.jp/
   printer_id: otaclub
-  content_hash: sha256:9d9d12c35c3d56765aaed7db18baaf7fee01bc03f236468c701fe1a9720a686c
+  content_hash: sha256:9098e9cca4d44c74b61d57a0da892b73b39c21968e06cabd619c15f66374d015
   reviewed_hash: sha256:9d9d12c35c3d56765aaed7db18baaf7fee01bc03f236468c701fe1a9720a686c
-  content_chars: 6312
+  content_chars: 7477
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-21T09:36:00+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://pentaro.jp/
   printer_id: pentaro
-  content_hash: sha256:2bca6a93cdc850711aedb0035b331a6097da77164445e1b314043c60659256e4
+  content_hash: sha256:cac303e1830252505f1cb4df18dfe5f2a8c65075a63e311321d32e4de277019c
   reviewed_hash: sha256:2bca6a93cdc850711aedb0035b331a6097da77164445e1b314043c60659256e4
-  content_chars: 5041
+  content_chars: 5089
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:10:09+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/
   printer_id: pico
-  content_hash: sha256:d01219e812736702fa6cc87c8e752195c5af9669409194c3b1b2b2746f39a2ec
+  content_hash: sha256:9093b1b2eaadded1d1fc0e904896f5b91d8a8bbed618fc645e991f0706fdd6dc
   reviewed_hash: sha256:d01219e812736702fa6cc87c8e752195c5af9669409194c3b1b2b2746f39a2ec
-  content_chars: 5401
-  etag: '"12c6c-65e419228b831"'
-  last_modified: Tue, 20 Oct 2026 08:39:38 GMT
-  last_fetched_at: 2026-10-21T00:32:01+09:00
+  content_chars: 5366
+  etag: '"12280-66059d59e78b1"'
+  last_modified: Mon, 16 Nov 2026 00:26:52 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/117.html
   printer_id: pico
-  content_hash: sha256:830fce6a1fb73b9fe4b42ddaaa8ff125d8ca5b2ae56394ed94120b63c1e0edc7
+  content_hash: sha256:e63975748845150a0d4da4cef4c067ce4a7676cc0b83e8ed43136f1d085dbb3d
   reviewed_hash: sha256:830fce6a1fb73b9fe4b42ddaaa8ff125d8ca5b2ae56394ed94120b63c1e0edc7
-  content_chars: 4340
-  etag: '"eeec-65e41882d94c2"'
-  last_modified: Tue, 20 Oct 2026 08:36:50 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 177
+  etag: '"f2c-5b825a868858e"'
+  last_modified: Tue, 05 Jan 2021 11:39:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/20261108-bunnhuritokyo43.html
   printer_id: pico
-  content_hash: sha256:5220da0274aac7f851f0f9f17e4d07970757f1d967b50206db4f5cba62119724
+  content_hash: sha256:e63975748845150a0d4da4cef4c067ce4a7676cc0b83e8ed43136f1d085dbb3d
   reviewed_hash: sha256:5220da0274aac7f851f0f9f17e4d07970757f1d967b50206db4f5cba62119724
-  content_chars: 4350
-  etag: '"eef7-65dc892101d02"'
-  last_modified: Wed, 14 Oct 2026 08:18:05 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 177
+  etag: '"f2c-5b825a868858e"'
+  last_modified: Tue, 05 Jan 2021 11:39:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/akaboo-shinkancard.html
   printer_id: pico
-  content_hash: sha256:ce63e24ab6b4af7ac3afcf1cf46d9a92e561ad45e83cc82bed6a9b0cf0305366
+  content_hash: sha256:14301cdec5a675654d6730393dac4b5981d7b76332fbd6c13ee7abd1fe002507
   reviewed_hash: sha256:ce63e24ab6b4af7ac3afcf1cf46d9a92e561ad45e83cc82bed6a9b0cf0305366
-  content_chars: 5135
-  etag: '"fa3e-65ca81ca47df6"'
-  last_modified: Wed, 30 Sep 2026 00:09:25 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 5136
+  etag: '"fa50-65f998202339b"'
+  last_modified: Fri, 06 Nov 2026 10:59:36 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/event/
   printer_id: pico
-  content_hash: sha256:92aa29ba045c1a8c581c5cdb2a69a6a6e21646dfdb5571f6e81799c8a3ecb21e
+  content_hash: sha256:0a470025a855b72fd3d31fb78a2714538b38324be3f62ec4cb2a4a2ce68c3e5f
   reviewed_hash: null
-  content_chars: 5615
-  etag: '"13266-65e3cfb999757"'
-  last_modified: Tue, 20 Oct 2026 03:11:12 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 5192
+  etag: '"110dd-65f976e7c8411"'
+  last_modified: Fri, 06 Nov 2026 08:30:58 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/event/shotaflow.html
   printer_id: pico
-  content_hash: sha256:9497013cc5009c66b565281aa6cfb5750e8fd9b1e2a03683b68760e3e517036b
+  content_hash: sha256:e63975748845150a0d4da4cef4c067ce4a7676cc0b83e8ed43136f1d085dbb3d
   reviewed_hash: sha256:9497013cc5009c66b565281aa6cfb5750e8fd9b1e2a03683b68760e3e517036b
-  content_chars: 4547
-  etag: '"f507-65cda7ec19e81"'
-  last_modified: Fri, 02 Oct 2026 12:15:59 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 177
+  etag: '"f2c-5b825a868858e"'
+  last_modified: Tue, 05 Jan 2021 11:39:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/hakuprint-yuuryoushi.html
   printer_id: pico
-  content_hash: sha256:edb28c610de5353221c7841792a397b8da33af4c7283ffe1f84474eddd64e392
+  content_hash: sha256:6058831761c5dbda3e75f541a4a36f7d10164880a0fd067a53aeb70e15addac0
   reviewed_hash: sha256:edb28c610de5353221c7841792a397b8da33af4c7283ffe1f84474eddd64e392
-  content_chars: 4324
-  etag: '"eed1-65ca81ca70669"'
-  last_modified: Wed, 30 Sep 2026 00:09:25 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 4325
+  etag: '"eee3-65f998204ac6e"'
+  last_modified: Fri, 06 Nov 2026 10:59:36 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/service/doujin_print/ondemand/select_nisuhyoushi.html
   printer_id: pico
-  content_hash: sha256:fbfbf2315c9d5dc8a2d273b665e5356fa5d497faef26d5524154ac8ae052dc04
+  content_hash: sha256:727d52266664b30971cf55409c1272ee1ce1dbee04fe53daeac43773df298bc8
   reviewed_hash: sha256:fbfbf2315c9d5dc8a2d273b665e5356fa5d497faef26d5524154ac8ae052dc04
-  content_chars: 9384
-  etag: '"1535e-65ca7fa81430a"'
-  last_modified: Tue, 29 Sep 2026 23:59:52 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 9354
+  etag: '"15213-65f5303687143"'
+  last_modified: Mon, 02 Nov 2026 22:53:24 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/service/doujin_print/original_embossing.html
   printer_id: pico
-  content_hash: sha256:5768825f92609f19e04c80914c5b39683314fb2066c58712002f129283dc4659
+  content_hash: sha256:f25bb5e05312ee1a15056fe7f673b6542cd17ab971724c952f4a997ff1dbd916
   reviewed_hash: sha256:5768825f92609f19e04c80914c5b39683314fb2066c58712002f129283dc4659
-  content_chars: 10190
-  etag: '"15522-65ca7f9fde56b"'
-  last_modified: Tue, 29 Sep 2026 23:59:43 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 10160
+  etag: '"153d7-65f5302f7ebf6"'
+  last_modified: Mon, 02 Nov 2026 22:53:16 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/service/post_15.html
@@ -1677,37 +1777,37 @@
   content_chars: 9895
   etag: '"142cd-64591f79cb4c5"'
   last_modified: Wed, 10 Dec 2025 05:04:47 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.pico-net.com/doujinshi/service/setoption/binding/020.html
   printer_id: pico
-  content_hash: sha256:c46d8af213e9d4c7c58dff4f0f38e0657deda7b275d285909a96034250b1d792
+  content_hash: sha256:dd5bb233f3c0f04892e9bc812736b125f9161a1556f8a1fb33dd46647820bed1
   reviewed_hash: null
-  content_chars: 4955
-  etag: '"111d3-65ca7fdd8a073"'
-  last_modified: Wed, 30 Sep 2026 00:00:48 GMT
-  last_fetched_at: 2026-10-21T00:32:01+09:00
+  content_chars: 4925
+  etag: '"11088-65f5306300d1c"'
+  last_modified: Mon, 02 Nov 2026 22:54:11 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/service/setoption/cover/004.html
   printer_id: pico
-  content_hash: sha256:ff3e57cca401634d6bd442113bd1211e8678439c75d4f229899e0ee45a54d7fa
+  content_hash: sha256:65c17ba47b695a2aeeea9ae883c71a248a53adaa6d93d6d745caf5b02990e3ea
   reviewed_hash: sha256:ff3e57cca401634d6bd442113bd1211e8678439c75d4f229899e0ee45a54d7fa
-  content_chars: 6474
-  etag: '"126ba-65ca7fe57cfbc"'
-  last_modified: Wed, 30 Sep 2026 00:00:56 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 6444
+  etag: '"1256f-65f53067a0aeb"'
+  last_modified: Mon, 02 Nov 2026 22:54:15 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.pico-net.com/doujinshi/shf2026.html
   printer_id: pico
-  content_hash: sha256:bfba37d6144a297bf596034d99c6e418419d126dfed53d434d24022cb9c561a3
+  content_hash: sha256:e63975748845150a0d4da4cef4c067ce4a7676cc0b83e8ed43136f1d085dbb3d
   reviewed_hash: sha256:bfba37d6144a297bf596034d99c6e418419d126dfed53d434d24022cb9c561a3
-  content_chars: 4370
-  etag: '"eef5-65ceb3e2bb498"'
-  last_modified: Sat, 03 Oct 2026 08:14:50 GMT
-  last_fetched_at: 2026-10-20T23:29:42+09:00
+  content_chars: 177
+  etag: '"f2c-5b825a868858e"'
+  last_modified: Tue, 05 Jan 2021 11:39:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/2026B5hon2.html
@@ -1717,9 +1817,9 @@
   content_chars: 776
   etag: '"213bf724-3da4-65ddc671a8ce2"'
   last_modified: Thu, 15 Oct 2026 07:57:44 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026calendar.html
   printer_id: popls
   content_hash: sha256:4318c72581dc871299fff8ab7fd0315cee3eb0e89d5c3d06788a25a3229e67e9
@@ -1727,9 +1827,9 @@
   content_chars: 599
   etag: '"213bf758-2473-65ef0e14176e7"'
   last_modified: Thu, 29 Oct 2026 01:48:44 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026minihon2.html
   printer_id: popls
   content_hash: sha256:d9b84d7b5323878e2d1c2b30d557c8627daa9b1315ce313701d168541be8f2fb
@@ -1737,9 +1837,9 @@
   content_chars: 1721
   etag: '"213bf759-6c81-65e8ba400d620"'
   last_modified: Sat, 24 Oct 2026 01:01:45 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026nuno3.html
   printer_id: popls
   content_hash: sha256:b03d98978a8755dc5773cfc2995dcdbe5b6f59698c7afa52ad54343653542f0e
@@ -1747,9 +1847,9 @@
   content_chars: 428
   etag: '"213bf754-4276-65e69b8b505c5"'
   last_modified: Thu, 22 Oct 2026 08:33:43 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026option50_3.html
   printer_id: popls
   content_hash: sha256:eaca0de222a71a67d733f31d80aa7a57fbdd95014c4479c86316118900336293
@@ -1757,9 +1857,9 @@
   content_chars: 951
   etag: '"213bf7af-5f97-65e8bba495650"'
   last_modified: Sat, 24 Oct 2026 01:07:59 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026saihan20_2.html
   printer_id: popls
   content_hash: sha256:f00644f4e51b8fcdd7cf32f6943f9f900f4d50cc79868cd38659dde68c577d84
@@ -1767,9 +1867,9 @@
   content_chars: 751
   etag: '"2018ebe0-46f1-65edfb52504a9"'
   last_modified: Wed, 28 Oct 2026 05:19:30 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026summer.html
   printer_id: popls
   content_hash: sha256:aabd665db8620b5ae8618a52259343a064782c23dcfbd2f9497a1d26ba6143be
@@ -1777,7 +1877,7 @@
   content_chars: null
   etag: '"214bc294-89b3-65b2bee0f3596"'
   last_modified: Fri, 11 Sep 2026 02:34:55 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026tamanuno2.html
@@ -1787,7 +1887,7 @@
   content_chars: null
   etag: '"213bf721-4511-65b03e374fdfb"'
   last_modified: Wed, 09 Sep 2026 02:48:39 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/2026wabon.html
@@ -1797,7 +1897,7 @@
   content_chars: null
   etag: '"213bf723-86e6-65bcf2864dfd8"'
   last_modified: Sat, 19 Sep 2026 05:19:14 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www2.popls.co.jp/pop/fair/index.html
@@ -1805,9 +1905,9 @@
   content_hash: sha256:bf5ff6ecf0521e6fe1b8bdbd642d5501f4803c5c2a16e8d7df7c05733f648b7b
   reviewed_hash: sha256:bf5ff6ecf0521e6fe1b8bdbd642d5501f4803c5c2a16e8d7df7c05733f648b7b
   content_chars: 269
-  etag: '"21475ce2-18b4-65edfb6ce5577"'
-  last_modified: Wed, 28 Oct 2026 05:19:57 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
+  etag: '"21475ce2-18b4-65f6f2de4d454"'
+  last_modified: Wed, 04 Nov 2026 08:29:36 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www2.popls.co.jp/pop/fair/saihan.html
@@ -1817,7 +1917,7 @@
   content_chars: null
   etag: '"20041e84-46b0-6511cacddb215"'
   last_modified: Wed, 06 May 2026 02:11:01 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www2.popls.co.jp/pop/shinchaku/s261017_2.html
@@ -1827,9 +1927,9 @@
   content_chars: 441
   etag: '"60149f54-fa1-65dfe392bb7b6"'
   last_modified: Sat, 17 Oct 2026 00:18:42 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www2.popls.co.jp/pop/shinchaku/s261017.html
   printer_id: popls
   content_hash: sha256:b347c3f34f47064e0db8ec3101391d6fc9dda1d70ac85d8ca9035248def9fabb
@@ -1837,9 +1937,9 @@
   content_chars: 427
   etag: '"60147ff2-f80-65dfe39295274"'
   last_modified: Sat, 17 Oct 2026 00:18:42 GMT
-  last_fetched_at: 2026-11-04T09:11:40+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://printking.co.jp/doujin/campaign/betsu_mitsu_fes.php
   printer_id: printking
   content_hash: sha256:9f500c15324961e9cf8f34a0cb614a7e2800e0c768b0772d5c26b253ceeb585e
@@ -1847,7 +1947,7 @@
   content_chars: 979
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:31:29+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://printking.co.jp/doujin/campaign/early_bird_guide.php
@@ -1857,17 +1957,17 @@
   content_chars: 1640
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:31:29+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://printking.co.jp/doujin/campaign/index.php
   printer_id: printking
-  content_hash: sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2
-  reviewed_hash: sha256:89c9d2f541708facedf5702a2b04250d663a77c81a1ac729f070b67552970ac2
-  content_chars: 8919
+  content_hash: sha256:04ec13e4fcfc783a549f7ce5be18a2ec7a3e6a564c7758b9e021ad5fee0c681d
+  reviewed_hash: sha256:04ec13e4fcfc783a549f7ce5be18a2ec7a3e6a564c7758b9e021ad5fee0c681d
+  content_chars: 6486
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-16T01:31:29+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://print-mouse.com/archives/category/campaign
@@ -1877,7 +1977,7 @@
   content_chars: 28
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:30:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://print-mouse.com/event-support
@@ -1887,27 +1987,27 @@
   content_chars: 1518
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:30:01+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://odahara.jp/doujinshi/
   printer_id: printnet
-  content_hash: sha256:50a5f9ef346ce6ce83b952d1eebfc49ff8002042731dc9e65672d76db5ccb938
+  content_hash: sha256:0af2a0e1115233b43f63614584407772a052ed068ae0d5b0ee58c44aa3cebd19
   reviewed_hash: sha256:50a5f9ef346ce6ce83b952d1eebfc49ff8002042731dc9e65672d76db5ccb938
-  content_chars: 5592
+  content_chars: 5602
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:08:15+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.print-on.jp/doujin/doujin_index.htm
   printer_id: printon
-  content_hash: sha256:3bc9835c724066d1bb1ac6d5af0550e6feb4658d6c82056048be260dc96f39b2
+  content_hash: sha256:1ae3305153cb801bed3e949716bc5c7d8f105dc5052a9911e70d5e4a8d12170d
   reviewed_hash: sha256:3bc9835c724066d1bb1ac6d5af0550e6feb4658d6c82056048be260dc96f39b2
-  content_chars: 13468
-  etag: W/"25ef8-65fe464b13ed9"
-  last_modified: Tue, 10 Nov 2026 04:20:06 GMT
-  last_fetched_at: 2026-11-10T15:31:58+09:00
+  content_chars: 13494
+  etag: W/"25fa6-660239c42a880"
+  last_modified: Fri, 13 Nov 2026 07:45:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.print-on.jp/doujin/fair/fair_120.htm
@@ -1917,9 +2017,9 @@
   content_chars: 3702
   etag: W/"b729-65ded9f8de229"
   last_modified: Fri, 16 Oct 2026 04:30:25 GMT
-  last_fetched_at: 2026-11-10T15:31:58+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.print-on.jp/doujin/fair/fair_97.htm
   printer_id: printon
   content_hash: sha256:cbc4fb9a6e0674518dcfbb06849b768f6e24a43d03b1610baeb2fe1790c85483
@@ -1927,27 +2027,27 @@
   content_chars: 127
   etag: W/"59e6-65ded9fbc83b6"
   last_modified: Fri, 16 Oct 2026 04:30:28 GMT
-  last_fetched_at: 2026-11-10T15:31:58+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.printpac.co.jp/contents/lineup/doujinshi/index.html
   printer_id: printpac
-  content_hash: sha256:514e8064e77c34370d1624b3390b6bd0b9ec52714ce59caa509fbcddaa62fd42
+  content_hash: sha256:76cbefc4d2ab7e6d1034259226c645882bca8263867a07356be07dbac0b952c8
   reviewed_hash: sha256:514e8064e77c34370d1624b3390b6bd0b9ec52714ce59caa509fbcddaa62fd42
   content_chars: 21807
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:09:25+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://pripela.com/
   printer_id: pripela
-  content_hash: sha256:f7148ca7dc916705999440cf806cd3d2d25082c2c59adb5d65d0d04be566910e
+  content_hash: sha256:0be82f87734e6f1c5f14a29f34984116b40c41ff02478254ca63bb8ea37674ad
   reviewed_hash: sha256:f7148ca7dc916705999440cf806cd3d2d25082c2c59adb5d65d0d04be566910e
-  content_chars: 3991
+  content_chars: 4422
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:07:37+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://rururu-p.com/
@@ -1957,27 +2057,27 @@
   content_chars: 131
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:13:21+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign
   printer_id: ryokuyou
-  content_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
+  content_hash: sha256:ea35da31207a65eb535e4ff4937a2a89c7c05b62a8dd75a0583c292c6d0c1348
   reviewed_hash: sha256:e0017881b683743563e4499bfd20e52743720bbb2a031ebfe527d082ca39186f
-  content_chars: 3036
+  content_chars: 2439
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/aquarium.html
   printer_id: ryokuyou
-  content_hash: sha256:c3a1e7e6cdcc526878426527a1619e4473773d3a57b4826541cf06d35e360a4c
+  content_hash: sha256:5158044f61413ef83807e468a2741e75ae31d78b3a2cff4b4aa8fb0f8ddb04bd
   reviewed_hash: sha256:c3a1e7e6cdcc526878426527a1619e4473773d3a57b4826541cf06d35e360a4c
-  content_chars: 28704
+  content_chars: 28684
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bookstorefair2026w.html
@@ -1987,7 +2087,7 @@
   content_chars: 1134
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bouquet_asobi.html
@@ -1997,7 +2097,7 @@
   content_chars: 6477
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bu_bunhuri.html
@@ -2007,7 +2107,7 @@
   content_chars: 3189
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bungakusoutei.html
@@ -2017,7 +2117,7 @@
   content_chars: 24054
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/bushido.html
@@ -2027,7 +2127,7 @@
   content_chars: 15495
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/designselecthaku.html
@@ -2037,7 +2137,7 @@
   content_chars: 10437
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select202610.html
@@ -2047,7 +2147,7 @@
   content_chars: 3344
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select202611.html
@@ -2057,7 +2157,7 @@
   content_chars: 3223
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/digi_select2026w.html
@@ -2067,17 +2167,17 @@
   content_chars: 3585
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_color_change.html
   printer_id: ryokuyou
-  content_hash: sha256:5ee7486473c98b3c74f395ef92030067cd76367c07ceb42e2ff3d6fe02e6447b
+  content_hash: sha256:135f2e0f6d31e9070757d95e43167fee14d5fa143167512a22915d28b7706c0b
   reviewed_hash: sha256:5ee7486473c98b3c74f395ef92030067cd76367c07ceb42e2ff3d6fe02e6447b
-  content_chars: 1286
+  content_chars: 1310
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select202610.html
@@ -2087,7 +2187,7 @@
   content_chars: 1970
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select202611.html
@@ -2097,7 +2197,7 @@
   content_chars: 1787
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/fair_select2026w.html
@@ -2107,7 +2207,7 @@
   content_chars: 2196
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/glitterpp.html
@@ -2117,7 +2217,7 @@
   content_chars: 3968
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-20T09:00:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/hotstamp_big.html
@@ -2138,6 +2238,16 @@
   etag: null
   last_modified: null
   last_fetched_at: 2026-10-20T09:00:54+09:00
+  fetch_status: ok
+  http_status: 200
+- url: https://www.ryokuyou.co.jp/doujin/campaign/plusreprint.html
+  printer_id: ryokuyou
+  content_hash: sha256:eb2a568fd79986a7f29bd3a4b6a786504973504e8ef1c91f1cf30cca28e72bb1
+  reviewed_hash: null
+  content_chars: 1917
+  etag: null
+  last_modified: null
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/starhaku.html
@@ -2162,12 +2272,12 @@
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/trustcolorhaku.html
   printer_id: ryokuyou
-  content_hash: sha256:a647ff075805cd3cf9b8cf2323209c0a99ff19c44daf444921f31cd9dd697d4f
+  content_hash: sha256:675ce61e9450c6ae14c00ac40a0f7d2ae5b233205bf6a84ac20896431ba5fbc9
   reviewed_hash: sha256:a647ff075805cd3cf9b8cf2323209c0a99ff19c44daf444921f31cd9dd697d4f
-  content_chars: 17107
+  content_chars: 13112
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/twitterhashtag.html
@@ -2177,17 +2287,17 @@
   content_chars: 1795
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.ryokuyou.co.jp/doujin/campaign/weddingkiss.html
   printer_id: ryokuyou
-  content_hash: sha256:abf1f510fe594afe216ba904d2550a5bb1a0453bd65394e4fd0067109ef621f7
+  content_hash: sha256:7cb0f5238587102dc17800ccf8525a7da698ab3c3e64f2367ae7b108b128d63b
   reviewed_hash: sha256:abf1f510fe594afe216ba904d2550a5bb1a0453bd65394e4fd0067109ef621f7
-  content_chars: 25959
+  content_chars: 25938
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-10T09:16:58+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: http://www.shima-pro.com/
@@ -2197,7 +2307,7 @@
   content_chars: 727
   etag: '"1516-645b9edd16fc4"'
   last_modified: Fri, 12 Dec 2025 04:45:21 GMT
-  last_fetched_at: 2026-11-10T15:14:47+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://shimaya.net/fair/5colorhakuoshi/index.html
@@ -2207,7 +2317,7 @@
   content_chars: 1377
   etag: '"30ae-6384872cb70c0"'
   last_modified: Tue, 24 Jun 2025 02:54:35 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://shimaya.net/fair/decospin/
@@ -2282,12 +2392,12 @@
   http_status: 304
 - url: https://www.shimaya.net/
   printer_id: shimaya
-  content_hash: sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9
+  content_hash: sha256:a374497f2c3d72a7358e517745829232e2e1c69aaad8d82ab1e220fd0cf98103
   reviewed_hash: sha256:bbe1922d4e2e78a374678a5244fe78b7f516331812fe5bc685148473f99b4ec9
-  content_chars: 1161
-  etag: '"bb88-65dad2fec3ac0"'
-  last_modified: Mon, 12 Oct 2026 23:37:55 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  content_chars: 1342
+  etag: '"d925-6603a19162099"'
+  last_modified: Sat, 14 Nov 2026 10:35:05 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.shimaya.net/fair/2021summer/kura_zarae_cutie.html
@@ -2307,7 +2417,7 @@
   content_chars: 3198
   etag: '"9d33-65002b8ed9ac0"'
   last_modified: Wed, 22 Apr 2026 01:48:03 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/2021summer/washipp.html
@@ -2347,7 +2457,7 @@
   content_chars: 1538
   etag: '"604f-65a90b3b5e9ea"'
   last_modified: Thu, 03 Sep 2026 09:23:17 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/haku/index.html
@@ -2357,7 +2467,7 @@
   content_chars: 1881
   etag: '"5c58-65a68994f0f83"'
   last_modified: Tue, 01 Sep 2026 09:32:35 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/iroduri/index.html
@@ -2367,7 +2477,7 @@
   content_chars: 1785
   etag: '"5d54-65ce699a2d1c1"'
   last_modified: Sat, 03 Oct 2026 02:42:30 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tokusyushi/index.html
@@ -2377,7 +2487,7 @@
   content_chars: 2749
   etag: '"923c-65b2dc48a1b57"'
   last_modified: Fri, 11 Sep 2026 04:46:29 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/autumn/tomuson/index.html
@@ -2387,7 +2497,7 @@
   content_chars: 7153
   etag: '"15c86-65a7a8840da29"'
   last_modified: Wed, 02 Sep 2026 06:56:18 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/bunfuri/index.html
@@ -2397,9 +2507,9 @@
   content_chars: 2350
   etag: '"5c15-65d5dea080600"'
   last_modified: Fri, 09 Oct 2026 01:03:20 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/cassette-tape_semiorder/
   printer_id: shimaya
   content_hash: sha256:e481fb848d54b66b94a78de7821b2b442a71ce2d7f532149c63e42e924979a51
@@ -2417,7 +2527,7 @@
   content_chars: null
   etag: '"931d-615ce3fbc1140"'
   last_modified: Thu, 11 Apr 2024 08:50:37 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/designcut_postcard/
@@ -2427,7 +2537,7 @@
   content_chars: null
   etag: '"87dd-634e7a32d2b00"'
   last_modified: Mon, 12 May 2025 03:09:00 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/dourevo_collab/index.html
@@ -2447,7 +2557,7 @@
   content_chars: null
   etag: '"11e21-64e740afdc24d"'
   last_modified: Thu, 02 Apr 2026 06:09:27 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/giftbag/
@@ -2477,7 +2587,7 @@
   content_chars: null
   etag: '"9003-64e9a59c050ff"'
   last_modified: Sat, 04 Apr 2026 03:51:37 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/koguchi_gd/
@@ -2487,9 +2597,9 @@
   content_chars: 3265
   etag: '"7d50-65d39e1053d80"'
   last_modified: Wed, 07 Oct 2026 06:03:50 GMT
-  last_fetched_at: 2026-10-08T09:28:36+09:00
-  fetch_status: ok
-  http_status: 200
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: not_modified
+  http_status: 304
 - url: https://www.shimaya.net/fair/onepoint_haku/index.html
   printer_id: shimaya
   content_hash: sha256:ed29e17b097cb6b8fcb42f5a64cbd0c2ce206fef486fc171a20ef04e24bfb6b7
@@ -2557,7 +2667,7 @@
   content_chars: 2647
   etag: '"77e4-658bfed03b6aa"'
   last_modified: Tue, 11 Aug 2026 06:53:18 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/haku/index.html
@@ -2567,7 +2677,7 @@
   content_chars: 2212
   etag: '"5bd8-658bfeb2aa8c5"'
   last_modified: Tue, 11 Aug 2026 06:52:47 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/iroduri/index.html
@@ -2577,7 +2687,7 @@
   content_chars: 1855
   etag: '"7f0c-65cae7ee19764"'
   last_modified: Wed, 30 Sep 2026 07:46:23 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/separeasobi/index.html
@@ -2587,7 +2697,7 @@
   content_chars: 1710
   etag: '"5f80-658bfe529b43a"'
   last_modified: Tue, 11 Aug 2026 06:51:06 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
 - url: https://www.shimaya.net/fair/summer/tokusyushi/index.html
@@ -2597,9 +2707,19 @@
   content_chars: 2131
   etag: '"7026-65985b323b026"'
   last_modified: Fri, 21 Aug 2026 02:50:31 GMT
-  last_fetched_at: 2026-10-15T14:31:46+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: not_modified
   http_status: 304
+- url: https://www.shimaya.net/fair/syoseki_paper/
+  printer_id: shimaya
+  content_hash: sha256:39d55be7480812dda5fb0a64e987bd5d8e7c7a007e1d23df6143f5668ec92c0a
+  reviewed_hash: null
+  content_chars: 1730
+  etag: '"445c-65f568821b300"'
+  last_modified: Tue, 03 Nov 2026 03:05:16 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
+  fetch_status: ok
+  http_status: 200
 - url: https://www.shimaya.net/fair/toumei/
   printer_id: shimaya
   content_hash: sha256:d5f459c8cdc8e3412edcc83f80196f6afa6004eae82c9052c0df1debd2f9918e
@@ -2627,17 +2747,17 @@
   content_chars: 1083
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T11:43:54+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.sunrisep.co.jp/event/?terms=ALL
   printer_id: sunrise
-  content_hash: sha256:267a1fcd8a41393d0a0adb3d6c2171db86a2a279c4f0fef50e38a24538bad9ba
+  content_hash: sha256:bcd50bf5ae57392d163a4db4b0459cf4d1f9415277556c522409b56e40635d97
   reviewed_hash: sha256:267a1fcd8a41393d0a0adb3d6c2171db86a2a279c4f0fef50e38a24538bad9ba
-  content_chars: 1231
+  content_chars: 1344
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:35:12+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.sunrisep.co.jp/event/202612poster/
@@ -2645,9 +2765,9 @@
   content_hash: sha256:4f9e500bbaaba3f908c6c3e2704f786d302e004aa68ed03caea45f43d86edf57
   reviewed_hash: sha256:4f9e500bbaaba3f908c6c3e2704f786d302e004aa68ed03caea45f43d86edf57
   content_chars: 1724
-  etag: W/"43130-65fccb1faa882"
-  last_modified: Mon, 09 Nov 2026 00:03:44 GMT
-  last_fetched_at: 2026-11-10T15:35:12+09:00
+  etag: W/"43355-6605d35b1206b"
+  last_modified: Mon, 16 Nov 2026 04:28:29 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.sunrisep.co.jp/event/40anniversary-1/
@@ -2655,9 +2775,9 @@
   content_hash: sha256:e4bdd6087e178839b2a0e8ee1daa1e7189fa43dd5f45615840ea69aa7e9a11fc
   reviewed_hash: sha256:e4bdd6087e178839b2a0e8ee1daa1e7189fa43dd5f45615840ea69aa7e9a11fc
   content_chars: 5247
-  etag: W/"50d25-65fc8b1b4f5e7"
-  last_modified: Sun, 08 Nov 2026 19:17:19 GMT
-  last_fetched_at: 2026-11-10T15:35:12+09:00
+  etag: W/"50ee4-6605bbdb2817b"
+  last_modified: Mon, 16 Nov 2026 02:43:21 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.sunrisep.co.jp/event/annni-40off/
@@ -2665,9 +2785,9 @@
   content_hash: sha256:1cfc35e85893e13fae68c104524a3b5b9acbe6b4e2cd9a2107a70bef766ca28d
   reviewed_hash: sha256:1cfc35e85893e13fae68c104524a3b5b9acbe6b4e2cd9a2107a70bef766ca28d
   content_chars: 1267
-  etag: W/"42b70-65fc97acc11ef"
-  last_modified: Sun, 08 Nov 2026 20:13:33 GMT
-  last_fetched_at: 2026-11-10T15:35:12+09:00
+  etag: W/"42d43-6605bd33e1e56"
+  last_modified: Mon, 16 Nov 2026 02:49:22 GMT
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.taiyoushuppan.co.jp/doujin/discount/index.php
@@ -2677,7 +2797,7 @@
   content_chars: 2538
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:32:59+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.taiyoushuppan.co.jp/doujin/discount/kisetu_fair_2.php
@@ -2687,7 +2807,7 @@
   content_chars: 6479
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:32:59+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.taiyoushuppan.co.jp/doujin/discount/winter_fair.php
@@ -2697,17 +2817,17 @@
   content_chars: 4706
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:32:59+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.teis-p.com/html/discount_list.html
   printer_id: teis
-  content_hash: sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867
-  reviewed_hash: sha256:e927e4828043495113add4f4ac3f4b74f0ecd3769d1338613c03825f1e6e3867
-  content_chars: 5438
+  content_hash: sha256:851c2981fb5d6550beeb5a2ed8e05dffb41943ec18462b37047329aeb93dede0
+  reviewed_hash: sha256:851c2981fb5d6550beeb5a2ed8e05dffb41943ec18462b37047329aeb93dede0
+  content_chars: 4868
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T11:40:14+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.teis-p.com/html/xreview.html
@@ -2717,7 +2837,7 @@
   content_chars: 1155
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T11:40:14+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tomshuppan.co.jp/topics/event_now.html
@@ -2727,7 +2847,7 @@
   content_chars: 2838
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:28:17+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tomshuppan.co.jp/topics/event.html
@@ -2737,37 +2857,37 @@
   content_chars: 1776
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:28:17+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/event/discount/
   printer_id: tsukuyomi
-  content_hash: sha256:959d78380ddd626a1152e17ca38ebf0e9d6791f41872bc181572e770f2865649
+  content_hash: sha256:8db4e35179ac532ef89c2af5be13735e97f1894a80afae4740d0cf0468cebc2b
   reviewed_hash: sha256:959d78380ddd626a1152e17ca38ebf0e9d6791f41872bc181572e770f2865649
-  content_chars: 1955
+  content_chars: 2081
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/event/event-support/
   printer_id: tsukuyomi
-  content_hash: sha256:8779e72f23a9c5b3dc85c4db64b9efcf76d4f6af43d7142ce77da0dfaf09cbe9
+  content_hash: sha256:b4c28f45c9f56aa4ac27214feff28d44f21d4f15f718a768afc4b060372c4ffc
   reviewed_hash: sha256:8779e72f23a9c5b3dc85c4db64b9efcf76d4f6af43d7142ce77da0dfaf09cbe9
-  content_chars: 3950
+  content_chars: 3562
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/information/
   printer_id: tsukuyomi
-  content_hash: sha256:690446fcadd74be36cda2b2df5a71b9f9e45d3f75858f9e3230c3005b1838490
+  content_hash: sha256:6d73826559e43198f83182ff40482dfb0afa628f28247678a4e5f19266f1ef6f
   reviewed_hash: sha256:690446fcadd74be36cda2b2df5a71b9f9e45d3f75858f9e3230c3005b1838490
-  content_chars: 39983
+  content_chars: 43032
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/referral-program/
@@ -2777,7 +2897,7 @@
   content_chars: 1703
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/manual/trial_print/
@@ -2787,7 +2907,7 @@
   content_chars: 4201
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.tsuku-yomi.com/tsukuyomi/tmi/
@@ -2797,7 +2917,7 @@
   content_chars: 93
   etag: null
   last_modified: null
-  last_fetched_at: 2026-10-18T21:10:10+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://www.unicolor.jp/doujinshi/
@@ -2807,16 +2927,16 @@
   content_chars: 3271
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:10:48+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200
 - url: https://yumekoubou-m.net/
   printer_id: yumekoubou
-  content_hash: sha256:ff8809ea9f8777fb5ac73fb8b364a05d5d8dc98b3d18d65a09e4f68615cf0071
+  content_hash: sha256:02b454cb11b31eea7fb669f81bbf81ff857050ead860bc716290e2703e4efbda
   reviewed_hash: sha256:ff8809ea9f8777fb5ac73fb8b364a05d5d8dc98b3d18d65a09e4f68615cf0071
-  content_chars: 2855
+  content_chars: 2853
   etag: null
   last_modified: null
-  last_fetched_at: 2026-11-10T15:14:08+09:00
+  last_fetched_at: 2026-11-17T09:59:06+09:00
   fetch_status: ok
   http_status: 200

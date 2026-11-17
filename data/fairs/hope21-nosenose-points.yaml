@@ -8,7 +8,7 @@ sources:
 summary: 締切を3日早めると、カスタム印刷のポイント還元が通常2%から10%になる。
 benefit_summary: 締切3日前倒しでポイント10%還元
 source_type: official_campaign
-timing_type: ongoing
+timing_type: period
 specific_sets_only: true
 benefit_types:
   - points
@@ -16,8 +16,32 @@ max_quantity: 2000
 conditions_text: カスタム印刷が対象。2000部まで。対象は本のみ（チラシ・便箋・グッズ・大台印刷やシルク印刷などの特殊印刷・特殊製本は対象外）。自宅・書店発送でも利用可。ポイントは決済の翌日に付与。
 published_at: 2026-10-17
 discovered_at: 2026-10-17
-verified_at: 2026-10-17
+verified_at: 2026-11-17
 verification_status: verified
 history:
   - date: 2026-10-17
     type: published
+  - date: 2026-11-17
+    type: updated
+    field: timing_type
+    old_value: ongoing
+    new_value: period
+  - date: 2026-11-17
+    type: updated
+    field: end_date
+    old_value: null
+    new_value: 2026-11-16
+  - date: 2026-11-17
+    type: updated
+    field: end_date_text
+    old_value: null
+    new_value: 2026年11月17日の確認で公式ページに記載なし（終了日は不明）
+  - date: 2026-11-17
+    type: updated
+    field: end_date_precision
+    old_value: null
+    new_value: unknown
+end_date: 2026-11-16
+end_date_text: 2026年11月17日の確認で公式ページに記載なし（終了日は不明）
+end_date_precision: unknown
+updated_at: 2026-11-17

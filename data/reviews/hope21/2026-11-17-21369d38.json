@@ -1,0 +1,36 @@
+{
+  "source_url": "https://hope21.jp/pr/hayawari/",
+  "printer_id": "hope21",
+  "content_hash": "sha256:a71e8db989dfbcdd8d794dbb5b90b4737e3abdce819f921946794a2c0038909b",
+  "content_chars": 1760,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T10:29:26+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "hope21-early-discount",
+      "fair_name": "早割or早得",
+      "sources": [
+        "https://hope21.jp/pr/hayawari/"
+      ],
+      "summary": "納品希望日より早く入稿すると、割引（早割）かポイント還元（早得）のどちらかを選べる年間のサービス。",
+      "benefit_summary": "最大20%OFFか最大30%ポイント還元",
+      "source_type": "official_campaign",
+      "timing_type": "ongoing",
+      "printing_methods": [
+        "offset",
+        "ondemand"
+      ],
+      "benefit_types": [
+        "discount",
+        "points"
+      ],
+      "specific_sets_only": true,
+      "combinable": true,
+      "conditions_text": "セット早割は最大20%OFF・早得は最大30%還元、特色・ポケットビビッドは最大25%OFF・最大30%還元。対象セットは公式の一覧で確認（ポケット+・季節のセット・スイッチ・ATOM系・スロット・フライト系、特色3種、ポケット・ビビッド系など）。見積もりNaviで納品希望日を入れて選ぶ。のせのせキャンペーン・イベント支援と併用可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 30日再確認：内容に変更なし。"
+}
