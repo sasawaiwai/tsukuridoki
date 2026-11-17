@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.shippo.co.jp/neko/info/2026_book_autumn.shtml",
+  "printer_id": "nekonoshippo",
+  "content_hash": "sha256:f73ff5c09b96379d4d4019efe1d7fe19a5fbf94a9c840730a4af1161cb879cf0",
+  "content_chars": 1985,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:19+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "other"
+  ],
+  "master_candidates": [],
+  "note": "読書の秋キャンペーン（11/29合わせの入稿まで）。締切まで1週間ほどで、対象パック・割引率の詳細が画像のため登録しない（運営者決定 2026-11-17）。"
+}

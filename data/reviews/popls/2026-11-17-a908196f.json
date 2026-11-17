@@ -1,0 +1,45 @@
+{
+  "source_url": "https://www2.popls.co.jp/pop/fair/2026B5hon2.html",
+  "printer_id": "popls",
+  "content_hash": "sha256:b3f219bc18b8f0377764d3d350801b9e31d2ecbdedbc3a32aa0e7a6a24776656",
+  "content_chars": 776,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:31+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "popls-b5-book-2026-2",
+      "fair_name": "B5本フェア（12月）",
+      "sources": [
+        "https://www2.popls.co.jp/pop/fair/2026B5hon2.html"
+      ],
+      "summary": "シンプルな仕様のB5の本が、基本料金から5%引きになる。冬のイベント合わせ向け。",
+      "benefit_summary": "シンプル仕様のB5本が5%OFF",
+      "source_type": "official_fair",
+      "start_date": "2026-12-01",
+      "start_date_text": "12月1日",
+      "start_date_precision": "day",
+      "end_date": "2026-12-12",
+      "end_date_text": "12月12日 12時入稿分まで",
+      "end_date_precision": "day",
+      "sizes": [
+        "B5"
+      ],
+      "printing_methods": [
+        "offset"
+      ],
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 5,
+      "specific_sets_only": true,
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "スタンダードセットが対象（快速本・モノクロ特快は対象外）。B5サイズ、表紙は標準コート＋クリアPP、本文は白上質90Kのモノクロ印刷、オプションなし（ポスター・クロスは可）、データ原稿のみ。ページ数は平とじ10〜1,000ページ・中とじ8〜40ページ、1〜1,000部。特急料金・再版では利用不可。申請不要（期間内に注文と原稿がそろったものに自動で適用）。ほかの割引と併用する場合は5%引きのあとに計算。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 新規：割引率5%は画像と本文（基本料金の5%引き）で確認。新刊が対象（再版は不可）。"
+}

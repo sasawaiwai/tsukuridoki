@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.ryokuyou.co.jp/doujin/campaign/plusreprint.html",
+  "printer_id": "ryokuyou",
+  "content_hash": "sha256:eb2a568fd79986a7f29bd3a4b6a786504973504e8ef1c91f1cf30cca28e72bb1",
+  "content_chars": 1917,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:38+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "ryokuyou-plus-reprint-2026",
+      "fair_name": "再版割プラスフェア",
+      "sources": [
+        "https://www.ryokuyou.co.jp/doujin/campaign/plusreprint.html",
+        "https://www.ryokuyou.co.jp/doujin/campaign"
+      ],
+      "summary": "再版割が期間限定で15%にアップ。他社で印刷した本の再版も対象になる。",
+      "benefit_summary": "再版が15%OFF（他社で初版の本も可）",
+      "source_type": "official_fair",
+      "start_date": "2026-12-01",
+      "start_date_text": "2026.12.1",
+      "start_date_precision": "day",
+      "end_date": "2027-02-28",
+      "end_date_text": "2027.2.28納品分",
+      "end_date_precision": "day",
+      "benefit_types": [
+        "discount"
+      ],
+      "discount_rate": 15,
+      "application_required": true,
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "1年以内に印刷された本の再版が対象。スタンダードコースはセット価格、カスタムコースは本文料金から15%OFF（上限金額40万円）。デジタルコースは対象外。他社で印刷した本は、初版の仕様がわかる注文メールの控えなどを同梱し、奥付に緑陽社の社名を書く。緑陽社で印刷した本は、奥付＋本文4ページまで差し替え可（手数料無料。5ページ以上は対象外）。自己申告制で、自動見積の「その他割引・加算」欄に「再版割プラス利用」「-15」「%」と入力。通常の締切まで利用可。"
+    }
+  ],
+  "issues": [],
+  "master_candidates": [],
+  "note": "2026-11-17 新規：ページ上部に「当フェアは終了しました」の表示があるが、開催中のフェア一覧に対象期間2026.12.1〜2027.2.28納品分として掲載されているため開催中と判断。"
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://www.ko-sin.co.jp/syindex/",
+  "printer_id": "koshin",
+  "content_hash": "sha256:49d5bb4c4fc5f8b0b96ead512b61de07c5ac0ab91d380c2bf12c29ae869d77dd",
+  "content_chars": 1279,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:07+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair"
+  ],
+  "master_candidates": [],
+  "note": "同人誌印刷セット・グッズの紹介ページ。フェアではない。"
+}

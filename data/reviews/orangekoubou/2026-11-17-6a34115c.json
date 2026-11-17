@@ -1,0 +1,47 @@
+{
+  "source_url": "https://www.orangekoubou.com/special/limited_fair_onebook_nekoposu_202604.php",
+  "printer_id": "orangekoubou",
+  "content_hash": "sha256:92e1d802354412a8b95113945356bffdc4c3d21d97e6dc8a6ef950161a8cde54",
+  "content_chars": 2093,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:25+09:00",
+  "result": "fairs",
+  "fairs": [
+    {
+      "fair_id": "orangekoubou-one-book-free-shipping-2027",
+      "fair_name": "冊子1冊注文 送料無料フェア（ネコポス発送）",
+      "sources": [
+        "https://www.orangekoubou.com/special/limited_fair_onebook_nekoposu_202604.php",
+        "https://www.orangekoubou.com/special/limited_fair.php"
+      ],
+      "summary": "対象期間に冊子を1部だけ注文すると、送料が無料になる（ネコポスで自宅へ発送）。",
+      "benefit_summary": "冊子1冊の注文で送料無料",
+      "source_type": "official_fair",
+      "end_date": "2027-02-08",
+      "end_date_text": "納品期間 2/6(土)~2/8(月)の回まで",
+      "end_date_precision": "day",
+      "usable_until": "2027-01-28",
+      "usable_until_text": "1/28(木)午前10時まで（無線綴じ・中綴じ。中ミシン綴じはより早い）",
+      "usable_until_precision": "day",
+      "benefit_types": [
+        "free_option"
+      ],
+      "free_options": [
+        "送料"
+      ],
+      "max_quantity": 1,
+      "specific_sets_only": true,
+      "combinable": false,
+      "application_required": true,
+      "tags": [
+        "limited_time"
+      ],
+      "conditions_text": "対象の冊子を1部だけ注文した場合に限る（ネコポスでポスト投函、納品先は注文者の住所のみ）。納品期間は1/23〜1/25・1/30〜2/1・2/6〜2/8の3回で、締切は無線綴じ・中綴じが1/14・1/21・1/28（各午前10時）、中ミシン綴じは営業日数によりそれより早い（公式の表で確認）。注文フォームの「各種フェア適用」で選ぶ。早入稿特典・イベント支援特典・その他のフェア・クーポンとは併用不可（ポイントは可）。対象セットは公式の一覧で確認。"
+    }
+  ],
+  "issues": [
+    "year_inferred"
+  ],
+  "master_candidates": [],
+  "note": "2026-11-17 新規：年の記載なし。1/14(木)などの曜日と、11月の回に続く並びから2027年1〜2月の回と判断。11月の回は締切済み。"
+}

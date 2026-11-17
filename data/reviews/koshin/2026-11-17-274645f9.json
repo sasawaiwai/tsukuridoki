@@ -1,0 +1,16 @@
+{
+  "source_url": "https://www.ko-sin.co.jp/syindex/info/",
+  "printer_id": "koshin",
+  "content_hash": "sha256:80ab8b11a61c4f7879f0190de2b828152699bd81831c668c0b3b8057bdb3a321",
+  "content_chars": 335,
+  "extractor": "manual",
+  "extracted_at": "2026-11-17T11:32:13+09:00",
+  "result": "no_fair",
+  "fairs": [],
+  "issues": [
+    "not_fair",
+    "ended"
+  ],
+  "master_candidates": [],
+  "note": "お知らせの一覧。キャンペーンの告知は2023年のもので終了済み。"
+}

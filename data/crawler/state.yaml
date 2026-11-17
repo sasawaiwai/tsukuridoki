@@ -13,7 +13,7 @@
 - url: https://doujin-adp.sakura.ne.jp/eventshien.html
   printer_id: adp
   content_hash: sha256:4f212fb1ea722fac54340796bb812ee0be2bb77af583eac6df9d9aad7ccefac6
-  reviewed_hash: null
+  reviewed_hash: sha256:4f212fb1ea722fac54340796bb812ee0be2bb77af583eac6df9d9aad7ccefac6
   content_chars: 1840
   etag: '"9fe1-65e784bd878c8"'
   last_modified: Fri, 23 Oct 2026 01:57:01 GMT
@@ -893,7 +893,7 @@
 - url: https://www.ko-sin.co.jp/syindex/
   printer_id: koshin
   content_hash: sha256:49d5bb4c4fc5f8b0b96ead512b61de07c5ac0ab91d380c2bf12c29ae869d77dd
-  reviewed_hash: null
+  reviewed_hash: sha256:49d5bb4c4fc5f8b0b96ead512b61de07c5ac0ab91d380c2bf12c29ae869d77dd
   content_chars: 1279
   etag: null
   last_modified: null
@@ -903,7 +903,7 @@
 - url: https://www.ko-sin.co.jp/syindex/info/
   printer_id: koshin
   content_hash: sha256:80ab8b11a61c4f7879f0190de2b828152699bd81831c668c0b3b8057bdb3a321
-  reviewed_hash: null
+  reviewed_hash: sha256:80ab8b11a61c4f7879f0190de2b828152699bd81831c668c0b3b8057bdb3a321
   content_chars: 335
   etag: null
   last_modified: null
@@ -1203,7 +1203,7 @@
 - url: https://www.shippo.co.jp/neko/info/2026_book_autumn.shtml
   printer_id: nekonoshippo
   content_hash: sha256:f73ff5c09b96379d4d4019efe1d7fe19a5fbf94a9c840730a4af1161cb879cf0
-  reviewed_hash: null
+  reviewed_hash: sha256:f73ff5c09b96379d4d4019efe1d7fe19a5fbf94a9c840730a4af1161cb879cf0
   content_chars: 1985
   etag: null
   last_modified: null
@@ -1563,7 +1563,7 @@
 - url: https://www.orangekoubou.com/special/limited_fair_20270117.php
   printer_id: orangekoubou
   content_hash: sha256:3d9efabf83d4567d9f002f839fc12deef6b55a2652bb9a429710172ad0989759
-  reviewed_hash: null
+  reviewed_hash: sha256:3d9efabf83d4567d9f002f839fc12deef6b55a2652bb9a429710172ad0989759
   content_chars: 22987
   etag: null
   last_modified: null
@@ -1583,7 +1583,7 @@
 - url: https://www.orangekoubou.com/special/limited_fair_onebook_nekoposu_202604.php
   printer_id: orangekoubou
   content_hash: sha256:92e1d802354412a8b95113945356bffdc4c3d21d97e6dc8a6ef950161a8cde54
-  reviewed_hash: null
+  reviewed_hash: sha256:92e1d802354412a8b95113945356bffdc4c3d21d97e6dc8a6ef950161a8cde54
   content_chars: 2093
   etag: null
   last_modified: null
@@ -1813,7 +1813,7 @@
 - url: https://www2.popls.co.jp/pop/fair/2026B5hon2.html
   printer_id: popls
   content_hash: sha256:b3f219bc18b8f0377764d3d350801b9e31d2ecbdedbc3a32aa0e7a6a24776656
-  reviewed_hash: null
+  reviewed_hash: sha256:b3f219bc18b8f0377764d3d350801b9e31d2ecbdedbc3a32aa0e7a6a24776656
   content_chars: 776
   etag: '"213bf724-3da4-65ddc671a8ce2"'
   last_modified: Thu, 15 Oct 2026 07:57:44 GMT
@@ -2243,7 +2243,7 @@
 - url: https://www.ryokuyou.co.jp/doujin/campaign/plusreprint.html
   printer_id: ryokuyou
   content_hash: sha256:eb2a568fd79986a7f29bd3a4b6a786504973504e8ef1c91f1cf30cca28e72bb1
-  reviewed_hash: null
+  reviewed_hash: sha256:eb2a568fd79986a7f29bd3a4b6a786504973504e8ef1c91f1cf30cca28e72bb1
   content_chars: 1917
   etag: null
   last_modified: null

@@ -1,0 +1,25 @@
+fair_id: adp-event-support
+slug: adp-event-support
+fair_name: イベント支援
+printer_id: adp
+category: dojinshi
+sources:
+  - https://doujin-adp.sakura.ne.jp/eventshien.html
+summary: 支援イベントに参加するサークルの発注で、セット料金が5%割引になり、搬入料・配送料も1か所まで無料になる。
+benefit_summary: 支援イベント合わせでセット5%OFF・搬入料無料
+source_type: official_campaign
+timing_type: recurring
+submission_dates_text: 支援イベントごと（一覧は公式で確認）
+benefit_types:
+  - discount
+discount_rate: 5
+specific_sets_only: true
+application_required: true
+conditions_text: 支援イベント（一覧は公式で確認）に参加するサークルが対象。オンデマンドセット・二色カラー本セット・コピー本セットなどのセット料金が5%割引（割引・割増の段階が1つずつ良くなり、最大割引は20%。もともと20%割引のときは割引なし）。直接搬入料・宅配搬入料・自宅などへの配送料が1か所まで無料（沖縄を除く）。発注書に支援イベント名を書く（書いていないと割引にならない）。自宅配送・店頭引取でも利用可。
+published_at: 2026-11-17
+discovered_at: 2026-11-17
+verified_at: 2026-11-17
+verification_status: verified
+history:
+  - date: 2026-11-17
+    type: published
