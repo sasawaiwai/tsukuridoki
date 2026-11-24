@@ -16,7 +16,7 @@ specific_sets_only: true
 conditions_text: 公式のイベント一覧に載っている支援イベントの参加者が対象。見積り・予約フォームの備考欄に「イベント参加者特典利用」と書く。早割との併用割引は15%まで。グッズは5%割引（大型イベント合わせは併用割引可）。
 published_at: 2026-11-04
 discovered_at: 2026-11-04
-verified_at: 2026-11-04
+verified_at: 2026-11-24
 verification_status: verified
 history:
   - date: 2026-11-04
