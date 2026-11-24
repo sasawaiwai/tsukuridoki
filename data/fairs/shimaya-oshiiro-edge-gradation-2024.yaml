@@ -19,7 +19,13 @@ sizes:
   - other
 processes:
   - edge_printing
-conditions_text: 対象セットのみ（ビデオテープ・DVDケース入りブックも対象）。背幅2mm以上の本。A5は小口側1面のみ。締切は1面印刷が通常の締切の6営業日前、3面印刷が8営業日前。備考欄に推し色を指定。前入金制、特急入稿は不可。
+conditions_text: |-
+  対象セットのみ（ビデオテープ・DVDケース入りブックも対象）。
+  背幅2mm以上の本。
+  A5は小口側1面のみ。
+  締切は1面印刷が通常の締切の6営業日前、3面印刷が8営業日前。
+  備考欄に推し色を指定。
+  前入金制、特急入稿は不可。
 sources:
   - https://www.shimaya.net/fair/koguchi_gd/
 published_at: 2026-10-08

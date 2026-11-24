@@ -77,7 +77,8 @@ const conditions = [
   range(fair.min_pages, fair.max_pages, 'ページ') && `ページ数：${range(fair.min_pages, fair.max_pages, 'ページ')}`,
   range(fair.min_quantity, fair.max_quantity, '部') && `部数：${range(fair.min_quantity, fair.max_quantity, '部')}`,
   fair.minimum_order && `最低注文：${fair.minimum_order}`,
-  fair.conditions_text,
+  // 条件文はデータ側の改行ごとに1項目として並べる（改行がなければ従来どおり1項目）
+  ...(fair.conditions_text ?? '').split('\n').map((line) => line.trim()),
 ].filter((c): c is string => typeof c === 'string' && c !== '');
 
 const untilText = fair.usable_until_text ?? fair.end_date_text;

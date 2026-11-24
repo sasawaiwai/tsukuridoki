@@ -20,7 +20,9 @@ benefit_types:
   - free_option
 free_options:
   - 搬入代
-conditions_text: 入稿の際に分納がある旨を伝える。自己申告制（予約時に申請）。
+conditions_text: |-
+  入稿の際に分納がある旨を伝える。
+  自己申告制（予約時に申請）。
 published_at: 2026-10-10
 discovered_at: 2026-10-10
 verified_at: 2026-10-10

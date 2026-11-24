@@ -15,7 +15,12 @@ processes:
 benefit_types:
   - free_process
 min_quantity: 10
-conditions_text: 豆本・メガATOMは対象外。フライトセットのジャケット・ジャケットliteも対象外。10部から。角丸はR6（半径6mm）で小口側2か所。メモ帳断裁がある本（カスタム印刷・スロット）は本体のみ加工。
+conditions_text: |-
+  豆本・メガATOMは対象外。
+  フライトセットのジャケット・ジャケットliteも対象外。
+  10部から。
+  角丸はR6（半径6mm）で小口側2か所。
+  メモ帳断裁がある本（カスタム印刷・スロット）は本体のみ加工。
 published_at: 2026-10-17
 discovered_at: 2026-10-17
 verified_at: 2026-11-17
