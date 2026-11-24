@@ -233,6 +233,37 @@ function idsFlag(args: string[], name: string): Set<string> {
 
 const same = (a: unknown, b: unknown) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
 
+const OPEN_BRACKETS = '（「『〔【(［';
+const CLOSE_BRACKETS = '）」』〕】)］';
+
+/**
+ * 条件文を「。」ごとに改行する（かっこの中の「。」では切らない）。
+ * フェアのページでは改行ごとに1項目として並ぶ。文面そのものは変えない（行の前後の空白だけ除く）
+ */
+export function splitSentences(text: string): string {
+  const lines: string[] = [];
+  for (const line of text.split('\n')) {
+    let cur = '';
+    let depth = 0;
+    for (const ch of line) {
+      cur += ch;
+      if (OPEN_BRACKETS.includes(ch)) depth++;
+      else if (CLOSE_BRACKETS.includes(ch)) depth = Math.max(0, depth - 1);
+      else if (ch === '。' && depth === 0) {
+        lines.push(cur);
+        cur = '';
+      }
+    }
+    lines.push(cur);
+  }
+  return lines.map((l) => l.trim()).filter(Boolean).join('\n');
+}
+
+/** 抽出結果の条件文を、登録済みのデータと同じ「1文1行」の形にそろえる（そろえないと、改行の違いだけで変更扱いになる） */
+export function withLineBreaks(extracted: FairData): FairData {
+  return typeof extracted.conditions_text === 'string' ? { ...extracted, conditions_text: splitSentences(extracted.conditions_text) } : extracted;
+}
+
 /**
  * 抽出したフェアに運用の項目を足して、data/fairs/ のデータにする。
  * 更新は変わった項目ごとに、変更前・変更後の値を履歴に残す（仕様書62-4）。
@@ -377,7 +408,8 @@ function apply(file: string | undefined, yes: boolean, correct: Set<string>, all
   }
   const allFairs = readYamlDir<FairData>('fairs').map((f) => f.data);
   const ids = new Set<string>();
-  for (const extracted of data.fairs) {
+  for (const raw of data.fairs) {
+    const extracted = withLineBreaks(raw);
     const id = extracted.fair_id as string;
     if (ids.has(id)) fail(`fair_id「${id}」が重複しています`);
     ids.add(id);

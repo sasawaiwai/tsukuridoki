@@ -6,7 +6,7 @@ import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, symlinkSync
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parse, stringify } from 'yaml';
-import { buildFair, diffFields, endedPeriodChanges, isPending } from '../../crawler/review.ts';
+import { buildFair, diffFields, endedPeriodChanges, isPending, splitSentences } from '../../crawler/review.ts';
 import type { StateEntry } from '../../crawler/state.ts';
 
 const REPO = process.cwd();
@@ -171,6 +171,26 @@ test('apply --yes：フェアを作り、確認済みにし、抽出結果を記
   const recordDir = join(dir, 'data/reviews/eikou');
   const recorded = readdirSync(recordDir).some((name) => readFileSync(join(recordDir, name), 'utf8').includes('eikou-review-test-2026'));
   assert.ok(recorded);
+});
+
+test('splitSentences：「。」ごとに改行し、かっこの中では切らない。文面は変えない', () => {
+  const text = '予約が必要（締切は「前日。」まで）。表紙だけは通常料金。 5000部まで。';
+  assert.equal(splitSentences(text), '予約が必要（締切は「前日。」まで）。\n表紙だけは通常料金。\n5000部まで。');
+  assert.equal(splitSentences(splitSentences(text)), splitSentences(text)); // 何度かけても同じ
+  assert.equal(splitSentences('句点なしの条件'), '句点なしの条件');
+});
+
+test('apply --yes：巡回で取り込んだ条件文も1文1行で保存し、改行の違いだけでは変更扱いにしない', () => {
+  const { dir, hash } = workspace();
+  const base = extraction(hash).fairs[0];
+  const oneLine = '会員登録が必要。他のフェアと併用不可。';
+  const r = run(dir, extraction(hash, { fairs: [{ ...base, conditions_text: oneLine }] }), '--yes');
+  assert.equal(r.status, 0, r.stderr);
+  assert.equal(parse(readFileSync(fairFile(dir), 'utf8')).conditions_text, '会員登録が必要。\n他のフェアと併用不可。');
+
+  const again = run(dir, extraction(hash, { fairs: [{ ...base, conditions_text: oneLine }] }));
+  assert.equal(again.status, 0, again.stderr);
+  assert.doesNotMatch(again.stdout, /conditions_text/);
 });
 
 test('apply：確認した本文のハッシュが今の記録と違えば反映しない', () => {
