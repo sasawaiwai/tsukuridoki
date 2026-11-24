@@ -9,7 +9,7 @@ export type CardCategory = 'foil' | 'paper' | 'rgb' | 'surface' | 'craft' | 'dea
 
 const CRAFT_PROCESSES = new Set(['endpaper', 'perforation', 'hole_punch']);
 const CARD_CHIP_LIMIT = 5;
-const RECHECK_DAYS = 30;
+export const RECHECK_DAYS = 30;
 
 export interface Chip {
   label: string;

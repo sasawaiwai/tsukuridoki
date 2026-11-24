@@ -1,9 +1,12 @@
-# PR時のチェック：データ検証・テスト・ビルド（公開はしない）
+# PR時と develop への push 時のチェック：データ検証・テスト・ビルド（公開はしない）
+# develop が壊れたまま main に進まないよう、push でも動かす（コード監査 FLOW-1）
 name: CI
 
 on:
   pull_request:
     branches: [main, develop]
+  push:
+    branches: [develop]
 
 env:
   ASTRO_TELEMETRY_DISABLED: 1

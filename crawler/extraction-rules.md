@@ -67,7 +67,7 @@
 
 ## 4. fairs の各項目
 
-**書かない項目**（反映時に自動で入る）：`slug`・`category`・`printer_id`・`published_at`・`discovered_at`・`verified_at`・`updated_at`・`last_checked_at`・`verification_status`・`history`
+**書かない項目**（反映時に自動で入る）：`slug`・`category`・`printer_id`・`published_at`・`discovered_at`・`verified_at`・`updated_at`・`verification_status`・`history`。`last_checked_at` も書かない（今は反映時にも入らない。週次巡回レポートPR〔未実装〕で入れる予定）
 
 ### 4-1. 必ず書く
 

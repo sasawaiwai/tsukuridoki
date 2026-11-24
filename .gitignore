@@ -8,3 +8,5 @@ dist/
 review-inbox/
 # 書き込み途中で止まったときの一時ファイル
 *.tmp-*
+# Claude Code の作業場所（worktree）・手元の設定。公開リポジトリに入れない
+.claude/
