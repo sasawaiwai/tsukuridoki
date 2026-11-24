@@ -14,7 +14,11 @@ processes:
   - special_paper
 benefit_types:
   - free_paper_upgrade
-conditions_text: カスタム印刷が対象。部数・ページ数の制限なし。指定の特殊紙から選ぶ。ほかの表紙の選択より優先される。
+conditions_text: |-
+  カスタム印刷が対象。
+  部数・ページ数の制限なし。
+  指定の特殊紙から選ぶ。
+  ほかの表紙の選択より優先される。
 published_at: 2026-10-17
 discovered_at: 2026-10-17
 verified_at: 2026-11-17

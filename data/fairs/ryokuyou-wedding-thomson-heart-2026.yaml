@@ -23,7 +23,13 @@ benefit_types:
 discount_rate: 5
 specific_sets_only: true
 application_required: true
-conditions_text: サイズはA5以上。加工対象は基本表紙・基本口絵。形状はハート（80mm×70mm）で、オリジナル型は対象外。対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。〆切は表紙+6営業日。自己申告制（予約時に申請）。
+conditions_text: |-
+  サイズはA5以上。
+  加工対象は基本表紙・基本口絵。
+  形状はハート（80mm×70mm）で、オリジナル型は対象外。
+  対象はカラーセット・色刷表紙セット・小説本セット・オールカラーセット。
+  〆切は表紙+6営業日。
+  自己申告制（予約時に申請）。
 published_at: 2026-10-10
 discovered_at: 2026-10-10
 verified_at: 2026-11-17

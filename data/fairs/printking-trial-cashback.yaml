@@ -11,7 +11,11 @@ source_type: official_campaign
 benefit_types:
   - discount
 discount_amount: 1000
-conditions_text: 試し刷りした内容の冊子の注文が対象（ペーパー類グッズは対象外）。クーポンは試し刷りに自動で同封され、冊子の注文時にコードを入力する。クーポンには有効期限がある。早期入稿割引と併用可（2026年5月改定）。
+conditions_text: |-
+  試し刷りした内容の冊子の注文が対象（ペーパー類グッズは対象外）。
+  クーポンは試し刷りに自動で同封され、冊子の注文時にコードを入力する。
+  クーポンには有効期限がある。
+  早期入稿割引と併用可（2026年5月改定）。
 published_at: 2026-10-17
 discovered_at: 2026-10-17
 verified_at: 2026-11-17

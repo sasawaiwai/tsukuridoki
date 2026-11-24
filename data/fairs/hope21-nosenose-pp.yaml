@@ -16,7 +16,11 @@ processes:
 benefit_types:
   - free_process
 min_quantity: 20
-conditions_text: ポケットセット限定。20部から。表紙込20ページ以上（未満は20ページ料金で利用可）。表紙用紙はアートポスト180kg限定。
+conditions_text: |-
+  ポケットセット限定。
+  20部から。
+  表紙込20ページ以上（未満は20ページ料金で利用可）。
+  表紙用紙はアートポスト180kg限定。
 published_at: 2026-10-17
 discovered_at: 2026-10-17
 verified_at: 2026-11-17

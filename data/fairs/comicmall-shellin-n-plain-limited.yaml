@@ -15,7 +15,11 @@ end_date_precision: unknown
 benefit_types:
   - free_paper_upgrade
 application_required: true
-conditions_text: 和紙PPセット以外の紙替えとして利用できる。全版サイズ・PP加工可。注文時の備考欄に【新シェルリンNプレーン在庫限定希望】と書く。オプションのシェルリン180kgプレーンとは別の紙。
+conditions_text: |-
+  和紙PPセット以外の紙替えとして利用できる。
+  全版サイズ・PP加工可。
+  注文時の備考欄に【新シェルリンNプレーン在庫限定希望】と書く。
+  オプションのシェルリン180kgプレーンとは別の紙。
 published_at: 2026-11-04
 discovered_at: 2026-11-04
 verified_at: 2026-11-24

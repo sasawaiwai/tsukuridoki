@@ -21,7 +21,12 @@ deadline_note: 11月20日出荷、11/22のイベント合わせから。
 specific_sets_only: true
 application_required: true
 combinable: false
-conditions_text: オフセットコースの商品が対象。 申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。割引はセット料金のみ（オプションは対象外）。バリュープライス・特急商品は対象外。締切は17:00。
+conditions_text: |-
+  オフセットコースの商品が対象。
+  申告制（注文フォームのキャンペーン欄で選択）・他のキャンペーンや特典と併用不可。
+  割引はセット料金のみ（オプションは対象外）。
+  バリュープライス・特急商品は対象外。
+  締切は17:00。
 printing_methods:
   - offset
 benefit_types:

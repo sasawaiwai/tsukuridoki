@@ -27,7 +27,12 @@ benefit_types:
 discount_rate: 5
 specific_sets_only: true
 application_required: true
-conditions_text: 加工対象はカラー表紙（ハイマッキンレーポスト200kg・マットPP貼限定）。対象はカラーセット・小説本セット（カラー表紙）・オールカラーセット。〆切は表紙+10営業日。カラーカバーへの加工は別途見積。自己申告制（予約時に申請）。
+conditions_text: |-
+  加工対象はカラー表紙（ハイマッキンレーポスト200kg・マットPP貼限定）。
+  対象はカラーセット・小説本セット（カラー表紙）・オールカラーセット。
+  〆切は表紙+10営業日。
+  カラーカバーへの加工は別途見積。
+  自己申告制（予約時に申請）。
 published_at: 2026-10-10
 discovered_at: 2026-10-10
 verified_at: 2026-11-10
