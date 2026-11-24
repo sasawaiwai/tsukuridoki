@@ -107,9 +107,10 @@ npm run review -- stats                                  # 実測値（確認ペ
 - 対処：開発用サーバーを再起動する（今は修正しない）
 - 将来修正するときは、ビルドの速さが落ちないことも確認する（データの読み込みはビルド中1回にまとめている。`src/lib/data.ts`）
 
-## 正式公開（noindex解除）の前にやること
+## 検索エンジンへの公開（noindex）
 
-- `src/lib/site.ts` の `noindex` を `false` にし、`public/robots.txt` を書き換えて sitemap.xml の場所を書く（`Disallow: /dojin/tab/` は残す）
+- 2026-11-25 に noindex を外した（`src/lib/site.ts` の `noindex: false`、`public/robots.txt` に sitemap.xml の場所を記載）
+- 検索に出さない状態へ戻すときは、`noindex` を `true` にし、`public/robots.txt` を `Disallow: /` に戻す（`Disallow: /dojin/tab/` は残す）
 
 ## データのルール
 
