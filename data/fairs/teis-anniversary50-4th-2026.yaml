@@ -8,8 +8,8 @@ sources:
 summary: 創業50周年記念キャンペーンの第4弾。期間中の注文・入稿で、対象の同人誌印刷セットが35%OFFになる。
 benefit_summary: 対象セットが35%OFF
 source_type: official_campaign
-start_date: 2026-11-29
-start_date_text: 2026年11月29日
+start_date: 2026-11-19
+start_date_text: 2026年11月19日（早期受付開始）
 start_date_precision: day
 end_date: 2026-12-05
 end_date_text: 2026年12月5日まで（注文受付・入稿）
@@ -24,8 +24,19 @@ tags:
 conditions_text: 対象はベーシック冊子印刷・オールフルカラー冊子印刷。注文時にクーポンコードを入力（注文後の申請は不可）。割引はセット本体価格のみで、オプションは対象外。冬コミなど大型イベント合わせの搬入も可。キャンペーンコードでの割引・特典は1注文につき1つのみ（クーポンコードは公式で確認）。
 published_at: 2026-10-18
 discovered_at: 2026-10-18
-verified_at: 2026-11-17
+verified_at: 2026-11-24
 verification_status: verified
 history:
   - date: 2026-10-18
     type: published
+  - date: 2026-11-24
+    type: updated
+    field: start_date
+    old_value: 2026-11-29
+    new_value: 2026-11-19
+  - date: 2026-11-24
+    type: updated
+    field: start_date_text
+    old_value: 2026年11月29日
+    new_value: 2026年11月19日（早期受付開始）
+updated_at: 2026-11-24
