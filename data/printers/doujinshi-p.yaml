@@ -20,8 +20,9 @@ watch_urls:
 domains: [doujinshi-p.com]
 # リンクはトップページ固定（運営方針）
 link_policy: top_page_only
-crawl_policy: allowed
+# 2026-11-25：Actions からの巡回が 2026-10-18 を最後に全URLで通信エラー（手元のブラウザ相当の接続では応答あり）。上野印刷所と同じく自動巡回しない。手元など別の接続元からの自動巡回もしない
+crawl_policy: manual_only
 terms_url: https://www.doujinshi-p.com/entry/kiyaku.php
-policy_note: "自動アクセスの明示的な禁止を確認できず、robots.txtも無いため、低頻度巡回の対象とする（許諾を得たものではない）。ご利用規約は会員向けで、第7条（禁止事項）に転載・情報収集の定めはなし（2026-10-18確認）。"
+policy_note: "GitHub Actions からの巡回が2026-10-18を最後に全URLで通信エラー（2026-11-24確認）のため、manual_only とする（人が通常のブラウザで公式情報を確認する）。自動アクセスの明示的な禁止は確認できず、robots.txtも無い。ご利用規約は会員向けで、第7条（禁止事項）に転載・情報収集の定めはなし（2026-10-18確認）。"
 crawl_interval_days: 7
-last_policy_checked_at: 2026-10-18
+last_policy_checked_at: 2026-11-25

@@ -11,8 +11,8 @@ export const SITE = {
   contactFormUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScvesNTJJXxkJnqi2IkTxECWDbnjXh0aNx57aDp4weuMrglaA/viewform' as string | null,
   // Google Analytics（GA4）の測定ID。本番ビルドだけで読み込む（/dev/ 以下は除く）
   gaMeasurementId: 'G-QN4G6TXQK9' as string | null,
-  // 正式公開（v1）まで true。false にするときは public/robots.txt も書き換える
-  noindex: true,
+  // true にするとサイト全体が検索エンジンに載らなくなる（正式公開で false にした。true に戻すときは public/robots.txt も書き換える）
+  noindex: false,
   // OGP画像（1200×630px）。運営者が public/ に置いたらパスを設定する（例：'/og-default.png'）
   ogImage: '/og-default.jpg' as string | null,
   // トップページのヒーロー画像（装飾ビジュアル。2:1・推奨2400×1200px・透過PNG/WebP）。置いたらパスを設定する

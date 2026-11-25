@@ -17,6 +17,7 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { parse, stringify } from 'yaml';
 import { DATA_DIR, readYamlDir, readYamlFile } from '../src/lib/data.ts';
+import { needsRecheck, RECHECK_DAYS } from '../src/lib/fair-display.ts';
 import { SIZE_LABELS } from '../src/lib/labels.ts';
 import { effectiveFrom, effectiveUntil, getStatus } from '../src/lib/period.ts';
 import { hostMatches, isSafeUrl, isSnsUrl } from '../src/lib/sources.ts';
@@ -147,10 +148,29 @@ function list(): void {
     for (const f of imageDue) console.log(`  ${f.fair_name}（${(f.image_checked_items as string[] | undefined)?.join('・') ?? ''}）  ${(f.sources as string[])[0]}`);
   }
 
+  // 30日ごとの公式での再確認が必要なフェア（仕様書29-3。サイトの詳細ページの警告と同じ判定。終了済みは対象外）
+  const recheckDue = fairs.filter((f) => needsRecheck(f as unknown as Fair, today()));
+  if (recheckDue.length > 0) {
+    console.log(`\n公式での再確認が必要（確認日から${RECHECK_DAYS}日以上）：${recheckDue.length}件`);
+    for (const f of recheckDue) console.log(`  ${f.fair_name}（確認日：${(f.verified_at as string | undefined) ?? 'なし'}）  ${(f.sources as string[])[0]}`);
+  }
+
   const gone = state.filter((e) => e.fetch_status === 'not_found');
   if (gone.length > 0) {
     console.log(`\nページが見つからない（終了・削除の可能性）：${gone.length}件`);
     for (const e of gone) console.log(`  ${e.url}`);
+  }
+
+  // 取得に失敗しているURL（Actions の結果表にしか出ないため、ここにも出す。最後に取れた日で、いつから失敗しているかの目安にする）
+  // 巡回しない印刷所（manual_only など）の古い記録は出さない
+  const failing = state.filter((e) => (e.fetch_status === 'error' || e.fetch_status === 'blocked') && printers.get(e.printer_id)?.crawl_policy === 'allowed');
+  if (failing.length > 0) {
+    console.log(`\n取得に失敗している（${failing.length}件）`);
+    for (const printerId of [...new Set(failing.map((e) => e.printer_id))]) {
+      const entries = failing.filter((e) => e.printer_id === printerId);
+      console.log(`▶ ${printers.get(printerId)?.name ?? printerId}（${entries.length}件）`);
+      for (const e of entries) console.log(`  ${e.fetch_status === 'blocked' ? '拒否' : '失敗'}　最後に取れた日：${e.last_fetched_at?.slice(0, 10) ?? 'なし'}  ${e.url}`);
+    }
   }
   console.log('\n本文の確認：npm run review -- show <URL>\n');
 }
@@ -175,7 +195,7 @@ async function show(url: string | undefined): Promise<void> {
 
   const page = extract(result.html, result.url, { selector: printer.crawl_selector, ignore: printer.crawl_ignore });
   if (page.hash !== entry.content_hash) {
-    fail(`巡回後にページが更新されています。再巡回してから確認してください：npm run crawl -- --printer=${printer.printer_id}`);
+    fail(`巡回後にページが更新されています。Actions の Crawl で ${printer.printer_id} を再巡回し、npm run crawl:import で取り込んでから確認してください`);
   }
 
   const skeleton = {
